@@ -1,0 +1,145 @@
+.rules {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.rules p {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.rules ul {
+  font-size: 1em;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.rules li {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+a#upload_sample{
+  font-size: 1em;
+}
+
+.restrictions{
+  font-size: 1em;
+  color: #802697;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: auto; /* 允许表格滚动 */
+}
+
+thead th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  cursor: pointer; /* 可单击来排序列 */
+}
+
+tbody td, tbody th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.js-sort-number:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a.inner-link {
+    color: #802697;
+    transition: color 0.3s ease-in-out;
+}
+a.inner-link:hover {
+  color: #cd002f;
+}
+
+
+/* content */
+.content {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex; 
+  align-items: center;
+}
+
+input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 38px; /* 与自定义按钮的高度相同 */
+  overflow: hidden;
+  z-index: -1;
+}
+
+#uploadForm button[type="submit"] {
+  padding: 8px 12px;
+  background-color: #802697;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px; /* 设置字体大小 */
+  cursor: pointer;
+}
+
+#processBtn{
+  background-color: #4CAF50; /* 设置按钮背景颜色 */
+  color: white; /* 设置按钮文本颜色 */
+  padding: 8px 12px; /* 设置按钮内边距 */
+  text-align: center; /* 设置文本居中对齐 */
+  font-size: 16px; /* 设置字体大小 */
+  border-radius: 4px; /* 设置边框圆角 */
+  cursor: pointer; /* 设置鼠标指针为手型 */
+}
+
+#processBtn:hover {
+  background-color: #05469e; /* 设置鼠标悬停时的背景颜色 */
+}
+
+#processBtn:active {
+  background-color: #05469e; /* 设置按钮按下时的背景颜色 */
+}
+
+.custom-file-input {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #802697;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.custom-file-input:hover , #uploadForm button[type="submit"]:hover{
+  background-color: #05469e;
+}
+
+.custom-file-input:active, #uploadForm button[type="submit"]:active {
+  background-color: #999;
+}
+
+#filenameInput {
+  border: 1px solid #ccc; /* 设置边框样式 */
+  padding: 8px; /* 设置内边距 */
+  font-size: 16px; /* 设置字体大小 */
+  border-radius: 4px; /* 设置边框圆角 */
+}
+
+

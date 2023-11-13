@@ -1,0 +1,402 @@
+/* 一些用于整个网站的常量 */
+:root {
+    --nav-font: Arial, Helvetica, sans-serif;
+    --nav-height: 6vh;
+    /* --SJTU-red: #cd002f;
+    --SJTU-blue: #05469e;
+    --THU-purple: #802697; */
+    --CUHK-golden: #cc7e08;
+    --blue: #1362d0;
+    --CUHK-purple: #802697;
+    /*--UCLA-gold: #cd002f;*/
+    /*--UCLA-blue: #05469e;*/
+    /*--UCLA-darkblue: #802697;*/
+    --body-font: #212529;
+    --heading: #802697;
+    --nav-darkblue: #05004a;
+    --nav-color: #212529;
+    --nav-color-light: #353c42;
+    --nav-darkblue: #05004a;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: var(--nav-font);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 110%;
+    color: var(--body-font)
+}
+
+strong {
+    color: var(--body-font);
+}
+
+/* block: heading in the paragraph */
+h1 {
+    color: var(--heading);
+}
+
+/* element: paragraphs in the body text */
+p {
+    line-height: 150%;
+    font-size: 18px;
+}
+
+/* links */
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:focus,
+a:hover {
+    color: #005587;
+    text-decoration: underline;
+}
+
+a.hover {
+    text-decoration: none;
+}
+
+a.hover:hover {
+    text-decoration: underline;
+}
+
+/* block: paper title in the body text */
+papername {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* element: divider line */
+hr {
+    width: 75%;
+    color: silver;
+    opacity: 0.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+}
+
+/* list */
+li {
+    margin-top: 12px;
+    font-size: 18px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* body of the page */
+#body {
+    width: 60vw;
+    margin: auto;
+}
+
+/* section */
+.section {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 4px;
+}
+
+/* anchor tag for nav button scrolling */
+.anchor {
+    position: relative;
+    display: block;
+    /* visibility: hidden; */
+    top: calc(-1 * var(--nav-height));
+    height: 1px;
+}
+
+.btn-container {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 20px; /* 设置右侧的距离为20px */
+    text-align: right; /* 将容器内的内容右对齐 */
+
+}
+
+.btn {
+    padding: 5px 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none; /* 去除边框 */
+    margin: 0; /* 去除外边距 */
+}
+
+.btn_login {
+    background-color: var(--SJTU-red);
+}
+
+.btn_register {
+    background-color: var(--SJTU-blue);
+}
+
+.btn_logout {
+    background-color: #5d2a2a;
+}
+
+#loginMsg {
+    color: #ffffff;
+}
+
+.language {
+    margin-left: 5px;
+    font-family: var(--nav-font);
+    color: #fff;
+}
+
+.language:hover {
+    color: var(--SJTU-blue);
+}
+
+/* the banner */
+#title {
+    margin-top: var(--nav-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(50vh - var(--nav-height));
+    width: 100vw;
+    left: 0vw;
+    font-weight: bold;
+    color: white;
+    /* background: linear-gradient(to bottom, var(--nav-darkblue), var(--UCLA-blue)); */
+    /*background: linear-gradient(180deg, var(--nav-darkblue), var(--UCLA-blue));*/
+    /* background: linear-gradient(135deg, var(--SJTU-red), var(--SJTU-blue), var(--THU-purple)); */
+    background: linear-gradient(135deg, var(--CUHK-golden), var(--blue), var(--CUHK-purple));
+    /* background-color: var(--SJTU-red); */
+    /* background: linear-gradient(, var(--UCLA-darkblue), var(--UCLA-blue) 60%, white); */
+}
+
+#title-icon {
+    width: 6.5em;
+    margin: 10px;
+}
+
+/* used to center the title */
+#title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-text {
+    font-size: 50px;
+}
+
+#subtitle-text {
+    font-size: 30px;
+    text-align: center;
+    line-height: 125%;
+    margin: -0.5em;
+}
+
+/* change this to adjust the vertical position of the title*/
+#title-padding-bottom {
+    font-size: 1.5em;
+}
+
+/* shows three examples on the home page */
+.example-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#example-box-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* data example images */
+#example-img {
+    /* width: 15vw; */
+    width: 98%;
+    margin: auto;
+}
+
+#example-img-left {
+    /* width: 15vw; */
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    max-width: 49%;
+    height: auto;
+}
+
+#example-img-right {
+    /* width: 15vw; */
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    max-width: 49%;
+    height: auto;
+}
+
+.caption {
+    text-align: center;
+    font-size: 5px;
+}
+
+/* makes its children independent columns on the same row */
+.makecol {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#overview-left {
+    width: 70%;
+}
+
+#overview-right {
+    width: 35%;
+}
+
+/* not very important. Tried to make the website responsive */
+@media only screen and (max-width: 1000px) {
+    #body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .section {
+        width: 98%;
+        padding: 2.5%;
+    }
+
+    #overview-content-wrapper {
+        flex-direction: column;
+    }
+
+    #overview-left,
+    #overview-right {
+        width: 100%;
+    }
+
+    table {
+        display: none;
+    }
+}
+
+.bibtax {
+    /* font-family: Arial; */
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.ext-link {
+    /* color: var(--UCLA-blue); */
+    color: #cd002f;
+    /* text-decoration: underline; */
+}
+
+#cc-img {
+    --width: 40%;
+    width: var(--width);
+    margin: 0 calc(calc(100% - var(--width)) / 2);
+}
+
+/* class: profile */
+.profile {
+    display: inline-block;
+    width: 40%;
+    margin: 0 20px;
+}
+
+.profile img {
+    height: 6em;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* class: profile image */
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+/* #task-pie-chart */
+.col-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    width: 48%;
+}
+
+/* Table for three sub-tasks */
+#tasks {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+/*table tile*/
+#tasks th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--SJTU-red);
+    color: white;
+}
+
+#tasks td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tasks tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+#tasks tr:hover {
+    background-color: #ddd;
+}

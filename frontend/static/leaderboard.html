@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Comprehensive Medical Benchmark in Chinese (2023)</title>
+    <link rel="icon" href="./img/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/leaderboard.css">
+    <script type="text/javascript" src="./js/sort-table.js"></script>
+    <style type="text/css" id="operaUserStyle"></style>
+    <script type="text/javascript" src="./js/leaderboard_subject_data.js" defer=""></script>
+    <!-- <script type="text/javascript" src="./js/leaderboard.js" defer=""></script> -->
+</head>
+
+<body>
+
+    <div id="nav">
+        <div id="icon">
+            <img src="./img/logo.png" id="nav-icon">
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com" style="margin-left: 2px; font-size: 24px">CMB
+            </a>
+        </div>
+        <div>
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#home">Home</a>
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#data">Data</a>
+            <a class="nav-button" target="_blank" href="http://arxiv.org/abs/2308.08833">Paper</a>
+            <a class="nav-button" target="_blank" href="https://github.com/FreedomIntelligence/CMB">Github</a>
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com/static/leaderboard.html">Leaderboard</a>
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com/static/submit.html">Submit</a>
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#contact">Contact</a>
+        </div>
+    </div>
+    </div>
+
+    <div id="body">
+        <br><br><br><br>
+        <div class="section">
+            <h1>Leaderboard</h1>
+            <p>The display results for various types and stages of exams as well as clinical case consultations are as
+                follows:</p>
+            <p>Submissions of model test results to CMB are always welcome. For submission guidelines, please refer to
+                the <a class="ext-link" target="_blank" href='https://github.com/FreedomIntelligence/CMB#ℹ️-如何进行评测和提交'>link</a>.</p>
+
+            <!-- <p style="font-size: 14px;">(Note: <span style="color:#802697">*</span> indicates that the model was
+                evaluated
+                by the
+                C-Eval team, while other results are obtained through user submissions.)</p> -->
+
+
+
+            <br>
+            <h2>CMB-Exam</h2>
+            <p>Listed below are the optimal accuracy rates selected from four generation strategies: Zero-shot
+                (with/without COT) and Few-shot (with/without COT). Given instances where answers can not be extracted
+                from the model's response, the accuracy rate inside parentheses takes the number of multiple-choice
+                questions from which answers were successfully extracted as the denominator for reference.</p>
+            <p>For detailed information on generation and evaluation, please refer to the <a class="ext-link" target="_blank"
+                    href='https://github.com/FreedomIntelligence/CMB#prompt-format'>link</a>.</p>
+            <div class="table-container">
+                <table style="min-width:600px;overflow-x:auto;" class="complex-table results">
+                    <tr class="complex-table">
+                        <th rowspan="2">Model</th>
+                        <th rowspan="2">Institution</th>
+                        <th rowspan="2">Avg.</th>
+                        <th colspan="5">医师考试</th>
+                        <th colspan="4">护理考试</th>
+                        <th colspan="8">药师考试</th>
+                        <th colspan="3">医技考试</th>
+                        <th colspan="4">专业知识考试</th>
+                        <th colspan="4">医学考研</th>
+                    </tr>
+                    <tr>
+                        <td>规培结业</td>
+                        <td>执业助理医师</td>
+                        <td>执业医师</td>
+                        <td>中级职称</td>
+                        <td>高级职称</td>
+                        <td>护士执业资格</td>
+                        <td>护师执业资格</td>
+                        <td>主管护师</td>
+                        <td>高级护师</td>
+                        <td>执业西药师</td>
+                        <td>执业中药师</td>
+                        <td>初级药士</td>
+                        <td>初级药师</td>
+                        <td>初级中药士</td>
+                        <td>初级中药师</td>
+                        <td>主管药师</td>
+                        <td>主管中药师</td>
+                        <td>医技士</td>
+                        <td>医技师</td>
+                        <td>主管技师</td>
+                        <td>基础医学</td>
+                        <td>临床医学</td>
+                        <td>预防医学与公共卫生学</td>
+                        <td>中医学与中药学</td>
+                        <td>护理学</td>
+                        <td>考研政治</td>
+                        <td>西医综合</td>
+                        <td>中医综合</td>
+                    </tr>
+                    <tr>
+                        <td>ShuKunGPT</td>
+                        <td><a href='https://www.shukun.net/'>数坤科技</a></td>
+                        <td>64.44</td>
+                        <td>63.00 </td>
+                        <td>76.50 </td>
+                        <td>81.00 </td>
+                        <td>64.50 </td>
+                        <td>58.25 </td>
+                        <td>77.50 </td>
+                        <td>78.50 </td>
+                        <td>74.75 </td>
+                        <td>55.00 </td>
+                        <td>73.75 </td>
+                        <td>70.50 </td>
+                        <td>76.00 </td>
+                        <td>73.75 </td>
+                        <td>66.25 </td>
+                        <td>65.50 </td>
+                        <td>67.25 </td>
+                        <td>73.25 </td>
+                        <td>59.25 </td>
+                        <td>61.25 </td>
+                        <td>65.25 </td>
+                        <td>58.50 </td>
+                        <td>62.25 </td>
+                        <td>68.75 </td>
+                        <td>61.75 </td>
+                        <td>56.25 </td>
+                        <td>57.00 </td>
+                        <td>49.75 </td>
+                        <td>41.25 </td>
+                    </tr>
+                    <tr>
+                        <td>GPT-4</td>
+                        <td><a href='https://openai.com/'>OpenAI</a></td>
+                        <td>58.37 (58.37)</td>
+                        <td>59.75 (59.75)</td>
+                        <td>58.5 (58.50)</td>
+                        <td>64.50 (64.50)</td>
+                        <td>60.75 (60.75)</td>
+                        <td>56.00 (56.00)</td>
+                        <td>77.50 (77.50)</td>
+                        <td>72.50 (72.50)</td>
+                        <td>68.75 (68.75)</td>
+                        <td>58.50 (58.50)</td>
+                        <td>54.75 (54.75)</td>
+                        <td>47.00 (47.00)</td>
+                        <td>60.00 (60.00)</td>
+                        <td>63.25 (63.25)</td>
+                        <td>39.50 (39.50)</td>
+                        <td>47.25 (47.25)</td>
+                        <td>59.50 (59.50)</td>
+                        <td>46.25 (46.25)</td>
+                        <td>58.50 (58.50)</td>
+                        <td>60.75 (60.75)</td>
+                        <td>65.25 (65.25)</td>
+                        <td>63.00 (63.00)</td>
+                        <td>65.50 (65.50)</td>
+                        <td>68.25 (68.25)</td>
+                        <td>42.00 (42.00)</td>
+                        <td>57.00 (57.00)</td>
+                        <td>61.00 (61.00)</td>
+                        <td>61.25 (61.25)</td>
+                        <td>37.50 (37.50)</td>
+                    </tr>
+                    <tr>
+                        <td>ChatGLM2-6B</td>
+                        <td><a href='https://github.com/THUDM'>THUDM</a></td>
+                        <td>44.91 (45.70)</td>
+                        <td>43.50 (43.50)</td>
+                        <td>43.75 (46.38)</td>
+                        <td>48.25 (48.25)</td>
+                        <td>47.25 (47.37)</td>
+                        <td>39.25 (39.25)</td>
+                        <td>54.25 (56.07)</td>
+                        <td>63.50 (65.13)</td>
+                        <td>51.50 (52.02)</td>
+                        <td>46.25 (46.25)</td>
+                        <td>36.50 (36.71)</td>
+                        <td>38.25 (40.11)</td>
+                        <td>49.50 (50.51)</td>
+                        <td>48.50 (48.50)</td>
+                        <td>43.75 (46.05)</td>
+                        <td>40.75 (40.95)</td>
+                        <td>43.75 (45.34)</td>
+                        <td>46.25 (48.94)</td>
+                        <td>43.50 (43.94)</td>
+                        <td>38.50 (38.60)</td>
+                        <td>42.75 (43.51)</td>
+                        <td>39.25 (39.45)</td>
+                        <td>43.00 (43.00)</td>
+                        <td>50.25 (50.38)</td>
+                        <td>36.00 (37.50)</td>
+                        <td>43.00 (43.43)</td>
+                        <td>55.75 (55.75)</td>
+                        <td>42.25 (42.36)</td>
+                        <td>38.50 (40.21)</td>
+                    </tr>
+                    <tr>
+                        <td>Baichuan-13B-chat</td>
+                        <td><a href='https://github.com/baichuan-inc'>Baichuan-inc</a></td>
+                        <td>41.63 (42.68)</td>
+                        <td>38.50 (39.29)</td>
+                        <td>39.00 (40.94)</td>
+                        <td>43.75 (46.30)</td>
+                        <td>38.75 (40.32)</td>
+                        <td>35.00 (36.77)</td>
+                        <td>53.75 (54.71)</td>
+                        <td>54.75 (56.30)</td>
+                        <td>46.25 (47.19)</td>
+                        <td>38.50 (39.23)</td>
+                        <td>37.50 (38.66)</td>
+                        <td>37.75 (38.42)</td>
+                        <td>53.00 (53.67)</td>
+                        <td>43.25 (44.36)</td>
+                        <td>41.25 (41.88)</td>
+                        <td>44.25 (45.85)</td>
+                        <td>40.75 (42.34)</td>
+                        <td>45.75 (47.16)</td>
+                        <td>37.75 (38.32)</td>
+                        <td>38.00 (38.48)</td>
+                        <td>39.75 (40.36)</td>
+                        <td>39.25 (40.05)</td>
+                        <td>37.75 (39.37)</td>
+                        <td>47.00 (47.47)</td>
+                        <td>40.25 (40.76)</td>
+                        <td>39.75 (40.36)</td>
+                        <td>40.75 (40.75)</td>
+                        <td>35.00 (35.99)</td>
+                        <td>38.75 (39.85)</td>
+                    </tr>
+                    <tr>
+                        <td>IvyGPT</td>
+                        <td><a href='https://www.mpu.edu.mo/esca/zh/index.php'>Macao Polytechnic University</a></td>
+                        <td>38.54 </td>
+                        <td>36.75 </td>
+                        <td>37.75 </td>
+                        <td>42.00 </td>
+                        <td>42.00 </td>
+                        <td>30.00 </td>
+                        <td>51.00 </td>
+                        <td>47.00 </td>
+                        <td>46.25 </td>
+                        <td>30.00 </td>
+                        <td>36.75 </td>
+                        <td>40.50 </td>
+                        <td>47.25 </td>
+                        <td>38.75 </td>
+                        <td>35.00 </td>
+                        <td>43.50 </td>
+                        <td>39.50 </td>
+                        <td>42.50 </td>
+                        <td>37.00 </td>
+                        <td>37.00 </td>
+                        <td>40.25 </td>
+                        <td>34.50 </td>
+                        <td>34.75 </td>
+                        <td>35.75 </td>
+                        <td>36.25 </td>
+                        <td>32.25 </td>
+                        <td>40.25 </td>
+                        <td>39.75 </td>
+                        <td>32.25 </td>
+                    </tr>
+                    <tr>
+                        <td>ChatGPT</td>
+                        <td><a href='https://openai.com/'>OpenAI</a></td>
+                        <td>38.09 (38.09)</td>
+                        <td>42.75 (42.75)</td>
+                        <td>39.50 (39.50)</td>
+                        <td>43.25 (43.25)</td>
+                        <td>41.00 (41.00)</td>
+                        <td>37.25 (37.25)</td>
+                        <td>53.25 (53.25)</td>
+                        <td>46.75 (46.75)</td>
+                        <td>46.25 (46.25)</td>
+                        <td>36.50 (36.5)</td>
+                        <td>35.75 (35.75)</td>
+                        <td>33.00 (33.00)</td>
+                        <td>43.00 (43.00)</td>
+                        <td>44.75 (44.75)</td>
+                        <td>26.50 (26.50)</td>
+                        <td>37.50 (37.50)</td>
+                        <td>39.25 (39.25)</td>
+                        <td>33.00 (33.00)</td>
+                        <td>38.50 (38.50)</td>
+                        <td>41.25 (41.25)</td>
+                        <td>40.50 (40.50)</td>
+                        <td>35.25 (35.25)</td>
+                        <td>40.00 (40.00)</td>
+                        <td>50.25 (50.25)</td>
+                        <td>26.25 (26.25)</td>
+                        <td>36.50 (36.50)</td>
+                        <td>20.50 (20.50)</td>
+                        <td>39.25 (39.25)</td>
+                        <td>19.00 (19.00)</td>
+                    </tr>
+                    <tr>
+                        <td>Sunsimiao</td>
+                        <td><a href='https://github.com/X-D-Lab'>X-D Lab</a></td>
+                        <td>35.32 </td>
+                        <td>38.25 </td>
+                        <td>36.25 </td>
+                        <td>45.75 </td>
+                        <td>33.00 </td>
+                        <td>30.75 </td>
+                        <td>46.00 </td>
+                        <td>43.50 </td>
+                        <td>42.25 </td>
+                        <td>28.00 </td>
+                        <td>35.25 </td>
+                        <td>34.75 </td>
+                        <td>42.00 </td>
+                        <td>36.00 </td>
+                        <td>32.25 </td>
+                        <td>37.50 </td>
+                        <td>38.25 </td>
+                        <td>38.50 </td>
+                        <td>29.50 </td>
+                        <td>31.00 </td>
+                        <td>30.25 </td>
+                        <td>27.50 </td>
+                        <td>30.00 </td>
+                        <td>44.00 </td>
+                        <td>33.00 </td>
+                        <td>27.50 </td>
+                        <td>47.25 </td>
+                        <td>34.25 </td>
+                        <td>29.00 </td>
+                    </tr>
+                    <tr>
+                        <td>HuatuoGPT (华佗)</td>
+                        <td><a href='https://github.com/FreedomIntelligence'>CUHK(SZ)-NLP</a></td>
+                        <td>31.38 (32.06)</td>
+                        <td>32.00 (32.00)</td>
+                        <td>34.50 (34.87)</td>
+                        <td>33.25 (33.25)</td>
+                        <td>31.25 (31.33)</td>
+                        <td>28.25 (29.89)</td>
+                        <td>37.00 (40.00)</td>
+                        <td>38.00 (38.19)</td>
+                        <td>36.00 (36.83)</td>
+                        <td>29.00 (29.44)</td>
+                        <td>28.00 (29.86)</td>
+                        <td>28.75 (29.11)</td>
+                        <td>36.50 (36.50)</td>
+                        <td>31.50 (31.50)</td>
+                        <td>26.00 (26.00)</td>
+                        <td>31.75 (32.95)</td>
+                        <td>31.50 (32.14)</td>
+                        <td>30.50 (31.44)</td>
+                        <td>30.75 (31.28)</td>
+                        <td>29.50 (30.18)</td>
+                        <td>36.25 (36.25)</td>
+                        <td>29.50 (31.64)</td>
+                        <td>29.00 (29.82)</td>
+                        <td>38.25 (39.23)</td>
+                        <td>28.50 (28.57)</td>
+                        <td>28.25 (28.25)</td>
+                        <td>28.50 (30.90)</td>
+                        <td>30.25 (30.25)</td>
+                        <td>26.00 (26.07)</td>
+                    </tr>
+                    <tr>
+                        <td>MedicalGPT</td>
+                        <td><a href='https://github.com/shibing624'>Xu Ming</a></td>
+                        <td>26.45 (26.95)</td>
+                        <td>25.00 (25.06)</td>
+                        <td>25.75 (30.00)</td>
+                        <td>29.25 (29.62)</td>
+                        <td>29.50 (29.72)</td>
+                        <td>25.75 (25.75)</td>
+                        <td>34.75 (34.75)</td>
+                        <td>35.75 (35.75)</td>
+                        <td>32.25 (32.25)</td>
+                        <td>21.25 (21.36)</td>
+                        <td>23.75 (23.87)</td>
+                        <td>24.00 (25.33)</td>
+                        <td>27.50 (27.50)</td>
+                        <td>25.75 (25.81)</td>
+                        <td>24.25 (24.43)</td>
+                        <td>26.25 (26.98)</td>
+                        <td>26.50 (26.50)</td>
+                        <td>27.00 (27.00)</td>
+                        <td>28.00 (29.61)</td>
+                        <td>25.75 (26.36)</td>
+                        <td>27.75 (27.82)</td>
+                        <td>22.00 (23.04)</td>
+                        <td>29.50 (29.50)</td>
+                        <td>32.00 (32.16)</td>
+                        <td>20.75 (20.89)</td>
+                        <td>22.50 (24.66)</td>
+                        <td>22.25 (22.25)</td>
+                        <td>24.50 (24.69)</td>
+                        <td>21.25 (21.96)</td>
+                    </tr>
+                    <tr>
+                        <td>ChatMed-Consult</td>
+                        <td><a href='https://github.com/michael-wzhu'>华东师范大学</a></td>
+                        <td>21.71 (25.69)</td>
+                        <td>20.50 (22.40)</td>
+                        <td>24.00 (25.74)</td>
+                        <td>21.25 (100.00)</td>
+                        <td>22.50 (23.75)</td>
+                        <td>18.75 (20.22)</td>
+                        <td>24.75 (25.71)</td>
+                        <td>25.50 (27.72)</td>
+                        <td>23.00 (24.34)</td>
+                        <td>17.25 (19.06)</td>
+                        <td>19.25 (21.33)</td>
+                        <td>23.75 (23.81)</td>
+                        <td>24.25 (25.87)</td>
+                        <td>20.25 (21.39)</td>
+                        <td>19.50 (21.37)</td>
+                        <td>21.25 (22.43)</td>
+                        <td>20.75 (21.78)</td>
+                        <td>22.5 (23.44)</td>
+                        <td>23.75 (24.23)</td>
+                        <td>22.50 (23.14)</td>
+                        <td>24.75 (25.65)</td>
+                        <td>20.75 (21.78)</td>
+                        <td>18.00 (20.06)</td>
+                        <td>23.50 (24.54)</td>
+                        <td>19.25 (20.86)</td>
+                        <td>20.00 (20.81)</td>
+                        <td>24.50 (24.50)</td>
+                        <td>21.25 (22.25)</td>
+                        <td>20.75 (21.01)</td>
+                    </tr>
+                    <tr>
+                        <td>Bentsao (本草)</td>
+                        <td><a href='https://github.com/SCIR-HI'>SCIR-HI</a></td>
+                        <td>21.25 (23.21)</td>
+                        <td>24.50 (24.50)</td>
+                        <td>23.00 (23.29)</td>
+                        <td>24.25 (24.43)</td>
+                        <td>20.50 (20.55)</td>
+                        <td>18.25 (18.30)</td>
+                        <td>24.00 (44.44)</td>
+                        <td>23.25 (23.88)</td>
+                        <td>22.25 (29.41)</td>
+                        <td>15.25 (16.74)</td>
+                        <td>18.25 (18.25)</td>
+                        <td>20.75 (21.84)</td>
+                        <td>25.00 (29.03)</td>
+                        <td>22.00 (22.00)</td>
+                        <td>18.25 (20.22)</td>
+                        <td>22.00 (22.45)</td>
+                        <td>19.50 (21.11)</td>
+                        <td>24.75 (25.00)</td>
+                        <td>23.50 (24.37)</td>
+                        <td>22.75 (22.86)</td>
+                        <td>26.00 (26.20)</td>
+                        <td>18.25 (18.39)</td>
+                        <td>20.00 (20.15)</td>
+                        <td>21.00 (21.21)</td>
+                        <td>19.25 (19.90)</td>
+                        <td>20.50 (20.55)</td>
+                        <td>16.75 (16.75)</td>
+                        <td>21.50 (34.00)</td>
+                        <td>19.75 (20.15)</td>
+                    </tr>
+                    <tr>
+                        <td>ChatGLM-Med</td>
+                        <td><a href='https://github.com/SCIR-HI'>SCIR-HI</a></td>
+                        <td>20.67 (22.79)</td>
+                        <td>21.50 (23.37)</td>
+                        <td>22.50 (40.00)</td>
+                        <td>23.75 (25.33)</td>
+                        <td>21.50 (23.56)</td>
+                        <td>19.50 (20.97)</td>
+                        <td>23.50 (25.00)</td>
+                        <td>25.75 (27.18)</td>
+                        <td>24.00 (27.01)</td>
+                        <td>15.00 (15.75)</td>
+                        <td>19.25 (20.65)</td>
+                        <td>19.75 (20.57)</td>
+                        <td>20.75 (21.73)</td>
+                        <td>18.50 (19.22)</td>
+                        <td>24.50 (26.23)</td>
+                        <td>24.25 (25.06)</td>
+                        <td>21.75 (22.6)</td>
+                        <td>26.25 (27.27)</td>
+                        <td>18.75 (19.43)</td>
+                        <td>23.75 (24.61)</td>
+                        <td>20.50 (21.52)</td>
+                        <td>17.00 (17.99)</td>
+                        <td>18.75 (20.11)</td>
+                        <td>21.50 (25.86)</td>
+                        <td>16.50 (18.28)</td>
+                        <td>20.50 (21.69)</td>
+                        <td>14.25 (14.39)</td>
+                        <td>19.75 (20.41)</td>
+                        <td>15.50 (22.22)</td>
+                    </tr>
+                    <tr>
+                        <td>DoctorGLM</td>
+                        <td><a href='https://xionghonglin.github.io/DoctorGLM/'>上海科技大学</a></td>
+                        <td>7.63 (25.36)</td>
+                        <td>6.00 (21.92)</td>
+                        <td>8.00 (29.63)</td>
+                        <td>6.00 (21.43)</td>
+                        <td>9.00 (27.27)</td>
+                        <td>5.75 (20.83)</td>
+                        <td>6.00 (29.27)</td>
+                        <td>11.50 (34.69)</td>
+                        <td>6.75 (30.00)</td>
+                        <td>5.00 (22.45)</td>
+                        <td>7.00 (24.35)</td>
+                        <td>6.00 (29.41)</td>
+                        <td>9.50 (24.52)</td>
+                        <td>10.25 (21.98)</td>
+                        <td>10.50 (23.14)</td>
+                        <td>6.75 (23.64)</td>
+                        <td>9.25 (22.29)</td>
+                        <td>7.00 (29.79)</td>
+                        <td>8.00 (20.39)</td>
+                        <td>12.50 (25.00)</td>
+                        <td>8.75 (21.18)</td>
+                        <td>8.25 (19.02)</td>
+                        <td>7.75 (20.90)</td>
+                        <td>6.75 (38.64)</td>
+                        <td>7.25 (35.29)</td>
+                        <td>5.00 (20.83)</td>
+                        <td>6.25 (19.05)</td>
+                        <td>7.50 (28.81)</td>
+                        <td>5.50 (24.39)</td>
+                    </tr>
+                    <tr>
+                        <td>BianQue-2 (扁鹊)</td>
+                        <td><a href='http://www2.scut.edu.cn/ft/'>华东师范大学</a></td>
+                        <td>7.26 (30.46)</td>
+                        <td>7.50 (18.99)</td>
+                        <td>9.00 (33.33)</td>
+                        <td>8.00 (18.33)</td>
+                        <td>8.75 (22.92)</td>
+                        <td>6.00 (21.84)</td>
+                        <td>6.75 (21.85)</td>
+                        <td>7.00 (66.67)</td>
+                        <td>7.50 (23.53)</td>
+                        <td>5.25 (16.94)</td>
+                        <td>7.75 (25.53)</td>
+                        <td>6.75 (20.00)</td>
+                        <td>6.75 (50.00)</td>
+                        <td>6.00 (18.90)</td>
+                        <td>8.25 (20.62)</td>
+                        <td>8.00 (21.43)</td>
+                        <td>7.25 (20.28)</td>
+                        <td>9.00 (42.86)</td>
+                        <td>6.00 (30.00)</td>
+                        <td>9.00 (25.00)</td>
+                        <td>10.00 (33.33)</td>
+                        <td>6.50 (18.98)</td>
+                        <td>5.75 (66.67)</td>
+                        <td>6.25 (20.69)</td>
+                        <td>9.75 (25.32)</td>
+                        <td>5.25 (21.43)</td>
+                        <td>4.00 (100.0)</td>
+                        <td>6.25 (22.47)</td>
+                        <td>9.00 (25.00)</td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <br>
+            <h2>CMB-Clin</h2>
+            <p>The following represents the scoring results of the AI grading model based on the groundtruth, evaluated
+                across four dimensions: fluency, relevance, completeness, and professionalism. Scores range from 1 to 5.
+            </p>
+            <table class="results">
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Fluency</th>
+                        <th>Relevance</th>
+                        <th>Completeness</th>
+                        <th>Proficiency</th>
+                        <th>Avg.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GPT-4</td>
+                        <td>4.97 </td>
+                        <td>4.53 </td>
+                        <td>4.12 </td>
+                        <td>4.45 </td>
+                        <td>4.52 </td>
+                    </tr>
+                    <tr>
+                        <td>ChatGPT</td>
+                        <td>4.96 </td>
+                        <td>4.47 </td>
+                        <td>4.17 </td>
+                        <td>4.42 </td>
+                        <td>4.51 </td>
+                    </tr>
+                    <tr>
+                        <td>Baichuan-13B-chat</td>
+                        <td>4.96 </td>
+                        <td>4.19 </td>
+                        <td>3.97 </td>
+                        <td>4.23 </td>
+                        <td>4.34 </td>
+                    </tr>
+                    <tr>
+                        <td>ChatGLM2-6B</td>
+                        <td>4.86 </td>
+                        <td>3.76 </td>
+                        <td>3.51 </td>
+                        <td>4.00 </td>
+                        <td>4.03 </td>
+                    </tr>
+                    <tr>
+                        <td>HuatuoGPT</td>
+                        <td>4.89 </td>
+                        <td>3.75 </td>
+                        <td>3.38 </td>
+                        <td>3.86 </td>
+                        <td>3.97 </td>
+                    </tr>
+                    <tr>
+                        <td>BianQue-2</td>
+                        <td>4.86 </td>
+                        <td>3.52 </td>
+                        <td>3.02 </td>
+                        <td>3.60 </td>
+                        <td>3.75 </td>
+                    </tr>
+                    <tr>
+                        <td>ChatMed-Consult</td>
+                        <td>4.88 </td>
+                        <td>3.08 </td>
+                        <td>2.67 </td>
+                        <td>3.30 </td>
+                        <td>3.48 </td>
+                    </tr>
+                    <tr>
+                        <td>MedicalGPT</td>
+                        <td>4.48 </td>
+                        <td>2.64 </td>
+                        <td>2.19 </td>
+                        <td>2.89 </td>
+                        <td>3.05 </td>
+                    </tr>
+                    <tr>
+                        <td>DoctorGLM</td>
+                        <td>4.74 </td>
+                        <td>2.00 </td>
+                        <td>1.65 </td>
+                        <td>2.30 </td>
+                        <td>2.67 </td>
+                    </tr>
+                    <tr>
+                        <td>Bentsao</td>
+                        <td>3.88 </td>
+                        <td>2.05 </td>
+                        <td>1.71 </td>
+                        <td>2.58 </td>
+                        <td>2.55 </td>
+                    </tr>
+                    <tr>
+                        <td>ChatGLM-Med</td>
+                        <td>3.55 </td>
+                        <td>1.97 </td>
+                        <td>1.61 </td>
+                        <td>2.37 </td>
+                        <td>2.38 </td>
+                    </tr>
+                </tbody>
+            </table>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://cevalbenchmark.com/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Comprehensive Medical Benchmark in Chinese (2023)</title>
+    <link rel="icon" href="./static/img/logo.png" type="image/icon type">
+    <!-- 指定文档的图标，将显示在浏览器的标签页和书签上。 -->
+    <link rel="stylesheet" href="./static/css/main.css">
+    <!--    # 引入名为"main_zh.css"的CSS样式表，用于设置文档的主要样式。-->
+    <link rel="stylesheet" href="./static/css/nav.css">
+    <!--    # 引入名为"nav.css"的CSS样式表，用于设置文档的导航栏样式。-->
+    <!--    # 引入名为"index.js"的JavaScript文件，用于设置文档的交互行为，其中defer属性表示该脚本将在页面加载后执行。-->
+    <link rel="stylesheet" href="./static/css/home.css">
+    <style type="text/css" id="operaUserStyle"></style>
+
+</head>
+
+<div id="nav">
+    <div id="icon">
+        <img src="./static/img/logo.png" id="nav-icon">
+        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com" style="margin-left: 2px; font-size: 24px">CMB
+        </a>
+    </div>
+    <div>
+        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#home">Home</a>
+        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#data">Data</a>
+        <a class="nav-button" target="_blank" href="http://arxiv.org/abs/2308.08833">Paper</a>
+        <a class="nav-button" target="_blank" href="https://github.com/FreedomIntelligence/CMB">Github</a>
+        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com/static/leaderboard.html">Leaderboard</a>
+        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com/static/submit.html">Submit</a>
+        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#contact">Contact</a>
+    </div>
+</div>
+
+
+<!-- anchor for the home button -->
+<div id="home" style="position: absolute; top: 0;"></div>
+
+<!-- banner -->
+<div id="title">
+    <div id="title-wrapper">
+        <img src="./static/img/logo.png" id="title-icon">
+        <p id="title-text">CMB</p>
+    </div>
+    <p id="subtitle-text">
+        A Comprehensive Medical Benchmark in Chinese
+        <br>
+        (2023)
+    </p>
+    <p id="title-padding-bottom">&nbsp;</p>
+</div>
+
+<!-- the main body of the page -->
+<!-- each section uses an empty div as an anchor -->
+<div id="body">
+    <div class="section">
+        <h1>About CMB</h1>
+        <p style="line-height: 150%">
+            CMB is a comprehensive, multi-level Medical Benchmark in Chinese. It encompasses 280,839 multiple-choice
+            questions and 74 complex case consultation questions, covering all clinical medical specialties and various
+            professional levels. The platform aims to holistically evaluate a model&#39;s medical knowledge and clinical
+            consultation capabilities. The specific components are as follows. You can view and download our dataset on
+            <a class="ext-link" href='https://huggingface.co/datasets/FreedomIntelligence/CMB'>HuggingFace</a>.
+        </p>
+        <div class="example-box-row">
+            <figure id="example-img">
+                <img src="./static/img/CMB-2.svg" alt="CMB-2.svg">
+            </figure>
+            <!-- <figure id="example-img-left">
+                <img src="./static/img/CMB-Main.png" alt="CMB-Main.png">
+            </figure>
+            <figure id="example-img-right">
+                <img src="./static/img/CMB-Exam.png" alt="CMB-Exam.png">
+            </figure> -->
+        </div>
+        <h2>Components</h2>
+        <p style="line-height: 150%">
+        <ul>
+            <li>
+                <p>CMB-Exam: Comprehensive multi-level assessment for medical knowledge</p>
+                <ul>
+                    <li>Structure: 6 major categories and 28 subcategories, <a class="ext-link"
+                            href='https://github.com/FreedomIntelligence/CMB/blob/main/catalog.md'>View Catalog</a></li>
+                    <li>CMB-test: 400 questions per subcategories, 11200 questions in total</li>
+                    <li>CMB-val: 280 questions with solutions and explanations; used as source for CoT and few-shot</li>
+                    <li>CMB-train: 269359 questions for medical knowledge injection</li>
+                </ul>
+            </li>
+            <li>
+                <p>CMB-Clin: 74 cases of complex medical inquires</p>
+                <!-- <ul>
+                    <li>数据: 74例复杂病例问诊; <strong>详见上图示例；</strong></li>
+                </ul> -->
+            </li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="section">
+        <div id="data" class="anchor"></div>
+        <h1>Data</h1>
+        <p>
+            Our data can be directly downloaded from
+            <a class="ext-link" href='https://huggingface.co/datasets/FreedomIntelligence/CMB'>Huggingface</a>.
+            Please refer to our
+            <a class="ext-link" href='https://github.com/FreedomIntelligence/CMB#-download-data'>GitHub</a>
+            for instructions on how to access and utilize the data.
+        </p>
+    </div>
+
+    <!-- <hr> -->
+    <div class="section">
+        <div id="citation" class="anchor"></div>
+        <h1>Citation</h1>
+        <!-- <p>
+            If the paper, codes, or the dataset inspires you, please cite us:
+        </p> -->
+        <pre class="bibtax">@article{wang2023cmb,
+            title={CMB: A Comprehensive Medical Benchmark in Chinese},
+            author={Wang, Xidong and Chen, Guiming Hardy and Song, Dingjie and Zhang, Zhiyi and Chen, Zhihong and Xiao, Qingying and Jiang, Feng and Li, Jianquan and Wan, Xiang and Wang, Benyou and others},
+            journal={arXiv preprint arXiv:2308.08833},
+            year={2023}
+}</pre>
+        <pre class="bibtax">@misc{cmedbenchmark,
+            title={CMB: Chinese Medical Benchmark},
+            author={Xidong Wang*, Guiming Hardy Chen*, Dingjie Song*, Zhiyi Zhang*, Qingying Xiao, Xiangbo Wu, Feng Jiang, Jianquan Li, Benyou Wang},
+            note={Xidong Wang, Guiming Hardy Chen, Dingjie Song, and Zhiyi Zhang contributed equally to this github repo.},
+            year = {2023},
+            publisher = {GitHub},
+            journal = {GitHub repository},
+            howpublished = {\url{https://github.com/FreedomIntelligence/CMB}},
+}</pre>
+        <br>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" id="contact">
+        <h1>Contact US</h1>
+        <p>
+            For inquiries regarding CMB, please contact us at
+            <a class="ext-link" href='mailto:cmedbenchmark@163.com'>cmedbenchmark@163.com</a>
+            or create an issue on
+            <a class="ext-link" href='https://github.com/FreedomIntelligence/CMB'>Github</a>.
+            If you are interested in potential collaboration, please reach out to
+            <a class="ext-link" href='mailto:wangbenyou@cuhk.edu.cn'>wangbenyou@cuhk.edu.cn</a>.
+        </p>
+    </div>
+
+    <!-- Affiliation  -->
+    <div class="section" style="text-align: center;">
+        <div class="profile">
+            <a href="https://www.cuhk.edu.cn/en" target="_blank" rel="external">
+                <img class="center-block" src="./static/img/cuhk_logo1.png" style="height:6em; max-width: 100%;"></a>
+        </div>
+        <div class="profile">
+            <a href="http://www.sribd.cn/" target="_blank" rel="external">
+                <img class="center-block" src="./static/img/sribd_logo.png" style="height:6em; max-width: 100%;"></a>
+        </div>
+    </div>
+
+</div>
+<!-- footer -->
+<div id="footer" style="font-size: 12pt; text-align: center">
+    © 2023 Chinese University of Hong Kong, Shenzhen.
+</div>
+
+
+
+</body>
+
+</html>

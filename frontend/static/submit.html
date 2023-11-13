@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://cevalbenchmark.com/static/user_interface.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Comprehensive Medical Benchmark in Chinese (2023)</title>
+    <link rel="icon" href="./img/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/user_interface.css">
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <style type="text/css" id="operaUserStyle"></style>
+    <script src="./js/upload.js"></script>
+
+</head>
+
+<body>
+
+    <div id="nav">
+        <div id="icon">
+            <img src="./img/logo.png" id="nav-icon">
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com" style="margin-left: 2px; font-size: 24px">CMB
+            </a>
+        </div>
+        <div>
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#home">Home</a>
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#data">Data</a>
+            <a class="nav-button" target="_blank" href="http://arxiv.org/abs/2308.08833">Paper</a>
+            <a class="nav-button" target="_blank" href="https://github.com/FreedomIntelligence/CMB">Github</a>
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com/static/leaderboard.html">Leaderboard</a>
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com/static/submit.html">Submit</a>
+            <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#contact">Contact</a>
+        </div>
+    </div>
+
+    <div id="body">
+        <br><br><br><br>
+        <p>Welcome to CMB auto-evaluation platform! After submission, a breakdown of accuracy per category and subcategory will be
+            shown right below. A JSON file is also available for downloading.
+        </p>
+        <div class="rules">
+            <p><b>Submission Format</b></p>
+            <ul>
+                <li>
+                    Here is a <a id="download_sample" href="https://file.huatuogpt.cn/files/models_ref/cmb/sample.json">sample</a>
+                    for submission.
+                </li>
+                <li>
+                    You can validate the format by running the following Python code snippet:<br>
+                    <code>
+                        import json
+                        <br>
+                        samples = json.load(open(fp)) 
+                        <br><br>
+                        assert type(samples) == list
+                        <br>
+                        assert len(samples) == 11200
+                        <br>
+                        assert all([type(s) == dict for s in samples])
+                        <br><br>
+                        # "id" and "model_answer" are required keys for each sample. Redundant keys have no effect on evaluation.
+                        <br>
+                        assert all(['id' in s for s in samples]), "'id' must be a key of every sample"
+                        <br>
+                        assert all(['model_answer' in s for s in samples]), "'model_answer' must be a key of every sample"
+                        <br>
+                        assert sorted([s['id'] for s in samples]) == list(range(1, 11200+1)), 'ids must start from 1 and end at 11200'
+                        <br><br>
+                        print('good to go!')
+                    </code>
+                </li>
+            </ul>
+        </div>
+        <div id="content" style="display: flex; align-items: center;">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="fileInput" class="custom-file-input">1.Choose File</label>
+                <input type="file" id="fileInput" name="file" accept=".json" required="">
+                <input type="text" id="filenameInput" name="filename" readonly="" value="upload your file here">
+                <button id="submit_button" type="submit">2.Upload ＆ Process</button>
+            </form>
+        </div>
+        <br>
+        <div class="rules"><b>Submit</b>
+            <br><br>
+            1.Choose a local <code>.json</code> file by clicking the <b>"Choose File"</b> button.
+            <br><br>
+            2.Click the <b>"Upload & Process"</b> button, It usually takes less than one minute to score the answers. Once processed, results will be displayed
+            in the <b>"Result"</b> section below.
+            <br><br>
+            3.Send result score to cmedbenchmark@163.com for publicity
+            <br>
+        </div>
+        <h2>Result</h2>
+        <a target="_blank" id="download_result" style="display: none;" href="" download="result.json">download</a>
+        <div id="result" class="rules"><br></div>
+
+    </div>
+
+
+
+</body>
+
+</html>
