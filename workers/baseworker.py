@@ -19,26 +19,39 @@ class BaseWorker():
         self.gen_kwargs = config.get('gen_kwargs', {})
         self.model_id = config.model_name
 
-        # if os.path.exists(output_pth):
-        #     if not overwrite:
-        #         print(f'{output_pth} exists. Please pass `overwrite=True` to avoid unwanted overwriting.')
-        #         exit(1)
 
-    def init_components(self) -> None:
-        '''
-        Initialize model and processor, and anything needed in forward
-        '''
-        raise NotImplementedError
-    
     @classmethod
     def from_config(cls, **kwargs):
         return cls(**kwargs)
 
+    def init_components(self) -> None:
+        '''
+        Initialize model and processor, and anything needed in forward().
+        '''
+        raise NotImplementedError
+    
 
 
 
-    def forward(self, questions: list[str], image_paths: list[str], device, gen_kwargs) -> list[str]:
 
+    def forward(self, questions: list[str], image_paths: list[str], device, gen_kwargs: dict) -> list[str]:
+        '''
+        Parameters: 
+            `questions`: a list of questions to ask the model.
+
+            `image_paths`: a list of image paths for the images.
+
+            `device`: the correct device allocated automatically by `accelerate`. Use it by calling `.to(device)`.
+
+            `gen_kwargs`: generation hyperparameters supported by `transformers.GenerationConfigs`. 
+
+
+        Returns:
+            `prompts`: a list of prompts that are actually fed into the model. If they are the same as `questions`, return `questions` here.
+            
+            `answers`: a list of answers from the model.
+
+        '''
         raise NotImplementedError
 
     def __call__(self, device, **kwargs: Any) -> Any:
@@ -55,21 +68,9 @@ class BaseWorker():
         outputs = self.collate_batch_for_output(kwargs, answers=answers, prompts=prompts)
         return outputs
     
-    def print_model(self, accelerator):
-        total_params = sum(
-            param.numel() for param in self.model.parameters()
-        )
-        accelerator.print(self.model_id, total_params)
-        exit()
-
-
     
     def prepare(self, dataloader, accelerator: Accelerator):
-        # self.print_model(accelerator)
-
-
         self.model, dataloader = accelerator.prepare(self.model, dataloader)
-        # dataloader = accelerator.prepare(dataloader)
         return dataloader
         
 
