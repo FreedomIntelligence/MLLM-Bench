@@ -1,0 +1,109 @@
+fuyu-8b:
+    model_name: fuyu-8bmodels/fuyu"
+    gen_kwargs:
+        max_new_tokens: 512
+        min_new_tokens: 1
+        do_sample: true
+        temperature: 0.8
+
+instructblip-vicuna-13b:
+    model_name: instructblip-vicuna-13b
+    model_dir: "models/instructblip-vicuna-13b"
+    gen_kwargs:
+        max_new_tokens: 512
+        min_new_tokens: 1
+        do_sample: true
+        temperature: 0.8
+
+seed-llama-14b:
+    model_name: seed-llama-14b
+    model_dir: "models/SEED"
+    gen_kwargs:
+        max_new_tokens: 512
+        min_new_tokens: 1
+        do_sample: true
+        temperature: 0.8
+    
+
+qwen-vl-chat:
+    model_name: qwen-vl-chat
+    model_dir: "models/Qwen-VL-Chat"
+    gen_kwargs:
+        max_new_tokens: 512
+        min_new_tokens: 1
+        do_sample: true
+        temperature: 0.8
+
+blip2-flan-t5-xl:
+    model_name: blip2-flan-t5-xl
+    model_dir: models/blip2-flan-t5-xl
+    gen_kwargs:
+        max_new_tokens: 512
+        min_new_tokens: 1
+        do_sample: true
+        temperature: 0.8
+
+idefics-9b-instruct:
+    model_name: idefics-9b-instructgpt-v2
+    model_dir: models/idefics-9b-instruct
+    gen_kwargs:
+        max_new_tokens: 512
+        min_new_tokens: 1 # a must
+        do_sample: true
+        temperature: 0.8
+
+kosmos-2:
+    model_name: kosmos-2
+    model_dir: models/kosmos-2-patch14-224
+    gen_kwargs:
+        max_new_tokens: 512
+        min_new_tokens: 1
+        do_sample: true
+        temperature: 0.8
+
+        
+mPLUG-owl2:
+    model_name: mPLUG-owl2
+    model_dir: models/mplug-owl2-llama2-7b
+    gen_kwargs:
+        max_new_tokens: 512
+        min_new_tokens: 1
+        do_sample: true
+        temperature: 0.8
+
+minigpt-v2:
+    model_name: minigpt-v2
+    model_dir: models/minigpt-v2
+    cfg_path: '/mntcephfs/data/med/guimingchen/workspaces/vbench/MiniGPT-4/eval_configs/minigptv2_benchmark_evaluation.yaml'
+    gen_kwargs:
+        max_new_tokens: 512
+        min_new_tokens: 1
+        do_sample: true
+        temperature: 0.8
+
+llava-v1.5-13b:
+    model_name: llava-v1.5-13b
+    model_dir: models/llava-v1.5-13b
+    gen_kwargs:
+        max_new_tokens: 768
+        min_new_tokens: 1
+        do_sample: true
+        temperature: 0.8
+
+lvis-instruct4v-llava-7b:
+    model_name: lvis-instruct4v-llava-7b
+    model_dir: models/LVIS-Instruct4v-LLaVA-7b
+    gen_kwargs:
+        max_new_tokens: 768
+        min_new_tokens: 1
+        do_sample: true
+        temperature: 0.8
+
+cogvlm-chat:
+    model_name: cogvlm-chat
+    model_dir: models/cogvlm-chat
+    gen_kwargs:
+        max_new_tokens: 768
+        min_new_tokens: 1
+        do_sample: true
+        temperature: 0.8
