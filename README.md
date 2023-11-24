@@ -8,6 +8,9 @@ Evaluating Multi-modal LLMs using GPT-4V
 <p align="center">
    📃 <a href="arxiv.org" target="_blank">Paper</a> • 🌐 <a href="https://mllm-bench.llmzoo.com/" target="_blank">Website</a> • 🤗 <a href="huggingface.com" target="_blank">HuggingFace</a>  
 
+
+![Data Composition]()
+
 ## 🌈 Update
 * **[2023.11.18]** 🎉🎉🎉 This repo is made public!🎉🎉🎉
 
