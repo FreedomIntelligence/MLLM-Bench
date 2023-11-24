@@ -1,8 +1,8 @@
 # MLLM-Bench
-Evaluating Multi-modal LLMs using GPT-4V
+Evaluating Multi-modal LLMs using GPT-4V.
 <center>
 
-![Python 3.9+](https://img.shields.io/badge/Python-3.9-lightblue) ![Pytorch 1.13.0](https://img.shields.io/badge/PyTorch-1.13-lightblue) ![transformers](https://img.shields.io/badge/transformers-4.36.0.dev0%2B-lightblue) ![accelerate](https://img.shields.io/badge/accelerate-0.22-lightblue)
+![Python 3.9+](https://img.shields.io/badge/Python-3.9+-lightblue) ![Pytorch 2.0](https://img.shields.io/badge/PyTorch-2.0+-lightblue) ![transformers](https://img.shields.io/badge/transformers-4.36.0.dev0%2B-lightblue) ![accelerate](https://img.shields.io/badge/accelerate-0.22+-lightblue)
 </center>
 
 <p align="center">
