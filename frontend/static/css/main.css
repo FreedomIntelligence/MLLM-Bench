@@ -224,14 +224,32 @@ li {
     margin-bottom: 20px;
 }
 
-#example-box-row {
+.example-box-row-center {
+    display: block; /* 设置figure为块级元素 */
+    text-align: center; /* 使内容居中 */
+    margin: 0 auto; /* 上下边距为0，左右自动调整以居中 */
+}
+
+.example-box-row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between; /* 调整为space-between以分散两个div */
     align-items: center;
     margin-bottom: 30px;
 }
 
+.example-box-row > div p {
+    font-size: 0.9em; /* 减小字体大小 */
+    color: #666; /* 设置为淡灰色 */
+    /* 可选：增加其他样式以改进布局和可读性 */
+    line-height: 1.5; /* 增加行间距 */
+    margin-top: 10px; /* 在段落和图片之间增加一些空间 */
+}
+
+.example-box-row > div {
+    flex: 1; /* 为每个子div指定flex-grow属性 */
+    margin: 0 20px; /* 设置左右边距为20px，上下边距 */
+}
 /* data example images */
 #example-img {
     /* width: 15vw; */

@@ -7,8 +7,8 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Comprehensive Medical Benchmark in Chinese (2023)</title>
-    <link rel="icon" href="./static/img/logo.png" type="image/icon type">
+    <title>MLLMBench</title>
+    <link rel="icon" href="./static/img/MLLM-logo1.png" type="image/icon type">
     <!-- 指定文档的图标，将显示在浏览器的标签页和书签上。 -->
     <link rel="stylesheet" href="./static/css/main.css">
     <!--    # 引入名为"main_zh.css"的CSS样式表，用于设置文档的主要样式。-->
@@ -22,18 +22,18 @@
 
 <div id="nav">
     <div id="icon">
-        <img src="./static/img/logo.png" id="nav-icon">
-        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com" style="margin-left: 2px; font-size: 24px">CMB
+        <img src="./static/img/MLLM-logo1.png" id="nav-icon">
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com" style="margin-left: 2px; font-size: 24px">MLLMBench
         </a>
     </div>
     <div>
-        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#home">Home</a>
-        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#data">Data</a>
-        <a class="nav-button" target="_blank" href="http://arxiv.org/abs/2308.08833">Paper</a>
-        <a class="nav-button" target="_blank" href="https://github.com/FreedomIntelligence/CMB">Github</a>
-        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com/static/leaderboard.html">Leaderboard</a>
-        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com/static/submit.html">Submit</a>
-        <a class="nav-button" href="https://cmedbenchmark.llmzoo.com#contact">Contact</a>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com#home">Home</a>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com#data">Data</a>
+        <a class="nav-button" target="_blank" href="https://arxiv.org/abs/2311.13951">Paper</a>
+        <a class="nav-button" target="_blank" href="https://github.com/FreedomIntelligence/MLLM-Bench">Github</a>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com/static/leaderboard.html">Leaderboard</a>
+<!--        <a class="nav-button" href="https://mllm-bench.llmzoo.com/static/submit.html">Submit</a>-->
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com#contact">Contact</a>
     </div>
 </div>
 
@@ -44,11 +44,11 @@
 <!-- banner -->
 <div id="title">
     <div id="title-wrapper">
-        <img src="./static/img/logo.png" id="title-icon">
-        <p id="title-text">CMB</p>
+        <img src="./static/img/MLLM-logo1.png" id="title-icon">
+        <p id="title-text">MLLMBench</p>
     </div>
     <p id="subtitle-text">
-        A Comprehensive Medical Benchmark in Chinese
+        A Complicated and Comprehensive Multi-modal Large Language Models Benchmark
         <br>
         (2023)
     </p>
@@ -59,17 +59,19 @@
 <!-- each section uses an empty div as an anchor -->
 <div id="body">
     <div class="section">
-        <h1>About CMB</h1>
+        <h1>About MLLMBench</h1>
         <p style="line-height: 150%">
-            CMB is a comprehensive, multi-level Medical Benchmark in Chinese. It encompasses 280,839 multiple-choice
-            questions and 74 complex case consultation questions, covering all clinical medical specialties and various
-            professional levels. The platform aims to holistically evaluate a model&#39;s medical knowledge and clinical
-            consultation capabilities. The specific components are as follows. You can view and download our dataset on
-            <a class="ext-link" href='https://huggingface.co/datasets/FreedomIntelligence/CMB'>HuggingFace</a>.
+            MLLMBench is a complicated and comprehensive benchmarking suite inspired
+            by the multifaceted nature of the vicuna and the revised Bloom's Taxonomy. MLLM-Bench encompasses 420
+            complicated image-instruction pairs across six levels of capabilities: Perception, Understanding, Applying,
+            Analyzing, Evaluating, and Creation, testing up to 42 capabilities of MLLMs. It delves into detailed,
+            real-world scenarios designed to probe the models’ abilities in nuanced and complex contexts. You can view
+            and download our dataset on
+            <a class="ext-link" href='https://github.com/FreedomIntelligence/MLLM-Bench/tree/main/data'>GitHub</a>.
         </p>
-        <div class="example-box-row">
+        <div class="example-box-row-center">
             <figure id="example-img">
-                <img src="./static/img/CMB-2.svg" alt="CMB-2.svg">
+                <img src="./static/img/MLLM-Main.png" alt="MLLM-Main.png" style="width: 500px;">
             </figure>
             <!-- <figure id="example-img-left">
                 <img src="./static/img/CMB-Main.png" alt="CMB-Main.png">
@@ -78,26 +80,65 @@
                 <img src="./static/img/CMB-Exam.png" alt="CMB-Exam.png">
             </figure> -->
         </div>
-        <h2>Components</h2>
-        <p style="line-height: 150%">
+
+        <h2>Sample</h2>
+        <div class="example-box-row">
+            <div>
+                <figure id="Sample-left">
+                    <img src="./static/img/MLLM-Sample-1.png" alt="MLLM-Sample-1.png" style="width: 500px;">
+                </figure>
+                <p style="line-height: 150%">
+                    <strong>Instruction</strong>: Map out the complex interdependencies between species in this food web
+                    and identify any potential cascade effects if one species were to become extinct.
+                    <br>
+                    <strong>Capability</strong>: Natural Relation Understanding
+                    <br>
+                    <strong>Level</strong>: Analyzing
+                </p>
+            </div>
+            <div>
+                <figure id="Sample-right">
+                    <img src="./static/img/MLLM-Sample-2.png" alt="MLLM-Sample-2.png" style="width: 500px;">
+                </figure>
+                <p style="line-height: 150%">
+                    <strong>Instruction</strong>: Describe the quickest route to the nearest emergency exit from the
+                    "You Are Here" point.
+                    <br>
+                    <strong>Capability</strong>: Document Understanding
+                    <br>
+                    <strong>Level</strong>: Understanding
+                </p>
+            </div>
+        </div>
+        <br>
+        <h2>Taxonomy: 6 capability levels and 42 capabilities</h2>
+        <p>
+            Hierarchical Capability Level:
+        </p>
         <ul>
-            <li>
-                <p>CMB-Exam: Comprehensive multi-level assessment for medical knowledge</p>
-                <ul>
-                    <li>Structure: 6 major categories and 28 subcategories, <a class="ext-link"
-                            href='https://github.com/FreedomIntelligence/CMB/blob/main/catalog.md'>View Catalog</a></li>
-                    <li>CMB-test: 400 questions per subcategories, 11200 questions in total</li>
-                    <li>CMB-val: 280 questions with solutions and explanations; used as source for CoT and few-shot</li>
-                    <li>CMB-train: 269359 questions for medical knowledge injection</li>
-                </ul>
+            <li><strong>Perception</strong>: Have the basic capability to recognize and retrieve information from
+                multi-modal inputs.
+                Include 7 capabilities.
             </li>
-            <li>
-                <p>CMB-Clin: 74 cases of complex medical inquires</p>
-                <!-- <ul>
-                    <li>数据: 74例复杂病例问诊; <strong>详见上图示例；</strong></li>
-                </ul> -->
+            <li><strong>Understanding</strong>: Can process the information gathered during perception to construct
+                meaning. Include 10
+                capabilities.
+            </li>
+            <li><strong>Applying</strong>: Apply the information and knowledge to new but similar situations. Include 7
+                capabilities.
+            </li>
+            <li><strong>Analyzing</strong>: Have the ability to break information into parts to explore patterns and
+                relationships.
+                Include 12 capabilities.
+            </li>
+            <li><strong>Evaluation</strong>: Make judgments based on criteria and standards. Include 4 capabilities.
+            </li>
+            <li><strong>Creation</strong>: Synthesize information from both visual and textual data to generate new
+                conten. Include 2
+                capabilities.
             </li>
         </ul>
+
         </p>
     </div>
 
@@ -106,9 +147,9 @@
         <h1>Data</h1>
         <p>
             Our data can be directly downloaded from
-            <a class="ext-link" href='https://huggingface.co/datasets/FreedomIntelligence/CMB'>Huggingface</a>.
+            <a class="ext-link" href='https://github.com/FreedomIntelligence/MLLM-Bench/tree/main/data'>Github</a>.
             Please refer to our
-            <a class="ext-link" href='https://github.com/FreedomIntelligence/CMB#-download-data'>GitHub</a>
+            <a class="ext-link" href='https://github.com/FreedomIntelligence/MLLM-Bench'>GitHub</a>
             for instructions on how to access and utilize the data.
         </p>
     </div>
@@ -120,21 +161,8 @@
         <!-- <p>
             If the paper, codes, or the dataset inspires you, please cite us:
         </p> -->
-        <pre class="bibtax">@article{wang2023cmb,
-            title={CMB: A Comprehensive Medical Benchmark in Chinese},
-            author={Wang, Xidong and Chen, Guiming Hardy and Song, Dingjie and Zhang, Zhiyi and Chen, Zhihong and Xiao, Qingying and Jiang, Feng and Li, Jianquan and Wan, Xiang and Wang, Benyou and others},
-            journal={arXiv preprint arXiv:2308.08833},
-            year={2023}
-}</pre>
-        <pre class="bibtax">@misc{cmedbenchmark,
-            title={CMB: Chinese Medical Benchmark},
-            author={Xidong Wang*, Guiming Hardy Chen*, Dingjie Song*, Zhiyi Zhang*, Qingying Xiao, Xiangbo Wu, Feng Jiang, Jianquan Li, Benyou Wang},
-            note={Xidong Wang, Guiming Hardy Chen, Dingjie Song, and Zhiyi Zhang contributed equally to this github repo.},
-            year = {2023},
-            publisher = {GitHub},
-            journal = {GitHub repository},
-            howpublished = {\url{https://github.com/FreedomIntelligence/CMB}},
-}</pre>
+        <pre class="bibtax"></pre>
+        <pre class="bibtax"></pre>
         <br>
     </div>
 
@@ -142,10 +170,10 @@
     <div class="section" id="contact">
         <h1>Contact US</h1>
         <p>
-            For inquiries regarding CMB, please contact us at
+            For inquiries regarding MLLMBench, please contact us at
             <a class="ext-link" href='mailto:cmedbenchmark@163.com'>cmedbenchmark@163.com</a>
             or create an issue on
-            <a class="ext-link" href='https://github.com/FreedomIntelligence/CMB'>Github</a>.
+            <a class="ext-link" href='https://github.com/FreedomIntelligence/MLLM-Bench'>Github</a>.
             If you are interested in potential collaboration, please reach out to
             <a class="ext-link" href='mailto:wangbenyou@cuhk.edu.cn'>wangbenyou@cuhk.edu.cn</a>.
         </p>
@@ -157,10 +185,10 @@
             <a href="https://www.cuhk.edu.cn/en" target="_blank" rel="external">
                 <img class="center-block" src="./static/img/cuhk_logo1.png" style="height:6em; max-width: 100%;"></a>
         </div>
-        <div class="profile">
-            <a href="http://www.sribd.cn/" target="_blank" rel="external">
-                <img class="center-block" src="./static/img/sribd_logo.png" style="height:6em; max-width: 100%;"></a>
-        </div>
+<!--        <div class="profile">-->
+<!--            <a href="http://www.sribd.cn/" target="_blank" rel="external">-->
+<!--                <img class="center-block" src="./static/img/sribd_logo.png" style="height:6em; max-width: 100%;"></a>-->
+<!--        </div>-->
     </div>
 
 </div>
@@ -168,7 +196,6 @@
 <div id="footer" style="font-size: 12pt; text-align: center">
     © 2023 Chinese University of Hong Kong, Shenzhen.
 </div>
-
 
 
 </body>
