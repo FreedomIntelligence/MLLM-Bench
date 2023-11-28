@@ -6,7 +6,7 @@ Evaluating Multi-modal LLMs using GPT-4V.
 </center>
 
 <p align="center">
-   📃 <a href="arxiv.org" target="_blank">Paper</a> • 🌐 <a href="https://mllm-bench.llmzoo.com/" target="_blank">Website</a> • 🤗 <a href="huggingface.com" target="_blank">HuggingFace</a>  
+   📃 <a href="https://arxiv.org/abs/2311.13951" target="_blank">Paper</a> • 🌐 <a href="https://mllm-bench.llmzoo.com/" target="_blank">Website</a> • 🤗 <a href="huggingface.com" target="_blank">HuggingFace</a>  
 
 <p align="center">
 <img src="./image.png" alt="Data Composition" width="550" height="550">
