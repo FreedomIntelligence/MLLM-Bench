@@ -84,3 +84,14 @@ Rewrite `init_components()` and `forward()` method. Explanations of parameters a
       primaryClass={cs.CL}
 }
 ```
+
+
+## Star History
+
+<a href="https://star-history.com/#FreedomIntelligence/MLLM-Bench&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=FreedomIntelligence/MLLM-Bench&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=FreedomIntelligence/MLLM-Bench&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=FreedomIntelligence/MLLM-Bench&type=Date" />
+  </picture>
+</a>
