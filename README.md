@@ -16,7 +16,7 @@ Evaluating Multi-modal LLMs using GPT-4V.
 * **[2023.11.18]** 🎉🎉🎉 This repo is made public!🎉🎉🎉
 
 ## Leaderboard
-We present the results of voting using GPT-4V as anchor. The numbers denote *win/tie/lose* of a benchmarked model over GPT-4V. See more results of different evaluation protocols and anchors in our  [paper](link_to_paper.com). The information of benchmarked models is [here](./Model_cards.md).
+We present the results of voting using GPT-4V as anchor. The numbers denote *win/tie/lose* of a benchmarked model over GPT-4V. See more results of different evaluation protocols and anchors in our  [paper](https://arxiv.org/abs/2311.13951). The information of benchmarked models is [here](./Model_cards.md).
 
 | **Rank** | **Models**    | **Perception** | **Understanding** | **Applying** | **Analyzing** | **Evaluation** | **Creation** | **$\sum$ wins** |
 |:----------:|---------------|----------------|-------------------|--------------|---------------|----------------|--------------|-----------------|
