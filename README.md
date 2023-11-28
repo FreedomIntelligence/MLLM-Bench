@@ -18,7 +18,7 @@ Evaluating Multi-modal LLMs using GPT-4V.
 ## Leaderboard
 We present the results of voting using GPT-4V as anchor. The numbers denote *win/tie/lose* of a benchmarked model over GPT-4V. See more results of different evaluation protocols and anchors in our  [paper](https://arxiv.org/abs/2311.13951). The information of benchmarked models is [here](./Model_cards.md).
 
-| **Rank** | **Models**    | **Perception** | **Understanding** | **Applying** | **Analyzing** | **Evaluation** | **Creation** | **Win Rate over GPT-4** |
+| **Rank** | **Models**    | **Perception** | **Understanding** | **Applying** | **Analyzing** | **Evaluation** | **Creation** | **Win Rate over GPT-4V** |
 |:----------:|---------------|----------------|-------------------|--------------|---------------|----------------|--------------|-----------------|
 | 🏅️        | LLaVA-v1.5    | 5/15/50        | 10/39/51          | 14/18/38     | 6/41/53       | 10/12/18       | 6/19/15      | 0.121              |
 | 🥈        | LVIS          | 5/18/47        | 11/33/56          | 10/16/44     | 9/31/60       | 8/15/17        | 5/20/15      | 0.114              |
