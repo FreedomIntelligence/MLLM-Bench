@@ -72,3 +72,15 @@ Rewrite `init_components()` and `forward()` method. Explanations of parameters a
 
 
 ### Submission for Leaderboard
+
+## Citation
+```angular2
+@misc{ge2023mllmbench,
+      title={MLLM-Bench, Evaluating Multi-modal LLMs using GPT-4V}, 
+      author={Wentao Ge and Shunian Chen and Guiming Chen and Junying Chen and Zhihong Chen and Shuo Yan and Chenghao Zhu and Ziyue Lin and Wenya Xie and Xidong Wang and Anningzhe Gao and Zhiyi Zhang and Jianquan Li and Xiang Wan and Benyou Wang},
+      year={2023},
+      eprint={2311.13951},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
