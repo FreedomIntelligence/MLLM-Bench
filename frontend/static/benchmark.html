@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://cevalbenchmark.com/static/user_interface.html -->
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLLMBench</title>
+    <link rel="icon" href="./img/MLLM-logo1.png" type="image/icon type">
+    <!-- 指定文档的图标，将显示在浏览器的标签页和书签上。 -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--    # 引入名为"main_zh.css"的CSS样式表，用于设置文档的主要样式。-->
+    <link rel="stylesheet" href="./css/nav.css">
+    <!--    # 引入名为"nav.css"的CSS样式表，用于设置文档的导航栏样式。-->
+    <!--    # 引入名为"index.js"的JavaScript文件，用于设置文档的交互行为，其中defer属性表示该脚本将在页面加载后执行。-->
+    <link rel="stylesheet" href="./css/home.css">
+    <style type="text/css" id="operaUserStyle"></style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+<div id="nav" style="width:100%">
+    <div id="icon">
+        <img src="./img/MLLM-logo1.png" id="nav-icon">
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com" style="margin-left: 2px; font-size: 24px">MLLMBench
+        </a>
+    </div>
+    <div>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com#home">Home</a>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com#data">Data</a>
+        <a class="nav-button" target="_blank" href="https://arxiv.org/abs/2311.13951">Paper</a>
+        <a class="nav-button" target="_blank" href="https://github.com/FreedomIntelligence/MLLM-Bench">Github</a>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com/static/leaderboard.html">Leaderboard</a>
+                <a class="nav-button" href="https://mllm-bench.llmzoo.com/static/benchmark.html">Benchmark</a>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com#contact">Contact</a>
+    </div>
+</div>
+
+<div id="body">
+    <br><br><br><br>
+
+    <h1>Benchmark</h1>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Single Answer Grading</a>
+        </li>
+        <!--        <li class="nav-item">-->
+        <!--            <a class="nav-link" href="#">Pairwise Comparison</a>-->
+        <!--        </li>-->
+    </ul>
+
+    <!-- 下拉框容器 -->
+    <div style="display: flex;margin-top: 20px;">
+        <div style="margin-right: 10px; flex: 1;">
+            <!-- 第一个下拉框 -->
+            <select id="dropdown1" class="form-control">
+                <!-- 选项将通过JavaScript添加 -->
+            </select>
+        </div>
+        <div style="margin-left: 10px; flex: 2;">
+            <!-- 第二个下拉框 -->
+            <select id="dropdown2" class="form-control">
+                <!-- 选项将通过JavaScript添加 -->
+            </select>
+        </div>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <!-- 第三个下拉框 -->
+        <select id="dropdown3" class="form-control">
+        </select>
+    </div>
+
+    <!-- 显示内容的div -->
+    <div id="contentDisplay" style="margin: 20px 0px;padding: 10px;background-color: #DEEBF7;"></div>
+
+    <!-- 用于展示拼接结果的div -->
+    <div id="resultDisplay" style="margin: 20px 0px;padding: 10px;background-color: #E2F0D9;"></div>
+
+</div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/benchmark.js"></script>
+
+</body>
+
+</html>
