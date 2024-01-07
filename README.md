@@ -13,6 +13,8 @@ Evaluating Multi-modal LLMs using GPT-4V.
 
 
 ## 🌈 Update
+* **[2024.1.7]** V2 data, reuslts and leaderboard are updated.
+
 * **[2023.11.18]** 🎉🎉🎉 This repo is made public!🎉🎉🎉
 
 ## Leaderboard
