@@ -54,7 +54,7 @@ pip install git+https://github.com/huggingface/transformers
 
 
 
-### Answer generation
+### Answer Generation
 <details><summary>Click to expand</summary>
 
 - Configurate `accelerate` settings. We use `bf16` inference by default. If this is not supported by your device, set `downcast_bf16` to `false` and `mixed_precision` to `fp16`.
@@ -87,7 +87,7 @@ Rewrite `init_components()` and `forward()` method. Explanations of parameters a
 ### Submission for Leaderboard
 
 
-</details>
+
 ## Citation
 ```angular2
 @misc{ge2023mllmbench,
