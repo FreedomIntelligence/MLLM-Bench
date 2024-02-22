@@ -69,10 +69,25 @@ Rewrite `init_components()` and `forward()` method. Explanations of parameters a
 
 </details>
 
+### Self Evaluate
+<details><summary>Click to expand</summary>
 
+- Prepare the data in the format as shown in [data/anchor.json](./data/anchor.json), note that the key "unique_idx", "image", "gen_model_id", "prompt" and "answer" are required. Move your data under [data](./data/) folder.
+
+- Modify the parameters in [evaluate.sh](./evaluate.sh), especially "model_name" and "model2_path".
+
+- Put your OpenAI API key in [evaluate.py](./scripts/evaluate.py), please make sure you have access to model "gpt-4-vision-preview".
+
+- Run `bash evaluate.sh`.
+
+- NOTE: The per sample criteria is not provided for self-evaluate and this self-evaluation process is just used for your reference. If you wish your results to be displayed on the leaderboard, please refer to [Submission for Leaderboard](#submission-for-leaderboard).
+
+</details>
 
 ### Submission for Leaderboard
 
+
+</details>
 ## Citation
 ```angular2
 @misc{ge2023mllmbench,
