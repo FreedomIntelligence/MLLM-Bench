@@ -8,7 +8,7 @@ accelerate launch --config_file ./configs/accelerate_configs.yaml \
     --num_machines 1 \
     --machine_rank 0 \
     --num_processes 7  \
-    --deepspeed_multinode_launcher standard ./generate.py \
+    --deepspeed_multinode_launcher standard ./scripts/generate.py \
     --question_pth data/questions.json  \
     --model_name qwen-vl-chat \
     --bsz 6  \
