@@ -72,7 +72,7 @@ Rewrite `init_components()` and `forward()` method. Explanations of parameters a
 ### Self Evaluate
 <details><summary>Click to expand</summary>
 
-- Prepare the data in the format as shown in [data/anchor.json](./data/anchor.json), note that the key "unique_idx", "image", "gen_model_id", "prompt" and "answer" are required. Move your data under [data](./data/) folder.
+- Prepare the data in the format as shown in [data/anchor.json](./data/anchor.json), note that the key "unique_idx", "gen_model_id", and "answer" are required. Move your data under [data](./data/) folder.
 
 - Modify the parameters in [evaluate.sh](./evaluate.sh), especially "model_name" and "model2_path".
 

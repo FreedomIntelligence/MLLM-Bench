@@ -3,7 +3,6 @@ import json
 import argparse
 from prompts import gpt4v_eval_template as template
 from prompts import gpt4v_role as role
-from prompts import reference_template
 
 
 def format_input(model_1_path, model_2_path, output_path):
@@ -23,7 +22,7 @@ def format_input(model_1_path, model_2_path, output_path):
 
     model_1_dict = {}
     model_2_dict = {}
-    question_type_dict = {}
+    question_dict = {}
     
     # convert the list to dictionary, the key is unique_idx
     for ans in model_1_ans:
@@ -35,7 +34,7 @@ def format_input(model_1_path, model_2_path, output_path):
     model2 = model_2_dict[str(ans['unique_idx'])]['gen_model_id']
     
     for i in question_types:
-        question_type_dict[str(i['id'])] = i['meta']['question type']
+        question_dict[str(i['id'])] = i
 
     input_file = []
 
@@ -49,13 +48,13 @@ def format_input(model_1_path, model_2_path, output_path):
         
         ans1 = model_1_dict[idx]['answer']
         ans2 = model_2_dict[idx]['answer']
-        question_type = question_type_dict[idx]
+        question_type = question_dict[idx]['meta']['question type']
 
         # left, choose 1 is model_1, choose 2 is model_2
         item1 = {}
         item1['unique_idx'] = str(idx) + '_1'
-        item1['prompt'] = system + template.format(question=model_1_dict[idx]['prompt'], question_type = question_type, answer1=ans1, answer2=ans2)
-        item1['image'] = model_1_dict[idx]['image']
+        item1['prompt'] = system + template.format(question=question_dict[idx]['question'], question_type = question_type, answer1=ans1, answer2=ans2)
+        item1['image'] = question_dict[idx]['image_path']
         item1['model_1'] = model1
         item1['model_2'] = model2
         item1['raw_answer1'] = model_1_dict[idx]['answer']
@@ -65,8 +64,8 @@ def format_input(model_1_path, model_2_path, output_path):
         # right, choose 1 is model_2, choose 2 is model_1
         item2 = {}
         item2['unique_idx'] = str(idx) + '_2'
-        item2['prompt'] = system + template.format(question=model_2_dict[idx]['prompt'], question_type = question_type, answer1=ans2, answer2=ans1)
-        item2['image'] = model_2_dict[idx]['image']
+        item2['prompt'] = system + template.format(question=question_dict[idx]['question'], question_type = question_type, answer1=ans2, answer2=ans1)
+        item2['image'] = question_dict[idx]['image_path']
         item2['model_1'] = model2
         item2['model_2'] = model1
         item2['raw_answer1'] = model_2_dict[idx]['answer']
