@@ -1,14 +1,21 @@
-| **Models**                        | **# Params** | **Open-sourced** | **Visual Adapter** | **Base LLM**    |
-|-----------------------------------|--------------|------------------|--------------------|-----------------|
-| GPT-4V                            | /            | no               | /                  | /               |
-| CogVLM-Chat                       | 17.6B        | yes              | EVAV2-CLIP-E       | Vicuna-7B-v1.5  |
-| LLaVA-v1.5-13B                    | 13B          | yes              | CLIP-ViT-L         | Vicuna-13B-v1.5 |
-| InstructBLIP-Vicuna-13B           | 14B          | yes              | ViT+Q-Former       | Vicuna-13B      |
-| Qwen-VL-Chat                      | 9.6B         | yes              | ViT-bigG           | Qwen-7B         |
-| mPLUG-Owl2-LLaMA2-7B              | 8B           | yes              | ViT-L              | LLaMA2-7B       |
-| SEED-LLaMA                        | 13B          | yes              | Multiple           | LLaMA2-13B      |
-| kosmos-2-patch14-224              | 1.7B         | yes              | /                  | Magneto         |
-| IDEFICS-9B-instruct               | 9B           | yes              | OpenCLIP           | LLaMA-7B        |
-| Fuyu-8B                           | 9.4B         | yes              | Linear             | Persimmon       |
-| MiniGPT-v2                        | 7.8B         | yes              | EVA                | LLaMA2-7B       |
-| LVIS-Instruct4v-LLaVA-7b          | 7B           | yes              | CLIP-ViT-L         | Vicuna-7B-v1.5  |
+| Models                        | MLLM Architecture                                      | GitHub Stars | Huggingface Download |
+|-------------------------------|-------------------------------------------------------|--------------|----------------------|
+| LLaVA-v1.5-13B                | Pretrained Vision Encoder + Projector + LLM           | 15.4K        | 333.7K               |
+| LVIS-Instruct4v-LLaVA-7B      | Pretrained Vision Encoder + Projector + LLM           | 122          | 5                    |
+| MiniGPT-v2                    | Pretrained Vision Encoder + Projector + LLM           | 24.7K        | /                    |
+| LLaVA-v1.5-7B                 | Pretrained Vision Encoder + Projector + LLM           | 15.4K        | 703K                 |
+| LLaVA-v1.6-Vicuna-7B          | Pretrained Vision Encoder + Projector + LLM           | 15.4K        | 1.2M                 |
+| LLaVA-v1.6-Vicuna-13B         | Pretrained Vision Encoder + Projector + LLM           | 15.4K        | 100.1K               |
+| LLaVA-v1.6-34B                | Pretrained Vision Encoder + Projector + LLM           | 15.4K        | 592.8K               |
+| Yi-VL-6B                      | Pretrained Vision Encoder + Projector + LLM           | 7K           | 17.2K                |
+| ALLaVA                        | Pretrained Vision Encoder + Projector + LLM           | 134          | 93                   |
+| kosmos2                       | Pretrained Vision Encoder + Grounded LLM              | 18.1K        | 29.2K                |
+| LWM                           | Pretrained Vision Encoder + Projector + Long-Context LLM | 6.6K      | /                    |
+| BLIP2-Flan-T5-XL              | Query tokens + LM                                     | 8.5K         | 35.4K                |
+| Qwen-Vl-Chat                  | Query tokens + LLM                                    | 3.4K         | 289.9K               |
+| InstructBLIP-Vicuna-13B       | Query tokens + LLM                                    | 8.5K         | 5.4K                 |
+| mPLUG-Owl2                    | Query tokens + LLM with Modality-Adaptive Module      | 1.9K         | 9.7K                 |
+| Cheetor                       | Query tokens + VPG-C + LLM                            | 308          | /                    |
+| Fuyu-8B                       | Linear Vision Encoder + LLM                           | /            | 17.9K                |
+| SEED-LLaMA                    | VQ-based Vision Encoder + LLM                         | 445          | /                    |
+| OpenFlamingo                  | Perceiver Resampler + LLM with Gated Cross-Attention Layers | 3.4K |/|
