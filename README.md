@@ -13,6 +13,7 @@ Evaluating Multi-modal LLMs using GPT-4V.
 
 
 ## 🌈 Update
+* **[2024.4.27]** V3 data, benchmark reuslts, leaderboard and arxiv paper are updated. We keep all the per-sample criteria at evaluation private. However, we provide  <a href="https://mllm-bench.llmzoo.com/static/submit.html" target="_blank">a submission entry</a>  for FREE evaluations. Check it out!
 
 * **[2024.1.7]** V2 data, reuslts and leaderboard are updated.
 
@@ -49,7 +50,7 @@ We present the results of voting using LLaVA-v1.5-13B as anchor. The numbers den
 
 
 
-## How to use
+## Usage
 ### Environment Setup
 <details><summary>Click to expand</summary>
    
@@ -81,7 +82,7 @@ Rewrite `init_components()` and `forward()` method. Explanations of parameters a
 
 </details>
 
-### Self Evaluate
+### Self-Evaluation
 <details><summary>Click to expand</summary>
 
 - Prepare the data in the format as shown in [data/anchor.json](./data/anchor.json), note that the key "unique_idx", "gen_model_id", and "answer" are required. Move your data under [data](./data/) folder.
@@ -92,12 +93,12 @@ Rewrite `init_components()` and `forward()` method. Explanations of parameters a
 
 - Run `bash evaluate.sh`.
 
-- NOTE: The per sample criteria is not provided for self-evaluate and this self-evaluation process is just used for your reference. If you wish your results to be displayed on the leaderboard, please refer to [Submission for Leaderboard](#submission-for-leaderboard).
+- NOTE: The per sample criteria are not provided for self-evaluate and this self-evaluation process is just used for your reference. If you wish your results to be displayed on the leaderboard, please refer to [Submission for Leaderboard](#submission-for-leaderboard).
 
 </details>
 
 ### Submission for Leaderboard
-
+Refer to instructions <a href="https://mllm-bench.llmzoo.com/static/submit.html" target="_blank">here</a>.
 
 
 ## Citation
