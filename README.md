@@ -103,10 +103,10 @@ Refer to instructions <a href="https://mllm-bench.llmzoo.com/static/submit.html"
 
 ## Citation
 ```angular2
-@misc{ge2023mllmbench,
-      title={MLLM-Bench, Evaluating Multi-modal LLMs using GPT-4V}, 
-      author={Wentao Ge and Shunian Chen and Guiming Chen and Junying Chen and Zhihong Chen and Shuo Yan and Chenghao Zhu and Ziyue Lin and Wenya Xie and Xidong Wang and Anningzhe Gao and Zhiyi Zhang and Jianquan Li and Xiang Wan and Benyou Wang},
-      year={2023},
+@misc{ge2024mllmbench,
+      title={MLLM-Bench: Evaluating Multimodal LLMs with Per-sample Criteria}, 
+      author={Wentao Ge and Shunian Chen and Guiming Hardy Chen and Zhihong Chen and Junying Chen and Shuo Yan and Chenghao Zhu and Ziyue Lin and Wenya Xie and Xinyi Zhang and Yichen Chai and Xiaoyu Liu and Dingjie Song and Xidong Wang and Anningzhe Gao and Zhiyi Zhang and Jianquan Li and Xiang Wan and Benyou Wang},
+      year={2024},
       eprint={2311.13951},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
