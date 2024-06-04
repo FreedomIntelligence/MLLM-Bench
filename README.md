@@ -6,21 +6,8 @@ MLLM-Bench: Evaluating Multimodal LLMs with Per-sample Criteria
 </center>
 
 <p align="center">
-   📃 <a href="https://arxiv.org/abs/2311.13951" target="_blank">Paper</a> • 🌐 <a href="https://mllm-bench.llmzoo.com/" target="_blank">Website</a> • 🤗 <a href="huggingface.com" target="_blank">HuggingFace</a>  
-
-<p align="center">
 <img src="./image.png" alt="Data Composition" width="550" height="550">
 
-
-## 🌈 Update
-* **[2024.4.27]** V3 data, benchmark reuslts, leaderboard and arxiv paper are updated. We keep all the per-sample criteria at evaluation private. However, we provide  <a href="https://mllm-bench.llmzoo.com/static/submit.html" target="_blank">a submission entry</a>  for FREE evaluations. Check it out!
-
-* **[2024.1.7]** V2 data, reuslts and leaderboard are updated.
-
-* **[2023.11.18]** 🎉🎉🎉 This repo is made public!🎉🎉🎉
-
-## Leaderboard
-We present the results of voting using LLaVA-v1.5-13B as anchor. The numbers denote *win/tie/lose* of a benchmarked model over LLaVA-v1.5-13B. See more results of different evaluation protocols and anchors in our  [paper](https://arxiv.org/abs/2311.13951). The information of benchmarked models is [here](./Model_cards.md).
 
 
 
@@ -60,9 +47,6 @@ Install required packages:
 pip install -r requirements.txt
 ```
 Update `transformers` (we used `4.36.0.dev0`):
-```bash
-pip install git+https://github.com/huggingface/transformers
-```
 
 </details>
 
@@ -97,30 +81,3 @@ Rewrite `init_components()` and `forward()` method. Explanations of parameters a
 - NOTE: The per sample criteria are not provided for self-evaluate and this self-evaluation process is just used for your reference. If you wish your results to be displayed on the leaderboard, please refer to [Submission for Leaderboard](#submission-for-leaderboard).
 
 </details>
-
-### Submission for Leaderboard
-Refer to instructions <a href="https://mllm-bench.llmzoo.com/static/submit.html" target="_blank">here</a>.
-
-
-## Citation
-```angular2
-@misc{ge2024mllmbench,
-      title={MLLM-Bench: Evaluating Multimodal LLMs with Per-sample Criteria}, 
-      author={Wentao Ge and Shunian Chen and Guiming Hardy Chen and Zhihong Chen and Junying Chen and Shuo Yan and Chenghao Zhu and Ziyue Lin and Wenya Xie and Xinyi Zhang and Yichen Chai and Xiaoyu Liu and Nuo Chen and Dingjie Song and Xidong Wang and Anningzhe Gao and Zhiyi Zhang and Jianquan Li and Xiang Wan and Benyou Wang},
-      year={2024},
-      eprint={2311.13951},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-```
-
-
-## Star History
-
-<a href="https://star-history.com/#FreedomIntelligence/MLLM-Bench&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=FreedomIntelligence/MLLM-Bench&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=FreedomIntelligence/MLLM-Bench&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=FreedomIntelligence/MLLM-Bench&type=Date" />
-  </picture>
-</a>
