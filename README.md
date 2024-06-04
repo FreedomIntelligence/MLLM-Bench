@@ -100,27 +100,3 @@ Rewrite `init_components()` and `forward()` method. Explanations of parameters a
 
 ### Submission for Leaderboard
 Refer to instructions <a href="https://mllm-bench.llmzoo.com/static/submit.html" target="_blank">here</a>.
-
-
-## Citation
-```angular2
-@misc{ge2024mllmbench,
-      title={MLLM-Bench: Evaluating Multimodal LLMs with Per-sample Criteria}, 
-      author={Wentao Ge and Shunian Chen and Guiming Hardy Chen and Zhihong Chen and Junying Chen and Shuo Yan and Chenghao Zhu and Ziyue Lin and Wenya Xie and Xinyi Zhang and Yichen Chai and Xiaoyu Liu and Dingjie Song and Xidong Wang and Anningzhe Gao and Zhiyi Zhang and Jianquan Li and Xiang Wan and Benyou Wang},
-      year={2024},
-      eprint={2311.13951},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-```
-
-
-## Star History
-
-<a href="https://star-history.com/#FreedomIntelligence/MLLM-Bench&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=FreedomIntelligence/MLLM-Bench&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=FreedomIntelligence/MLLM-Bench&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=FreedomIntelligence/MLLM-Bench&type=Date" />
-  </picture>
-</a>
