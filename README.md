@@ -9,16 +9,6 @@ MLLM-Bench: Evaluating Multimodal LLMs with Per-sample Criteria
 <img src="./image.png" alt="Data Composition" width="550" height="550">
 
 
-## 🌈 Update
-* **[2024.4.27]** V3 data, benchmark reuslts, leaderboard and arxiv paper are updated. We keep all the per-sample criteria at evaluation private. However, we provide  <a href="https://mllm-bench.llmzoo.com/static/submit.html" target="_blank">a submission entry</a>  for FREE evaluations. Check it out!
-
-* **[2024.1.7]** V2 data, reuslts and leaderboard are updated.
-
-* **[2023.11.18]** 🎉🎉🎉 This repo is made public!🎉🎉🎉
-
-## Leaderboard
-We present the results of voting using LLaVA-v1.5-13B as anchor. The numbers denote *win/tie/lose* of a benchmarked model over LLaVA-v1.5-13B. See more results of different evaluation protocols and anchors in our  [paper](https://arxiv.org/abs/2311.13951). The information of benchmarked models is [here](./Model_cards.md).
-
 
 
 | **Rank** | **Models**       | **Perception**  | **Understanding** | **Applying** | **Analyzing** | **Evaluation** | **Creation** | **Win Rates over LLaVA-v1.5-13B** |
@@ -57,9 +47,6 @@ Install required packages:
 pip install -r requirements.txt
 ```
 Update `transformers` (we used `4.36.0.dev0`):
-```bash
-pip install git+https://github.com/huggingface/transformers
-```
 
 </details>
 
