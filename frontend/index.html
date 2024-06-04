@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://cevalbenchmark.com/index.html -->
+<html lang="en">
 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLLMBench</title>
+    <link rel="icon" href="./static/img/MLLM-logo1.png" type="image/icon type">
+    <!-- 指定文档的图标，将显示在浏览器的标签页和书签上。 -->
+    <link rel="stylesheet" href="./static/css/main.css">
+    <!--    # 引入名为"main_zh.css"的CSS样式表，用于设置文档的主要样式。-->
+    <link rel="stylesheet" href="./static/css/nav.css">
+    <!--    # 引入名为"nav.css"的CSS样式表，用于设置文档的导航栏样式。-->
+    <!--    # 引入名为"index.js"的JavaScript文件，用于设置文档的交互行为，其中defer属性表示该脚本将在页面加载后执行。-->
+    <link rel="stylesheet" href="./static/css/home.css">
+    <style type="text/css" id="operaUserStyle"></style>
+
+</head>
+
+<div id="nav">
+    <div id="icon">
+        <img src="./static/img/MLLM-logo1.png" id="nav-icon">
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com" style="margin-left: 2px; font-size: 24px">MLLMBench
+        </a>
+    </div>
+    <div>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com#home">Home</a>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com#data">Data</a>
+        <a class="nav-button" target="_blank" href="https://arxiv.org/abs/2311.13951">Paper</a>
+        <a class="nav-button" target="_blank" href="https://github.com/FreedomIntelligence/MLLM-Bench">Github</a>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com/static/leaderboard.html">Leaderboard</a>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com/static/benchmark.html">Benchmark</a>
+        <a class="nav-button" href="https://mllm-bench.llmzoo.com#contact">Contact</a>
+    </div>
+</div>
+
+
+<!-- anchor for the home button -->
+<div id="home" style="position: absolute; top: 0;"></div>
+
+<!-- banner -->
+<div id="title">
+    <div id="title-wrapper">
+        <img src="./static/img/MLLM-logo1.png" id="title-icon">
+        <p id="title-text">MLLMBench</p>
+    </div>
+    <p id="subtitle-text">
+        A Complicated and Comprehensive Multi-modal Large Language Models Benchmark
+        <br>
+        (2023)
+    </p>
+    <p id="title-padding-bottom">&nbsp;</p>
+</div>
+
+<!-- the main body of the page -->
+<!-- each section uses an empty div as an anchor -->
+<div id="body">
+    <div class="section">
+        <h1>About MLLMBench</h1>
+        <p style="line-height: 150%">
+            MLLMBench is a complicated and comprehensive benchmarking suite inspired
+            by the multifaceted nature of the vicuna and the revised Bloom's Taxonomy. MLLM-Bench encompasses 420
+            complicated image-instruction pairs across six levels of capabilities: Perception, Understanding, Applying,
+            Analyzing, Evaluating, and Creation, testing up to 42 capabilities of MLLMs. It delves into detailed,
+            real-world scenarios designed to probe the models’ abilities in nuanced and complex contexts. You can view
+            and download our dataset on
+            <a class="ext-link" href='https://github.com/FreedomIntelligence/MLLM-Bench/tree/main/data'>GitHub</a>.
+        </p>
+        <div class="example-box-row-center">
+            <figure id="example-img">
+                <img src="./static/img/MLLM-Main.png" alt="MLLM-Main.png" style="width: 500px;">
+            </figure>
+            <!-- <figure id="example-img-left">
+                <img src="./static/img/CMB-Main.png" alt="CMB-Main.png">
+            </figure>
+            <figure id="example-img-right">
+                <img src="./static/img/CMB-Exam.png" alt="CMB-Exam.png">
+            </figure> -->
+        </div>
+
+        <h2>Sample</h2>
+        <div class="example-box-row">
+            <div>
+                <figure id="Sample-left">
+                    <img src="./static/img/MLLM-Sample-1.png" alt="MLLM-Sample-1.png" style="width: 500px;">
+                </figure>
+                <p style="line-height: 150%">
+                    <strong>Instruction</strong>: Map out the complex interdependencies between species in this food web
+                    and identify any potential cascade effects if one species were to become extinct.
+                    <br>
+                    <strong>Capability</strong>: Natural Relation Understanding
+                    <br>
+                    <strong>Level</strong>: Analyzing
+                </p>
+            </div>
+            <div>
+                <figure id="Sample-right">
+                    <img src="./static/img/MLLM-Sample-2.png" alt="MLLM-Sample-2.png" style="width: 500px;">
+                </figure>
+                <p style="line-height: 150%">
+                    <strong>Instruction</strong>: Describe the quickest route to the nearest emergency exit from the
+                    "You Are Here" point.
+                    <br>
+                    <strong>Capability</strong>: Document Understanding
+                    <br>
+                    <strong>Level</strong>: Understanding
+                </p>
+            </div>
+        </div>
+        <br>
+        <h2>Taxonomy: 6 capability levels and 42 capabilities</h2>
+        <p>
+            Hierarchical Capability Level:
+        </p>
+        <ul>
+            <li><strong>Perception</strong>: Have the basic capability to recognize and retrieve information from
+                multi-modal inputs.
+                Include 7 capabilities.
+            </li>
+            <li><strong>Understanding</strong>: Can process the information gathered during perception to construct
+                meaning. Include 10
+                capabilities.
+            </li>
+            <li><strong>Applying</strong>: Apply the information and knowledge to new but similar situations. Include 7
+                capabilities.
+            </li>
+            <li><strong>Analyzing</strong>: Have the ability to break information into parts to explore patterns and
+                relationships.
+                Include 12 capabilities.
+            </li>
+            <li><strong>Evaluation</strong>: Make judgments based on criteria and standards. Include 4 capabilities.
+            </li>
+            <li><strong>Creation</strong>: Synthesize information from both visual and textual data to generate new
+                conten. Include 2
+                capabilities.
+            </li>
+        </ul>
+
+        </p>
+    </div>
+
+    <div class="section">
+        <div id="data" class="anchor"></div>
+        <h1>Data</h1>
+        <p>
+            Our data can be directly downloaded from
+            <a class="ext-link" href='https://github.com/FreedomIntelligence/MLLM-Bench/tree/main/data'>Github</a>.
+            Please refer to our
+            <a class="ext-link" href='https://github.com/FreedomIntelligence/MLLM-Bench'>GitHub</a>
+            for instructions on how to access and utilize the data.
+        </p>
+    </div>
+
+    <!-- <hr> -->
+    <div class="section">
+        <div id="citation" class="anchor"></div>
+        <h1>Citation</h1>
+        <!-- <p>
+            If the paper, codes, or the dataset inspires you, please cite us:
+        </p> -->
+        <pre class="bibtax">@misc{ge2023mllmbench,
+      title={MLLM-Bench, Evaluating Multi-modal LLMs using GPT-4V},
+      author={Wentao Ge and Shunian Chen and Guiming Hardy Chen and Zhihong Chen and Junying Chen and Shuo Yan and Chenghao Zhu and Ziyue Lin and Wenya Xie and Xinyi Zhang and Yichen Chai and Xiaoyu Liu and Nuo Chen and Dingjie Song and Xidong Wang and Anningzhe Gao and Zhiyi Zhang and Jianquan Li and Xiang Wan and Benyou Wang},
+      year={2023},
+      eprint={2311.13951},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}</pre>
+<!--        <pre class="bibtax"></pre>-->
+        <br>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" id="contact">
+        <h1>Contact US</h1>
+        <p>
+            For inquiries regarding MLLMBench, please contact us at
+            <a class="ext-link" href='mailto:cmedbenchmark@163.com'>cmedbenchmark@163.com</a>
+            or create an issue on
+            <a class="ext-link" href='https://github.com/FreedomIntelligence/MLLM-Bench'>Github</a>.
+            If you are interested in potential collaboration, please reach out to
+            <a class="ext-link" href='mailto:wangbenyou@cuhk.edu.cn'>wangbenyou@cuhk.edu.cn</a>.
+        </p>
+    </div>
+
+    <!-- Affiliation  -->
+    <div class="section" style="text-align: center;">
+        <div class="profile">
+            <a href="https://www.cuhk.edu.cn/en" target="_blank" rel="external">
+                <img class="center-block" src="./static/img/cuhk_logo1.png" style="height:6em; max-width: 100%;"></a>
+        </div>
+<!--        <div class="profile">-->
+<!--            <a href="http://www.sribd.cn/" target="_blank" rel="external">-->
+<!--                <img class="center-block" src="./static/img/sribd_logo.png" style="height:6em; max-width: 100%;"></a>-->
+<!--        </div>-->
+    </div>
+
+</div>
+<!-- footer -->
+<div id="footer" style="font-size: 12pt; text-align: center">
+    © 2023 Chinese University of Hong Kong, Shenzhen.
+</div>
+
+
+</body>
+
+</html>
