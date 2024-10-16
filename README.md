@@ -94,7 +94,7 @@ Rewrite `init_components()` and `forward()` method. Explanations of parameters a
 
 - Run `bash evaluate.sh`.
 
-- Run `cd scripts && bash evaluate4elo.sh` for elo rating.
+- Run `cd scripts & bash evaluate4elo.sh` for elo rating.
   
 - NOTE: The per sample criteria are not provided for self-evaluate and this self-evaluation process is just used for your reference. If you wish your results to be displayed on the leaderboard, please refer to [Submission for Leaderboard](#submission-for-leaderboard).
 
