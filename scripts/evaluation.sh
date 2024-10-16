@@ -39,7 +39,7 @@ for ((i=0; i<${#model_files[@]}-1; i++)); do
             --criteria $criteria \
 
 
-        python gpt4v_evaluate.py \
+        python evaluate.py \
             --HOME_DIR $save_dir \
             --annotation_path $eval_data_path \
             --rate_per_minute $rpm \
