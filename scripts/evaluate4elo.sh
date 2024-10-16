@@ -6,7 +6,6 @@
 rpm=100
 timeout=90
 
-criteria=criteria
 home_dir=result
 
 model=#model
@@ -54,3 +53,5 @@ for ((i=0; i<${#model_files[@]}-1; i++)); do
         cp $save_dir/sample_output_success.json model_outputs/${model1_name}_${model2_name}.json
     done
 done
+
+python cal_clo.py
