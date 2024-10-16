@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/Eg4Hv0BUMAE0xCV?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Code must generate a bar chart with two bars per country, matching colors and labels.\n2. Bars must reflect the correct numerical values and country order from the image.\n3. Include source label and chart title as displayed in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/373.jpeg",
+    "unique_idx": 373,
+    "prompt": "You are now required to write a Python code based on an image to replicate the data image in the picture as closely as possible.",
+    "context": "You are now required to write a Python code based on an image to replicate the data image in the picture as closely as possible.",
+    "sample_id": 373,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/373.jpeg"
+    ],
+    "gen_model_id": "mistralai/pixtral-12b",
+    "answer": "Certainly! Below is a Python code that uses the `matplotlib` library to replicate a bar chart similar to the one shown in the image. The code will create a bar chart representing the global growth in the first half of 2020 for different countries.\n\n```python\nimport matplotlib.pyplot as plt\n\n# Data\ncountries = [\n    \"Spain\", \"France\", \"UK\", \"Italy\", \"Mexico\", \"Portugal\", \"Euro Area\", \"Hong Kong\",\n    \"Philippines\", \"Belgium\", \"Malaysia\", \"Austria\", \"Thailand\", \"Chile\", \"Singapore\",\n    \"Germany\", \"Czech Republic\", \"Japan\", \"Hungary\", \"Cyprus\", \"Netherlands\",\n    \"U.S.\", \"Russia\", \"Colombia\", \"Poland\", \"Norway\", \"China\", \"Indonesia\",\n    \"South Korea\", \"Taiwan\", \"Vietnam\"\n]\n\nq2_growth = [\n    -22, -19, -12, -17, -11, -10, -16, -15, -9, -16, -8, -8, -13, -12, -7, -11, -10,\n    -14, -12, -9, -7, -10, -9, -8, -5, -3, -2, -3, -3, -5, -3, -1, -1, 0, 1, 2\n]\n\nh1_growth = [\n    -13, -13, -9, -12, -12, -11, -9, -9, -9, -9, -8, -8, -13, -14, -7, -7, -7, -6, -6,\n    -6, -6, -5, -5, -3, -3, -3, -3, -2, -2, 1, 2, 1, 0, 0, 1, 2, -1, -1\n]\n\n# Plotting\nfig, ax = plt.subplots(figsize=(15, 8))\n\nbars1 = ax.barh(range(len(countries)), q2_growth, align='center', label='2020 Q2', color='gray')\nbars2 = ax.barh(range(len(countries)), h1_growth, align='center', label='2020 H1', color='purple')\n\n# Labels and title\nax.set_yticks(range(len(countries)))\nax.set_yticklabels(countries)\nax.set_xlabel('Growth (%)')\nax.set_title('Global growth in first half 2020')\nax.legend()\n\n# Display the plot\nplt.tight_layout()\nplt.show()\n```\n\nThis code will create a horizontal bar chart with the growth percentages for the second quarter (Q2) and the first half (H1) of 2020 for various countries. The bars representing Q2 growth will be colored in gray, while the bars representing H1 growth will be colored in purple. The countries are listed on the y-axis, and the growth percentages are on the x-axis.",
+    "response_from_model": {
+        "id": "gen-1728916373-kWczPmEfnsIyOiGwGCKr",
+        "provider": "Mistral",
+        "model": "mistralai/pixtral-12b",
+        "object": "chat.completion",
+        "created": 1728916373,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Certainly! Below is a Python code that uses the `matplotlib` library to replicate a bar chart similar to the one shown in the image. The code will create a bar chart representing the global growth in the first half of 2020 for different countries.\n\n```python\nimport matplotlib.pyplot as plt\n\n# Data\ncountries = [\n    \"Spain\", \"France\", \"UK\", \"Italy\", \"Mexico\", \"Portugal\", \"Euro Area\", \"Hong Kong\",\n    \"Philippines\", \"Belgium\", \"Malaysia\", \"Austria\", \"Thailand\", \"Chile\", \"Singapore\",\n    \"Germany\", \"Czech Republic\", \"Japan\", \"Hungary\", \"Cyprus\", \"Netherlands\",\n    \"U.S.\", \"Russia\", \"Colombia\", \"Poland\", \"Norway\", \"China\", \"Indonesia\",\n    \"South Korea\", \"Taiwan\", \"Vietnam\"\n]\n\nq2_growth = [\n    -22, -19, -12, -17, -11, -10, -16, -15, -9, -16, -8, -8, -13, -12, -7, -11, -10,\n    -14, -12, -9, -7, -10, -9, -8, -5, -3, -2, -3, -3, -5, -3, -1, -1, 0, 1, 2\n]\n\nh1_growth = [\n    -13, -13, -9, -12, -12, -11, -9, -9, -9, -9, -8, -8, -13, -14, -7, -7, -7, -6, -6,\n    -6, -6, -5, -5, -3, -3, -3, -3, -2, -2, 1, 2, 1, 0, 0, 1, 2, -1, -1\n]\n\n# Plotting\nfig, ax = plt.subplots(figsize=(15, 8))\n\nbars1 = ax.barh(range(len(countries)), q2_growth, align='center', label='2020 Q2', color='gray')\nbars2 = ax.barh(range(len(countries)), h1_growth, align='center', label='2020 H1', color='purple')\n\n# Labels and title\nax.set_yticks(range(len(countries)))\nax.set_yticklabels(countries)\nax.set_xlabel('Growth (%)')\nax.set_title('Global growth in first half 2020')\nax.legend()\n\n# Display the plot\nplt.tight_layout()\nplt.show()\n```\n\nThis code will create a horizontal bar chart with the growth percentages for the second quarter (Q2) and the first half (H1) of 2020 for various countries. The bars representing Q2 growth will be colored in gray, while the bars representing H1 growth will be colored in purple. The countries are listed on the y-axis, and the growth percentages are on the x-axis.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 2174,
+            "completion_tokens": 688,
+            "total_tokens": 2862
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-22:33:07"
+}

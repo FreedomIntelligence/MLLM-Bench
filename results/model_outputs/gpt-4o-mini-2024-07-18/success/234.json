@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-VSJqdW8AA1_OJ?format=jpg&name=4096x4096",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly calculates percentage increase from 'Total Income' for specified quarters.\n2. Matches the percentage increase with the reference: 12.78%.\n3. Explains the calculation process or provides the correct formula used.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/234.jpg",
+    "unique_idx": 234,
+    "prompt": "Determine the percentage increase in 'Total Income' from the quarter 30 Sep 2023 to the quarter 30 June 2023.",
+    "context": "Determine the percentage increase in 'Total Income' from the quarter 30 Sep 2023 to the quarter 30 June 2023.",
+    "sample_id": 234,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/234.jpg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "To calculate the percentage increase in 'Total Income' from the quarter ending 30 June 2023 to the quarter ending 30 September 2023, we can use the following formula:\n\n\\[\n\\text{Percentage Increase} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\right) \\times 100\n\\]\n\nFrom the provided data:\n\n- Total Income for 30 June 2023 = 1,552.63 million\n- Total Income for 30 September 2023 = 1,751.00 million\n\nNow, substituting the values into the formula:\n\n\\[\n\\text{Percentage Increase} = \\left( \\frac{1,751.00 - 1,552.63}{1,552.63} \\right) \\times 100\n\\]\n\nCalculating the difference:\n\n\\[\n1,751.00 - 1,552.63 = 198.37\n\\]\n\nNow, divide by the old value:\n\n\\[\n\\frac{198.37}{1,552.63} \\approx 0.1275\n\\]\n\nFinally, multiply by 100 to get the percentage:\n\n\\[\n0.1275 \\times 100 \\approx 12.75\\%\n\\]\n\nThus, the percentage increase in 'Total Income' from the quarter ending 30 June 2023 to the quarter ending 30 September 2023 is approximately **12.75%**.",
+    "response_from_model": {
+        "id": "chatcmpl-AIBNi9psXDA2uiLH4KHgmecyvYPaV",
+        "object": "chat.completion",
+        "created": 1728897018,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To calculate the percentage increase in 'Total Income' from the quarter ending 30 June 2023 to the quarter ending 30 September 2023, we can use the following formula:\n\n\\[\n\\text{Percentage Increase} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\right) \\times 100\n\\]\n\nFrom the provided data:\n\n- Total Income for 30 June 2023 = 1,552.63 million\n- Total Income for 30 September 2023 = 1,751.00 million\n\nNow, substituting the values into the formula:\n\n\\[\n\\text{Percentage Increase} = \\left( \\frac{1,751.00 - 1,552.63}{1,552.63} \\right) \\times 100\n\\]\n\nCalculating the difference:\n\n\\[\n1,751.00 - 1,552.63 = 198.37\n\\]\n\nNow, divide by the old value:\n\n\\[\n\\frac{198.37}{1,552.63} \\approx 0.1275\n\\]\n\nFinally, multiply by 100 to get the percentage:\n\n\\[\n0.1275 \\times 100 \\approx 12.75\\%\n\\]\n\nThus, the percentage increase in 'Total Income' from the quarter ending 30 June 2023 to the quarter ending 30 September 2023 is approximately **12.75%**."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 48204,
+            "completion_tokens": 308,
+            "total_tokens": 48512
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:10:21"
+}

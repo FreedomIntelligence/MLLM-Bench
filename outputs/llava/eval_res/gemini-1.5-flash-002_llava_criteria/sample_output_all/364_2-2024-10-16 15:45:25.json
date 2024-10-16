@@ -1,0 +1,35 @@
+{
+    "unique_idx": "364_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nCreate a free verse on the energy of a protest, the collective voice for change, and democracy's spirit at a capitol.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nA grey sky, heavy with unspoken words,\nhangs above the capitol's gilded dome.\nBelow, a sea of faces, a tapestry of anger,\na chorus of voices rising, a collective breath held.\n\nSigns, like flags of defiance,\nflutter in the restless wind,\neach a syllable in a shouted poem,\na demand for justice, for change.\n\n\"Stop Killing Us,\" screams the lime-green placard,\na raw, visceral plea against the indifference of power.\n\"Fuck Special Treatment for Cops,\" another declares,\na rebellion against the shield of privilege.\n\nThe energy crackles, palpable, electric,\na current flowing through the crowd,\nconnecting hearts, fueling the fire of protest.\nThis is democracy's pulse, raw and beating.\n\nThe capitol stands, a silent witness,\nits stone façade a stark contrast to the vibrant energy below.\nBut the ground trembles, not with earthquake,\nbut with the weight of a people's will.\n\nThis is the sound of a nation questioning itself,\nthe echo of a dream deferred,\na symphony of dissent,\na testament to the enduring spirit of democracy.\n\n~~~\n~~~Answer2\nA gathering on a grassy field,\nA city's skyline as their backdrop,\nThousands of voices in unison,\nA peaceful protest in action.\n\nIn front of a grand, historic building,\nA crowd of people with a shared goal,\nTo speak for those unheard,\nTo demand change and break the mold.\n\nThe energy of the protest,\nA force that cannot be ignored,\nUnited, they stand and shout,\nFor a brighter future and clean power.\n\nA collective voice for change,\nA testament to democracy's strength,\nWith every protester in the crowd,\nThe spirit of progress and unity grows.\n\nTogether, they make their stand,\nFor a better world and fair play,\nFighting for the rights of all,\nIn this public display.\n\nA wave of hope and determination,\nThe future they envision for their nation,\nWith every person in the field,\nA collective force that cannot yield.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Incorporate the capitol's image, protest energy, and crowd's collective voice for change.\n2. Reflect the spirit of democracy and the context of a public demonstration.\n3. Use free verse poetry format without strict patterns of rhyme or rhythm.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/364.jpeg",
+    "model_1": "gemini-1.5-flash-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "A grey sky, heavy with unspoken words,\nhangs above the capitol's gilded dome.\nBelow, a sea of faces, a tapestry of anger,\na chorus of voices rising, a collective breath held.\n\nSigns, like flags of defiance,\nflutter in the restless wind,\neach a syllable in a shouted poem,\na demand for justice, for change.\n\n\"Stop Killing Us,\" screams the lime-green placard,\na raw, visceral plea against the indifference of power.\n\"Fuck Special Treatment for Cops,\" another declares,\na rebellion against the shield of privilege.\n\nThe energy crackles, palpable, electric,\na current flowing through the crowd,\nconnecting hearts, fueling the fire of protest.\nThis is democracy's pulse, raw and beating.\n\nThe capitol stands, a silent witness,\nits stone façade a stark contrast to the vibrant energy below.\nBut the ground trembles, not with earthquake,\nbut with the weight of a people's will.\n\nThis is the sound of a nation questioning itself,\nthe echo of a dream deferred,\na symphony of dissent,\na testament to the enduring spirit of democracy.\n",
+    "raw_answer2": "A gathering on a grassy field,\nA city's skyline as their backdrop,\nThousands of voices in unison,\nA peaceful protest in action.\n\nIn front of a grand, historic building,\nA crowd of people with a shared goal,\nTo speak for those unheard,\nTo demand change and break the mold.\n\nThe energy of the protest,\nA force that cannot be ignored,\nUnited, they stand and shout,\nFor a brighter future and clean power.\n\nA collective voice for change,\nA testament to democracy's strength,\nWith every protester in the crowd,\nThe spirit of progress and unity grows.\n\nTogether, they make their stand,\nFor a better world and fair play,\nFighting for the rights of all,\nIn this public display.\n\nA wave of hope and determination,\nThe future they envision for their nation,\nWith every person in the field,\nA collective force that cannot yield.",
+    "response": {
+        "id": "chatcmpl-AIt0egaJ1EeGck0FRbdt8qsyUSzAz",
+        "object": "chat.completion",
+        "created": 1729064724,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1841,
+            "completion_tokens": 2,
+            "total_tokens": 1843
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 8.66362190246582,
+    "code": 200,
+    "current_time": "2024-10-16 15:45:25"
+}

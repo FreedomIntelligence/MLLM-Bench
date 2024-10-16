@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://images.pexels.com/photos/3230214/pexels-photo-3230214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify and confirm the type of beverage as milk drinks directly below the temperature readout.\n2. Assess the VLM's understanding of spatial relationships between the readout and beverages.\n3. Verify the accuracy and relevance of the VLM's response to the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/203.jpg",
+    "unique_idx": 203,
+    "prompt": "In relation to the digital temperature readout at the top of the beverage cooler, which type of beverage is directly below it?",
+    "context": "In relation to the digital temperature readout at the top of the beverage cooler, which type of beverage is directly below it?",
+    "sample_id": 203,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/203.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The digital temperature readout at the top of the beverage cooler reads \"4°C.\" Directly below it, on the bottom shelf, are bottles of Del Monte 100% pineapple juice.",
+    "response_from_model": {
+        "id": "gen-1728903706-43xd79u3BFWGIAPbhYDi",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903706,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The digital temperature readout at the top of the beverage cooler reads \"4°C.\" Directly below it, on the bottom shelf, are bottles of Del Monte 100% pineapple juice.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 47,
+            "completion_tokens": 42,
+            "total_tokens": 89
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:02:10"
+}

@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/F-Qz_HoXQAAnic9?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify dishes with add-on options and their respective costs (e.g., \"add blue cheese for £1\").",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/10.jpg",
+    "unique_idx": 10,
+    "prompt": "Which dishes can have extra ingredients added, and what is the cost of adding ingredients?",
+    "context": "Which dishes can have extra ingredients added, and what is the cost of adding ingredients?",
+    "sample_id": 10,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/10.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The following dishes can have extra ingredients added, along with the cost:\n\n* **Tomato & Onion Salad:** Add blue cheese for £1.\n* **Bruschetta al Pomodoro:** Add grilled goat's cheese for £1.\n* **Cocktail di Gamberi Rossi:** Add smoked salmon for £1.\n* **Pane all 'Aglio:**  Mozzarella cheese (£2), fresh rosemary & sea salt (£1), tomato & fresh basil (£1), goats cheese & caramelised onion (£2), rocket & parma ham (£2).\n* **Cesare Salad:** Add grilled chicken for £2.\n* **Spaghetti Carbonara:** Add chicken for £2.\n\n\n",
+    "response_from_model": {
+        "id": "chatcmpl-bf592e1ecf0645768d80afdbfe607d80",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897228,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The following dishes can have extra ingredients added, along with the cost:\n\n* **Tomato & Onion Salad:** Add blue cheese for £1.\n* **Bruschetta al Pomodoro:** Add grilled goat's cheese for £1.\n* **Cocktail di Gamberi Rossi:** Add smoked salmon for £1.\n* **Pane all 'Aglio:**  Mozzarella cheese (£2), fresh rosemary & sea salt (£1), tomato & fresh basil (£1), goats cheese & caramelised onion (£2), rocket & parma ham (£2).\n* **Cesare Salad:** Add grilled chicken for £2.\n* **Spaghetti Carbonara:** Add chicken for £2.\n\n\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 276,
+            "completion_tokens": 139,
+            "total_tokens": 415
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:14:05"
+}

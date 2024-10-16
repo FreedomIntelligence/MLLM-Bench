@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/F91QfgiWgAAphUD?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Confirm the song \"Future (Lollapalooza ver.)\" is correctly identified and its play count.\n2. Check OCR accuracy for the number of times played against the reference: 271.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/13.jpeg",
+    "unique_idx": "13",
+    "prompt": "The image shows a receipt from 'Receiptify', an application that generates a music listening receipt based on a user's listening history. Based on the image, what is the number of times the song Future(Lollapalooza ver.) was played?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 124,
+            "prompt_tokens": 1067,
+            "total_tokens": 1191
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To determine the number of times the song \"Future (Lollapalooza ver.)\" by J-HOPE was played, we look at the itemized list of songs on the receipt. The song \"Future (Lollapalooza ver.)\" is listed with a quantity (QTY) of 271 and an amount (AMT) of 0:00. The quantity indicates the number of times the song was played. Therefore, the song \"Future (Lollapalooza ver.)\" by J-HOPE was played 271 times."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "To determine the number of times the song \"Future (Lollapalooza ver.)\" by J-HOPE was played, we look at the itemized list of songs on the receipt. The song \"Future (Lollapalooza ver.)\" is listed with a quantity (QTY) of 271 and an amount (AMT) of 0:00. The quantity indicates the number of times the song was played. Therefore, the song \"Future (Lollapalooza ver.)\" by J-HOPE was played 271 times.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 11.018688917160034,
+    "code": 200,
+    "current_time": "2024-04-30 12:55:50"
+}

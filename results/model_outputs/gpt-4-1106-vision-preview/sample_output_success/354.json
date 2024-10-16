@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Fake Image Detection",
+        "url": "https://www.prc-magazine.com/sc/files/2014/07/tsunami.jpg",
+        "question type": "compound"
+    },
+    "criteria": "1. Confirm if the image is identified as AI-generated.\n2. Evaluate the explanation for unnatural elements or inconsistencies in the image.\n3. Check for logical analysis of the image's authenticity based on visual cues.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/354.jpg",
+    "unique_idx": "354",
+    "prompt": "Determine if the image is real or AI-generated and provide your explanation.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The image you've provided is not real; it has been digitally manipulated or is a piece of artwork. The primary reason for this conclusion is the presence of an enormous wave that appears to be engulfing a city. Such a scene is not physically plausible in the real world; it's reminiscent of scenes from disaster movies. The scale and physics of the wave in relation to the buildings are not consistent with natural phenomena. Moreover, the lighting and shadows on the wave compared to the rest of the environment suggest digital compositing. This type of image is often created using photo editing software for artistic or illustrative purposes.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717427172,
+        "id": "chatcmpl-9W3YCTmDnBHgKfl1tuDkMyrbyvfg9",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 123,
+            "prompt_tokens": 787,
+            "total_tokens": 910
+        }
+    },
+    "answer": "The image you've provided is not real; it has been digitally manipulated or is a piece of artwork. The primary reason for this conclusion is the presence of an enormous wave that appears to be engulfing a city. Such a scene is not physically plausible in the real world; it's reminiscent of scenes from disaster movies. The scale and physics of the wave in relation to the buildings are not consistent with natural phenomena. Moreover, the lighting and shadows on the wave compared to the rest of the environment suggest digital compositing. This type of image is often created using photo editing software for artistic or illustrative purposes.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 10.77544093132019,
+    "code": 200,
+    "current_time": "2024-06-03 23:06:18"
+}

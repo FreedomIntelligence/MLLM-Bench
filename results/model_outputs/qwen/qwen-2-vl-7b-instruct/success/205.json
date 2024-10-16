@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://images.pexels.com/photos/4114638/pexels-photo-4114638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "question type": "close-ended"
+    },
+    "criteria": "1. List squares a5, a7, b4, b8, d4, d8, e5, e7 as knight's accessible positions.\n2. Ensure answer reflects understanding of knight's L-shaped movement.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/205.jpg",
+    "unique_idx": 205,
+    "prompt": "Which squares are immediately accessible to the black knight, given its current position on the board?",
+    "context": "Which squares are immediately accessible to the black knight, given its current position on the board?",
+    "sample_id": 205,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/205.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The black knight, currently on d5, can move to the following squares: g4, e4, c4, g6, e6, c6, g7, e7, c7, g8, e8, and c8.",
+    "response_from_model": {
+        "id": "gen-1728903706-5B7ghbN8l0GAGcuLJ1Wa",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903706,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The black knight, currently on d5, can move to the following squares: g4, e4, c4, g6, e6, c6, g7, e7, c7, g8, e8, and c8.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 40,
+            "completion_tokens": 55,
+            "total_tokens": 95
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:02:10"
+}

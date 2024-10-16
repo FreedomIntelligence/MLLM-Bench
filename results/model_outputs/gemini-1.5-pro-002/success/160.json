@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Document Understanding",
+        "url": "https://pbs.twimg.com/media/F8kswFXXsAUTKhx?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Include LaTeX equation for 2-stock portfolio variance, which is \u000bar(R_p) = w_A^2 \\cdot \\sigma^2(R_A) + w_B^2 \\cdot \\sigma^2(R_B) + 2w_Aw_B\\sigma(R_A)\\sigma(R_B)\rho(R_A, R_B)",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/160.jpeg",
+    "unique_idx": 160,
+    "prompt": "What is the equation for calculating the variance of 2-stock portfolio according to the quick sheet. Write in LaTeX formula.",
+    "context": "What is the equation for calculating the variance of 2-stock portfolio according to the quick sheet. Write in LaTeX formula.",
+    "sample_id": 160,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/160.jpeg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The equation for the variance of a 2-stock portfolio is:\n\n```latex\n\\text{var}(R_p) = w_A^2 \\sigma^2(R_A) + w_B^2 \\sigma^2(R_B) + 2w_A w_B \\sigma(R_A) \\sigma(R_B) \\rho(R_A, R_B)\n```\n\nWhere:\n\n* $R_p$ is the return of the portfolio\n* $w_A$ is the weight of stock A\n* $w_B$ is the weight of stock B\n* $\\sigma^2(R_A)$ is the variance of stock A\n* $\\sigma^2(R_B)$ is the variance of stock B\n* $\\sigma(R_A)$ is the standard deviation of stock A\n* $\\sigma(R_B)$ is the standard deviation of stock B\n* $\\rho(R_A, R_B)$ is the correlation between the returns of stock A and stock B.",
+    "response_from_model": {
+        "id": "chatcmpl-e0cab8ef7bdd4003b943e635161d00e4",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897275,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The equation for the variance of a 2-stock portfolio is:\n\n```latex\n\\text{var}(R_p) = w_A^2 \\sigma^2(R_A) + w_B^2 \\sigma^2(R_B) + 2w_A w_B \\sigma(R_A) \\sigma(R_B) \\rho(R_A, R_B)\n```\n\nWhere:\n\n* $R_p$ is the return of the portfolio\n* $w_A$ is the weight of stock A\n* $w_B$ is the weight of stock B\n* $\\sigma^2(R_A)$ is the variance of stock A\n* $\\sigma^2(R_B)$ is the variance of stock B\n* $\\sigma(R_A)$ is the standard deviation of stock A\n* $\\sigma(R_B)$ is the standard deviation of stock B\n* $\\rho(R_A, R_B)$ is the correlation between the returns of stock A and stock B."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 284,
+            "completion_tokens": 227,
+            "total_tokens": 511
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:14:52"
+}

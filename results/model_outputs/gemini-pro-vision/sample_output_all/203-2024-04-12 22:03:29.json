@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://images.pexels.com/photos/3230214/pexels-photo-3230214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify and confirm the type of beverage as milk drinks directly below the temperature readout.\n2. Assess the VLM's understanding of spatial relationships between the readout and beverages.\n3. Verify the accuracy and relevance of the VLM's response to the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/203.jpg",
+    "unique_idx": "203",
+    "prompt": "In relation to the digital temperature readout at the top of the beverage cooler, which type of beverage is directly below it?",
+    "response": {
+        "id": "chatcmpl-44a27825504549ceaae9f76178b23de5",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930609,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The digital temperature readout at the top of the beverage cooler is directly above a row of Vitamin Water beverages."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1137,
+            "completion_tokens": 22,
+            "total_tokens": 1159
+        }
+    },
+    "answer": " The digital temperature readout at the top of the beverage cooler is directly above a row of Vitamin Water beverages.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 4.96798300743103,
+    "code": 200,
+    "current_time": "2024-04-12 22:03:29"
+}

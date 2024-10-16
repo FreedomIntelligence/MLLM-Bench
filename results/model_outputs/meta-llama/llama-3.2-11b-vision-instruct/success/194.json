@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ecgwaves.com/wp-content/uploads/2021/06/ECG-example-Normal-ECG-with-sinus-rhythm-2-1396x1536.png",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify and describe P wave, QRS complex, T wave as per reference.\n2. Detect any deviations from the normal ECG waveform pattern.\n3. Comment on rhythm regularity, wave amplitude, and intervals between waves.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/194.png",
+    "unique_idx": 194,
+    "prompt": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "context": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "sample_id": 194,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/194.png"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "**Step 1: Identify the different parts of the ECG waveform.**\n\nThe ECG waveform is divided into several parts:\n\n*   P wave: Represents atrial depolarization.\n*   QRS complex: Represents ventricular depolarization.\n*   T wave: Represents ventricular repolarization.\n*   PR interval: The time from the beginning of the P wave to the beginning of the QRS complex.\n*   QT interval: The time from the beginning of the Q wave to the end of the T wave.\n\n**Step 2: Identify abnormalities in the image.**\n\nUpon examining the image, we can see that there are no significant abnormalities in the ECG waveform. The P waves, QRS complexes, and T waves appear normal, and there are no signs of arrhythmias or other cardiac conditions.\n\n**Answer:** The ECG waveform is normal, with no significant abnormalities.",
+    "response_from_model": {
+        "id": "gen-1728905546-jIljIo3rkMfkbu3qJLA0",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905546,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "**Step 1: Identify the different parts of the ECG waveform.**\n\nThe ECG waveform is divided into several parts:\n\n*   P wave: Represents atrial depolarization.\n*   QRS complex: Represents ventricular depolarization.\n*   T wave: Represents ventricular repolarization.\n*   PR interval: The time from the beginning of the P wave to the beginning of the QRS complex.\n*   QT interval: The time from the beginning of the Q wave to the end of the T wave.\n\n**Step 2: Identify abnormalities in the image.**\n\nUpon examining the image, we can see that there are no significant abnormalities in the ECG waveform. The P waves, QRS complexes, and T waves appear normal, and there are no signs of arrhythmias or other cardiac conditions.\n\n**Answer:** The ECG waveform is normal, with no significant abnormalities.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6435,
+            "completion_tokens": 1,
+            "total_tokens": 6436
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:32:29"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "18_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nDetermine the competition information in the picture, such as stage of the game, team information, etc.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nHere's the competition information from the image:\n\n* **Game:** League of Legends\n* **Tournament:** Worlds 2023\n* **Stage:** Semifinals\n* **Match Format:** Best of 5\n* **Date & Time:** November 12th, 4:00 PM PHT\n* **Teams:** JD Gaming vs T1\n~~~\n~~~Answer2\nThe image displays a trophy sitting next to a TV screen, which is showing the scoreboard during a game. There are two teams playing in the game, as indicated by the presence of two logos or team names. The competition appears to be a tournament, as there is a suggestion of a series of games being played. The scoreboard indicates that \"JD Gaming\" is in the lead, while \"T1\" is trailing behind. The game seems to be at an advanced stage, with only a few minutes remaining. The trophy in the foreground adds to the competitive atmosphere of the scene.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm stage of game matches 'semifinals' and teams as 'JD Gaming' and 'T1'.\n2. Verify date and time accuracy with 'Nov. 12th, 4 p.m.' reference.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/18.jpg",
+    "model_1": "gemini-1.5-flash-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "Here's the competition information from the image:\n\n* **Game:** League of Legends\n* **Tournament:** Worlds 2023\n* **Stage:** Semifinals\n* **Match Format:** Best of 5\n* **Date & Time:** November 12th, 4:00 PM PHT\n* **Teams:** JD Gaming vs T1",
+    "raw_answer2": "The image displays a trophy sitting next to a TV screen, which is showing the scoreboard during a game. There are two teams playing in the game, as indicated by the presence of two logos or team names. The competition appears to be a tournament, as there is a suggestion of a series of games being played. The scoreboard indicates that \"JD Gaming\" is in the lead, while \"T1\" is trailing behind. The game seems to be at an advanced stage, with only a few minutes remaining. The trophy in the foreground adds to the competitive atmosphere of the scene.",
+    "response": {
+        "id": "chatcmpl-AIswtHDmA7klTFkaxIpx5a0Ouyh74",
+        "object": "chat.completion",
+        "created": 1729064491,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1248,
+            "completion_tokens": 2,
+            "total_tokens": 1250
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.922374963760376,
+    "code": 200,
+    "current_time": "2024-10-16 15:41:32"
+}

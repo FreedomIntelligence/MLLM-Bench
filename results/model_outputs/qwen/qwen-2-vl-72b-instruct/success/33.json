@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Symbol Recognition",
+        "url": "https://cdn.pixabay.com/photo/2019/05/22/10/54/street-signs-4221204_1280.png",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Correctly identify and describe all traffic signs, including shape, color, and symbols.\n2. Accurately provide the meaning of each traffic sign as commonly understood.\n3. Organize information in the specified JSON format with 'id', 'traffic sign', and 'meaning'.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/33.jpg",
+    "unique_idx": 33,
+    "prompt": "Identify all traffic signs in the image and organize each of them into the following JSON format: {'id': xx, 'traffic sign': xx, 'meaning': xx}.",
+    "context": "Identify all traffic signs in the image and organize each of them into the following JSON format: {'id': xx, 'traffic sign': xx, 'meaning': xx}.",
+    "sample_id": 33,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/33.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "```json\n[\n    {\n        \"id\": 1,\n        \"traffic sign\": \"P\",\n        \"meaning\": \"Parking\"\n    },\n    {\n        \"id\": 2,\n        \"traffic sign\": \"One Way\",\n        \"meaning\": \"One Way Traffic\"\n    },\n    {\n        \"id\": 3,\n        \"traffic sign\": \"Road Work Ahead\",\n        \"meaning\": \"Road Work Ahead\"\n    },\n    {\n        \"id\": 4,\n        \"traffic sign\": \"R R\",\n        \"meaning\": \"Railroad Crossing\"\n    },\n    {\n        \"id\": 5,\n        \"traffic sign\": \"Yield\",\n        \"meaning\": \"Yield\"\n    },\n    {\n        \"id\": 6,\n        \"traffic sign\": \"Do Not Enter\",\n        \"meaning\": \"Do Not Enter\"\n    },\n    {\n        \"id\": 7,\n        \"traffic sign\": \"Dead End\",\n        \"meaning\": \"Dead End\"\n    },\n    {\n        \"id\": 8,\n        \"traffic sign\": \"No U Turn\",\n        \"meaning\": \"No U Turn\"\n    },\n    {\n        \"id\": 9,\n        \"traffic sign\": \"Route US 66\",\n        \"meaning\": \"Route US 66\"\n    },\n    {\n        \"id\": 10,\n        \"traffic sign\": \"Detour\",\n        \"meaning\": \"Detour\"\n    },\n    {\n        \"id\": 11,\n        \"traffic sign\": \"Interstate 95\",\n        \"meaning\": \"Interstate 95\"\n    },\n    {\n        \"id\": 12,\n        \"traffic sign\": \"Stop\",\n        \"meaning\": \"Stop\"\n    },\n    {\n        \"id\": 13,\n        \"traffic sign\": \"Speed Limit 55\",\n        \"meaning\": \"Speed Limit 55\"\n    },\n    {\n        \"id\": 14,\n        \"traffic sign\": \"No Parking Any Time\",\n        \"meaning\": \"No Parking Any Time\"\n    },\n    {\n        \"id\": 15,\n        \"traffic sign\": \"Tow Away Zone\",\n        \"meaning\": \"Tow Away Zone\"\n    },\n    {\n        \"id\": 16,\n        \"traffic sign\": \"Airport\",\n        \"meaning\": \"Airport\"\n    },\n    {\n        \"id\": 17,\n        \"traffic sign\": \"Handicap\",\n        \"meaning\": \"Handicap Parking\"\n    },\n    {\n        \"id\": 18,\n        \"traffic sign\": \"No Bicycle\",\n        \"meaning\": \"No Bicycle\"\n    },\n    {\n        \"id\": 19,\n        \"traffic sign\": \"Pedestrian Crossing\",\n        \"meaning\": \"Pedestrian Crossing\"\n    },\n    {\n        \"id\": 20,\n        \"traffic sign\": \"Traffic Light\",\n        \"meaning\": \"Traffic Light\"\n    }\n]\n```",
+    "response_from_model": {
+        "id": "gen-1728907506-rcc4lGphxYvOD1QM66bz",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728907506,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n    {\n        \"id\": 1,\n        \"traffic sign\": \"P\",\n        \"meaning\": \"Parking\"\n    },\n    {\n        \"id\": 2,\n        \"traffic sign\": \"One Way\",\n        \"meaning\": \"One Way Traffic\"\n    },\n    {\n        \"id\": 3,\n        \"traffic sign\": \"Road Work Ahead\",\n        \"meaning\": \"Road Work Ahead\"\n    },\n    {\n        \"id\": 4,\n        \"traffic sign\": \"R R\",\n        \"meaning\": \"Railroad Crossing\"\n    },\n    {\n        \"id\": 5,\n        \"traffic sign\": \"Yield\",\n        \"meaning\": \"Yield\"\n    },\n    {\n        \"id\": 6,\n        \"traffic sign\": \"Do Not Enter\",\n        \"meaning\": \"Do Not Enter\"\n    },\n    {\n        \"id\": 7,\n        \"traffic sign\": \"Dead End\",\n        \"meaning\": \"Dead End\"\n    },\n    {\n        \"id\": 8,\n        \"traffic sign\": \"No U Turn\",\n        \"meaning\": \"No U Turn\"\n    },\n    {\n        \"id\": 9,\n        \"traffic sign\": \"Route US 66\",\n        \"meaning\": \"Route US 66\"\n    },\n    {\n        \"id\": 10,\n        \"traffic sign\": \"Detour\",\n        \"meaning\": \"Detour\"\n    },\n    {\n        \"id\": 11,\n        \"traffic sign\": \"Interstate 95\",\n        \"meaning\": \"Interstate 95\"\n    },\n    {\n        \"id\": 12,\n        \"traffic sign\": \"Stop\",\n        \"meaning\": \"Stop\"\n    },\n    {\n        \"id\": 13,\n        \"traffic sign\": \"Speed Limit 55\",\n        \"meaning\": \"Speed Limit 55\"\n    },\n    {\n        \"id\": 14,\n        \"traffic sign\": \"No Parking Any Time\",\n        \"meaning\": \"No Parking Any Time\"\n    },\n    {\n        \"id\": 15,\n        \"traffic sign\": \"Tow Away Zone\",\n        \"meaning\": \"Tow Away Zone\"\n    },\n    {\n        \"id\": 16,\n        \"traffic sign\": \"Airport\",\n        \"meaning\": \"Airport\"\n    },\n    {\n        \"id\": 17,\n        \"traffic sign\": \"Handicap\",\n        \"meaning\": \"Handicap Parking\"\n    },\n    {\n        \"id\": 18,\n        \"traffic sign\": \"No Bicycle\",\n        \"meaning\": \"No Bicycle\"\n    },\n    {\n        \"id\": 19,\n        \"traffic sign\": \"Pedestrian Crossing\",\n        \"meaning\": \"Pedestrian Crossing\"\n    },\n    {\n        \"id\": 20,\n        \"traffic sign\": \"Traffic Light\",\n        \"meaning\": \"Traffic Light\"\n    }\n]\n```",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 57,
+            "completion_tokens": 612,
+            "total_tokens": 669
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:05:44"
+}

@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://www.researchgate.net/publication/351673709/figure/fig5/AS:11431281086060493@1664071372500/Comparison-between-full-dose-CT-images-and-low-quality-CT-images-a-and-b-high-quality.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and confirm that CT scans (c) and (d) are the ones needing a redo.\n2. Assess clarity, noise, and artifacts affecting image quality in (c) and (d).",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/321.png",
+    "unique_idx": "321",
+    "prompt": "Which of the CT scan needs a redo?",
+    "response": {
+        "id": "msg_01Sn9GF5gbFsyTaaa1FZcpnF",
+        "type": "message",
+        "role": "assistant",
+        "model": "gpt-4",
+        "usage": {
+            "prompt_tokens": 809,
+            "completion_tokens": 114,
+            "total_tokens": 923
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the provided CT scan images, image (d) appears to need a redo. The image is significantly blurred and lacks clear anatomical details compared to the other scans (a), (b), and (c), which show sharper and more well-defined structures. The blurring in image (d) suggests potential motion artifact or other technical issues during the scan acquisition, rendering the image quality suboptimal for diagnostic purposes. A redo of the scan would likely be recommended to obtain a clearer image for accurate interpretation."
+                },
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "object": "chat.completion",
+        "created": 1712927331
+    },
+    "answer": "Based on the provided CT scan images, image (d) appears to need a redo. The image is significantly blurred and lacks clear anatomical details compared to the other scans (a), (b), and (c), which show sharper and more well-defined structures. The blurring in image (d) suggests potential motion artifact or other technical issues during the scan acquisition, rendering the image quality suboptimal for diagnostic purposes. A redo of the scan would likely be recommended to obtain a clearer image for accurate interpretation.",
+    "gen_model_id": "gpt-4-vision-preview",
+    "duration": 9.631568670272827,
+    "code": 200,
+    "current_time": "2024-04-12 21:08:52"
+}

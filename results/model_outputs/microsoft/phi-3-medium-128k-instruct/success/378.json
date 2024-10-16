@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-VTdVLakAEvyS7?format=jpg&name=900x900",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and visualize top-selling IPs in both categories for 2024.3 Full Year Forecasts.\n2. Compare sales growth between 2023.3 and 2024.3 for highlighted IPs.\n3. Ensure visual representation is clear, accurate, and easily interpretable.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/378.jpeg",
+    "unique_idx": 378,
+    "prompt": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "context": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "sample_id": 378,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/378.jpeg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " To visualize the most important information from the report, we can create a Python program that extracts key data and presents it in a clear and concise manner. In this example, we'll assume the report contains information about sales, revenue, and profit for a company. We'll use the pandas library to handle the data and matplotlib to create visualizations.\n\nFirst, we need to install the required libraries:\n\n```bash\npip install pandas matplotlib\n```\n\nNow, let's write a program to visualize the most important information from the report:\n\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndef read_report(file_path):\n    # Read the report data from a CSV file\n    report_data = pd.read_csv(file_path)\n    return report_data\n\ndef visualize_report(report_data):\n    # Calculate the total revenue and profit\n    total_revenue = report_data['Revenue'].sum()\n    total_profit = report_data['Profit'].sum()\n\n    # Calculate the average revenue and profit per month\n    avg_revenue_per_month = report_data.groupby('Month')['Revenue'].mean()\n    avg_profit_per_month = report_data.groupby('Month')['Profit'].mean()\n\n    # Plot the total revenue and profit\n    plt.figure(figsize=(10, 6))\n    plt.bar(\n        ['Total Revenue', 'Total Profit'],\n        [total_revenue, total_profit],\n        color=['blue', 'green']\n    )\n    plt.ylabel('Amount ($)')\n    plt.title('Total Revenue and Profit')\n    plt.show()\n\n    # Plot the average revenue and profit per month\n    plt.figure(figsize=(10, 6))\n    plt.plot(\n        avg_revenue_per_month.index,\n        avg_revenue_per_month.values,\n        marker='o',\n        color='blue',\n        label='Average Revenue'\n    )\n    plt.plot(\n        avg_profit_per_month.index,\n        avg_profit_per_month.values,\n        marker='o',\n        color='green',\n        label='Average Profit'\n    )\n    plt.xlabel('Month')\n    plt.ylabel('Amount ($)')\n    plt.title('Average Revenue and Profit per Month')\n    plt.legend()\n    plt.show()\n\n# Define the path to the report file\nreport_file_path = 'report.csv'\n\n# Read the report data\nreport_data = read_report(report_file_path)\n\n# Visualize the report\nvisualize_report(report_data)\n```\n\nThis program reads the report data from a CSV file, calculates the total revenue and profit, as well as the average revenue and profit per month, and creates two visualizations: a bar chart showing the total revenue and profit, and a line chart showing the average revenue and profit per month.\n\nPlease make sure to replace `'report.csv'` with the actual path to your report file.\n\nThe CSV file should have the following columns:\n\n- `Month`: The month of the report (e.g., 'January', 'February', etc.)\n- `Revenue`: The revenue for each month\n- `Profit`: The profit for each month\n\nFor example, the CSV file could look like this:\n\n```csv\nMonth,Revenue,Profit\nJanuary,10000,2000\nFebruary,15000,3000\nMarch,12000,2500\nApril,18000,3500\n```\n\nYou can run the program by executing the script in your Python environment. After running the script, you will see two visualizations: a bar chart showing the total revenue and profit and a line chart showing the average revenue and profit per month.",
+    "response_from_model": {
+        "id": "gen-1728906986-yVLPvCWQYduqFM6trH1o",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906986,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " To visualize the most important information from the report, we can create a Python program that extracts key data and presents it in a clear and concise manner. In this example, we'll assume the report contains information about sales, revenue, and profit for a company. We'll use the pandas library to handle the data and matplotlib to create visualizations.\n\nFirst, we need to install the required libraries:\n\n```bash\npip install pandas matplotlib\n```\n\nNow, let's write a program to visualize the most important information from the report:\n\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndef read_report(file_path):\n    # Read the report data from a CSV file\n    report_data = pd.read_csv(file_path)\n    return report_data\n\ndef visualize_report(report_data):\n    # Calculate the total revenue and profit\n    total_revenue = report_data['Revenue'].sum()\n    total_profit = report_data['Profit'].sum()\n\n    # Calculate the average revenue and profit per month\n    avg_revenue_per_month = report_data.groupby('Month')['Revenue'].mean()\n    avg_profit_per_month = report_data.groupby('Month')['Profit'].mean()\n\n    # Plot the total revenue and profit\n    plt.figure(figsize=(10, 6))\n    plt.bar(\n        ['Total Revenue', 'Total Profit'],\n        [total_revenue, total_profit],\n        color=['blue', 'green']\n    )\n    plt.ylabel('Amount ($)')\n    plt.title('Total Revenue and Profit')\n    plt.show()\n\n    # Plot the average revenue and profit per month\n    plt.figure(figsize=(10, 6))\n    plt.plot(\n        avg_revenue_per_month.index,\n        avg_revenue_per_month.values,\n        marker='o',\n        color='blue',\n        label='Average Revenue'\n    )\n    plt.plot(\n        avg_profit_per_month.index,\n        avg_profit_per_month.values,\n        marker='o',\n        color='green',\n        label='Average Profit'\n    )\n    plt.xlabel('Month')\n    plt.ylabel('Amount ($)')\n    plt.title('Average Revenue and Profit per Month')\n    plt.legend()\n    plt.show()\n\n# Define the path to the report file\nreport_file_path = 'report.csv'\n\n# Read the report data\nreport_data = read_report(report_file_path)\n\n# Visualize the report\nvisualize_report(report_data)\n```\n\nThis program reads the report data from a CSV file, calculates the total revenue and profit, as well as the average revenue and profit per month, and creates two visualizations: a bar chart showing the total revenue and profit, and a line chart showing the average revenue and profit per month.\n\nPlease make sure to replace `'report.csv'` with the actual path to your report file.\n\nThe CSV file should have the following columns:\n\n- `Month`: The month of the report (e.g., 'January', 'February', etc.)\n- `Revenue`: The revenue for each month\n- `Profit`: The profit for each month\n\nFor example, the CSV file could look like this:\n\n```csv\nMonth,Revenue,Profit\nJanuary,10000,2000\nFebruary,15000,3000\nMarch,12000,2500\nApril,18000,3500\n```\n\nYou can run the program by executing the script in your Python environment. After running the script, you will see two visualizations: a bar chart showing the total revenue and profit and a line chart showing the average revenue and profit per month.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 26,
+            "completion_tokens": 942,
+            "total_tokens": 968
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:57:17"
+}

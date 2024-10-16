@@ -1,0 +1,35 @@
+{
+    "unique_idx": "413_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nCreate dense captions for each player, including any visible logos, the color and style of their jerseys, and any expressions or poses they are making.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\n1. A smiling basketball player wearing a white and purple jersey with the number 1 overall pick.\n2. A basketball player with a beard, wearing a black jersey with the number 2 overall pick.\n3. A basketball player wearing a white and black jersey with the number 3 overall pick.\n4. A basketball player wearing a white and orange jersey with the number 4 overall pick.\n5. A basketball player with a beard, wearing a white and black jersey with the number 6 overall pick.\n6. A basketball player wearing a white and yellow jersey with the number 7 overall pick.\n7. A basketball player wearing a white and blue jersey with the number 9 overall pick.\n8. A basketball player wearing a white and black jersey with the number 10 overall pick.\n9. A basketball player wearing a white and black jersey with the number 11 overall pick.\n10. A basketball player wearing a white and blue jersey with the number 13 overall pick.\n11. A basketball player wearing a white and yellow jersey with the number 15 overall pick.\n12. A basketball player wearing a white and black jersey with the number 24 overall pick.\n13. A basketball player wearing a white and red jersey with the number 30 overall pick.\n14. A basketball player wearing a white and yellow jersey with the number 35 overall pick.\n15. A basketball player wearing a white and blue jersey with the number 41 overall pick.\n~~~\n~~~Answer2\n1. Player with a yellow jersey looking into the camera.\n2. Player wearing a black and gold jersey smiling at the camera.\n3. Player in a white jersey posing for the picture.\n4. Player with a purple jersey smiling at the camera.\n5. Player in a black jersey posing for the picture.\n6. Player in a yellow jersey looking into the camera.\n7. Player in a red jersey smiling at the camera.\n8. Player in a black and white jersey posing for the picture.\n9. Player in a blue jersey smiling at the camera.\n10. Player in a white jersey looking into the camera.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and describe the jersey color and style for each player.\n2. Caption visible logos and the number indicating draft pick position.\n3. Note expressions or poses of each player, if any.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/413.jpg",
+    "model_1": "qwen/qwen-2-vl-7b-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "1. A smiling basketball player wearing a white and purple jersey with the number 1 overall pick.\n2. A basketball player with a beard, wearing a black jersey with the number 2 overall pick.\n3. A basketball player wearing a white and black jersey with the number 3 overall pick.\n4. A basketball player wearing a white and orange jersey with the number 4 overall pick.\n5. A basketball player with a beard, wearing a white and black jersey with the number 6 overall pick.\n6. A basketball player wearing a white and yellow jersey with the number 7 overall pick.\n7. A basketball player wearing a white and blue jersey with the number 9 overall pick.\n8. A basketball player wearing a white and black jersey with the number 10 overall pick.\n9. A basketball player wearing a white and black jersey with the number 11 overall pick.\n10. A basketball player wearing a white and blue jersey with the number 13 overall pick.\n11. A basketball player wearing a white and yellow jersey with the number 15 overall pick.\n12. A basketball player wearing a white and black jersey with the number 24 overall pick.\n13. A basketball player wearing a white and red jersey with the number 30 overall pick.\n14. A basketball player wearing a white and yellow jersey with the number 35 overall pick.\n15. A basketball player wearing a white and blue jersey with the number 41 overall pick.",
+    "raw_answer2": "1. Player with a yellow jersey looking into the camera.\n2. Player wearing a black and gold jersey smiling at the camera.\n3. Player in a white jersey posing for the picture.\n4. Player with a purple jersey smiling at the camera.\n5. Player in a black jersey posing for the picture.\n6. Player in a yellow jersey looking into the camera.\n7. Player in a red jersey smiling at the camera.\n8. Player in a black and white jersey posing for the picture.\n9. Player in a blue jersey smiling at the camera.\n10. Player in a white jersey looking into the camera.",
+    "response": {
+        "id": "chatcmpl-AIuTpNljPeayHtVuYCoWibFhFoRK8",
+        "object": "chat.completion",
+        "created": 1729070377,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1506,
+            "completion_tokens": 2,
+            "total_tokens": 1508
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.550069808959961,
+    "code": 200,
+    "current_time": "2024-10-16 17:19:38"
+}

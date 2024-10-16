@@ -1,0 +1,35 @@
+{
+    "unique_idx": "65_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\n이 책은 무엇에 대해 있나요?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\n이 책은 \"골드피쉬 보이\"라는 제목의 청소년 소설입니다. 강박장애를 앓고 있는 소년의 이야기를 다루고 있으며, 가족과 친구의 소중함, 두려움 극복, 사회 문제 등을 따뜻하고 감동적으로 그려낸 작품입니다.\n~~~\n~~~Answer2\n이 책은 한국어로 쓰여진 모음집입니다. \"계란 소년: 한국어 번역서\"(The Goldfish Boy: A Korean translation) 라는 제목이 있으며, 책의 표지는 태풍 오션을 테마로 하고 있습니다. 표지에는 책의 상단 부분에 작은 금솥이 이미지로 등장하며, 하단에는 책의 번호를 나타낸 제이슬(barcode)이 있습니다.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Correctly recognize and translate the book title \"골드피시 보이\" into English.\n2. Identify and translate the Korean text on the book cover to provide context.\n3. Ensure the answer is relevant to the book's content as depicted on the cover.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/65.jpeg",
+    "model_1": "gemini-1.5-pro-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "이 책은 \"골드피쉬 보이\"라는 제목의 청소년 소설입니다. 강박장애를 앓고 있는 소년의 이야기를 다루고 있으며, 가족과 친구의 소중함, 두려움 극복, 사회 문제 등을 따뜻하고 감동적으로 그려낸 작품입니다.",
+    "raw_answer2": "이 책은 한국어로 쓰여진 모음집입니다. \"계란 소년: 한국어 번역서\"(The Goldfish Boy: A Korean translation) 라는 제목이 있으며, 책의 표지는 태풍 오션을 테마로 하고 있습니다. 표지에는 책의 상단 부분에 작은 금솥이 이미지로 등장하며, 하단에는 책의 번호를 나타낸 제이슬(barcode)이 있습니다.",
+    "response": {
+        "id": "chatcmpl-AIt2XhSAgdaLLDHuEFQPSKJTqvFwk",
+        "object": "chat.completion",
+        "created": 1729064841,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1329,
+            "completion_tokens": 2,
+            "total_tokens": 1331
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 8.277075290679932,
+    "code": 200,
+    "current_time": "2024-10-16 15:47:22"
+}

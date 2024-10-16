@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Fake Image Detection",
+        "url": "https://sdxl-h-p-6.stablediffusionweb.com/file=/tmp/gradio/cfcc2e54305bdb0a86301cb2636e11d59f527263/image.png",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Confirm if the answer identifies the figure as AI-generated.\n2. Evaluate the explanation of visual indicators that support the AI-generated conclusion.\n3. Check for mention of any inconsistencies or artifacts typically found in AI-generated images.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/350.webp",
+    "unique_idx": "350",
+    "prompt": "Does this photograph represent a real individual or an AI-generated figure? ",
+    "response": {
+        "id": "chatcmpl-9Okln7uyCV0KWA3bSJTK9AqGUFe9G",
+        "object": "chat.completion",
+        "created": 1715686683,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "This image appears to be AI-generated. The level of perfection in features and the overall aesthetic suggest it is not a photograph of a real individual but rather a digital creation. Additionally, the URL in the image points to \"stablediffusionweb.com,\" which is associated with AI-generated content."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 786,
+            "completion_tokens": 59,
+            "total_tokens": 845
+        },
+        "system_fingerprint": "fp_927397958d"
+    },
+    "answer": "This image appears to be AI-generated. The level of perfection in features and the overall aesthetic suggest it is not a photograph of a real individual but rather a digital creation. Additionally, the URL in the image points to \"stablediffusionweb.com,\" which is associated with AI-generated content.",
+    "gen_model_id": "gpt-4o-2024-05-13",
+    "duration": 6.530325889587402,
+    "code": 200,
+    "current_time": "2024-05-14 19:38:05"
+}

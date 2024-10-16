@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://th.bing.com/th/id/OIP.sSoupZIuPG0QZ4AHf5VtmAHaHa?w=640&h=640&rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe the sequence of actions leading up to the last depicted moment.\n2. Predict the next action based on the momentum and position of figures.\n3. Ensure prediction is plausible within the context of the image sequence.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/388.jpeg",
+    "unique_idx": "388",
+    "prompt": "Analyze the series of actions in the image and predict the possible next action.",
+    "response": {
+        "id": "chatcmpl-df0eeea222604ed1a48a7edef532ef4b",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930964,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The person is raising their leg. So the next action is probably raising the other leg."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 788,
+            "completion_tokens": 18,
+            "total_tokens": 806
+        }
+    },
+    "answer": " The person is raising their leg. So the next action is probably raising the other leg.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 4.380531072616577,
+    "code": 200,
+    "current_time": "2024-04-12 22:09:25"
+}

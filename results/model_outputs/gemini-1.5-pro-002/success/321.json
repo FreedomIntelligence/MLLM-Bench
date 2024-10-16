@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://www.researchgate.net/publication/351673709/figure/fig5/AS:11431281086060493@1664071372500/Comparison-between-full-dose-CT-images-and-low-quality-CT-images-a-and-b-high-quality.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and confirm that CT scans (c) and (d) are the ones needing a redo.\n2. Assess clarity, noise, and artifacts affecting image quality in (c) and (d).",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/321.png",
+    "unique_idx": 321,
+    "prompt": "Which of the CT scan needs a redo?",
+    "context": "Which of the CT scan needs a redo?",
+    "sample_id": 321,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/321.png"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "Images (c) and (d) show significant motion artifacts, indicating the patient likely moved during the scan.  Therefore, both **(c) and (d)** need a redo.  (a) and (b) appear to be acceptable quality scans.",
+    "response_from_model": {
+        "id": "chatcmpl-e504322dc70b47d5aa0d8286f6718dc9",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897320,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Images (c) and (d) show significant motion artifacts, indicating the patient likely moved during the scan.  Therefore, both **(c) and (d)** need a redo.  (a) and (b) appear to be acceptable quality scans."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 268,
+            "completion_tokens": 53,
+            "total_tokens": 321
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:36"
+}

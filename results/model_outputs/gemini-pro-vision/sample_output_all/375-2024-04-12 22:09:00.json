@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-XJg3GaEAAZQRe?format=png&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Include implementation of both architectures: 2x wider model and 2x wider model with AltUp.\n2. Use PyTorch for creating transformer layers, embedding layers, predictors, and correctors.\n3. Reflect the '2x width' specification and 'N/2' layer stacking in the code.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/375.png",
+    "unique_idx": "375",
+    "prompt": "Please implement the model network and idea shown in the picture using PyTorch.",
+    "response": {
+        "id": "chatcmpl-e2db8b77e4c0405cadef05a6756789f1",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930940,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The following code is an implementation of the model shown in the image using PyTorch:\n```python\nimport torch\nimport torch.nn as nn\nfrom torch.nn import Transformer\nfrom torch.nn.utils import *\n\n\nclass TransformerModel(nn.Module):\n    def __init__(self, num_tokens, dim, depth, heads, mlp_dim, dropout = 0.1):\n        super().__init__()\n        self.num_tokens = num_tokens\n        self.token_emb = nn.Embedding(num_tokens, dim)\n        self.pos_emb = nn.Parameter(torch.zeros(1, num_tokens, dim))\n        self.layers = nn.ModuleList([nn.TransformerLayer(dim, heads, mlp_dim, dropout) for _ in range(depth)])\n        self.norm = nn.LayerNorm(dim)\n\n    def forward(self, x):\n        x = self.token_emb(x) + self.pos_emb[0, :x.size(1), :]\n        for layer in self.layers:\n            x = layer(x)\n        return self.norm(x)\n    \nclass AltuModel(nn.Module):\n    def __init__(self, num_tokens, dim, depth, heads, mlp_dim, dropout = 0.1):\n        super().__init__()\n        self.num_tokens = num_tokens\n        self.token_emb = nn.Embedding(num_tokens, dim)\n        self.pos_emb = nn.Parameter(torch.zeros(1, num_tokens, dim))\n        self.layers = nn.ModuleList([nn.TransformerLayer(dim, heads, mlp_dim, dropout) for _ in range(depth)])\n        self.norm = nn.LayerNorm(dim)\n        \n        # Altu components\n        self.corrector = nn.Linear(dim, dim)\n        self.predictor = nn.Linear(dim, dim)\n        \n    def forward(self, x):\n        x = self.token_emb(x) + self.pos_emb[0, :x.size(1), :]\n        \n        # Altu\n        x = self.predictor(x) + self.corrector(x)\n        \n        for layer in self.layers:\n            x = layer(x)\n        return self.norm(x)\n```"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1128,
+            "completion_tokens": 418,
+            "total_tokens": 1546
+        }
+    },
+    "answer": " The following code is an implementation of the model shown in the image using PyTorch:\n```python\nimport torch\nimport torch.nn as nn\nfrom torch.nn import Transformer\nfrom torch.nn.utils import *\n\n\nclass TransformerModel(nn.Module):\n    def __init__(self, num_tokens, dim, depth, heads, mlp_dim, dropout = 0.1):\n        super().__init__()\n        self.num_tokens = num_tokens\n        self.token_emb = nn.Embedding(num_tokens, dim)\n        self.pos_emb = nn.Parameter(torch.zeros(1, num_tokens, dim))\n        self.layers = nn.ModuleList([nn.TransformerLayer(dim, heads, mlp_dim, dropout) for _ in range(depth)])\n        self.norm = nn.LayerNorm(dim)\n\n    def forward(self, x):\n        x = self.token_emb(x) + self.pos_emb[0, :x.size(1), :]\n        for layer in self.layers:\n            x = layer(x)\n        return self.norm(x)\n    \nclass AltuModel(nn.Module):\n    def __init__(self, num_tokens, dim, depth, heads, mlp_dim, dropout = 0.1):\n        super().__init__()\n        self.num_tokens = num_tokens\n        self.token_emb = nn.Embedding(num_tokens, dim)\n        self.pos_emb = nn.Parameter(torch.zeros(1, num_tokens, dim))\n        self.layers = nn.ModuleList([nn.TransformerLayer(dim, heads, mlp_dim, dropout) for _ in range(depth)])\n        self.norm = nn.LayerNorm(dim)\n        \n        # Altu components\n        self.corrector = nn.Linear(dim, dim)\n        self.predictor = nn.Linear(dim, dim)\n        \n    def forward(self, x):\n        x = self.token_emb(x) + self.pos_emb[0, :x.size(1), :]\n        \n        # Altu\n        x = self.predictor(x) + self.corrector(x)\n        \n        for layer in self.layers:\n            x = layer(x)\n        return self.norm(x)\n```",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 12.265255212783813,
+    "code": 200,
+    "current_time": "2024-04-12 22:09:00"
+}

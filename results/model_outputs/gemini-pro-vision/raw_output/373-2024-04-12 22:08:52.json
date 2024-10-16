@@ -1,0 +1,21 @@
+{
+    "id": "chatcmpl-539b22e507664a3a9662b227c28cbfbc",
+    "model": "gemini-pro-vision",
+    "object": "chat.completion",
+    "created": 1712930932,
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": " ```python\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n# Create the data\ncategories = ['Spain', 'France', 'U.K.', 'Italy', 'Mexico', 'Portugal', 'Euro Area', 'Hong Kong', 'Philippines', 'Malaysia', 'Austria', 'Thailand', 'Chile', 'Singapore', 'Germany', 'Czech Republic', 'Hungary', 'Japan', 'Netherlands', 'U.S.', 'Russia', 'Colombia', 'Poland', 'Norway', 'China', 'Indonesia', 'South Korea', 'Vietnam']\nq2_growth = [-22, -19, -17, -12, -11, -10, -9, -9, -8, -8, -7, -7, -7, -6, -6, -6, -5, -5, -5, -3, -3, -3, -3, -1, 1, 2, 3, 5]\nh1_growth = [-13, -12, -11, -9, -9, -9, -9, -9, -9, -8, -8, -8, -7, -7, -6, -6, -6, -5, -5, -5, -3, -3, -3, -2, -1, 0, 2, 3, 5]\n\n# Create the dataframe\ndf = pd.DataFrame({'Q2 Growth': q2_growth, 'H1 Growth': h1_growth}, index=categories)\n\n# Plot the bar chart\ndf.plot.bar(rot=0, figsize=(20, 8))\nplt.ylabel('Growth Rate (%)')\nplt.title('Global Growth in First Half 2020')\nplt.show()\n```"
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1138,
+        "completion_tokens": 380,
+        "total_tokens": 1518
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "10_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhich dishes can have extra ingredients added, and what is the cost of adding ingredients?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nHere are the dishes that can have extra ingredients added, along with the costs for those additions:\n\n### Cold Starters:\n1. **Tomato & Onion Salad**  \n   - Add blue cheese for **£1**.\n   \n2. **Bruschetta al Pomodoro**  \n   - Add grilled goat's cheese for **£1**.\n\n3. **Cocktail Di Gamberi Rossi**  \n   - Add smoked salmon for **£1**.\n\n### Hot Starters:\n1. **Pane All'Aglio**  \n   - Additional toppings:\n     - Mozzarella cheese: **£2**\n     - Fresh rosemary & sea salt: **£1**\n     - Tomato & fresh basil: **£1**\n     - Goat's cheese & caramelised onion: **£2**\n     - Rocket & parmesan: **£2**.\n\n### Pasta Dishes:\n1. **Spaghetti Carbonara**  \n   - Add chicken for **£2**.\n\nThese are the options available for adding extra ingredients along with their costs.\n~~~\n~~~Answer2\nSeveral dishes on the menu allow for the addition of extra ingredients. These dishes include the spaghetti carbonara and the penne alla chiarra. The cost of adding extra ingredients for these dishes is either 50p or 70p, depending on the dish. The price can also vary depending on the specific ingredients added and their portions, so it is best to confirm the cost with the restaurant.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify dishes with add-on options and their respective costs (e.g., \"add blue cheese for £1\").",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/10.jpg",
+    "model_1": "gpt-4o-mini-2024-07-18",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "Here are the dishes that can have extra ingredients added, along with the costs for those additions:\n\n### Cold Starters:\n1. **Tomato & Onion Salad**  \n   - Add blue cheese for **£1**.\n   \n2. **Bruschetta al Pomodoro**  \n   - Add grilled goat's cheese for **£1**.\n\n3. **Cocktail Di Gamberi Rossi**  \n   - Add smoked salmon for **£1**.\n\n### Hot Starters:\n1. **Pane All'Aglio**  \n   - Additional toppings:\n     - Mozzarella cheese: **£2**\n     - Fresh rosemary & sea salt: **£1**\n     - Tomato & fresh basil: **£1**\n     - Goat's cheese & caramelised onion: **£2**\n     - Rocket & parmesan: **£2**.\n\n### Pasta Dishes:\n1. **Spaghetti Carbonara**  \n   - Add chicken for **£2**.\n\nThese are the options available for adding extra ingredients along with their costs.",
+    "raw_answer2": "Several dishes on the menu allow for the addition of extra ingredients. These dishes include the spaghetti carbonara and the penne alla chiarra. The cost of adding extra ingredients for these dishes is either 50p or 70p, depending on the dish. The price can also vary depending on the specific ingredients added and their portions, so it is best to confirm the cost with the restaurant.",
+    "response": {
+        "id": "chatcmpl-AIt7KAhkOYQDePmlxVpcIjyhbg9i3",
+        "object": "chat.completion",
+        "created": 1729065138,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1665,
+            "completion_tokens": 2,
+            "total_tokens": 1667
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.214091777801514,
+    "code": 200,
+    "current_time": "2024-10-16 15:52:19"
+}

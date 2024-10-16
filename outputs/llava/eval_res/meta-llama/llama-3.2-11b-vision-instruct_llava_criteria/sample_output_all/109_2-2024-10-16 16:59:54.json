@@ -1,0 +1,35 @@
+{
+    "unique_idx": "109_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nIdentify a hair dryer in the image.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe hair dryer is located in the bottom-right corner of the image, featuring a round nozzle and a black cord. It is situated amidst a collection of various cosmetic items, including makeup brushes, lipsticks, and nail polish.\n~~~\n~~~Answer2\nYes, there is a hair dryer in the image, which is placed next to a mirror and surrounded by cosmetics and other beauty supplies.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm the presence of at least one hair dryer in front of the rightmost mirror.\n2. Identify one hair dryer on the left side of the iamge and another one on the right side of the image.\n",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/109.jpeg",
+    "model_1": "meta-llama/llama-3.2-11b-vision-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The hair dryer is located in the bottom-right corner of the image, featuring a round nozzle and a black cord. It is situated amidst a collection of various cosmetic items, including makeup brushes, lipsticks, and nail polish.",
+    "raw_answer2": "Yes, there is a hair dryer in the image, which is placed next to a mirror and surrounded by cosmetics and other beauty supplies.",
+    "response": {
+        "id": "chatcmpl-AIuAkEeSYT82DZ4VG9EgWvELqq2f0",
+        "object": "chat.completion",
+        "created": 1729069194,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1116,
+            "completion_tokens": 2,
+            "total_tokens": 1118
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.4191770553588867,
+    "code": 200,
+    "current_time": "2024-10-16 16:59:54"
+}

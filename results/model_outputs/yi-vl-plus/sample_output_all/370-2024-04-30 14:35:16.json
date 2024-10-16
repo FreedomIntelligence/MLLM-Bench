@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-4kEacbUAAobjX?format=jpg&name=large",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Program calculates factorials for integers between user-inputted p and q, inclusive.\n2. Output format matches the example: \"n! = result\" on separate lines.\n3. User input for p and q is requested and handled correctly.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/370.jpeg",
+    "unique_idx": "370",
+    "prompt": "You are a software developer. Write a program to finish the task as required in the picture.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 244,
+            "prompt_tokens": 1029,
+            "total_tokens": 1273
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here is a Python program that evaluates the factorials of the integers from `p` to `q` as per the image provided:\n\n```python\ndef factorial(n):\n    \"\"\"Calculate the factorial of a number.\"\"\"\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\ndef print_factorial(p, q):\n    \"\"\"Print the factorials from p to q.\"\"\"\n    for i in range(p, q+1):\n        print(f\"{i}! = {factorial(i)}\")\n\n# Get user input for p and q\np = int(input(\"Enter the starting integer: \"))\nq = int(input(\"Enter the ending integer: \"))\n\n# Print the factorials\nprint_factorial(p, q)\n```\n\nTo run this program, simply input the starting integer and the ending integer when prompted. The program will then print the factorial of each integer from `p` to `q`."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "Here is a Python program that evaluates the factorials of the integers from `p` to `q` as per the image provided:\n\n```python\ndef factorial(n):\n    \"\"\"Calculate the factorial of a number.\"\"\"\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\ndef print_factorial(p, q):\n    \"\"\"Print the factorials from p to q.\"\"\"\n    for i in range(p, q+1):\n        print(f\"{i}! = {factorial(i)}\")\n\n# Get user input for p and q\np = int(input(\"Enter the starting integer: \"))\nq = int(input(\"Enter the ending integer: \"))\n\n# Print the factorials\nprint_factorial(p, q)\n```\n\nTo run this program, simply input the starting integer and the ending integer when prompted. The program will then print the factorial of each integer from `p` to `q`.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 18.522459506988525,
+    "code": 200,
+    "current_time": "2024-04-30 14:35:16"
+}

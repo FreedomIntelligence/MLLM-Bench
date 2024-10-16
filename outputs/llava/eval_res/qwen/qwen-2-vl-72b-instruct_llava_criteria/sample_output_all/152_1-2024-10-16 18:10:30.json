@@ -1,0 +1,35 @@
+{
+    "unique_idx": "152_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nIdentify the specific regional wedding traditions that the couple's attire may represent, and describe those traditions in Hindi.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe couple in the image is dressed in traditional Indian wedding attire, representing the specific regional wedding traditions of South India. The groom is wearing a sherwani, a long coat-like garment with an open front, while the bride is wearing a traditional South Indian saree. The saree is adorned with intricate embroidery and features a red and gold color scheme, a popular color combination in South Indian weddings.\n\nThese traditional outfits reflect the rich cultural heritage and customs of South Indian weddings, which often include colorful and intricately designed attire, traditional jewelry, and various rituals that are unique to the region. In Hindi, the couple's attire can be described as follows:\n\nSherwani - स्हरवानी\nSouth Indian Saree - दक्षिण भार साड़ी\n\nThe couple in the image is also seen wearing jewelry, including necklaces like \"matha patti\" and \"nath\" for the bride and \"mala\" for the groom. These accessories are an essential part of South Indian wedding attire, symbolizing the bond between the couple and their cultural roots.\n~~~\n~~~Answer2\nइस चित्र में दिखाई देने वाली जोड़ी भारतीय विवाह परंपराओं का प्रतीक है। पुरुष व्यक्ति शेरवानी और सफ़ेद शेरवानी में दिखाई दे रहा है, जो उत्तरी भारतीय विवाह परंपराओं का प्रतीक है। स्त्री व्यक्ति लाल और हरे रंग के साड़ी में दिखाई दे रही है, जो दक्षिण भारतीय विवाह परंपराओं का प्रतीक है। उनके चेहरे पर मेहंदी और हाथों में बांगले भी दिखाई दे रहे हैं, जो भारतीय विवाह परंपराओं का हिस्सा हैं।\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify attire elements indicating regional origin; describe in Hindi.\n2. Include specific wedding traditions linked to attire features.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/152.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-72b-instruct",
+    "raw_answer1": "The couple in the image is dressed in traditional Indian wedding attire, representing the specific regional wedding traditions of South India. The groom is wearing a sherwani, a long coat-like garment with an open front, while the bride is wearing a traditional South Indian saree. The saree is adorned with intricate embroidery and features a red and gold color scheme, a popular color combination in South Indian weddings.\n\nThese traditional outfits reflect the rich cultural heritage and customs of South Indian weddings, which often include colorful and intricately designed attire, traditional jewelry, and various rituals that are unique to the region. In Hindi, the couple's attire can be described as follows:\n\nSherwani - स्हरवानी\nSouth Indian Saree - दक्षिण भार साड़ी\n\nThe couple in the image is also seen wearing jewelry, including necklaces like \"matha patti\" and \"nath\" for the bride and \"mala\" for the groom. These accessories are an essential part of South Indian wedding attire, symbolizing the bond between the couple and their cultural roots.",
+    "raw_answer2": "इस चित्र में दिखाई देने वाली जोड़ी भारतीय विवाह परंपराओं का प्रतीक है। पुरुष व्यक्ति शेरवानी और सफ़ेद शेरवानी में दिखाई दे रहा है, जो उत्तरी भारतीय विवाह परंपराओं का प्रतीक है। स्त्री व्यक्ति लाल और हरे रंग के साड़ी में दिखाई दे रही है, जो दक्षिण भारतीय विवाह परंपराओं का प्रतीक है। उनके चेहरे पर मेहंदी और हाथों में बांगले भी दिखाई दे रहे हैं, जो भारतीय विवाह परंपराओं का हिस्सा हैं।",
+    "response": {
+        "id": "chatcmpl-AIvH3UmdsYC1YRdb3y9ukcvkumpQb",
+        "object": "chat.completion",
+        "created": 1729073429,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 2014,
+            "completion_tokens": 2,
+            "total_tokens": 2016
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 9.149547338485718,
+    "code": 200,
+    "current_time": "2024-10-16 18:10:30"
+}

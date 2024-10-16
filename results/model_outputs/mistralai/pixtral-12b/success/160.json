@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Document Understanding",
+        "url": "https://pbs.twimg.com/media/F8kswFXXsAUTKhx?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Include LaTeX equation for 2-stock portfolio variance, which is \u000bar(R_p) = w_A^2 \\cdot \\sigma^2(R_A) + w_B^2 \\cdot \\sigma^2(R_B) + 2w_Aw_B\\sigma(R_A)\\sigma(R_B)\rho(R_A, R_B)",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/160.jpeg",
+    "unique_idx": 160,
+    "prompt": "What is the equation for calculating the variance of 2-stock portfolio according to the quick sheet. Write in LaTeX formula.",
+    "context": "What is the equation for calculating the variance of 2-stock portfolio according to the quick sheet. Write in LaTeX formula.",
+    "sample_id": 160,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/160.jpeg"
+    ],
+    "gen_model_id": "mistralai/pixtral-12b",
+    "answer": "The equation for calculating the variance of a 2-stock portfolio according to the quick sheet is:\n\n$$ \\sigma_{p}^2 = \\sigma_{a}^2 + \\sigma_{b}^2 + 2 \\cdot \\rho_{ab} \\cdot \\sigma_{a} \\cdot \\sigma_{b} $$\n\nWhere:\n\n- \\( \\sigma_{p}^2 \\) is the variance of the portfolio,\n- \\( \\sigma_{a}^2 \\) is the variance of stock a,\n- \\( \\sigma_{b}^2 \\) is the variance of stock b,\n- \\( \\rho_{ab} \\) is the correlation between stocks a and b,\n- \\( \\sigma_{a} \\) is the standard deviation of stock a,\n- \\( \\sigma_{b} \\) is the standard deviation of stock b.",
+    "response_from_model": {
+        "id": "gen-1728915920-80Fc8mGHFjMxPizs3kgm",
+        "provider": "Hyperbolic",
+        "model": "mistralai/pixtral-12b",
+        "object": "chat.completion",
+        "created": 1728915920,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The equation for calculating the variance of a 2-stock portfolio according to the quick sheet is:\n\n$$ \\sigma_{p}^2 = \\sigma_{a}^2 + \\sigma_{b}^2 + 2 \\cdot \\rho_{ab} \\cdot \\sigma_{a} \\cdot \\sigma_{b} $$\n\nWhere:\n\n- \\( \\sigma_{p}^2 \\) is the variance of the portfolio,\n- \\( \\sigma_{a}^2 \\) is the variance of stock a,\n- \\( \\sigma_{b}^2 \\) is the variance of stock b,\n- \\( \\rho_{ab} \\) is the correlation between stocks a and b,\n- \\( \\sigma_{a} \\) is the standard deviation of stock a,\n- \\( \\sigma_{b} \\) is the standard deviation of stock b.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 2014,
+            "completion_tokens": 173,
+            "total_tokens": 2187
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-22:25:23"
+}

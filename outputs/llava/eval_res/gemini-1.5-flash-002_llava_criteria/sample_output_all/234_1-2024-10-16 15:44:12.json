@@ -1,0 +1,35 @@
+{
+    "unique_idx": "234_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nDetermine the percentage increase in 'Total Income' from the quarter 30 Sep 2023 to the quarter 30 June 2023.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nTo determine the percentage increase in 'Total Income,' we can compare the values of the two quarters and calculate the ratio. The values for the quarters 30 Sep 2023 and 30 June 2023 are 7390695 and 7390694, respectively. Since they are equal, we can calculate the percentage increase as 0%.\n~~~\n~~~Answer2\nHere's how to calculate the percentage increase in Total Income:\n\n**1. Find the difference:**\n\n* Total Income (30 Sep 2023): 1,751.00\n* Total Income (30 June 2023): 1,552.63\n* Difference: 1,751.00 - 1,552.63 = 198.37\n\n**2. Calculate the percentage increase:**\n\n* Percentage increase = (Difference / Total Income (30 June 2023)) * 100\n* Percentage increase = (198.37 / 1,552.63) * 100 \n* Percentage increase ≈ 12.77%\n\nTherefore, the percentage increase in Total Income from the quarter ending 30 June 2023 to the quarter ending 30 September 2023 is approximately **12.77%**.\n\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Correctly calculates percentage increase from 'Total Income' for specified quarters.\n2. Matches the percentage increase with the reference: 12.78%.\n3. Explains the calculation process or provides the correct formula used.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/234.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-flash-002",
+    "raw_answer1": "To determine the percentage increase in 'Total Income,' we can compare the values of the two quarters and calculate the ratio. The values for the quarters 30 Sep 2023 and 30 June 2023 are 7390695 and 7390694, respectively. Since they are equal, we can calculate the percentage increase as 0%.",
+    "raw_answer2": "Here's how to calculate the percentage increase in Total Income:\n\n**1. Find the difference:**\n\n* Total Income (30 Sep 2023): 1,751.00\n* Total Income (30 June 2023): 1,552.63\n* Difference: 1,751.00 - 1,552.63 = 198.37\n\n**2. Calculate the percentage increase:**\n\n* Percentage increase = (Difference / Total Income (30 June 2023)) * 100\n* Percentage increase = (198.37 / 1,552.63) * 100 \n* Percentage increase ≈ 12.77%\n\nTherefore, the percentage increase in Total Income from the quarter ending 30 June 2023 to the quarter ending 30 September 2023 is approximately **12.77%**.\n",
+    "response": {
+        "id": "chatcmpl-AIszTMPOwu01o54DG5PxfSDCbR8jH",
+        "object": "chat.completion",
+        "created": 1729064651,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1989,
+            "completion_tokens": 2,
+            "total_tokens": 1991
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 7.030943155288696,
+    "code": 200,
+    "current_time": "2024-10-16 15:44:12"
+}

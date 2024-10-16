@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Chart Understanding",
+        "url": "https://pbs.twimg.com/media/F-I825TasAAfDV9?format=jpg&name=small",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer includes America, China, and Japan as the top three GDP countries.\n2. Response accurately reflects the GDP values or percentages from the chart.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/212.jpg",
+    "unique_idx": "212",
+    "prompt": "Determine the top three countries by GDP among all countries in the chart.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The top three countries by GDP as shown on the chart are:\n\n1. United States: $18.0 Trillion\n2. China: $11.0 Trillion\n3. Japan: $4.4 Trillion",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426868,
+        "id": "chatcmpl-9W3TI7ayhVo71gHMyWvnnGXP9dBph",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 46,
+            "prompt_tokens": 787,
+            "total_tokens": 833
+        }
+    },
+    "answer": "The top three countries by GDP as shown on the chart are:\n\n1. United States: $18.0 Trillion\n2. China: $11.0 Trillion\n3. Japan: $4.4 Trillion",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 5.960762977600098,
+    "code": 200,
+    "current_time": "2024-06-03 23:01:11"
+}

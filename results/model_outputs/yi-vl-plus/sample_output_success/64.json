@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "https://pbs.twimg.com/media/F9zsKg9acAAgSnU?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify the company \"中國國民航空公司\" (China National Aviation Corp.) from the poster.\n2. Recognize the services \"航空郵件\" (air mail) and \"乘客服務\" (passenger service) advertised.\n3. Ensure the response is in the context of the poster's promotional content.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/64.jpeg",
+    "unique_idx": "64",
+    "prompt": "圖中的海報在宣傳哪家公司的什麼服務？",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 9,
+            "prompt_tokens": 1024,
+            "total_tokens": 1033
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "中國航空公司航空郵件乘客服務"
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "中國航空公司航空郵件乘客服務",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 7.071133852005005,
+    "code": 200,
+    "current_time": "2024-04-30 13:12:04"
+}

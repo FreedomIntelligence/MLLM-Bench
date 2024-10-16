@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Scene Understanding",
+        "url": "https://pbs.twimg.com/media/F-hrNk7XYAAomHa?format=jpg&name=small",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify attire indicating a wedding; prioritize bright-colored, festive garments and any headpieces.\n2. Describe elements like bouquets or ceremonial objects that suggest a wedding.\n3. Identify the presence of a marriage officer or a religious leader holding a book that suggest a wedding.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/70.jpg",
+    "unique_idx": 70,
+    "prompt": "Given the image, identify any cultural or traditional attire and elements present in the scene, and infer the type of ceremony or event taking place.",
+    "context": "Given the image, identify any cultural or traditional attire and elements present in the scene, and infer the type of ceremony or event taking place.",
+    "sample_id": 70,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/70.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The man and woman on the right are wearing traditional Ghanaian Kente cloth. The man's attire, consisting of a large draped cloth over a plain shirt, is a common style for formal occasions.  The woman's outfit incorporates the Kente cloth into a more modern, fitted bodice and skirt. Her hair is styled up with decorative hairpins.\n\nThe presence of a book being read by another man, likely officiating, suggests this is a ceremony with a spoken component. Given the attire and the seemingly solemn atmosphere, it is likely a **traditional Ghanaian wedding ceremony** or possibly a **marriage blessing**.  The other man in plain white may be a best man or another member of the wedding party.\n",
+    "response_from_model": {
+        "id": "chatcmpl-cae3e0d041f746dfabd76f1cbfb87dd5",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897244,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The man and woman on the right are wearing traditional Ghanaian Kente cloth. The man's attire, consisting of a large draped cloth over a plain shirt, is a common style for formal occasions.  The woman's outfit incorporates the Kente cloth into a more modern, fitted bodice and skirt. Her hair is styled up with decorative hairpins.\n\nThe presence of a book being read by another man, likely officiating, suggests this is a ceremony with a spoken component. Given the attire and the seemingly solemn atmosphere, it is likely a **traditional Ghanaian wedding ceremony** or possibly a **marriage blessing**.  The other man in plain white may be a best man or another member of the wedding party.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 287,
+            "completion_tokens": 143,
+            "total_tokens": 430
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:14:21"
+}

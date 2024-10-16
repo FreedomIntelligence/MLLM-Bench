@@ -1,0 +1,35 @@
+{
+    "unique_idx": "49_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat ingredients should I prepare to make a dish like this?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nTo make sushi rolls similar to those in the image, you will need the following ingredients:\n\n**For the Sushi Rice:**\n\n* Sushi rice (short-grain Japanese rice)\n* Rice vinegar\n* Sugar\n* Salt\n\n**For the Fillings (choose a variety, as shown in the image):**\n\n* **Tuna (Maguro):**  High-quality sushi-grade tuna, thinly sliced\n* **Salmon (Sake):** High-quality sushi-grade salmon, thinly sliced\n* **Avocado (Avokado):** Ripe avocado, thinly sliced or diced\n* **Cucumber (Kyuri):**  Fresh cucumber, thinly sliced\n* **Imitation Crab Meat (Kanikama):**  (optional, if you want a crab-like filling)\n* **Mango or other fruit:** Thinly sliced (as seen in the image)\n\n\n**For the Sushi:**\n\n* Nori seaweed sheets (dried)\n* Optional: Sesame seeds (for sprinkling)\n\n**Other:**\n\n* Bamboo rolling mat (makisu)\n* Small bowl of water (for wetting your hands and the mat)\n* Pickled ginger (gari) - for serving\n\n\n**Note:**  Always use sushi-grade fish if you are including raw fish in your sushi.  This ensures the fish is safe to eat raw.  If you are unsure about the quality of the fish, it's best to cook it before using it in sushi.\n\n~~~\n~~~Answer2\nTo make a sushi wrap dish similar to the one in the image, you will need the following ingredients:\n\n1. Sushi Rice: A blend of Japanese rice and rice vinegar, which provides the stickiness needed to hold the sushi together.\n\n2. Nori: Thin sheets of dried seaweed, usually made from kelp or other species of red or green algae. These are used to wrap the sushi roll.\n\n3. Sushi-grade fish: Choose fish that are suitable for sushi, such as salmon, tuna, or shrimp.\n\n4. Vegetables: Sliced cucumbers, avocado, and carrots are commonly used in sushi rolls.\n\n5. Sushi-making tools: A sushi mat, bamboo sushi roller, and a sharp knife will help you shape and assemble the rolls.\n\n6. Optional fillings: Other ingredients like imitation crab meat, sliced jalapeños, or pickled radishes can be added to enhance the flavor and crunch of the sushi roll.\n\n7. Soy sauce and pickled ginger: These condiments are often served on the side to complement the sushi rolls.\n\nBy combining these ingredients and using the appropriate tools and techniques, you will be able to create a delicious and visually appealing sushi wrap dish similar to the one seen in the image.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. List main ingredients visible: rice, seaweed, fish, vegetables (cucumber).\n2. Include common sushi ingredients not visible: sushi vinegar, sugar, salt.\n3. Mention optional garnishes or accompaniments: pickled ginger, wasabi, soy sauce.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/49.jpg",
+    "model_1": "gemini-1.5-flash-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "To make sushi rolls similar to those in the image, you will need the following ingredients:\n\n**For the Sushi Rice:**\n\n* Sushi rice (short-grain Japanese rice)\n* Rice vinegar\n* Sugar\n* Salt\n\n**For the Fillings (choose a variety, as shown in the image):**\n\n* **Tuna (Maguro):**  High-quality sushi-grade tuna, thinly sliced\n* **Salmon (Sake):** High-quality sushi-grade salmon, thinly sliced\n* **Avocado (Avokado):** Ripe avocado, thinly sliced or diced\n* **Cucumber (Kyuri):**  Fresh cucumber, thinly sliced\n* **Imitation Crab Meat (Kanikama):**  (optional, if you want a crab-like filling)\n* **Mango or other fruit:** Thinly sliced (as seen in the image)\n\n\n**For the Sushi:**\n\n* Nori seaweed sheets (dried)\n* Optional: Sesame seeds (for sprinkling)\n\n**Other:**\n\n* Bamboo rolling mat (makisu)\n* Small bowl of water (for wetting your hands and the mat)\n* Pickled ginger (gari) - for serving\n\n\n**Note:**  Always use sushi-grade fish if you are including raw fish in your sushi.  This ensures the fish is safe to eat raw.  If you are unsure about the quality of the fish, it's best to cook it before using it in sushi.\n",
+    "raw_answer2": "To make a sushi wrap dish similar to the one in the image, you will need the following ingredients:\n\n1. Sushi Rice: A blend of Japanese rice and rice vinegar, which provides the stickiness needed to hold the sushi together.\n\n2. Nori: Thin sheets of dried seaweed, usually made from kelp or other species of red or green algae. These are used to wrap the sushi roll.\n\n3. Sushi-grade fish: Choose fish that are suitable for sushi, such as salmon, tuna, or shrimp.\n\n4. Vegetables: Sliced cucumbers, avocado, and carrots are commonly used in sushi rolls.\n\n5. Sushi-making tools: A sushi mat, bamboo sushi roller, and a sharp knife will help you shape and assemble the rolls.\n\n6. Optional fillings: Other ingredients like imitation crab meat, sliced jalapeños, or pickled radishes can be added to enhance the flavor and crunch of the sushi roll.\n\n7. Soy sauce and pickled ginger: These condiments are often served on the side to complement the sushi rolls.\n\nBy combining these ingredients and using the appropriate tools and techniques, you will be able to create a delicious and visually appealing sushi wrap dish similar to the one seen in the image.",
+    "response": {
+        "id": "chatcmpl-AIsxTxge61nUb2aaRNqpT4sNP4EsV",
+        "object": "chat.completion",
+        "created": 1729064527,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1952,
+            "completion_tokens": 2,
+            "total_tokens": 1954
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.751619815826416,
+    "code": 200,
+    "current_time": "2024-10-16 15:42:08"
+}

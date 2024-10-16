@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://tse2-mm.cn.bing.net/th/id/OIP-C.DfcmfnHYf5SBexamy5AfRgHaF5?rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe any abnormalities visible in the brain CT image.\n2. Use appropriate medical terminology related to brain anatomy and pathology.\n3. Provide a structured report format, including observations and conclusions.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/192.jpg",
+    "unique_idx": "192",
+    "prompt": "Write a CT report for this image as a brain specialist.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Clinical Information: [Patient's clinical history and symptoms]\n\nCT Brain Without Contrast:\n\nFindings:\n- There is a large hyperdense area within the right cerebral hemisphere, consistent with a large intracranial hemorrhage.\n- There is a significant mass effect with midline shift to the left, indicating raised intracranial pressure.\n- Localized brain edema is present surrounding the hemorrhage.\n- Compression and shift of the right lateral ventricle are noted, and the third ventricle is also compressed and displaced to the left.\n- No evidence of skull fracture is seen.\n- The grey-white matter differentiation is lost in the area of the hemorrhage.\n- There are no signs of hydrocephalus.\n- The basal cisterns are compressed due to the mass effect.\n- No additional hemorrhagic or ischemic lesions are identified in the visualized portions of the brain.\n\nImpression:\n- Acute right hemispheric intracranial hemorrhage with significant mass effect and midline shift. The findings suggest a high likelihood of hypertension as an underlying cause, although other etiologies cannot be excluded without further clinical correlation.\n- Urgent neurosurgical evaluation is recommended given the mass effect and potential for herniation.\n- Further assessment with a contrast-enhanced study or additional imaging modalities like MRI may be considered after initial management to evaluate for underlying vascular anomalies or other pathologies.\n- Close clinical monitoring for neurological status and intracranial pressure management is indicated.\n\nNote: This impression is based solely on the provided image and should be correlated with clinical findings and history for accurate diagnosis and management.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426838,
+        "id": "chatcmpl-9W3So17uxVVfCqCMxLoQA6fbKXQ5l",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 325,
+            "prompt_tokens": 784,
+            "total_tokens": 1109
+        }
+    },
+    "answer": "Clinical Information: [Patient's clinical history and symptoms]\n\nCT Brain Without Contrast:\n\nFindings:\n- There is a large hyperdense area within the right cerebral hemisphere, consistent with a large intracranial hemorrhage.\n- There is a significant mass effect with midline shift to the left, indicating raised intracranial pressure.\n- Localized brain edema is present surrounding the hemorrhage.\n- Compression and shift of the right lateral ventricle are noted, and the third ventricle is also compressed and displaced to the left.\n- No evidence of skull fracture is seen.\n- The grey-white matter differentiation is lost in the area of the hemorrhage.\n- There are no signs of hydrocephalus.\n- The basal cisterns are compressed due to the mass effect.\n- No additional hemorrhagic or ischemic lesions are identified in the visualized portions of the brain.\n\nImpression:\n- Acute right hemispheric intracranial hemorrhage with significant mass effect and midline shift. The findings suggest a high likelihood of hypertension as an underlying cause, although other etiologies cannot be excluded without further clinical correlation.\n- Urgent neurosurgical evaluation is recommended given the mass effect and potential for herniation.\n- Further assessment with a contrast-enhanced study or additional imaging modalities like MRI may be considered after initial management to evaluate for underlying vascular anomalies or other pathologies.\n- Close clinical monitoring for neurological status and intracranial pressure management is indicated.\n\nNote: This impression is based solely on the provided image and should be correlated with clinical findings and history for accurate diagnosis and management.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 21.405921459197998,
+    "code": 200,
+    "current_time": "2024-06-03 23:00:47"
+}

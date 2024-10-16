@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-VTdVLakAEvyS7?format=jpg&name=900x900",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and visualize top-selling IPs in both categories for 2024.3 Full Year Forecasts.\n2. Compare sales growth between 2023.3 and 2024.3 for highlighted IPs.\n3. Ensure visual representation is clear, accurate, and easily interpretable.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/378.jpeg",
+    "unique_idx": 378,
+    "prompt": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "context": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "sample_id": 378,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/378.jpeg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "Here's a Python program using matplotlib to visualize the most important information from the report.  This program focuses on the top-performing IPs and their projected growth.  You'll need to install matplotlib (`pip install matplotlib`).\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Data from the report (you'll need to adapt this to your data source)\ndata_groupwide = {\n    '2023.3': {\n        'Anpanman': 4.7, 'Ultraman': 8.9, 'KAMEN RIDER': 14.2,\n        'Mobile Suit Gundam': 62.4, 'Super Sentai': 3.5, 'DRAGON BALL': 65.7,\n        'NARUTO': 10.2, 'Pretty Cure': 2.9, 'ONE PIECE': 35.9\n    },\n    '2024.3': {\n        'Anpanman': 4.7, 'Ultraman': 9.5, 'KAMEN RIDER': 12.9,\n        'Mobile Suit Gundam': 72.6, 'Super Sentai': 3.3, 'DRAGON BALL': 68.4,\n        'NARUTO': 11.0, 'Pretty Cure': 2.8, 'ONE PIECE': 57.1\n    }\n}\n\ndata_toys = {\n    '2023.3': {\n        'Anpanman': 4.3, 'Ultraman': 4.7, 'KAMEN RIDER': 9.5,\n        'Mobile Suit Gundam': 30.1, 'Super Sentai': 2.9, 'DRAGON BALL': 12.0,\n        'Pretty Cure': 2.9, 'Pokémon': 4.1, 'ONE PIECE': 12.3\n    },\n    '2024.3': {\n        'Anpanman': 4.3, 'Ultraman': 4.3, 'KAMEN RIDER': 9.4,\n        'Mobile Suit Gundam': 34.7, 'Super Sentai': 2.8, 'DRAGON BALL': 12.2,\n        'Pretty Cure': 2.8, 'Pokémon': 5.9, 'ONE PIECE': 30.0\n    }\n}\n\n\ndef visualize_data(data, title):\n    labels = list(data['2023.3'].keys())\n    results_2023 = list(data['2023.3'].values())\n    forecasts_2024 = list(data['2024.3'].values())\n\n    x = np.arange(len(labels))  # the label locations\n    width = 0.35  # the width of the bars\n\n    fig, ax = plt.subplots()\n    rects1 = ax.bar(x - width/2, results_2023, width, label='2023.3 Results')\n    rects2 = ax.bar(x + width/2, forecasts_2024, width, label='2024.3 Forecasts')\n\n    # Add some text for labels, title and custom x-axis tick labels, etc.\n    ax.set_ylabel('Sales (billion yen)')\n    ax.set_title(title)\n    ax.set_xticks(x)\n    ax.set_xticklabels(labels, rotation=45, ha=\"right\")\n    ax.legend()\n\n    fig.tight_layout()\n    plt.show()\n\nvisualize_data(data_groupwide, 'Sales of IPs (Groupwide)')\nvisualize_data(data_toys, 'Sales of IPs (Toys and Hobby Business, Japan)')\n\n```\n\nThis improved code:\n\n1. **Organizes data:**  Uses dictionaries for easier data management.  You'll need to replace the example data with your actual data extracted from the image.\n2. **Creates two charts:** Generates separate charts for Groupwide and Toys & Hobby data.\n3. **Uses Matplotlib:** Creates bar charts for easy comparison of 2023 results and 2024 forecasts.\n4. **Clearer Labels:** Includes axis labels and a title for better readability.\n5. **Handles Rotation:** Rotates x-axis labels to prevent overlap.\n\n\nRemember to replace the example data with the actual values from your report.  The key is to structure your data in a way that's easily processed by the Python script.  If you have the data in a different format (e.g., CSV, Excel), you can adapt the code to read from that format using libraries like `pandas`.\n",
+    "response_from_model": {
+        "id": "chatcmpl-1b694f781ad740b29e73145a92576780",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897193,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here's a Python program using matplotlib to visualize the most important information from the report.  This program focuses on the top-performing IPs and their projected growth.  You'll need to install matplotlib (`pip install matplotlib`).\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Data from the report (you'll need to adapt this to your data source)\ndata_groupwide = {\n    '2023.3': {\n        'Anpanman': 4.7, 'Ultraman': 8.9, 'KAMEN RIDER': 14.2,\n        'Mobile Suit Gundam': 62.4, 'Super Sentai': 3.5, 'DRAGON BALL': 65.7,\n        'NARUTO': 10.2, 'Pretty Cure': 2.9, 'ONE PIECE': 35.9\n    },\n    '2024.3': {\n        'Anpanman': 4.7, 'Ultraman': 9.5, 'KAMEN RIDER': 12.9,\n        'Mobile Suit Gundam': 72.6, 'Super Sentai': 3.3, 'DRAGON BALL': 68.4,\n        'NARUTO': 11.0, 'Pretty Cure': 2.8, 'ONE PIECE': 57.1\n    }\n}\n\ndata_toys = {\n    '2023.3': {\n        'Anpanman': 4.3, 'Ultraman': 4.7, 'KAMEN RIDER': 9.5,\n        'Mobile Suit Gundam': 30.1, 'Super Sentai': 2.9, 'DRAGON BALL': 12.0,\n        'Pretty Cure': 2.9, 'Pokémon': 4.1, 'ONE PIECE': 12.3\n    },\n    '2024.3': {\n        'Anpanman': 4.3, 'Ultraman': 4.3, 'KAMEN RIDER': 9.4,\n        'Mobile Suit Gundam': 34.7, 'Super Sentai': 2.8, 'DRAGON BALL': 12.2,\n        'Pretty Cure': 2.8, 'Pokémon': 5.9, 'ONE PIECE': 30.0\n    }\n}\n\n\ndef visualize_data(data, title):\n    labels = list(data['2023.3'].keys())\n    results_2023 = list(data['2023.3'].values())\n    forecasts_2024 = list(data['2024.3'].values())\n\n    x = np.arange(len(labels))  # the label locations\n    width = 0.35  # the width of the bars\n\n    fig, ax = plt.subplots()\n    rects1 = ax.bar(x - width/2, results_2023, width, label='2023.3 Results')\n    rects2 = ax.bar(x + width/2, forecasts_2024, width, label='2024.3 Forecasts')\n\n    # Add some text for labels, title and custom x-axis tick labels, etc.\n    ax.set_ylabel('Sales (billion yen)')\n    ax.set_title(title)\n    ax.set_xticks(x)\n    ax.set_xticklabels(labels, rotation=45, ha=\"right\")\n    ax.legend()\n\n    fig.tight_layout()\n    plt.show()\n\nvisualize_data(data_groupwide, 'Sales of IPs (Groupwide)')\nvisualize_data(data_toys, 'Sales of IPs (Toys and Hobby Business, Japan)')\n\n```\n\nThis improved code:\n\n1. **Organizes data:**  Uses dictionaries for easier data management.  You'll need to replace the example data with your actual data extracted from the image.\n2. **Creates two charts:** Generates separate charts for Groupwide and Toys & Hobby data.\n3. **Uses Matplotlib:** Creates bar charts for easy comparison of 2023 results and 2024 forecasts.\n4. **Clearer Labels:** Includes axis labels and a title for better readability.\n5. **Handles Rotation:** Rotates x-axis labels to prevent overlap.\n\n\nRemember to replace the example data with the actual values from your report.  The key is to structure your data in a way that's easily processed by the Python script.  If you have the data in a different format (e.g., CSV, Excel), you can adapt the code to read from that format using libraries like `pandas`.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 279,
+            "completion_tokens": 1048,
+            "total_tokens": 1327
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:13:29"
+}

@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-VTdVLakAEvyS7?format=jpg&name=900x900",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and visualize top-selling IPs in both categories for 2024.3 Full Year Forecasts.\n2. Compare sales growth between 2023.3 and 2024.3 for highlighted IPs.\n3. Ensure visual representation is clear, accurate, and easily interpretable.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/378.jpeg",
+    "unique_idx": "378",
+    "prompt": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "response": {
+        "id": "chatcmpl-9OkmgoGoWh7aZXtkuaCtKhXSmSXMg",
+        "object": "chat.completion",
+        "created": 1715686738,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To visualize the most important information from the report, we can create bar charts to represent the sales data for each IP. We will create two sets of bar charts: one for the group-wide sales and one for the toys and hobby business in Japan. Each set will have two charts, one for the 1st half results and one for the full year results/forecasts.\n\nHere's a Python program using matplotlib to create these visualizations:\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Data from the report\nips = [\"Anpanman\", \"Ultraman\", \"KAMEN RIDER\", \"Mobile Suit Gundam\", \"Super Sentai\", \"DRAGON BALL\", \"NARUTO\", \"Pretty Cure\", \"ONE PIECE\"]\n\ngroupwide_2023_1H = [4.7, 8.9, 14.2, 62.4, 3.5, 65.7, 10.2, 2.9, 35.9]\ngroupwide_2023_FY = [9.9, 19.5, 32.1, 131.3, 6.5, 144.5, 18.7, 5.6, 86.3]\ngroupwide_2024_1H = [4.7, 9.5, 12.9, 72.6, 3.3, 68.4, 11.0, 2.8, 57.1]\ngroupwide_2024_FY = [10.0, 21.5, 32.0, 140.0, 7.0, 133.0, 24.5, 6.0, 100.0]\n\ntoys_japan_2023_1H = [4.3, 4.7, 9.5, 30.1, 2.9, 12.0, 2.9, 4.1, 12.3]\ntoys_japan_2023_FY = [9.3, 9.2, 23.0, 60.5, 5.6, 22.5, 5.6, 8.8, 31.9]\ntoys_japan_2024_1H = [4.3, 4.3, 9.4, 34.7, 2.8, 12.2, 2.8, 5.9, 30.0]\ntoys_japan_2024_FY = [9.0, 9.5, 23.0, 65.5, 6.0, 21.0, 6.0, 9.5, 52.5]\n\n# Function to plot bar charts\ndef plot_bar_chart(data, labels, title, ylabel, xlabel):\n    x = np.arange(len(labels))\n    fig, ax = plt.subplots()\n    bars = ax.bar(x, data, color='skyblue')\n    ax.set_xlabel(xlabel)\n    ax.set_ylabel(ylabel)\n    ax.set_title(title)\n    ax.set_xticks(x)\n    ax.set_xticklabels(labels, rotation=45, ha=\"right\")\n    ax.bar_label(bars, padding=3)\n    plt.tight_layout()\n    plt.show()\n\n# Plotting the charts\nplot_bar_chart(groupwide_2023_1H, ips, 'Groupwide Sales 1st Half 2023 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(groupwide_2023_FY, ips, 'Groupwide Sales Full Year 2023 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(groupwide_2024_1H, ips, 'Groupwide Sales 1st Half 2024 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(groupwide_2024_FY, ips, 'Groupwide Sales Full Year Forecast 2024 (billion yen)', 'Sales', 'IPs')\n\nplot_bar_chart(toys_japan_2023_1H, ips, 'Toys and Hobby Business Japan Sales 1st Half 2023 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(toys_japan_2023_FY, ips, 'Toys and Hobby Business Japan Sales Full Year 2023 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(toys_japan_2024_1H, ips, 'Toys and Hobby Business Japan Sales 1st Half 2024 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(toys_japan_2024_FY, ips, 'Toys and Hobby Business Japan Sales Full Year Forecast 2024 (billion yen)', 'Sales', 'IPs')\n```\n\nThis program will generate eight bar charts,"
+                },
+                "logprobs": null,
+                "finish_reason": "length"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 792,
+            "completion_tokens": 1024,
+            "total_tokens": 1816
+        },
+        "system_fingerprint": "fp_927397958d"
+    },
+    "answer": "To visualize the most important information from the report, we can create bar charts to represent the sales data for each IP. We will create two sets of bar charts: one for the group-wide sales and one for the toys and hobby business in Japan. Each set will have two charts, one for the 1st half results and one for the full year results/forecasts.\n\nHere's a Python program using matplotlib to create these visualizations:\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Data from the report\nips = [\"Anpanman\", \"Ultraman\", \"KAMEN RIDER\", \"Mobile Suit Gundam\", \"Super Sentai\", \"DRAGON BALL\", \"NARUTO\", \"Pretty Cure\", \"ONE PIECE\"]\n\ngroupwide_2023_1H = [4.7, 8.9, 14.2, 62.4, 3.5, 65.7, 10.2, 2.9, 35.9]\ngroupwide_2023_FY = [9.9, 19.5, 32.1, 131.3, 6.5, 144.5, 18.7, 5.6, 86.3]\ngroupwide_2024_1H = [4.7, 9.5, 12.9, 72.6, 3.3, 68.4, 11.0, 2.8, 57.1]\ngroupwide_2024_FY = [10.0, 21.5, 32.0, 140.0, 7.0, 133.0, 24.5, 6.0, 100.0]\n\ntoys_japan_2023_1H = [4.3, 4.7, 9.5, 30.1, 2.9, 12.0, 2.9, 4.1, 12.3]\ntoys_japan_2023_FY = [9.3, 9.2, 23.0, 60.5, 5.6, 22.5, 5.6, 8.8, 31.9]\ntoys_japan_2024_1H = [4.3, 4.3, 9.4, 34.7, 2.8, 12.2, 2.8, 5.9, 30.0]\ntoys_japan_2024_FY = [9.0, 9.5, 23.0, 65.5, 6.0, 21.0, 6.0, 9.5, 52.5]\n\n# Function to plot bar charts\ndef plot_bar_chart(data, labels, title, ylabel, xlabel):\n    x = np.arange(len(labels))\n    fig, ax = plt.subplots()\n    bars = ax.bar(x, data, color='skyblue')\n    ax.set_xlabel(xlabel)\n    ax.set_ylabel(ylabel)\n    ax.set_title(title)\n    ax.set_xticks(x)\n    ax.set_xticklabels(labels, rotation=45, ha=\"right\")\n    ax.bar_label(bars, padding=3)\n    plt.tight_layout()\n    plt.show()\n\n# Plotting the charts\nplot_bar_chart(groupwide_2023_1H, ips, 'Groupwide Sales 1st Half 2023 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(groupwide_2023_FY, ips, 'Groupwide Sales Full Year 2023 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(groupwide_2024_1H, ips, 'Groupwide Sales 1st Half 2024 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(groupwide_2024_FY, ips, 'Groupwide Sales Full Year Forecast 2024 (billion yen)', 'Sales', 'IPs')\n\nplot_bar_chart(toys_japan_2023_1H, ips, 'Toys and Hobby Business Japan Sales 1st Half 2023 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(toys_japan_2023_FY, ips, 'Toys and Hobby Business Japan Sales Full Year 2023 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(toys_japan_2024_1H, ips, 'Toys and Hobby Business Japan Sales 1st Half 2024 (billion yen)', 'Sales', 'IPs')\nplot_bar_chart(toys_japan_2024_FY, ips, 'Toys and Hobby Business Japan Sales Full Year Forecast 2024 (billion yen)', 'Sales', 'IPs')\n```\n\nThis program will generate eight bar charts,",
+    "gen_model_id": "gpt-4o-2024-05-13",
+    "duration": 15.788119554519653,
+    "code": 200,
+    "current_time": "2024-05-14 19:39:08"
+}

@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ecgwaves.com/wp-content/uploads/2021/06/ECG-example-Normal-ECG-with-sinus-rhythm-2-1396x1536.png",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify and describe P wave, QRS complex, T wave as per reference.\n2. Detect any deviations from the normal ECG waveform pattern.\n3. Comment on rhythm regularity, wave amplitude, and intervals between waves.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/194.png",
+    "unique_idx": "194",
+    "prompt": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "response": {
+        "id": "chatcmpl-5ecf9a1e27b845d5a790662e720d40d5",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930607,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The different parts of the ECG waveform are:\n\n- P wave: The P wave is the first wave of the ECG waveform and represents the electrical impulse from the sinoatrial node (SA node) to the atrioventricular node (AV node).\n- QRS complex: The QRS complex is the second wave of the ECG waveform and represents the electrical impulse from the AV node to the ventricles.\n- ST segment: The ST segment is the segment of the ECG waveform between the end of the QRS complex and the beginning of the T wave.\n- T wave: The T wave is the third wave of the ECG waveform and represents the electrical impulse from the ventricles back to the atria.\n- U wave: The U wave is a small wave that sometimes occurs after the T wave.\n\nThere are several abnormalities in the ECG image.\n\n- The P-R interval is prolonged, which can indicate a delay in the electrical impulse from the SA node to the AV node.\n- The QRS complex is widened, which can indicate a delay in the electrical impulse from the AV node to the ventricles.\n- The ST segment is depressed, which can indicate ischemia or damage to the heart muscle.\n- The T wave is inverted, which can indicate damage to the heart muscle.\n- There are frequent PVCs (Premature Ventricular Contractions) which can indicate irritability of the heart muscle.\n\nOverall, the ECG image suggests that the person may have a heart condition that requires further evaluation."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 792,
+            "completion_tokens": 309,
+            "total_tokens": 1101
+        }
+    },
+    "answer": " The different parts of the ECG waveform are:\n\n- P wave: The P wave is the first wave of the ECG waveform and represents the electrical impulse from the sinoatrial node (SA node) to the atrioventricular node (AV node).\n- QRS complex: The QRS complex is the second wave of the ECG waveform and represents the electrical impulse from the AV node to the ventricles.\n- ST segment: The ST segment is the segment of the ECG waveform between the end of the QRS complex and the beginning of the T wave.\n- T wave: The T wave is the third wave of the ECG waveform and represents the electrical impulse from the ventricles back to the atria.\n- U wave: The U wave is a small wave that sometimes occurs after the T wave.\n\nThere are several abnormalities in the ECG image.\n\n- The P-R interval is prolonged, which can indicate a delay in the electrical impulse from the SA node to the AV node.\n- The QRS complex is widened, which can indicate a delay in the electrical impulse from the AV node to the ventricles.\n- The ST segment is depressed, which can indicate ischemia or damage to the heart muscle.\n- The T wave is inverted, which can indicate damage to the heart muscle.\n- There are frequent PVCs (Premature Ventricular Contractions) which can indicate irritability of the heart muscle.\n\nOverall, the ECG image suggests that the person may have a heart condition that requires further evaluation.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 18.823711156845093,
+    "code": 200,
+    "current_time": "2024-04-12 22:03:27"
+}

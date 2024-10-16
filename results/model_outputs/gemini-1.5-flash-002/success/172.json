@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://images.unsplash.com/photo-1617201834941-0dff6e023ae2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer must include coordinates close to the reference: (200,315), the closer the better",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/172.jpg",
+    "unique_idx": 172,
+    "prompt": "The image is of dimension 700*1050, assume the bottom left corner to be the origin of coordinates (0,0), the coordinates of the top left corner to be (0,1050) and the coordinates of the bottom right corner to be (700,0). Please give the approximate coordinates of the spoon tail.",
+    "context": "The image is of dimension 700*1050, assume the bottom left corner to be the origin of coordinates (0,0), the coordinates of the top left corner to be (0,1050) and the coordinates of the bottom right corner to be (700,0). Please give the approximate coordinates of the spoon tail.",
+    "sample_id": 172,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/172.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "The spoon's tail is located approximately at coordinates (360, 300).",
+    "response_from_model": {
+        "id": "chatcmpl-e116271364284474b686e0928d75004c",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897151,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The spoon's tail is located approximately at coordinates (360, 300)."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 334,
+            "completion_tokens": 20,
+            "total_tokens": 354
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:47"
+}

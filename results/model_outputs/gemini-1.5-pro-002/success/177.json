@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://pbs.twimg.com/media/F9WkV40bcAAMoBX?format=jpg&name=4096x4096",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify and provide bounding box coordinates around [(2048, 60), (3275, 1043)]",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/177.jpg",
+    "unique_idx": 177,
+    "prompt": "For the \"Lab Ma Noi\" dish in the bottom right photograph, can you determine the bounding box coordinates for the spoon? (The size of the image is 4096*4096)",
+    "context": "For the \"Lab Ma Noi\" dish in the bottom right photograph, can you determine the bounding box coordinates for the spoon? (The size of the image is 4096*4096)",
+    "sample_id": 177,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/177.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The spoon in the bottom right image occupies an area of approximately (2650, 2550, 3850, 3550).",
+    "response_from_model": {
+        "id": "chatcmpl-f9533d4f07af4a6db8f05f412ff16163",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897281,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The spoon in the bottom right image occupies an area of approximately (2650, 2550, 3850, 3550)."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 302,
+            "completion_tokens": 36,
+            "total_tokens": 338
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:14:57"
+}

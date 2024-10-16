@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://images.unsplash.com/photo-1617201834941-0dff6e023ae2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer must include coordinates close to the reference: (200,315), the closer the better",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/172.jpg",
+    "unique_idx": "172",
+    "prompt": "The image is of dimension 700*1050, assume the bottom left corner to be the origin of coordinates (0,0), the coordinates of the top left corner to be (0,1050) and the coordinates of the bottom right corner to be (700,0). Please give the approximate coordinates of the spoon tail.",
+    "response": {
+        "id": "chatcmpl-9vo8F5Lb1LEn2czl2yOnvGWoX8FQj",
+        "object": "chat.completion",
+        "created": 1723564431,
+        "model": "gpt-4o-2024-08-06",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The approximate coordinates of the spoon tail are around (325, 500).",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1179,
+            "completion_tokens": 15,
+            "total_tokens": 1194
+        },
+        "system_fingerprint": "fp_845eaabc1f"
+    },
+    "answer": "The approximate coordinates of the spoon tail are around (325, 500).",
+    "gen_model_id": "gpt-4o-2024-08-06",
+    "duration": 10.061361312866211,
+    "code": 200,
+    "current_time": "2024-08-13 23:53:52"
+}

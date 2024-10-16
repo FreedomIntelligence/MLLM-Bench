@@ -1,0 +1,35 @@
+{
+    "unique_idx": "61_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nPlease answer the following questions according to the given image. Who is the author of this book? Who are the translator of this book? What is this book about?\n~~~\n~~~Question Type\ncompound\n~~~\n~~~Answer1\nThe author of the book is Kai Hwang. The translator of the book is Gao Tao. The book is titled \"Cloud Computing for Machine Learning and Cognitive Applications\" in English and consists of 200 pages.\n~~~\n~~~Answer2\nHere are the answers based on the provided image:\n\n* **Author:** Kai Hwang\n* **Translators:** Yuan Zhiyong, Du Ruiying, Zhang Liqiang, Wu Chunxiang, Cai Zhaohui\n* **Book Subject:** Cloud Computing for Machine Learning and Cognitive Applications.  The book covers the intersection of cloud computing techniques and their application in machine learning and cognitive systems.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify author as \"Kai Hwang\" and match to reference \"黄铠\".\n2. Recognize and list translators \"袁志勇, 杜瑞颖, 张立强, 伍春香, 蔡朝晖\".\n3. Describe book's subject, aligning with \"Cloud Computing for Machine Learning and Cognitive Applications\".",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/61.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-flash-002",
+    "raw_answer1": "The author of the book is Kai Hwang. The translator of the book is Gao Tao. The book is titled \"Cloud Computing for Machine Learning and Cognitive Applications\" in English and consists of 200 pages.",
+    "raw_answer2": "Here are the answers based on the provided image:\n\n* **Author:** Kai Hwang\n* **Translators:** Yuan Zhiyong, Du Ruiying, Zhang Liqiang, Wu Chunxiang, Cai Zhaohui\n* **Book Subject:** Cloud Computing for Machine Learning and Cognitive Applications.  The book covers the intersection of cloud computing techniques and their application in machine learning and cognitive systems.",
+    "response": {
+        "id": "chatcmpl-AIsxmz6ZSHpMBe8IKWA242ROUbDON",
+        "object": "chat.completion",
+        "created": 1729064546,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1237,
+            "completion_tokens": 2,
+            "total_tokens": 1239
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 13.070416450500488,
+    "code": 200,
+    "current_time": "2024-10-16 15:42:32"
+}

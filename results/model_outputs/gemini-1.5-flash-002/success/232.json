@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-Aeu-8awAAaJ2l?format=jpg&name=medium",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/232.jpg",
+    "unique_idx": 232,
+    "prompt": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "context": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "sample_id": 232,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/232.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "Based on the provided flight schedule, the ATR aircraft type is the most commonly used for domestic flights.  There are 5 ATR arrivals and 5 ATR departures.  A320 aircraft are the second most common, with 2 arrivals and 2 departures.",
+    "response_from_model": {
+        "id": "chatcmpl-4b5a0da8d22e48eeb823d50face022e2",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897156,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the provided flight schedule, the ATR aircraft type is the most commonly used for domestic flights.  There are 5 ATR arrivals and 5 ATR departures.  A320 aircraft are the second most common, with 2 arrivals and 2 departures."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 294,
+            "completion_tokens": 54,
+            "total_tokens": 348
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:53"
+}

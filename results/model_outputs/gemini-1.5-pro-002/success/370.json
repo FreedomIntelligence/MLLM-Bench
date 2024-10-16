@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-4kEacbUAAobjX?format=jpg&name=large",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Program calculates factorials for integers between user-inputted p and q, inclusive.\n2. Output format matches the example: \"n! = result\" on separate lines.\n3. User input for p and q is requested and handled correctly.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/370.jpeg",
+    "unique_idx": 370,
+    "prompt": "You are a software developer. Write a program to finish the task as required in the picture.",
+    "context": "You are a software developer. Write a program to finish the task as required in the picture.",
+    "sample_id": 370,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/370.jpeg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "```python\ndef factorial(n):\n    \"\"\"Calculates the factorial of a non-negative integer.\"\"\"\n    if n == 0:\n        return 1\n    else:\n        result = 1\n        for i in range(1, n + 1):\n            result *= i\n        return result\n\ndef main():\n    p = int(input(\"Enter the starting integer (p): \"))\n    q = int(input(\"Enter the ending integer (q): \"))\n\n    if p < 0 or q < 0 or p > q:\n        print(\"Invalid input. Please ensure 0 <= p <= q.\")\n        return\n\n    print(f\"{p} {q}\")  # Print the range as specified\n    for i in range(p, q + 1):\n        print(f\"{i}! = {factorial(i)}\")\n\n\nif __name__ == \"__main__\":\n    main()\n\n```",
+    "response_from_model": {
+        "id": "chatcmpl-07b54cea73ec4cdb8a16ca3e7b2d6721",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897342,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```python\ndef factorial(n):\n    \"\"\"Calculates the factorial of a non-negative integer.\"\"\"\n    if n == 0:\n        return 1\n    else:\n        result = 1\n        for i in range(1, n + 1):\n            result *= i\n        return result\n\ndef main():\n    p = int(input(\"Enter the starting integer (p): \"))\n    q = int(input(\"Enter the ending integer (q): \"))\n\n    if p < 0 or q < 0 or p > q:\n        print(\"Invalid input. Please ensure 0 <= p <= q.\")\n        return\n\n    print(f\"{p} {q}\")  # Print the range as specified\n    for i in range(p, q + 1):\n        print(f\"{i}! = {factorial(i)}\")\n\n\nif __name__ == \"__main__\":\n    main()\n\n```"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 278,
+            "completion_tokens": 203,
+            "total_tokens": 481
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:58"
+}

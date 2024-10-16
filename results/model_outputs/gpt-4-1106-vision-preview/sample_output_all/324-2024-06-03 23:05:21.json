@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://knect365.imgix.net/article/images/cacheable/abe5a1ec-a5cb-4ccb-94cb-7e0b900eab78-featured-76c136b913a7dd398bc9fab8d8417f02.jpg?auto=format&fit=max&w=808&dpr=1.75",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the blur is due to low pixel count.\n2. Assess whether motion contributes to the image's blurriness.\n3. Evaluate if focus issues are causing the blur in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/324.jpg",
+    "unique_idx": "324",
+    "prompt": "What makes the image blurry?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The blurriness in the image is due to motion blur, which is caused by the movement of the train relative to the camera's sensor during the exposure time. The train is moving quickly, and the camera's shutter speed is slow enough that it captures the movement as a blur. This technique is often used to convey a sense of speed and motion in photography. The stationary elements, such as the platform signs, appear sharp, indicating that the camera was held still while the moving train blurred during the shot.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717427116,
+        "id": "chatcmpl-9W3XIC5d2qeTRb4zplz2NRisYHDhM",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 102,
+            "prompt_tokens": 1148,
+            "total_tokens": 1250
+        }
+    },
+    "answer": "The blurriness in the image is due to motion blur, which is caused by the movement of the train relative to the camera's sensor during the exposure time. The train is moving quickly, and the camera's shutter speed is slow enough that it captures the movement as a blur. This technique is often used to convey a sense of speed and motion in photography. The stationary elements, such as the platform signs, appear sharp, indicating that the camera was held still while the moving train blurred during the shot.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 11.248643398284912,
+    "code": 200,
+    "current_time": "2024-06-03 23:05:21"
+}

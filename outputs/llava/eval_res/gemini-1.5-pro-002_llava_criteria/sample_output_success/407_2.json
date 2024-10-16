@@ -1,0 +1,35 @@
+{
+    "unique_idx": "407_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nDescribe the foods on the table detailedly.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe plate holds a variety of fried foods.  There appear to be several crispy, light-brown, possibly prawn crackers or similar chips.  Next to them are three or four pieces of what looks like fried chicken, possibly wings or drumsticks, with a darker, crispier skin.  A pile of thin, golden-brown, battered and fried strips of something, perhaps fish or chicken, are also present.  Partially obscured behind these strips is a smaller, darker portion of food, possibly also fried, but it's difficult to determine what it is.\n\nTwo small condiment bowls are included on the plate. One contains a grainy, reddish-brown spice mix or powder.  The other holds a smooth, pale yellow sauce, likely a dipping sauce like mustard or honey mustard. Both bowls have small white spoons attached.  A sprig of parsley garnishes the plate near the fried strips.\n~~~\n~~~Answer2\nThe table features a plate full of food, which includes meat, bread, greens, and a salad. There are several pieces of bread, some of which are of different sizes. A bowl of sauce is also present on the table. Additionally, there's a donut on the table, slightly separated from the main plate of food.\n\nIn the background, a stuffed teddy bear is sitting next to the plate. The dining table occupies most of the scene, setting a casual atmosphere for enjoying the meal.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and describe all visible food items, including chicken wings and chili powder.\n2. Mention textures or colors where relevant to the description of the foods.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/407.jpeg",
+    "model_1": "gemini-1.5-pro-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The plate holds a variety of fried foods.  There appear to be several crispy, light-brown, possibly prawn crackers or similar chips.  Next to them are three or four pieces of what looks like fried chicken, possibly wings or drumsticks, with a darker, crispier skin.  A pile of thin, golden-brown, battered and fried strips of something, perhaps fish or chicken, are also present.  Partially obscured behind these strips is a smaller, darker portion of food, possibly also fried, but it's difficult to determine what it is.\n\nTwo small condiment bowls are included on the plate. One contains a grainy, reddish-brown spice mix or powder.  The other holds a smooth, pale yellow sauce, likely a dipping sauce like mustard or honey mustard. Both bowls have small white spoons attached.  A sprig of parsley garnishes the plate near the fried strips.",
+    "raw_answer2": "The table features a plate full of food, which includes meat, bread, greens, and a salad. There are several pieces of bread, some of which are of different sizes. A bowl of sauce is also present on the table. Additionally, there's a donut on the table, slightly separated from the main plate of food.\n\nIn the background, a stuffed teddy bear is sitting next to the plate. The dining table occupies most of the scene, setting a casual atmosphere for enjoying the meal.",
+    "response": {
+        "id": "chatcmpl-AIt6bqum7H2hex5MNCgeyHrjrb8mR",
+        "object": "chat.completion",
+        "created": 1729065093,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1319,
+            "completion_tokens": 2,
+            "total_tokens": 1321
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.599724292755127,
+    "code": 200,
+    "current_time": "2024-10-16 15:51:33"
+}

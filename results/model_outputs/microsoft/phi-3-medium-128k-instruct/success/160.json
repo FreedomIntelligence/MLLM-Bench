@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Document Understanding",
+        "url": "https://pbs.twimg.com/media/F8kswFXXsAUTKhx?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Include LaTeX equation for 2-stock portfolio variance, which is \u000bar(R_p) = w_A^2 \\cdot \\sigma^2(R_A) + w_B^2 \\cdot \\sigma^2(R_B) + 2w_Aw_B\\sigma(R_A)\\sigma(R_B)\rho(R_A, R_B)",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/160.jpeg",
+    "unique_idx": 160,
+    "prompt": "What is the equation for calculating the variance of 2-stock portfolio according to the quick sheet. Write in LaTeX formula.",
+    "context": "What is the equation for calculating the variance of 2-stock portfolio according to the quick sheet. Write in LaTeX formula.",
+    "sample_id": 160,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/160.jpeg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " The formula for calculating the variance of a 2-stock portfolio, according to the quick sheet, is given by:\n\n\\[\n\\sigma_{p}^2 = w_{1}^{2} \\cdot \\sigma_{1}^{2} + w_{2}^{2} \\cdot \\sigma_{2}^{2} + 2 \\cdot w_{1} \\cdot w_{2} \\cdot \\sigma_{1} \\cdot \\sigma_{2} \\cdot \\rho_{1,2}\n\\]\n\nwhere:\n- $\\sigma_{p}^2$ is the variance of the portfolio\n- $w_{1}$ and $w_{2}$ are the weights of the two stocks in the portfolio\n- $\\sigma_{1}^{2}$ and $\\sigma_{2}^{2}$ are the variances of the individual stocks\n- $\\rho_{1,2}$ is the correlation coefficient between the two stocks\n\nThis formula assumes that the returns of the two stocks are normally distributed and that the weights of the stocks sum to 1.",
+    "response_from_model": {
+        "id": "gen-1728906557-WupxZKNdKqXXbxzfX8dx",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906557,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The formula for calculating the variance of a 2-stock portfolio, according to the quick sheet, is given by:\n\n\\[\n\\sigma_{p}^2 = w_{1}^{2} \\cdot \\sigma_{1}^{2} + w_{2}^{2} \\cdot \\sigma_{2}^{2} + 2 \\cdot w_{1} \\cdot w_{2} \\cdot \\sigma_{1} \\cdot \\sigma_{2} \\cdot \\rho_{1,2}\n\\]\n\nwhere:\n- $\\sigma_{p}^2$ is the variance of the portfolio\n- $w_{1}$ and $w_{2}$ are the weights of the two stocks in the portfolio\n- $\\sigma_{1}^{2}$ and $\\sigma_{2}^{2}$ are the variances of the individual stocks\n- $\\rho_{1,2}$ is the correlation coefficient between the two stocks\n\nThis formula assumes that the returns of the two stocks are normally distributed and that the weights of the stocks sum to 1.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 31,
+            "completion_tokens": 228,
+            "total_tokens": 259
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:49:22"
+}

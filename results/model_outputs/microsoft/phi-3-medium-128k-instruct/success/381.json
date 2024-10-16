@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the stroke is a smash, clear, or drop shot based on player's posture and racket angle.\n2. Describe a logical sequence of potential rallies considering the identified stroke type.\n3. Ensure the response is aligned with badminton rules and realistic gameplay dynamics.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/381.png",
+    "unique_idx": 381,
+    "prompt": "Given the image, predict the type of stroke that the jumping player is likely to perform, and generate a sequence of potential rallies that could follow from this moment",
+    "context": "Given the image, predict the type of stroke that the jumping player is likely to perform, and generate a sequence of potential rallies that could follow from this moment",
+    "sample_id": 381,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/381.png"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " Based on the image, it appears that the player is in the middle of a jumping stroke, which could be a jumping smash or a jumping net shot in badminton. Here are two potential sequences of rallies that could follow from this moment:\n\nSequence 1:\n1. Player A executes a powerful jumping smash, sending the shuttlecock downwards at a steep angle towards the opponent's backcourt.\n2. Player B, anticipating the smash, prepares to defend with a forehand clear to the backcourt.\n3. Player A quickly reacts and moves to the backcourt to intercept the clear.\n4. Player B's clear is high and deep, giving Player A an opportunity to attack with a drop shot.\n5. Player A executes a precise drop shot that lands just over the net, making it difficult for Player B to return.\n6. Player B scrambles to the frontcourt, but the shuttlecock is too low to reach.\n7. Player A wins the rally with a well-placed drop shot that lands close to the net, forcing Player B to hit a weak return.\n8. Player A seizes the opportunity and hits a tight net shot, winning the point.\n\nSequence 2:\n1. Player A executes a jumping net shot, aiming to catch Player B off guard.\n2. Player B, expecting a net shot, moves forward and attempts to intercept it with a quick lift.\n3. Player A's net shot is too low, forcing Player B to hit upwards and out of the court.\n4. Player A follows up with a tight net shot, making it challenging for Player B to return.\n5. Player B attempts to return with a high clear, but the shuttlecock is too high, giving Player A an easy smash.\n6. Player A smashes the shuttlecock downwards, winning the point with a powerful downward shot.\n\nThese sequences are just a couple of examples, and the actual outcome will depend on the players' skill level, anticipation, and reaction time.",
+    "response_from_model": {
+        "id": "gen-1728906997-3ULyCuPZt7wSjUvG9m4y",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906997,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " Based on the image, it appears that the player is in the middle of a jumping stroke, which could be a jumping smash or a jumping net shot in badminton. Here are two potential sequences of rallies that could follow from this moment:\n\nSequence 1:\n1. Player A executes a powerful jumping smash, sending the shuttlecock downwards at a steep angle towards the opponent's backcourt.\n2. Player B, anticipating the smash, prepares to defend with a forehand clear to the backcourt.\n3. Player A quickly reacts and moves to the backcourt to intercept the clear.\n4. Player B's clear is high and deep, giving Player A an opportunity to attack with a drop shot.\n5. Player A executes a precise drop shot that lands just over the net, making it difficult for Player B to return.\n6. Player B scrambles to the frontcourt, but the shuttlecock is too low to reach.\n7. Player A wins the rally with a well-placed drop shot that lands close to the net, forcing Player B to hit a weak return.\n8. Player A seizes the opportunity and hits a tight net shot, winning the point.\n\nSequence 2:\n1. Player A executes a jumping net shot, aiming to catch Player B off guard.\n2. Player B, expecting a net shot, moves forward and attempts to intercept it with a quick lift.\n3. Player A's net shot is too low, forcing Player B to hit upwards and out of the court.\n4. Player A follows up with a tight net shot, making it challenging for Player B to return.\n5. Player B attempts to return with a high clear, but the shuttlecock is too high, giving Player A an easy smash.\n6. Player A smashes the shuttlecock downwards, winning the point with a powerful downward shot.\n\nThese sequences are just a couple of examples, and the actual outcome will depend on the players' skill level, anticipation, and reaction time.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 39,
+            "completion_tokens": 459,
+            "total_tokens": 498
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:57:02"
+}

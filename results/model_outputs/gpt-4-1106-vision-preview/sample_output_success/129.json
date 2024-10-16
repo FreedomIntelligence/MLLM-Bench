@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Emotion Understanding",
+        "url": "https://th.bing.com/th/id/OIP.atWZGIJ2e-7OJMZ42W8E2gHaID?w=1260&h=1371&rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Assess if the identified emotion matches the character's facial expression (e.g., angry, frustrated).\n2. Rate the intensity of the emotion as moderate, or severe.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/129.jpg",
+    "unique_idx": "129",
+    "prompt": "Assess the intensity of the emotion on a scale (e.g., mild, moderate, severe) and justify the assessment based on visual cues.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The character depicted in the image is exhibiting a severe level of anger based on visual cues. This assessment is justified by the following observations:\n\n1. Facial expression: The character's eyebrows are furrowed and angled downward, which is a common indicator of anger. The eyes are glaring, which intensifies the expression of anger.\n2. Mouth: The character's mouth is set in a firm line with the teeth clenched, suggesting a high level of frustration or rage.\n3. Color: The red color of the character's skin is often culturally associated with anger or high emotion.\n4. Posture: Though not fully visible, the character's stance appears rigid, which can be associated with a confrontational or aggressive attitude.\n\nThese visual cues together suggest that the character is experiencing a strong emotion, which in this case is anger, at a severe intensity.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426668,
+        "id": "chatcmpl-9W3Q4yslGRqYPx9PhZhBvxIFOeZPB",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 171,
+            "prompt_tokens": 801,
+            "total_tokens": 972
+        }
+    },
+    "answer": "The character depicted in the image is exhibiting a severe level of anger based on visual cues. This assessment is justified by the following observations:\n\n1. Facial expression: The character's eyebrows are furrowed and angled downward, which is a common indicator of anger. The eyes are glaring, which intensifies the expression of anger.\n2. Mouth: The character's mouth is set in a firm line with the teeth clenched, suggesting a high level of frustration or rage.\n3. Color: The red color of the character's skin is often culturally associated with anger or high emotion.\n4. Posture: Though not fully visible, the character's stance appears rigid, which can be associated with a confrontational or aggressive attitude.\n\nThese visual cues together suggest that the character is experiencing a strong emotion, which in this case is anger, at a severe intensity.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 14.613877534866333,
+    "code": 200,
+    "current_time": "2024-06-03 22:57:58"
+}

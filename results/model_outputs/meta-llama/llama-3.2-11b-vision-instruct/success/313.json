@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Visual Math Reasoning",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer must correctly calculate to 221 using numbers in hexagons and operators in rounded square.\n2. All numbers and operators used should be present in the image.\n3. Provide one valid mathematical expression that equals 221.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/313.png",
+    "unique_idx": 313,
+    "prompt": "Utilize the numbers within the hexagon (you can use each number more than once) and the operators contained within the rounded square set to derive the numerical number found in the upper-left corner of the image. Provide one possible combination.",
+    "context": "Utilize the numbers within the hexagon (you can use each number more than once) and the operators contained within the rounded square set to derive the numerical number found in the upper-left corner of the image. Provide one possible combination.",
+    "sample_id": 313,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/313.png"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "**Step 1: Identify the numbers and operators.**\n\n*   Numbers: 1, 2, 3, 5, 7, 9\n*   Operators: +, -, x, /, =, 221\n\n**Step 2: Determine a combination that equals 221.**\n\n*   1 + 2 + 7 + 9 + 5 + 197 = 221\n\n**Step 3: Conclusion.**\n\n*   A possible combination is 1 + 2 + 7 + 9 + 5 + 197 = 221.",
+    "response_from_model": {
+        "id": "gen-1728905656-OczPToGymohjiWRxfZy4",
+        "provider": "Together",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905656,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "**Step 1: Identify the numbers and operators.**\n\n*   Numbers: 1, 2, 3, 5, 7, 9\n*   Operators: +, -, x, /, =, 221\n\n**Step 2: Determine a combination that equals 221.**\n\n*   1 + 2 + 7 + 9 + 5 + 197 = 221\n\n**Step 3: Conclusion.**\n\n*   A possible combination is 1 + 2 + 7 + 9 + 5 + 197 = 221.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 58,
+            "completion_tokens": 123,
+            "total_tokens": 181
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:34:18"
+}

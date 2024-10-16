@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "https://pbs.twimg.com/media/F9zsKg9acAAgSnU?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify the company \"中國國民航空公司\" (China National Aviation Corp.) from the poster.\n2. Recognize the services \"航空郵件\" (air mail) and \"乘客服務\" (passenger service) advertised.\n3. Ensure the response is in the context of the poster's promotional content.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/64.jpeg",
+    "unique_idx": "64",
+    "prompt": "圖中的海報在宣傳哪家公司的什麼服務？",
+    "response": {
+        "id": "chatcmpl-ca241caf3a164fab80b941ea6c6ca80d",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930433,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " 這是中國航空公司（China National Aviation Corporation，簡稱 CNAC）的航空郵政和客運服務海報。"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 798,
+            "completion_tokens": 42,
+            "total_tokens": 840
+        }
+    },
+    "answer": " 這是中國航空公司（China National Aviation Corporation，簡稱 CNAC）的航空郵政和客運服務海報。",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 6.289644241333008,
+    "code": 200,
+    "current_time": "2024-04-12 22:00:34"
+}

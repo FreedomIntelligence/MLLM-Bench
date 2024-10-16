@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Ethical Problem Detection",
+        "url": "https://images.forwardcdn.com/image/970x/center/images/cropped/gettyimages-500854150-1463062636.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the image depicts a demand for ethical treatment or social justice.\n2. Evaluate the presence of signs or expressions that convey an ethical stance.\n3. Determine the context of the demand, such as anti-racism or human rights.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/348.jpg",
+    "unique_idx": "348",
+    "prompt": "Analyze if the people in the image hold a ethical demand.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The people in the image are holding signs that read \"END RACISM\" and \"RACISM IS A CRIME AGAINST HUMANITY.\" These signs indicate that the individuals are advocating for an ethical stance against racism. They appear to be participating in a protest or public demonstration to express their demand for an end to racist practices and ideologies, which aligns with widely recognized ethical principles advocating for equality, human rights, and non-discrimination.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717427172,
+        "id": "chatcmpl-9W3YCfVyXyGj7bTKJqXzTEC2uwJEn",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 90,
+            "prompt_tokens": 815,
+            "total_tokens": 905
+        }
+    },
+    "answer": "The people in the image are holding signs that read \"END RACISM\" and \"RACISM IS A CRIME AGAINST HUMANITY.\" These signs indicate that the individuals are advocating for an ethical stance against racism. They appear to be participating in a protest or public demonstration to express their demand for an end to racist practices and ideologies, which aligns with widely recognized ethical principles advocating for equality, human rights, and non-discrimination.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 19.45244312286377,
+    "code": 200,
+    "current_time": "2024-06-03 23:06:16"
+}

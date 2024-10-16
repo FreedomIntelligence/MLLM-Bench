@@ -1,0 +1,35 @@
+{
+    "unique_idx": "70_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nGiven the image, identify any cultural or traditional attire and elements present in the scene, and infer the type of ceremony or event taking place.\n~~~\n~~~Question Type\ncompound\n~~~\n~~~Answer1\nIn the image, there are individuals dressed in traditional African attire, particularly a man wearing a kilt and a woman in a colorful dress. They are standing around a table, which indicates a formal event or ceremony. The presence of a cell phone on the table might suggest that the event is being documented or that the attendees are using it for communication. The group of people is engaged in a specific activity, and their attire suggests that the event is culturally or traditionally based.\n~~~\n~~~Answer2\nThe man and woman on the right are wearing traditional Ghanaian Kente cloth. The man's attire, consisting of a large draped cloth over a plain shirt, is a common style for formal occasions.  The woman's outfit incorporates the Kente cloth into a more modern, fitted bodice and skirt. Her hair is styled up with decorative hairpins.\n\nThe presence of a book being read by another man, likely officiating, suggests this is a ceremony with a spoken component. Given the attire and the seemingly solemn atmosphere, it is likely a **traditional Ghanaian wedding ceremony** or possibly a **marriage blessing**.  The other man in plain white may be a best man or another member of the wedding party.\n\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify attire indicating a wedding; prioritize bright-colored, festive garments and any headpieces.\n2. Describe elements like bouquets or ceremonial objects that suggest a wedding.\n3. Identify the presence of a marriage officer or a religious leader holding a book that suggest a wedding.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/70.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-pro-002",
+    "raw_answer1": "In the image, there are individuals dressed in traditional African attire, particularly a man wearing a kilt and a woman in a colorful dress. They are standing around a table, which indicates a formal event or ceremony. The presence of a cell phone on the table might suggest that the event is being documented or that the attendees are using it for communication. The group of people is engaged in a specific activity, and their attire suggests that the event is culturally or traditionally based.",
+    "raw_answer2": "The man and woman on the right are wearing traditional Ghanaian Kente cloth. The man's attire, consisting of a large draped cloth over a plain shirt, is a common style for formal occasions.  The woman's outfit incorporates the Kente cloth into a more modern, fitted bodice and skirt. Her hair is styled up with decorative hairpins.\n\nThe presence of a book being read by another man, likely officiating, suggests this is a ceremony with a spoken component. Given the attire and the seemingly solemn atmosphere, it is likely a **traditional Ghanaian wedding ceremony** or possibly a **marriage blessing**.  The other man in plain white may be a best man or another member of the wedding party.\n",
+    "response": {
+        "id": "chatcmpl-AIt2kMHx1WYztdvkedw4dRsgI8vPX",
+        "object": "chat.completion",
+        "created": 1729064854,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1342,
+            "completion_tokens": 2,
+            "total_tokens": 1344
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.2946248054504395,
+    "code": 200,
+    "current_time": "2024-10-16 15:47:35"
+}

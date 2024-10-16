@@ -1,0 +1,35 @@
+{
+    "unique_idx": "104_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nThere is a dice in the image. Can you describe its approximate position in the image?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe dice is located in the top center of the image.\n~~~\n~~~Answer2\nThe image depicts a cartoon illustration of a group of mice among a pile of cheese cubes. The dice is not visible in this image.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Answer must specify dice is in the top-right corner of the image.\n2. Mention the dice's proximity to a mouse on its right.\n3. Description of dice's position should be relative to other objects, not just the image frame.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/104.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "meta-llama/llama-3.2-11b-vision-instruct",
+    "raw_answer1": "The dice is located in the top center of the image.",
+    "raw_answer2": "The image depicts a cartoon illustration of a group of mice among a pile of cheese cubes. The dice is not visible in this image.",
+    "response": {
+        "id": "chatcmpl-AIuAtDJZ9hXr1lEwzOQnt99HgsyXg",
+        "object": "chat.completion",
+        "created": 1729069203,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1098,
+            "completion_tokens": 2,
+            "total_tokens": 1100
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.0725085735321045,
+    "code": 200,
+    "current_time": "2024-10-16 17:00:03"
+}

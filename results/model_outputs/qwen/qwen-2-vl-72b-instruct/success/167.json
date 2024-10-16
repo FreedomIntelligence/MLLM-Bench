@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Document Understanding",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify the \"You Are Here\" point and the nearest emergency exit.\n2. Describe the path including turns and any landmarks (e.g., room numbers, staircases).\n3. Ensure the route is the quickest possible, avoiding detours or longer paths.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/167.jpeg",
+    "unique_idx": 167,
+    "prompt": "Describe the quickest route to the nearest emergency exit from the \"You Are Here\" point.",
+    "context": "Describe the quickest route to the nearest emergency exit from the \"You Are Here\" point.",
+    "sample_id": 167,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/167.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "To find the quickest route to the nearest emergency exit from the \"You Are Here\" point, follow these steps:\n\n1. Start at the \"You Are Here\" point, which is marked with a red star on the map.\n2. Move northward along the corridor.\n3. Continue straight until you reach the intersection with the dashed green line, which indicates the evacuation route.\n4. Turn right (east) and follow the dashed green line.\n5. Proceed straight until you reach the emergency exit, which is marked with a green square and the words \"Emergency Exit.\"\n\nThis route should lead you directly to the nearest emergency exit.",
+    "response_from_model": {
+        "id": "gen-1728907783-TjU1ttE8KzLjLcN3lNrq",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728907783,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To find the quickest route to the nearest emergency exit from the \"You Are Here\" point, follow these steps:\n\n1. Start at the \"You Are Here\" point, which is marked with a red star on the map.\n2. Move northward along the corridor.\n3. Continue straight until you reach the intersection with the dashed green line, which indicates the evacuation route.\n4. Turn right (east) and follow the dashed green line.\n5. Proceed straight until you reach the emergency exit, which is marked with a green square and the words \"Emergency Exit.\"\n\nThis route should lead you directly to the nearest emergency exit.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 40,
+            "completion_tokens": 129,
+            "total_tokens": 169
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:09:47"
+}

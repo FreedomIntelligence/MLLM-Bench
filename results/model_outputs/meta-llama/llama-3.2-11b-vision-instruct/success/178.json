@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://images.rawpixel.com/image_png_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjgxMC1ub29uLTAzXzEucG5n.png",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Correct identification of the strawberry's bounding box coordinates.\n2. Bounding box should tightly enclose the entire strawberry.\n3. Coordinates must be accurate relative to the image's dimensions.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/178.webp",
+    "unique_idx": 178,
+    "prompt": "What would be the bounding box coordinates for the strawberry in the image? The image size is 1300*1300",
+    "context": "What would be the bounding box coordinates for the strawberry in the image? The image size is 1300*1300",
+    "sample_id": 178,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/178.webp"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "The bounding box coordinates for the strawberry in the image are:\n\nTop-left: 106, 123\nBottom-right: 544, 373\n\nThese coordinates represent the rectangular region that contains the strawberry, with the top-left corner at (106, 123) and the bottom-right corner at (544, 373).",
+    "response_from_model": {
+        "id": "gen-1728905370-DPYsJZADpxiOc1xDKwXJ",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905370,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The bounding box coordinates for the strawberry in the image are:\n\nTop-left: 106, 123\nBottom-right: 544, 373\n\nThese coordinates represent the rectangular region that contains the strawberry, with the top-left corner at (106, 123) and the bottom-right corner at (544, 373).",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6439,
+            "completion_tokens": 1,
+            "total_tokens": 6440
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:29:33"
+}

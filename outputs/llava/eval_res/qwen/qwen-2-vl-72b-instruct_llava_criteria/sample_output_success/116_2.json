@@ -1,0 +1,35 @@
+{
+    "unique_idx": "116_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nProvide a detailed description of the emotion being expressed and propose several contexts or situations that could be causing the emotion.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe person in the image appears to be expressing a sense of surprise or shock. This is indicated by their wide eyes and the way they are holding their hands up in front of their face, almost as if they are shielding themselves from something unexpected. \n\nSeveral contexts or situations could be causing this emotion:\n\n1. **Unexpected News**: The person might have just received surprising news, either good or bad, that has left them momentarily stunned.\n2. **Surprise Encounter**: They could be encountering someone they did not expect to see, leading to a moment of surprise.\n3. **Unexpected Event**: The person might be witnessing an unexpected event, such as an accident or a sudden change in a situation, which has caused them to react with surprise.\n4. **Surprise Gift or Announcement**: They could be reacting to a surprise gift, a surprise party, or an unexpected announcement that has caught them off guard.\n5. **Surprise Performance**: The person might be participating in or witnessing a surprise performance or event, such as a flash mob or an impromptu performance, which has elicited a surprised reaction.\n\nThe context of the image, with the person standing in front of greenery and possibly a glass wall, suggests that the setting could be outdoors or in a semi-outdoor area, which might further influence the nature of the surprise.\n~~~\n~~~Answer2\nThe girl in the image is exhibiting an emotion that can be interpreted as sadness or disgust. She is covering her nose with her hand, perhaps indicating that she is experiencing an unpleasant odor or feeling overwhelmed by her surroundings.\n\nThere could be several situations or contexts that might cause or contribute to her emotional state. For instance, she may have encountered an unpleasant smell in the environment, such as a strong odor or an unclean area. Alternatively, she could be reacting to a troubling event, like witnessing a crime, experiencing a personal problem, or feeling distressed by the actions of someone around her. It's also possible that the girl is just reacting to a simple distraction or discomfort, such as a loud noise or an overpowering smell, and her emotional expression might be an exaggeration or an overreaction to a minor situation.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm the emotion matches 'shy' with facial cues like averting gaze or a slight smile.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/116.jpg",
+    "model_1": "qwen/qwen-2-vl-72b-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The person in the image appears to be expressing a sense of surprise or shock. This is indicated by their wide eyes and the way they are holding their hands up in front of their face, almost as if they are shielding themselves from something unexpected. \n\nSeveral contexts or situations could be causing this emotion:\n\n1. **Unexpected News**: The person might have just received surprising news, either good or bad, that has left them momentarily stunned.\n2. **Surprise Encounter**: They could be encountering someone they did not expect to see, leading to a moment of surprise.\n3. **Unexpected Event**: The person might be witnessing an unexpected event, such as an accident or a sudden change in a situation, which has caused them to react with surprise.\n4. **Surprise Gift or Announcement**: They could be reacting to a surprise gift, a surprise party, or an unexpected announcement that has caught them off guard.\n5. **Surprise Performance**: The person might be participating in or witnessing a surprise performance or event, such as a flash mob or an impromptu performance, which has elicited a surprised reaction.\n\nThe context of the image, with the person standing in front of greenery and possibly a glass wall, suggests that the setting could be outdoors or in a semi-outdoor area, which might further influence the nature of the surprise.",
+    "raw_answer2": "The girl in the image is exhibiting an emotion that can be interpreted as sadness or disgust. She is covering her nose with her hand, perhaps indicating that she is experiencing an unpleasant odor or feeling overwhelmed by her surroundings.\n\nThere could be several situations or contexts that might cause or contribute to her emotional state. For instance, she may have encountered an unpleasant smell in the environment, such as a strong odor or an unclean area. Alternatively, she could be reacting to a troubling event, like witnessing a crime, experiencing a personal problem, or feeling distressed by the actions of someone around her. It's also possible that the girl is just reacting to a simple distraction or discomfort, such as a loud noise or an overpowering smell, and her emotional expression might be an exaggeration or an overreaction to a minor situation.",
+    "response": {
+        "id": "chatcmpl-AIvG29wW3hDWOKDFEdwtzkhnoOuhr",
+        "object": "chat.completion",
+        "created": 1729073366,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1837,
+            "completion_tokens": 2,
+            "total_tokens": 1839
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 7.7223992347717285,
+    "code": 200,
+    "current_time": "2024-10-16 18:09:28"
+}

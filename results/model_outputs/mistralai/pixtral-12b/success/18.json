@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/F-tTyHGaYAAsFS8?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Confirm stage of game matches 'semifinals' and teams as 'JD Gaming' and 'T1'.\n2. Verify date and time accuracy with 'Nov. 12th, 4 p.m.' reference.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/18.jpg",
+    "unique_idx": 18,
+    "prompt": "Determine the competition information in the picture, such as stage of the game, team information, etc.",
+    "context": "Determine the competition information in the picture, such as stage of the game, team information, etc.",
+    "sample_id": 18,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/18.jpg"
+    ],
+    "gen_model_id": "mistralai/pixtral-12b",
+    "answer": "The image details the following competition information:\n\n- **Event**: League of Legends Worlds 2023\n- **Stage**: Semifinals\n- **Match Type**: Best of 5\n- **Date**: November 12\n- **Time**: 4:00 PM PHT\n- **Teams**:\n  - JD Gaming (represented by their logo and name)\n  - T1 (represented by their logo and name)\n\nAdditional visual elements include the logos for \"The Grind\" and \"The Glory\" at the bottom of the image.",
+    "response_from_model": {
+        "id": "gen-1728915642-yibKRV3DUQgOQcBuhNtz",
+        "provider": "Mistral",
+        "model": "mistralai/pixtral-12b",
+        "object": "chat.completion",
+        "created": 1728915642,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image details the following competition information:\n\n- **Event**: League of Legends Worlds 2023\n- **Stage**: Semifinals\n- **Match Type**: Best of 5\n- **Date**: November 12\n- **Time**: 4:00 PM PHT\n- **Teams**:\n  - JD Gaming (represented by their logo and name)\n  - T1 (represented by their logo and name)\n\nAdditional visual elements include the logos for \"The Grind\" and \"The Glory\" at the bottom of the image.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3416,
+            "completion_tokens": 112,
+            "total_tokens": 3528
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-22:20:47"
+}

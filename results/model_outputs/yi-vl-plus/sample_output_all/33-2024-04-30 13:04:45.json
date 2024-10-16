@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Symbol Recognition",
+        "url": "https://cdn.pixabay.com/photo/2019/05/22/10/54/street-signs-4221204_1280.png",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Correctly identify and describe all traffic signs, including shape, color, and symbols.\n2. Accurately provide the meaning of each traffic sign as commonly understood.\n3. Organize information in the specified JSON format with 'id', 'traffic sign', and 'meaning'.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/33.jpg",
+    "unique_idx": "33",
+    "prompt": "Identify all traffic signs in the image and organize each of them into the following JSON format: {'id': xx, 'traffic sign': xx, 'meaning': xx}.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 362,
+            "prompt_tokens": 1047,
+            "total_tokens": 1409
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "{\n  \"1\": {\"traffic sign\": \"P\", \"meaning\": \"Parking\"},\n  \"2\": {\"traffic sign\": \"ONEWAY\", \"meaning\": \"One Way\"},\n  \"3\": {\"traffic sign\": \"TOWAWAY ZONE\", \"meaning\": \"Tow Away Zone\"},\n  \"4\": {\"traffic sign\": \"STOP\", \"meaning\": \"Stop\"},\n  \"5\": {\"traffic sign\": \"INTERSTATE 95\", \"meaning\": \"Interstate 95 Ahead\"},\n  \"6\": {\"traffic sign\": \"ROAD WORK AHEAD\", \"meaning\": \"Road Work Ahead\"},\n  \"7\": {\"traffic sign\": \"YIELD\", \"meaning\": \"Yield\"},\n  \"8\": {\"traffic sign\": \"DO NOT ENTER\", \"meaning\": \"Do Not Enter\"},\n  \"9\": {\"traffic sign\": \"SPEED LIMIT 55\", \"meaning\": \"Speed Limit 55\"},\n  \"10\": {\"traffic sign\": \"DEAD END\", \"meaning\": \"Dead End\"},\n  \"11\": {\"traffic sign\": \"NO PARKING ANY TIME\", \"meaning\": \"No Parking Any Time\"},\n  \"12\": {\"traffic sign\": \"US 66\", \"meaning\": \"Route US 66\"},\n  \"13\": {\"traffic sign\": \"DETOUR\", \"meaning\": \"Detour\"}\n}"
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "{\n  \"1\": {\"traffic sign\": \"P\", \"meaning\": \"Parking\"},\n  \"2\": {\"traffic sign\": \"ONEWAY\", \"meaning\": \"One Way\"},\n  \"3\": {\"traffic sign\": \"TOWAWAY ZONE\", \"meaning\": \"Tow Away Zone\"},\n  \"4\": {\"traffic sign\": \"STOP\", \"meaning\": \"Stop\"},\n  \"5\": {\"traffic sign\": \"INTERSTATE 95\", \"meaning\": \"Interstate 95 Ahead\"},\n  \"6\": {\"traffic sign\": \"ROAD WORK AHEAD\", \"meaning\": \"Road Work Ahead\"},\n  \"7\": {\"traffic sign\": \"YIELD\", \"meaning\": \"Yield\"},\n  \"8\": {\"traffic sign\": \"DO NOT ENTER\", \"meaning\": \"Do Not Enter\"},\n  \"9\": {\"traffic sign\": \"SPEED LIMIT 55\", \"meaning\": \"Speed Limit 55\"},\n  \"10\": {\"traffic sign\": \"DEAD END\", \"meaning\": \"Dead End\"},\n  \"11\": {\"traffic sign\": \"NO PARKING ANY TIME\", \"meaning\": \"No Parking Any Time\"},\n  \"12\": {\"traffic sign\": \"US 66\", \"meaning\": \"Route US 66\"},\n  \"13\": {\"traffic sign\": \"DETOUR\", \"meaning\": \"Detour\"}\n}",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 25.356494426727295,
+    "code": 200,
+    "current_time": "2024-04-30 13:04:45"
+}

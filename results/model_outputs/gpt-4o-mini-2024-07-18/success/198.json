@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "NaN",
+        "question type": "compound"
+    },
+    "criteria": "1. Confirm the thermometer shows 38.1 degrees Celsius.\n2. Evaluate the advice given for a fever of 38.1 degrees Celsius.\n3. Check for medical accuracy and relevance of the advice to the temperature.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/198.jpeg",
+    "unique_idx": 198,
+    "prompt": "Given the image, interpret the thermometer reading and give some advice.",
+    "context": "Given the image, interpret the thermometer reading and give some advice.",
+    "sample_id": 198,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/198.jpeg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "The thermometer reading shows approximately 37°C, which is considered a normal body temperature. \n\n**Advice:**\n- If you feel well and have no symptoms, there's generally no cause for concern.\n- If you experience symptoms such as fever, chills, or discomfort, monitor your temperature regularly.\n- Stay hydrated and rest if you feel unwell.\n- If your temperature rises above 38°C (100.4°F) or if you have other concerning symptoms, consider consulting a healthcare professional.",
+    "response_from_model": {
+        "id": "chatcmpl-AIBNI6x3FUWbRL4aj9To6UMcQDacW",
+        "object": "chat.completion",
+        "created": 1728896992,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The thermometer reading shows approximately 37°C, which is considered a normal body temperature. \n\n**Advice:**\n- If you feel well and have no symptoms, there's generally no cause for concern.\n- If you experience symptoms such as fever, chills, or discomfort, monitor your temperature regularly.\n- Stay hydrated and rest if you feel unwell.\n- If your temperature rises above 38°C (100.4°F) or if you have other concerning symptoms, consider consulting a healthcare professional."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 36855,
+            "completion_tokens": 98,
+            "total_tokens": 36953
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:09:54"
+}

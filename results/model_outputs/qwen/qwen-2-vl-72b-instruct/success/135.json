@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Multimodal Commonsense Understanding",
+        "url": "https://th.bing.com/th/id/OIP.F7RgbLQMYnuDfappTjWBbwHaHa?w=640&h=640&rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify the activity depicted and determine if it aligns with a known children's game.\n2. Explain the basic rule(s) of the game based on the visual cues in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/135.jpg",
+    "unique_idx": 135,
+    "prompt": "Describe the activity taking place and briefly introduce the game rule.",
+    "context": "Describe the activity taking place and briefly introduce the game rule.",
+    "sample_id": 135,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/135.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "The image depicts a group of children playing a game called \"Duck, Duck, Goose.\" In this game, one child walks around a circle of children who are sitting or kneeling. The walking child taps each child on the head and says \"duck\" until they choose one child to be \"goose.\" When the walking child taps the chosen child and says \"goose,\" the \"goose\" gets up and chases the walking child around the circle. The goal for the walking child is to reach the vacated spot before the \"goose\" catches them. If the \"goose\" catches the walking child, they switch roles, and the game continues.",
+    "response_from_model": {
+        "id": "gen-1728907808-yarlD3D0IsJrb1g3IWcW",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728907808,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image depicts a group of children playing a game called \"Duck, Duck, Goose.\" In this game, one child walks around a circle of children who are sitting or kneeling. The walking child taps each child on the head and says \"duck\" until they choose one child to be \"goose.\" When the walking child taps the chosen child and says \"goose,\" the \"goose\" gets up and chases the walking child around the circle. The goal for the walking child is to reach the vacated spot before the \"goose\" catches them. If the \"goose\" catches the walking child, they switch roles, and the game continues.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 34,
+            "completion_tokens": 137,
+            "total_tokens": 171
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:10:12"
+}

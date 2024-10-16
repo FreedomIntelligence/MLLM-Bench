@@ -1,0 +1,35 @@
+{
+    "unique_idx": "120_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nInterpret the emotional exchange occurring between the individuals by considering their hand gestures, facial expressions, and the proximity to one another.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nIn the image, the man and the woman are facing each other, engaged in a heated exchange. The woman is pointing her finger at the man, which often signifies a direct, assertive, or even confrontational tone in their conversation. Meanwhile, the man is smiling, which may indicate that he is either enjoying the interaction, trying to diffuse the situation, or simply being playful. The close proximity of the individuals further emphasizes the intensity of their emotional exchange. Overall, the scene suggests a lively and potentially tension-filled conversation between the two people.\n~~~\n~~~Answer2\nThe emotional exchange between the individuals appears to be tense and confrontational. The man has his finger pointed, which often indicates a strong assertion or accusation, suggesting he may be defending his position or expressing frustration. His body language is somewhat closed off, which can imply defensiveness.\n\nOn the other hand, the woman is also using her hand to gesture, pointing with one finger while her other hand is open, which may suggest she is trying to explain or clarify her point. This open hand could indicate a desire for communication, but the pointed finger might reflect a sense of urgency or insistence in her argument.\n\nThe proximity of the individuals suggests a close, perhaps heated interaction, indicating that both are emotionally invested in the conversation. Overall, the exchange seems to be one of disagreement, with both parties actively engaging in a debate or confrontation.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify emotions conveyed by both individuals' facial expressions and hand gestures as angry.\n2. Describe the nature of the emotional exchange based on proximity and body language.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/120.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gpt-4o-mini-2024-07-18",
+    "raw_answer1": "In the image, the man and the woman are facing each other, engaged in a heated exchange. The woman is pointing her finger at the man, which often signifies a direct, assertive, or even confrontational tone in their conversation. Meanwhile, the man is smiling, which may indicate that he is either enjoying the interaction, trying to diffuse the situation, or simply being playful. The close proximity of the individuals further emphasizes the intensity of their emotional exchange. Overall, the scene suggests a lively and potentially tension-filled conversation between the two people.",
+    "raw_answer2": "The emotional exchange between the individuals appears to be tense and confrontational. The man has his finger pointed, which often indicates a strong assertion or accusation, suggesting he may be defending his position or expressing frustration. His body language is somewhat closed off, which can imply defensiveness.\n\nOn the other hand, the woman is also using her hand to gesture, pointing with one finger while her other hand is open, which may suggest she is trying to explain or clarify her point. This open hand could indicate a desire for communication, but the pointed finger might reflect a sense of urgency or insistence in her argument.\n\nThe proximity of the individuals suggests a close, perhaps heated interaction, indicating that both are emotionally invested in the conversation. Overall, the exchange seems to be one of disagreement, with both parties actively engaging in a debate or confrontation.",
+    "response": {
+        "id": "chatcmpl-AIt8SodFSFXQqijRB9s5QXzGvXGJz",
+        "object": "chat.completion",
+        "created": 1729065208,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1694,
+            "completion_tokens": 2,
+            "total_tokens": 1696
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 8.806660175323486,
+    "code": 200,
+    "current_time": "2024-10-16 15:53:29"
+}

@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ts1.cn.mm.bing.net/th/id/R-C.7b111abd47ffc37771a3910917def3bd?rik=7qbmO47DiOm%2bog&riu=http%3a%2f%2fmediad.publicbroadcasting.net%2fp%2fshared%2fnpr%2fstyles%2fx_large%2fnprshared%2f201504%2f398803983.jpg&ehk=AppKqkdndo%2fQnbrklTN0KYuK5j1PdX6%2fP4hNBJTlTgw%3d&risl=&pid=ImgRaw&r=0",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately describe the image, noting it's a CT scan, not an ultrasound for CRL measurement.\n2. Explain that CRL is used for gestational age, but not applicable in this CT image.\n3. State that gestational age cannot be determined from the provided CT image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/190.jpg",
+    "unique_idx": "190",
+    "prompt": "Given the image, describe the details in the image and determine the gestational age of the fetus by measuring the crown-rump length (CRL) and comparing it to standard growth charts.",
+    "response": {
+        "id": "msg_011uB57GL8SdmXaXbwksFKaN",
+        "type": "message",
+        "role": "assistant",
+        "model": "gpt-4",
+        "usage": {
+            "prompt_tokens": 1659,
+            "completion_tokens": 252,
+            "total_tokens": 1911
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "The image appears to be an ultrasound scan, likely of a pregnant woman's abdomen or pelvic area. The grayscale portion shows the internal anatomical structures, while the purple area seems to highlight a specific region of interest.\n\nIn the center of the image, there is a curved structure that resembles a fetal skull and body in a curled position. This suggests the image is capturing a cross-sectional view of a developing fetus in the uterus.\n\nTo determine the gestational age, I can measure the crown-rump length (CRL), which is the length from the top of the fetal head (crown) to the bottom of the rump or buttocks. Based on the scale provided in the image, the CRL appears to be approximately 2.5 cm.\n\nReferring to standard fetal growth charts that correlate CRL with gestational age, a CRL of 2.5 cm typically corresponds to a gestational age of around 9-10 weeks.\n\nHowever, please note that this is an estimate, and an accurate gestational age determination should be made by a qualified medical professional considering all relevant factors and measurements."
+                },
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "object": "chat.completion",
+        "created": 1712927146
+    },
+    "answer": "The image appears to be an ultrasound scan, likely of a pregnant woman's abdomen or pelvic area. The grayscale portion shows the internal anatomical structures, while the purple area seems to highlight a specific region of interest.\n\nIn the center of the image, there is a curved structure that resembles a fetal skull and body in a curled position. This suggests the image is capturing a cross-sectional view of a developing fetus in the uterus.\n\nTo determine the gestational age, I can measure the crown-rump length (CRL), which is the length from the top of the fetal head (crown) to the bottom of the rump or buttocks. Based on the scale provided in the image, the CRL appears to be approximately 2.5 cm.\n\nReferring to standard fetal growth charts that correlate CRL with gestational age, a CRL of 2.5 cm typically corresponds to a gestational age of around 9-10 weeks.\n\nHowever, please note that this is an estimate, and an accurate gestational age determination should be made by a qualified medical professional considering all relevant factors and measurements.",
+    "gen_model_id": "gpt-4-vision-preview",
+    "duration": 15.692456722259521,
+    "code": 200,
+    "current_time": "2024-04-12 21:05:47"
+}

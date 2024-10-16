@@ -1,0 +1,35 @@
+{
+    "unique_idx": "235_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nThe image is my class schedule for the next semester. I enrolled in a Computer Networks course, what is the class time and classroom arranged for this course? \n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nAccording to your class schedule, the Computer Networks course (ECE 4016 - L01) is scheduled for:\n\nTime: 08:30 - 09:50\nClassroom: Teaching C Building 308\n\nThis class takes place twice a week, on Tuesdays and Thursdays.\n\nAdditionally, there's a tutorial session for this course:\n\nTime: 18:00 - 18:50 (on Wednesdays)\nClassroom: Teaching D Building 309\n~~~\n~~~Answer2\nIn the image, the class schedule for the next semester, which includes a Computer Networks course, is displayed. The class is scheduled to take place on Wednesdays from 10:00 to 11:00 am in room \"ZJ\". This means that the class will meet once a week for an hour in the designated classroom.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify \"Computer Networks\" course time as \"8:30 to 9:50\" on \"Tuesday and Thursday.\"\n2. Locate \"Computer Networks\" classroom as \"Teaching C Building 308.\"",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/235.png",
+    "model_1": "claude-3-5-sonnet-20240620",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "According to your class schedule, the Computer Networks course (ECE 4016 - L01) is scheduled for:\n\nTime: 08:30 - 09:50\nClassroom: Teaching C Building 308\n\nThis class takes place twice a week, on Tuesdays and Thursdays.\n\nAdditionally, there's a tutorial session for this course:\n\nTime: 18:00 - 18:50 (on Wednesdays)\nClassroom: Teaching D Building 309",
+    "raw_answer2": "In the image, the class schedule for the next semester, which includes a Computer Networks course, is displayed. The class is scheduled to take place on Wednesdays from 10:00 to 11:00 am in room \"ZJ\". This means that the class will meet once a week for an hour in the designated classroom.",
+    "response": {
+        "id": "chatcmpl-AIstwaPuMADvGaJOznbj98ISza77P",
+        "object": "chat.completion",
+        "created": 1729064308,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1571,
+            "completion_tokens": 2,
+            "total_tokens": 1573
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.345432758331299,
+    "code": 200,
+    "current_time": "2024-10-16 15:38:29"
+}

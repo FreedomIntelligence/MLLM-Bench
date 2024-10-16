@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ecgwaves.com/wp-content/uploads/2021/06/ECG-example-Normal-ECG-with-sinus-rhythm-2-1396x1536.png",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify and describe P wave, QRS complex, T wave as per reference.\n2. Detect any deviations from the normal ECG waveform pattern.\n3. Comment on rhythm regularity, wave amplitude, and intervals between waves.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/194.png",
+    "unique_idx": "194",
+    "prompt": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "response": {
+        "id": "chatcmpl-9OkiB1DPFhL28yokqNugI7JQN0xHY",
+        "object": "chat.completion",
+        "created": 1715686459,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To interpret the ECG waveform, you need to identify the different parts and assess for any abnormalities. Here's a step-by-step guide:\n\n### Parts of the ECG Waveform:\n1. **P Wave**: Represents atrial depolarization.\n2. **PR Interval**: Time from the onset of the P wave to the start of the QRS complex. Normal range: 120-200 ms.\n3. **QRS Complex**: Represents ventricular depolarization. Normal duration: 80-120 ms.\n4. **ST Segment**: Time between the end of the S wave and the start of the T wave. Should be isoelectric (flat).\n5. **T Wave**: Represents ventricular repolarization.\n6. **QT Interval**: Time from the start of the QRS complex to the end of the T wave. Normal range varies with heart rate but generally around 350-450 ms.\n\n### Identifying Abnormalities:\n1. **Heart Rate**: Count the number of QRS complexes in a 6-second strip and multiply by 10 to get the rate per minute. Normal resting heart rate is 60-100 bpm.\n2. **P Wave Assessment**: Look for abnormalities in shape or size which could indicate atrial enlargement.\n3. **PR Interval**: Should be between 120-200 ms. Longer intervals indicate first-degree heart block.\n4. **QRS Complex**: Should be narrow, between 80-120 ms. Wider QRS complexes can indicate bundle branch blocks or ventricular rhythms.\n5. **ST Segment**: Should be isoelectric. Elevation or depression can indicate myocardial ischemia or infarction.\n6. **T Wave**: Should be upright in most leads. Inverted T waves can indicate ischemia.\n7. **QT Interval**: Prolonged QT can predispose to arrhythmias.\n\n### Observations in the Given ECG:\n1. **Heart Rate**: The heart rate appears to be around 75 bpm (counting the QRS complexes in a 6-second strip and multiplying by 10).\n2. **P Waves**: P waves are present and appear regular.\n3. **PR Interval**: The PR interval seems within normal limits.\n4. **QRS Complex**: The QRS complexes are narrow, indicating normal ventricular conduction.\n5. **ST Segment**: There is no significant ST elevation or depression noted.\n6. **T Waves**: T waves appear normal in most leads.\n\n### Conclusion:\nThe ECG appears to be normal with no obvious abnormalities. The heart rate, rhythm, and intervals are within normal limits. There are no signs of ischemia, infarction, or other common ECG abnormalities.\n\nHowever, for a definitive interpretation, it is always best to consult a healthcare professional or a cardiologist."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 791,
+            "completion_tokens": 574,
+            "total_tokens": 1365
+        },
+        "system_fingerprint": "fp_927397958d"
+    },
+    "answer": "To interpret the ECG waveform, you need to identify the different parts and assess for any abnormalities. Here's a step-by-step guide:\n\n### Parts of the ECG Waveform:\n1. **P Wave**: Represents atrial depolarization.\n2. **PR Interval**: Time from the onset of the P wave to the start of the QRS complex. Normal range: 120-200 ms.\n3. **QRS Complex**: Represents ventricular depolarization. Normal duration: 80-120 ms.\n4. **ST Segment**: Time between the end of the S wave and the start of the T wave. Should be isoelectric (flat).\n5. **T Wave**: Represents ventricular repolarization.\n6. **QT Interval**: Time from the start of the QRS complex to the end of the T wave. Normal range varies with heart rate but generally around 350-450 ms.\n\n### Identifying Abnormalities:\n1. **Heart Rate**: Count the number of QRS complexes in a 6-second strip and multiply by 10 to get the rate per minute. Normal resting heart rate is 60-100 bpm.\n2. **P Wave Assessment**: Look for abnormalities in shape or size which could indicate atrial enlargement.\n3. **PR Interval**: Should be between 120-200 ms. Longer intervals indicate first-degree heart block.\n4. **QRS Complex**: Should be narrow, between 80-120 ms. Wider QRS complexes can indicate bundle branch blocks or ventricular rhythms.\n5. **ST Segment**: Should be isoelectric. Elevation or depression can indicate myocardial ischemia or infarction.\n6. **T Wave**: Should be upright in most leads. Inverted T waves can indicate ischemia.\n7. **QT Interval**: Prolonged QT can predispose to arrhythmias.\n\n### Observations in the Given ECG:\n1. **Heart Rate**: The heart rate appears to be around 75 bpm (counting the QRS complexes in a 6-second strip and multiplying by 10).\n2. **P Waves**: P waves are present and appear regular.\n3. **PR Interval**: The PR interval seems within normal limits.\n4. **QRS Complex**: The QRS complexes are narrow, indicating normal ventricular conduction.\n5. **ST Segment**: There is no significant ST elevation or depression noted.\n6. **T Waves**: T waves appear normal in most leads.\n\n### Conclusion:\nThe ECG appears to be normal with no obvious abnormalities. The heart rate, rhythm, and intervals are within normal limits. There are no signs of ischemia, infarction, or other common ECG abnormalities.\n\nHowever, for a definitive interpretation, it is always best to consult a healthcare professional or a cardiologist.",
+    "gen_model_id": "gpt-4o-2024-05-13",
+    "duration": 14.063782215118408,
+    "code": 200,
+    "current_time": "2024-05-14 19:34:25"
+}

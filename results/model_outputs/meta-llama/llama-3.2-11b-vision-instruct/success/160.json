@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Document Understanding",
+        "url": "https://pbs.twimg.com/media/F8kswFXXsAUTKhx?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Include LaTeX equation for 2-stock portfolio variance, which is \u000bar(R_p) = w_A^2 \\cdot \\sigma^2(R_A) + w_B^2 \\cdot \\sigma^2(R_B) + 2w_Aw_B\\sigma(R_A)\\sigma(R_B)\rho(R_A, R_B)",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/160.jpeg",
+    "unique_idx": 160,
+    "prompt": "What is the equation for calculating the variance of 2-stock portfolio according to the quick sheet. Write in LaTeX formula.",
+    "context": "What is the equation for calculating the variance of 2-stock portfolio according to the quick sheet. Write in LaTeX formula.",
+    "sample_id": 160,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/160.jpeg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "**Calculating the Variance of a 2-Stock Portfolio**\n\nTo calculate the variance of a 2-stock portfolio, we can use the following equation:\n\n$$\n\\sigma_{p}^2 = \\sigma_{p1}^2 + \\sigma_{p2}^2 + 2 \\cdot \\text{Cov}(R_{p1}, R_{p2})\n$$\n\nwhere:\n\n* $\\sigma_{p}^2$ is the variance of the portfolio\n* $\\sigma_{p1}^2$ and $\\sigma_{p2}^2$ are the variances of the individual stocks\n* $\\text{Cov}(R_{p1}, R_{p2})$ is the covariance between the two stocks\n\nThis equation is derived from the formula for the variance of a portfolio, which takes into account the individual variances of the stocks and their covariance.\n\n**Example Calculation**\n\nLet's say we have two stocks with the following characteristics:\n\n* Stock 1:\n\t+ Variance: 0.05\n\t+ Covariance with Stock 2: 0.01\n* Stock 2:\n\t+ Variance: 0.03\n\t+ Covariance with Stock 1: 0.01\n\nUsing the equation above, we can calculate the variance of the portfolio as follows:\n\n$$\n\\sigma_{p}^2 = 0.05 + 0.03 + 2 \\cdot 0.01 = 0.09\n$$\n\nTherefore, the variance of the 2-stock portfolio is 0.09.\n\n**Conclusion**\n\nIn conclusion, the equation for calculating the variance of a 2-stock portfolio is:\n\n$$\n\\sigma_{p}^2 = \\sigma_{p1}^2 + \\sigma_{p2}^2 + 2 \\cdot \\text{Cov}(R_{p1}, R_{p2})\n$$\n\nThis equation provides a simple and effective way to calculate the variance of a portfolio composed of two stocks.",
+    "response_from_model": {
+        "id": "gen-1728905337-3JYcneXAQDb2t0KaZr2T",
+        "provider": "Fireworks",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905337,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "**Calculating the Variance of a 2-Stock Portfolio**\n\nTo calculate the variance of a 2-stock portfolio, we can use the following equation:\n\n$$\n\\sigma_{p}^2 = \\sigma_{p1}^2 + \\sigma_{p2}^2 + 2 \\cdot \\text{Cov}(R_{p1}, R_{p2})\n$$\n\nwhere:\n\n* $\\sigma_{p}^2$ is the variance of the portfolio\n* $\\sigma_{p1}^2$ and $\\sigma_{p2}^2$ are the variances of the individual stocks\n* $\\text{Cov}(R_{p1}, R_{p2})$ is the covariance between the two stocks\n\nThis equation is derived from the formula for the variance of a portfolio, which takes into account the individual variances of the stocks and their covariance.\n\n**Example Calculation**\n\nLet's say we have two stocks with the following characteristics:\n\n* Stock 1:\n\t+ Variance: 0.05\n\t+ Covariance with Stock 2: 0.01\n* Stock 2:\n\t+ Variance: 0.03\n\t+ Covariance with Stock 1: 0.01\n\nUsing the equation above, we can calculate the variance of the portfolio as follows:\n\n$$\n\\sigma_{p}^2 = 0.05 + 0.03 + 2 \\cdot 0.01 = 0.09\n$$\n\nTherefore, the variance of the 2-stock portfolio is 0.09.\n\n**Conclusion**\n\nIn conclusion, the equation for calculating the variance of a 2-stock portfolio is:\n\n$$\n\\sigma_{p}^2 = \\sigma_{p1}^2 + \\sigma_{p2}^2 + 2 \\cdot \\text{Cov}(R_{p1}, R_{p2})\n$$\n\nThis equation provides a simple and effective way to calculate the variance of a portfolio composed of two stocks.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6440,
+            "completion_tokens": 417,
+            "total_tokens": 453
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:29:02"
+}

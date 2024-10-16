@@ -1,0 +1,35 @@
+{
+    "unique_idx": "181_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nHow many windows are there on one floor of the middle pink building?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThere are twelve windows on one floor of the middle pink building.\n~~~\n~~~Answer2\nThere are multiple windows on one floor of the middle pink building, but I cannot provide an exact number without seeing the image.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Answer must state \"4 windows\" for one floor of the middle pink building.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/181.jpeg",
+    "model_1": "gemini-1.5-flash-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "There are twelve windows on one floor of the middle pink building.",
+    "raw_answer2": "There are multiple windows on one floor of the middle pink building, but I cannot provide an exact number without seeing the image.",
+    "response": {
+        "id": "chatcmpl-AIsyznDjMfH2tqxwhOGL5fOuWn0OX",
+        "object": "chat.completion",
+        "created": 1729064621,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1061,
+            "completion_tokens": 6,
+            "total_tokens": 1067
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "unable to decide: situation two"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "unable to decide: situation two",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.9227936267852783,
+    "code": 200,
+    "current_time": "2024-10-16 15:43:42"
+}

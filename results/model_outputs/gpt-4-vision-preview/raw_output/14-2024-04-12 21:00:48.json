@@ -1,0 +1,24 @@
+{
+    "id": "msg_018EPLm7KxHfgHfBupm6fZKd",
+    "type": "message",
+    "role": "assistant",
+    "model": "gpt-4",
+    "usage": {
+        "prompt_tokens": 1627,
+        "completion_tokens": 370,
+        "total_tokens": 1997
+    },
+    "choices": [
+        {
+            "message": {
+                "role": "assistant",
+                "content": "Definitions (def):\n\n1. An n x n matrix A is an orthogonal transformation if and only if it has n mutually perpendicular rows or columns with unit length, and the rows must be independent (cannot be multiples of each other).\n\n2. To be perpendicular, the dot product must be 0.\nDot product: x \u2022 y = \\sum_{i=1}^n x_iy_i\n\n3. Rows/columns must have unit length:\n||x|| = \\sqrt{\\sum_{i} x_i^2} = \\sqrt{x^Tx}\n\n4. The rows or columns of A form an orthonormal basis of R^n.\n\n5. A basic set for space - set of vectors that can combine to create any vector in a space.\n\nExamples (ex):\n\n1. [1 2 7\n   3 6 1] \u2192 linearly dependent\n\n2. [1 2\n   2 6] \u2192 independent but not perpendicular\n\nFormulas:\n\nx \u2022 y = 0 \u27fa x \u27e5 y (perp.)\n\n||x|| = \\sqrt{\\sum_{i} x_i^2} = \\sqrt{x^Tx}\n\nAA^T = A^TA = I  \u27f6 transpose, [1]^T\n\nA^{-1} = A^T  \u27f6 switches the rows and columns\n\nex: [1 2 3]^T = [4 5 6]\n    [4 5 6]     [2 5]\n                [3 6]"
+            },
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "object": "chat.completion",
+    "created": 1712926848
+}

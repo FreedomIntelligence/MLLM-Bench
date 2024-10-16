@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-Aeu-8awAAaJ2l?format=jpg&name=medium",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/232.jpg",
+    "unique_idx": 232,
+    "prompt": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "context": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "sample_id": 232,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/232.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "To determine the most commonly used aircraft type for domestic flights, let's analyze the domestic arrivals and departures listed in the flight schedule.\n\n1. **Domestic Arrivals:**\n   - **A320:** 6 flights (6E7199, 6E7238, 6E7242, 6E7151, 6E7166, 6E7286)\n   - **B738:** 3 flights (6E7028, 6E7171, 6E7165)\n   - **ATR:** 5 flights (6E7191, 6E7028, 6E7171, 6E7165, 6E7171)\n   - **A320:** 6 flights (6E7199, 6E7238, 6E7242, 6E7151, 6E7166, 6E7286)\n\n2. **Domestic Departures:**\n   - **A320:** 6 flights (6E7101, 6E7245, 6E7217, 6E7365, 6E7268, 6E7051)\n   - **B738:** 3 flights (6E7711, 6E7712, 6E7716)\n   - **ATR:** 5 flights (6E7199, 6E7028, 6E7171, 6E7165, 6E7171)\n   - **A320:** 6 flights (6E7101, 6E7245, 6E7217, 6E7365, 6E7268, 6E7051)\n\nFrom the analysis, it appears that the A320 aircraft type is used most commonly for domestic flights, with a total of 12 flights listed for both arrivals and departures.",
+    "response_from_model": {
+        "id": "gen-1728903704-wVi0ToMCXp0OgdHF0Aul",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903704,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To determine the most commonly used aircraft type for domestic flights, let's analyze the domestic arrivals and departures listed in the flight schedule.\n\n1. **Domestic Arrivals:**\n   - **A320:** 6 flights (6E7199, 6E7238, 6E7242, 6E7151, 6E7166, 6E7286)\n   - **B738:** 3 flights (6E7028, 6E7171, 6E7165)\n   - **ATR:** 5 flights (6E7191, 6E7028, 6E7171, 6E7165, 6E7171)\n   - **A320:** 6 flights (6E7199, 6E7238, 6E7242, 6E7151, 6E7166, 6E7286)\n\n2. **Domestic Departures:**\n   - **A320:** 6 flights (6E7101, 6E7245, 6E7217, 6E7365, 6E7268, 6E7051)\n   - **B738:** 3 flights (6E7711, 6E7712, 6E7716)\n   - **ATR:** 5 flights (6E7199, 6E7028, 6E7171, 6E7165, 6E7171)\n   - **A320:** 6 flights (6E7101, 6E7245, 6E7217, 6E7365, 6E7268, 6E7051)\n\nFrom the analysis, it appears that the A320 aircraft type is used most commonly for domestic flights, with a total of 12 flights listed for both arrivals and departures.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 58,
+            "completion_tokens": 489,
+            "total_tokens": 547
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:02:50"
+}

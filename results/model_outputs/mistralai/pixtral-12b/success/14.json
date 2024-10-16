@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://mzucker.github.io/images/noteshrink/notesA1.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately transcribe definitions and examples related to \"Orthogonal Transformations.\"\n2. Correctly format mathematical formulas and symbols in LaTeX notation.\n3. Ensure extracted text maintains the original notes' structure and order.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/14.jpeg",
+    "unique_idx": 14,
+    "prompt": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "context": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "sample_id": 14,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/14.jpeg"
+    ],
+    "gen_model_id": "mistralai/pixtral-12b",
+    "answer": "Sure! Here are the definitions and examples extracted from the notes, formatted using LaTeX:\n\n### Definitions:\n1. **Orthogonal Transformation:**\n   ```latex\n   \\text{Def:} \\quad \\text{An } n \\times n \\text{ matrix } A \\text{ is an orthogonal transformation I.F.F. (if and only if)}\n   ```\n   - It has mutually perpendicular rows or columns with unit length.\n   - Rows must be independent (cannot be multiples of each other).\n   - Rows/columns must have unit length.\n\n2. **Independent Vectors:**\n   ```latex\n   \\text{ex:} \\quad \\begin{bmatrix} 1 \\\\ 2 \\\\ 6 \\end{bmatrix} \\text{ is linearly dependent}\n   \\quad\n   \\begin{bmatrix} 1 \\\\ 2 \\\\ 6 \\end{bmatrix} \\text{ is independent but not perpendicular}\n   ```\n\n3. **Perpendicular Vectors:**\n   ```latex\n   \\text{It has mutually perpendicular rows or columns with unit length}\n   \\quad\n   \\text{The dot product must be } 0\n   \\quad\n   \\text{dot product: } \\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^{n} x_i y_i\n   \\quad\n   \\mathbf{x} \\cdot \\mathbf{y} = 0 \\quad \\text{(implies perpendicularity)}\n   ```\n\n4. **Unit Length:**\n   ```latex\n   \\text{rows/columns must have unit length}\n   \\quad\n   \\| \\mathbf{x} \\| = \\sqrt{\\mathbf{x} \\cdot \\mathbf{x}} = \\sqrt{x \\cdot x}\n   ```\n\n5. **Orthonormal Basis:**\n   ```latex\n   \\text{The rows or columns of } A \\text{ form an orthonormal basis of } \\mathbb{R}^n\n   \\quad\n   \\text{Basic for space - set of vectors that can combine to create any vector in a space}\n   ```\n\n### Examples:\n1. **Linear Dependence:**\n   ```latex\n   \\text{ex:} \\quad \\begin{bmatrix} 1 \\\\ 3 \\\\ 6 \\end{bmatrix} \\text{ is linearly dependent}\n   ```\n\n2. **Independent but Not Perpendicular:**\n   ```latex\n   \\text{ex:} \\quad \\begin{bmatrix} 1 \\\\ 2 \\\\ 6 \\end{bmatrix} \\text{ is independent but not perpendicular}\n   ```\n\n3. **Dot Product:**\n   ```latex\n   \\text{dot product: } \\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^{n} x_i y_i\n   \\quad\n   \\mathbf{x} \\cdot \\mathbf{y} = 0 \\quad \\text{(implies perpendicularity)}\n   ```\n\n4. **Unit Length:**\n   ```latex\n   \\text{rows/columns must have unit length}\n   \\quad\n   \\| \\mathbf{x} \\| = \\sqrt{\\mathbf{x} \\cdot \\mathbf{x}} = \\sqrt{x \\cdot x}\n   ```\n\n5. **Orthonormal Basis Example:**\n   ```latex\n   \\text{The rows or columns of } A \\text{ form an orthonormal basis of } \\mathbb{R}^n\n   \\quad\n   \\text{Basic for space - set of vectors that can combine to create any vector in a space}\n   ```\n\nThese are the key definitions and examples extracted from the notes, formatted in LaTeX.",
+    "response_from_model": {
+        "id": "gen-1728915642-k772xC58XRXd8XEtYpb1",
+        "provider": "Hyperbolic",
+        "model": "mistralai/pixtral-12b",
+        "object": "chat.completion",
+        "created": 1728915642,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure! Here are the definitions and examples extracted from the notes, formatted using LaTeX:\n\n### Definitions:\n1. **Orthogonal Transformation:**\n   ```latex\n   \\text{Def:} \\quad \\text{An } n \\times n \\text{ matrix } A \\text{ is an orthogonal transformation I.F.F. (if and only if)}\n   ```\n   - It has mutually perpendicular rows or columns with unit length.\n   - Rows must be independent (cannot be multiples of each other).\n   - Rows/columns must have unit length.\n\n2. **Independent Vectors:**\n   ```latex\n   \\text{ex:} \\quad \\begin{bmatrix} 1 \\\\ 2 \\\\ 6 \\end{bmatrix} \\text{ is linearly dependent}\n   \\quad\n   \\begin{bmatrix} 1 \\\\ 2 \\\\ 6 \\end{bmatrix} \\text{ is independent but not perpendicular}\n   ```\n\n3. **Perpendicular Vectors:**\n   ```latex\n   \\text{It has mutually perpendicular rows or columns with unit length}\n   \\quad\n   \\text{The dot product must be } 0\n   \\quad\n   \\text{dot product: } \\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^{n} x_i y_i\n   \\quad\n   \\mathbf{x} \\cdot \\mathbf{y} = 0 \\quad \\text{(implies perpendicularity)}\n   ```\n\n4. **Unit Length:**\n   ```latex\n   \\text{rows/columns must have unit length}\n   \\quad\n   \\| \\mathbf{x} \\| = \\sqrt{\\mathbf{x} \\cdot \\mathbf{x}} = \\sqrt{x \\cdot x}\n   ```\n\n5. **Orthonormal Basis:**\n   ```latex\n   \\text{The rows or columns of } A \\text{ form an orthonormal basis of } \\mathbb{R}^n\n   \\quad\n   \\text{Basic for space - set of vectors that can combine to create any vector in a space}\n   ```\n\n### Examples:\n1. **Linear Dependence:**\n   ```latex\n   \\text{ex:} \\quad \\begin{bmatrix} 1 \\\\ 3 \\\\ 6 \\end{bmatrix} \\text{ is linearly dependent}\n   ```\n\n2. **Independent but Not Perpendicular:**\n   ```latex\n   \\text{ex:} \\quad \\begin{bmatrix} 1 \\\\ 2 \\\\ 6 \\end{bmatrix} \\text{ is independent but not perpendicular}\n   ```\n\n3. **Dot Product:**\n   ```latex\n   \\text{dot product: } \\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^{n} x_i y_i\n   \\quad\n   \\mathbf{x} \\cdot \\mathbf{y} = 0 \\quad \\text{(implies perpendicularity)}\n   ```\n\n4. **Unit Length:**\n   ```latex\n   \\text{rows/columns must have unit length}\n   \\quad\n   \\| \\mathbf{x} \\| = \\sqrt{\\mathbf{x} \\cdot \\mathbf{x}} = \\sqrt{x \\cdot x}\n   ```\n\n5. **Orthonormal Basis Example:**\n   ```latex\n   \\text{The rows or columns of } A \\text{ form an orthonormal basis of } \\mathbb{R}^n\n   \\quad\n   \\text{Basic for space - set of vectors that can combine to create any vector in a space}\n   ```\n\nThese are the key definitions and examples extracted from the notes, formatted in LaTeX.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3483,
+            "completion_tokens": 742,
+            "total_tokens": 4225
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-22:21:03"
+}

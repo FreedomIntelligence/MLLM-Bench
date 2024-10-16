@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Document Understanding",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify the \"You Are Here\" point and the nearest emergency exit.\n2. Describe the path including turns and any landmarks (e.g., room numbers, staircases).\n3. Ensure the route is the quickest possible, avoiding detours or longer paths.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/167.jpeg",
+    "unique_idx": "167",
+    "prompt": "Describe the quickest route to the nearest emergency exit from the \"You Are Here\" point.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "From the \"You Are Here\" point indicated by the red star on the map, you should proceed straight ahead in the direction of the green dashed line. Continue past rooms 213, 214, and 215 on your right and rooms 222, 221, and 220 on your left. When you reach the end of the hallway, turn right, and you will find the emergency exit directly ahead, as indicated by the green exit sign on the map. This is the quickest route to the nearest emergency exit from the \"You Are Here\" point.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426777,
+        "id": "chatcmpl-9W3RpzFgVPDQ8EpI1OvbKxADrvl7G",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 113,
+            "prompt_tokens": 790,
+            "total_tokens": 903
+        }
+    },
+    "answer": "From the \"You Are Here\" point indicated by the red star on the map, you should proceed straight ahead in the direction of the green dashed line. Continue past rooms 213, 214, and 215 on your right and rooms 222, 221, and 220 on your left. When you reach the end of the hallway, turn right, and you will find the emergency exit directly ahead, as indicated by the green exit sign on the map. This is the quickest route to the nearest emergency exit from the \"You Are Here\" point.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 8.984788656234741,
+    "code": 200,
+    "current_time": "2024-06-03 22:59:42"
+}

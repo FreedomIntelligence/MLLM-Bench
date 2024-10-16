@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://pbs.twimg.com/media/F-hlGgIaEAA4Q-f?format=jpg&name=900x900",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Coordinates should approximate (450,600) for the \"Lemons 6 for $3\" sign.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/175.jpg",
+    "unique_idx": 175,
+    "prompt": "The image is of dimension 675*900, assume the bottom left corner to be the origin of coordinates (0,0), the coordinates of the top left corner to be (0,900) and the coordinates of the bottom right corner to be (675,0), where approximately would you place the coordinates of the sign indicating \"Lemons 6 for $3\"?",
+    "context": "The image is of dimension 675*900, assume the bottom left corner to be the origin of coordinates (0,0), the coordinates of the top left corner to be (0,900) and the coordinates of the bottom right corner to be (675,0), where approximately would you place the coordinates of the sign indicating \"Lemons 6 for $3\"?",
+    "sample_id": 175,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/175.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The \"Lemons 6 for $3\" sign is located approximately at **(475, 325)**.",
+    "response_from_model": {
+        "id": "chatcmpl-17729b217293423bbee4c33fe55f1619",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897277,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The \"Lemons 6 for $3\" sign is located approximately at **(475, 325)**."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 342,
+            "completion_tokens": 27,
+            "total_tokens": 369
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:14:53"
+}

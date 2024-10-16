@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://thumbs.dreamstime.com/b/car-accident-two-cars-crashed-city-road-intentional-motion-blur-141839362.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Predicted trajectories must consider vehicles' current motion and road conditions.\n2. Recommendations for avoiding collision should be specific and plausible.\n3. Answer must align with the action prediction capability and the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/387.jpeg",
+    "unique_idx": 387,
+    "prompt": "Based on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?",
+    "context": "Based on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?",
+    "sample_id": 387,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/387.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The vehicles in the image are currently traveling on a snowy road, with the headlights illuminating the road ahead. The white car is in the foreground, and the blue car is to its right. The white car appears to be moving straight ahead, while the blue car is turning to the right.\n\nTo avoid collision in the next few seconds, drivers should:\n\n1. **Maintain a safe distance:** Keep a safe distance from the vehicle in front to allow for stopping in case of sudden braking.\n2. **Use appropriate speed:** Reduce speed to match the conditions and the speed of the vehicle in front.\n3. **Be prepared to stop:** Be ready to stop suddenly if the vehicle in front slows down or stops.\n4. **Use headlights:** Ensure that headlights are on to increase visibility.\n5. **Stay alert:** Pay close attention to the road and other vehicles, and be ready to react to any changes in traffic conditions.\n\nBy following these guidelines, drivers can help ensure their safety and the safety of others on the road.",
+    "response_from_model": {
+        "id": "gen-1728903902-XUo3awBCZXqaE0YKHDlf",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903902,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The vehicles in the image are currently traveling on a snowy road, with the headlights illuminating the road ahead. The white car is in the foreground, and the blue car is to its right. The white car appears to be moving straight ahead, while the blue car is turning to the right.\n\nTo avoid collision in the next few seconds, drivers should:\n\n1. **Maintain a safe distance:** Keep a safe distance from the vehicle in front to allow for stopping in case of sudden braking.\n2. **Use appropriate speed:** Reduce speed to match the conditions and the speed of the vehicle in front.\n3. **Be prepared to stop:** Be ready to stop suddenly if the vehicle in front slows down or stops.\n4. **Use headlights:** Ensure that headlights are on to increase visibility.\n5. **Stay alert:** Pay close attention to the road and other vehicles, and be ready to react to any changes in traffic conditions.\n\nBy following these guidelines, drivers can help ensure their safety and the safety of others on the road.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 48,
+            "completion_tokens": 209,
+            "total_tokens": 257
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:05:44"
+}

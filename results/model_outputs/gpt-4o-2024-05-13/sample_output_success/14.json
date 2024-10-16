@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://mzucker.github.io/images/noteshrink/notesA1.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately transcribe definitions and examples related to \"Orthogonal Transformations.\"\n2. Correctly format mathematical formulas and symbols in LaTeX notation.\n3. Ensure extracted text maintains the original notes' structure and order.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/14.jpeg",
+    "unique_idx": "14",
+    "prompt": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "response": {
+        "id": "chatcmpl-9Oke1tefsvos7bGfI2xhr3jhgluqX",
+        "object": "chat.completion",
+        "created": 1715686201,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "**Definitions (def):**\n- An \\( n \\times n \\) matrix \\( A \\) is an orthogonal transformation if and only if:\n  - It has \\( n \\) mutually perpendicular rows or columns with unit length.\n\n**Examples (ex):**\n1. Example of linearly dependent rows:\n   \\[\n   \\begin{bmatrix}\n   1 & 2 \\\\\n   3 & 6\n   \\end{bmatrix}\n   \\]\n2. Example of independent but not perpendicular rows:\n   \\[\n   \\begin{bmatrix}\n   1 & 2 \\\\\n   2 & 6\n   \\end{bmatrix}\n   \\]\n3. Example of switching rows and columns:\n   \\[\n   \\text{Transpose } \\left( \\begin{bmatrix}\n   1 & 2 & 3 \\\\\n   4 & 5 & 6\n   \\end{bmatrix} \\right) = \\begin{bmatrix}\n   1 & 4 \\\\\n   2 & 5 \\\\\n   3 & 6\n   \\end{bmatrix}\n   \\]\n\n**Formulas using LaTeX:**\n\n1. Dot product:\n   \\[\n   \\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^{n} x_i y_i\n   \\]\n\n2. Perpendicular vectors:\n   \\[\n   \\mathbf{x} \\cdot \\mathbf{y} = 0 \\iff \\mathbf{x} \\perp \\mathbf{y}\n   \\]\n\n3. Unit length of a vector:\n   \\[\n   \\|\\mathbf{x}\\| = \\sqrt{\\sum_{i=1}^{n} x_i^2} = \\sqrt{\\mathbf{x} \\cdot \\mathbf{x}}\n   \\]\n\n4. Orthogonal matrix properties:\n   \\[\n   A A^T = A^T A = I\n   \\]\n   \\[\n   A^{-1} = A^T\n   \\]\n\n5. Transpose of a matrix:\n   \\[\n   \\text{Transpose } \\left( \\begin{bmatrix}\n   1 & 2 & 3 \\\\\n   4 & 5 & 6\n   \\end{bmatrix} \\right) = \\begin{bmatrix}\n   1 & 4 \\\\\n   2 & 5 \\\\\n   3 & 6\n   \\end{bmatrix}\n   \\]"
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 796,
+            "completion_tokens": 521,
+            "total_tokens": 1317
+        },
+        "system_fingerprint": "fp_927397958d"
+    },
+    "answer": "**Definitions (def):**\n- An \\( n \\times n \\) matrix \\( A \\) is an orthogonal transformation if and only if:\n  - It has \\( n \\) mutually perpendicular rows or columns with unit length.\n\n**Examples (ex):**\n1. Example of linearly dependent rows:\n   \\[\n   \\begin{bmatrix}\n   1 & 2 \\\\\n   3 & 6\n   \\end{bmatrix}\n   \\]\n2. Example of independent but not perpendicular rows:\n   \\[\n   \\begin{bmatrix}\n   1 & 2 \\\\\n   2 & 6\n   \\end{bmatrix}\n   \\]\n3. Example of switching rows and columns:\n   \\[\n   \\text{Transpose } \\left( \\begin{bmatrix}\n   1 & 2 & 3 \\\\\n   4 & 5 & 6\n   \\end{bmatrix} \\right) = \\begin{bmatrix}\n   1 & 4 \\\\\n   2 & 5 \\\\\n   3 & 6\n   \\end{bmatrix}\n   \\]\n\n**Formulas using LaTeX:**\n\n1. Dot product:\n   \\[\n   \\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^{n} x_i y_i\n   \\]\n\n2. Perpendicular vectors:\n   \\[\n   \\mathbf{x} \\cdot \\mathbf{y} = 0 \\iff \\mathbf{x} \\perp \\mathbf{y}\n   \\]\n\n3. Unit length of a vector:\n   \\[\n   \\|\\mathbf{x}\\| = \\sqrt{\\sum_{i=1}^{n} x_i^2} = \\sqrt{\\mathbf{x} \\cdot \\mathbf{x}}\n   \\]\n\n4. Orthogonal matrix properties:\n   \\[\n   A A^T = A^T A = I\n   \\]\n   \\[\n   A^{-1} = A^T\n   \\]\n\n5. Transpose of a matrix:\n   \\[\n   \\text{Transpose } \\left( \\begin{bmatrix}\n   1 & 2 & 3 \\\\\n   4 & 5 & 6\n   \\end{bmatrix} \\right) = \\begin{bmatrix}\n   1 & 4 \\\\\n   2 & 5 \\\\\n   3 & 6\n   \\end{bmatrix}\n   \\]",
+    "gen_model_id": "gpt-4o-2024-05-13",
+    "duration": 12.925207376480103,
+    "code": 200,
+    "current_time": "2024-05-14 19:30:07"
+}

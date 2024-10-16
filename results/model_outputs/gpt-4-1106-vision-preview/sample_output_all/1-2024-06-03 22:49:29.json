@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "General Object Recognition",
+        "url": "https://pbs.twimg.com/media/FmuQWeIaMAAqJ08?format=jpg&name=medium",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify all white objects as 'tumbler toys' accurately.\n2. Describe the functionality of tumbler toys correctly.\n3. Exclude non-white objects and irrelevant background items.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/1.jpg",
+    "unique_idx": "1",
+    "prompt": "Identify the white objects in the image and determine their functionality.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The white objects in the image appear to be small figurines designed to look like chickens, with red accents that may represent a comb or wattle. They have cartoonish features, with expressive eyes and beaks. These objects are likely decorative and could serve as toys or collectibles. They do not seem to have any mechanical functionality but are intended for display or play.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426165,
+        "id": "chatcmpl-9W3Hx0VUD78098hWUkM7exWFTOAlf",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 74,
+            "prompt_tokens": 785,
+            "total_tokens": 859
+        }
+    },
+    "answer": "The white objects in the image appear to be small figurines designed to look like chickens, with red accents that may represent a comb or wattle. They have cartoonish features, with expressive eyes and beaks. These objects are likely decorative and could serve as toys or collectibles. They do not seem to have any mechanical functionality but are intended for display or play.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 28.54326605796814,
+    "code": 200,
+    "current_time": "2024-06-03 22:49:29"
+}

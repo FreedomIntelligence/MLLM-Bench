@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://pbs.twimg.com/media/F-hlGgIaEAA4Q-f?format=jpg&name=900x900",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Coordinates should approximate (450,600) for the \"Lemons 6 for $3\" sign.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/175.jpg",
+    "unique_idx": 175,
+    "prompt": "The image is of dimension 675*900, assume the bottom left corner to be the origin of coordinates (0,0), the coordinates of the top left corner to be (0,900) and the coordinates of the bottom right corner to be (675,0), where approximately would you place the coordinates of the sign indicating \"Lemons 6 for $3\"?",
+    "context": "The image is of dimension 675*900, assume the bottom left corner to be the origin of coordinates (0,0), the coordinates of the top left corner to be (0,900) and the coordinates of the bottom right corner to be (675,0), where approximately would you place the coordinates of the sign indicating \"Lemons 6 for $3\"?",
+    "sample_id": 175,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/175.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "The sign indicating \"Lemons 6 for $3\" is located towards the right side of the image, above the lemons. Based on the given dimensions and the visual positioning, the coordinates for the sign would be approximately around (550, 300).",
+    "response_from_model": {
+        "id": "gen-1728907800-TAMsPEWgkBJMIo9EFVZ0",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728907800,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The sign indicating \"Lemons 6 for $3\" is located towards the right side of the image, above the lemons. Based on the given dimensions and the visual positioning, the coordinates for the sign would be approximately around (550, 300).",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 105,
+            "completion_tokens": 58,
+            "total_tokens": 163
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:10:07"
+}

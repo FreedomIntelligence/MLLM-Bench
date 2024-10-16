@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://mzucker.github.io/images/noteshrink/notesA1.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately transcribe definitions and examples related to \"Orthogonal Transformations.\"\n2. Correctly format mathematical formulas and symbols in LaTeX notation.\n3. Ensure extracted text maintains the original notes' structure and order.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/14.jpeg",
+    "unique_idx": 14,
+    "prompt": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "context": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "sample_id": 14,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/14.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "Here are the definitions and examples from the notes, along with the formulas in LaTeX:\n\n### Definitions (Def)\n1. **Orthogonal Transformation**: A transformation \\( T \\) in \\( \\mathbb{R}^n \\) is orthogonal if it satisfies the following conditions:\n   - It is a linear transformation.\n   - It preserves the dot product.\n   - It preserves the length of vectors.\n   - It preserves the angle between vectors.\n\n2. **Matrix \\( A \\) is Orthogonal**: A matrix \\( A \\) is orthogonal if it is square and its transpose \\( A^T \\) is its inverse. Mathematically, this is expressed as:\n   \\[\n   A^T A = I\n   \\]\n   where \\( I \\) is the identity matrix.\n\n### Examples (ex)\n- **Example of an Orthogonal Matrix**:\n  \\[\n  \\begin{pmatrix}\n  1 & 0 \\\\\n  0 & 1\n  \\end{pmatrix}\n  \\]\n\n### Formula\n- **Dot Product (x \\cdot y)**:\n  \\[\n  x \\cdot y = \\sum_{i=1}^{n} x_i y_i\n  \\]\n- **Length of a Vector (||x||)**:\n  \\[\n  ||x|| = \\sqrt{x \\cdot x} = \\sqrt{\\sum_{i=1}^{n} x_i^2}\n  \\]\n\n### Additional Notes\n- **Orthogonal Basis**: The rows or columns of an orthogonal matrix form an orthonormal basis of \\( \\mathbb{R}^n \\).\n- **Rigidity of Orthogonal Matrices**: Orthogonal matrices preserve the shape and size of geometric objects.\n\n### Further Information\n- **More about Transpose**: The transpose of a matrix switches the rows and columns. For example:\n  \\[\n  \\begin{pmatrix}\n  1 & 2 & 3 \\\\\n  4 & 5 & 6\n  \\end{pmatrix}^T\n  =\n  \\begin{pmatrix}\n  1 & 4 \\\\\n  2 & 5 \\\\\n  3 & 6\n  \\end{pmatrix}\n  \\]",
+    "response_from_model": {
+        "id": "gen-1728903277-pBis4fMJAtlirYQhhEzD",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903277,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here are the definitions and examples from the notes, along with the formulas in LaTeX:\n\n### Definitions (Def)\n1. **Orthogonal Transformation**: A transformation \\( T \\) in \\( \\mathbb{R}^n \\) is orthogonal if it satisfies the following conditions:\n   - It is a linear transformation.\n   - It preserves the dot product.\n   - It preserves the length of vectors.\n   - It preserves the angle between vectors.\n\n2. **Matrix \\( A \\) is Orthogonal**: A matrix \\( A \\) is orthogonal if it is square and its transpose \\( A^T \\) is its inverse. Mathematically, this is expressed as:\n   \\[\n   A^T A = I\n   \\]\n   where \\( I \\) is the identity matrix.\n\n### Examples (ex)\n- **Example of an Orthogonal Matrix**:\n  \\[\n  \\begin{pmatrix}\n  1 & 0 \\\\\n  0 & 1\n  \\end{pmatrix}\n  \\]\n\n### Formula\n- **Dot Product (x \\cdot y)**:\n  \\[\n  x \\cdot y = \\sum_{i=1}^{n} x_i y_i\n  \\]\n- **Length of a Vector (||x||)**:\n  \\[\n  ||x|| = \\sqrt{x \\cdot x} = \\sqrt{\\sum_{i=1}^{n} x_i^2}\n  \\]\n\n### Additional Notes\n- **Orthogonal Basis**: The rows or columns of an orthogonal matrix form an orthonormal basis of \\( \\mathbb{R}^n \\).\n- **Rigidity of Orthogonal Matrices**: Orthogonal matrices preserve the shape and size of geometric objects.\n\n### Further Information\n- **More about Transpose**: The transpose of a matrix switches the rows and columns. For example:\n  \\[\n  \\begin{pmatrix}\n  1 & 2 & 3 \\\\\n  4 & 5 & 6\n  \\end{pmatrix}^T\n  =\n  \\begin{pmatrix}\n  1 & 4 \\\\\n  2 & 5 \\\\\n  3 & 6\n  \\end{pmatrix}\n  \\]",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 44,
+            "completion_tokens": 465,
+            "total_tokens": 509
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-18:55:09"
+}

@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-Aeu-8awAAaJ2l?format=jpg&name=medium",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/232.jpg",
+    "unique_idx": "232",
+    "prompt": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "response": {
+        "id": "chatcmpl-9vo8OiGRm7BjwPYyaJrtZ3HkgDLJ6",
+        "object": "chat.completion",
+        "created": 1723564440,
+        "model": "gpt-4o-2024-08-06",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To determine the most commonly used aircraft type for domestic flights, we analyze both the domestic arrivals and departures:\n\n### Domestic Arrivals:\n- ATR: 6 flights\n- A320: 4 flights\n\n### Domestic Departures:\n- ATR: 6 flights\n- A320: 4 flights\n\n### Total for Domestic Flights:\n- ATR: 12 flights\n- A320: 8 flights\n\nThe ATR is the most commonly used aircraft type for domestic flights with a total of 12 flights.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 802,
+            "completion_tokens": 102,
+            "total_tokens": 904
+        },
+        "system_fingerprint": "fp_845eaabc1f"
+    },
+    "answer": "To determine the most commonly used aircraft type for domestic flights, we analyze both the domestic arrivals and departures:\n\n### Domestic Arrivals:\n- ATR: 6 flights\n- A320: 4 flights\n\n### Domestic Departures:\n- ATR: 6 flights\n- A320: 4 flights\n\n### Total for Domestic Flights:\n- ATR: 12 flights\n- A320: 8 flights\n\nThe ATR is the most commonly used aircraft type for domestic flights with a total of 12 flights.",
+    "gen_model_id": "gpt-4o-2024-08-06",
+    "duration": 4.256556749343872,
+    "code": 200,
+    "current_time": "2024-08-13 23:54:02"
+}

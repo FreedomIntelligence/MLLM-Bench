@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F16HW98XgAE0PTL?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify all UI elements: buttons, symbols, and layout.\n2. Match color scheme and button shapes exactly as in the image.\n3. Ensure functional similarity in coded UI to the image's calculator app.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/371.jpeg",
+    "unique_idx": "371",
+    "prompt": "You are a software developer. You have the attached image and you need to code an UI or app with the same characteristics, color, shapes, etc. ",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 814,
+            "prompt_tokens": 1042,
+            "total_tokens": 1856
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To create an app with the same characteristics as the calculator in the image, I would suggest using a modern front-end framework like React, Vue, or Flutter. Below is a high-level outline of the steps and code you could use in React.\n\n### Step 1: Set up your React project\n\nFirst, create a new React project using Create React App:\n\n```bash\nnpx create-react-app calculator-app\ncd calculator-app\nnpm start\n```\n\n### Step 2: Create the calculator UI\n\nCreate a new component `Calculator.js` and import the necessary React Bootstrap components:\n\n```jsx\nimport React from 'react';\nimport { Container, Row, Col, Button } from 'react-bootstrap';\n```\n\n### Step 3: Define the buttons and layout\n\nCreate a list of buttons and their respective functions:\n\n```jsx\nconst buttons = [\n  // Number buttons\n  { label: '7', value: 7 },\n  { label: '8', value: 8 },\n  { label: '9', value: 9 },\n  // ... (all other buttons)\n  { label: 'C', value: 'clear' },\n  { label: '%', value: '%' },\n  // ... (all other function buttons)\n];\n```\n\n### Step 4: Create a button component\n\nCreate a reusable button component `CalculatorButton.js`:\n\n```jsx\nimport React from 'react';\nimport { Button } from 'react-bootstrap';\n\nconst CalculatorButton = ({ label, value, onClick }) => {\n  return (\n    <Button onClick={onClick} variant={value !== '%' ? 'dark' : 'light'}>\n      {label}\n    </Button>\n  );\n};\n\nexport default CalculatorButton;\n```\n\n### Step 5: Use the button component in the main Calculator component\n\nIn `Calculator.js`, render the buttons using the `CalculatorButton` component:\n\n```jsx\nconst Calculator = () => {\n  // ... (import CalculatorButton)\n\n  return (\n    <Container>\n      <Row>\n        {buttons.map((btn, index) => (\n          <Col key={index}>\n            <CalculatorButton\n              label={btn.label}\n              value={btn.value}\n              onClick={() => handleButtonClick(btn.value)}\n            />\n          </Col>\n        ))}\n      </Row>\n    </Container>\n  );\n};\n\nconst handleButtonClick = (value) => {\n  // Handle button click\n};\n\nexport default Calculator;\n```\n\n### Step 6: Style the buttons\n\nAdd custom CSS to style the buttons similar to the calculator in the image:\n\n```css\n/* Add this to your public/index.css */\n.btn-dark {\n  background-color: #333;\n  border-color: #333;\n}\n\n.btn-light {\n  background-color: #f9f9f9;\n  border-color: #f9f9f9;\n}\n```\n\n### Step 7: Implement the calculator logic\n\nImplement the logic for the calculator, including the display, input handling, and arithmetic operations.\n\nWith these steps, you'll have a functional calculator UI that resembles the one in the image. You can further refine the styles and functionality to match the exact look and behavior as needed."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "To create an app with the same characteristics as the calculator in the image, I would suggest using a modern front-end framework like React, Vue, or Flutter. Below is a high-level outline of the steps and code you could use in React.\n\n### Step 1: Set up your React project\n\nFirst, create a new React project using Create React App:\n\n```bash\nnpx create-react-app calculator-app\ncd calculator-app\nnpm start\n```\n\n### Step 2: Create the calculator UI\n\nCreate a new component `Calculator.js` and import the necessary React Bootstrap components:\n\n```jsx\nimport React from 'react';\nimport { Container, Row, Col, Button } from 'react-bootstrap';\n```\n\n### Step 3: Define the buttons and layout\n\nCreate a list of buttons and their respective functions:\n\n```jsx\nconst buttons = [\n  // Number buttons\n  { label: '7', value: 7 },\n  { label: '8', value: 8 },\n  { label: '9', value: 9 },\n  // ... (all other buttons)\n  { label: 'C', value: 'clear' },\n  { label: '%', value: '%' },\n  // ... (all other function buttons)\n];\n```\n\n### Step 4: Create a button component\n\nCreate a reusable button component `CalculatorButton.js`:\n\n```jsx\nimport React from 'react';\nimport { Button } from 'react-bootstrap';\n\nconst CalculatorButton = ({ label, value, onClick }) => {\n  return (\n    <Button onClick={onClick} variant={value !== '%' ? 'dark' : 'light'}>\n      {label}\n    </Button>\n  );\n};\n\nexport default CalculatorButton;\n```\n\n### Step 5: Use the button component in the main Calculator component\n\nIn `Calculator.js`, render the buttons using the `CalculatorButton` component:\n\n```jsx\nconst Calculator = () => {\n  // ... (import CalculatorButton)\n\n  return (\n    <Container>\n      <Row>\n        {buttons.map((btn, index) => (\n          <Col key={index}>\n            <CalculatorButton\n              label={btn.label}\n              value={btn.value}\n              onClick={() => handleButtonClick(btn.value)}\n            />\n          </Col>\n        ))}\n      </Row>\n    </Container>\n  );\n};\n\nconst handleButtonClick = (value) => {\n  // Handle button click\n};\n\nexport default Calculator;\n```\n\n### Step 6: Style the buttons\n\nAdd custom CSS to style the buttons similar to the calculator in the image:\n\n```css\n/* Add this to your public/index.css */\n.btn-dark {\n  background-color: #333;\n  border-color: #333;\n}\n\n.btn-light {\n  background-color: #f9f9f9;\n  border-color: #f9f9f9;\n}\n```\n\n### Step 7: Implement the calculator logic\n\nImplement the logic for the calculator, including the display, input handling, and arithmetic operations.\n\nWith these steps, you'll have a functional calculator UI that resembles the one in the image. You can further refine the styles and functionality to match the exact look and behavior as needed.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 59.06921577453613,
+    "code": 200,
+    "current_time": "2024-04-30 14:36:15"
+}

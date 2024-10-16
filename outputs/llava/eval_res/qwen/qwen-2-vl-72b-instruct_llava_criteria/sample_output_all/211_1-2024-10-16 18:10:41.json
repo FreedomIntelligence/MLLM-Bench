@@ -1,0 +1,35 @@
+{
+    "unique_idx": "211_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhich parts of the map have the greatest humidity?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nIn the map, the areas with the highest humidity levels are located around the eastern part of China.\n~~~\n~~~Answer2\nThe parts of the map with the greatest humidity, indicated by the darkest blue shade, are primarily located in the southern regions of China. This includes areas such as the provinces of Yunnan, Guizhou, Sichuan, Chongqing, Hunan, Jiangxi, Fujian, Guangdong, and Hainan. These regions are known for their high humidity levels, often due to their proximity to bodies of water and tropical or subtropical climates.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the area with the darkest shade representing the highest humidity range.\n2. Reference the legend to confirm the highest humidity value.\n3. Describe the geographic location of the area with the greatest humidity.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/211.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-72b-instruct",
+    "raw_answer1": "In the map, the areas with the highest humidity levels are located around the eastern part of China.",
+    "raw_answer2": "The parts of the map with the greatest humidity, indicated by the darkest blue shade, are primarily located in the southern regions of China. This includes areas such as the provinces of Yunnan, Guizhou, Sichuan, Chongqing, Hunan, Jiangxi, Fujian, Guangdong, and Hainan. These regions are known for their high humidity levels, often due to their proximity to bodies of water and tropical or subtropical climates.",
+    "response": {
+        "id": "chatcmpl-AIvHDHKJAl9HjYooBHlmlnmKlzMb0",
+        "object": "chat.completion",
+        "created": 1729073439,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1156,
+            "completion_tokens": 2,
+            "total_tokens": 1158
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.1169843673706055,
+    "code": 200,
+    "current_time": "2024-10-16 18:10:41"
+}

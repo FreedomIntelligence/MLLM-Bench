@@ -1,0 +1,35 @@
+{
+    "unique_idx": "171_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nPlease find the location of the item printed with 'Dear London'.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe item printed with 'Dear London' is a brown paper shopping bag. The shopping bag is sitting on top of a white dresser, to the left of the bed.\n~~~\n~~~Answer2\nThe item printed with 'Dear London' is located in the bedroom, sitting on the bed.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify item with 'Dear London' is a paper bag and confirm it's on the bedside table.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/171.webp",
+    "model_1": "meta-llama/llama-3.2-11b-vision-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The item printed with 'Dear London' is a brown paper shopping bag. The shopping bag is sitting on top of a white dresser, to the left of the bed.",
+    "raw_answer2": "The item printed with 'Dear London' is located in the bedroom, sitting on the bed.",
+    "response": {
+        "id": "chatcmpl-AIuBrZdzJlHEBI4PioKIEQayPTtlx",
+        "object": "chat.completion",
+        "created": 1729069263,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1419,
+            "completion_tokens": 2,
+            "total_tokens": 1421
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 11.093755722045898,
+    "code": 200,
+    "current_time": "2024-10-16 17:01:03"
+}

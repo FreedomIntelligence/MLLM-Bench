@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-Aeu-8awAAaJ2l?format=jpg&name=medium",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/232.jpg",
+    "unique_idx": "232",
+    "prompt": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 134,
+            "prompt_tokens": 1048,
+            "total_tokens": 1182
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To determine the most commonly used aircraft type for domestic flights, we need to count the number of occurrences of each aircraft type in the domestic arrivals and departures schedule.\n\nFrom the domestic arrivals schedule, we have:\n- ATR: 10 occurrences\n- A320: 5 occurrences\n\nFrom the domestic departures schedule, we have:\n- ATR: 10 occurrences\n- A320: 5 occurrences\n\nSince the number of occurrences of ATR is the highest in both arrivals and departures, we can conclude that ATR is the most commonly used aircraft type for domestic flights."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "To determine the most commonly used aircraft type for domestic flights, we need to count the number of occurrences of each aircraft type in the domestic arrivals and departures schedule.\n\nFrom the domestic arrivals schedule, we have:\n- ATR: 10 occurrences\n- A320: 5 occurrences\n\nFrom the domestic departures schedule, we have:\n- ATR: 10 occurrences\n- A320: 5 occurrences\n\nSince the number of occurrences of ATR is the highest in both arrivals and departures, we can conclude that ATR is the most commonly used aircraft type for domestic flights.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 15.01237440109253,
+    "code": 200,
+    "current_time": "2024-04-30 13:56:47"
+}

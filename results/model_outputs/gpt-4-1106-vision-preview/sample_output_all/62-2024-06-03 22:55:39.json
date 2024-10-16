@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "https://pbs.twimg.com/media/ErH5W4zXAAAQGze?format=jpg&name=4096x4096",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Evaluate Translation accuracy of text within the three blue blocks into English.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/62.jpg",
+    "unique_idx": "62",
+    "prompt": "Translate the content in the three blocks of 'samples of representative Tweets' into English.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The content in the three blocks of 'samples of representative Tweets' translates into English as follows:\n\n1. Location: Grand Casablanca; Date: 2021-01-05T23:26; (relevance 0.95)\n_USER_: Maroc _URL_: Torrential rains and flooding in Casablanca _URL_\ngoto tweet\n\n2. Location: Grand Casablanca; Date: 2021-01-06T16:46; (relevance 0.94)\nFloods in Casablanca: The municipal council summons Lydec to an emergency meeting _URL_\ngoto tweet\n\n3. Location: Grand Casablanca; Date: 2021-01-06T06:16; (relevance 0.94)\nHeavy rain and flood in Casablanca Morocco today أمطار غزيرة وفيضانات في الدار البيضاء المغرب اليوم... _URL_ via _USER_ _URL_ _URL_\ngoto tweet\n\nPlease note that \"_USER_\" and \"_URL_\" are placeholders likely representing a Twitter username and a URL, respectively, which have been redacted or anonymized in the image.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426527,
+        "id": "chatcmpl-9W3NnoFpsojiVJgbhsN9E0rFR3wmd",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 258,
+            "prompt_tokens": 1469,
+            "total_tokens": 1727
+        }
+    },
+    "answer": "The content in the three blocks of 'samples of representative Tweets' translates into English as follows:\n\n1. Location: Grand Casablanca; Date: 2021-01-05T23:26; (relevance 0.95)\n_USER_: Maroc _URL_: Torrential rains and flooding in Casablanca _URL_\ngoto tweet\n\n2. Location: Grand Casablanca; Date: 2021-01-06T16:46; (relevance 0.94)\nFloods in Casablanca: The municipal council summons Lydec to an emergency meeting _URL_\ngoto tweet\n\n3. Location: Grand Casablanca; Date: 2021-01-06T06:16; (relevance 0.94)\nHeavy rain and flood in Casablanca Morocco today أمطار غزيرة وفيضانات في الدار البيضاء المغرب اليوم... _URL_ via _USER_ _URL_ _URL_\ngoto tweet\n\nPlease note that \"_USER_\" and \"_URL_\" are placeholders likely representing a Twitter username and a URL, respectively, which have been redacted or anonymized in the image.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 20.116751432418823,
+    "code": 200,
+    "current_time": "2024-06-03 22:55:39"
+}

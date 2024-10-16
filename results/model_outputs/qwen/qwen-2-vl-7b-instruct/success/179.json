@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://images.rawpixel.com/image_1300/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B1MjMzNTY0Ni1pbWFnZS1rd3Z3ajgxbi5qcGc.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify and outline the dog's entire form within the image.\n2. Exclude any non-dog elements from the bounding box.\n3. Ensure the bounding box is the correct size and shape for the dog's position.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/179.webp",
+    "unique_idx": 179,
+    "prompt": "Find the bounding box of the dog. The image size is 1300*923",
+    "context": "Find the bounding box of the dog. The image size is 1300*923",
+    "sample_id": 179,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/179.webp"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The bounding box of the dog is approximately:\n\n- Top-left corner: (x1, y1) = (150, 450)\n- Bottom-right corner: (x2, y2) = (280, 680)\n\nThese coordinates are approximate and may need to be adjusted slightly based on the exact placement of the dog in the image.",
+    "response_from_model": {
+        "id": "gen-1728903597-B0a79bzWJV0r2bB5S6rh",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903597,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The bounding box of the dog is approximately:\n\n- Top-left corner: (x1, y1) = (150, 450)\n- Bottom-right corner: (x2, y2) = (280, 680)\n\nThese coordinates are approximate and may need to be adjusted slightly based on the exact placement of the dog in the image.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 43,
+            "completion_tokens": 80,
+            "total_tokens": 123
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:00:23"
+}

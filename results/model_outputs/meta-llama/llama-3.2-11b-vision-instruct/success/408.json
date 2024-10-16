@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Image Captioning",
+        "url": "https://img.zcool.cn/community/01279655c870ea32f8755e66a3e0de.jpg@1280w_1l_2o_100sh.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Caption identifies mountain, river, vegetation, and any man-made structures.\n2. Caption suggests geographical setting (e.g., mountain range, region).\n3. Caption infers climatic conditions (e.g., cold, temperate, alpine).",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/408.jpg",
+    "unique_idx": 408,
+    "prompt": "Provide a detailed caption that describes not just the visual elements of the image but also suggests the geographical setting and possible climatic conditions present in the scene.",
+    "context": "Provide a detailed caption that describes not just the visual elements of the image but also suggests the geographical setting and possible climatic conditions present in the scene.",
+    "sample_id": 408,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/408.jpg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "This serene landscape features a snow-capped mountain range, a tranquil stream, and a small clearing. The mountains, situated in the background, are characterized by their rugged peaks and steep slopes, with a mix of snow and trees. The foreground is comprised of a small clearing with a stream running through it, which appears to be partially frozen. The sky above is a brilliant blue, dotted with a few white clouds.\n\nIn the bottom left corner, a person is visible, standing on the left side of the clearing, dressed in dark clothing. The overall atmosphere of the image exudes tranquility and serenity, with the snow-capped mountains and still water creating a sense of peacefulness. The image's natural beauty and sense of calm make it an inviting and soothing visual experience.",
+    "response_from_model": {
+        "id": "gen-1728905923-oK6oz1huh3wTbfCUgaxz",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905923,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "This serene landscape features a snow-capped mountain range, a tranquil stream, and a small clearing. The mountains, situated in the background, are characterized by their rugged peaks and steep slopes, with a mix of snow and trees. The foreground is comprised of a small clearing with a stream running through it, which appears to be partially frozen. The sky above is a brilliant blue, dotted with a few white clouds.\n\nIn the bottom left corner, a person is visible, standing on the left side of the clearing, dressed in dark clothing. The overall atmosphere of the image exudes tranquility and serenity, with the snow-capped mountains and still water creating a sense of peacefulness. The image's natural beauty and sense of calm make it an inviting and soothing visual experience.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6445,
+            "completion_tokens": 1,
+            "total_tokens": 6446
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:38:46"
+}

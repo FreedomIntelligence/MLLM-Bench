@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://pbs.twimg.com/media/F-hlGgIaEAA4Q-f?format=jpg&name=900x900",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Coordinates should approximate (450,600) for the \"Lemons 6 for $3\" sign.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/175.jpg",
+    "unique_idx": "175",
+    "prompt": "The image is of dimension 675*900, assume the bottom left corner to be the origin of coordinates (0,0), the coordinates of the top left corner to be (0,900) and the coordinates of the bottom right corner to be (675,0), where approximately would you place the coordinates of the sign indicating \"Lemons 6 for $3\"?",
+    "response": {
+        "id": "msg_01Ege3HzUHn16KoijkXm4LSu",
+        "type": "message",
+        "role": "assistant",
+        "model": "gpt-4",
+        "usage": {
+            "prompt_tokens": 958,
+            "completion_tokens": 54,
+            "total_tokens": 1012
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the image, the sign indicating \"Lemons 6 for $3\" appears to be located approximately at the coordinates (200, 600). This sign is positioned above the display of lemons in the foreground of the image."
+                },
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "object": "chat.completion",
+        "created": 1712927118
+    },
+    "answer": "Based on the image, the sign indicating \"Lemons 6 for $3\" appears to be located approximately at the coordinates (200, 600). This sign is positioned above the display of lemons in the foreground of the image.",
+    "gen_model_id": "gpt-4-vision-preview",
+    "duration": 7.634279489517212,
+    "code": 200,
+    "current_time": "2024-04-12 21:05:18"
+}

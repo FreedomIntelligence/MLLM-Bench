@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://pic1.zhimg.com/80/v2-c634e79231e601f266e99f0a22e06838_1440w.webp",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify changes in exposure, contrast, and color balance between images.\n2. Assess sharpness, noise, and detail preservation in both images.\n3. Evaluate dynamic range, highlighting shadow and highlight detail retention.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/327.jpg",
+    "unique_idx": 327,
+    "prompt": "What happens to the images from left to right?",
+    "context": "What happens to the images from left to right?",
+    "sample_id": 327,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/327.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "The images from left to right show the effects of post-processing on a photograph. \n\n- **Left Image**: This is the original, unedited photo. It appears to be underexposed, with the sky and buildings lacking detail and the overall image looking somewhat dark.\n- **Right Image**: This is the edited version of the photo. The exposure has been adjusted, making the image brighter and bringing out more detail in the sky and buildings. The contrast and color saturation also appear to have been enhanced, giving the image a more vibrant and dynamic look.",
+    "response_from_model": {
+        "id": "gen-1728908168-DXrgs8esLemvZ9iEDP88",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728908168,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The images from left to right show the effects of post-processing on a photograph. \n\n- **Left Image**: This is the original, unedited photo. It appears to be underexposed, with the sky and buildings lacking detail and the overall image looking somewhat dark.\n- **Right Image**: This is the edited version of the photo. The exposure has been adjusted, making the image brighter and bringing out more detail in the sky and buildings. The contrast and color saturation also appear to have been enhanced, giving the image a more vibrant and dynamic look.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 32,
+            "completion_tokens": 113,
+            "total_tokens": 145
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:16:12"
+}

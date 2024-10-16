@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/F91QfgiWgAAphUD?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Confirm the song \"Future (Lollapalooza ver.)\" is correctly identified and its play count.\n2. Check OCR accuracy for the number of times played against the reference: 271.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/13.jpeg",
+    "unique_idx": "13",
+    "prompt": "The image shows a receipt from 'Receiptify', an application that generates a music listening receipt based on a user's listening history. Based on the image, what is the number of times the song Future(Lollapalooza ver.) was played?",
+    "response": {
+        "id": "msg_01Hs9V1xHfUmdGqaaMdYUiyb",
+        "type": "message",
+        "role": "assistant",
+        "model": "gpt-4",
+        "usage": {
+            "prompt_tokens": 1398,
+            "completion_tokens": 36,
+            "total_tokens": 1434
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "According to the receipt, the song \"Future (Lollapalooza ver.) - J-HOPE\" was played 271 times last month."
+                },
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "object": "chat.completion",
+        "created": 1712926830
+    },
+    "answer": "According to the receipt, the song \"Future (Lollapalooza ver.) - J-HOPE\" was played 271 times last month.",
+    "gen_model_id": "gpt-4-vision-preview",
+    "duration": 14.45144009590149,
+    "code": 200,
+    "current_time": "2024-04-12 21:00:31"
+}

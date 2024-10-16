@@ -1,0 +1,35 @@
+{
+    "unique_idx": "150_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nGiven the image, identify the type of martial art depicted and the roles of the individuals in Portuguese.\n~~~\n~~~Question Type\ncompound\n~~~\n~~~Answer1\n Com base na imagem fornecida, parece ser uma representação de uma luta de Capoeira. A Capoeira é um estilo de arte marcial que teve origem no Brasil, com influências africanas e indígenas.\n\nNa imagem, podemos observar duas pessoas se envolvendo em uma luta de Capoeira. O indivíduo que está de pé e executando movimentos acrobáticos é chamado de \"Capoeirista\". Já o indivíduo que está em pé com as mãos para cima, esperando as ações do Capoeirista, é chamado de \"Mestre\" ou \"Mestre de Bateria\". O Mestre de Bateria é responsável por manter o ritmo da música e guiar a luta, enquanto o Capoeirista executa movimentos e acrobacias para tentar superar o Mestre.\n~~~\n~~~Answer2\nThe image depicts a group of guys performing a martial art routine, specifically Capoeira. In the scene, one person is executing an acrobatic move, while the others are watching attentively. There is also a drum in the background, which is an essential part of the Capoeira music. The individuals are dressed in white tops, which adds a sense of unity and uniformity to their performance. The scene indicates that the group is showcasing their skills and talent in the traditional African-Brazilian martial art form of Capoeira.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Answer identifies \"Capoeira\" as the martial art in Portuguese.\n2. Description includes roles such as \"players,\" \"musicians,\" or \"spectators.\"\n3. Cultural context of Capoeira is acknowledged, reflecting understanding.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/150.jpg",
+    "model_1": "microsoft/phi-3-medium-128k-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": " Com base na imagem fornecida, parece ser uma representação de uma luta de Capoeira. A Capoeira é um estilo de arte marcial que teve origem no Brasil, com influências africanas e indígenas.\n\nNa imagem, podemos observar duas pessoas se envolvendo em uma luta de Capoeira. O indivíduo que está de pé e executando movimentos acrobáticos é chamado de \"Capoeirista\". Já o indivíduo que está em pé com as mãos para cima, esperando as ações do Capoeirista, é chamado de \"Mestre\" ou \"Mestre de Bateria\". O Mestre de Bateria é responsável por manter o ritmo da música e guiar a luta, enquanto o Capoeirista executa movimentos e acrobacias para tentar superar o Mestre.",
+    "raw_answer2": "The image depicts a group of guys performing a martial art routine, specifically Capoeira. In the scene, one person is executing an acrobatic move, while the others are watching attentively. There is also a drum in the background, which is an essential part of the Capoeira music. The individuals are dressed in white tops, which adds a sense of unity and uniformity to their performance. The scene indicates that the group is showcasing their skills and talent in the traditional African-Brazilian martial art form of Capoeira.",
+    "response": {
+        "id": "chatcmpl-AIuGhXwM8EfitLlnRA3q6i9yOyJL6",
+        "object": "chat.completion",
+        "created": 1729069563,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1392,
+            "completion_tokens": 2,
+            "total_tokens": 1394
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.5200421810150146,
+    "code": 200,
+    "current_time": "2024-10-16 17:06:04"
+}

@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "NaN",
+        "question type": "compound"
+    },
+    "criteria": "1. Confirm the thermometer shows 38.1 degrees Celsius.\n2. Evaluate the advice given for a fever of 38.1 degrees Celsius.\n3. Check for medical accuracy and relevance of the advice to the temperature.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/198.jpeg",
+    "unique_idx": 198,
+    "prompt": "Given the image, interpret the thermometer reading and give some advice.",
+    "context": "Given the image, interpret the thermometer reading and give some advice.",
+    "sample_id": 198,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/198.jpeg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " Based on the image of the thermometer, it appears to be reading 98.6°F (37°C), which is considered a normal body temperature for humans. It's always a good idea to monitor your temperature regularly and stay hydrated. If you experience any unusual symptoms or changes in temperature, it's best to consult with a healthcare professional.",
+    "response_from_model": {
+        "id": "gen-1728906801-Y515nHINn9cswpkIvALo",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906801,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " Based on the image of the thermometer, it appears to be reading 98.6°F (37°C), which is considered a normal body temperature for humans. It's always a good idea to monitor your temperature regularly and stay hydrated. If you experience any unusual symptoms or changes in temperature, it's best to consult with a healthcare professional.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 19,
+            "completion_tokens": 80,
+            "total_tokens": 99
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:53:23"
+}

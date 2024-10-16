@@ -1,0 +1,35 @@
+{
+    "unique_idx": "233_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nAccording to the weather forecast, what is the highest temperature in Albay on December 8?\n~~~\n~~~Question Type\ncompound\n~~~\n~~~Answer1\nBased on the weather forecast, the highest temperature in Albay on December 8 is 28°C.\n~~~\n~~~Answer2\nAccording to the weather forecast, the highest temperature in Albay on December 8 is 32°C.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm highest temperature for Albay on December 8 is 32°C.\n2. Answer must specify temperature is in Celsius degrees.\n3. Indicate the information is sourced from a weather forecast table.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/233.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-7b-instruct",
+    "raw_answer1": "Based on the weather forecast, the highest temperature in Albay on December 8 is 28°C.",
+    "raw_answer2": "According to the weather forecast, the highest temperature in Albay on December 8 is 32°C.",
+    "response": {
+        "id": "chatcmpl-AIuRhuYhNM8gAvy7v4SaNAnY7WhQs",
+        "object": "chat.completion",
+        "created": 1729070245,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1433,
+            "completion_tokens": 2,
+            "total_tokens": 1435
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.991809129714966,
+    "code": 200,
+    "current_time": "2024-10-16 17:17:26"
+}

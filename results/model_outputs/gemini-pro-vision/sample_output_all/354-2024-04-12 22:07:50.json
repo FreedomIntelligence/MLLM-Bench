@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Fake Image Detection",
+        "url": "https://www.prc-magazine.com/sc/files/2014/07/tsunami.jpg",
+        "question type": "compound"
+    },
+    "criteria": "1. Confirm if the image is identified as AI-generated.\n2. Evaluate the explanation for unnatural elements or inconsistencies in the image.\n3. Check for logical analysis of the image's authenticity based on visual cues.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/354.jpg",
+    "unique_idx": "354",
+    "prompt": "Determine if the image is real or AI-generated and provide your explanation.",
+    "response": {
+        "id": "chatcmpl-c2dbc18384c6415ba0107bd63db70658",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930870,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " This image is fake and here is my explanation.\n\nThe image shows a tsunami wave about to hit a city. The wave is very large and is moving very fast. The buildings in the city are tall and are made of concrete. The wave would easily destroy the buildings and kill many people. However, the image is not real. It is a computer-generated image. The wave is not real and the buildings are not real. The image was created using a computer program."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 787,
+            "completion_tokens": 94,
+            "total_tokens": 881
+        }
+    },
+    "answer": " This image is fake and here is my explanation.\n\nThe image shows a tsunami wave about to hit a city. The wave is very large and is moving very fast. The buildings in the city are tall and are made of concrete. The wave would easily destroy the buildings and kill many people. However, the image is not real. It is a computer-generated image. The wave is not real and the buildings are not real. The image was created using a computer program.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 5.541441440582275,
+    "code": 200,
+    "current_time": "2024-04-12 22:07:50"
+}

@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://images.pexels.com/photos/3230214/pexels-photo-3230214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify and confirm the type of beverage as milk drinks directly below the temperature readout.\n2. Assess the VLM's understanding of spatial relationships between the readout and beverages.\n3. Verify the accuracy and relevance of the VLM's response to the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/203.jpg",
+    "unique_idx": "203",
+    "prompt": "In relation to the digital temperature readout at the top of the beverage cooler, which type of beverage is directly below it?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Directly below the digital temperature readout at the top of the beverage cooler, there appears to be a selection of bottled sports drinks. These drinks are commonly consumed for hydration and electrolyte replenishment during or after exercise.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426860,
+        "id": "chatcmpl-9W3TAG9Ayv45MiduBA7yWkIhzcoDB",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 44,
+            "prompt_tokens": 1137,
+            "total_tokens": 1181
+        }
+    },
+    "answer": "Directly below the digital temperature readout at the top of the beverage cooler, there appears to be a selection of bottled sports drinks. These drinks are commonly consumed for hydration and electrolyte replenishment during or after exercise.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 10.70892858505249,
+    "code": 200,
+    "current_time": "2024-06-03 23:01:02"
+}

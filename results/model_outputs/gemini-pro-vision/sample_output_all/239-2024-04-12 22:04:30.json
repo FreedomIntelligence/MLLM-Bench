@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F96tN5qXEAAot3X?format=png&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify the three rows that satisfy the selection requirement: item 1 (quantity 5), item 2 (quantity 3) and item 7 (quantity 4)\n2. Confirm total quantity is 5+3+4=12 for customer 3449 on 12/31/1996.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/239.png",
+    "unique_idx": "239",
+    "prompt": "From the Excel table in the image, what is the total quantity of products that customer 3449 bought on 12/31/1996?",
+    "response": {
+        "id": "chatcmpl-56467db0c9a44f869da1fa5e7605c3ee",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930670,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The total quantity of products that customer 3449 bought on 12/31/1996 is 12."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 802,
+            "completion_tokens": 23,
+            "total_tokens": 825
+        }
+    },
+    "answer": " The total quantity of products that customer 3449 bought on 12/31/1996 is 12.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 7.520996332168579,
+    "code": 200,
+    "current_time": "2024-04-12 22:04:30"
+}

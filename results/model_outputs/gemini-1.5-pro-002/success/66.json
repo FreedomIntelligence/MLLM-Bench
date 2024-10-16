@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "https://savvytokyo.scdn3.secure.raxcdn.com/app/uploads/2018/09/IMG_0133-1024x570.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and transcribe the section labeled \"D1\" in Japanese accurately.\n2. Provide translation of \"D1\" section into English, relevant to health assessment context.\n3. Advise based on \"D1\" section if one's electrocardiogram result is D1.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/66.jpg",
+    "unique_idx": 66,
+    "prompt": "この画像は健康診断結果報告書の評価基準を示しています。もし私の心電図の結果がD1だった場合、私はどうすればいいですか?",
+    "context": "この画像は健康診断結果報告書の評価基準を示しています。もし私の心電図の結果がD1だった場合、私はどうすればいいですか?",
+    "sample_id": 66,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/66.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "心電図の結果がD1だった場合、**治療が必要な疾患**が見つかったことを意味します。 この報告書によると、速やかに**記載されている医療機関を受診**する必要があります。",
+    "response_from_model": {
+        "id": "chatcmpl-36306ab283b04cc4a5d5fe59b747d34c",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897240,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "心電図の結果がD1だった場合、**治療が必要な疾患**が見つかったことを意味します。 この報告書によると、速やかに**記載されている医療機関を受診**する必要があります。"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 289,
+            "completion_tokens": 41,
+            "total_tokens": 330
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:14:17"
+}

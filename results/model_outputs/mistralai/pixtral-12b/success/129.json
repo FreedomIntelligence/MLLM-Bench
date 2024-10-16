@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Emotion Understanding",
+        "url": "https://th.bing.com/th/id/OIP.atWZGIJ2e-7OJMZ42W8E2gHaID?w=1260&h=1371&rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Assess if the identified emotion matches the character's facial expression (e.g., angry, frustrated).\n2. Rate the intensity of the emotion as moderate, or severe.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/129.jpg",
+    "unique_idx": 129,
+    "prompt": "Assess the intensity of the emotion on a scale (e.g., mild, moderate, severe) and justify the assessment based on visual cues.",
+    "context": "Assess the intensity of the emotion on a scale (e.g., mild, moderate, severe) and justify the assessment based on visual cues.",
+    "sample_id": 129,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/129.jpg"
+    ],
+    "gen_model_id": "mistralai/pixtral-12b",
+    "answer": "The intensity of the emotion displayed by the character can be assessed as \"severe.\"\n\nJustification:\n- The character has a deeply furrowed brow, indicating high levels of anger or frustration.\n- The eyes are wide open with a pronounced squint, which often signifies intense emotion.\n- The mouth is open wide, exposing teeth, which is a common visual cue for extreme anger or shouting.\n- The red color of the character's body further emphasizes the emotion of anger, as red is often associated with intense feelings in visual media.\n\nThese visual cues collectively suggest a high level of emotional intensity, justifying the classification as \"severe.\"",
+    "response_from_model": {
+        "id": "gen-1728915802-jF6NWk1rzQgwDBozLKoz",
+        "provider": "Mistral",
+        "model": "mistralai/pixtral-12b",
+        "object": "chat.completion",
+        "created": 1728915802,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The intensity of the emotion displayed by the character can be assessed as \"severe.\"\n\nJustification:\n- The character has a deeply furrowed brow, indicating high levels of anger or frustration.\n- The eyes are wide open with a pronounced squint, which often signifies intense emotion.\n- The mouth is open wide, exposing teeth, which is a common visual cue for extreme anger or shouting.\n- The red color of the character's body further emphasizes the emotion of anger, as red is often associated with intense feelings in visual media.\n\nThese visual cues collectively suggest a high level of emotional intensity, justifying the classification as \"severe.\"",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3872,
+            "completion_tokens": 127,
+            "total_tokens": 3999
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-22:23:26"
+}

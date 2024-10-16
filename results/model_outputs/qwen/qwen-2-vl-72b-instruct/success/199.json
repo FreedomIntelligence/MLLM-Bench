@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "NaN",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify the test kit as for detecting COVID-19 antigens.\n2. Explain that two lines indicate a positive result for COVID-19.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/199.jpeg",
+    "unique_idx": 199,
+    "prompt": "What is the test kit in the image used to detect? Interpret the meaning of the two lines on the test kit.",
+    "context": "What is the test kit in the image used to detect? Interpret the meaning of the two lines on the test kit.",
+    "sample_id": 199,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/199.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "The test kit in the image is used to detect COVID-19 antigens. The two lines on the test kit indicate a positive result. The \"C\" line is the control line, which should always appear to confirm that the test is working properly. The \"T\" line is the test line, and its presence indicates that the test has detected COVID-19 antigens in the sample, suggesting an active infection.",
+    "response_from_model": {
+        "id": "gen-1728907856-Jtlw9HLfrslhgsvgHvAt",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728907856,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The test kit in the image is used to detect COVID-19 antigens. The two lines on the test kit indicate a positive result. The \"C\" line is the control line, which should always appear to confirm that the test is working properly. The \"T\" line is the test line, and its presence indicates that the test has detected COVID-19 antigens in the sample, suggesting an active infection.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 46,
+            "completion_tokens": 88,
+            "total_tokens": 134
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:11:02"
+}

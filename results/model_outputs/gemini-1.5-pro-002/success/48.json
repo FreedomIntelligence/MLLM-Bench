@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Food Recognition",
+        "url": "https://images.pexels.com/photos/884596/pexels-photo-884596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify the dish as originating from Japan.\n2. Recognize key components: rice, tempura, bento box presentation.\n3. Ensure the answer does not contradict the reference country.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/48.jpg",
+    "unique_idx": 48,
+    "prompt": "which country does this type of dish most likely originated from?",
+    "context": "which country does this type of dish most likely originated from?",
+    "sample_id": 48,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/48.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "This is a bento box containing what looks like fried shrimp and tonkatsu (breaded, deep-fried pork cutlet).  This type of meal is most likely from **Japan**. Bento boxes are a common Japanese cuisine, and both fried shrimp and tonkatsu are popular components.  The chopsticks and the Japanese writing on the paper further support this.\n",
+    "response_from_model": {
+        "id": "chatcmpl-2e1b3bc8478643cdb822010c37798dae",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897235,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "This is a bento box containing what looks like fried shrimp and tonkatsu (breaded, deep-fried pork cutlet).  This type of meal is most likely from **Japan**. Bento boxes are a common Japanese cuisine, and both fried shrimp and tonkatsu are popular components.  The chopsticks and the Japanese writing on the paper further support this.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 271,
+            "completion_tokens": 73,
+            "total_tokens": 344
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:14:11"
+}

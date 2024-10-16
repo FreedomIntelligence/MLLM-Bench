@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/FmM62WNWYAMC0EB?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly identify and report gate number B19 from the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/12.jpeg",
+    "unique_idx": "12",
+    "prompt": "Assume a passenger bought an air ticket to Boston with Delta Airline on flight number 5706, which gate should the passenger go to wait for the flight",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 45,
+            "prompt_tokens": 1043,
+            "total_tokens": 1088
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The flight information display shows that the Delta Airline flight number 5706 to Boston has a flight gate of C29. Therefore, the passenger should go to gate C29 to wait for the flight."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The flight information display shows that the Delta Airline flight number 5706 to Boston has a flight gate of C29. Therefore, the passenger should go to gate C29 to wait for the flight.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 12.630681037902832,
+    "code": 200,
+    "current_time": "2024-04-30 12:55:39"
+}

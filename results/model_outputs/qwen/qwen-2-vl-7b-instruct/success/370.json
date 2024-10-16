@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-4kEacbUAAobjX?format=jpg&name=large",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Program calculates factorials for integers between user-inputted p and q, inclusive.\n2. Output format matches the example: \"n! = result\" on separate lines.\n3. User input for p and q is requested and handled correctly.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/370.jpeg",
+    "unique_idx": 370,
+    "prompt": "You are a software developer. Write a program to finish the task as required in the picture.",
+    "context": "You are a software developer. Write a program to finish the task as required in the picture.",
+    "sample_id": 370,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/370.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "```python\nimport math\n\ndef factorial(n):\n    return math.factorial(n)\n\np = int(input(\"Enter the lower limit (p): \"))\nq = int(input(\"Enter the upper limit (q): \"))\n\nfor i in range(p, q + 1):\n    print(f\"{i}! = {factorial(i)}\")\n```\n\nThis Python program defines a function `factorial` that calculates the factorial of a given number using the `math.factorial` function. It then prompts the user to input the lower and upper limits (`p` and `q`) and prints the factorials of all integers within that range.",
+    "response_from_model": {
+        "id": "gen-1728903848-FnXDjghjG74j5fBY8tve",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903848,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```python\nimport math\n\ndef factorial(n):\n    return math.factorial(n)\n\np = int(input(\"Enter the lower limit (p): \"))\nq = int(input(\"Enter the upper limit (q): \"))\n\nfor i in range(p, q + 1):\n    print(f\"{i}! = {factorial(i)}\")\n```\n\nThis Python program defines a function `factorial` that calculates the factorial of a given number using the `math.factorial` function. It then prompts the user to input the lower and upper limits (`p` and `q`) and prints the factorials of all integers within that range.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 41,
+            "completion_tokens": 131,
+            "total_tokens": 172
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:05:00"
+}

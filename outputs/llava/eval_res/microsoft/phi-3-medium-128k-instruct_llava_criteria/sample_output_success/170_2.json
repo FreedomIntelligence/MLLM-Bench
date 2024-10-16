@@ -1,0 +1,35 @@
+{
+    "unique_idx": "170_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhere is the pink queen located on the chessboard?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\n The Pink Queen is not an official chess piece; it's a playful term sometimes used to refer to the Queen piece when it's pink in color, usually in chess sets designed for children or decorative ones. In a standard chess set, the Queen is either white or black, and it starts on the square of its own color (d1 for white, d8 for black or black).\n\nIf you have a chess set where the Queen is pink, please refer to the standard chessboard coordinates to find its location. The Queen starts on the d-file, so if it's the white Queen, or on the d-file on the 8th rank, if it's the black Queen.\n\nRemember, the chessboard coordinates run from a1 for the first column, to h for the last, and from 1 for the first row, to 8 if you are using the algebraic notation.\n~~~\n~~~Answer2\nThe pink queen is located in the middle of the chessboard.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm pink queen is on the fourth square from the left in the top row.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/170.jpg",
+    "model_1": "microsoft/phi-3-medium-128k-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": " The Pink Queen is not an official chess piece; it's a playful term sometimes used to refer to the Queen piece when it's pink in color, usually in chess sets designed for children or decorative ones. In a standard chess set, the Queen is either white or black, and it starts on the square of its own color (d1 for white, d8 for black or black).\n\nIf you have a chess set where the Queen is pink, please refer to the standard chessboard coordinates to find its location. The Queen starts on the d-file, so if it's the white Queen, or on the d-file on the 8th rank, if it's the black Queen.\n\nRemember, the chessboard coordinates run from a1 for the first column, to h for the last, and from 1 for the first row, to 8 if you are using the algebraic notation.",
+    "raw_answer2": "The pink queen is located in the middle of the chessboard.",
+    "response": {
+        "id": "chatcmpl-AIuGmSJnmhf2stkXbbdWFwglEwez5",
+        "object": "chat.completion",
+        "created": 1729069568,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1213,
+            "completion_tokens": 2,
+            "total_tokens": 1215
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.180584192276001,
+    "code": 200,
+    "current_time": "2024-10-16 17:06:09"
+}

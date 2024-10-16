@@ -1,0 +1,35 @@
+{
+    "unique_idx": "58_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nTo which country should I travel to visit the fort shown in the image?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nTo visit the fort shown in the image, you should travel to India. The fort is located in the city of Jaipur in Rajasthan, which is known for its beautiful sandstone architecture and historical sites. The fort is a UNESCO World Heritage Site and a prominent tourist destination. In the image, you can see people walking near the fortress, and an ornate camel is traveling nearby. This scenery is typical for the region, where camels are commonly used for transportation and tourism purposes.\n~~~\n~~~Answer2\nThe fort in the image is located in Pakistan.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Correctly identify the landmark as Derawar Fort.\n2. Specify the location of the fort: in the Cholistan Desert of Punjab, Pakistan.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/58.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "meta-llama/llama-3.2-11b-vision-instruct",
+    "raw_answer1": "To visit the fort shown in the image, you should travel to India. The fort is located in the city of Jaipur in Rajasthan, which is known for its beautiful sandstone architecture and historical sites. The fort is a UNESCO World Heritage Site and a prominent tourist destination. In the image, you can see people walking near the fortress, and an ornate camel is traveling nearby. This scenery is typical for the region, where camels are commonly used for transportation and tourism purposes.",
+    "raw_answer2": "The fort in the image is located in Pakistan.",
+    "response": {
+        "id": "chatcmpl-AIuAAKbXdshfi1PAObh3sDbVHG8yu",
+        "object": "chat.completion",
+        "created": 1729069158,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1486,
+            "completion_tokens": 2,
+            "total_tokens": 1488
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.979232311248779,
+    "code": 200,
+    "current_time": "2024-10-16 16:59:19"
+}

@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://images.rawpixel.com/image_png_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjgxMC1ub29uLTAzXzEucG5n.png",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Correct identification of the strawberry's bounding box coordinates.\n2. Bounding box should tightly enclose the entire strawberry.\n3. Coordinates must be accurate relative to the image's dimensions.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/178.webp",
+    "unique_idx": 178,
+    "prompt": "What would be the bounding box coordinates for the strawberry in the image? The image size is 1300*1300",
+    "context": "What would be the bounding box coordinates for the strawberry in the image? The image size is 1300*1300",
+    "sample_id": 178,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/178.webp"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The bounding box coordinates for the strawberry in the image are approximately:\n\n- Top-left corner: (300, 10)\n- Bottom-right corner: (500, 130)\n\nThese coordinates are approximate and based on the visible part of the strawberry in the image.",
+    "response_from_model": {
+        "id": "gen-1728903904-9ZljCBAbzmxw9wqEr5iX",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903904,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The bounding box coordinates for the strawberry in the image are approximately:\n\n- Top-left corner: (300, 10)\n- Bottom-right corner: (500, 130)\n\nThese coordinates are approximate and based on the visible part of the strawberry in the image.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 50,
+            "completion_tokens": 61,
+            "total_tokens": 111
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:05:19"
+}

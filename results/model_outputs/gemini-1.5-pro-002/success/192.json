@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://tse2-mm.cn.bing.net/th/id/OIP-C.DfcmfnHYf5SBexamy5AfRgHaF5?rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe any abnormalities visible in the brain CT image.\n2. Use appropriate medical terminology related to brain anatomy and pathology.\n3. Provide a structured report format, including observations and conclusions.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/192.jpg",
+    "unique_idx": 192,
+    "prompt": "Write a CT report for this image as a brain specialist.",
+    "context": "Write a CT report for this image as a brain specialist.",
+    "sample_id": 192,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/192.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "CT Head without contrast\n\nFindings:\n\nLarge, heterogeneously enhancing right frontoparietal mass with surrounding vasogenic edema and mass effect, causing rightward midline shift and compression of the right lateral ventricle. There is evidence of hemorrhage within the mass.  No skull fracture is identified.\n\nDifferential Diagnosis:\n\n* **High-grade glioma:**  The heterogeneity, hemorrhage, and surrounding edema are highly suggestive.\n* **Metastasis:**  While less likely given the solitary nature and appearance, metastasis remains a possibility.\n* **Abscess:**  Less likely given the absence of a clear ring-enhancing pattern, though cannot be entirely excluded.\n* **Other primary brain tumors (e.g., lymphoma):** Less likely given the imaging characteristics.\n\n\nRecommendation:\n\nContrast-enhanced CT or MRI brain with and without contrast is recommended for further characterization of the lesion and to better delineate its extent. Neurosurgical consultation is advised.\n\n\n**Important Note:** This is an AI-generated interpretation based on the provided image. It is NOT a substitute for a formal radiological report by a qualified radiologist. Clinical correlation and further imaging are essential for definitive diagnosis and management.  The image quality is limited and affects the certainty of the interpretation.\n",
+    "response_from_model": {
+        "id": "chatcmpl-cb4a1c00aa174238a5e44d55cd4c767f",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897289,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "CT Head without contrast\n\nFindings:\n\nLarge, heterogeneously enhancing right frontoparietal mass with surrounding vasogenic edema and mass effect, causing rightward midline shift and compression of the right lateral ventricle. There is evidence of hemorrhage within the mass.  No skull fracture is identified.\n\nDifferential Diagnosis:\n\n* **High-grade glioma:**  The heterogeneity, hemorrhage, and surrounding edema are highly suggestive.\n* **Metastasis:**  While less likely given the solitary nature and appearance, metastasis remains a possibility.\n* **Abscess:**  Less likely given the absence of a clear ring-enhancing pattern, though cannot be entirely excluded.\n* **Other primary brain tumors (e.g., lymphoma):** Less likely given the imaging characteristics.\n\n\nRecommendation:\n\nContrast-enhanced CT or MRI brain with and without contrast is recommended for further characterization of the lesion and to better delineate its extent. Neurosurgical consultation is advised.\n\n\n**Important Note:** This is an AI-generated interpretation based on the provided image. It is NOT a substitute for a formal radiological report by a qualified radiologist. Clinical correlation and further imaging are essential for definitive diagnosis and management.  The image quality is limited and affects the certainty of the interpretation.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 271,
+            "completion_tokens": 253,
+            "total_tokens": 524
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:05"
+}

@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://ts1.cn.mm.bing.net/th/id/R-C.147f0439bb35a2eea0be85275a02dc4b?rik=CGgcHKShv6c%2fEw&pid=ImgRaw&r=0",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer identifies objects below the phone: Macbook and an iPad.\n2. Answer reflects spatial relationship understanding: below, not above or beside.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/201.jpg",
+    "unique_idx": "201",
+    "prompt": "What is below the phone?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 83,
+            "prompt_tokens": 1016,
+            "total_tokens": 1099
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image provided shows a MacBook with an iPad lying on top of it. The question asks what is below the phone, which in this context refers to the iPad, as it is the only phone-like device visible in the image. Since the iPad is lying on the MacBook, the MacBook is what is below the iPad. Therefore, the answer to the question \"What is below the phone?\" is MacBook."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The image provided shows a MacBook with an iPad lying on top of it. The question asks what is below the phone, which in this context refers to the iPad, as it is the only phone-like device visible in the image. Since the iPad is lying on the MacBook, the MacBook is what is below the iPad. Therefore, the answer to the question \"What is below the phone?\" is MacBook.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 7.651082515716553,
+    "code": 200,
+    "current_time": "2024-04-30 13:49:20"
+}

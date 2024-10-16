@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2023/11/05/06/55/motorcycle-8366394_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify that the rider is riding towards the left side.\n2. Infer that the rider is unlikely to appear on the right side.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/207.jpg",
+    "unique_idx": "207",
+    "prompt": "Assuming the rider continues to travel in the same direction, will he appear on the right side of the picture?",
+    "response": {
+        "id": "chatcmpl-9OkiT33kw7j8YZG97F3OnhEU569RN",
+        "object": "chat.completion",
+        "created": 1715686477,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "No, if the rider continues to travel in the same direction, he will move towards the left side of the picture. The rider is currently moving from right to left."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1135,
+            "completion_tokens": 34,
+            "total_tokens": 1169
+        },
+        "system_fingerprint": "fp_927397958d"
+    },
+    "answer": "No, if the rider continues to travel in the same direction, he will move towards the left side of the picture. The rider is currently moving from right to left.",
+    "gen_model_id": "gpt-4o-2024-05-13",
+    "duration": 8.082576751708984,
+    "code": 200,
+    "current_time": "2024-05-14 19:34:38"
+}

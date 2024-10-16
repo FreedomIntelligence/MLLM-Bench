@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F96tN5qXEAAot3X?format=png&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify the three rows that satisfy the selection requirement: item 1 (quantity 5), item 2 (quantity 3) and item 7 (quantity 4)\n2. Confirm total quantity is 5+3+4=12 for customer 3449 on 12/31/1996.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/239.png",
+    "unique_idx": 239,
+    "prompt": "From the Excel table in the image, what is the total quantity of products that customer 3449 bought on 12/31/1996?",
+    "context": "From the Excel table in the image, what is the total quantity of products that customer 3449 bought on 12/31/1996?",
+    "sample_id": 239,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/239.png"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "To find the total quantity of products that customer 3449 bought on 12/31/1996, we can look for entries with that specific date and customer ID.\n\nFrom the data in the image:\n\n- On 12/31/1996, customer 3449 bought:\n  - Product ID 869 with a quantity of 5\n  - Product ID 1472 with a quantity of 3\n  - Product ID 357 with a quantity of 4\n\nNow, add the quantities together:\n\n5 + 3 + 4 = 12\n\nTherefore, the total quantity of products that customer 3449 bought on 12/31/1996 is **12**.",
+    "response_from_model": {
+        "id": "chatcmpl-AIBNWf2pHyXwTurFnh6xj8TLHJ0gW",
+        "object": "chat.completion",
+        "created": 1728897006,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To find the total quantity of products that customer 3449 bought on 12/31/1996, we can look for entries with that specific date and customer ID.\n\nFrom the data in the image:\n\n- On 12/31/1996, customer 3449 bought:\n  - Product ID 869 with a quantity of 5\n  - Product ID 1472 with a quantity of 3\n  - Product ID 357 with a quantity of 4\n\nNow, add the quantities together:\n\n5 + 3 + 4 = 12\n\nTherefore, the total quantity of products that customer 3449 bought on 12/31/1996 is **12**."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 25538,
+            "completion_tokens": 142,
+            "total_tokens": 25680
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:10:08"
+}

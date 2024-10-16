@@ -1,0 +1,35 @@
+{
+    "unique_idx": "178_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat would be the bounding box coordinates for the strawberry in the image? The image size is 1300*1300\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\n[0.41, 0.05, 0.76, 0.28]\n~~~\n~~~Answer2\nThe strawberry, including its green leaves, roughly occupies the area within these bounding box coordinates:\n\n**xmin:** 320\n**ymin:** 10\n**xmax:** 580\n**ymax:** 310\n\n\nThese coordinates are approximate, as the edges of the strawberry and leaves are somewhat soft.  They represent a box that comfortably contains the entire strawberry.  They are also relative to the provided 1300x1300 image dimensions.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Correct identification of the strawberry's bounding box coordinates.\n2. Bounding box should tightly enclose the entire strawberry.\n3. Coordinates must be accurate relative to the image's dimensions.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/178.webp",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-pro-002",
+    "raw_answer1": "[0.41, 0.05, 0.76, 0.28]",
+    "raw_answer2": "The strawberry, including its green leaves, roughly occupies the area within these bounding box coordinates:\n\n**xmin:** 320\n**ymin:** 10\n**xmax:** 580\n**ymax:** 310\n\n\nThese coordinates are approximate, as the edges of the strawberry and leaves are somewhat soft.  They represent a box that comfortably contains the entire strawberry.  They are also relative to the provided 1300x1300 image dimensions.",
+    "response": {
+        "id": "chatcmpl-AIt3r4yfhDcUwtWr3L3aXXKbTULG3",
+        "object": "chat.completion",
+        "created": 1729064923,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1163,
+            "completion_tokens": 2,
+            "total_tokens": 1165
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.753177165985107,
+    "code": 200,
+    "current_time": "2024-10-16 15:48:44"
+}

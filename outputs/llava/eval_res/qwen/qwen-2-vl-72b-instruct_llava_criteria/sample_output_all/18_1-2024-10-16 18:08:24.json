@@ -1,0 +1,35 @@
+{
+    "unique_idx": "18_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nDetermine the competition information in the picture, such as stage of the game, team information, etc.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe image displays a trophy sitting next to a TV screen, which is showing the scoreboard during a game. There are two teams playing in the game, as indicated by the presence of two logos or team names. The competition appears to be a tournament, as there is a suggestion of a series of games being played. The scoreboard indicates that \"JD Gaming\" is in the lead, while \"T1\" is trailing behind. The game seems to be at an advanced stage, with only a few minutes remaining. The trophy in the foreground adds to the competitive atmosphere of the scene.\n~~~\n~~~Answer2\nThe image is a promotional poster for a League of Legends Worlds 2023 semifinal match. The details are as follows:\n\n- **Event**: League of Legends Worlds 2023\n- **Stage**: Semifinals\n- **Format**: Best of 5\n- **Date and Time**: November 12, 2023, at 4:00 PM PHT\n- **Teams**: JD Gaming vs. T1\n- **Trophy**: The Worlds trophy is prominently displayed at the bottom of the poster.\n- **Slogan**: \"The Grind, The Glory\"\n\nThe poster features the logos of both teams, JD Gaming and T1, and is designed with a blue and black color scheme, emphasizing the high-stakes nature of the semifinal match.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm stage of game matches 'semifinals' and teams as 'JD Gaming' and 'T1'.\n2. Verify date and time accuracy with 'Nov. 12th, 4 p.m.' reference.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/18.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-72b-instruct",
+    "raw_answer1": "The image displays a trophy sitting next to a TV screen, which is showing the scoreboard during a game. There are two teams playing in the game, as indicated by the presence of two logos or team names. The competition appears to be a tournament, as there is a suggestion of a series of games being played. The scoreboard indicates that \"JD Gaming\" is in the lead, while \"T1\" is trailing behind. The game seems to be at an advanced stage, with only a few minutes remaining. The trophy in the foreground adds to the competitive atmosphere of the scene.",
+    "raw_answer2": "The image is a promotional poster for a League of Legends Worlds 2023 semifinal match. The details are as follows:\n\n- **Event**: League of Legends Worlds 2023\n- **Stage**: Semifinals\n- **Format**: Best of 5\n- **Date and Time**: November 12, 2023, at 4:00 PM PHT\n- **Teams**: JD Gaming vs. T1\n- **Trophy**: The Worlds trophy is prominently displayed at the bottom of the poster.\n- **Slogan**: \"The Grind, The Glory\"\n\nThe poster features the logos of both teams, JD Gaming and T1, and is designed with a blue and black color scheme, emphasizing the high-stakes nature of the semifinal match.",
+    "response": {
+        "id": "chatcmpl-AIvF1VvZFtT5UCbwfTdguI8daUIt5",
+        "object": "chat.completion",
+        "created": 1729073303,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1331,
+            "completion_tokens": 2,
+            "total_tokens": 1333
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.894731521606445,
+    "code": 200,
+    "current_time": "2024-10-16 18:08:24"
+}

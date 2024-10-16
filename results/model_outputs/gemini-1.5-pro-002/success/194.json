@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ecgwaves.com/wp-content/uploads/2021/06/ECG-example-Normal-ECG-with-sinus-rhythm-2-1396x1536.png",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify and describe P wave, QRS complex, T wave as per reference.\n2. Detect any deviations from the normal ECG waveform pattern.\n3. Comment on rhythm regularity, wave amplitude, and intervals between waves.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/194.png",
+    "unique_idx": 194,
+    "prompt": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "context": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "sample_id": 194,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/194.png"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "This ECG shows normal sinus rhythm at approximately 75 beats per minute.  Here's a breakdown of the components and analysis:\n\n**ECG Waveform Components:**\n\n* **P wave:** Represents atrial depolarization (contraction).  Present and upright in leads I, II, aVF, and V2-V6.  Slightly negative in aVR (normal) and isoelectric in aVL.\n* **PR interval:**  The time from the start of the P wave to the start of the QRS complex. Represents the time it takes for the electrical impulse to travel from the SA node through the atria, AV node, and His-Purkinje system. Normal duration (0.12-0.20 seconds) in this ECG.\n* **QRS complex:** Represents ventricular depolarization.  Normal duration and morphology.  Note the slight Q waves in leads I, aVL, V5, and V6 - these are small and within normal limits.\n* **ST segment:** The interval between the end of the QRS complex and the beginning of the T wave.  Isoelectric (neither elevated nor depressed) in this ECG, which is normal.\n* **T wave:** Represents ventricular repolarization.  Upright and appropriately sized in relation to the QRS complexes.\n* **QT interval:** The time from the beginning of the QRS complex to the end of the T wave. Represents total ventricular depolarization and repolarization. Appears normal in duration, although accurate measurement requires calculating the rate-corrected QT interval (QTc).\n* **RR interval:** The interval between two consecutive R waves.  Regular, indicating a consistent heart rate.\n\n\n**Abnormalities:**\n\n* **None:** This ECG demonstrates a normal sinus rhythm without any significant abnormalities.  All waveforms are present, appropriately sized and configured, and the intervals are within normal limits.\n\n\n**Important Note:** I am an AI and cannot provide medical diagnoses.  This interpretation is for educational purposes only.  Any concerns about your ECG should be discussed with a qualified healthcare professional. They can correlate the ECG findings with your symptoms, medical history, and physical examination to provide a definitive diagnosis.\n",
+    "response_from_model": {
+        "id": "chatcmpl-4657fc8f55044c28b2bc8a6f2f75c4dc",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897294,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "This ECG shows normal sinus rhythm at approximately 75 beats per minute.  Here's a breakdown of the components and analysis:\n\n**ECG Waveform Components:**\n\n* **P wave:** Represents atrial depolarization (contraction).  Present and upright in leads I, II, aVF, and V2-V6.  Slightly negative in aVR (normal) and isoelectric in aVL.\n* **PR interval:**  The time from the start of the P wave to the start of the QRS complex. Represents the time it takes for the electrical impulse to travel from the SA node through the atria, AV node, and His-Purkinje system. Normal duration (0.12-0.20 seconds) in this ECG.\n* **QRS complex:** Represents ventricular depolarization.  Normal duration and morphology.  Note the slight Q waves in leads I, aVL, V5, and V6 - these are small and within normal limits.\n* **ST segment:** The interval between the end of the QRS complex and the beginning of the T wave.  Isoelectric (neither elevated nor depressed) in this ECG, which is normal.\n* **T wave:** Represents ventricular repolarization.  Upright and appropriately sized in relation to the QRS complexes.\n* **QT interval:** The time from the beginning of the QRS complex to the end of the T wave. Represents total ventricular depolarization and repolarization. Appears normal in duration, although accurate measurement requires calculating the rate-corrected QT interval (QTc).\n* **RR interval:** The interval between two consecutive R waves.  Regular, indicating a consistent heart rate.\n\n\n**Abnormalities:**\n\n* **None:** This ECG demonstrates a normal sinus rhythm without any significant abnormalities.  All waveforms are present, appropriately sized and configured, and the intervals are within normal limits.\n\n\n**Important Note:** I am an AI and cannot provide medical diagnoses.  This interpretation is for educational purposes only.  Any concerns about your ECG should be discussed with a qualified healthcare professional. They can correlate the ECG findings with your symptoms, medical history, and physical examination to provide a definitive diagnosis.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 278,
+            "completion_tokens": 452,
+            "total_tokens": 730
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:10"
+}

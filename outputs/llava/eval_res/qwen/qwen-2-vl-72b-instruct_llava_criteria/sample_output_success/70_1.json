@@ -1,0 +1,35 @@
+{
+    "unique_idx": "70_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nGiven the image, identify any cultural or traditional attire and elements present in the scene, and infer the type of ceremony or event taking place.\n~~~\n~~~Question Type\ncompound\n~~~\n~~~Answer1\nIn the image, there are individuals dressed in traditional African attire, particularly a man wearing a kilt and a woman in a colorful dress. They are standing around a table, which indicates a formal event or ceremony. The presence of a cell phone on the table might suggest that the event is being documented or that the attendees are using it for communication. The group of people is engaged in a specific activity, and their attire suggests that the event is culturally or traditionally based.\n~~~\n~~~Answer2\nThe image depicts a scene with individuals dressed in traditional attire, particularly the colorful and patterned cloth worn by the woman and the man standing next to her. This type of cloth is often associated with West African cultures, particularly Ghana, where it is known as Kente cloth. The presence of this attire, along with the formal setting and the exchange of items, suggests that this is likely a traditional wedding ceremony or a similar formal event. The exchange of items, possibly rings or other gifts, further supports the idea that this is a ceremonial occasion, possibly a marriage ceremony.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify attire indicating a wedding; prioritize bright-colored, festive garments and any headpieces.\n2. Describe elements like bouquets or ceremonial objects that suggest a wedding.\n3. Identify the presence of a marriage officer or a religious leader holding a book that suggest a wedding.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/70.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-72b-instruct",
+    "raw_answer1": "In the image, there are individuals dressed in traditional African attire, particularly a man wearing a kilt and a woman in a colorful dress. They are standing around a table, which indicates a formal event or ceremony. The presence of a cell phone on the table might suggest that the event is being documented or that the attendees are using it for communication. The group of people is engaged in a specific activity, and their attire suggests that the event is culturally or traditionally based.",
+    "raw_answer2": "The image depicts a scene with individuals dressed in traditional attire, particularly the colorful and patterned cloth worn by the woman and the man standing next to her. This type of cloth is often associated with West African cultures, particularly Ghana, where it is known as Kente cloth. The presence of this attire, along with the formal setting and the exchange of items, suggests that this is likely a traditional wedding ceremony or a similar formal event. The exchange of items, possibly rings or other gifts, further supports the idea that this is a ceremonial occasion, possibly a marriage ceremony.",
+    "response": {
+        "id": "chatcmpl-AIvFiXkdLl4N3Sis4DyPhgb2cyGKM",
+        "object": "chat.completion",
+        "created": 1729073346,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1311,
+            "completion_tokens": 2,
+            "total_tokens": 1313
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.7336902618408203,
+    "code": 200,
+    "current_time": "2024-10-16 18:09:07"
+}

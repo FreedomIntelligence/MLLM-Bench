@@ -1,0 +1,35 @@
+{
+    "unique_idx": "198_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nGiven the image, interpret the thermometer reading and give some advice.\n~~~\n~~~Question Type\ncompound\n~~~\n~~~Answer1\nIn the image, a person is holding a thermometer with a reading of 98.3 degrees Fahrenheit. This temperature is within the normal range for a healthy individual, typically considered as a mild fever. It suggests that the person may be experiencing some level of discomfort or discomfort due to the slight temperature increase.\n\nHowever, the temperature reading should not be taken as definitive or diagnostic, as personal thermometer readings can be influenced by factors such as time of day or ambient temperature. If the person continues to experience symptoms such as fever, chills, cough, or difficulty breathing, it is essential to see a healthcare professional for further evaluation and appropriate treatment.\n~~~\n~~~Answer2\nThe thermometer reads approximately 37.7°C (99.9°F).  This is considered a low-grade fever.\n\nAdvice:\n\n* **Monitor your temperature:** Continue to take your temperature regularly to track any changes.\n* **Rest:** Get plenty of rest and avoid strenuous activities.\n* **Hydrate:** Drink plenty of fluids, such as water, clear broths, or electrolyte drinks.\n* **Over-the-counter medications:** Consider taking over-the-counter medications like acetaminophen or ibuprofen to reduce fever and discomfort, following the recommended dosage.  Do not give aspirin to children.\n* **Comfortable environment:** Keep your environment cool and comfortable.\n* **Seek medical advice:** If the fever persists for more than a few days, worsens, or is accompanied by other symptoms like severe headache, stiff neck, difficulty breathing, or rash, consult a doctor.  Also, seek medical advice if you have any underlying health conditions.\n\n\nIt's important to note that I'm an AI and cannot provide medical diagnoses. This information is for general knowledge and should not be substituted for professional medical advice.  Always consult a healthcare professional if you have concerns about your health.\n\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm the thermometer shows 38.1 degrees Celsius.\n2. Evaluate the advice given for a fever of 38.1 degrees Celsius.\n3. Check for medical accuracy and relevance of the advice to the temperature.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/198.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-pro-002",
+    "raw_answer1": "In the image, a person is holding a thermometer with a reading of 98.3 degrees Fahrenheit. This temperature is within the normal range for a healthy individual, typically considered as a mild fever. It suggests that the person may be experiencing some level of discomfort or discomfort due to the slight temperature increase.\n\nHowever, the temperature reading should not be taken as definitive or diagnostic, as personal thermometer readings can be influenced by factors such as time of day or ambient temperature. If the person continues to experience symptoms such as fever, chills, cough, or difficulty breathing, it is essential to see a healthcare professional for further evaluation and appropriate treatment.",
+    "raw_answer2": "The thermometer reads approximately 37.7°C (99.9°F).  This is considered a low-grade fever.\n\nAdvice:\n\n* **Monitor your temperature:** Continue to take your temperature regularly to track any changes.\n* **Rest:** Get plenty of rest and avoid strenuous activities.\n* **Hydrate:** Drink plenty of fluids, such as water, clear broths, or electrolyte drinks.\n* **Over-the-counter medications:** Consider taking over-the-counter medications like acetaminophen or ibuprofen to reduce fever and discomfort, following the recommended dosage.  Do not give aspirin to children.\n* **Comfortable environment:** Keep your environment cool and comfortable.\n* **Seek medical advice:** If the fever persists for more than a few days, worsens, or is accompanied by other symptoms like severe headache, stiff neck, difficulty breathing, or rash, consult a doctor.  Also, seek medical advice if you have any underlying health conditions.\n\n\nIt's important to note that I'm an AI and cannot provide medical diagnoses. This information is for general knowledge and should not be substituted for professional medical advice.  Always consult a healthcare professional if you have concerns about your health.\n",
+    "response": {
+        "id": "chatcmpl-AIt48NHBJdm5Lz3Wdvp69Jn4ZltcC",
+        "object": "chat.completion",
+        "created": 1729064940,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1755,
+            "completion_tokens": 2,
+            "total_tokens": 1757
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.498720645904541,
+    "code": 200,
+    "current_time": "2024-10-16 15:49:01"
+}

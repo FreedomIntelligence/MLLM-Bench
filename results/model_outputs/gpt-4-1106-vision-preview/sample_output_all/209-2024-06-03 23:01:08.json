@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2022/04/09/15/10/basketball-7121617_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer must state the basketball will \"fall\".\n2. Explanation should demonstrate understanding of the basketball's trajectory and gravity.\n3. Response must infer the action based on the position of the basketball relative to the hoop.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/209.jpg",
+    "unique_idx": "209",
+    "prompt": "Assuming this is a moment after someone made a shot, will the basketball rise or fall in the next second?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "In the next second after this moment, assuming the basketball was shot and is on its way through the hoop, the ball will fall due to gravity. Once the ball has passed through the rim, it will continue its downward trajectory.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426862,
+        "id": "chatcmpl-9W3TCisZLc3GC3vWNN6ZsrQaYnXL2",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 46,
+            "prompt_tokens": 1135,
+            "total_tokens": 1181
+        }
+    },
+    "answer": "In the next second after this moment, assuming the basketball was shot and is on its way through the hoop, the ball will fall due to gravity. Once the ball has passed through the rim, it will continue its downward trajectory.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 10.64844036102295,
+    "code": 200,
+    "current_time": "2024-06-03 23:01:08"
+}

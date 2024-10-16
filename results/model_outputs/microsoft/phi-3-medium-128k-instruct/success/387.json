@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://thumbs.dreamstime.com/b/car-accident-two-cars-crashed-city-road-intentional-motion-blur-141839362.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Predicted trajectories must consider vehicles' current motion and road conditions.\n2. Recommendations for avoiding collision should be specific and plausible.\n3. Answer must align with the action prediction capability and the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/387.jpeg",
+    "unique_idx": 387,
+    "prompt": "Based on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?",
+    "context": "Based on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?",
+    "sample_id": 387,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/387.jpeg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " Based on the current motion of the vehicles, we can predict their trajectories in the next few seconds. Let's assume Vehicle A is moving at a constant speed of 10 m/s, and Vehicle B is moving at a constant speed of 15 m/s. Also, let's assume the vehicles are initially 50 meters apart, and they are heading towards each other on a straight road.\n\nTrajectory prediction for the next few seconds:\n\n1. After 1 second:\n   - Vehicle A will have traveled 10 meters (10 m/s * 1 s).\n   - Vehicle B will have traveled 15 meters (15 m/s * 1 s).\n   - The distance between the two vehicles will be 25 meters (50 - 10 - 15).\n\n2. After 2 seconds:\n   - Vehicle A will have traveled 20 meters (10 m/s * 2 s).\n   - Vehicle B will have traveled 30 meters (15 m/s * 2 s).\n   - The distance between the two vehicles will be 0 meters (50 - 20 - 30).\n\nTo avoid a collision, drivers can take the following actions:\n\n1. Vehicle A:\n   - Slow down: Reduce speed to allow more time for reaction and avoid a collision.\n   - Change lanes: If there is another lane in the same direction, change lanes to avoid the oncoming vehicle.\n   - Apply brakes: If the collision is imminent, apply brakes to reduce the impact force.\n\n2. Vehicle B:\n   - Slow down: Reduce speed to allow more time for reaction and avoid a collision.\n   - Change lanes: If there is another lane in the same direction, change lanes to avoid the oncoming vehicle.\n   - Apply brakes: If the collision is imminent, apply brakes to reduce the impact force.\n\nIn summary, both drivers should try to slow down, change lanes if possible, or apply brakes to avoid a collision. It is essential to maintain a safe distance from other vehicles and stay alert to potential hazards on the road.",
+    "response_from_model": {
+        "id": "gen-1728907141-PLds0RHJTnqmIiZxyXT3",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728907141,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " Based on the current motion of the vehicles, we can predict their trajectories in the next few seconds. Let's assume Vehicle A is moving at a constant speed of 10 m/s, and Vehicle B is moving at a constant speed of 15 m/s. Also, let's assume the vehicles are initially 50 meters apart, and they are heading towards each other on a straight road.\n\nTrajectory prediction for the next few seconds:\n\n1. After 1 second:\n   - Vehicle A will have traveled 10 meters (10 m/s * 1 s).\n   - Vehicle B will have traveled 15 meters (15 m/s * 1 s).\n   - The distance between the two vehicles will be 25 meters (50 - 10 - 15).\n\n2. After 2 seconds:\n   - Vehicle A will have traveled 20 meters (10 m/s * 2 s).\n   - Vehicle B will have traveled 30 meters (15 m/s * 2 s).\n   - The distance between the two vehicles will be 0 meters (50 - 20 - 30).\n\nTo avoid a collision, drivers can take the following actions:\n\n1. Vehicle A:\n   - Slow down: Reduce speed to allow more time for reaction and avoid a collision.\n   - Change lanes: If there is another lane in the same direction, change lanes to avoid the oncoming vehicle.\n   - Apply brakes: If the collision is imminent, apply brakes to reduce the impact force.\n\n2. Vehicle B:\n   - Slow down: Reduce speed to allow more time for reaction and avoid a collision.\n   - Change lanes: If there is another lane in the same direction, change lanes to avoid the oncoming vehicle.\n   - Apply brakes: If the collision is imminent, apply brakes to reduce the impact force.\n\nIn summary, both drivers should try to slow down, change lanes if possible, or apply brakes to avoid a collision. It is essential to maintain a safe distance from other vehicles and stay alert to potential hazards on the road.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 32,
+            "completion_tokens": 513,
+            "total_tokens": 545
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:59:29"
+}

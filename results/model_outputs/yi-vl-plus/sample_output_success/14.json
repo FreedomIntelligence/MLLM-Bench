@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://mzucker.github.io/images/noteshrink/notesA1.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately transcribe definitions and examples related to \"Orthogonal Transformations.\"\n2. Correctly format mathematical formulas and symbols in LaTeX notation.\n3. Ensure extracted text maintains the original notes' structure and order.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/14.jpeg",
+    "unique_idx": "14",
+    "prompt": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 321,
+            "prompt_tokens": 1034,
+            "total_tokens": 1355
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "LaTeX formulas extracted from the notes:\n\n1. \\[ A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} \\]\n2. \\[ x = \\begin{bmatrix} x \\\\ y \\end{bmatrix} \\]\n3. \\[ x \\cdot y = \\begin{bmatrix} x \\\\ y \\end{bmatrix} \\cdot \\begin{bmatrix} z \\\\ w \\end{bmatrix} = xz + yw \\]\n4. \\[ x \\cdot y = 0 \\]\n5. \\[ x = \\begin{bmatrix} x \\\\ y \\end{bmatrix} \\]\n6. \\[ \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} \\cdot \\begin{bmatrix} x \\\\ y \\end{bmatrix} = \\begin{bmatrix} x + 2y \\\\ 3x + 4y \\end{bmatrix} \\]\n7. \\[ \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}^T = \\begin{bmatrix} 1 & 3 \\\\ 2 & 4 \\end{bmatrix} \\]\n\nThe definition of an orthogonal transformation is not provided in a formal mathematical notation in the image, but it can be inferred as a transformation that preserves lengths and angles, specifically, it is a linear transformation where the dot product of the transformed vectors is equal to the dot product of the original vectors."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "LaTeX formulas extracted from the notes:\n\n1. \\[ A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} \\]\n2. \\[ x = \\begin{bmatrix} x \\\\ y \\end{bmatrix} \\]\n3. \\[ x \\cdot y = \\begin{bmatrix} x \\\\ y \\end{bmatrix} \\cdot \\begin{bmatrix} z \\\\ w \\end{bmatrix} = xz + yw \\]\n4. \\[ x \\cdot y = 0 \\]\n5. \\[ x = \\begin{bmatrix} x \\\\ y \\end{bmatrix} \\]\n6. \\[ \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} \\cdot \\begin{bmatrix} x \\\\ y \\end{bmatrix} = \\begin{bmatrix} x + 2y \\\\ 3x + 4y \\end{bmatrix} \\]\n7. \\[ \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}^T = \\begin{bmatrix} 1 & 3 \\\\ 2 & 4 \\end{bmatrix} \\]\n\nThe definition of an orthogonal transformation is not provided in a formal mathematical notation in the image, but it can be inferred as a transformation that preserves lengths and angles, specifically, it is a linear transformation where the dot product of the transformed vectors is equal to the dot product of the original vectors.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 24.578431606292725,
+    "code": 200,
+    "current_time": "2024-04-30 12:56:14"
+}

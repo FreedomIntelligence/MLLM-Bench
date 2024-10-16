@@ -1,0 +1,35 @@
+{
+    "unique_idx": "75_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\n Infer the type of educational activity taking place and its subject.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\n Based on the given instruction, it seems that the educational activity taking place involves asking questions or seeking information. The subject of this activity could be any topic, as the instruction does not specify a particular area of study. It could be a general knowledge quiz, a research project, a classroom discussion, or an online forum where participants are encouraged to inquire about various topics.\n~~~\n~~~Answer2\nThe educational activity taking place is a group seminar or tutorial, possibly involving math or financial analysis. The man standing and talking at the whiteboard with a marker indicates that he is teaching or explaining the subject matter to the students seated at the table with laptops in front of them. The presence of potted plants in the room suggests a casual and comfortable learning environment. This suggests that the educational activity focuses on collaboration, discussion, and active learning, where students can work together to explore and understand the subject matter more effectively.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify educational activity (lecture, workshop, etc.) and verify presence of instructional materials (whiteboard, digital screen).\n2. Determine the subject being taught (mathematics, science, etc.) based on visible content (equations, diagrams).\n3. Evaluate clarity in describing the setting and participants' roles (teacher, students).",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/75.jpeg",
+    "model_1": "microsoft/phi-3-medium-128k-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": " Based on the given instruction, it seems that the educational activity taking place involves asking questions or seeking information. The subject of this activity could be any topic, as the instruction does not specify a particular area of study. It could be a general knowledge quiz, a research project, a classroom discussion, or an online forum where participants are encouraged to inquire about various topics.",
+    "raw_answer2": "The educational activity taking place is a group seminar or tutorial, possibly involving math or financial analysis. The man standing and talking at the whiteboard with a marker indicates that he is teaching or explaining the subject matter to the students seated at the table with laptops in front of them. The presence of potted plants in the room suggests a casual and comfortable learning environment. This suggests that the educational activity focuses on collaboration, discussion, and active learning, where students can work together to explore and understand the subject matter more effectively.",
+    "response": {
+        "id": "chatcmpl-AIuG8NQaRiWjY5TAIRnYJVt3aTL6e",
+        "object": "chat.completion",
+        "created": 1729069528,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1276,
+            "completion_tokens": 2,
+            "total_tokens": 1278
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.118546485900879,
+    "code": 200,
+    "current_time": "2024-10-16 17:05:29"
+}

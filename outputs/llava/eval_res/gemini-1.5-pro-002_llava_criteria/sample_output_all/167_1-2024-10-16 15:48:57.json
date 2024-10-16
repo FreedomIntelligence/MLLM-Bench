@@ -1,0 +1,35 @@
+{
+    "unique_idx": "167_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nDescribe the quickest route to the nearest emergency exit from the \"You Are Here\" point.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nTo find the quickest route to the nearest emergency exit from the \"You Are Here\" point, follow the arrow on the floor plan that points to the exit. This arrow is located in the lower portion of the image, and it indicates the direction you should head in to reach the nearest emergency exit. Keep in mind that the arrow is pointing upwards, which suggests that you will need to move upwards on the floor to reach the exit.\n~~~\n~~~Answer2\nFrom the \"You Are Here\" star, follow the dashed green line to the right.  It leads directly to the nearest emergency exit (marked with a green running figure) next to room 212.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Accurately identify the \"You Are Here\" point and the nearest emergency exit.\n2. Describe the path including turns and any landmarks (e.g., room numbers, staircases).\n3. Ensure the route is the quickest possible, avoiding detours or longer paths.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/167.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-pro-002",
+    "raw_answer1": "To find the quickest route to the nearest emergency exit from the \"You Are Here\" point, follow the arrow on the floor plan that points to the exit. This arrow is located in the lower portion of the image, and it indicates the direction you should head in to reach the nearest emergency exit. Keep in mind that the arrow is pointing upwards, which suggests that you will need to move upwards on the floor to reach the exit.",
+    "raw_answer2": "From the \"You Are Here\" star, follow the dashed green line to the right.  It leads directly to the nearest emergency exit (marked with a green running figure) next to room 212.",
+    "response": {
+        "id": "chatcmpl-AIt44DvaE09BX9MxdqeRi6z58p0WT",
+        "object": "chat.completion",
+        "created": 1729064936,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1193,
+            "completion_tokens": 2,
+            "total_tokens": 1195
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.067392826080322,
+    "code": 200,
+    "current_time": "2024-10-16 15:48:57"
+}

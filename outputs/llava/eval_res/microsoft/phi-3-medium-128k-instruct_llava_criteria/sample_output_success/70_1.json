@@ -1,0 +1,35 @@
+{
+    "unique_idx": "70_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nGiven the image, identify any cultural or traditional attire and elements present in the scene, and infer the type of ceremony or event taking place.\n~~~\n~~~Question Type\ncompound\n~~~\n~~~Answer1\nIn the image, there are individuals dressed in traditional African attire, particularly a man wearing a kilt and a woman in a colorful dress. They are standing around a table, which indicates a formal event or ceremony. The presence of a cell phone on the table might suggest that the event is being documented or that the attendees are using it for communication. The group of people is engaged in a specific activity, and their attire suggests that the event is culturally or traditionally based.\n~~~\n~~~Answer2\n Based on the image provided, it appears to be a traditional Indian wedding ceremony. The bride is wearing a red lehenga choli, a long, embroidered skirt paired with a matching top and a dupatta, a traditional scarf. The groom is dressed in a sherwani, a long coat-like garment with intricate embroidery, and a turban. There are also other guests in the scene, wearing colorful sarees and kurta-pajamas, traditional Indian attire.\n\nThe presence of a mandap, a four-pillared canopy, suggests that the wedding ceremony is taking place under this structure, which is common in Indian weddings. There are also decorations, such as flowers and fabrics, adorning the mandap, indicating that this is a festive and joyous occasion.\n\nBased on these elements, it can be inferred that the event taking place is a traditional Indian wedding ceremony, which is known for its elaborate rituals, vibrant colors, and rich cultural traditions.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify attire indicating a wedding; prioritize bright-colored, festive garments and any headpieces.\n2. Describe elements like bouquets or ceremonial objects that suggest a wedding.\n3. Identify the presence of a marriage officer or a religious leader holding a book that suggest a wedding.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/70.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "microsoft/phi-3-medium-128k-instruct",
+    "raw_answer1": "In the image, there are individuals dressed in traditional African attire, particularly a man wearing a kilt and a woman in a colorful dress. They are standing around a table, which indicates a formal event or ceremony. The presence of a cell phone on the table might suggest that the event is being documented or that the attendees are using it for communication. The group of people is engaged in a specific activity, and their attire suggests that the event is culturally or traditionally based.",
+    "raw_answer2": " Based on the image provided, it appears to be a traditional Indian wedding ceremony. The bride is wearing a red lehenga choli, a long, embroidered skirt paired with a matching top and a dupatta, a traditional scarf. The groom is dressed in a sherwani, a long coat-like garment with intricate embroidery, and a turban. There are also other guests in the scene, wearing colorful sarees and kurta-pajamas, traditional Indian attire.\n\nThe presence of a mandap, a four-pillared canopy, suggests that the wedding ceremony is taking place under this structure, which is common in Indian weddings. There are also decorations, such as flowers and fabrics, adorning the mandap, indicating that this is a festive and joyous occasion.\n\nBased on these elements, it can be inferred that the event taking place is a traditional Indian wedding ceremony, which is known for its elaborate rituals, vibrant colors, and rich cultural traditions.",
+    "response": {
+        "id": "chatcmpl-AIuFsrh8wnQojKcD3WIbFGvbkHMSV",
+        "object": "chat.completion",
+        "created": 1729069512,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1389,
+            "completion_tokens": 2,
+            "total_tokens": 1391
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.5053088665008545,
+    "code": 200,
+    "current_time": "2024-10-16 17:05:13"
+}

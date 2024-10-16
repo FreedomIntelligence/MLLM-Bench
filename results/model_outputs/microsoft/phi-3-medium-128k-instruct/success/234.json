@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-VSJqdW8AA1_OJ?format=jpg&name=4096x4096",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly calculates percentage increase from 'Total Income' for specified quarters.\n2. Matches the percentage increase with the reference: 12.78%.\n3. Explains the calculation process or provides the correct formula used.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/234.jpg",
+    "unique_idx": 234,
+    "prompt": "Determine the percentage increase in 'Total Income' from the quarter 30 Sep 2023 to the quarter 30 June 2023.",
+    "context": "Determine the percentage increase in 'Total Income' from the quarter 30 Sep 2023 to the quarter 30 June 2023.",
+    "sample_id": 234,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/234.jpg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " To determine the percentage increase in 'Total Income' from the quarter 30 Sep 2023 to the quarter 30 June 2023, we need the actual 'Total Income' values for both quarters. Assuming we have the following data:\n\n- Total Income for the quarter ending 30 Sep 2023: $150,000\n- Total Income for the quarter ending 30 June 2023: $120,000\n\nWe can use the following formula to calculate the percentage increase:\n\nPercentage Increase = [(New Value - Old Value) / Old Value] * 100\n\nPlugging in the values:\n\nPercentage Increase = [($150,000 - $120,000) / $120,000] * 100\nPercentage Increase = [$30,000 / $120,000] * 100\nPercentage Increase = 0.25 * 100\nPercentage Increase = 25%\n\nTherefore, the percentage increase in 'Total Income' from the quarter ending 30 June 2023 to the quarter ending 30 Sep 2023 is 25%.",
+    "response_from_model": {
+        "id": "gen-1728906782-UJfvUROhUjNvYzQWcHYe",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906782,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " To determine the percentage increase in 'Total Income' from the quarter 30 Sep 2023 to the quarter 30 June 2023, we need the actual 'Total Income' values for both quarters. Assuming we have the following data:\n\n- Total Income for the quarter ending 30 Sep 2023: $150,000\n- Total Income for the quarter ending 30 June 2023: $120,000\n\nWe can use the following formula to calculate the percentage increase:\n\nPercentage Increase = [(New Value - Old Value) / Old Value] * 100\n\nPlugging in the values:\n\nPercentage Increase = [($150,000 - $120,000) / $120,000] * 100\nPercentage Increase = [$30,000 / $120,000] * 100\nPercentage Increase = 0.25 * 100\nPercentage Increase = 25%\n\nTherefore, the percentage increase in 'Total Income' from the quarter ending 30 June 2023 to the quarter ending 30 Sep 2023 is 25%.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 42,
+            "completion_tokens": 306,
+            "total_tokens": 348
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:53:08"
+}

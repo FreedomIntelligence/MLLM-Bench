@@ -1,0 +1,35 @@
+{
+    "unique_idx": "120_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nInterpret the emotional exchange occurring between the individuals by considering their hand gestures, facial expressions, and the proximity to one another.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe individuals in the image appear to be engaged in a heated argument. The man on the left is pointing his finger towards the woman on the right, which is a common gesture of accusation or blame. His facial expression is tense and angry, with his mouth open as if he is shouting or speaking forcefully. The woman, on the other hand, is also pointing her finger towards the man, indicating that she is either responding in kind or making a strong point. Her facial expression is similarly tense, with her mouth open, suggesting she is speaking or shouting back. The close proximity of the two individuals, with their bodies almost touching, further emphasizes the intensity of their emotional exchange. Overall, the scene depicts a confrontational and emotionally charged interaction.\n~~~\n~~~Answer2\nIn the image, the man and the woman are facing each other, engaged in a heated exchange. The woman is pointing her finger at the man, which often signifies a direct, assertive, or even confrontational tone in their conversation. Meanwhile, the man is smiling, which may indicate that he is either enjoying the interaction, trying to diffuse the situation, or simply being playful. The close proximity of the individuals further emphasizes the intensity of their emotional exchange. Overall, the scene suggests a lively and potentially tension-filled conversation between the two people.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify emotions conveyed by both individuals' facial expressions and hand gestures as angry.\n2. Describe the nature of the emotional exchange based on proximity and body language.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/120.jpg",
+    "model_1": "qwen/qwen-2-vl-72b-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The individuals in the image appear to be engaged in a heated argument. The man on the left is pointing his finger towards the woman on the right, which is a common gesture of accusation or blame. His facial expression is tense and angry, with his mouth open as if he is shouting or speaking forcefully. The woman, on the other hand, is also pointing her finger towards the man, indicating that she is either responding in kind or making a strong point. Her facial expression is similarly tense, with her mouth open, suggesting she is speaking or shouting back. The close proximity of the two individuals, with their bodies almost touching, further emphasizes the intensity of their emotional exchange. Overall, the scene depicts a confrontational and emotionally charged interaction.",
+    "raw_answer2": "In the image, the man and the woman are facing each other, engaged in a heated exchange. The woman is pointing her finger at the man, which often signifies a direct, assertive, or even confrontational tone in their conversation. Meanwhile, the man is smiling, which may indicate that he is either enjoying the interaction, trying to diffuse the situation, or simply being playful. The close proximity of the individuals further emphasizes the intensity of their emotional exchange. Overall, the scene suggests a lively and potentially tension-filled conversation between the two people.",
+    "response": {
+        "id": "chatcmpl-AIvG0aQ0sErr7XEi6ReHl0NBxJr7L",
+        "object": "chat.completion",
+        "created": 1729073364,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1676,
+            "completion_tokens": 2,
+            "total_tokens": 1678
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 9.18955945968628,
+    "code": 200,
+    "current_time": "2024-10-16 18:09:25"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "253_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nExamine the two pictures closely to identify differences between them.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe two pictures depict a girl in a red Santa hat working on decorating a gingerbread house. In one scene, she is putting the finishing touches on the house by applying a green decoration on the roof. In the other scene, she is placing a ribbon on the house. Both pictures capture the creative process of building and decorating a gingerbread house, showcasing the attention to detail and care put into the project.\n~~~\n~~~Answer2\nHere are the differences between the two pictures:\n\n1. The girl's hair is tied back in the left picture, while it is down in the right picture.\n2. The girl's sweater has a different pattern on the sleeves in the left picture.\n3. The girl's shoes are red in the left picture, but they are not visible in the right picture.\n4. The gingerbread house has a green wreath on the roof in the left picture, but it is missing in the right picture.\n5. The girl's Santa hat has a different decoration on the front in the left picture.\n6. The gingerbread house has a different design on the roof in the left picture.\n7. The girl's sweater has a different pattern on the front in the left picture.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Accurately identify differences in hat, hair, collar, shadow on face, shirt stripes, decoration above toy house floor.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/253.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-7b-instruct",
+    "raw_answer1": "The two pictures depict a girl in a red Santa hat working on decorating a gingerbread house. In one scene, she is putting the finishing touches on the house by applying a green decoration on the roof. In the other scene, she is placing a ribbon on the house. Both pictures capture the creative process of building and decorating a gingerbread house, showcasing the attention to detail and care put into the project.",
+    "raw_answer2": "Here are the differences between the two pictures:\n\n1. The girl's hair is tied back in the left picture, while it is down in the right picture.\n2. The girl's sweater has a different pattern on the sleeves in the left picture.\n3. The girl's shoes are red in the left picture, but they are not visible in the right picture.\n4. The gingerbread house has a green wreath on the roof in the left picture, but it is missing in the right picture.\n5. The girl's Santa hat has a different decoration on the front in the left picture.\n6. The gingerbread house has a different design on the roof in the left picture.\n7. The girl's sweater has a different pattern on the front in the left picture.",
+    "response": {
+        "id": "chatcmpl-AIuRpHYVbjNkE5IObGr3F480NQ4wI",
+        "object": "chat.completion",
+        "created": 1729070253,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1298,
+            "completion_tokens": 2,
+            "total_tokens": 1300
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.693721532821655,
+    "code": 200,
+    "current_time": "2024-10-16 17:17:34"
+}

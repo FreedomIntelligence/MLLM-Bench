@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Fake Image Detection",
+        "url": "https://www.prc-magazine.com/sc/files/2014/07/tsunami.jpg",
+        "question type": "compound"
+    },
+    "criteria": "1. Confirm if the image is identified as AI-generated.\n2. Evaluate the explanation for unnatural elements or inconsistencies in the image.\n3. Check for logical analysis of the image's authenticity based on visual cues.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/354.jpg",
+    "unique_idx": 354,
+    "prompt": "Determine if the image is real or AI-generated and provide your explanation.",
+    "context": "Determine if the image is real or AI-generated and provide your explanation.",
+    "sample_id": 354,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/354.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The image depicts a large tsunami wave crashing into a city, causing significant destruction. The scene is highly dramatic and unusual, as tsunamis are typically associated with coastal areas rather than urban environments. Additionally, the wave's size and the destruction it causes appear exaggerated, which is more common in AI-generated images. Therefore, it is likely that this image is AI-generated.",
+    "response_from_model": {
+        "id": "gen-1728903838-mKhxaa6L8uhlGT4QwAHa",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903838,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image depicts a large tsunami wave crashing into a city, causing significant destruction. The scene is highly dramatic and unusual, as tsunamis are typically associated with coastal areas rather than urban environments. Additionally, the wave's size and the destruction it causes appear exaggerated, which is more common in AI-generated images. Therefore, it is likely that this image is AI-generated.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 37,
+            "completion_tokens": 77,
+            "total_tokens": 114
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:04:01"
+}

@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Symbol Recognition",
+        "url": "https://cdn.pixabay.com/photo/2019/05/22/10/54/street-signs-4221204_1280.png",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Correctly identify and describe all traffic signs, including shape, color, and symbols.\n2. Accurately provide the meaning of each traffic sign as commonly understood.\n3. Organize information in the specified JSON format with 'id', 'traffic sign', and 'meaning'.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/33.jpg",
+    "unique_idx": 33,
+    "prompt": "Identify all traffic signs in the image and organize each of them into the following JSON format: {'id': xx, 'traffic sign': xx, 'meaning': xx}.",
+    "context": "Identify all traffic signs in the image and organize each of them into the following JSON format: {'id': xx, 'traffic sign': xx, 'meaning': xx}.",
+    "sample_id": 33,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/33.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "```json\n[\n  {'id': 1, 'traffic sign': 'P', 'meaning': 'Parking'},\n  {'id': 2, 'traffic sign': 'ONE WAY', 'meaning': 'One-way road'},\n  {'id': 3, 'traffic sign': 'Road Work Ahead', 'meaning': 'Road construction or maintenance ahead'},\n  {'id': 4, 'traffic sign': 'Interstate 95', 'meaning': 'Interstate Highway 95'},\n  {'id': 5, 'traffic sign': 'STOP', 'meaning': 'Stop completely'},\n  {'id': 6, 'traffic sign': 'Tow Away Zone', 'meaning': 'Vehicles may be towed'},\n  {'id': 7, 'traffic sign': 'Accessible Parking', 'meaning': 'Parking for disabled persons'},\n  {'id': 8, 'traffic sign': 'Railroad Crossing', 'meaning': 'Railroad crossing ahead'},\n  {'id': 9, 'traffic sign': 'Yield', 'meaning': 'Give way to other traffic'},\n  {'id': 10, 'traffic sign': 'Curve', 'meaning': 'Curve in the road ahead'},\n  {'id': 11, 'traffic sign': 'Speed Limit 55', 'meaning': 'Maximum speed limit is 55'},\n  {'id': 12, 'traffic sign': 'Pedestrians Crossing', 'meaning': 'Pedestrians may be crossing'},\n  {'id': 13, 'traffic sign': 'No Bicycles', 'meaning': 'Bicycles are prohibited'},\n  {'id': 14, 'traffic sign': 'Pedestrians Crossing (family)', 'meaning': 'Families with children crossing'},\n  {'id': 15, 'traffic sign': 'Under Construction', 'meaning': 'Road under construction'},\n  {'id': 16, 'traffic sign': 'Bicycle Route', 'meaning': 'Bicycle route'},\n  {'id': 17, 'traffic sign': 'Do Not Enter', 'meaning': 'Do not enter this road'},\n  {'id': 18, 'traffic sign': 'Dead End', 'meaning': 'Road ends ahead'},\n  {'id': 19, 'traffic sign': 'No U-Turn', 'meaning': 'U-turns are prohibited'},\n  {'id': 20, 'traffic sign': 'US Route 66', 'meaning': 'US Highway 66'},\n  {'id': 21, 'traffic sign': 'Detour', 'meaning': 'Road is closed, follow detour'},\n  {'id': 22, 'traffic sign': 'Traffic Signal', 'meaning': 'Traffic signal ahead'},\n  {'id': 23, 'traffic sign': 'No Parking Any Time', 'meaning': 'No parking at any time'},\n  {'id': 24, 'traffic sign': 'Airport', 'meaning': 'Airport nearby'},\n  {'id': 25, 'traffic sign': 'Narrow Road', 'meaning': 'Road narrows ahead'},\n  {'id': 26, 'traffic sign': 'Winding Road', 'meaning': 'Winding road ahead'}\n]\n```",
+    "response_from_model": {
+        "id": "chatcmpl-221300edb43c4b7587ec64603c76f297",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897116,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n  {'id': 1, 'traffic sign': 'P', 'meaning': 'Parking'},\n  {'id': 2, 'traffic sign': 'ONE WAY', 'meaning': 'One-way road'},\n  {'id': 3, 'traffic sign': 'Road Work Ahead', 'meaning': 'Road construction or maintenance ahead'},\n  {'id': 4, 'traffic sign': 'Interstate 95', 'meaning': 'Interstate Highway 95'},\n  {'id': 5, 'traffic sign': 'STOP', 'meaning': 'Stop completely'},\n  {'id': 6, 'traffic sign': 'Tow Away Zone', 'meaning': 'Vehicles may be towed'},\n  {'id': 7, 'traffic sign': 'Accessible Parking', 'meaning': 'Parking for disabled persons'},\n  {'id': 8, 'traffic sign': 'Railroad Crossing', 'meaning': 'Railroad crossing ahead'},\n  {'id': 9, 'traffic sign': 'Yield', 'meaning': 'Give way to other traffic'},\n  {'id': 10, 'traffic sign': 'Curve', 'meaning': 'Curve in the road ahead'},\n  {'id': 11, 'traffic sign': 'Speed Limit 55', 'meaning': 'Maximum speed limit is 55'},\n  {'id': 12, 'traffic sign': 'Pedestrians Crossing', 'meaning': 'Pedestrians may be crossing'},\n  {'id': 13, 'traffic sign': 'No Bicycles', 'meaning': 'Bicycles are prohibited'},\n  {'id': 14, 'traffic sign': 'Pedestrians Crossing (family)', 'meaning': 'Families with children crossing'},\n  {'id': 15, 'traffic sign': 'Under Construction', 'meaning': 'Road under construction'},\n  {'id': 16, 'traffic sign': 'Bicycle Route', 'meaning': 'Bicycle route'},\n  {'id': 17, 'traffic sign': 'Do Not Enter', 'meaning': 'Do not enter this road'},\n  {'id': 18, 'traffic sign': 'Dead End', 'meaning': 'Road ends ahead'},\n  {'id': 19, 'traffic sign': 'No U-Turn', 'meaning': 'U-turns are prohibited'},\n  {'id': 20, 'traffic sign': 'US Route 66', 'meaning': 'US Highway 66'},\n  {'id': 21, 'traffic sign': 'Detour', 'meaning': 'Road is closed, follow detour'},\n  {'id': 22, 'traffic sign': 'Traffic Signal', 'meaning': 'Traffic signal ahead'},\n  {'id': 23, 'traffic sign': 'No Parking Any Time', 'meaning': 'No parking at any time'},\n  {'id': 24, 'traffic sign': 'Airport', 'meaning': 'Airport nearby'},\n  {'id': 25, 'traffic sign': 'Narrow Road', 'meaning': 'Road narrows ahead'},\n  {'id': 26, 'traffic sign': 'Winding Road', 'meaning': 'Winding road ahead'}\n]\n```"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 293,
+            "completion_tokens": 698,
+            "total_tokens": 991
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:13"
+}

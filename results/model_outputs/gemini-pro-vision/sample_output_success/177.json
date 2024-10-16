@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://pbs.twimg.com/media/F9WkV40bcAAMoBX?format=jpg&name=4096x4096",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify and provide bounding box coordinates around [(2048, 60), (3275, 1043)]",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/177.jpg",
+    "unique_idx": "177",
+    "prompt": "For the \"Lab Ma Noi\" dish in the bottom right photograph, can you determine the bounding box coordinates for the spoon? (The size of the image is 4096*4096)",
+    "response": {
+        "id": "chatcmpl-c38e9fdcad104e16b63e5bbf0762361e",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930575,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The bounding box coordinates for the spoon are:\n\nxmin: 2960\nymin: 3328\nxmax: 3136\nymax: 3504"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 812,
+            "completion_tokens": 33,
+            "total_tokens": 845
+        }
+    },
+    "answer": " The bounding box coordinates for the spoon are:\n\nxmin: 2960\nymin: 3328\nxmax: 3136\nymax: 3504",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 15.4730384349823,
+    "code": 200,
+    "current_time": "2024-04-12 22:02:55"
+}

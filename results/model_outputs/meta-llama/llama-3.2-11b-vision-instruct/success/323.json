@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://cdn.wccftech.com/wp-content/uploads/2017/02/Google-brain.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe the progression of image quality from left to right in each row.\n2. Confirm the presence of human faces in varying resolutions and clarity in the image.\n3. Assess if the description includes changes in detail and recognizability.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/323.jpg",
+    "unique_idx": 323,
+    "prompt": "What happened to each row of the image from left to right?",
+    "context": "What happened to each row of the image from left to right?",
+    "sample_id": 323,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/323.jpg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "The image shows a series of pixelated faces, with each row representing a different person. The pixelation increases from left to right, indicating that the image is being progressively distorted as it moves from left to right. This suggests that the image is undergoing some kind of transformation or degradation, such as pixelation or compression, which is causing the faces to become increasingly distorted.",
+    "response_from_model": {
+        "id": "gen-1728905674-OYlxl0fGKvXhGZqt4ihO",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905674,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image shows a series of pixelated faces, with each row representing a different person. The pixelation increases from left to right, indicating that the image is being progressively distorted as it moves from left to right. This suggests that the image is undergoing some kind of transformation or degradation, such as pixelation or compression, which is causing the faces to become increasingly distorted.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3226,
+            "completion_tokens": 1,
+            "total_tokens": 3227
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:34:35"
+}

@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Visual Math Reasoning",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer must correctly calculate to 221 using numbers in hexagons and operators in rounded square.\n2. All numbers and operators used should be present in the image.\n3. Provide one valid mathematical expression that equals 221.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/313.png",
+    "unique_idx": "313",
+    "prompt": "Utilize the numbers within the hexagon (you can use each number more than once) and the operators contained within the rounded square set to derive the numerical number found in the upper-left corner of the image. Provide one possible combination.",
+    "response": {
+        "id": "chatcmpl-08078acf1afe4870b25c5c2e8f3648bc",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930795,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " 9x9+2x3-1 = 221"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 819,
+            "completion_tokens": 13,
+            "total_tokens": 832
+        }
+    },
+    "answer": " 9x9+2x3-1 = 221",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 5.244457006454468,
+    "code": 200,
+    "current_time": "2024-04-12 22:06:35"
+}

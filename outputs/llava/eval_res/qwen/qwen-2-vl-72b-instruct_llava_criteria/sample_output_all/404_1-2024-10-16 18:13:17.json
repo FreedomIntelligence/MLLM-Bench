@@ -1,0 +1,35 @@
+{
+    "unique_idx": "404_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nProvide a caption that captures the duality of the character's persona as portrayed by the face paint overlaying the natural expression, reflecting the contrast between the facade and the individual's true self.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe face of the Joker, with his red, white, and blue makeup, is overlaid with a face that reflects his true self, creating a compelling contrast between the persona and the individual's genuine thoughts and emotions.\n~~~\n~~~Answer2\n\"Behind the Mask: The Hidden Depths of a Clown's Soul\"\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Caption identifies the contrast between face paint and natural expression.\n2. Caption reflects the concept of duality in the character's persona.\n3. Caption is coherent and contextually relevant to the image.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/404.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-72b-instruct",
+    "raw_answer1": "The face of the Joker, with his red, white, and blue makeup, is overlaid with a face that reflects his true self, creating a compelling contrast between the persona and the individual's genuine thoughts and emotions.",
+    "raw_answer2": "\"Behind the Mask: The Hidden Depths of a Clown's Soul\"",
+    "response": {
+        "id": "chatcmpl-AIvJiWf7nD3TtO2XZMQzem31B0fip",
+        "object": "chat.completion",
+        "created": 1729073594,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1158,
+            "completion_tokens": 2,
+            "total_tokens": 1160
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 12.341968059539795,
+    "code": 200,
+    "current_time": "2024-10-16 18:13:17"
+}

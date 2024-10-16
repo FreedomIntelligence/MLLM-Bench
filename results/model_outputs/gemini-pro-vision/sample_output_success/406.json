@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Image Captioning",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify cat's features: color, posture, expression.\n2. Describe the immediate environment: flooring, objects nearby, building details.\n3. Mention lighting and time of day if apparent from the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/406.jpeg",
+    "unique_idx": "406",
+    "prompt": "Describe the cats and the environment of the image detailedly.",
+    "response": {
+        "id": "chatcmpl-d70dbc09569446719c1c422f25a866b0",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712931010,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " This is an image of an orange cat lying on the ground in front of a modern building. The cat is looking at the camera with a curious expression. Its fur is short and well-groomed, and it has a white belly. The ground is made of stone tiles, and there is a metal post in the background. The building is made of glass and concrete, and it has a modern design."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1124,
+            "completion_tokens": 82,
+            "total_tokens": 1206
+        }
+    },
+    "answer": " This is an image of an orange cat lying on the ground in front of a modern building. The cat is looking at the camera with a curious expression. Its fur is short and well-groomed, and it has a white belly. The ground is made of stone tiles, and there is a metal post in the background. The building is made of glass and concrete, and it has a modern design.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 8.644050598144531,
+    "code": 200,
+    "current_time": "2024-04-12 22:10:11"
+}

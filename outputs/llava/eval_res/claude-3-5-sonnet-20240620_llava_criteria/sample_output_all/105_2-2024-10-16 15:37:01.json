@@ -1,0 +1,35 @@
+{
+    "unique_idx": "105_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat is the rightmost person who only shows an arm and a leg holding in his right hand?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe image doesn't show a full person on the right side, only partial views of people sitting together. From what's visible in the image, the person on the right is holding a smartphone or mobile device in their hands. The image shows parts of several people sitting on what appears to be a couch or sofa, with the focus on their laps and lower bodies. They're wearing casual clothing like jeans and different types of footwear.\n~~~\n~~~Answer2\nThe rightmost person who only shows an arm and a leg is holding a cell phone in his right hand.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify object in rightmost person's right hand as a digital device with a display screen.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/105.jpeg",
+    "model_1": "claude-3-5-sonnet-20240620",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The image doesn't show a full person on the right side, only partial views of people sitting together. From what's visible in the image, the person on the right is holding a smartphone or mobile device in their hands. The image shows parts of several people sitting on what appears to be a couch or sofa, with the focus on their laps and lower bodies. They're wearing casual clothing like jeans and different types of footwear.",
+    "raw_answer2": "The rightmost person who only shows an arm and a leg is holding a cell phone in his right hand.",
+    "response": {
+        "id": "chatcmpl-AIssX3KGhI8VRlStXyBnB3pVUSJ4L",
+        "object": "chat.completion",
+        "created": 1729064221,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1139,
+            "completion_tokens": 2,
+            "total_tokens": 1141
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 2.9260854721069336,
+    "code": 200,
+    "current_time": "2024-10-16 15:37:01"
+}

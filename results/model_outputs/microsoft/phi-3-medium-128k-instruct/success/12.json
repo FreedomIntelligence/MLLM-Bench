@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/FmM62WNWYAMC0EB?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly identify and report gate number B19 from the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/12.jpeg",
+    "unique_idx": 12,
+    "prompt": "Assume a passenger bought an air ticket to Boston with Delta Airline on flight number 5706, which gate should the passenger go to wait for the flight",
+    "context": "Assume a passenger bought an air ticket to Boston with Delta Airline on flight number 5706, which gate should the passenger go to wait for the flight",
+    "sample_id": 12,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/12.jpeg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " To determine the gate for flight number 5706 with Delta Airline, the passenger should check the information available on the Delta Airline website, mobile app, or the airport's flight information displays. These sources will provide the most up-to-date gate information for the flight. Additionally, the passenger can also ask an airport staff member or visit the Delta Airline's customer service desk at the airport for assistance.",
+    "response_from_model": {
+        "id": "gen-1728906202-TI0aPnS09s0GtzmZoRg8",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906202,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " To determine the gate for flight number 5706 with Delta Airline, the passenger should check the information available on the Delta Airline website, mobile app, or the airport's flight information displays. These sources will provide the most up-to-date gate information for the flight. Additionally, the passenger can also ask an airport staff member or visit the Delta Airline's customer service desk at the airport for assistance.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 39,
+            "completion_tokens": 96,
+            "total_tokens": 135
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:43:27"
+}

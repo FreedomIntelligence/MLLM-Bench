@@ -1,0 +1,35 @@
+{
+    "unique_idx": "232_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nAnalyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nIn the image, there is a flight schedule that shows the type of aircraft used for domestic flights. The aircraft most commonly used for domestic flights are Airbus A320 series, including A320, A321, and A322. From the schedule, these aircraft are used for a majority of the domestic flights, indicating their prevalence in this specific airline company. However, it is important to note that the schedule may vary depending on the airline and the region, so this conclusion might not be universally applicable.\n~~~\n~~~Answer2\n To analyze the flight schedule and determine the most commonly used aircraft type for domestic flights, we would need to follow these steps:\n\n1. **Data Collection**: Obtain the flight schedule data that includes details about each domestic flight, such as the aircraft type and the flight's origin and destination.\n\n2. **Data Processing**: Filter the data to include only domestic flights. Domestic flights are typically those where both the origin and destination are within the same country.\n\n3. **Data Analysis**: Tally the number of flights for each aircraft type.\n\n4. **Result Compilation**: Compare the tallies to identify the aircraft type with the highest frequency.\n\n5. **Report**: Present the findings in a clear and concise manner.\n\nSince we don't have actual flight schedule data, I'll provide a hypothetical example:\n\n- A320: 120 flights\n- B738: 80 flights\n- ATR: 150 flights\n\nBased on this hypothetical data, the ATR aircraft is most commonly used for domestic flights, as it has the highest number of flights (150).\n\nPlease note that this is a simplified example and the actual process might require more complex data analysis, considering factors such as the number of seats, flight distances, and possibly the airline's fleet size and strategy.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/232.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "microsoft/phi-3-medium-128k-instruct",
+    "raw_answer1": "In the image, there is a flight schedule that shows the type of aircraft used for domestic flights. The aircraft most commonly used for domestic flights are Airbus A320 series, including A320, A321, and A322. From the schedule, these aircraft are used for a majority of the domestic flights, indicating their prevalence in this specific airline company. However, it is important to note that the schedule may vary depending on the airline and the region, so this conclusion might not be universally applicable.",
+    "raw_answer2": " To analyze the flight schedule and determine the most commonly used aircraft type for domestic flights, we would need to follow these steps:\n\n1. **Data Collection**: Obtain the flight schedule data that includes details about each domestic flight, such as the aircraft type and the flight's origin and destination.\n\n2. **Data Processing**: Filter the data to include only domestic flights. Domestic flights are typically those where both the origin and destination are within the same country.\n\n3. **Data Analysis**: Tally the number of flights for each aircraft type.\n\n4. **Result Compilation**: Compare the tallies to identify the aircraft type with the highest frequency.\n\n5. **Report**: Present the findings in a clear and concise manner.\n\nSince we don't have actual flight schedule data, I'll provide a hypothetical example:\n\n- A320: 120 flights\n- B738: 80 flights\n- ATR: 150 flights\n\nBased on this hypothetical data, the ATR aircraft is most commonly used for domestic flights, as it has the highest number of flights (150).\n\nPlease note that this is a simplified example and the actual process might require more complex data analysis, considering factors such as the number of seats, flight distances, and possibly the airline's fleet size and strategy.",
+    "response": {
+        "id": "chatcmpl-AIuHZW4OpO8wJ129bwWXeENtXJNQb",
+        "object": "chat.completion",
+        "created": 1729069617,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1404,
+            "completion_tokens": 2,
+            "total_tokens": 1406
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.812317132949829,
+    "code": 200,
+    "current_time": "2024-10-16 17:06:58"
+}

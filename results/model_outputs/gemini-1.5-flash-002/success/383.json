@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://images.unsplash.com/photo-1597019558926-3eef445fdf60",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Predict the skater's next move based on current posture and position.\n2. Assess the risk involved in the predicted next move.\n3. Ensure the answer aligns with the skater's current momentum and skatepark layout.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/383.jpg",
+    "unique_idx": 383,
+    "prompt": "Given the image, predict the skater boy's next move and assess the risk of the action.",
+    "context": "Given the image, predict the skater boy's next move and assess the risk of the action.",
+    "sample_id": 383,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/383.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "The skater boy is likely to land on the nearby ramp in front of him.  This is a prediction based on his trajectory and body position.\n\nThe risk assessment is moderate to high.  The factors contributing to the risk include:\n\n* **Height:** He's at a considerable height, meaning a fall could result in injury.\n* **Landing:** The precision required to land cleanly on the ramp is high. A slight miscalculation could lead to a fall.\n* **Speed:** While not explicitly shown, his speed is likely significant given the jump.  Higher speed increases the impact force of a potential fall.\n* **Surface:** Concrete is a hard surface, offering little to no give in a fall.\n\nWhile skilled skaters perform similar maneuvers regularly, the inherent risks associated with this type of jump should not be underestimated.  A successful landing depends heavily on the skater's skill, balance, and precise execution.\n",
+    "response_from_model": {
+        "id": "chatcmpl-de21a3039a004905aed867b7baba7a98",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897196,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The skater boy is likely to land on the nearby ramp in front of him.  This is a prediction based on his trajectory and body position.\n\nThe risk assessment is moderate to high.  The factors contributing to the risk include:\n\n* **Height:** He's at a considerable height, meaning a fall could result in injury.\n* **Landing:** The precision required to land cleanly on the ramp is high. A slight miscalculation could lead to a fall.\n* **Speed:** While not explicitly shown, his speed is likely significant given the jump.  Higher speed increases the impact force of a potential fall.\n* **Surface:** Concrete is a hard surface, offering little to no give in a fall.\n\nWhile skilled skaters perform similar maneuvers regularly, the inherent risks associated with this type of jump should not be underestimated.  A successful landing depends heavily on the skater's skill, balance, and precise execution.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 279,
+            "completion_tokens": 189,
+            "total_tokens": 468
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:13:32"
+}

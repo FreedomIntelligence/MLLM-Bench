@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-cFfylXkAAd7yc?format=png&name=small",
+        "question type": "close-ended"
+    },
+    "criteria": "1. List stores that are 'Deluxe Supermarket' in 'Mexico': store 8, store 12, store 21.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/238.png",
+    "unique_idx": "238",
+    "prompt": "List all stores that are deluxe supermarket and located in Mexico.",
+    "response": {
+        "id": "chatcmpl-bc5e3c2e091f4aa889c1cdeac5a5a29c",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930671,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " | store_id | store_name | store_state | store_country |\n| - | - | - | - |\n| 5 | Store 5 | Jalisco | Mexico |\n| 12 | Store 12 | Hidalgo | Mexico |\n| 17 | Store 17 | Tamaulipas | Mexico |\n| 18 | Store 18 | Zacatecas | Mexico |"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1124,
+            "completion_tokens": 79,
+            "total_tokens": 1203
+        }
+    },
+    "answer": " | store_id | store_name | store_state | store_country |\n| - | - | - | - |\n| 5 | Store 5 | Jalisco | Mexico |\n| 12 | Store 12 | Hidalgo | Mexico |\n| 17 | Store 17 | Tamaulipas | Mexico |\n| 18 | Store 18 | Zacatecas | Mexico |",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 8.190028190612793,
+    "code": 200,
+    "current_time": "2024-04-12 22:04:31"
+}

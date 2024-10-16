@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-4kEacbUAAobjX?format=jpg&name=large",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Program calculates factorials for integers between user-inputted p and q, inclusive.\n2. Output format matches the example: \"n! = result\" on separate lines.\n3. User input for p and q is requested and handled correctly.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/370.jpeg",
+    "unique_idx": 370,
+    "prompt": "You are a software developer. Write a program to finish the task as required in the picture.",
+    "context": "You are a software developer. Write a program to finish the task as required in the picture.",
+    "sample_id": 370,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/370.jpeg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "Here's a simple Python program that calculates the factorials of integers from `p` to `q`, as specified in your request:\n\n```python\ndef factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\ndef main():\n    # Get user input for p and q\n    p = int(input(\"Enter the starting integer (p): \"))\n    q = int(input(\"Enter the ending integer (q): \"))\n\n    # Print the factorials from p to q\n    for i in range(p, q + 1):\n        print(f\"{i}! = {factorial(i)}\")\n\nif __name__ == \"__main__\":\n    main()\n```\n\n### How to Use the Program:\n1. Copy the code into a Python environment (like IDLE, Jupyter Notebook, or any IDE).\n2. Run the program.\n3. Input the values for `p` and `q` when prompted.\n4. The program will output the factorials for each integer from `p` to `q`. \n\n### Example:\nIf you input `3` for `p` and `8` for `q`, the output will be:\n```\n3! = 6\n4! = 24\n5! = 120\n6! = 720\n7! = 5040\n8! = 40320\n```",
+    "response_from_model": {
+        "id": "chatcmpl-AIBOdSIcrExmKbfQWqTRuSuCEKoUq",
+        "object": "chat.completion",
+        "created": 1728897075,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here's a simple Python program that calculates the factorials of integers from `p` to `q`, as specified in your request:\n\n```python\ndef factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\ndef main():\n    # Get user input for p and q\n    p = int(input(\"Enter the starting integer (p): \"))\n    q = int(input(\"Enter the ending integer (q): \"))\n\n    # Print the factorials from p to q\n    for i in range(p, q + 1):\n        print(f\"{i}! = {factorial(i)}\")\n\nif __name__ == \"__main__\":\n    main()\n```\n\n### How to Use the Program:\n1. Copy the code into a Python environment (like IDLE, Jupyter Notebook, or any IDE).\n2. Run the program.\n3. Input the values for `p` and `q` when prompted.\n4. The program will output the factorials for each integer from `p` to `q`. \n\n### Example:\nIf you input `3` for `p` and `8` for `q`, the output will be:\n```\n3! = 6\n4! = 24\n5! = 120\n6! = 720\n7! = 5040\n8! = 40320\n```"
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 36861,
+            "completion_tokens": 293,
+            "total_tokens": 37154
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:11:18"
+}

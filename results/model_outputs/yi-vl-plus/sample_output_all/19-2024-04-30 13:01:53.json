@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://static.turbosquid.com/Preview/2016/06/03__14_24_55/2.pngf5b386e3-37f4-44b1-8af4-ffe6332cac24Zoom.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Check the accuracy of OCR extraction of \"passenger_name\", \"flight_number\", \"departure_city\", \"destination_city\", \"date\", \"gate\", \"boarding_time\", and \"seat_number\".\n2. Ensure all extracted text data is organized in JSON format, with no extraneous or missing information.\n3. An example answer can be: {\n    \"passenger_name\": \"DOE JOHN\",\n    \"flight_number\": \"OKL022\",\n    \"departure_city\": \"GLASGOW\",\n    \"destination_city\": \"LONDON\",\n    \"date\": \"12 NOV 2018\",\n    \"gate\": \"45\",\n    \"boarding_time\": \"10:30\",\n    \"seat_number\": \"26A\"\n}",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/19.jpg",
+    "unique_idx": "19",
+    "prompt": "Extract all text data from the boarding pass and organize them into JSON format, including passenger name, flight number, departure and destination cities, date, gate, boarding time, and seat number.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 116,
+            "prompt_tokens": 1049,
+            "total_tokens": 1165
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "{\n  \"PassengerName\": \"DOE / JOHN\",\n  \"FlightNumber\": \"OKL022\",\n  \"DepartureCity\": \"GLASGOW\",\n  \"DestinationCity\": \"LONDON\",\n  \"Gate\": \"45\",\n  \"BoardingTime\": \"10:30\",\n  \"Date\": \"12 NOV 2018\",\n  \"SeatNumber\": \"26A\"\n}"
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "{\n  \"PassengerName\": \"DOE / JOHN\",\n  \"FlightNumber\": \"OKL022\",\n  \"DepartureCity\": \"GLASGOW\",\n  \"DestinationCity\": \"LONDON\",\n  \"Gate\": \"45\",\n  \"BoardingTime\": \"10:30\",\n  \"Date\": \"12 NOV 2018\",\n  \"SeatNumber\": \"26A\"\n}",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 10.192246913909912,
+    "code": 200,
+    "current_time": "2024-04-30 13:01:53"
+}

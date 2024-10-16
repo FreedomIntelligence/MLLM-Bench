@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the stroke is a smash, clear, or drop shot based on player's posture and racket angle.\n2. Describe a logical sequence of potential rallies considering the identified stroke type.\n3. Ensure the response is aligned with badminton rules and realistic gameplay dynamics.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/381.png",
+    "unique_idx": "381",
+    "prompt": "Given the image, predict the type of stroke that the jumping player is likely to perform, and generate a sequence of potential rallies that could follow from this moment",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 174,
+            "prompt_tokens": 1041,
+            "total_tokens": 1215
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The jumping player is likely to perform a drop shot, as indicated by the high racket angle and the player's body orientation towards the net. The player's feet are off the ground, suggesting a powerful jump, which is often used to generate a fast and low shot that is difficult to return.\n\nPotential rally sequence:\n1. Jumping player performs a drop shot.\n2. Receiver attempts to reach the low shot, possibly with a backhand stroke.\n3. Jumping player prepares for a quick net play, anticipating a weak return.\n4. If the receiver fails to return the drop shot, the jumping player scores a point.\n5. If the receiver manages to return, the rally continues with both players exchanging quick, short shots, with the jumping player trying to maintain an aggressive position near the net."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The jumping player is likely to perform a drop shot, as indicated by the high racket angle and the player's body orientation towards the net. The player's feet are off the ground, suggesting a powerful jump, which is often used to generate a fast and low shot that is difficult to return.\n\nPotential rally sequence:\n1. Jumping player performs a drop shot.\n2. Receiver attempts to reach the low shot, possibly with a backhand stroke.\n3. Jumping player prepares for a quick net play, anticipating a weak return.\n4. If the receiver fails to return the drop shot, the jumping player scores a point.\n5. If the receiver manages to return, the rally continues with both players exchanging quick, short shots, with the jumping player trying to maintain an aggressive position near the net.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 14.601211786270142,
+    "code": 200,
+    "current_time": "2024-04-30 14:43:02"
+}

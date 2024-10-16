@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/F-tTyHGaYAAsFS8?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Confirm stage of game matches 'semifinals' and teams as 'JD Gaming' and 'T1'.\n2. Verify date and time accuracy with 'Nov. 12th, 4 p.m.' reference.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/18.jpg",
+    "unique_idx": 18,
+    "prompt": "Determine the competition information in the picture, such as stage of the game, team information, etc.",
+    "context": "Determine the competition information in the picture, such as stage of the game, team information, etc.",
+    "sample_id": 18,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/18.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "The image is a promotional poster for a League of Legends Worlds 2023 semifinal match. The details are as follows:\n\n- **Event**: League of Legends Worlds 2023\n- **Stage**: Semifinals\n- **Format**: Best of 5\n- **Date and Time**: November 12, 2023, at 4:00 PM PHT\n- **Teams**: JD Gaming vs. T1\n- **Trophy**: The Worlds trophy is prominently displayed at the bottom of the poster.\n- **Slogan**: \"The Grind, The Glory\"\n\nThe poster features the logos of both teams, JD Gaming and T1, and is designed with a blue and black color scheme, emphasizing the high-stakes nature of the semifinal match.",
+    "response_from_model": {
+        "id": "gen-1728907489-kcwEUAQJZZPy8pPTi515",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728907489,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image is a promotional poster for a League of Legends Worlds 2023 semifinal match. The details are as follows:\n\n- **Event**: League of Legends Worlds 2023\n- **Stage**: Semifinals\n- **Format**: Best of 5\n- **Date and Time**: November 12, 2023, at 4:00 PM PHT\n- **Teams**: JD Gaming vs. T1\n- **Trophy**: The Worlds trophy is prominently displayed at the bottom of the poster.\n- **Slogan**: \"The Grind, The Glory\"\n\nThe poster features the logos of both teams, JD Gaming and T1, and is designed with a blue and black color scheme, emphasizing the high-stakes nature of the semifinal match.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 43,
+            "completion_tokens": 167,
+            "total_tokens": 210
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:04:58"
+}

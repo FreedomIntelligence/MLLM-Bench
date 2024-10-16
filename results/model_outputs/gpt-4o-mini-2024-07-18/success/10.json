@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/F-Qz_HoXQAAnic9?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify dishes with add-on options and their respective costs (e.g., \"add blue cheese for £1\").",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/10.jpg",
+    "unique_idx": 10,
+    "prompt": "Which dishes can have extra ingredients added, and what is the cost of adding ingredients?",
+    "context": "Which dishes can have extra ingredients added, and what is the cost of adding ingredients?",
+    "sample_id": 10,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/10.jpg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "Here are the dishes that can have extra ingredients added, along with the costs for those additions:\n\n### Cold Starters:\n1. **Tomato & Onion Salad**  \n   - Add blue cheese for **£1**.\n   \n2. **Bruschetta al Pomodoro**  \n   - Add grilled goat's cheese for **£1**.\n\n3. **Cocktail Di Gamberi Rossi**  \n   - Add smoked salmon for **£1**.\n\n### Hot Starters:\n1. **Pane All'Aglio**  \n   - Additional toppings:\n     - Mozzarella cheese: **£2**\n     - Fresh rosemary & sea salt: **£1**\n     - Tomato & fresh basil: **£1**\n     - Goat's cheese & caramelised onion: **£2**\n     - Rocket & parmesan: **£2**.\n\n### Pasta Dishes:\n1. **Spaghetti Carbonara**  \n   - Add chicken for **£2**.\n\nThese are the options available for adding extra ingredients along with their costs.",
+    "response_from_model": {
+        "id": "chatcmpl-AIBMHlmc92yf7BWIBudxAbfNp59GA",
+        "object": "chat.completion",
+        "created": 1728896929,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here are the dishes that can have extra ingredients added, along with the costs for those additions:\n\n### Cold Starters:\n1. **Tomato & Onion Salad**  \n   - Add blue cheese for **£1**.\n   \n2. **Bruschetta al Pomodoro**  \n   - Add grilled goat's cheese for **£1**.\n\n3. **Cocktail Di Gamberi Rossi**  \n   - Add smoked salmon for **£1**.\n\n### Hot Starters:\n1. **Pane All'Aglio**  \n   - Additional toppings:\n     - Mozzarella cheese: **£2**\n     - Fresh rosemary & sea salt: **£1**\n     - Tomato & fresh basil: **£1**\n     - Goat's cheese & caramelised onion: **£2**\n     - Rocket & parmesan: **£2**.\n\n### Pasta Dishes:\n1. **Spaghetti Carbonara**  \n   - Add chicken for **£2**.\n\nThese are the options available for adding extra ingredients along with their costs."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 36859,
+            "completion_tokens": 210,
+            "total_tokens": 37069
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:08:51"
+}

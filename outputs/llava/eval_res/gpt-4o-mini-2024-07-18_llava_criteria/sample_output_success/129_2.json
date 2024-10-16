@@ -1,0 +1,35 @@
+{
+    "unique_idx": "129_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nAssess the intensity of the emotion on a scale (e.g., mild, moderate, severe) and justify the assessment based on visual cues.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe intensity of the emotion displayed in the image can be assessed as **severe**. \n\nJustification for this assessment includes:\n\n1. **Facial Expression**: The character has furrowed brows and narrowed eyes, which typically indicate anger or frustration. The tight-lipped expression further emphasizes a strong emotional response.\n\n2. **Color**: The character's bright red color is often associated with intense emotions such as anger. \n\n3. **Body Language**: The character's stance, with arms at the sides and a rigid posture, suggests a readiness to react, reinforcing the sense of heightened emotion.\n\nOverall, these visual cues combine to convey a strong, intense feeling of anger.\n~~~\n~~~Answer2\nThe intensity of the emotion on this angry face can be assessed as severe. The visual cues indicating this level of intensity include the character's wide-opened eyes, furrowed brow, and tightly clenched teeth as they make a face of anger and frustration. The red color of the character's face also contributes to the intensity of the expression, as red is often associated with strong emotions or danger. Overall, these visual cues give the impression of a highly intense and severe emotional state.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Assess if the identified emotion matches the character's facial expression (e.g., angry, frustrated).\n2. Rate the intensity of the emotion as moderate, or severe.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/129.jpg",
+    "model_1": "gpt-4o-mini-2024-07-18",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The intensity of the emotion displayed in the image can be assessed as **severe**. \n\nJustification for this assessment includes:\n\n1. **Facial Expression**: The character has furrowed brows and narrowed eyes, which typically indicate anger or frustration. The tight-lipped expression further emphasizes a strong emotional response.\n\n2. **Color**: The character's bright red color is often associated with intense emotions such as anger. \n\n3. **Body Language**: The character's stance, with arms at the sides and a rigid posture, suggests a readiness to react, reinforcing the sense of heightened emotion.\n\nOverall, these visual cues combine to convey a strong, intense feeling of anger.",
+    "raw_answer2": "The intensity of the emotion on this angry face can be assessed as severe. The visual cues indicating this level of intensity include the character's wide-opened eyes, furrowed brow, and tightly clenched teeth as they make a face of anger and frustration. The red color of the character's face also contributes to the intensity of the expression, as red is often associated with strong emotions or danger. Overall, these visual cues give the impression of a highly intense and severe emotional state.",
+    "response": {
+        "id": "chatcmpl-AIt92ri3ybMV04tG9EeXR5a5rfMMT",
+        "object": "chat.completion",
+        "created": 1729065244,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1287,
+            "completion_tokens": 2,
+            "total_tokens": 1289
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.2175962924957275,
+    "code": 200,
+    "current_time": "2024-10-16 15:54:05"
+}

@@ -1,0 +1,93 @@
+{
+    "unique_idx": "23_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nIdentify the phase of the hunting sequence the eagle is in.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe eagle is in the phase where it is either preparing to catch its prey or has just captured it. In the image, the eagle is in flight and has its wings fanned out, which indicates that it is actively engaged in its hunting process. The eagle could be in the initial stage where it is scanning the surroundings, or it might be in the final stage where it has successfully grabbed its prey and is preparing to return to its nest or another safe location. Eagles typically have exceptional eyesight and precision, making them highly adept at capturing their prey during these flying sequences.\n~~~\n~~~Answer2\n The phase of the hunting sequence the eagle is in can be identified by observing its behavior. Eagles typically follow a sequence that includes:\n\n1. **Searching:** The eagle scans the ground or water from a high vantage point, using its keen eyesight to spot potential prey.\n\n2. **Stalking:** Once a target is identified, the eagle will circle or follow the prey closely, minimizing its visibility and movement as much as possible.\n\n3. **Diving:** When the eagle is ready to strike, it will dive toward the prey at high speed, using gravity to increase its velocity.\n\n4. **Capturing:** The eagle will spread its talons and snatch the prey out of the air or from the ground.\n\n5. **Killing:** If the prey is not already dead from the impact, the eagle will use its talons and beak to kill it.\n\n6. **Carrying:** The eagle will carry the prey back to its nest or a safe location to eat.\n\n7. **Feeding:** The eagle will consume its meal, often starting with the most nutritious parts.\n\nTo identify the specific phase, one must observe the eagle's current actions and compare them to the aforementioned sequence.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm eagle has caught prey, based on talon-prey contact and relative position.\n2. Describe the eagle's action, indicating the hunting sequence phase.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/23.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "microsoft/phi-3-medium-128k-instruct",
+    "raw_answer1": "The eagle is in the phase where it is either preparing to catch its prey or has just captured it. In the image, the eagle is in flight and has its wings fanned out, which indicates that it is actively engaged in its hunting process. The eagle could be in the initial stage where it is scanning the surroundings, or it might be in the final stage where it has successfully grabbed its prey and is preparing to return to its nest or another safe location. Eagles typically have exceptional eyesight and precision, making them highly adept at capturing their prey during these flying sequences.",
+    "raw_answer2": " The phase of the hunting sequence the eagle is in can be identified by observing its behavior. Eagles typically follow a sequence that includes:\n\n1. **Searching:** The eagle scans the ground or water from a high vantage point, using its keen eyesight to spot potential prey.\n\n2. **Stalking:** Once a target is identified, the eagle will circle or follow the prey closely, minimizing its visibility and movement as much as possible.\n\n3. **Diving:** When the eagle is ready to strike, it will dive toward the prey at high speed, using gravity to increase its velocity.\n\n4. **Capturing:** The eagle will spread its talons and snatch the prey out of the air or from the ground.\n\n5. **Killing:** If the prey is not already dead from the impact, the eagle will use its talons and beak to kill it.\n\n6. **Carrying:** The eagle will carry the prey back to its nest or a safe location to eat.\n\n7. **Feeding:** The eagle will consume its meal, often starting with the most nutritious parts.\n\nTo identify the specific phase, one must observe the eagle's current actions and compare them to the aforementioned sequence.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Answer2",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1729069473,
+        "id": "chatcmpl-AIuFFNghw3LvqArHYLlfo4dJ24GhH",
+        "model": "gpt-4-turbo-2024-04-09",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_result": {
+                    "jailbreak": {
+                        "filtered": false,
+                        "detected": false
+                    },
+                    "custom_blocklists": {
+                        "filtered": false,
+                        "details": []
+                    }
+                }
+            },
+            {
+                "prompt_index": 1,
+                "content_filter_result": {
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "custom_blocklists": {
+                        "filtered": false,
+                        "details": []
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 1733,
+            "total_tokens": 1735
+        }
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.600034713745117,
+    "code": 200,
+    "current_time": "2024-10-16 17:04:34"
+}

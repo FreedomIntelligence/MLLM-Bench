@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/F91QfgiWgAAphUD?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Confirm the song \"Future (Lollapalooza ver.)\" is correctly identified and its play count.\n2. Check OCR accuracy for the number of times played against the reference: 271.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/13.jpeg",
+    "unique_idx": 13,
+    "prompt": "The image shows a receipt from 'Receiptify', an application that generates a music listening receipt based on a user's listening history. Based on the image, what is the number of times the song Future(Lollapalooza ver.) was played?",
+    "context": "The image shows a receipt from 'Receiptify', an application that generates a music listening receipt based on a user's listening history. Based on the image, what is the number of times the song Future(Lollapalooza ver.) was played?",
+    "sample_id": 13,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/13.jpeg"
+    ],
+    "gen_model_id": "mistralai/pixtral-12b",
+    "answer": "The receipt shows the number of times each song was played. To find out how many times the song \"Future (Lollapalooza ver.)\" was played, we need to locate the entry for this song on the receipt and note the quantity listed next to it.\n\nThe song \"Future (Lollapalooza ver.)\" appears twice on the receipt. The quantities listed are 271 and 251.\n\nAdding these quantities together gives us the total number of times the song was played.\n\n271 + 251 = 522\n\nSo, the song \"Future (Lollapalooza ver.)\" was played 522 times.",
+    "response_from_model": {
+        "id": "gen-1728915642-vFIzDjACdLPl6oyjpipr",
+        "provider": "Mistral",
+        "model": "mistralai/pixtral-12b",
+        "object": "chat.completion",
+        "created": 1728915642,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The receipt shows the number of times each song was played. To find out how many times the song \"Future (Lollapalooza ver.)\" was played, we need to locate the entry for this song on the receipt and note the quantity listed next to it.\n\nThe song \"Future (Lollapalooza ver.)\" appears twice on the receipt. The quantities listed are 271 and 251.\n\nAdding these quantities together gives us the total number of times the song was played.\n\n271 + 251 = 522\n\nSo, the song \"Future (Lollapalooza ver.)\" was played 522 times.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1782,
+            "completion_tokens": 144,
+            "total_tokens": 1926
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-22:20:46"
+}

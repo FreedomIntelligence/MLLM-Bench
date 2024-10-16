@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://thumbs.dreamstime.com/z/handwritten-math-text-grouped-isolated-white-vector-illustration-quadratic-equation-formula-decision-scheme-trigonometric-188860394.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Accurate conversion of handwritten quadratic equation to LaTeX, including powers and coefficients.\n2. Correct use of LaTeX syntax for fractions, square roots, and plus-minus sign.\n3. Preservation of the equation's structure and sequence as shown in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/379.jpg",
+    "unique_idx": 379,
+    "prompt": "Use latex grammar to convert the equations in the image into latex formulas.",
+    "context": "Use latex grammar to convert the equations in the image into latex formulas.",
+    "sample_id": 379,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/379.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The equations in the image can be converted into LaTeX formulas as follows:\n\n```latex\n\\begin{align*}\nax^2 + bx + c &= 0 \\\\\na(x^2 + \\frac{bx}{a} + \\frac{c}{a}) &= 0 \\\\\nx^2 + 2\\frac{b}{2a}x + (\\frac{b}{2a})^2 - (\\frac{b}{2a})^2 + \\frac{c}{a} &= 0 \\\\\n(x + \\frac{b}{2a})^2 - \\frac{b^2 - 4ac}{4a^2} &= 0 \\\\\n(x + \\frac{b}{2a} - \\frac{\\sqrt{b^2 - 4ac}}{2a})(x + \\frac{b}{2a} + \\frac{\\sqrt{b^2 - 4ac}}{2a}) &= 0 \\\\\nx &= \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n\\end{align*}\n```",
+    "response_from_model": {
+        "id": "gen-1728903878-mg4NnVse4HHa1UvEfqXH",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903878,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The equations in the image can be converted into LaTeX formulas as follows:\n\n```latex\n\\begin{align*}\nax^2 + bx + c &= 0 \\\\\na(x^2 + \\frac{bx}{a} + \\frac{c}{a}) &= 0 \\\\\nx^2 + 2\\frac{b}{2a}x + (\\frac{b}{2a})^2 - (\\frac{b}{2a})^2 + \\frac{c}{a} &= 0 \\\\\n(x + \\frac{b}{2a})^2 - \\frac{b^2 - 4ac}{4a^2} &= 0 \\\\\n(x + \\frac{b}{2a} - \\frac{\\sqrt{b^2 - 4ac}}{2a})(x + \\frac{b}{2a} + \\frac{\\sqrt{b^2 - 4ac}}{2a}) &= 0 \\\\\nx &= \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n\\end{align*}\n```",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 36,
+            "completion_tokens": 232,
+            "total_tokens": 268
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:05:19"
+}

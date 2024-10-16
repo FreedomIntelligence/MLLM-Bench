@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/Eg4Hv0BUMAE0xCV?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Code must generate a bar chart with two bars per country, matching colors and labels.\n2. Bars must reflect the correct numerical values and country order from the image.\n3. Include source label and chart title as displayed in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/373.jpeg",
+    "unique_idx": "373",
+    "prompt": "You are now required to write a Python code based on an image to replicate the data image in the picture as closely as possible.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 1024,
+            "prompt_tokens": 1036,
+            "total_tokens": 2060
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To replicate the data image in the picture using Python, we'll use libraries such as `matplotlib` for plotting the bar chart and `pandas` for data manipulation. Below is a Python code snippet that attempts to recreate the chart based on the data provided in the image:\n\n```python\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n# Sample data: Replace this with the actual data\ndata = {\n    'Country': ['Spain', 'UK', 'Italy', 'Euro area', 'Europe', 'France', 'Germany', 'Japan', 'USA', 'China', 'India', 'South Korea', 'Vietnam', 'Indonesia', 'Colombia', 'Czech Republic', 'Poland', 'Australia', 'Netherlands', 'Belgium', 'Canada', 'Hong Kong', 'Romania', 'Sweden', 'Singapore', 'Switzerland', 'Norway', 'Portugal', 'Iceland', 'Denmark', 'Russia', 'Malaysia', 'Mexico', 'South Africa', 'Philippines', 'Hungary', 'Bulgaria', 'Ireland', 'Finland', 'Saudi Arabia', 'Brazil', 'Moldova', 'Ukraine', 'Kazakhstan', 'Latvia', 'Lithuania', 'Luxembourg', 'Estonia', 'Morocco', 'Israel', 'Croatia', 'Serbia', 'Slovenia', 'Austria', 'Cyprus', 'Georgia', 'Macedonia', 'Malta', 'Panama', 'Peru', 'Qatar', 'Saudi Arabia', 'Tunisia', 'Turkey', 'United Arab Emirates', 'Albania', 'Bosnia and Herzegovina', 'Egypt', 'Ghana', 'Kenya', 'Lebanon', 'Nigeria', 'Nicaragua', 'Pakistan', 'Palestine', 'Panama', 'Paraguay', 'Peru', 'Saudi Arabia', 'Senegal', 'Sri Lanka', 'Tunisia', 'Ukraine', 'Uruguay', 'Venezuela', 'Yemen'],\n    '2020_Q2': [-25, -22, -22, -19, -19, -17, -16, -16, -15, -15, -13, -12, -12, -11, -10, -10, -10, -9, -9, -9, -9, -8, -8, -8, -8, -8, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7,"
+                },
+                "finish_reason": "length"
+            }
+        ]
+    },
+    "answer": "To replicate the data image in the picture using Python, we'll use libraries such as `matplotlib` for plotting the bar chart and `pandas` for data manipulation. Below is a Python code snippet that attempts to recreate the chart based on the data provided in the image:\n\n```python\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n# Sample data: Replace this with the actual data\ndata = {\n    'Country': ['Spain', 'UK', 'Italy', 'Euro area', 'Europe', 'France', 'Germany', 'Japan', 'USA', 'China', 'India', 'South Korea', 'Vietnam', 'Indonesia', 'Colombia', 'Czech Republic', 'Poland', 'Australia', 'Netherlands', 'Belgium', 'Canada', 'Hong Kong', 'Romania', 'Sweden', 'Singapore', 'Switzerland', 'Norway', 'Portugal', 'Iceland', 'Denmark', 'Russia', 'Malaysia', 'Mexico', 'South Africa', 'Philippines', 'Hungary', 'Bulgaria', 'Ireland', 'Finland', 'Saudi Arabia', 'Brazil', 'Moldova', 'Ukraine', 'Kazakhstan', 'Latvia', 'Lithuania', 'Luxembourg', 'Estonia', 'Morocco', 'Israel', 'Croatia', 'Serbia', 'Slovenia', 'Austria', 'Cyprus', 'Georgia', 'Macedonia', 'Malta', 'Panama', 'Peru', 'Qatar', 'Saudi Arabia', 'Tunisia', 'Turkey', 'United Arab Emirates', 'Albania', 'Bosnia and Herzegovina', 'Egypt', 'Ghana', 'Kenya', 'Lebanon', 'Nigeria', 'Nicaragua', 'Pakistan', 'Palestine', 'Panama', 'Paraguay', 'Peru', 'Saudi Arabia', 'Senegal', 'Sri Lanka', 'Tunisia', 'Ukraine', 'Uruguay', 'Venezuela', 'Yemen'],\n    '2020_Q2': [-25, -22, -22, -19, -19, -17, -16, -16, -15, -15, -13, -12, -12, -11, -10, -10, -10, -9, -9, -9, -9, -8, -8, -8, -8, -8, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7, -7,",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 77.0067527294159,
+    "code": 200,
+    "current_time": "2024-04-30 14:38:26"
+}

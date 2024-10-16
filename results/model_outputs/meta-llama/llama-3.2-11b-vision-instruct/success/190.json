@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ts1.cn.mm.bing.net/th/id/R-C.7b111abd47ffc37771a3910917def3bd?rik=7qbmO47DiOm%2bog&riu=http%3a%2f%2fmediad.publicbroadcasting.net%2fp%2fshared%2fnpr%2fstyles%2fx_large%2fnprshared%2f201504%2f398803983.jpg&ehk=AppKqkdndo%2fQnbrklTN0KYuK5j1PdX6%2fP4hNBJTlTgw%3d&risl=&pid=ImgRaw&r=0",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately describe the image, noting it's a CT scan, not an ultrasound for CRL measurement.\n2. Explain that CRL is used for gestational age, but not applicable in this CT image.\n3. State that gestational age cannot be determined from the provided CT image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/190.jpg",
+    "unique_idx": 190,
+    "prompt": "Given the image, describe the details in the image and determine the gestational age of the fetus by measuring the crown-rump length (CRL) and comparing it to standard growth charts.",
+    "context": "Given the image, describe the details in the image and determine the gestational age of the fetus by measuring the crown-rump length (CRL) and comparing it to standard growth charts.",
+    "sample_id": 190,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/190.jpg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "**Step 1: Identify the details in the image.**\n\nThe image shows a transverse section of the abdomen, with the fetus positioned in the uterus. The crown-rump length (CRL) is the distance from the top of the head (crown) to the buttocks (rump). In this image, the CRL appears to be approximately 5.5 cm.\n\n**Step 2: Determine the gestational age based on the CRL.**\n\nTo determine the gestational age, we need to refer to standard growth charts for fetuses. According to these charts, a CRL of 5.5 cm corresponds to a gestational age of around 12-13 weeks.\n\n**Answer:** 12-13 weeks",
+    "response_from_model": {
+        "id": "gen-1728905385-KfBZn4jTey2vGeRO7Tt2",
+        "provider": "Fireworks",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905385,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "**Step 1: Identify the details in the image.**\n\nThe image shows a transverse section of the abdomen, with the fetus positioned in the uterus. The crown-rump length (CRL) is the distance from the top of the head (crown) to the buttocks (rump). In this image, the CRL appears to be approximately 5.5 cm.\n\n**Step 2: Determine the gestational age based on the CRL.**\n\nTo determine the gestational age, we need to refer to standard growth charts for fetuses. According to these charts, a CRL of 5.5 cm corresponds to a gestational age of around 12-13 weeks.\n\n**Answer:** 12-13 weeks",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6454,
+            "completion_tokens": 152,
+            "total_tokens": 202
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:29:47"
+}

@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://pbs.twimg.com/media/GAGncYDXsAAGJAO?format=jpg&name=small",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe any visible anomalies in the stomach lining, such as abnormal growths or coloration.\n2. Describe the overall condition of the stomach mucosa, including texture and vascular pattern.\n3. Mention the presence of any normal anatomical structures, such as gastric folds.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/196.jpeg",
+    "unique_idx": 196,
+    "prompt": "Given the endoscopy image of the stomach, describe the image in detail and identify anomalies visible in the image.",
+    "context": "Given the endoscopy image of the stomach, describe the image in detail and identify anomalies visible in the image.",
+    "sample_id": 196,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/196.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The endoscopy image depicts the interior of the stomach. The stomach lining appears to be inflamed and has a reddish-pink hue with visible vessels and capillaries. There are also some areas that appear more pronounced or elevated, which could be indicative of ulcers, lesions, or other abnormalities. The overall appearance suggests inflammation or irritation of the stomach lining. \n\nAnomalies visible in the image include:\n1. Increased vascularization and capillaries visible on the stomach wall.\n2. Elevated or nodular areas on the stomach wall, which could be indicative of ulcers or lesions.\n3. The overall redness and inflammation of the stomach lining.",
+    "response_from_model": {
+        "id": "gen-1728903703-hLhEBgJ8sfiwubeD7xSQ",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903703,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The endoscopy image depicts the interior of the stomach. The stomach lining appears to be inflamed and has a reddish-pink hue with visible vessels and capillaries. There are also some areas that appear more pronounced or elevated, which could be indicative of ulcers, lesions, or other abnormalities. The overall appearance suggests inflammation or irritation of the stomach lining. \n\nAnomalies visible in the image include:\n1. Increased vascularization and capillaries visible on the stomach wall.\n2. Elevated or nodular areas on the stomach wall, which could be indicative of ulcers or lesions.\n3. The overall redness and inflammation of the stomach lining.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 45,
+            "completion_tokens": 136,
+            "total_tokens": 181
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:02:12"
+}

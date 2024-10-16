@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "NaN",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify author as \"Kai Hwang\" and match to reference \"黄铠\".\n2. Recognize and list translators \"袁志勇, 杜瑞颖, 张立强, 伍春香, 蔡朝晖\".\n3. Describe book's subject, aligning with \"Cloud Computing for Machine Learning and Cognitive Applications\".",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/61.jpg",
+    "unique_idx": "61",
+    "prompt": "Please answer the following questions according to the given image. Who is the author of this book? Who are the translator of this book? What is this book about?",
+    "response": {
+        "id": "chatcmpl-88d75c33730f4a6ca1191d821548e147",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930353,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " **Author:** Kai Hwang\n**Translator:** 袁春风,杜哲,李超群,徐存礼,李明\n\nThe book is about cloud computing for machine learning and cognitive applications. It introduces the basics of cloud computing and machine learning, and then discusses how to use cloud computing to accelerate machine learning algorithms. The book also covers a variety of topics related to cloud computing for machine learning, such as data storage, security, and scalability."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 805,
+            "completion_tokens": 103,
+            "total_tokens": 908
+        }
+    },
+    "answer": " **Author:** Kai Hwang\n**Translator:** 袁春风,杜哲,李超群,徐存礼,李明\n\nThe book is about cloud computing for machine learning and cognitive applications. It introduces the basics of cloud computing and machine learning, and then discusses how to use cloud computing to accelerate machine learning algorithms. The book also covers a variety of topics related to cloud computing for machine learning, such as data storage, security, and scalability.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 12.204912900924683,
+    "code": 200,
+    "current_time": "2024-04-12 21:59:13"
+}

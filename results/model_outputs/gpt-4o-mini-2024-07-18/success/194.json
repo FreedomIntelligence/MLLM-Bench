@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ecgwaves.com/wp-content/uploads/2021/06/ECG-example-Normal-ECG-with-sinus-rhythm-2-1396x1536.png",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify and describe P wave, QRS complex, T wave as per reference.\n2. Detect any deviations from the normal ECG waveform pattern.\n3. Comment on rhythm regularity, wave amplitude, and intervals between waves.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/194.png",
+    "unique_idx": 194,
+    "prompt": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "context": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "sample_id": 194,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/194.png"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "In the ECG waveform, the key components are:\n\n1. **P Wave**: Represents atrial depolarization.\n2. **QRS Complex**: Represents ventricular depolarization.\n   - **Q Wave**: Initial downward deflection.\n   - **R Wave**: The upward deflection.\n   - **S Wave**: The downward deflection following the R wave.\n3. **T Wave**: Represents ventricular repolarization.\n4. **U Wave**: Sometimes seen, representing repolarization of the Purkinje fibers.\n\n### Identifying Abnormalities\n\nTo identify abnormalities in the ECG:\n\n1. **P Wave Abnormalities**: Look for changes in shape or height, which may indicate atrial enlargement.\n2. **QRS Complex**: \n   - Prolonged QRS may suggest bundle branch block or ventricular hypertrophy.\n   - Abnormal Q waves can indicate previous myocardial infarction.\n3. **T Wave Changes**: \n   - Inverted T waves can indicate ischemia.\n   - Tall, peaked T waves may suggest hyperkalemia.\n4. **Rhythm**: Check for regularity. Irregular rhythms may indicate atrial fibrillation or other arrhythmias.\n5. **ST Segment**: Elevation or depression can indicate myocardial ischemia or infarction.\n\n### Observations\n\nWithout specific details on the waveform, look for:\n\n- Regularity of the rhythm.\n- The morphology of P, QRS, and T waves.\n- Any significant deviations from normal intervals (PR, QRS, QT).\n\nIf you have specific abnormalities in mind or need further analysis, please let me know!",
+    "response_from_model": {
+        "id": "chatcmpl-AIBNKDFyGGnNszAGYBFsMedeGci8o",
+        "object": "chat.completion",
+        "created": 1728896994,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "In the ECG waveform, the key components are:\n\n1. **P Wave**: Represents atrial depolarization.\n2. **QRS Complex**: Represents ventricular depolarization.\n   - **Q Wave**: Initial downward deflection.\n   - **R Wave**: The upward deflection.\n   - **S Wave**: The downward deflection following the R wave.\n3. **T Wave**: Represents ventricular repolarization.\n4. **U Wave**: Sometimes seen, representing repolarization of the Purkinje fibers.\n\n### Identifying Abnormalities\n\nTo identify abnormalities in the ECG:\n\n1. **P Wave Abnormalities**: Look for changes in shape or height, which may indicate atrial enlargement.\n2. **QRS Complex**: \n   - Prolonged QRS may suggest bundle branch block or ventricular hypertrophy.\n   - Abnormal Q waves can indicate previous myocardial infarction.\n3. **T Wave Changes**: \n   - Inverted T waves can indicate ischemia.\n   - Tall, peaked T waves may suggest hyperkalemia.\n4. **Rhythm**: Check for regularity. Irregular rhythms may indicate atrial fibrillation or other arrhythmias.\n5. **ST Segment**: Elevation or depression can indicate myocardial ischemia or infarction.\n\n### Observations\n\nWithout specific details on the waveform, look for:\n\n- Regularity of the rhythm.\n- The morphology of P, QRS, and T waves.\n- Any significant deviations from normal intervals (PR, QRS, QT).\n\nIf you have specific abnormalities in mind or need further analysis, please let me know!"
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 25527,
+            "completion_tokens": 336,
+            "total_tokens": 25863
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:09:56"
+}

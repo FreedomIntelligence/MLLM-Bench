@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-Aeu-8awAAaJ2l?format=jpg&name=medium",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/232.jpg",
+    "unique_idx": "232",
+    "prompt": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "response": {
+        "id": "chatcmpl-f5aba6a6296649cb96bea93517e08ef0",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930654,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The most commonly used aircraft type for domestic flights is the ATR. Out of the 23 domestic flights listed, 10 are operated by ATR aircraft."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 804,
+            "completion_tokens": 32,
+            "total_tokens": 836
+        }
+    },
+    "answer": " The most commonly used aircraft type for domestic flights is the ATR. Out of the 23 domestic flights listed, 10 are operated by ATR aircraft.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 4.931115388870239,
+    "code": 200,
+    "current_time": "2024-04-12 22:04:14"
+}

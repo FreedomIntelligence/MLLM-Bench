@@ -1,0 +1,35 @@
+{
+    "unique_idx": "365_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nCraft a narrative poem on political activism's fervor and the spectrum of public opinion in cityscape demonstrations.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nIn the city's heart, a demonstration bright,\nWhere banners wave and voices unite,\nA call to action, a stand to take,\nFor change that echoes, a new day to make.\n\nAmidst the throngs, a flag doth fly,\nA plea so bold, a message high,\n\"Stop, Trump!\" it cries with fiery might,\nA call to end the strife, a new light.\n\nSome stand with pride, in uniforms of blue,\nTheir voices strong, their hearts true,\nSupporting change, for justice's sake,\nTheir hearts alight, their spirits awake.\n\nOthers in gray, a silent crowd,\nTheir faces masked, their voices loud,\nA silent protest, a hidden might,\nTheir voices strong, their hearts in flight.\n\nThe streets are filled with color and sound,\nA tapestry of voices, a grand round,\nA mix of views, a spectrum wide,\nEach one a voice, a story to guide.\n\nFrom the young and bold, to the old and wise,\nEach one a part, in this grand ruse,\nA call to action, a new day to make,\nFor justice's sake, for freedom's sake.\n\nIn this cityscape, a demonstration bright,\nWhere voices rise, and hearts take flight,\nA call to action, a new day to make,\nFor change that echoes, a new day to take.\n~~~\n~~~Answer2\nIn the heart of the city, on a bustling street,\nA crowd gathered, with protesters in retreat.\nTheir fervor for change, their voices united,\nIn the name of justice, they stood all conspired.\n\nOn the corner of a downtown intersection,\nA Trump placard waved with strong affliction.\nAmidst the crowd, a man raised his hand,\nWith the sign, he stood as a bold champion.\n\nIn the image, some with Trump placards in hand,\nOthers with signs, voicing their dissent.\nA diverse group of people, opinions vast,\nIn the city landscape, their voices never past.\n\nThe intersection became a platform for the clash,\nA space for voices that couldn't be rushed.\nWith traffic lights above, the scene unfolded,\nA reflection of the nation's deeply rooted.\n\nVarious viewpoints, perspectives, and beliefs,\nThe city's vibrant colors, a canvas for griefs.\nThe people's voices, like a symphony,\nEchoing throughout the bustling reality.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Poem includes city demonstration with a \"STOP TRUMP\" sign, reflecting political activism.\n2. Narrative captures the fervor of activism and spectrum of public opinion.\n3. Poem structure and language quality align with narrative poetry conventions.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/365.jpeg",
+    "model_1": "qwen/qwen-2-vl-7b-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "In the city's heart, a demonstration bright,\nWhere banners wave and voices unite,\nA call to action, a stand to take,\nFor change that echoes, a new day to make.\n\nAmidst the throngs, a flag doth fly,\nA plea so bold, a message high,\n\"Stop, Trump!\" it cries with fiery might,\nA call to end the strife, a new light.\n\nSome stand with pride, in uniforms of blue,\nTheir voices strong, their hearts true,\nSupporting change, for justice's sake,\nTheir hearts alight, their spirits awake.\n\nOthers in gray, a silent crowd,\nTheir faces masked, their voices loud,\nA silent protest, a hidden might,\nTheir voices strong, their hearts in flight.\n\nThe streets are filled with color and sound,\nA tapestry of voices, a grand round,\nA mix of views, a spectrum wide,\nEach one a voice, a story to guide.\n\nFrom the young and bold, to the old and wise,\nEach one a part, in this grand ruse,\nA call to action, a new day to make,\nFor justice's sake, for freedom's sake.\n\nIn this cityscape, a demonstration bright,\nWhere voices rise, and hearts take flight,\nA call to action, a new day to make,\nFor change that echoes, a new day to take.",
+    "raw_answer2": "In the heart of the city, on a bustling street,\nA crowd gathered, with protesters in retreat.\nTheir fervor for change, their voices united,\nIn the name of justice, they stood all conspired.\n\nOn the corner of a downtown intersection,\nA Trump placard waved with strong affliction.\nAmidst the crowd, a man raised his hand,\nWith the sign, he stood as a bold champion.\n\nIn the image, some with Trump placards in hand,\nOthers with signs, voicing their dissent.\nA diverse group of people, opinions vast,\nIn the city landscape, their voices never past.\n\nThe intersection became a platform for the clash,\nA space for voices that couldn't be rushed.\nWith traffic lights above, the scene unfolded,\nA reflection of the nation's deeply rooted.\n\nVarious viewpoints, perspectives, and beliefs,\nThe city's vibrant colors, a canvas for griefs.\nThe people's voices, like a symphony,\nEchoing throughout the bustling reality.",
+    "response": {
+        "id": "chatcmpl-AIuTNYKXNEMmX3mjxh0iXCRP6bRcT",
+        "object": "chat.completion",
+        "created": 1729070349,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1562,
+            "completion_tokens": 2,
+            "total_tokens": 1564
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 10.279531478881836,
+    "code": 200,
+    "current_time": "2024-10-16 17:19:10"
+}

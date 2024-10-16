@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://images.unsplash.com/photo-1600320254374-ce2d293c324e",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer includes \"slow down till stop\" or \"turn left to adjacent lane\" based on visual cues.\n2. Response must consider traffic conditions and road layout visible in the image.\n3. Answer must be logically consistent with the driver's possible actions in the given context.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/386.jpg",
+    "unique_idx": "386",
+    "prompt": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Based on the visual cues in the image, it appears that the driver is operating a vehicle on a road with other cars visible in front. The driver has a smartphone mounted on the dashboard, which is displaying a navigation map, suggesting that they are using a GPS application to guide their route. The driver's hand is on the steering wheel, indicating that they are actively driving. Given these observations, it is likely that the driver will continue to follow the directions provided by the GPS to reach their destination, while also paying attention to the road and traffic conditions ahead.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717427300,
+        "id": "chatcmpl-9W3aGXb2UjL4ERfNLsjAPK3uXGqhR",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 112,
+            "prompt_tokens": 1131,
+            "total_tokens": 1243
+        }
+    },
+    "answer": "Based on the visual cues in the image, it appears that the driver is operating a vehicle on a road with other cars visible in front. The driver has a smartphone mounted on the dashboard, which is displaying a navigation map, suggesting that they are using a GPS application to guide their route. The driver's hand is on the steering wheel, indicating that they are actively driving. Given these observations, it is likely that the driver will continue to follow the directions provided by the GPS to reach their destination, while also paying attention to the road and traffic conditions ahead.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 15.793068408966064,
+    "code": 200,
+    "current_time": "2024-06-03 23:08:26"
+}

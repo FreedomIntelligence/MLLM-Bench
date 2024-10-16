@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the stroke is a smash, clear, or drop shot based on player's posture and racket angle.\n2. Describe a logical sequence of potential rallies considering the identified stroke type.\n3. Ensure the response is aligned with badminton rules and realistic gameplay dynamics.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/381.png",
+    "unique_idx": "381",
+    "prompt": "Given the image, predict the type of stroke that the jumping player is likely to perform, and generate a sequence of potential rallies that could follow from this moment",
+    "response": {
+        "id": "chatcmpl-75a49199c52144569f7185f1181ff32f",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930951,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " Judging by the position of the players and the shuttle, it is likely that the player in mid-air will perform a smash. A smash is a powerful overhead stroke that is typically used to win a point.\n\nAfter the player in mid-air performs the smash, the opponent may attempt to return the shuttle with a defensive stroke, such as a block or a lift. If the opponent is successful in returning the shuttle, the player who performed the smash may then attempt to hit the shuttle again with an attacking stroke, such as a drive or a drop shot. The opponent may then attempt to return the shuttle again, and the rally will continue until one player is unable to return the shuttle.\n\nIt is also possible that the player in mid-air will perform a net shot. A net shot is a soft, controlled stroke that is typically used to place the shuttle near the net. If the opponent is unable to reach the shuttle, the player who performed the net shot may then win the point."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1143,
+            "completion_tokens": 197,
+            "total_tokens": 1340
+        }
+    },
+    "answer": " Judging by the position of the players and the shuttle, it is likely that the player in mid-air will perform a smash. A smash is a powerful overhead stroke that is typically used to win a point.\n\nAfter the player in mid-air performs the smash, the opponent may attempt to return the shuttle with a defensive stroke, such as a block or a lift. If the opponent is successful in returning the shuttle, the player who performed the smash may then attempt to hit the shuttle again with an attacking stroke, such as a drive or a drop shot. The opponent may then attempt to return the shuttle again, and the rally will continue until one player is unable to return the shuttle.\n\nIt is also possible that the player in mid-air will perform a net shot. A net shot is a soft, controlled stroke that is typically used to place the shuttle near the net. If the opponent is unable to reach the shuttle, the player who performed the net shot may then win the point.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 10.389497756958008,
+    "code": 200,
+    "current_time": "2024-04-12 22:09:11"
+}

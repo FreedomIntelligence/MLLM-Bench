@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Emotion Understanding",
+        "url": "https://th.bing.com/th/id/OIP.atWZGIJ2e-7OJMZ42W8E2gHaID?w=1260&h=1371&rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Assess if the identified emotion matches the character's facial expression (e.g., angry, frustrated).\n2. Rate the intensity of the emotion as moderate, or severe.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/129.jpg",
+    "unique_idx": 129,
+    "prompt": "Assess the intensity of the emotion on a scale (e.g., mild, moderate, severe) and justify the assessment based on visual cues.",
+    "context": "Assess the intensity of the emotion on a scale (e.g., mild, moderate, severe) and justify the assessment based on visual cues.",
+    "sample_id": 129,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/129.jpg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " The intensity of the emotion in the given image appears to be moderate. This assessment is based on visual cues such as the subject's facial expression, body language, and context. The subject's eyebrows are slightly furrowed, indicating a mild level of concern or frustration. Their mouth is turned downwards, which commonly signifies a negative emotion, but it is not a full frown, which would suggest a more severe emotion. The subject's shoulders are slightly hunched, suggesting a defensive or withdrawn posture, but they are not closed off completely. The context of the image, such as the environment and the subject's interaction with other elements in the scene, can also provide clues about the intensity of the emotion.",
+    "response_from_model": {
+        "id": "gen-1728906356-im9nLnjAX7XUIT38MRFr",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906356,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The intensity of the emotion in the given image appears to be moderate. This assessment is based on visual cues such as the subject's facial expression, body language, and context. The subject's eyebrows are slightly furrowed, indicating a mild level of concern or frustration. Their mouth is turned downwards, which commonly signifies a negative emotion, but it is not a full frown, which would suggest a more severe emotion. The subject's shoulders are slightly hunched, suggesting a defensive or withdrawn posture, but they are not closed off completely. The context of the image, such as the environment and the subject's interaction with other elements in the scene, can also provide clues about the intensity of the emotion.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 40,
+            "completion_tokens": 167,
+            "total_tokens": 207
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:46:00"
+}

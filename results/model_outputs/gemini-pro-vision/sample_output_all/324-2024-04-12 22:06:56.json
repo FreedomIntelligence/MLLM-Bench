@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://knect365.imgix.net/article/images/cacheable/abe5a1ec-a5cb-4ccb-94cb-7e0b900eab78-featured-76c136b913a7dd398bc9fab8d8417f02.jpg?auto=format&fit=max&w=808&dpr=1.75",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the blur is due to low pixel count.\n2. Assess whether motion contributes to the image's blurriness.\n3. Evaluate if focus issues are causing the blur in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/324.jpg",
+    "unique_idx": "324",
+    "prompt": "What makes the image blurry?",
+    "response": {
+        "id": "chatcmpl-e9fb2125e5f34cc19e1de648dfc961ab",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930816,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The image is blurry because the camera was moving when the picture was taken. This can happen if the photographer was panning the camera to follow a moving subject, or if the camera was simply not held steady."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1118,
+            "completion_tokens": 42,
+            "total_tokens": 1160
+        }
+    },
+    "answer": " The image is blurry because the camera was moving when the picture was taken. This can happen if the photographer was panning the camera to follow a moving subject, or if the camera was simply not held steady.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 7.524663686752319,
+    "code": 200,
+    "current_time": "2024-04-12 22:06:56"
+}

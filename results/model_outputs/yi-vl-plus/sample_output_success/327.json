@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://pic1.zhimg.com/80/v2-c634e79231e601f266e99f0a22e06838_1440w.webp",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify changes in exposure, contrast, and color balance between images.\n2. Assess sharpness, noise, and detail preservation in both images.\n3. Evaluate dynamic range, highlighting shadow and highlight detail retention.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/327.jpg",
+    "unique_idx": "327",
+    "prompt": "What happens to the images from left to right?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 127,
+            "prompt_tokens": 1020,
+            "total_tokens": 1147
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The images from left to right show a progression from a darker exposure to a lighter exposure. The left image, labeled \"修改前\" (before modification), appears darker with less visible detail in the shadows, indicating a higher exposure value. The right image, labeled \"修改后\" (after modification), is visibly brighter with more detail exposed in the shadows, indicating a lower exposure value or some form of post-processing to brighten the image. This suggests that the images have been adjusted to show different exposure settings or post-processing effects. Therefore, the answer is \"the images become lighter from left to right\"."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The images from left to right show a progression from a darker exposure to a lighter exposure. The left image, labeled \"修改前\" (before modification), appears darker with less visible detail in the shadows, indicating a higher exposure value. The right image, labeled \"修改后\" (after modification), is visibly brighter with more detail exposed in the shadows, indicating a lower exposure value or some form of post-processing to brighten the image. This suggests that the images have been adjusted to show different exposure settings or post-processing effects. Therefore, the answer is \"the images become lighter from left to right\".",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 10.330540657043457,
+    "code": 200,
+    "current_time": "2024-04-30 14:20:34"
+}

@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ts1.cn.mm.bing.net/th/id/R-C.7b111abd47ffc37771a3910917def3bd?rik=7qbmO47DiOm%2bog&riu=http%3a%2f%2fmediad.publicbroadcasting.net%2fp%2fshared%2fnpr%2fstyles%2fx_large%2fnprshared%2f201504%2f398803983.jpg&ehk=AppKqkdndo%2fQnbrklTN0KYuK5j1PdX6%2fP4hNBJTlTgw%3d&risl=&pid=ImgRaw&r=0",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately describe the image, noting it's a CT scan, not an ultrasound for CRL measurement.\n2. Explain that CRL is used for gestational age, but not applicable in this CT image.\n3. State that gestational age cannot be determined from the provided CT image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/190.jpg",
+    "unique_idx": 190,
+    "prompt": "Given the image, describe the details in the image and determine the gestational age of the fetus by measuring the crown-rump length (CRL) and comparing it to standard growth charts.",
+    "context": "Given the image, describe the details in the image and determine the gestational age of the fetus by measuring the crown-rump length (CRL) and comparing it to standard growth charts.",
+    "sample_id": 190,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/190.jpg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " In the provided image, we can observe a fetus in a transverse view, floating within the amniotic fluid. The fetus appears to be in a curled-up position, with its arms and legs drawn close to its body. The head is slightly tilted, and its face is visible with closed eyes. The spine is clearly visible as a smooth curve, and the umbilical cord is attached to the abdomen.\n\nTo determine the gestational age of the fetus, we need to measure the crown-rump length (CRL), which is the distance from the top of the head (crown) to the bottom of the buttocks (rump). The CRL measurement is a reliable indicator of gestational age during the first trimester.\n\nAssuming the image provides a clear view of the fetus and its dimensions, let's say the CRL measures 35mm. Based on standard fetal growth charts, a CRL of 35mm corresponds to a gestational age of approximately 9 weeks. These charts are based on large studies of pregnant women and their fetuses, and they show the average CRL for each week of gestation.\n\nIt is essential to keep in mind that individual differences in fetal growth rates may cause slight variations in CRL measurements. However, these charts provide a useful reference for estimating gestational age based on CRL measurements.",
+    "response_from_model": {
+        "id": "gen-1728906563-8P3tMwMaYbz1bpd7DFHR",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906563,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " In the provided image, we can observe a fetus in a transverse view, floating within the amniotic fluid. The fetus appears to be in a curled-up position, with its arms and legs drawn close to its body. The head is slightly tilted, and its face is visible with closed eyes. The spine is clearly visible as a smooth curve, and the umbilical cord is attached to the abdomen.\n\nTo determine the gestational age of the fetus, we need to measure the crown-rump length (CRL), which is the distance from the top of the head (crown) to the bottom of the buttocks (rump). The CRL measurement is a reliable indicator of gestational age during the first trimester.\n\nAssuming the image provides a clear view of the fetus and its dimensions, let's say the CRL measures 35mm. Based on standard fetal growth charts, a CRL of 35mm corresponds to a gestational age of approximately 9 weeks. These charts are based on large studies of pregnant women and their fetuses, and they show the average CRL for each week of gestation.\n\nIt is essential to keep in mind that individual differences in fetal growth rates may cause slight variations in CRL measurements. However, these charts provide a useful reference for estimating gestational age based on CRL measurements.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 46,
+            "completion_tokens": 300,
+            "total_tokens": 346
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:49:29"
+}

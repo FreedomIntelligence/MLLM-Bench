@@ -1,0 +1,93 @@
+{
+    "unique_idx": "77_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nGiven the image, classify the main activity occurring, and provide context for the setting, such as the likely location, time of day, and occasion for the gathering.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\n The main activity occurring in the image appears to be a wedding ceremony. The setting is likely an outdoor venue, such as a garden, park, or beach, as indicated by the presence of lush greenery and natural surroundings. The time of day is likely to be late afternoon or early evening, as the lighting is soft and warm, suggesting the sun is setting. The occasion for the gathering is a wedding, as evidenced by the bride and groom standing together in front of a decorated arch, with guests dressed in formal attire and holding flowers. The bride wears a white wedding gown, and the groom is in a tuxedo, indicating a formal wedding ceremony. The presence of seating arrangements and decorations further supports this conclusion. The guests are likely dressed in semi-formal to formal attire, and there may be a reception area nearby with tables and chairs set up for a celebration. The overall atmosphere appears joyful and festive, with guests smiling and cheering for the couple.\n~~~\n~~~Answer2\nThe main activity in the image is a group of people sitting and watching a screen, likely projected onto a building, possibly at a sports event. They are sitting close to each other on the ground, which suggests a casual and outdoors setting. The people are engaged with the screen, and some of them are using cell phones, which indicates a current or ongoing event, such as a sports match or a public demonstration. The presence of a clock in the scene suggests that the gathering is taking place during the evening or night.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the main activity: people gathered, watching a screen at an outdoor event.\n2. Describe the setting: likely a public space near a modern building, during evening or night.\n3. Mention the occasion: could be a community event, movie screening, or similar gathering.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/77.jpeg",
+    "model_1": "microsoft/phi-3-medium-128k-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": " The main activity occurring in the image appears to be a wedding ceremony. The setting is likely an outdoor venue, such as a garden, park, or beach, as indicated by the presence of lush greenery and natural surroundings. The time of day is likely to be late afternoon or early evening, as the lighting is soft and warm, suggesting the sun is setting. The occasion for the gathering is a wedding, as evidenced by the bride and groom standing together in front of a decorated arch, with guests dressed in formal attire and holding flowers. The bride wears a white wedding gown, and the groom is in a tuxedo, indicating a formal wedding ceremony. The presence of seating arrangements and decorations further supports this conclusion. The guests are likely dressed in semi-formal to formal attire, and there may be a reception area nearby with tables and chairs set up for a celebration. The overall atmosphere appears joyful and festive, with guests smiling and cheering for the couple.",
+    "raw_answer2": "The main activity in the image is a group of people sitting and watching a screen, likely projected onto a building, possibly at a sports event. They are sitting close to each other on the ground, which suggests a casual and outdoors setting. The people are engaged with the screen, and some of them are using cell phones, which indicates a current or ongoing event, such as a sports match or a public demonstration. The presence of a clock in the scene suggests that the gathering is taking place during the evening or night.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Answer2",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1729069517,
+        "id": "chatcmpl-AIuFxHj6ve1PuOxv6yXLhf6VCPqUB",
+        "model": "gpt-4-turbo-2024-04-09",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_result": {
+                    "jailbreak": {
+                        "filtered": false,
+                        "detected": false
+                    },
+                    "custom_blocklists": {
+                        "filtered": false,
+                        "details": []
+                    }
+                }
+            },
+            {
+                "prompt_index": 1,
+                "content_filter_result": {
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "custom_blocklists": {
+                        "filtered": false,
+                        "details": []
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 1407,
+            "total_tokens": 1409
+        }
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.755924940109253,
+    "code": 200,
+    "current_time": "2024-10-16 17:05:18"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "182_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nHow many eggs are there in the image?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThere are twelve eggs in the image.\n~~~\n~~~Answer2\n As an AI language model, I'm unable to see images. However, if you describe the image to me, I can help you determine the number of eggs in it.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Correctly count the number of eggs: 14.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/182.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "microsoft/phi-3-medium-128k-instruct",
+    "raw_answer1": "There are twelve eggs in the image.",
+    "raw_answer2": " As an AI language model, I'm unable to see images. However, if you describe the image to me, I can help you determine the number of eggs in it.",
+    "response": {
+        "id": "chatcmpl-AIuGsSVsTQioITezcCpGBjp32hcn3",
+        "object": "chat.completion",
+        "created": 1729069574,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1056,
+            "completion_tokens": 6,
+            "total_tokens": 1062
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "unable to decide: situation one"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "unable to decide: situation one",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 6.264987468719482,
+    "code": 200,
+    "current_time": "2024-10-16 17:06:15"
+}

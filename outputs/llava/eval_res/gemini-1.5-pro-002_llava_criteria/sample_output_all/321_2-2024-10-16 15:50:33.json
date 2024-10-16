@@ -1,0 +1,35 @@
+{
+    "unique_idx": "321_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhich of the CT scan needs a redo?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nImages (c) and (d) show significant motion artifacts, indicating the patient likely moved during the scan.  Therefore, both **(c) and (d)** need a redo.  (a) and (b) appear to be acceptable quality scans.\n~~~\n~~~Answer2\nIn the image, we can see three different CT scans of a human chest and abdomen. One of the CT scans needs to be redone, as it is not as clear or detailed as the other two scans. To provide accurate information and diagnosis, it is important to have clear and well-defined images, and the CT scan that needs to be redone might not provide the necessary information. Therefore, a redo of that specific CT scan would be beneficial to improve the clarity and detail of the captured image.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and confirm that CT scans (c) and (d) are the ones needing a redo.\n2. Assess clarity, noise, and artifacts affecting image quality in (c) and (d).",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/321.png",
+    "model_1": "gemini-1.5-pro-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "Images (c) and (d) show significant motion artifacts, indicating the patient likely moved during the scan.  Therefore, both **(c) and (d)** need a redo.  (a) and (b) appear to be acceptable quality scans.",
+    "raw_answer2": "In the image, we can see three different CT scans of a human chest and abdomen. One of the CT scans needs to be redone, as it is not as clear or detailed as the other two scans. To provide accurate information and diagnosis, it is important to have clear and well-defined images, and the CT scan that needs to be redone might not provide the necessary information. Therefore, a redo of that specific CT scan would be beneficial to improve the clarity and detail of the captured image.",
+    "response": {
+        "id": "chatcmpl-AIt5ckbUN8RS9eWkH61fnVTl2rS7j",
+        "object": "chat.completion",
+        "created": 1729065032,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1196,
+            "completion_tokens": 2,
+            "total_tokens": 1198
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.80431056022644,
+    "code": 200,
+    "current_time": "2024-10-16 15:50:33"
+}

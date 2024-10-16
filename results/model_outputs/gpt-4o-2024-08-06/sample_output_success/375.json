@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-XJg3GaEAAZQRe?format=png&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Include implementation of both architectures: 2x wider model and 2x wider model with AltUp.\n2. Use PyTorch for creating transformer layers, embedding layers, predictors, and correctors.\n3. Reflect the '2x width' specification and 'N/2' layer stacking in the code.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/375.png",
+    "unique_idx": "375",
+    "prompt": "Please implement the model network and idea shown in the picture using PyTorch.",
+    "response": {
+        "id": "chatcmpl-9vo9Gb0VB7GkQOAcma3xHqoxQR2Sd",
+        "object": "chat.completion",
+        "created": 1723564494,
+        "model": "gpt-4o-2024-08-06",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To implement the models shown in the diagram using PyTorch, we'll define two classes: `WiderModel` and `WiderModelWithAltUp`. Each will use transformer layers and an embedding layer. The second model will include predictor and corrector components.\n\nHere's how you can implement these models:\n\n```python\nimport torch\nimport torch.nn as nn\nimport torch.nn.functional as F\n\nclass TransformerLayer(nn.Module):\n    def __init__(self, width):\n        super(TransformerLayer, self).__init__()\n        self.layer = nn.TransformerEncoderLayer(d_model=width, nhead=8)\n\n    def forward(self, x):\n        return self.layer(x)\n\nclass EmbeddingLayer(nn.Module):\n    def __init__(self, input_dim, width):\n        super(EmbeddingLayer, self).__init__()\n        self.embedding = nn.Linear(input_dim, width)\n\n    def forward(self, x):\n        return self.embedding(x)\n\nclass WiderModel(nn.Module):\n    def __init__(self, input_dim, width, num_layers):\n        super(WiderModel, self).__init__()\n        self.embedding = EmbeddingLayer(input_dim, width)\n        self.transformer_layers = nn.ModuleList(\n            [TransformerLayer(width) for _ in range(num_layers)]\n        )\n\n    def forward(self, x):\n        x = self.embedding(x)\n        for layer in self.transformer_layers:\n            x = layer(x)\n        return x\n\nclass Predictor(nn.Module):\n    def __init__(self, width):\n        super(Predictor, self).__init__()\n        self.linear = nn.Linear(width, width)\n\n    def forward(self, x):\n        return self.linear(x)\n\nclass Corrector(nn.Module):\n    def __init__(self, width):\n        super(Corrector, self).__init__()\n        self.linear = nn.Linear(width, width)\n\n    def forward(self, x, pred):\n        return x + self.linear(pred)\n\nclass WiderModelWithAltUp(nn.Module):\n    def __init__(self, input_dim, width, num_layers):\n        super(WiderModelWithAltUp, self).__init__()\n        self.embedding = EmbeddingLayer(input_dim, width)\n        self.transformer_layers = nn.ModuleList(\n            [TransformerLayer(width) for _ in range(num_layers)]\n        )\n        self.predictors = nn.ModuleList(\n            [Predictor(width) for _ in range(num_layers)]\n        )\n        self.correctors = nn.ModuleList(\n            [Corrector(width) for _ in range(num_layers)]\n        )\n\n    def forward(self, x):\n        x = self.embedding(x)\n        for i, layer in enumerate(self.transformer_layers):\n            pred = self.predictors[i](x)\n            x = layer(x)\n            x = self.correctors[i](x, pred)\n        return x\n\n# Example usage:\ninput_dim = 512\nwidth = 1024  # 2x wider\nnum_layers = 6  # x N / 2\n\nmodel_a = WiderModel(input_dim, width, num_layers)\nmodel_b = WiderModelWithAltUp(input_dim, width, num_layers)\n\n# Dummy input\nx = torch.rand(10, 32, input_dim)  # (sequence_length, batch_size, input_dim)\n\noutput_a = model_a(x)\noutput_b = model_b(x)\n\nprint(\"Output from Wider Model:\", output_a.shape)\nprint(\"Output from Wider Model with AltUp:\", output_b.shape)\n```\n\nThis code defines the two models as described in the diagram, with the `WiderModelWithAltUp` including the predictor and corrector components for each transformer layer. Adjust the `input_dim`, `width`, and `num_layers` as needed for your specific application.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1127,
+            "completion_tokens": 758,
+            "total_tokens": 1885
+        },
+        "system_fingerprint": "fp_845eaabc1f"
+    },
+    "answer": "To implement the models shown in the diagram using PyTorch, we'll define two classes: `WiderModel` and `WiderModelWithAltUp`. Each will use transformer layers and an embedding layer. The second model will include predictor and corrector components.\n\nHere's how you can implement these models:\n\n```python\nimport torch\nimport torch.nn as nn\nimport torch.nn.functional as F\n\nclass TransformerLayer(nn.Module):\n    def __init__(self, width):\n        super(TransformerLayer, self).__init__()\n        self.layer = nn.TransformerEncoderLayer(d_model=width, nhead=8)\n\n    def forward(self, x):\n        return self.layer(x)\n\nclass EmbeddingLayer(nn.Module):\n    def __init__(self, input_dim, width):\n        super(EmbeddingLayer, self).__init__()\n        self.embedding = nn.Linear(input_dim, width)\n\n    def forward(self, x):\n        return self.embedding(x)\n\nclass WiderModel(nn.Module):\n    def __init__(self, input_dim, width, num_layers):\n        super(WiderModel, self).__init__()\n        self.embedding = EmbeddingLayer(input_dim, width)\n        self.transformer_layers = nn.ModuleList(\n            [TransformerLayer(width) for _ in range(num_layers)]\n        )\n\n    def forward(self, x):\n        x = self.embedding(x)\n        for layer in self.transformer_layers:\n            x = layer(x)\n        return x\n\nclass Predictor(nn.Module):\n    def __init__(self, width):\n        super(Predictor, self).__init__()\n        self.linear = nn.Linear(width, width)\n\n    def forward(self, x):\n        return self.linear(x)\n\nclass Corrector(nn.Module):\n    def __init__(self, width):\n        super(Corrector, self).__init__()\n        self.linear = nn.Linear(width, width)\n\n    def forward(self, x, pred):\n        return x + self.linear(pred)\n\nclass WiderModelWithAltUp(nn.Module):\n    def __init__(self, input_dim, width, num_layers):\n        super(WiderModelWithAltUp, self).__init__()\n        self.embedding = EmbeddingLayer(input_dim, width)\n        self.transformer_layers = nn.ModuleList(\n            [TransformerLayer(width) for _ in range(num_layers)]\n        )\n        self.predictors = nn.ModuleList(\n            [Predictor(width) for _ in range(num_layers)]\n        )\n        self.correctors = nn.ModuleList(\n            [Corrector(width) for _ in range(num_layers)]\n        )\n\n    def forward(self, x):\n        x = self.embedding(x)\n        for i, layer in enumerate(self.transformer_layers):\n            pred = self.predictors[i](x)\n            x = layer(x)\n            x = self.correctors[i](x, pred)\n        return x\n\n# Example usage:\ninput_dim = 512\nwidth = 1024  # 2x wider\nnum_layers = 6  # x N / 2\n\nmodel_a = WiderModel(input_dim, width, num_layers)\nmodel_b = WiderModelWithAltUp(input_dim, width, num_layers)\n\n# Dummy input\nx = torch.rand(10, 32, input_dim)  # (sequence_length, batch_size, input_dim)\n\noutput_a = model_a(x)\noutput_b = model_b(x)\n\nprint(\"Output from Wider Model:\", output_a.shape)\nprint(\"Output from Wider Model with AltUp:\", output_b.shape)\n```\n\nThis code defines the two models as described in the diagram, with the `WiderModelWithAltUp` including the predictor and corrector components for each transformer layer. Adjust the `input_dim`, `width`, and `num_layers` as needed for your specific application.",
+    "gen_model_id": "gpt-4o-2024-08-06",
+    "duration": 15.887041091918945,
+    "code": 200,
+    "current_time": "2024-08-13 23:55:06"
+}

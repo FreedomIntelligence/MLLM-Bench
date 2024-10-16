@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Fake Image Detection",
+        "url": "https://sdxl-h-p-6.stablediffusionweb.com/file=/tmp/gradio/cfcc2e54305bdb0a86301cb2636e11d59f527263/image.png",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Confirm if the answer identifies the figure as AI-generated.\n2. Evaluate the explanation of visual indicators that support the AI-generated conclusion.\n3. Check for mention of any inconsistencies or artifacts typically found in AI-generated images.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/350.webp",
+    "unique_idx": 350,
+    "prompt": "Does this photograph represent a real individual or an AI-generated figure? ",
+    "context": "Does this photograph represent a real individual or an AI-generated figure? ",
+    "sample_id": 350,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/350.webp"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "This image is likely AI-generated. The URL in the bottom right corner points to stablediffusionweb.com, which is a website that uses Stable Diffusion, a popular AI image generation model.  While the image is very realistic, the association with an AI image generator makes it highly probable that this is not a photograph of a real person.\n",
+    "response_from_model": {
+        "id": "chatcmpl-4a1c436b41984a0395b0e883f8ba5eaf",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897330,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "This image is likely AI-generated. The URL in the bottom right corner points to stablediffusionweb.com, which is a website that uses Stable Diffusion, a popular AI image generation model.  While the image is very realistic, the association with an AI image generator makes it highly probable that this is not a photograph of a real person.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 274,
+            "completion_tokens": 70,
+            "total_tokens": 344
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:47"
+}

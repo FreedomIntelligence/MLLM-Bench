@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://mzucker.github.io/images/noteshrink/notesA1.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately transcribe definitions and examples related to \"Orthogonal Transformations.\"\n2. Correctly format mathematical formulas and symbols in LaTeX notation.\n3. Ensure extracted text maintains the original notes' structure and order.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/14.jpeg",
+    "unique_idx": 14,
+    "prompt": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "context": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "sample_id": 14,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/14.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "### Definitions (def)\n- An \\( n \\times n \\) matrix \\( A \\) is an orthogonal transformation if and only if:\n  - It has \\( n \\) mutually perpendicular rows or columns with unit length.\n  - Rows must be independent (can't be multiples of each other).\n\n### Examples (ex)\n- \\(\\begin{bmatrix} 1 & 2 \\\\ 3 & 6 \\end{bmatrix} \\rightarrow\\) linearly dependent\n- \\(\\begin{bmatrix} 1 & 2 \\\\ 2 & 6 \\end{bmatrix} \\rightarrow\\) independent but not \\( \\perp \\)\n\n### Formulas\n- Dot product: \\( \\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^{n} x_i y_i \\)\n- \\( \\mathbf{x} \\cdot \\mathbf{y} = 0 \\leftrightarrow \\mathbf{x} \\perp \\mathbf{y} \\)\n- Rows/columns must have unit length: \\( \\| \\mathbf{x} \\| = \\sqrt{\\sum x_i^2} = \\sqrt{\\mathbf{x} \\cdot \\mathbf{x}} \\)\n- The rows or columns of \\( A \\) form an orthonormal basis of \\( \\mathbb{R}^n \\)\n- \\( \\mathbf{A} \\mathbf{A}^T = \\mathbf{A}^T \\mathbf{A} = \\mathbf{I} \\)\n- \\( \\mathbf{A}^{-1} = \\mathbf{A}^T \\)\n- Transpose \\( [\\mathbf{A}]^T \\) switches the rows and columns: \\(\\begin{bmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{bmatrix}^T = \\begin{bmatrix} 1 & 4 \\\\ 2 & 5 \\\\ 3 & 6 \\end{bmatrix}\\)",
+    "response_from_model": {
+        "id": "gen-1728907489-ll3e6bOevzy6lPkRI7oo",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728907489,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "### Definitions (def)\n- An \\( n \\times n \\) matrix \\( A \\) is an orthogonal transformation if and only if:\n  - It has \\( n \\) mutually perpendicular rows or columns with unit length.\n  - Rows must be independent (can't be multiples of each other).\n\n### Examples (ex)\n- \\(\\begin{bmatrix} 1 & 2 \\\\ 3 & 6 \\end{bmatrix} \\rightarrow\\) linearly dependent\n- \\(\\begin{bmatrix} 1 & 2 \\\\ 2 & 6 \\end{bmatrix} \\rightarrow\\) independent but not \\( \\perp \\)\n\n### Formulas\n- Dot product: \\( \\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^{n} x_i y_i \\)\n- \\( \\mathbf{x} \\cdot \\mathbf{y} = 0 \\leftrightarrow \\mathbf{x} \\perp \\mathbf{y} \\)\n- Rows/columns must have unit length: \\( \\| \\mathbf{x} \\| = \\sqrt{\\sum x_i^2} = \\sqrt{\\mathbf{x} \\cdot \\mathbf{x}} \\)\n- The rows or columns of \\( A \\) form an orthonormal basis of \\( \\mathbb{R}^n \\)\n- \\( \\mathbf{A} \\mathbf{A}^T = \\mathbf{A}^T \\mathbf{A} = \\mathbf{I} \\)\n- \\( \\mathbf{A}^{-1} = \\mathbf{A}^T \\)\n- Transpose \\( [\\mathbf{A}]^T \\) switches the rows and columns: \\(\\begin{bmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{bmatrix}^T = \\begin{bmatrix} 1 & 4 \\\\ 2 & 5 \\\\ 3 & 6 \\end{bmatrix}\\)",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 44,
+            "completion_tokens": 428,
+            "total_tokens": 472
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:05:03"
+}

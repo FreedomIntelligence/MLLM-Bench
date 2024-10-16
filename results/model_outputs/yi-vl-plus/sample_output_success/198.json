@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "NaN",
+        "question type": "compound"
+    },
+    "criteria": "1. Confirm the thermometer shows 38.1 degrees Celsius.\n2. Evaluate the advice given for a fever of 38.1 degrees Celsius.\n3. Check for medical accuracy and relevance of the advice to the temperature.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/198.jpeg",
+    "unique_idx": "198",
+    "prompt": "Given the image, interpret the thermometer reading and give some advice.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 184,
+            "prompt_tokens": 1024,
+            "total_tokens": 1208
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The thermometer reading in the image is approximately 37.5 degrees Celsius. This is slightly above the normal body temperature range, which is typically between 36.5 and 37.2 degrees Celsius. It's important to note that a temperature of 37.5 degrees Celsius is not necessarily a fever, as it can vary based on factors like time of day, recent physical activity, or environmental conditions.\n\nHowever, it is always advisable to monitor the temperature for any further changes and seek medical advice if the temperature rises above 38 degrees Celsius or if there are other symptoms such as chills, sweats, or general discomfort. Additionally, ensuring proper hydration, rest, and a comfortable environment can help in managing a slight temperature increase. If symptoms persist or worsen, it is best to consult a healthcare professional for a proper diagnosis and treatment."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The thermometer reading in the image is approximately 37.5 degrees Celsius. This is slightly above the normal body temperature range, which is typically between 36.5 and 37.2 degrees Celsius. It's important to note that a temperature of 37.5 degrees Celsius is not necessarily a fever, as it can vary based on factors like time of day, recent physical activity, or environmental conditions.\n\nHowever, it is always advisable to monitor the temperature for any further changes and seek medical advice if the temperature rises above 38 degrees Celsius or if there are other symptoms such as chills, sweats, or general discomfort. Additionally, ensuring proper hydration, rest, and a comfortable environment can help in managing a slight temperature increase. If symptoms persist or worsen, it is best to consult a healthcare professional for a proper diagnosis and treatment.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 27.004528760910034,
+    "code": 200,
+    "current_time": "2024-04-30 13:48:41"
+}

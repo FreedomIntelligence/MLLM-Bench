@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the stroke is a smash, clear, or drop shot based on player's posture and racket angle.\n2. Describe a logical sequence of potential rallies considering the identified stroke type.\n3. Ensure the response is aligned with badminton rules and realistic gameplay dynamics.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/381.png",
+    "unique_idx": 381,
+    "prompt": "Given the image, predict the type of stroke that the jumping player is likely to perform, and generate a sequence of potential rallies that could follow from this moment",
+    "context": "Given the image, predict the type of stroke that the jumping player is likely to perform, and generate a sequence of potential rallies that could follow from this moment",
+    "sample_id": 381,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/381.png"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "Based on the image, the jumping player is likely about to perform a **smash**.  He's high in the air with the racquet raised, indicating a powerful downward stroke.\n\nHere are a few potential rally sequences that could follow:\n\n**Rally 1 (Successful Smash):**\n\n1. **Player (Smash):**  Powerful smash aimed at the opponent's backhand corner.\n2. **Opponent (Return):**  Net shot, attempting to lift the shuttle and regain control.\n3. **Player (Drop Shot):**  Delicate drop shot just over the net, forcing the opponent to move forward quickly.\n4. **Opponent (Clear):**  High clear to the back of the court, giving the player time to recover.\n5. **Player (Smash):**  Another powerful smash, winning the rally.\n\n\n**Rally 2 (Net Shot After Smash):**\n\n1. **Player (Smash):**  Smash attempted, but the opponent manages a net shot.\n2. **Opponent (Net Shot):**  Quick net shot just beyond the reach of the player.\n3. **Player (Attempt at Return):**  Player tries to reach it but is late, hitting a weak return.\n4. **Opponent (Smash):**  Opponent smashes the shuttle for a point.\n\n\n**Rally 3 (Opponent's Defensive Return):**\n\n1. **Player (Smash):**  Powerful smash, but the opponent manages a defensive return, pushing the shuttle back.\n2. **Opponent (Defensive Return):**  Soft return to the center of the court.\n3. **Player (Drive):**  Player hits a flat drive to the opponent's forehand.\n4. **Opponent (Return):**  Opponent attempts to return the drive but hits it long.\n5. **Player (Point):**  Player wins the point.\n\n\nThese are just examples, and the actual rally could unfold in many different ways depending on the skill and strategy of the players involved.  The initial smash is the key event shown in the image, and the subsequent shots will depend on how well the players can execute their shots and anticipate their opponents' moves.\n",
+    "response_from_model": {
+        "id": "chatcmpl-90a443359f2f46c69cd8c409ecc520b1",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897193,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the image, the jumping player is likely about to perform a **smash**.  He's high in the air with the racquet raised, indicating a powerful downward stroke.\n\nHere are a few potential rally sequences that could follow:\n\n**Rally 1 (Successful Smash):**\n\n1. **Player (Smash):**  Powerful smash aimed at the opponent's backhand corner.\n2. **Opponent (Return):**  Net shot, attempting to lift the shuttle and regain control.\n3. **Player (Drop Shot):**  Delicate drop shot just over the net, forcing the opponent to move forward quickly.\n4. **Opponent (Clear):**  High clear to the back of the court, giving the player time to recover.\n5. **Player (Smash):**  Another powerful smash, winning the rally.\n\n\n**Rally 2 (Net Shot After Smash):**\n\n1. **Player (Smash):**  Smash attempted, but the opponent manages a net shot.\n2. **Opponent (Net Shot):**  Quick net shot just beyond the reach of the player.\n3. **Player (Attempt at Return):**  Player tries to reach it but is late, hitting a weak return.\n4. **Opponent (Smash):**  Opponent smashes the shuttle for a point.\n\n\n**Rally 3 (Opponent's Defensive Return):**\n\n1. **Player (Smash):**  Powerful smash, but the opponent manages a defensive return, pushing the shuttle back.\n2. **Opponent (Defensive Return):**  Soft return to the center of the court.\n3. **Player (Drive):**  Player hits a flat drive to the opponent's forehand.\n4. **Opponent (Return):**  Opponent attempts to return the drive but hits it long.\n5. **Player (Point):**  Player wins the point.\n\n\nThese are just examples, and the actual rally could unfold in many different ways depending on the skill and strategy of the players involved.  The initial smash is the key event shown in the image, and the subsequent shots will depend on how well the players can execute their shots and anticipate their opponents' moves.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 290,
+            "completion_tokens": 456,
+            "total_tokens": 746
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:13:29"
+}

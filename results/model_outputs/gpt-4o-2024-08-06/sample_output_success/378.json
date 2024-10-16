@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-VTdVLakAEvyS7?format=jpg&name=900x900",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and visualize top-selling IPs in both categories for 2024.3 Full Year Forecasts.\n2. Compare sales growth between 2023.3 and 2024.3 for highlighted IPs.\n3. Ensure visual representation is clear, accurate, and easily interpretable.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/378.jpeg",
+    "unique_idx": "378",
+    "prompt": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "response": {
+        "id": "chatcmpl-9vo9FGttLCGta5fhmnVc7VtkFneGW",
+        "object": "chat.completion",
+        "created": 1723564493,
+        "model": "gpt-4o-2024-08-06",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To visualize the most important information from the report, we can create bar charts to compare the sales figures for each IP across different time periods and categories. Here's a Python program using Matplotlib and Pandas to achieve this:\n\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Data from the report\ndata_groupwide = {\n    \"IP\": [\"Anpanman\", \"Ultraman\", \"KAMEN RIDER\", \"Mobile Suit Gundam\", \"Super Sentai\", \"DRAGON BALL\", \"NARUTO\", \"Pretty Cure\", \"ONE PIECE\"],\n    \"2023.3 1st Half\": [4.7, 8.9, 14.2, 62.4, 3.5, 65.7, 10.2, 2.9, 35.9],\n    \"2023.3 Full Year\": [9.9, 19.5, 32.1, 131.3, 6.5, 144.5, 18.7, 5.6, 86.3],\n    \"2024.3 1st Half\": [4.7, 9.5, 12.9, 72.6, 3.3, 68.4, 11.0, 2.8, 57.1],\n    \"2024.3 Full Year\": [10.0, 21.5, 32.0, 140.0, 7.0, 133.0, 24.5, 6.0, 100.0]\n}\n\ndata_toys_hobby = {\n    \"IP\": [\"Anpanman\", \"Ultraman\", \"KAMEN RIDER\", \"Mobile Suit Gundam\", \"Super Sentai\", \"DRAGON BALL\", \"Pretty Cure\", \"Pokémon\", \"ONE PIECE\"],\n    \"2023.3 1st Half\": [4.3, 4.7, 9.5, 30.1, 2.9, 12.0, 2.9, 4.1, 12.3],\n    \"2023.3 Full Year\": [9.3, 9.2, 23.0, 60.5, 5.6, 22.5, 5.6, 8.8, 31.9],\n    \"2024.3 1st Half\": [4.3, 4.3, 9.4, 34.7, 2.8, 12.2, 2.8, 5.9, 30.0],\n    \"2024.3 Full Year\": [9.0, 9.5, 23.0, 65.5, 6.0, 21.0, 6.0, 9.5, 52.5]\n}\n\n# Create DataFrames\ndf_groupwide = pd.DataFrame(data_groupwide)\ndf_toys_hobby = pd.DataFrame(data_toys_hobby)\n\n# Plotting function\ndef plot_sales(df, title):\n    df.plot(x='IP', kind='bar', stacked=False, figsize=(12, 6))\n    plt.title(title)\n    plt.xlabel('IP')\n    plt.ylabel('Sales (billion yen)')\n    plt.xticks(rotation=45)\n    plt.tight_layout()\n    plt.show()\n\n# Plot the data\nplot_sales(df_groupwide, 'Sales of IPs (Groupwide)')\nplot_sales(df_toys_hobby, 'Sales of IPs (Toys and Hobby Business, Japan)')\n```\n\nThis program will generate two bar charts: one for the groupwide sales and another for the toys and hobby business sales in Japan. Each chart will show sales figures for the first half and full year of 2023 and 2024, allowing for easy comparison.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 792,
+            "completion_tokens": 818,
+            "total_tokens": 1610
+        },
+        "system_fingerprint": "fp_baa7103b2c"
+    },
+    "answer": "To visualize the most important information from the report, we can create bar charts to compare the sales figures for each IP across different time periods and categories. Here's a Python program using Matplotlib and Pandas to achieve this:\n\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Data from the report\ndata_groupwide = {\n    \"IP\": [\"Anpanman\", \"Ultraman\", \"KAMEN RIDER\", \"Mobile Suit Gundam\", \"Super Sentai\", \"DRAGON BALL\", \"NARUTO\", \"Pretty Cure\", \"ONE PIECE\"],\n    \"2023.3 1st Half\": [4.7, 8.9, 14.2, 62.4, 3.5, 65.7, 10.2, 2.9, 35.9],\n    \"2023.3 Full Year\": [9.9, 19.5, 32.1, 131.3, 6.5, 144.5, 18.7, 5.6, 86.3],\n    \"2024.3 1st Half\": [4.7, 9.5, 12.9, 72.6, 3.3, 68.4, 11.0, 2.8, 57.1],\n    \"2024.3 Full Year\": [10.0, 21.5, 32.0, 140.0, 7.0, 133.0, 24.5, 6.0, 100.0]\n}\n\ndata_toys_hobby = {\n    \"IP\": [\"Anpanman\", \"Ultraman\", \"KAMEN RIDER\", \"Mobile Suit Gundam\", \"Super Sentai\", \"DRAGON BALL\", \"Pretty Cure\", \"Pokémon\", \"ONE PIECE\"],\n    \"2023.3 1st Half\": [4.3, 4.7, 9.5, 30.1, 2.9, 12.0, 2.9, 4.1, 12.3],\n    \"2023.3 Full Year\": [9.3, 9.2, 23.0, 60.5, 5.6, 22.5, 5.6, 8.8, 31.9],\n    \"2024.3 1st Half\": [4.3, 4.3, 9.4, 34.7, 2.8, 12.2, 2.8, 5.9, 30.0],\n    \"2024.3 Full Year\": [9.0, 9.5, 23.0, 65.5, 6.0, 21.0, 6.0, 9.5, 52.5]\n}\n\n# Create DataFrames\ndf_groupwide = pd.DataFrame(data_groupwide)\ndf_toys_hobby = pd.DataFrame(data_toys_hobby)\n\n# Plotting function\ndef plot_sales(df, title):\n    df.plot(x='IP', kind='bar', stacked=False, figsize=(12, 6))\n    plt.title(title)\n    plt.xlabel('IP')\n    plt.ylabel('Sales (billion yen)')\n    plt.xticks(rotation=45)\n    plt.tight_layout()\n    plt.show()\n\n# Plot the data\nplot_sales(df_groupwide, 'Sales of IPs (Groupwide)')\nplot_sales(df_toys_hobby, 'Sales of IPs (Toys and Hobby Business, Japan)')\n```\n\nThis program will generate two bar charts: one for the groupwide sales and another for the toys and hobby business sales in Japan. Each chart will show sales figures for the first half and full year of 2023 and 2024, allowing for easy comparison.",
+    "gen_model_id": "gpt-4o-2024-08-06",
+    "duration": 17.749736070632935,
+    "code": 200,
+    "current_time": "2024-08-13 23:55:08"
+}

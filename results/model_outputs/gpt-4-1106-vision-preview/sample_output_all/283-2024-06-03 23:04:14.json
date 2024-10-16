@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Identity Reasoning",
+        "url": "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/3DWPI6BZPZP4HFAFKOPDQUSAQE.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer must specify the occupation as \"Cotton spinner.\"\n2. Response should logically associate the setting with textile production.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/283.jpg",
+    "unique_idx": "283",
+    "prompt": "What occupation does the group of individuals in the picture collectively represent?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The individuals in the picture appear to be working in a garment factory, so collectively they represent the occupation of garment workers or textile industry workers. They are involved in various stages of clothing production, such as sewing, cutting, and assembling garments.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717427048,
+        "id": "chatcmpl-9W3WC5yDrquCWi4DRYvmYARljHeAn",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 48,
+            "prompt_tokens": 1125,
+            "total_tokens": 1173
+        }
+    },
+    "answer": "The individuals in the picture appear to be working in a garment factory, so collectively they represent the occupation of garment workers or textile industry workers. They are involved in various stages of clothing production, such as sewing, cutting, and assembling garments.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 24.568097829818726,
+    "code": 200,
+    "current_time": "2024-06-03 23:04:14"
+}

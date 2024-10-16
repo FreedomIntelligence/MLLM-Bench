@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://thumbs.dreamstime.com/b/car-accident-two-cars-crashed-city-road-intentional-motion-blur-141839362.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Predicted trajectories must consider vehicles' current motion and road conditions.\n2. Recommendations for avoiding collision should be specific and plausible.\n3. Answer must align with the action prediction capability and the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/387.jpeg",
+    "unique_idx": 387,
+    "prompt": "Based on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?",
+    "context": "Based on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?",
+    "sample_id": 387,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/387.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "In the next few seconds, the white car on the left appears to be moving straight ahead, while the blue car on the right is turning right. The silver car in the middle seems to be following the white car's path.\n\nTo avoid collision, the drivers should:\n1. Maintain a safe distance from the vehicle in front.\n2. Use turn signals to indicate their intentions clearly.\n3. Be aware of the other vehicles' movements and adjust their speed accordingly.\n4. Avoid sudden maneuvers and ensure smooth, predictable driving.\n\nIn this specific scenario, the blue car should ensure it has enough space to complete its turn without obstructing the path of the silver car. The silver car should slow down if necessary to allow the blue car to turn safely.",
+    "response_from_model": {
+        "id": "gen-1728908355-DfngBuqihnnZ6rc4S9Ph",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728908355,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "In the next few seconds, the white car on the left appears to be moving straight ahead, while the blue car on the right is turning right. The silver car in the middle seems to be following the white car's path.\n\nTo avoid collision, the drivers should:\n1. Maintain a safe distance from the vehicle in front.\n2. Use turn signals to indicate their intentions clearly.\n3. Be aware of the other vehicles' movements and adjust their speed accordingly.\n4. Avoid sudden maneuvers and ensure smooth, predictable driving.\n\nIn this specific scenario, the blue car should ensure it has enough space to complete its turn without obstructing the path of the silver car. The silver car should slow down if necessary to allow the blue car to turn safely.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 48,
+            "completion_tokens": 152,
+            "total_tokens": 200
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:19:19"
+}

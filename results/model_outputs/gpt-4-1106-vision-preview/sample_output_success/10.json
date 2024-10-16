@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/F-Qz_HoXQAAnic9?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify dishes with add-on options and their respective costs (e.g., \"add blue cheese for £1\").",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/10.jpg",
+    "unique_idx": "10",
+    "prompt": "Which dishes can have extra ingredients added, and what is the cost of adding ingredients?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The dishes on the menu that can have extra ingredients added and their respective costs are:\n\n1. Tomato & Onion Salad - Add blue cheese for £1\n2. Bruschetta al Pomodoro - Add grilled chicken or add red onions, fresh basil a hint of garlic for £1\n3. Pane all' Aglio - Additional toppings can be added:\n   - Mozzarella cheese for £2\n   - Fresh rosemary & sea salt for £1\n   - Tomato & fresh basil for £1\n   - Goats cheese & caramelised onion for £2\n   - Rocket & parma ham for £2\n4. Cesare (Salad) - Add grilled chicken for £2\n5. Spaghetti Carbonara - Add chicken for £2\n\nPlease note that these are the options available on the menu provided and the costs associated with adding each ingredient.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426161,
+        "id": "chatcmpl-9W3HtX1xuPmyFPOK3GHC7j7gZImc0",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 178,
+            "prompt_tokens": 1129,
+            "total_tokens": 1307
+        }
+    },
+    "answer": "The dishes on the menu that can have extra ingredients added and their respective costs are:\n\n1. Tomato & Onion Salad - Add blue cheese for £1\n2. Bruschetta al Pomodoro - Add grilled chicken or add red onions, fresh basil a hint of garlic for £1\n3. Pane all' Aglio - Additional toppings can be added:\n   - Mozzarella cheese for £2\n   - Fresh rosemary & sea salt for £1\n   - Tomato & fresh basil for £1\n   - Goats cheese & caramelised onion for £2\n   - Rocket & parma ham for £2\n4. Cesare (Salad) - Add grilled chicken for £2\n5. Spaghetti Carbonara - Add chicken for £2\n\nPlease note that these are the options available on the menu provided and the costs associated with adding each ingredient.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 18.048239946365356,
+    "code": 200,
+    "current_time": "2024-06-03 22:49:28"
+}

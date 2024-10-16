@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/F91QfgiWgAAphUD?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Confirm the song \"Future (Lollapalooza ver.)\" is correctly identified and its play count.\n2. Check OCR accuracy for the number of times played against the reference: 271.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/13.jpeg",
+    "unique_idx": "13",
+    "prompt": "The image shows a receipt from 'Receiptify', an application that generates a music listening receipt based on a user's listening history. Based on the image, what is the number of times the song Future(Lollapalooza ver.) was played?",
+    "response": {
+        "id": "chatcmpl-9OkdzChmQpOfOsbHZBRCAxnJnPUrh",
+        "object": "chat.completion",
+        "created": 1715686199,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The song \"Future (Lollapalooza ver.)\" was played 271 times."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1501,
+            "completion_tokens": 19,
+            "total_tokens": 1520
+        },
+        "system_fingerprint": "fp_927397958d"
+    },
+    "answer": "The song \"Future (Lollapalooza ver.)\" was played 271 times.",
+    "gen_model_id": "gpt-4o-2024-05-13",
+    "duration": 6.461764812469482,
+    "code": 200,
+    "current_time": "2024-05-14 19:30:00"
+}

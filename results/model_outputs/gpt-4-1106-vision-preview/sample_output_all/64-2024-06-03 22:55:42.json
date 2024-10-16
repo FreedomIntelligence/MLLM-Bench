@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "https://pbs.twimg.com/media/F9zsKg9acAAgSnU?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify the company \"中國國民航空公司\" (China National Aviation Corp.) from the poster.\n2. Recognize the services \"航空郵件\" (air mail) and \"乘客服務\" (passenger service) advertised.\n3. Ensure the response is in the context of the poster's promotional content.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/64.jpeg",
+    "unique_idx": "64",
+    "prompt": "圖中的海報在宣傳哪家公司的什麼服務？",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "這張海報宣傳的是中國航空公司（China National Aviation Corp.，縮寫為CNAC）的空郵與乘客服務。海報上寫著\"空郵\"和\"旅客運輸\"，並且展示了一架水上飛機，暗示該公司提供空中運輸服務。",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426537,
+        "id": "chatcmpl-9W3NxYQUFjrln1h1u25RRDDrhZhBi",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 113,
+            "prompt_tokens": 829,
+            "total_tokens": 942
+        }
+    },
+    "answer": "這張海報宣傳的是中國航空公司（China National Aviation Corp.，縮寫為CNAC）的空郵與乘客服務。海報上寫著\"空郵\"和\"旅客運輸\"，並且展示了一架水上飛機，暗示該公司提供空中運輸服務。",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 13.705713987350464,
+    "code": 200,
+    "current_time": "2024-06-03 22:55:42"
+}

@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "https://savvytokyo.scdn3.secure.raxcdn.com/app/uploads/2018/09/IMG_0133-1024x570.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and transcribe the section labeled \"D1\" in Japanese accurately.\n2. Provide translation of \"D1\" section into English, relevant to health assessment context.\n3. Advise based on \"D1\" section if one's electrocardiogram result is D1.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/66.jpg",
+    "unique_idx": "66",
+    "prompt": "この画像は健康診断結果報告書の評価基準を示しています。もし私の心電図の結果がD1だった場合、私はどうすればいいですか?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "この画像には、健康診断結果報告書の評価基準が記載されています。D1（要経過観察）という結果は、「治療が必要な疾患を認めます。当該医療機関の診察をお勧めします。」と説明されています。\n\n心電図の結果がD1であった場合、診断に従い、適切な医療機関での診察を受けることが推奨されます。これは、何らかの治療が必要な心臓の状態がある可能性があることを意味しており、専門の医師による詳細な検査や相談が必要です。早めに医療機関を受診し、指示に従ってください。",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426537,
+        "id": "chatcmpl-9W3NxcsKYUFnWMoQLj6Grz1q2pwD0",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 267,
+            "prompt_tokens": 836,
+            "total_tokens": 1103
+        }
+    },
+    "answer": "この画像には、健康診断結果報告書の評価基準が記載されています。D1（要経過観察）という結果は、「治療が必要な疾患を認めます。当該医療機関の診察をお勧めします。」と説明されています。\n\n心電図の結果がD1であった場合、診断に従い、適切な医療機関での診察を受けることが推奨されます。これは、何らかの治療が必要な心臓の状態がある可能性があることを意味しており、専門の医師による詳細な検査や相談が必要です。早めに医療機関を受診し、指示に従ってください。",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 14.360201597213745,
+    "code": 200,
+    "current_time": "2024-06-03 22:55:47"
+}

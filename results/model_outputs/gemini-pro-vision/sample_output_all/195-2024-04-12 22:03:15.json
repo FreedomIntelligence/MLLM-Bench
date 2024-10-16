@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://tse1-mm.cn.bing.net/th/id/OIP-C.enwAb12TDJjxjYx30u2mUgHaEK?rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately describe visible skin symptoms (e.g., rash, discoloration).\n2. Estimate condition stage based on visual symptoms severity.\n3. Include no diagnosis, focus on symptom description and stage estimation.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/195.jpeg",
+    "unique_idx": "195",
+    "prompt": "Given the image, describe the visual symptoms in detail and estimate the stage of the condition.",
+    "response": {
+        "id": "chatcmpl-f40ab39cc30240a58c5c2a10999df9f7",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930595,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The child has a red, blotchy rash on their face. The rash is made up of small, raised bumps. The child's eyes are slightly swollen and red. This is likely an early stage of measles, also known as rubeola."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 790,
+            "completion_tokens": 50,
+            "total_tokens": 840
+        }
+    },
+    "answer": " The child has a red, blotchy rash on their face. The rash is made up of small, raised bumps. The child's eyes are slightly swollen and red. This is likely an early stage of measles, also known as rubeola.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 5.479396820068359,
+    "code": 200,
+    "current_time": "2024-04-12 22:03:15"
+}

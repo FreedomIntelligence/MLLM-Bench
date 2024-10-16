@@ -1,0 +1,35 @@
+{
+    "unique_idx": "203_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nIn relation to the digital temperature readout at the top of the beverage cooler, which type of beverage is directly below it?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nA bottle of diet Coke is directly below the digital temperature readout at the top of the beverage cooler.\n~~~\n~~~Answer2\nDirectly below the digital temperature readout at the top of the beverage cooler, you can see cans of Yagu and Milo drinks on the top shelf of the right-hand cooler. These appear to be dairy or milk-based beverages, as Yagu is likely a yogurt drink and Milo is a chocolate malt beverage often mixed with milk.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and confirm the type of beverage as milk drinks directly below the temperature readout.\n2. Assess the VLM's understanding of spatial relationships between the readout and beverages.\n3. Verify the accuracy and relevance of the VLM's response to the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/203.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "claude-3-5-sonnet-20240620",
+    "raw_answer1": "A bottle of diet Coke is directly below the digital temperature readout at the top of the beverage cooler.",
+    "raw_answer2": "Directly below the digital temperature readout at the top of the beverage cooler, you can see cans of Yagu and Milo drinks on the top shelf of the right-hand cooler. These appear to be dairy or milk-based beverages, as Yagu is likely a yogurt drink and Milo is a chocolate malt beverage often mixed with milk.",
+    "response": {
+        "id": "chatcmpl-AIstMarkNaOSEwyCKLNItKc76l9g1",
+        "object": "chat.completion",
+        "created": 1729064272,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1498,
+            "completion_tokens": 2,
+            "total_tokens": 1500
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.823776483535767,
+    "code": 200,
+    "current_time": "2024-10-16 15:37:53"
+}

@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://thumbs.dreamstime.com/b/car-accident-two-cars-crashed-city-road-intentional-motion-blur-141839362.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Predicted trajectories must consider vehicles' current motion and road conditions.\n2. Recommendations for avoiding collision should be specific and plausible.\n3. Answer must align with the action prediction capability and the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/387.jpeg",
+    "unique_idx": 387,
+    "prompt": "Based on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?",
+    "context": "Based on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?",
+    "sample_id": 387,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/387.jpeg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "Based on the image, the white car is traveling forward and slightly to the left. The dark-colored car is traveling in the same direction but is positioned behind and slightly to the right of the white car.  Both cars appear to be moving at a moderate speed.  Due to the snow and the blur, precise speed and trajectory predictions are impossible.\n\n**Predicted Trajectories (with caveats):**\n\n* **White Car:**  Will likely continue moving forward in its current direction unless the driver changes course.  The slight leftward movement suggests it might continue to drift slightly left.\n* **Dark Car:**  Will likely continue following behind the white car, maintaining a similar relative position unless the driver takes evasive action.\n\n\n**Collision Avoidance:**\n\nThe primary risk is the dark car potentially rear-ending the white car if it doesn't maintain a safe following distance or if the white car brakes suddenly.  The snowy conditions further exacerbate this risk due to reduced traction.\n\nTo avoid a collision:\n\n* **Driver of the dark car:** Needs to significantly increase following distance to account for reduced braking capabilities in the snow. They should also reduce speed and maintain a safe distance.  They should be prepared to steer around the white car if necessary.\n* **Driver of the white car:** Should drive smoothly and avoid sudden braking or lane changes.  They should be aware of the car behind and be prepared to signal any changes in speed or direction well in advance.\n\n\n**Important Note:** This prediction is based solely on a single moment captured in a blurry image in adverse weather conditions.  Actual trajectories can vary significantly due to driver actions, road conditions, and other unforeseen factors.  The advice given is general and should be considered alongside safe driving practices in snowy conditions.\n",
+    "response_from_model": {
+        "id": "chatcmpl-09c1802bf41241849128addc3b947ef8",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897192,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the image, the white car is traveling forward and slightly to the left. The dark-colored car is traveling in the same direction but is positioned behind and slightly to the right of the white car.  Both cars appear to be moving at a moderate speed.  Due to the snow and the blur, precise speed and trajectory predictions are impossible.\n\n**Predicted Trajectories (with caveats):**\n\n* **White Car:**  Will likely continue moving forward in its current direction unless the driver changes course.  The slight leftward movement suggests it might continue to drift slightly left.\n* **Dark Car:**  Will likely continue following behind the white car, maintaining a similar relative position unless the driver takes evasive action.\n\n\n**Collision Avoidance:**\n\nThe primary risk is the dark car potentially rear-ending the white car if it doesn't maintain a safe following distance or if the white car brakes suddenly.  The snowy conditions further exacerbate this risk due to reduced traction.\n\nTo avoid a collision:\n\n* **Driver of the dark car:** Needs to significantly increase following distance to account for reduced braking capabilities in the snow. They should also reduce speed and maintain a safe distance.  They should be prepared to steer around the white car if necessary.\n* **Driver of the white car:** Should drive smoothly and avoid sudden braking or lane changes.  They should be aware of the car behind and be prepared to signal any changes in speed or direction well in advance.\n\n\n**Important Note:** This prediction is based solely on a single moment captured in a blurry image in adverse weather conditions.  Actual trajectories can vary significantly due to driver actions, road conditions, and other unforeseen factors.  The advice given is general and should be considered alongside safe driving practices in snowy conditions.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 285,
+            "completion_tokens": 360,
+            "total_tokens": 645
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:13:28"
+}

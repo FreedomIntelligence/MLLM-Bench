@@ -1,0 +1,93 @@
+{
+    "unique_idx": "61_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nPlease answer the following questions according to the given image. Who is the author of this book? Who are the translator of this book? What is this book about?\n~~~\n~~~Question Type\ncompound\n~~~\n~~~Answer1\nThe author of the book is Kai Hwang. The translator of the book is Gao Tao. The book is titled \"Cloud Computing for Machine Learning and Cognitive Applications\" in English and consists of 200 pages.\n~~~\n~~~Answer2\n Unfortunately, as an AI text-based model, I am unable to directly analyze images. However, I can help you with the information you need if you provide me with the title of the book, the name of the translator, or other details about the book.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify author as \"Kai Hwang\" and match to reference \"黄铠\".\n2. Recognize and list translators \"袁志勇, 杜瑞颖, 张立强, 伍春香, 蔡朝晖\".\n3. Describe book's subject, aligning with \"Cloud Computing for Machine Learning and Cognitive Applications\".",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/61.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "microsoft/phi-3-medium-128k-instruct",
+    "raw_answer1": "The author of the book is Kai Hwang. The translator of the book is Gao Tao. The book is titled \"Cloud Computing for Machine Learning and Cognitive Applications\" in English and consists of 200 pages.",
+    "raw_answer2": " Unfortunately, as an AI text-based model, I am unable to directly analyze images. However, I can help you with the information you need if you provide me with the title of the book, the name of the translator, or other details about the book.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Answer1",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1729069522,
+        "id": "chatcmpl-AIuG2YNQcaB8VXF4OrITj1T7vmEUK",
+        "model": "gpt-4-turbo-2024-04-09",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_result": {
+                    "jailbreak": {
+                        "filtered": false,
+                        "detected": false
+                    },
+                    "custom_blocklists": {
+                        "filtered": false,
+                        "details": []
+                    }
+                }
+            },
+            {
+                "prompt_index": 1,
+                "content_filter_result": {
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "custom_blocklists": {
+                        "filtered": false,
+                        "details": []
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 1203,
+            "total_tokens": 1205
+        }
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 8.067123889923096,
+    "code": 200,
+    "current_time": "2024-10-16 17:05:23"
+}

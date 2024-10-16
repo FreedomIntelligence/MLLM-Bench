@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Document Understanding",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify the \"You Are Here\" point and the nearest emergency exit.\n2. Describe the path including turns and any landmarks (e.g., room numbers, staircases).\n3. Ensure the route is the quickest possible, avoiding detours or longer paths.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/167.jpeg",
+    "unique_idx": 167,
+    "prompt": "Describe the quickest route to the nearest emergency exit from the \"You Are Here\" point.",
+    "context": "Describe the quickest route to the nearest emergency exit from the \"You Are Here\" point.",
+    "sample_id": 167,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/167.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "To find the quickest route to the nearest emergency exit from the \"You Are Here\" point, follow these steps:\n\n1. Start at the \"You Are Here\" point (indicated by the red star).\n2. Move straight forward (along the green dashed line) towards the central area.\n3. Continue straight until you reach the emergency exit (indicated by the green arrow).\n\nThis route will take you directly to the nearest emergency exit without any detours.",
+    "response_from_model": {
+        "id": "gen-1728903706-QFEilxGOPQBh6xqAggtf",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903706,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To find the quickest route to the nearest emergency exit from the \"You Are Here\" point, follow these steps:\n\n1. Start at the \"You Are Here\" point (indicated by the red star).\n2. Move straight forward (along the green dashed line) towards the central area.\n3. Continue straight until you reach the emergency exit (indicated by the green arrow).\n\nThis route will take you directly to the nearest emergency exit without any detours.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 40,
+            "completion_tokens": 95,
+            "total_tokens": 135
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:02:11"
+}

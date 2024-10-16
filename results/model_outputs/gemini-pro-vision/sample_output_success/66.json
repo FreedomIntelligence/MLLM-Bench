@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "https://savvytokyo.scdn3.secure.raxcdn.com/app/uploads/2018/09/IMG_0133-1024x570.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and transcribe the section labeled \"D1\" in Japanese accurately.\n2. Provide translation of \"D1\" section into English, relevant to health assessment context.\n3. Advise based on \"D1\" section if one's electrocardiogram result is D1.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/66.jpg",
+    "unique_idx": "66",
+    "prompt": "この画像は健康診断結果報告書の評価基準を示しています。もし私の心電図の結果がD1だった場合、私はどうすればいいですか?",
+    "response": {
+        "id": "chatcmpl-68bc5dc06cb747d3a20ce7fdcd9dae91",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930359,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " D1の場合、治療が必要な疾患を認めます。当院医師診察の受診をお勧めします。"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 836,
+            "completion_tokens": 47,
+            "total_tokens": 883
+        }
+    },
+    "answer": " D1の場合、治療が必要な疾患を認めます。当院医師診察の受診をお勧めします。",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 10.657988786697388,
+    "code": 200,
+    "current_time": "2024-04-12 21:59:19"
+}

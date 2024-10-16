@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/FmM62WNWYAMC0EB?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly identify and report gate number B19 from the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/12.jpeg",
+    "unique_idx": 12,
+    "prompt": "Assume a passenger bought an air ticket to Boston with Delta Airline on flight number 5706, which gate should the passenger go to wait for the flight",
+    "context": "Assume a passenger bought an air ticket to Boston with Delta Airline on flight number 5706, which gate should the passenger go to wait for the flight",
+    "sample_id": 12,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/12.jpeg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "The passenger should go to gate B19 to wait for their flight.",
+    "response_from_model": {
+        "id": "gen-1728904946-XV2Rrk8EMVazuc5yzvHD",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728904946,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The passenger should go to gate B19 to wait for their flight.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6447,
+            "completion_tokens": 1,
+            "total_tokens": 6448
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:22:27"
+}

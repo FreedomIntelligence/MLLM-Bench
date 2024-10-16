@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Chart Understanding",
+        "url": "https://pbs.twimg.com/media/F-cFfylXkAAd7yc?format=png&name=small",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Describe the approximate trend between the vaccination rate and excess deaths: excess deaths decrease as the vaccination rate increases.  \n2. Confirm prediction of approximate excess deaths for a state with 85% vaccination rate is between 25% to 30%.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/214.png",
+    "unique_idx": 214,
+    "prompt": "Given the scatter plot, describe the relationship between the vaccination rate and excess deaths and predict the approximate excess deaths for a state with a vaccination rate of 85%.",
+    "context": "Given the scatter plot, describe the relationship between the vaccination rate and excess deaths and predict the approximate excess deaths for a state with a vaccination rate of 85%.",
+    "sample_id": 214,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/214.png"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The scatter plot shows a moderate negative correlation between vaccination rate and excess deaths.  As vaccination rates increase, excess deaths tend to decrease. The correlation coefficient is -0.47, and the p-value is 0.0004, indicating a statistically significant relationship. The OLS slope of -0.59 suggests that for every 1% increase in vaccination rate, excess deaths decrease by approximately 0.59.\n\nTo predict the excess deaths for a state with a vaccination rate of 85%, we can visually extrapolate from the trend line on the scatter plot or use the provided OLS slope.  Visually, the trend line appears to be around 25 excess deaths at an 85% vaccination rate.",
+    "response_from_model": {
+        "id": "chatcmpl-b95baba02aa7493784d7c989a8c8623a",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897290,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The scatter plot shows a moderate negative correlation between vaccination rate and excess deaths.  As vaccination rates increase, excess deaths tend to decrease. The correlation coefficient is -0.47, and the p-value is 0.0004, indicating a statistically significant relationship. The OLS slope of -0.59 suggests that for every 1% increase in vaccination rate, excess deaths decrease by approximately 0.59.\n\nTo predict the excess deaths for a state with a vaccination rate of 85%, we can visually extrapolate from the trend line on the scatter plot or use the provided OLS slope.  Visually, the trend line appears to be around 25 excess deaths at an 85% vaccination rate."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 292,
+            "completion_tokens": 152,
+            "total_tokens": 444
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:06"
+}

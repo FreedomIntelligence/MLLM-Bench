@@ -1,0 +1,35 @@
+{
+    "unique_idx": "323_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat happened to each row of the image from left to right?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nEach row of the image shows the results of a different method for reconstructing an image from a compressed representation. The first column shows the original image, and the remaining columns show the reconstructed images using different methods.\n~~~\n~~~Answer2\nFrom left to right, each row has one row with a man and the rest of the rows have women.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and describe the progression of image quality from left to right in each row.\n2. Confirm the presence of human faces in varying resolutions and clarity in the image.\n3. Assess if the description includes changes in detail and recognizability.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/323.jpg",
+    "model_1": "qwen/qwen-2-vl-7b-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "Each row of the image shows the results of a different method for reconstructing an image from a compressed representation. The first column shows the original image, and the remaining columns show the reconstructed images using different methods.",
+    "raw_answer2": "From left to right, each row has one row with a man and the rest of the rows have women.",
+    "response": {
+        "id": "chatcmpl-AIuSYiu2036yabpgxO11olvYyuW1s",
+        "object": "chat.completion",
+        "created": 1729070298,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1148,
+            "completion_tokens": 2,
+            "total_tokens": 1150
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.941005229949951,
+    "code": 200,
+    "current_time": "2024-10-16 17:18:19"
+}

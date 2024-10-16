@@ -1,0 +1,35 @@
+{
+    "unique_idx": "365_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nCraft a narrative poem on political activism's fervor and the spectrum of public opinion in cityscape demonstrations.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\n In the heart of the city where the concrete jungles rise,\n\nWhere the whispers of change are a common surprise,\n\nA tale of fervor unfolds under open skies,\n\nOf political activism where the spirit never dies.\n\n\nThe streets become stages for the voices to blend,\n\nThe chants of the brave, on which hopes depend,\n\nA spectrum of opinion, a kaleidoscope to lend,\n\nA canvas of colors where the lines often bend.\n\n\nThe activists march, with signs held high,\n\nA call for justice, for the meek and the spry,\n\nTheir words are the seeds from which dreams may sprout,\n\nIn the soil of the city, where the ideas shout.\n\n\nThe public watches, some with hearts that swell,\n\nOthers with eyes that skeptically dwell,\n\nBut the movement grows, as the stories are told,\n\nOf a future reimagined, bold and bold.\n\n\nThrough the clamor and the clash of the city's roar,\n\nThe message is clear, it's freedom they implore,\n\nA tapestry woven from the many and the few,\n\nA demonstration of love, for the many, not the few.\n\n\nSo let the city remember, when the day is done,\n\nThat the fight for the right is never won,\n\nFor the fervor of activism, in its passionate plea,\n\nIs the heartbeat of the city, forever it will be.\n~~~\n~~~Answer2\nIn the heart of the city, on a bustling street,\nA crowd gathered, with protesters in retreat.\nTheir fervor for change, their voices united,\nIn the name of justice, they stood all conspired.\n\nOn the corner of a downtown intersection,\nA Trump placard waved with strong affliction.\nAmidst the crowd, a man raised his hand,\nWith the sign, he stood as a bold champion.\n\nIn the image, some with Trump placards in hand,\nOthers with signs, voicing their dissent.\nA diverse group of people, opinions vast,\nIn the city landscape, their voices never past.\n\nThe intersection became a platform for the clash,\nA space for voices that couldn't be rushed.\nWith traffic lights above, the scene unfolded,\nA reflection of the nation's deeply rooted.\n\nVarious viewpoints, perspectives, and beliefs,\nThe city's vibrant colors, a canvas for griefs.\nThe people's voices, like a symphony,\nEchoing throughout the bustling reality.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Poem includes city demonstration with a \"STOP TRUMP\" sign, reflecting political activism.\n2. Narrative captures the fervor of activism and spectrum of public opinion.\n3. Poem structure and language quality align with narrative poetry conventions.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/365.jpeg",
+    "model_1": "microsoft/phi-3-medium-128k-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": " In the heart of the city where the concrete jungles rise,\n\nWhere the whispers of change are a common surprise,\n\nA tale of fervor unfolds under open skies,\n\nOf political activism where the spirit never dies.\n\n\nThe streets become stages for the voices to blend,\n\nThe chants of the brave, on which hopes depend,\n\nA spectrum of opinion, a kaleidoscope to lend,\n\nA canvas of colors where the lines often bend.\n\n\nThe activists march, with signs held high,\n\nA call for justice, for the meek and the spry,\n\nTheir words are the seeds from which dreams may sprout,\n\nIn the soil of the city, where the ideas shout.\n\n\nThe public watches, some with hearts that swell,\n\nOthers with eyes that skeptically dwell,\n\nBut the movement grows, as the stories are told,\n\nOf a future reimagined, bold and bold.\n\n\nThrough the clamor and the clash of the city's roar,\n\nThe message is clear, it's freedom they implore,\n\nA tapestry woven from the many and the few,\n\nA demonstration of love, for the many, not the few.\n\n\nSo let the city remember, when the day is done,\n\nThat the fight for the right is never won,\n\nFor the fervor of activism, in its passionate plea,\n\nIs the heartbeat of the city, forever it will be.",
+    "raw_answer2": "In the heart of the city, on a bustling street,\nA crowd gathered, with protesters in retreat.\nTheir fervor for change, their voices united,\nIn the name of justice, they stood all conspired.\n\nOn the corner of a downtown intersection,\nA Trump placard waved with strong affliction.\nAmidst the crowd, a man raised his hand,\nWith the sign, he stood as a bold champion.\n\nIn the image, some with Trump placards in hand,\nOthers with signs, voicing their dissent.\nA diverse group of people, opinions vast,\nIn the city landscape, their voices never past.\n\nThe intersection became a platform for the clash,\nA space for voices that couldn't be rushed.\nWith traffic lights above, the scene unfolded,\nA reflection of the nation's deeply rooted.\n\nVarious viewpoints, perspectives, and beliefs,\nThe city's vibrant colors, a canvas for griefs.\nThe people's voices, like a symphony,\nEchoing throughout the bustling reality.",
+    "response": {
+        "id": "chatcmpl-AIuJ8hgDUpGMNLzYxI0tVVa99Brbw",
+        "object": "chat.completion",
+        "created": 1729069714,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1556,
+            "completion_tokens": 2,
+            "total_tokens": 1558
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 7.960791110992432,
+    "code": 200,
+    "current_time": "2024-10-16 17:08:35"
+}

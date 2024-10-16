@@ -1,0 +1,35 @@
+{
+    "unique_idx": "360_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWrite a story based on the image.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nIn the image, we see a dog sitting on a mat, surrounded by an airplane and airplane toys. The dog seems to be resting and enjoying the cozy airplane-inspired bed. There are books scattered around the room, indicating that this space might be used for play, relaxation, or learning.\n\nIt's possible that the dog's owner is nearby, engaged in some activity or enjoying a meal, as there are two carrots visible on the floor, likely meant for sharing with the dog. A cup can also be seen on the floor, suggesting that the person might be having a drink while spending time with the dog.\n\nAs we look closer at the scene, we notice that the dog is carrying a book, adding a playful touch to the scene. The books' presence, along with the airplane toys, creates an imaginative and creative environment for the dog and its owner to enjoy.\n~~~\n~~~Answer2\nOnce upon a time, in a cozy room with striped walls, a young boy named Timmy lay on his bed, staring up at the ceiling. His room was a bit messy, with toys scattered around and a ladder leaning against the bed. Timmy's dog, Max, sat nearby, looking content with a bone at his feet.\n\nTimmy was daydreaming about school. In his imagination, he and Max were both students, sitting at desks in a classroom. They were learning multiplication, and Timmy was particularly proud of himself for figuring out that 7 x 5 equals 35. Max, being the clever dog he was, seemed to be helping him with his work.\n\nIn the background of Timmy's daydream, a hot air balloon floated by, adding a sense of adventure to his thoughts. Timmy smiled, feeling a sense of accomplishment and excitement about the knowledge he was gaining.\n\nMeanwhile, in the real world, Max was busy dreaming too. He was dreaming about chasing a squirrel in the park, his tail wagging with joy. The two friends were both lost in their own worlds, but they were happy and content in their own ways.\n\nAs the day went on, Timmy eventually woke from his daydream, feeling refreshed and ready to tackle his homework. Max, still dreaming, twitched his ears and wagged his tail, completely unaware of the adventures that awaited him in the real world.\n\nAnd so, in their own little corner of the world, Timmy and Max continued to dream and play, learning and growing together.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Story includes boy dreaming about math, dog attending school, and bedroom setting.\n2. Narrative coherence; beginning, middle, and end structured around the image.\n3. Creative elements that enhance the visual elements without altering them.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/360.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-72b-instruct",
+    "raw_answer1": "In the image, we see a dog sitting on a mat, surrounded by an airplane and airplane toys. The dog seems to be resting and enjoying the cozy airplane-inspired bed. There are books scattered around the room, indicating that this space might be used for play, relaxation, or learning.\n\nIt's possible that the dog's owner is nearby, engaged in some activity or enjoying a meal, as there are two carrots visible on the floor, likely meant for sharing with the dog. A cup can also be seen on the floor, suggesting that the person might be having a drink while spending time with the dog.\n\nAs we look closer at the scene, we notice that the dog is carrying a book, adding a playful touch to the scene. The books' presence, along with the airplane toys, creates an imaginative and creative environment for the dog and its owner to enjoy.",
+    "raw_answer2": "Once upon a time, in a cozy room with striped walls, a young boy named Timmy lay on his bed, staring up at the ceiling. His room was a bit messy, with toys scattered around and a ladder leaning against the bed. Timmy's dog, Max, sat nearby, looking content with a bone at his feet.\n\nTimmy was daydreaming about school. In his imagination, he and Max were both students, sitting at desks in a classroom. They were learning multiplication, and Timmy was particularly proud of himself for figuring out that 7 x 5 equals 35. Max, being the clever dog he was, seemed to be helping him with his work.\n\nIn the background of Timmy's daydream, a hot air balloon floated by, adding a sense of adventure to his thoughts. Timmy smiled, feeling a sense of accomplishment and excitement about the knowledge he was gaining.\n\nMeanwhile, in the real world, Max was busy dreaming too. He was dreaming about chasing a squirrel in the park, his tail wagging with joy. The two friends were both lost in their own worlds, but they were happy and content in their own ways.\n\nAs the day went on, Timmy eventually woke from his daydream, feeling refreshed and ready to tackle his homework. Max, still dreaming, twitched his ears and wagged his tail, completely unaware of the adventures that awaited him in the real world.\n\nAnd so, in their own little corner of the world, Timmy and Max continued to dream and play, learning and growing together.",
+    "response": {
+        "id": "chatcmpl-AIvJ9DWhyyzsqzRFWTaLo8NAfYch1",
+        "object": "chat.completion",
+        "created": 1729073559,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1874,
+            "completion_tokens": 2,
+            "total_tokens": 1876
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.533501148223877,
+    "code": 200,
+    "current_time": "2024-10-16 18:12:40"
+}

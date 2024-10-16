@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2023/11/05/06/55/motorcycle-8366394_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify that the rider is riding towards the left side.\n2. Infer that the rider is unlikely to appear on the right side.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/207.jpg",
+    "unique_idx": 207,
+    "prompt": "Assuming the rider continues to travel in the same direction, will he appear on the right side of the picture?",
+    "context": "Assuming the rider continues to travel in the same direction, will he appear on the right side of the picture?",
+    "sample_id": 207,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/207.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "No, the rider will continue to be on the left side of the picture.  The image shows the motorcycle moving to the right, but from the viewer's perspective, the rider remains on the left.\n",
+    "response_from_model": {
+        "id": "chatcmpl-e93062b12d514e64bcfc690927a11f5c",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897153,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "No, the rider will continue to be on the left side of the picture.  The image shows the motorcycle moving to the right, but from the viewer's perspective, the rider remains on the left.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 281,
+            "completion_tokens": 43,
+            "total_tokens": 324
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:49"
+}

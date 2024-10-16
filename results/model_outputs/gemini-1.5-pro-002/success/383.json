@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://images.unsplash.com/photo-1597019558926-3eef445fdf60",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Predict the skater's next move based on current posture and position.\n2. Assess the risk involved in the predicted next move.\n3. Ensure the answer aligns with the skater's current momentum and skatepark layout.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/383.jpg",
+    "unique_idx": 383,
+    "prompt": "Given the image, predict the skater boy's next move and assess the risk of the action.",
+    "context": "Given the image, predict the skater boy's next move and assess the risk of the action.",
+    "sample_id": 383,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/383.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The skater is mid-air, having just ollied (jumped) with his skateboard. His next move will likely be to land back on the board, aiming for the downward slope of one of the concrete transitions in the skatepark.  He's likely aiming for the transition closest to him, allowing him to ride down and gain momentum.\n\n**Risk Assessment:**\n\n* **Moderate Risk:**  While the skater appears to be experienced (given the height and control of the ollie), there's always a risk in skateboarding.  \n* **Potential Hazards:**\n    * **Imperfect Landing:**  If he doesn't land with his feet properly positioned over the bolts of the board, the board could slip out, causing a fall.  At this height, that could lead to scrapes, bruises, sprains, or even broken bones.\n    * **Misjudging Distance/Trajectory:** He could overshoot or undershoot the landing, leading to a collision with the concrete.\n    * **Other Skaters:**  While not visible in the image, other skaters could be present in the park, creating a collision hazard.\n\nOverall, the risk is inherent in the activity, but it's likely a calculated risk for the skater.  He's in a controlled environment (a skatepark) and seems to have the skill to execute the maneuver.  However, accidents can always happen.\n",
+    "response_from_model": {
+        "id": "chatcmpl-6c32a44fb1e2459e97218fe5b11e569d",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897353,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The skater is mid-air, having just ollied (jumped) with his skateboard. His next move will likely be to land back on the board, aiming for the downward slope of one of the concrete transitions in the skatepark.  He's likely aiming for the transition closest to him, allowing him to ride down and gain momentum.\n\n**Risk Assessment:**\n\n* **Moderate Risk:**  While the skater appears to be experienced (given the height and control of the ollie), there's always a risk in skateboarding.  \n* **Potential Hazards:**\n    * **Imperfect Landing:**  If he doesn't land with his feet properly positioned over the bolts of the board, the board could slip out, causing a fall.  At this height, that could lead to scrapes, bruises, sprains, or even broken bones.\n    * **Misjudging Distance/Trajectory:** He could overshoot or undershoot the landing, leading to a collision with the concrete.\n    * **Other Skaters:**  While not visible in the image, other skaters could be present in the park, creating a collision hazard.\n\nOverall, the risk is inherent in the activity, but it's likely a calculated risk for the skater.  He's in a controlled environment (a skatepark) and seems to have the skill to execute the maneuver.  However, accidents can always happen.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 279,
+            "completion_tokens": 290,
+            "total_tokens": 569
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:16:10"
+}

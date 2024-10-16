@@ -1,0 +1,35 @@
+{
+    "unique_idx": "65_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\n이 책은 무엇에 대해 있나요?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\n이 책은 한국어로 쓰여진 모음집입니다. \"계란 소년: 한국어 번역서\"(The Goldfish Boy: A Korean translation) 라는 제목이 있으며, 책의 표지는 태풍 오션을 테마로 하고 있습니다. 표지에는 책의 상단 부분에 작은 금솥이 이미지로 등장하며, 하단에는 책의 번호를 나타낸 제이슬(barcode)이 있습니다.\n~~~\n~~~Answer2\n이 책은 \"골드피쉬 보이\" (The Goldfish Boy)라는 제목의 소설입니다. 책 표지에는 창문 앞에 앉아 있는 소년의 뒷모습이 보이며, 물속에 있는 듯한 분위기를 연출하고 있습니다. 책의 배경은 푸른색 계열로, 물방울이나 기포 같은 요소들이 보입니다. \n\n책 뒷면에는 간단한 소개글이 있는데, \"전 세계 독자들을 감동시킨, 오금 쪽짝한 소설이 찾아왔다\"라는 문구가 보입니다. 또한 고양이와 의자 그림이 있어 이 소설의 분위기나 내용을 암시하는 것 같습니다.\n\n이 책은 아마도 어떤 소년의 이야기를 다루고 있으며, 제목에서 유추할 수 있듯이 금붕어나 물과 관련된 테마가 있을 것 같습니다. 감동적이고 독특한 스토리를 가진 소설로 보입니다.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Correctly recognize and translate the book title \"골드피시 보이\" into English.\n2. Identify and translate the Korean text on the book cover to provide context.\n3. Ensure the answer is relevant to the book's content as depicted on the cover.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/65.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "claude-3-5-sonnet-20240620",
+    "raw_answer1": "이 책은 한국어로 쓰여진 모음집입니다. \"계란 소년: 한국어 번역서\"(The Goldfish Boy: A Korean translation) 라는 제목이 있으며, 책의 표지는 태풍 오션을 테마로 하고 있습니다. 표지에는 책의 상단 부분에 작은 금솥이 이미지로 등장하며, 하단에는 책의 번호를 나타낸 제이슬(barcode)이 있습니다.",
+    "raw_answer2": "이 책은 \"골드피쉬 보이\" (The Goldfish Boy)라는 제목의 소설입니다. 책 표지에는 창문 앞에 앉아 있는 소년의 뒷모습이 보이며, 물속에 있는 듯한 분위기를 연출하고 있습니다. 책의 배경은 푸른색 계열로, 물방울이나 기포 같은 요소들이 보입니다. \n\n책 뒷면에는 간단한 소개글이 있는데, \"전 세계 독자들을 감동시킨, 오금 쪽짝한 소설이 찾아왔다\"라는 문구가 보입니다. 또한 고양이와 의자 그림이 있어 이 소설의 분위기나 내용을 암시하는 것 같습니다.\n\n이 책은 아마도 어떤 소년의 이야기를 다루고 있으며, 제목에서 유추할 수 있듯이 금붕어나 물과 관련된 테마가 있을 것 같습니다. 감동적이고 독특한 스토리를 가진 소설로 보입니다.",
+    "response": {
+        "id": "chatcmpl-AIss39UxIeBRdGdxTHosIAyxAKIvu",
+        "object": "chat.completion",
+        "created": 1729064191,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1549,
+            "completion_tokens": 2,
+            "total_tokens": 1551
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.891876935958862,
+    "code": 200,
+    "current_time": "2024-10-16 15:36:31"
+}

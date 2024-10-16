@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Physical Property Reasoning",
+        "url": "https://firstclasse.com.my/wp-content/uploads/2022/02/nyfw-aw-22.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify the right-most garment as providing better warmth.\n2. Justify warmth based on material, coverage, and layering visible in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/308.jpg",
+    "unique_idx": "308",
+    "prompt": "If I reside in a location where the temperature is -5°C and need to select one of the sets of upper garments from the picture to wear, which one would provide better warmth?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The garment on the right would provide better warmth in a location where the temperature is -5°C. It appears to be a heavy, fur-lined coat, which is designed to retain heat and provide insulation against cold weather. The other garments in the picture do not seem to offer the same level of warmth and protection against the cold.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717427088,
+        "id": "chatcmpl-9W3WqRFW4VsVG1v06oklMgahk5Jnd",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 66,
+            "prompt_tokens": 1179,
+            "total_tokens": 1245
+        }
+    },
+    "answer": "The garment on the right would provide better warmth in a location where the temperature is -5°C. It appears to be a heavy, fur-lined coat, which is designed to retain heat and provide insulation against cold weather. The other garments in the picture do not seem to offer the same level of warmth and protection against the cold.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 10.113670110702515,
+    "code": 200,
+    "current_time": "2024-06-03 23:04:51"
+}

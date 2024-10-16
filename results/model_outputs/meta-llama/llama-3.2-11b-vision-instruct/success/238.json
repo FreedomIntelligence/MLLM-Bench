@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-cFfylXkAAd7yc?format=png&name=small",
+        "question type": "close-ended"
+    },
+    "criteria": "1. List stores that are 'Deluxe Supermarket' in 'Mexico': store 8, store 12, store 21.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/238.png",
+    "unique_idx": 238,
+    "prompt": "List all stores that are deluxe supermarket and located in Mexico.",
+    "context": "List all stores that are deluxe supermarket and located in Mexico.",
+    "sample_id": 238,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/238.png"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "To answer this question, we need to identify stores that are both deluxe supermarkets and located in Mexico. \n\nLooking at the table, we can see that there are two stores that meet these criteria:\n\n* Store 13: Deluxe Supermarket, located in Mexico City\n* Store 22: Small Grocery, located in Walla Walla (not a deluxe supermarket)\n\nTherefore, the answer is:\n\nThere are no stores that are both deluxe supermarkets and located in Mexico.",
+    "response_from_model": {
+        "id": "gen-1728905501-XBxYt515V7c0tRvmgXza",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905501,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To answer this question, we need to identify stores that are both deluxe supermarkets and located in Mexico. \n\nLooking at the table, we can see that there are two stores that meet these criteria:\n\n* Store 13: Deluxe Supermarket, located in Mexico City\n* Store 22: Small Grocery, located in Walla Walla (not a deluxe supermarket)\n\nTherefore, the answer is:\n\nThere are no stores that are both deluxe supermarkets and located in Mexico.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6427,
+            "completion_tokens": 1,
+            "total_tokens": 6428
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:31:44"
+}

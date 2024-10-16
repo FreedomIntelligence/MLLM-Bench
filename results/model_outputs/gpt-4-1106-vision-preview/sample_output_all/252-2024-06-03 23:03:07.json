@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Difference Finding",
+        "url": "https://ts1.cn.mm.bing.net/th/id/R-C.42eea886f68a6f183b9b68938efd3930?rik=zPsVf7U5VaCQRw&riu=http%3a%2f%2fwww.elcivics.com%2fworksheets%2fgames%2ffind-differences%2fpicture-puzzle.jpg&ehk=ZAC3qbDROy4VrpgesJnZclbQgm8PaiHatMXHcA%2boRGs%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify differences: eye color, belt, shirt stripes, facial hair, eyebrow, socks, left dog's bag, left dog's eyelash, left dog's mouth wrinkle.\n2. Ensure all differences listed in the reference are mentioned accurately.\n3. Compare both images for any additional differences not listed in the reference.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/252.jpg",
+    "unique_idx": "252",
+    "prompt": "Examine the images on the left-hand side and right-hand side closely to identify and compare the differences between them as much as possible.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Upon examining the images, I can identify several differences between the left-hand side and the right-hand side:\n\n1. The dog on the left side in the left-hand image has a backpack strap visible, whereas in the right-hand image, the strap is missing.\n2. The book that the left dog is holding is different; in the left-hand image, the book has a clear spine, while in the right-hand image, the spine is not visible.\n3. On the right dog, the left-hand image shows a single stripe on the sleeve of the shirt, while the right-hand image has two stripes.\n4. The grass in the lower right corner of the left-hand image has three tufts, while the right-hand image has only two tufts of grass.\n5. The tail of the dog on the left is different; in the left-hand image, the tail has a distinct line at the bottom, while in the right-hand image, this line is missing.\n\nThese are the differences I can discern from the provided images.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426972,
+        "id": "chatcmpl-9W3UyokKRdVWDtTBg0s4at2lA0C23",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 207,
+            "prompt_tokens": 1139,
+            "total_tokens": 1346
+        }
+    },
+    "answer": "Upon examining the images, I can identify several differences between the left-hand side and the right-hand side:\n\n1. The dog on the left side in the left-hand image has a backpack strap visible, whereas in the right-hand image, the strap is missing.\n2. The book that the left dog is holding is different; in the left-hand image, the book has a clear spine, while in the right-hand image, the spine is not visible.\n3. On the right dog, the left-hand image shows a single stripe on the sleeve of the shirt, while the right-hand image has two stripes.\n4. The grass in the lower right corner of the left-hand image has three tufts, while the right-hand image has only two tufts of grass.\n5. The tail of the dog on the left is different; in the left-hand image, the tail has a distinct line at the bottom, while in the right-hand image, this line is missing.\n\nThese are the differences I can discern from the provided images.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 23.93911337852478,
+    "code": 200,
+    "current_time": "2024-06-03 23:03:07"
+}

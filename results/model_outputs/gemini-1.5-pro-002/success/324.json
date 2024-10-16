@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://knect365.imgix.net/article/images/cacheable/abe5a1ec-a5cb-4ccb-94cb-7e0b900eab78-featured-76c136b913a7dd398bc9fab8d8417f02.jpg?auto=format&fit=max&w=808&dpr=1.75",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the blur is due to low pixel count.\n2. Assess whether motion contributes to the image's blurriness.\n3. Evaluate if focus issues are causing the blur in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/324.jpg",
+    "unique_idx": 324,
+    "prompt": "What makes the image blurry?",
+    "context": "What makes the image blurry?",
+    "sample_id": 324,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/324.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The blurriness is caused by **motion blur**.  The train is moving past the camera, and the photographer likely used a slower shutter speed.  This means the shutter was open long enough to capture the movement of the train, resulting in the blurred appearance. The people inside the train are also blurred for the same reason.  They are moving along with the train.\n",
+    "response_from_model": {
+        "id": "chatcmpl-524c7727af4843f7b194626bc54b13d7",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897320,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The blurriness is caused by **motion blur**.  The train is moving past the camera, and the photographer likely used a slower shutter speed.  This means the shutter was open long enough to capture the movement of the train, resulting in the blurred appearance. The people inside the train are also blurred for the same reason.  They are moving along with the train.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 265,
+            "completion_tokens": 76,
+            "total_tokens": 341
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:36"
+}

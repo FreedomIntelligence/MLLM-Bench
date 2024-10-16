@@ -1,0 +1,35 @@
+{
+    "unique_idx": "151_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nDescribe the skills and emotions involved in this performance. How might this reflect the community's values? Please describe it in Chinese.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\n这一表演需要团队合作和优秀的艺术技巧。表演者需要掌握平衡、协调和运动技巧，方能在高脚架上稳定地站立。表演所需的勇气和自信可以反映出这个社区的价值观，强调个人勇敢面对挑战、追求卓越和促进社区凝聚力。\n\n在这个表演中，一位人物升起到脚架顶部，这需要他们具备强大的心理力量和信心，让观众感受到他们的卓越。同时，他们需要具备良好的团队合作精神，与其他表演者紧密配合，共同实现成功的表演。\n\n这种表演可以带来社区的凝聚力和共同体验，让人们为了一个共同的目标而努力。它也反映了社区对于人类的尊重，坚持追求卓越，并激励社区成员共同成长。\n~~~\n~~~Answer2\n这场表演展现了丰富的技能和情感。参与者需要高度的协调性、平衡感和力量，以便在高架上进行复杂的动作和舞蹈。舞狮的表演不仅需要身体的灵活性，还需要团队之间的默契配合，才能呈现出优美的舞姿。\n\n情感上，表演者往往充满了激情和自豪感，他们通过舞狮传达出对文化的热爱和对传统的尊重。观众的欢呼和鼓掌也进一步增强了这种情感氛围，形成了强烈的社区凝聚力。\n\n这种表演反映了社区的价值观，包括对传统文化的传承、团结合作的重要性，以及对节日庆典的重视。通过这种形式，社区成员不仅庆祝节日，还共同维护和弘扬了他们的文化遗产。\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify skills (e.g., balance, coordination) and emotions (e.g., joy, concentration) displayed in the lion dance performance.\n2. Explain in Chinese how the performance may reflect community values (e.g., unity, cultural heritage).",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/151.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gpt-4o-mini-2024-07-18",
+    "raw_answer1": "这一表演需要团队合作和优秀的艺术技巧。表演者需要掌握平衡、协调和运动技巧，方能在高脚架上稳定地站立。表演所需的勇气和自信可以反映出这个社区的价值观，强调个人勇敢面对挑战、追求卓越和促进社区凝聚力。\n\n在这个表演中，一位人物升起到脚架顶部，这需要他们具备强大的心理力量和信心，让观众感受到他们的卓越。同时，他们需要具备良好的团队合作精神，与其他表演者紧密配合，共同实现成功的表演。\n\n这种表演可以带来社区的凝聚力和共同体验，让人们为了一个共同的目标而努力。它也反映了社区对于人类的尊重，坚持追求卓越，并激励社区成员共同成长。",
+    "raw_answer2": "这场表演展现了丰富的技能和情感。参与者需要高度的协调性、平衡感和力量，以便在高架上进行复杂的动作和舞蹈。舞狮的表演不仅需要身体的灵活性，还需要团队之间的默契配合，才能呈现出优美的舞姿。\n\n情感上，表演者往往充满了激情和自豪感，他们通过舞狮传达出对文化的热爱和对传统的尊重。观众的欢呼和鼓掌也进一步增强了这种情感氛围，形成了强烈的社区凝聚力。\n\n这种表演反映了社区的价值观，包括对传统文化的传承、团结合作的重要性，以及对节日庆典的重视。通过这种形式，社区成员不仅庆祝节日，还共同维护和弘扬了他们的文化遗产。",
+    "response": {
+        "id": "chatcmpl-AIt9IJVMkvV4l3WWGpIu6oeIcjuY4",
+        "object": "chat.completion",
+        "created": 1729065260,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 2062,
+            "completion_tokens": 2,
+            "total_tokens": 2064
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 7.654717206954956,
+    "code": 200,
+    "current_time": "2024-10-16 15:54:21"
+}

@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/Eg4Hv0BUMAE0xCV?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Code must generate a bar chart with two bars per country, matching colors and labels.\n2. Bars must reflect the correct numerical values and country order from the image.\n3. Include source label and chart title as displayed in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/373.jpeg",
+    "unique_idx": "373",
+    "prompt": "You are now required to write a Python code based on an image to replicate the data image in the picture as closely as possible.",
+    "response": {
+        "id": "chatcmpl-9vo9GoEzx7mM1tdrBhmlMfHLVx57Z",
+        "object": "chat.completion",
+        "created": 1723564494,
+        "model": "gpt-4o-2024-08-06",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To replicate the bar chart shown in the image using Python, you can use the `matplotlib` library. Below is the Python code to create the chart:\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Data\ncountries = [\"Spain\", \"France\", \"U.K.\", \"Italy\", \"Mexico\", \"Portugal\", \"Euro area\", \"Hong Kong\", \"Philippines\", \"Belgium\",\n             \"Malaysia\", \"Austria\", \"Thailand\", \"Chile\", \"Singapore\", \"Germany\", \"Czech Republic\", \"Japan\", \"Hungary\",\n             \"Cyprus\", \"Netherlands\", \"U.S.\", \"Russia\", \"Colombia\", \"Poland\", \"Norway\", \"China\", \"Indonesia\", \"South Korea\",\n             \"Taiwan\", \"Vietnam\"]\nq2_2020 = [-22, -19, -22, -13, -17, -16, -15, -9, -9, -16, -17, -13, -12, -14, -13, -11, -10, -10, -14, -10, -12, -9, -10, -9, -8, -5, 3, -2, -3, 1, 2]\nh1_2020 = [-18, -13, -12, -11, -10, -11, -10, -8, -8, -8, -8, -8, -7, -7, -7, -6, -6, -6, -6, -6, -6, -5, -5, -5, -5, -3, 1, -1, -1, 0, 0]\n\nx = np.arange(len(countries))\n\n# Plot\nfig, ax = plt.subplots(figsize=(12, 6))\nbar_width = 0.35\n\nbars1 = ax.bar(x - bar_width/2, q2_2020, bar_width, label='2020 Q2', color='grey')\nbars2 = ax.bar(x + bar_width/2, h1_2020, bar_width, label='2020 H1', color='purple')\n\n# Labels and title\nax.set_ylabel('Growth')\nax.set_title('Global growth in first half 2020')\nax.set_xticks(x)\nax.set_xticklabels(countries, rotation=90)\nax.legend()\n\n# Add values on top of bars\ndef add_labels(bars):\n    for bar in bars:\n        height = bar.get_height()\n        ax.annotate(f'{height}',\n                    xy=(bar.get_x() + bar.get_width() / 2, height),\n                    xytext=(0, 3),  # 3 points vertical offset\n                    textcoords=\"offset points\",\n                    ha='center', va='bottom')\n\nadd_labels(bars1)\nadd_labels(bars2)\n\n# Source text\nplt.text(0, -27, 'Source: Bloomberg, @trinhonomics', fontsize=10, ha='left')\n\nplt.tight_layout()\nplt.show()\n```\n\nMake sure you have the `matplotlib` library installed. You can install it using:\n\n```bash\npip install matplotlib\n```\n\nThis code will generate a bar chart similar to the one in the image, with appropriate labels and values.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1138,
+            "completion_tokens": 688,
+            "total_tokens": 1826
+        },
+        "system_fingerprint": "fp_845eaabc1f"
+    },
+    "answer": "To replicate the bar chart shown in the image using Python, you can use the `matplotlib` library. Below is the Python code to create the chart:\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Data\ncountries = [\"Spain\", \"France\", \"U.K.\", \"Italy\", \"Mexico\", \"Portugal\", \"Euro area\", \"Hong Kong\", \"Philippines\", \"Belgium\",\n             \"Malaysia\", \"Austria\", \"Thailand\", \"Chile\", \"Singapore\", \"Germany\", \"Czech Republic\", \"Japan\", \"Hungary\",\n             \"Cyprus\", \"Netherlands\", \"U.S.\", \"Russia\", \"Colombia\", \"Poland\", \"Norway\", \"China\", \"Indonesia\", \"South Korea\",\n             \"Taiwan\", \"Vietnam\"]\nq2_2020 = [-22, -19, -22, -13, -17, -16, -15, -9, -9, -16, -17, -13, -12, -14, -13, -11, -10, -10, -14, -10, -12, -9, -10, -9, -8, -5, 3, -2, -3, 1, 2]\nh1_2020 = [-18, -13, -12, -11, -10, -11, -10, -8, -8, -8, -8, -8, -7, -7, -7, -6, -6, -6, -6, -6, -6, -5, -5, -5, -5, -3, 1, -1, -1, 0, 0]\n\nx = np.arange(len(countries))\n\n# Plot\nfig, ax = plt.subplots(figsize=(12, 6))\nbar_width = 0.35\n\nbars1 = ax.bar(x - bar_width/2, q2_2020, bar_width, label='2020 Q2', color='grey')\nbars2 = ax.bar(x + bar_width/2, h1_2020, bar_width, label='2020 H1', color='purple')\n\n# Labels and title\nax.set_ylabel('Growth')\nax.set_title('Global growth in first half 2020')\nax.set_xticks(x)\nax.set_xticklabels(countries, rotation=90)\nax.legend()\n\n# Add values on top of bars\ndef add_labels(bars):\n    for bar in bars:\n        height = bar.get_height()\n        ax.annotate(f'{height}',\n                    xy=(bar.get_x() + bar.get_width() / 2, height),\n                    xytext=(0, 3),  # 3 points vertical offset\n                    textcoords=\"offset points\",\n                    ha='center', va='bottom')\n\nadd_labels(bars1)\nadd_labels(bars2)\n\n# Source text\nplt.text(0, -27, 'Source: Bloomberg, @trinhonomics', fontsize=10, ha='left')\n\nplt.tight_layout()\nplt.show()\n```\n\nMake sure you have the `matplotlib` library installed. You can install it using:\n\n```bash\npip install matplotlib\n```\n\nThis code will generate a bar chart similar to the one in the image, with appropriate labels and values.",
+    "gen_model_id": "gpt-4o-2024-08-06",
+    "duration": 11.328036308288574,
+    "code": 200,
+    "current_time": "2024-08-13 23:55:01"
+}

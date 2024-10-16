@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F16HW98XgAE0PTL?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify all UI elements: buttons, symbols, and layout.\n2. Match color scheme and button shapes exactly as in the image.\n3. Ensure functional similarity in coded UI to the image's calculator app.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/371.jpeg",
+    "unique_idx": "371",
+    "prompt": "You are a software developer. You have the attached image and you need to code an UI or app with the same characteristics, color, shapes, etc. ",
+    "response": {
+        "id": "chatcmpl-fa80b98f8ee4444881d7627ccc41031f",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930919,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " ```\nimport UIKit\n\nclass ViewController: UIViewController {\n\n    override func viewDidLoad() {\n        super.viewDidLoad()\n        // Do any additional setup after loading the view.\n    }\n\n\n}\n```"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1144,
+            "completion_tokens": 34,
+            "total_tokens": 1178
+        }
+    },
+    "answer": " ```\nimport UIKit\n\nclass ViewController: UIViewController {\n\n    override func viewDidLoad() {\n        super.viewDidLoad()\n        // Do any additional setup after loading the view.\n    }\n\n\n}\n```",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 5.386632204055786,
+    "code": 200,
+    "current_time": "2024-04-12 22:08:39"
+}

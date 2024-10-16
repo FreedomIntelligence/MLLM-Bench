@@ -1,0 +1,35 @@
+{
+    "unique_idx": "236_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nThe image shows an opposition table of group B, what is the session number (e.g. 甲XT66) for the match between B1 and B3.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\n Without an image or specific information about the opposition table of group B, it is impossible to determine the session number for the match between B1 and B3. Please provide more details or the image for an accurate answer.\n~~~\n~~~Answer2\nThe session number for the match between B1 and B3 is 甲XT66.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the session number for the match between B1 and B3 as 甲XT34.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/236.jpg",
+    "model_1": "microsoft/phi-3-medium-128k-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": " Without an image or specific information about the opposition table of group B, it is impossible to determine the session number for the match between B1 and B3. Please provide more details or the image for an accurate answer.",
+    "raw_answer2": "The session number for the match between B1 and B3 is 甲XT66.",
+    "response": {
+        "id": "chatcmpl-AIuHr29yf3zGROpOAJQ0c94GDigTN",
+        "object": "chat.completion",
+        "created": 1729069635,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1791,
+            "completion_tokens": 2,
+            "total_tokens": 1793
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 6.1651012897491455,
+    "code": 200,
+    "current_time": "2024-10-16 17:07:16"
+}

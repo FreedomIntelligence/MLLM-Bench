@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "NaN",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify \"Computer Networks\" course time as \"8:30 to 9:50\" on \"Tuesday and Thursday.\"\n2. Locate \"Computer Networks\" classroom as \"Teaching C Building 308.\"",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/235.png",
+    "unique_idx": "235",
+    "prompt": "The image is my class schedule for the next semester. I enrolled in a Computer Networks course, what is the class time and classroom arranged for this course? ",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The Computer Networks course (ECE 4016 - L01) is scheduled for lectures on Monday and Thursday from 08:30 to 09:50 in Teaching C Building 308. Additionally, there is a tutorial for this course (ECE 4016 - T01) on Thursday from 18:00 to 18:50 in Teaching D Building 309.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426934,
+        "id": "chatcmpl-9W3UMpCwdnyOfd680VDerxspcBclL",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 77,
+            "prompt_tokens": 1143,
+            "total_tokens": 1220
+        }
+    },
+    "answer": "The Computer Networks course (ECE 4016 - L01) is scheduled for lectures on Monday and Thursday from 08:30 to 09:50 in Teaching C Building 308. Additionally, there is a tutorial for this course (ECE 4016 - T01) on Thursday from 18:00 to 18:50 in Teaching D Building 309.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 8.109605550765991,
+    "code": 200,
+    "current_time": "2024-06-03 23:02:17"
+}

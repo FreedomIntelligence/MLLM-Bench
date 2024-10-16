@@ -1,0 +1,35 @@
+{
+    "unique_idx": "117_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nInterpre the man's facial expression, what might lead to this?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe man's facial expression in the image seems to display a mix of surprise, frustration, and indignance. He is holding a rotary dial telephone over his shoulder and appears to be shouting into it. His displeasure might be caused by various factors, such as receiving unexpected or unwanted news or encountering an issue with the telephone itself, like difficulty understanding or hearing the other person, or even being faced with a situation that triggered his angry reaction. It is essential to note that the exact cause of his reaction cannot be definitively determined from the image alone, but it is clear that he is not pleased with the situation he is experiencing.\n~~~\n~~~Answer2\nThe man in the picture appears to be in a state of frustration or anger. He is holding a telephone receiver to his ear with his mouth wide open, suggesting that he is yelling or speaking in a very loud and aggressive manner. This could be due to a number of reasons, such as a disagreement over the phone, receiving bad news, or experiencing a stressful situation. The overall context of the situation is not clear from the image alone, but the man's body language and facial expression indicate that he is reacting strongly to something he is hearing or discussing on the phone.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the specific facial expression (e.g., anger, frustration) and its intensity.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/117.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-7b-instruct",
+    "raw_answer1": "The man's facial expression in the image seems to display a mix of surprise, frustration, and indignance. He is holding a rotary dial telephone over his shoulder and appears to be shouting into it. His displeasure might be caused by various factors, such as receiving unexpected or unwanted news or encountering an issue with the telephone itself, like difficulty understanding or hearing the other person, or even being faced with a situation that triggered his angry reaction. It is essential to note that the exact cause of his reaction cannot be definitively determined from the image alone, but it is clear that he is not pleased with the situation he is experiencing.",
+    "raw_answer2": "The man in the picture appears to be in a state of frustration or anger. He is holding a telephone receiver to his ear with his mouth wide open, suggesting that he is yelling or speaking in a very loud and aggressive manner. This could be due to a number of reasons, such as a disagreement over the phone, receiving bad news, or experiencing a stressful situation. The overall context of the situation is not clear from the image alone, but the man's body language and facial expression indicate that he is reacting strongly to something he is hearing or discussing on the phone.",
+    "response": {
+        "id": "chatcmpl-AIuQeDK33A4Q1T3MDYpaRUCSheRz4",
+        "object": "chat.completion",
+        "created": 1729070180,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1634,
+            "completion_tokens": 2,
+            "total_tokens": 1636
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 6.3639421463012695,
+    "code": 200,
+    "current_time": "2024-10-16 17:16:21"
+}

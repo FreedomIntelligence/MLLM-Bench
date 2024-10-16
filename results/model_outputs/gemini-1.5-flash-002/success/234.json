@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-VSJqdW8AA1_OJ?format=jpg&name=4096x4096",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly calculates percentage increase from 'Total Income' for specified quarters.\n2. Matches the percentage increase with the reference: 12.78%.\n3. Explains the calculation process or provides the correct formula used.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/234.jpg",
+    "unique_idx": 234,
+    "prompt": "Determine the percentage increase in 'Total Income' from the quarter 30 Sep 2023 to the quarter 30 June 2023.",
+    "context": "Determine the percentage increase in 'Total Income' from the quarter 30 Sep 2023 to the quarter 30 June 2023.",
+    "sample_id": 234,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/234.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "Here's how to calculate the percentage increase in Total Income:\n\n**1. Find the difference:**\n\n* Total Income (30 Sep 2023): 1,751.00\n* Total Income (30 June 2023): 1,552.63\n* Difference: 1,751.00 - 1,552.63 = 198.37\n\n**2. Calculate the percentage increase:**\n\n* Percentage increase = (Difference / Total Income (30 June 2023)) * 100\n* Percentage increase = (198.37 / 1,552.63) * 100 \n* Percentage increase ≈ 12.77%\n\nTherefore, the percentage increase in Total Income from the quarter ending 30 June 2023 to the quarter ending 30 September 2023 is approximately **12.77%**.\n",
+    "response_from_model": {
+        "id": "chatcmpl-37dfe4d971364bb081c811f46358d538",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897158,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here's how to calculate the percentage increase in Total Income:\n\n**1. Find the difference:**\n\n* Total Income (30 Sep 2023): 1,751.00\n* Total Income (30 June 2023): 1,552.63\n* Difference: 1,751.00 - 1,552.63 = 198.37\n\n**2. Calculate the percentage increase:**\n\n* Percentage increase = (Difference / Total Income (30 June 2023)) * 100\n* Percentage increase = (198.37 / 1,552.63) * 100 \n* Percentage increase ≈ 12.77%\n\nTherefore, the percentage increase in Total Income from the quarter ending 30 June 2023 to the quarter ending 30 September 2023 is approximately **12.77%**.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 293,
+            "completion_tokens": 219,
+            "total_tokens": 512
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:54"
+}

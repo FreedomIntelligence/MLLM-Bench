@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://knect365.imgix.net/article/images/cacheable/abe5a1ec-a5cb-4ccb-94cb-7e0b900eab78-featured-76c136b913a7dd398bc9fab8d8417f02.jpg?auto=format&fit=max&w=808&dpr=1.75",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the blur is due to low pixel count.\n2. Assess whether motion contributes to the image's blurriness.\n3. Evaluate if focus issues are causing the blur in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/324.jpg",
+    "unique_idx": "324",
+    "prompt": "What makes the image blurry?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The blurriness in the image is primarily due to motion. The train is moving at a high speed, and the photograph was taken with a slow shutter speed, which is not fast enough to freeze the motion of the train. This results in a motion blur effect, where the moving train appears smeared along the direction of motion. The stationary elements, such as the platform and the sign that says \"Tokyo,\" are in focus because they are not moving.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717427121,
+        "id": "chatcmpl-9W3XNDhrvDPgpCpIpd5cDFd5OI2bO",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 93,
+            "prompt_tokens": 1148,
+            "total_tokens": 1241
+        }
+    },
+    "answer": "The blurriness in the image is primarily due to motion. The train is moving at a high speed, and the photograph was taken with a slow shutter speed, which is not fast enough to freeze the motion of the train. This results in a motion blur effect, where the moving train appears smeared along the direction of motion. The stationary elements, such as the platform and the sign that says \"Tokyo,\" are in focus because they are not moving.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 10.47711992263794,
+    "code": 200,
+    "current_time": "2024-06-03 23:05:25"
+}

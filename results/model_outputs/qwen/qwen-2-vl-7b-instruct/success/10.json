@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/F-Qz_HoXQAAnic9?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify dishes with add-on options and their respective costs (e.g., \"add blue cheese for £1\").",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/10.jpg",
+    "unique_idx": 10,
+    "prompt": "Which dishes can have extra ingredients added, and what is the cost of adding ingredients?",
+    "context": "Which dishes can have extra ingredients added, and what is the cost of adding ingredients?",
+    "sample_id": 10,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/10.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "Some dishes can have extra ingredients added for an additional cost. The \"Cocktail di Gamberi Rossi\" can have smoked salmon added for £1, the \"Cesare\" salad can have grilled chicken added for £2, and the \"Penne Alla Ciociara\" can have chicken added for £2.",
+    "response_from_model": {
+        "id": "gen-1728903279-WN8NKFMHKsoMgCwVZchD",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903279,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Some dishes can have extra ingredients added for an additional cost. The \"Cocktail di Gamberi Rossi\" can have smoked salmon added for £1, the \"Cesare\" salad can have grilled chicken added for £2, and the \"Penne Alla Ciociara\" can have chicken added for £2.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 39,
+            "completion_tokens": 68,
+            "total_tokens": 107
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-18:54:43"
+}

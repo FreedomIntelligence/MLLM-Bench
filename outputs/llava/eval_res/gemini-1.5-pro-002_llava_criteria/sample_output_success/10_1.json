@@ -1,0 +1,35 @@
+{
+    "unique_idx": "10_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhich dishes can have extra ingredients added, and what is the cost of adding ingredients?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nSeveral dishes on the menu allow for the addition of extra ingredients. These dishes include the spaghetti carbonara and the penne alla chiarra. The cost of adding extra ingredients for these dishes is either 50p or 70p, depending on the dish. The price can also vary depending on the specific ingredients added and their portions, so it is best to confirm the cost with the restaurant.\n~~~\n~~~Answer2\nThe following dishes can have extra ingredients added, along with the cost:\n\n* **Tomato & Onion Salad:** Add blue cheese for £1.\n* **Bruschetta al Pomodoro:** Add grilled goat's cheese for £1.\n* **Cocktail di Gamberi Rossi:** Add smoked salmon for £1.\n* **Pane all 'Aglio:**  Mozzarella cheese (£2), fresh rosemary & sea salt (£1), tomato & fresh basil (£1), goats cheese & caramelised onion (£2), rocket & parma ham (£2).\n* **Cesare Salad:** Add grilled chicken for £2.\n* **Spaghetti Carbonara:** Add chicken for £2.\n\n\n\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify dishes with add-on options and their respective costs (e.g., \"add blue cheese for £1\").",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/10.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-pro-002",
+    "raw_answer1": "Several dishes on the menu allow for the addition of extra ingredients. These dishes include the spaghetti carbonara and the penne alla chiarra. The cost of adding extra ingredients for these dishes is either 50p or 70p, depending on the dish. The price can also vary depending on the specific ingredients added and their portions, so it is best to confirm the cost with the restaurant.",
+    "raw_answer2": "The following dishes can have extra ingredients added, along with the cost:\n\n* **Tomato & Onion Salad:** Add blue cheese for £1.\n* **Bruschetta al Pomodoro:** Add grilled goat's cheese for £1.\n* **Cocktail di Gamberi Rossi:** Add smoked salmon for £1.\n* **Pane all 'Aglio:**  Mozzarella cheese (£2), fresh rosemary & sea salt (£1), tomato & fresh basil (£1), goats cheese & caramelised onion (£2), rocket & parma ham (£2).\n* **Cesare Salad:** Add grilled chicken for £2.\n* **Spaghetti Carbonara:** Add chicken for £2.\n\n\n",
+    "response": {
+        "id": "chatcmpl-AIt1wE9gaeBYwqrVa4u4ocJqrbk9f",
+        "object": "chat.completion",
+        "created": 1729064804,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1592,
+            "completion_tokens": 2,
+            "total_tokens": 1594
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.5583555698394775,
+    "code": 200,
+    "current_time": "2024-10-16 15:46:45"
+}

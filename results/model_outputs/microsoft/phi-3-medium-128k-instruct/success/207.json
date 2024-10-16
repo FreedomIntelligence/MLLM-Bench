@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2023/11/05/06/55/motorcycle-8366394_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify that the rider is riding towards the left side.\n2. Infer that the rider is unlikely to appear on the right side.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/207.jpg",
+    "unique_idx": 207,
+    "prompt": "Assuming the rider continues to travel in the same direction, will he appear on the right side of the picture?",
+    "context": "Assuming the rider continues to travel in the same direction, will he appear on the right side of the picture?",
+    "sample_id": 207,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/207.jpg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " Assuming the rider is moving forward in the direction shown in the picture, he will not appear on the right side of the picture. Instead, he will continue to be in the same position relative to the camera, which is capturing the scene from the left side. If the rider changes direction and moves to the right, then he would appear on the right side of the picture. However, without additional context or information about the rider's movement, we cannot definitively say that he will appear on the right side of the picture.",
+    "response_from_model": {
+        "id": "gen-1728906685-ALycV4hOZ7tQlwr3BDvm",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906685,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " Assuming the rider is moving forward in the direction shown in the picture, he will not appear on the right side of the picture. Instead, he will continue to be in the same position relative to the camera, which is capturing the scene from the left side. If the rider changes direction and moves to the right, then he would appear on the right side of the picture. However, without additional context or information about the rider's movement, we cannot definitively say that he will appear on the right side of the picture.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 28,
+            "completion_tokens": 111,
+            "total_tokens": 139
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:51:27"
+}

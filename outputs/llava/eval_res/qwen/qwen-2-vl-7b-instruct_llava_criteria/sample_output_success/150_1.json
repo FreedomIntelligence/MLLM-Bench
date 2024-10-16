@@ -1,0 +1,35 @@
+{
+    "unique_idx": "150_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nGiven the image, identify the type of martial art depicted and the roles of the individuals in Portuguese.\n~~~\n~~~Question Type\ncompound\n~~~\n~~~Answer1\nThe image depicts a group of guys performing a martial art routine, specifically Capoeira. In the scene, one person is executing an acrobatic move, while the others are watching attentively. There is also a drum in the background, which is an essential part of the Capoeira music. The individuals are dressed in white tops, which adds a sense of unity and uniformity to their performance. The scene indicates that the group is showcasing their skills and talent in the traditional African-Brazilian martial art form of Capoeira.\n~~~\n~~~Answer2\nThe martial art depicted in the image is Capoeira. \n\n- The individual performing the high kick is the \"baixinho\" (small person) or \"baixinho da roda\" (small person of the circle).\n- The individual kneeling and embracing the legs of the baixinho is the \"baixinho da roda\" (small person of the circle).\n- The individuals standing in a semi-circle are the \"mocidade\" (youth) or \"jogadores\" (players).\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Answer identifies \"Capoeira\" as the martial art in Portuguese.\n2. Description includes roles such as \"players,\" \"musicians,\" or \"spectators.\"\n3. Cultural context of Capoeira is acknowledged, reflecting understanding.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/150.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-7b-instruct",
+    "raw_answer1": "The image depicts a group of guys performing a martial art routine, specifically Capoeira. In the scene, one person is executing an acrobatic move, while the others are watching attentively. There is also a drum in the background, which is an essential part of the Capoeira music. The individuals are dressed in white tops, which adds a sense of unity and uniformity to their performance. The scene indicates that the group is showcasing their skills and talent in the traditional African-Brazilian martial art form of Capoeira.",
+    "raw_answer2": "The martial art depicted in the image is Capoeira. \n\n- The individual performing the high kick is the \"baixinho\" (small person) or \"baixinho da roda\" (small person of the circle).\n- The individual kneeling and embracing the legs of the baixinho is the \"baixinho da roda\" (small person of the circle).\n- The individuals standing in a semi-circle are the \"mocidade\" (youth) or \"jogadores\" (players).",
+    "response": {
+        "id": "chatcmpl-AIuQlao03gGDnk8E7TFDwsB91GpEU",
+        "object": "chat.completion",
+        "created": 1729070187,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1303,
+            "completion_tokens": 2,
+            "total_tokens": 1305
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.1068615913391113,
+    "code": 200,
+    "current_time": "2024-10-16 17:16:27"
+}

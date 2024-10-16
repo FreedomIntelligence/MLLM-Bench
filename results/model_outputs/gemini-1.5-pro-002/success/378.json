@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-VTdVLakAEvyS7?format=jpg&name=900x900",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and visualize top-selling IPs in both categories for 2024.3 Full Year Forecasts.\n2. Compare sales growth between 2023.3 and 2024.3 for highlighted IPs.\n3. Ensure visual representation is clear, accurate, and easily interpretable.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/378.jpeg",
+    "unique_idx": 378,
+    "prompt": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "context": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "sample_id": 378,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/378.jpeg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "```python\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n# Data from the report (Groupwide)\ndata_groupwide = {\n    'IP': ['Anpanman', 'Ultraman', 'KAMEN RIDER', 'Mobile Suit Gundam', 'Super Sentai', 'DRAGON BALL', 'NARUTO', 'Pretty Cure', 'ONE PIECE'],\n    '2023.3 Full Year Results': [9.9, 19.5, 32.1, 131.3, 6.5, 144.5, 18.7, 5.6, 86.3],\n    '2024.3 Full Year Forecasts': [10.0, 21.5, 32.0, 140.0, 7.0, 133.0, 24.5, 6.0, 100.0]\n}\n\n# Data from the report (Toys and Hobby Business, Japan)\ndata_toys_hobby = {\n    'IP': ['Anpanman', 'Ultraman', 'KAMEN RIDER', 'Mobile Suit Gundam', 'Super Sentai', 'DRAGON BALL', 'Pretty Cure', 'Pokémon', 'ONE PIECE'],\n    '2023.3 Full Year Results': [9.3, 9.2, 23.0, 60.5, 5.6, 22.5, 5.6, 8.8, 31.9],\n    '2024.3 Full Year Forecasts': [9.0, 9.5, 23.0, 65.5, 6.0, 21.0, 6.0, 9.5, 52.5]\n}\n\n\ndef create_bar_chart(data, title):\n    df = pd.DataFrame(data)\n    df = df.set_index('IP')\n\n    ax = df.plot(kind='bar', figsize=(12, 6), rot=45)\n    plt.title(title)\n    plt.ylabel('Billion Yen')\n    plt.tight_layout()  # Adjust layout to prevent labels from overlapping\n    plt.show()\n\ncreate_bar_chart(data_groupwide, 'Sales of IPs (Groupwide) - Full Year')\ncreate_bar_chart(data_toys_hobby, 'Sales of IPs (Toys and Hobby Business, Japan) - Full Year')\n\n```\n\nThis program uses `matplotlib` and `pandas` to generate bar charts visualizing the full-year results and forecasts for both the Groupwide and Toys and Hobby Business sales data.  The code is organized into functions for better readability and reusability.  Key improvements:\n\n* **Uses Pandas:**  Leverages pandas DataFrames for efficient data handling.\n* **Clearer Chart Titles:** More descriptive titles for better understanding.\n* **Rotated x-axis labels:** Prevents overlapping labels when IP names are long.\n* **`tight_layout()`:** Dynamically adjusts plot parameters to prevent overlapping elements.\n* **Function for Reusability:**  The `create_bar_chart` function allows you to easily generate charts for different datasets.\n\n\nThis visualization focuses on the most important information: full-year sales figures and forecasts, allowing for easy comparison between IPs and across years.  The bar chart format makes it straightforward to identify top-performing IPs and projected growth.\n",
+    "response_from_model": {
+        "id": "chatcmpl-fff5a5451b924016bce5491c034c4fc0",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897356,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```python\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n# Data from the report (Groupwide)\ndata_groupwide = {\n    'IP': ['Anpanman', 'Ultraman', 'KAMEN RIDER', 'Mobile Suit Gundam', 'Super Sentai', 'DRAGON BALL', 'NARUTO', 'Pretty Cure', 'ONE PIECE'],\n    '2023.3 Full Year Results': [9.9, 19.5, 32.1, 131.3, 6.5, 144.5, 18.7, 5.6, 86.3],\n    '2024.3 Full Year Forecasts': [10.0, 21.5, 32.0, 140.0, 7.0, 133.0, 24.5, 6.0, 100.0]\n}\n\n# Data from the report (Toys and Hobby Business, Japan)\ndata_toys_hobby = {\n    'IP': ['Anpanman', 'Ultraman', 'KAMEN RIDER', 'Mobile Suit Gundam', 'Super Sentai', 'DRAGON BALL', 'Pretty Cure', 'Pokémon', 'ONE PIECE'],\n    '2023.3 Full Year Results': [9.3, 9.2, 23.0, 60.5, 5.6, 22.5, 5.6, 8.8, 31.9],\n    '2024.3 Full Year Forecasts': [9.0, 9.5, 23.0, 65.5, 6.0, 21.0, 6.0, 9.5, 52.5]\n}\n\n\ndef create_bar_chart(data, title):\n    df = pd.DataFrame(data)\n    df = df.set_index('IP')\n\n    ax = df.plot(kind='bar', figsize=(12, 6), rot=45)\n    plt.title(title)\n    plt.ylabel('Billion Yen')\n    plt.tight_layout()  # Adjust layout to prevent labels from overlapping\n    plt.show()\n\ncreate_bar_chart(data_groupwide, 'Sales of IPs (Groupwide) - Full Year')\ncreate_bar_chart(data_toys_hobby, 'Sales of IPs (Toys and Hobby Business, Japan) - Full Year')\n\n```\n\nThis program uses `matplotlib` and `pandas` to generate bar charts visualizing the full-year results and forecasts for both the Groupwide and Toys and Hobby Business sales data.  The code is organized into functions for better readability and reusability.  Key improvements:\n\n* **Uses Pandas:**  Leverages pandas DataFrames for efficient data handling.\n* **Clearer Chart Titles:** More descriptive titles for better understanding.\n* **Rotated x-axis labels:** Prevents overlapping labels when IP names are long.\n* **`tight_layout()`:** Dynamically adjusts plot parameters to prevent overlapping elements.\n* **Function for Reusability:**  The `create_bar_chart` function allows you to easily generate charts for different datasets.\n\n\nThis visualization focuses on the most important information: full-year sales figures and forecasts, allowing for easy comparison between IPs and across years.  The bar chart format makes it straightforward to identify top-performing IPs and projected growth.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 279,
+            "completion_tokens": 762,
+            "total_tokens": 1041
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:16:12"
+}

@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://cdn.wccftech.com/wp-content/uploads/2017/02/Google-brain.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe the progression of image quality from left to right in each row.\n2. Confirm the presence of human faces in varying resolutions and clarity in the image.\n3. Assess if the description includes changes in detail and recognizability.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/323.jpg",
+    "unique_idx": "323",
+    "prompt": "What happened to each row of the image from left to right?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "In the image provided, each row represents a different level of image manipulation from left to right, likely intended to demonstrate the effects of pixelation or blurring on image clarity:\n\n- Top row: The images progress from heavily pixelated to less pixelated, with the rightmost image being the clearest within the row.\n- Second row: These images appear to be subjected to a blurring effect, with the leftmost image being the most blurred and the rightmost image having the least amount of blur, thus being the clearest.\n- Third row: Similar to the second row, these images also seem to be blurred, with the intensity of the blur decreasing from left to right, making the rightmost image the clearest in this row.\n- Bottom row: This row follows the same pattern as the above rows, with the blurring effect gradually decreasing from the leftmost to the rightmost image.\n\nEach row illustrates a gradual increase in image clarity, moving from a highly manipulated state on the left to a less manipulated, clearer state on the right.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717427114,
+        "id": "chatcmpl-9W3XGc67yNYTmmyXw5wwbyCVvJtON",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 211,
+            "prompt_tokens": 815,
+            "total_tokens": 1026
+        }
+    },
+    "answer": "In the image provided, each row represents a different level of image manipulation from left to right, likely intended to demonstrate the effects of pixelation or blurring on image clarity:\n\n- Top row: The images progress from heavily pixelated to less pixelated, with the rightmost image being the clearest within the row.\n- Second row: These images appear to be subjected to a blurring effect, with the leftmost image being the most blurred and the rightmost image having the least amount of blur, thus being the clearest.\n- Third row: Similar to the second row, these images also seem to be blurred, with the intensity of the blur decreasing from left to right, making the rightmost image the clearest in this row.\n- Bottom row: This row follows the same pattern as the above rows, with the blurring effect gradually decreasing from the leftmost to the rightmost image.\n\nEach row illustrates a gradual increase in image clarity, moving from a highly manipulated state on the left to a less manipulated, clearer state on the right.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 16.86780619621277,
+    "code": 200,
+    "current_time": "2024-06-03 23:05:24"
+}

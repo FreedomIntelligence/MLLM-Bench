@@ -1,0 +1,21 @@
+{
+    "id": "chatcmpl-d0eb88051f5040d08f187af242efe83d",
+    "model": "gemini-pro-vision",
+    "object": "chat.completion",
+    "created": 1712930921,
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": " ```python\n# Python program to find the factorial of a number\n\n# A function to find the factorial of a number\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\n# Driver code to test above function\np=int(input(\"Enter the starting number: \"))\nq=int(input(\"Enter the ending number: \"))\nfor i in range(p,q+1):\n    print(str(i)+\"! = \", factorial(i))\n```"
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1131,
+        "completion_tokens": 102,
+        "total_tokens": 1233
+    }
+}

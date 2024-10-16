@@ -1,0 +1,35 @@
+{
+    "unique_idx": "301_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nOut of the three remaining pieces, which one should you select to place in the second row and first column?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe piece with the strawberry should be placed in the second row and first column.  This is because the arithmetic problem multiplies the sum of the apples and bananas by the strawberries.  The puzzle pieces showing the addition problems have already been placed, so the multiplication piece should come next.\n~~~\n~~~Answer2\nSince the image shows an arithmetic puzzle with three pieces left to solve, one should choose the piece that represents the number \"2,\" which is the number in the second row, and the first column, counting from the bottom left. The number \"2\" is associated with bananas, as shown in the puzzle. So, select the banana piece to complete the second row and first column.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Answer identifies all pieces in their correct location: banana at the second row, first column; strawberry at the third row, first column; \"=7\" at the third row, third column.\n2. Solve the equations with the completed puzzle: apple=1, banana=3, strawberry=4.\n3. Answer to the question is (1*1+3*3)*2*4=80.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/301.png",
+    "model_1": "gemini-1.5-pro-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The piece with the strawberry should be placed in the second row and first column.  This is because the arithmetic problem multiplies the sum of the apples and bananas by the strawberries.  The puzzle pieces showing the addition problems have already been placed, so the multiplication piece should come next.",
+    "raw_answer2": "Since the image shows an arithmetic puzzle with three pieces left to solve, one should choose the piece that represents the number \"2,\" which is the number in the second row, and the first column, counting from the bottom left. The number \"2\" is associated with bananas, as shown in the puzzle. So, select the banana piece to complete the second row and first column.",
+    "response": {
+        "id": "chatcmpl-AIt5AxgFF6zJnYruHf8B8pCv7GIZN",
+        "object": "chat.completion",
+        "created": 1729065004,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1571,
+            "completion_tokens": 2,
+            "total_tokens": 1573
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.4721627235412598,
+    "code": 200,
+    "current_time": "2024-10-16 15:50:05"
+}

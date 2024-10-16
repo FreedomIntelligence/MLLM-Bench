@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Food Recognition",
+        "url": "https://pbs.twimg.com/media/F_9V36cWYAAcOsH?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify mushroom as \"galerina marginata.\"\n2. State the mushroom is not edible.\n3. Ensure the answer is based on visual characteristics of the mushroom in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/40.jpeg",
+    "unique_idx": "40",
+    "prompt": "What type of mushroom is it in the image? Is it edible?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 63,
+            "prompt_tokens": 1024,
+            "total_tokens": 1087
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the image alone, it's not possible to accurately determine the species of the mushroom. Mushrooms can vary greatly in appearance, and many edible mushrooms have similar features to non-edible ones. It's important to consult a field guide or an expert for identification, especially before consuming wild mushrooms."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "Based on the image alone, it's not possible to accurately determine the species of the mushroom. Mushrooms can vary greatly in appearance, and many edible mushrooms have similar features to non-edible ones. It's important to consult a field guide or an expert for identification, especially before consuming wild mushrooms.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 7.4558632373809814,
+    "code": 200,
+    "current_time": "2024-04-30 13:07:01"
+}

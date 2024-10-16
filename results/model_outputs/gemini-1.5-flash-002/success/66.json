@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "https://savvytokyo.scdn3.secure.raxcdn.com/app/uploads/2018/09/IMG_0133-1024x570.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and transcribe the section labeled \"D1\" in Japanese accurately.\n2. Provide translation of \"D1\" section into English, relevant to health assessment context.\n3. Advise based on \"D1\" section if one's electrocardiogram result is D1.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/66.jpg",
+    "unique_idx": 66,
+    "prompt": "この画像は健康診断結果報告書の評価基準を示しています。もし私の心電図の結果がD1だった場合、私はどうすればいいですか?",
+    "context": "この画像は健康診断結果報告書の評価基準を示しています。もし私の心電図の結果がD1だった場合、私はどうすればいいですか?",
+    "sample_id": 66,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/66.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "心電図の結果がD1だった場合、報告書には「**治療が必要な疾患を認めます。当該医療機関の受診をお勧めします。**」と記載されています。\n\nこれは、あなたの心電図に治療を必要とする異常が見つかったことを意味します。  **すぐに検査を行った医療機関を受診し、医師の指示に従うことが重要です。**  医師は、あなたの状態を詳しく調べ、適切な治療法を決定します。  自己判断で治療を始めることはせず、必ず医療機関の指示に従ってください。\n",
+    "response_from_model": {
+        "id": "chatcmpl-62da568bc3e7468882daf0313fb41d01",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897121,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "心電図の結果がD1だった場合、報告書には「**治療が必要な疾患を認めます。当該医療機関の受診をお勧めします。**」と記載されています。\n\nこれは、あなたの心電図に治療を必要とする異常が見つかったことを意味します。  **すぐに検査を行った医療機関を受診し、医師の指示に従うことが重要です。**  医師は、あなたの状態を詳しく調べ、適切な治療法を決定します。  自己判断で治療を始めることはせず、必ず医療機関の指示に従ってください。\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 289,
+            "completion_tokens": 119,
+            "total_tokens": 408
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:17"
+}

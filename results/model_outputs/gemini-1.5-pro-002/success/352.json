@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Fake Image Detection",
+        "url": "https://pbs.twimg.com/media/F-zzjdsbEAEUaeO?format=jpg&name=900x900",
+        "question type": "compound"
+    },
+    "criteria": "1. Confirm the photo is edited by identifying the added squirrel.\n2. Evaluate the explanation of how the squirrel's integration indicates editing.\n3. Assess the consistency of lighting and shadows related to the squirrel.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/352.jpg",
+    "unique_idx": 352,
+    "prompt": "Determine if this photo has been edited and provide a detailed explanation.",
+    "context": "Determine if this photo has been edited and provide a detailed explanation.",
+    "sample_id": 352,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/352.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "Yes, the photo has been edited.  A squirrel has been digitally added to the image.  It appears superimposed and doesn't interact naturally with the environment (no shadow, slightly blurry compared to the rest of the image).",
+    "response_from_model": {
+        "id": "chatcmpl-118272b73b334dd8830847fa1742c854",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897330,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Yes, the photo has been edited.  A squirrel has been digitally added to the image.  It appears superimposed and doesn't interact naturally with the environment (no shadow, slightly blurry compared to the rest of the image)."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 272,
+            "completion_tokens": 46,
+            "total_tokens": 318
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:46"
+}

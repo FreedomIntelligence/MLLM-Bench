@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://www.researchgate.net/publication/351673709/figure/fig5/AS:11431281086060493@1664071372500/Comparison-between-full-dose-CT-images-and-low-quality-CT-images-a-and-b-high-quality.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and confirm that CT scans (c) and (d) are the ones needing a redo.\n2. Assess clarity, noise, and artifacts affecting image quality in (c) and (d).",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/321.png",
+    "unique_idx": 321,
+    "prompt": "Which of the CT scan needs a redo?",
+    "context": "Which of the CT scan needs a redo?",
+    "sample_id": 321,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/321.png"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "To determine which CT scan needs a redo, we need to assess the quality and clarity of the images. Here are the observations:\n\n- **Image (a)**: The image appears to be clear with good contrast, but there is some noise visible.\n- **Image (b)**: The image is also clear with good contrast, but there is some noise visible.\n- **Image (c)**: The image is very blurry and lacks clear details.\n- **Image (d)**: The image is clear with good contrast, but there is some noise visible.\n\nBased on these observations, **Image (c)** appears to be the least clear and detailed, making it the most likely candidate for a redo.",
+    "response_from_model": {
+        "id": "gen-1728903804-WeFU3gpLhGPSenXgIBUi",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903804,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To determine which CT scan needs a redo, we need to assess the quality and clarity of the images. Here are the observations:\n\n- **Image (a)**: The image appears to be clear with good contrast, but there is some noise visible.\n- **Image (b)**: The image is also clear with good contrast, but there is some noise visible.\n- **Image (c)**: The image is very blurry and lacks clear details.\n- **Image (d)**: The image is clear with good contrast, but there is some noise visible.\n\nBased on these observations, **Image (c)** appears to be the least clear and detailed, making it the most likely candidate for a redo.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 31,
+            "completion_tokens": 143,
+            "total_tokens": 174
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:03:53"
+}

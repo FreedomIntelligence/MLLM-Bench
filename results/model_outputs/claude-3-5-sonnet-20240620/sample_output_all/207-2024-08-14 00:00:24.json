@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2023/11/05/06/55/motorcycle-8366394_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify that the rider is riding towards the left side.\n2. Infer that the rider is unlikely to appear on the right side.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/207.jpg",
+    "unique_idx": "207",
+    "prompt": "Assuming the rider continues to travel in the same direction, will he appear on the right side of the picture?",
+    "response": {
+        "id": "chatcmpl-msg01H1tikrvvB6vPJLGH1MpAp3",
+        "model": "claude-3-5-sonnet-20240620",
+        "object": "chat.completion",
+        "created": 1723564824,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Yes, if the rider continues to travel in the same direction, they will appear on the right side of the picture. The image shows a motorcyclist riding from left to right across the frame. Given this direction of travel, if the rider continues on their current path, they would eventually exit the left side of the frame and reappear on the right side if the journey were to continue in a circular or looping manner."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1459,
+            "completion_tokens": 90,
+            "total_tokens": 1549
+        }
+    },
+    "answer": "Yes, if the rider continues to travel in the same direction, they will appear on the right side of the picture. The image shows a motorcyclist riding from left to right across the frame. Given this direction of travel, if the rider continues on their current path, they would eventually exit the left side of the frame and reappear on the right side if the journey were to continue in a circular or looping manner.",
+    "gen_model_id": "claude-3-5-sonnet-20240620",
+    "duration": 4.020718812942505,
+    "code": 200,
+    "current_time": "2024-08-14 00:00:24"
+}

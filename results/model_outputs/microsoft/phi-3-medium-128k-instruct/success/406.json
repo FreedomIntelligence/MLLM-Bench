@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Image Captioning",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify cat's features: color, posture, expression.\n2. Describe the immediate environment: flooring, objects nearby, building details.\n3. Mention lighting and time of day if apparent from the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/406.jpeg",
+    "unique_idx": 406,
+    "prompt": "Describe the cats and the environment of the image detailedly.",
+    "context": "Describe the cats and the environment of the image detailedly.",
+    "sample_id": 406,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/406.jpeg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " In the image, there are two cats, a calico and a tabby, sitting side by side on a wooden porch. The calico cat has a beautiful coat with a mix of orange, black, and white patches, while the tabby has a pattern of stripes and spots on its brown and black fur. They are both looking out into a lush green garden, filled with various flowers and plants. The porch is made of weathered wood and has a few potted plants placed on the sides. The sun is setting, casting a warm glow over the scene, and there is a gentle breeze that causes the leaves on the nearby trees to rustle softly. In the background, there is a white picket fence enclosing the garden, and a small bird feeder hangs from a branch of a tree. The atmosphere is peaceful and serene, with the cats seemingly enjoying the tranquility of their surroundings.",
+    "response_from_model": {
+        "id": "gen-1728907085-Anp5PWiot8Mo1fFXOsrG",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728907085,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " In the image, there are two cats, a calico and a tabby, sitting side by side on a wooden porch. The calico cat has a beautiful coat with a mix of orange, black, and white patches, while the tabby has a pattern of stripes and spots on its brown and black fur. They are both looking out into a lush green garden, filled with various flowers and plants. The porch is made of weathered wood and has a few potted plants placed on the sides. The sun is setting, casting a warm glow over the scene, and there is a gentle breeze that causes the leaves on the nearby trees to rustle softly. In the background, there is a white picket fence enclosing the garden, and a small bird feeder hangs from a branch of a tree. The atmosphere is peaceful and serene, with the cats seemingly enjoying the tranquility of their surroundings.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 19,
+            "completion_tokens": 206,
+            "total_tokens": 225
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:58:13"
+}

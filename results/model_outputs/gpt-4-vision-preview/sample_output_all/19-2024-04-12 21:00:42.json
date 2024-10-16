@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://static.turbosquid.com/Preview/2016/06/03__14_24_55/2.pngf5b386e3-37f4-44b1-8af4-ffe6332cac24Zoom.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Check the accuracy of OCR extraction of \"passenger_name\", \"flight_number\", \"departure_city\", \"destination_city\", \"date\", \"gate\", \"boarding_time\", and \"seat_number\".\n2. Ensure all extracted text data is organized in JSON format, with no extraneous or missing information.\n3. An example answer can be: {\n    \"passenger_name\": \"DOE JOHN\",\n    \"flight_number\": \"OKL022\",\n    \"departure_city\": \"GLASGOW\",\n    \"destination_city\": \"LONDON\",\n    \"date\": \"12 NOV 2018\",\n    \"gate\": \"45\",\n    \"boarding_time\": \"10:30\",\n    \"seat_number\": \"26A\"\n}",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/19.jpg",
+    "unique_idx": "19",
+    "prompt": "Extract all text data from the boarding pass and organize them into JSON format, including passenger name, flight number, departure and destination cities, date, gate, boarding time, and seat number.",
+    "response": {
+        "id": "msg_01YPUPKWk8a2Z5tr3Em8T89b",
+        "type": "message",
+        "role": "assistant",
+        "model": "gpt-4",
+        "usage": {
+            "prompt_tokens": 1653,
+            "completion_tokens": 101,
+            "total_tokens": 1754
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "{\n  \"passengerName\": \"DOE/JOHN\",\n  \"flightNumber\": \"QKL022\",\n  \"departureCity\": \"GLASGOW\",\n  \"destinationCity\": \"LONDON\",\n  \"date\": \"12 NOV 2018\",\n  \"gate\": \"45\",\n  \"boardingTime\": \"10:30\",\n  \"seatNumber\": \"26A\"\n}"
+                },
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "object": "chat.completion",
+        "created": 1712926841
+    },
+    "answer": "{\n  \"passengerName\": \"DOE/JOHN\",\n  \"flightNumber\": \"QKL022\",\n  \"departureCity\": \"GLASGOW\",\n  \"destinationCity\": \"LONDON\",\n  \"date\": \"12 NOV 2018\",\n  \"gate\": \"45\",\n  \"boardingTime\": \"10:30\",\n  \"seatNumber\": \"26A\"\n}",
+    "gen_model_id": "gpt-4-vision-preview",
+    "duration": 9.622164964675903,
+    "code": 200,
+    "current_time": "2024-04-12 21:00:42"
+}

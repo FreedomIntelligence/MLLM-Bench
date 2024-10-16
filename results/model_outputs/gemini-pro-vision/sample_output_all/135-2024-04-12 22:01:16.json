@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Multimodal Commonsense Understanding",
+        "url": "https://th.bing.com/th/id/OIP.F7RgbLQMYnuDfappTjWBbwHaHa?w=640&h=640&rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify the activity depicted and determine if it aligns with a known children's game.\n2. Explain the basic rule(s) of the game based on the visual cues in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/135.jpg",
+    "unique_idx": "135",
+    "prompt": "Describe the activity taking place and briefly introduce the game rule.",
+    "response": {
+        "id": "chatcmpl-4851158f3f7c43e9b571cef3d20a716d",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930476,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The picture shows a group of children playing a game of tag. The game rule is that one person is designated as \"it\" and has to chase the others. If \"it\" tags someone, that person becomes \"it\". The game continues until everyone has been tagged."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 784,
+            "completion_tokens": 55,
+            "total_tokens": 839
+        }
+    },
+    "answer": " The picture shows a group of children playing a game of tag. The game rule is that one person is designated as \"it\" and has to chase the others. If \"it\" tags someone, that person becomes \"it\". The game continues until everyone has been tagged.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 4.6946187019348145,
+    "code": 200,
+    "current_time": "2024-04-12 22:01:16"
+}

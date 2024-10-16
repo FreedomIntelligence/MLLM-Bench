@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://mzucker.github.io/images/noteshrink/notesA1.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately transcribe definitions and examples related to \"Orthogonal Transformations.\"\n2. Correctly format mathematical formulas and symbols in LaTeX notation.\n3. Ensure extracted text maintains the original notes' structure and order.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/14.jpeg",
+    "unique_idx": 14,
+    "prompt": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "context": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "sample_id": 14,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/14.jpeg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " Definitions:\n\n1. Definition: A function is a relation between a set of inputs and a set of permissible outputs with the property that each input is related to exactly one output.\n\nFormula: $f: A \\to B$ is a function if for every element $a \\in A$, there exists a unique element $b \\in B$ such that $(a, b) \\in f$.\n\n2. Definition: A sequence is an ordered list of elements.\n\nFormula: $(a_n)_{n \\in \\mathbb{N}}$ is a sequence if $a_n$ is an element of a set $A$ for each natural number $n$.\n\nExamples:\n\n1. Example: The function $f(x) = x^2$ is a function that maps a real number to its square.\n\n2. Example: The sequence $(a_n) = (1, 2, 3, 4, ...)$ is a sequence of natural numbers.\n\nFormulas in LaTeX:\n\n1. Function: $f: A \\to B, \\forall a \\in A, \\exists! b \\in B: (a, b) \\in f$\n\n2. Sequence: $(a_n)_{n \\in \\mathbb{N}}$, where $a_n \\in A$ for all $n \\in \\mathbb{N}$\n\n3. Function: $f(x) = x^2$\n\n4. Sequence: $(a_n) = (1, 2, 3, 4, ...)$",
+    "response_from_model": {
+        "id": "gen-1728906198-VmcFuFNW84eMR0EkDPJx",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906198,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " Definitions:\n\n1. Definition: A function is a relation between a set of inputs and a set of permissible outputs with the property that each input is related to exactly one output.\n\nFormula: $f: A \\to B$ is a function if for every element $a \\in A$, there exists a unique element $b \\in B$ such that $(a, b) \\in f$.\n\n2. Definition: A sequence is an ordered list of elements.\n\nFormula: $(a_n)_{n \\in \\mathbb{N}}$ is a sequence if $a_n$ is an element of a set $A$ for each natural number $n$.\n\nExamples:\n\n1. Example: The function $f(x) = x^2$ is a function that maps a real number to its square.\n\n2. Example: The sequence $(a_n) = (1, 2, 3, 4, ...)$ is a sequence of natural numbers.\n\nFormulas in LaTeX:\n\n1. Function: $f: A \\to B, \\forall a \\in A, \\exists! b \\in B: (a, b) \\in f$\n\n2. Sequence: $(a_n)_{n \\in \\mathbb{N}}$, where $a_n \\in A$ for all $n \\in \\mathbb{N}$\n\n3. Function: $f(x) = x^2$\n\n4. Sequence: $(a_n) = (1, 2, 3, 4, ...)$",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 28,
+            "completion_tokens": 346,
+            "total_tokens": 374
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:43:37"
+}

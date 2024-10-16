@@ -1,0 +1,35 @@
+{
+    "unique_idx": "46_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat are the dishes in the image?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe dish in the image appears to be a type of spring roll or rice roll, often served with a sweet or savory sauce. It may contain a filling of vegetables or meat, wrapped in a thin rice paper or crepe-like wrapper, and topped with crushed peanuts. This presentation is common in various Asian cuisines, particularly in Vietnamese or Thai dishes.\n~~~\n~~~Answer2\nThe dishes in the image are a spring roll with sauce and a piece of bread covered in sauce or gravy, sitting on plates.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the dish as Fresh Lumpia (Lumpiang Sariwa) based on its visual characteristics.\n2. Include observations of distinct features such as wrapper, filling, and sauce.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/46.jpeg",
+    "model_1": "gpt-4o-mini-2024-07-18",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The dish in the image appears to be a type of spring roll or rice roll, often served with a sweet or savory sauce. It may contain a filling of vegetables or meat, wrapped in a thin rice paper or crepe-like wrapper, and topped with crushed peanuts. This presentation is common in various Asian cuisines, particularly in Vietnamese or Thai dishes.",
+    "raw_answer2": "The dishes in the image are a spring roll with sauce and a piece of bread covered in sauce or gravy, sitting on plates.",
+    "response": {
+        "id": "chatcmpl-AIt7hVNsyTPaqOa6gjrKUsPdrHwKU",
+        "object": "chat.completion",
+        "created": 1729065161,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1135,
+            "completion_tokens": 2,
+            "total_tokens": 1137
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.680633306503296,
+    "code": 200,
+    "current_time": "2024-10-16 15:52:42"
+}

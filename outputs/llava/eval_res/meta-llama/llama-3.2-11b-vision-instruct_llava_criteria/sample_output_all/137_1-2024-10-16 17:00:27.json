@@ -1,0 +1,35 @@
+{
+    "unique_idx": "137_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nExamine the machinery and materials being used by the individual to deduce the artisanal or trade profession\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe individual in the image is using a sewing machine and surrounded by a variety of clothing items. From these observations and the fact that the person is wearing glasses, it is highly probable that they are a tailor, a dressmaker, or someone engaged in the trade of sewing and crafting clothing items. The presence of the numerous garments and hand-crafted items in the background further supports this conclusion.\n~~~\n~~~Answer2\nThe individual in the image is utilizing an antique sewing machine, a tool commonly employed by tailors, seamstresses, and other textile workers. The presence of the sewing machine, combined with the individual's focused demeanor and the surrounding fabric and materials, suggests that they are engaged in a trade or artisanal profession related to textile work.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the trade profession using visible machinery (sewing machine) and materials (fabric).\n2. Assess the context of the setting to support the profession deduced.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/137.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "meta-llama/llama-3.2-11b-vision-instruct",
+    "raw_answer1": "The individual in the image is using a sewing machine and surrounded by a variety of clothing items. From these observations and the fact that the person is wearing glasses, it is highly probable that they are a tailor, a dressmaker, or someone engaged in the trade of sewing and crafting clothing items. The presence of the numerous garments and hand-crafted items in the background further supports this conclusion.",
+    "raw_answer2": "The individual in the image is utilizing an antique sewing machine, a tool commonly employed by tailors, seamstresses, and other textile workers. The presence of the sewing machine, combined with the individual's focused demeanor and the surrounding fabric and materials, suggests that they are engaged in a trade or artisanal profession related to textile work.",
+    "response": {
+        "id": "chatcmpl-AIuBGdxzTC1TTUMzn00nZoE1YD6Pd",
+        "object": "chat.completion",
+        "created": 1729069226,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1561,
+            "completion_tokens": 2,
+            "total_tokens": 1563
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 8.073279857635498,
+    "code": 200,
+    "current_time": "2024-10-16 17:00:27"
+}

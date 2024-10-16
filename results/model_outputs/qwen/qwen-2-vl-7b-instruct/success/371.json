@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F16HW98XgAE0PTL?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify all UI elements: buttons, symbols, and layout.\n2. Match color scheme and button shapes exactly as in the image.\n3. Ensure functional similarity in coded UI to the image's calculator app.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/371.jpeg",
+    "unique_idx": 371,
+    "prompt": "You are a software developer. You have the attached image and you need to code an UI or app with the same characteristics, color, shapes, etc. ",
+    "context": "You are a software developer. You have the attached image and you need to code an UI or app with the same characteristics, color, shapes, etc. ",
+    "sample_id": 371,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/371.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "To create an app with the same characteristics as the image, you can use a combination of HTML, CSS, and JavaScript. Here's a basic example of how you could structure the code for such an app:\n\n### HTML (index.html)\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Scientific Calculator</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n    <div class=\"calculator\">\n        <div class=\"display\">\n            <input type=\"text\" disabled id=\"display\" value=\"750\">\n        </div>\n        <div class=\"buttons\">\n            <button class=\"orange\" id=\"clear\">C</button>\n            <button class=\"orange\" id=\"percentage\">%</button>\n            <button class=\"orange\" id=\"division\">÷</button>\n            <button class=\"orange\" id=\"seven\">7</button>\n            <button class=\"orange\" id=\"eight\">8</button>\n            <button class=\"orange\" id=\"nine\">9</button>\n            <button class=\"orange\" id=\"multiply\">x</button>\n            <button class=\"orange\" id=\"four\">4</button>\n            <button class=\"orange\" id=\"five\">5</button>\n            <button class=\"orange\" id=\"six\">6</button>\n            <button class=\"orange\" id=\"minus\">-</button>\n            <button class=\"orange\" id=\"one\">1</button>\n            <button class=\"orange\" id=\"two\">2</button>\n            <button class=\"orange\" id=\"three\">3</button>\n            <button class=\"orange\" id=\"plus\">+</button>\n            <button class=\"orange\" id=\"zero\">0</button>\n            <button class=\"orange\" id=\"equals\">=</button>\n        </div>\n    </div>\n    <script src=\"script.js\"></script>\n</body>\n</html>\n```\n\n### CSS (style.css)\n```css\nbody {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n    background-color: black;\n    margin: 0;\n    padding: 0;\n}\n\n.calculator {\n    width: 300px;\n    background-color: black;\n    padding: 10px;\n    border-radius: 5px;\n}\n\n.display {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-bottom: 10px;\n}\n\n.display input {\n    width: 100%;\n    height: 40px;\n    text-align: right;\n    background-color: #333;\n    color: white;\n    font-size: 24px;\n    border: none;\n    outline: none;\n    padding: 0 10px;\n}\n\n.buttons {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 5px;\n}\n\n.buttons button {\n    width: 100%;\n    height: 50px;\n    background-color: #333;\n    color: white;\n    font-size: 18px;\n    border: none;\n    outline: none;\n    cursor: pointer;\n}\n\n.orange {\n    background-color: #f44336;\n}\n```\n\n### JavaScript (script.js)\n```javascript\ndocument.addEventListener('DOMContentLoaded', function() {\n    const buttons = document.querySelectorAll('.buttons button');\n    const display = document.getElementById('display');\n\n    buttons.forEach(button => {\n        button.addEventListener('click', function() {\n            if (button.id === 'equals') {\n                display.value = eval(display.value);\n            } else {\n                display.value += button.id;\n            }\n        });\n    });\n});\n```\n\nThis code will create a basic scientific calculator app with the same layout, color scheme, and functionality as the provided image. You can further enhance the app by adding more features, such as scientific functions, logarithms, and trigonometric functions.",
+    "response_from_model": {
+        "id": "gen-1728903845-Ez9naUVl4PBAaO0hhHWq",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903845,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To create an app with the same characteristics as the image, you can use a combination of HTML, CSS, and JavaScript. Here's a basic example of how you could structure the code for such an app:\n\n### HTML (index.html)\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Scientific Calculator</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n    <div class=\"calculator\">\n        <div class=\"display\">\n            <input type=\"text\" disabled id=\"display\" value=\"750\">\n        </div>\n        <div class=\"buttons\">\n            <button class=\"orange\" id=\"clear\">C</button>\n            <button class=\"orange\" id=\"percentage\">%</button>\n            <button class=\"orange\" id=\"division\">÷</button>\n            <button class=\"orange\" id=\"seven\">7</button>\n            <button class=\"orange\" id=\"eight\">8</button>\n            <button class=\"orange\" id=\"nine\">9</button>\n            <button class=\"orange\" id=\"multiply\">x</button>\n            <button class=\"orange\" id=\"four\">4</button>\n            <button class=\"orange\" id=\"five\">5</button>\n            <button class=\"orange\" id=\"six\">6</button>\n            <button class=\"orange\" id=\"minus\">-</button>\n            <button class=\"orange\" id=\"one\">1</button>\n            <button class=\"orange\" id=\"two\">2</button>\n            <button class=\"orange\" id=\"three\">3</button>\n            <button class=\"orange\" id=\"plus\">+</button>\n            <button class=\"orange\" id=\"zero\">0</button>\n            <button class=\"orange\" id=\"equals\">=</button>\n        </div>\n    </div>\n    <script src=\"script.js\"></script>\n</body>\n</html>\n```\n\n### CSS (style.css)\n```css\nbody {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n    background-color: black;\n    margin: 0;\n    padding: 0;\n}\n\n.calculator {\n    width: 300px;\n    background-color: black;\n    padding: 10px;\n    border-radius: 5px;\n}\n\n.display {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    margin-bottom: 10px;\n}\n\n.display input {\n    width: 100%;\n    height: 40px;\n    text-align: right;\n    background-color: #333;\n    color: white;\n    font-size: 24px;\n    border: none;\n    outline: none;\n    padding: 0 10px;\n}\n\n.buttons {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 5px;\n}\n\n.buttons button {\n    width: 100%;\n    height: 50px;\n    background-color: #333;\n    color: white;\n    font-size: 18px;\n    border: none;\n    outline: none;\n    cursor: pointer;\n}\n\n.orange {\n    background-color: #f44336;\n}\n```\n\n### JavaScript (script.js)\n```javascript\ndocument.addEventListener('DOMContentLoaded', function() {\n    const buttons = document.querySelectorAll('.buttons button');\n    const display = document.getElementById('display');\n\n    buttons.forEach(button => {\n        button.addEventListener('click', function() {\n            if (button.id === 'equals') {\n                display.value = eval(display.value);\n            } else {\n                display.value += button.id;\n            }\n        });\n    });\n});\n```\n\nThis code will create a basic scientific calculator app with the same layout, color scheme, and functionality as the provided image. You can further enhance the app by adding more features, such as scientific functions, logarithms, and trigonometric functions.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 54,
+            "completion_tokens": 872,
+            "total_tokens": 926
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:06:09"
+}

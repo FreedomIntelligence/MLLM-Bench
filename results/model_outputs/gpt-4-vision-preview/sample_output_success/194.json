@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ecgwaves.com/wp-content/uploads/2021/06/ECG-example-Normal-ECG-with-sinus-rhythm-2-1396x1536.png",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify and describe P wave, QRS complex, T wave as per reference.\n2. Detect any deviations from the normal ECG waveform pattern.\n3. Comment on rhythm regularity, wave amplitude, and intervals between waves.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/194.png",
+    "unique_idx": "194",
+    "prompt": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "response": {
+        "id": "msg_01BHq8b3vATeXkB62yqhmtJz",
+        "type": "message",
+        "role": "assistant",
+        "model": "gpt-4",
+        "usage": {
+            "prompt_tokens": 1637,
+            "completion_tokens": 397,
+            "total_tokens": 2034
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "The image shows a standard 12-lead electrocardiogram (ECG) tracing. The different parts of the ECG waveform visible in the image are:\n\nP wave: Represents atrial depolarization (contraction of the atria).\nQRS complex: Represents ventricular depolarization (contraction of the ventricles).\nT wave: Represents ventricular repolarization (relaxation of the ventricles).\n\nThe leads shown are:\naVL, I, aVR, II, aVF, III, V1, V2, V3, V4, V5, V6\n\nSome abnormalities observed in the ECG:\n\n1. Wide QRS complex: The QRS complexes appear wide, suggesting a possible bundle branch block or ventricular conduction delay.\n\n2. ST-segment elevation: There is ST-segment elevation in leads V2-V6, which may indicate myocardial injury or acute myocardial infarction (heart attack) involving the anterior wall of the left ventricle.\n\n3. Reciprocal ST-segment depression: Reciprocal ST-segment depression is seen in leads III and aVF, which often accompanies ST-segment elevation in other leads and supports the diagnosis of myocardial infarction.\n\n4. Abnormal T wave inversion: There is T wave inversion in leads V1-V6, which can be seen in various conditions, including myocardial ischemia or infarction.\n\nOverall, the ECG findings suggest a possible acute myocardial infarction involving the anterior wall of the left ventricle, with associated conduction abnormalities. However, it's important to note that a complete clinical evaluation is necessary for an accurate diagnosis and appropriate treatment."
+                },
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "object": "chat.completion",
+        "created": 1712927163
+    },
+    "answer": "The image shows a standard 12-lead electrocardiogram (ECG) tracing. The different parts of the ECG waveform visible in the image are:\n\nP wave: Represents atrial depolarization (contraction of the atria).\nQRS complex: Represents ventricular depolarization (contraction of the ventricles).\nT wave: Represents ventricular repolarization (relaxation of the ventricles).\n\nThe leads shown are:\naVL, I, aVR, II, aVF, III, V1, V2, V3, V4, V5, V6\n\nSome abnormalities observed in the ECG:\n\n1. Wide QRS complex: The QRS complexes appear wide, suggesting a possible bundle branch block or ventricular conduction delay.\n\n2. ST-segment elevation: There is ST-segment elevation in leads V2-V6, which may indicate myocardial injury or acute myocardial infarction (heart attack) involving the anterior wall of the left ventricle.\n\n3. Reciprocal ST-segment depression: Reciprocal ST-segment depression is seen in leads III and aVF, which often accompanies ST-segment elevation in other leads and supports the diagnosis of myocardial infarction.\n\n4. Abnormal T wave inversion: There is T wave inversion in leads V1-V6, which can be seen in various conditions, including myocardial ischemia or infarction.\n\nOverall, the ECG findings suggest a possible acute myocardial infarction involving the anterior wall of the left ventricle, with associated conduction abnormalities. However, it's important to note that a complete clinical evaluation is necessary for an accurate diagnosis and appropriate treatment.",
+    "gen_model_id": "gpt-4-vision-preview",
+    "duration": 29.463277578353882,
+    "code": 200,
+    "current_time": "2024-04-12 21:06:03"
+}

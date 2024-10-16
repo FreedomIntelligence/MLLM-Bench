@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://i.ytimg.com/vi/JDtgQCRj3aQ/maxresdefault.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer lists all Italian films: '8½', 'La Dolce Vita', 'La Strada', 'Boccaccio '70'.\n2. OCR accuracy: No misspellings or omissions of film titles.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/16.jpg",
+    "unique_idx": 16,
+    "prompt": "List all films from Italy in the image.",
+    "context": "List all films from Italy in the image.",
+    "sample_id": 16,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/16.jpg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "The image features the following films from Italy:\n\n*   **Boccaccio 70**\n*   **Black Orpheus**\n*   **La Strada**\n*   **Women of the World**",
+    "response_from_model": {
+        "id": "gen-1728904938-eRCsHG6j2C3j6FO9kP60",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728904938,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image features the following films from Italy:\n\n*   **Boccaccio 70**\n*   **Black Orpheus**\n*   **La Strada**\n*   **Women of the World**",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6424,
+            "completion_tokens": 1,
+            "total_tokens": 6425
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:22:20"
+}

@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://thumbs.dreamstime.com/b/car-accident-two-cars-crashed-city-road-intentional-motion-blur-141839362.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Predicted trajectories must consider vehicles' current motion and road conditions.\n2. Recommendations for avoiding collision should be specific and plausible.\n3. Answer must align with the action prediction capability and the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/387.jpeg",
+    "unique_idx": "387",
+    "prompt": "Based on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 69,
+            "prompt_tokens": 1036,
+            "total_tokens": 1105
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The vehicles are currently moving in the same direction, with the white car appearing to be in the process of overtaking the blue car. To avoid a collision, the drivers should ensure that they maintain a safe distance from each other, and the white car should complete its overtaking maneuver before the blue car has a chance to move into its path."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The vehicles are currently moving in the same direction, with the white car appearing to be in the process of overtaking the blue car. To avoid a collision, the drivers should ensure that they maintain a safe distance from each other, and the white car should complete its overtaking maneuver before the blue car has a chance to move into its path.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 6.456952810287476,
+    "code": 200,
+    "current_time": "2024-04-30 14:44:12"
+}

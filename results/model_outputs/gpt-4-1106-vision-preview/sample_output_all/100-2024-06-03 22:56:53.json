@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Hidden Objects Recognition",
+        "url": "https://wl-brightside.cf.tsp.li/resize/728x/webp/973/1fb/4ee4c15a9a9fbc8abfaa74d32a.jpg.webp",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Confirm presence of a wolf among sheep.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/100.jpg",
+    "unique_idx": "100",
+    "prompt": "Identify any animal other than sheep in the image. ",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "In the image, among all the sheep, there is one animal that is not a sheep: it's a wolf, disguised in sheep's clothing, located towards the center of the image on the right side.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426611,
+        "id": "chatcmpl-9W3P9bc2oarqP789HKT3y2pXyGxKk",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 783,
+            "total_tokens": 825
+        }
+    },
+    "answer": "In the image, among all the sheep, there is one animal that is not a sheep: it's a wolf, disguised in sheep's clothing, located towards the center of the image on the right side.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 5.890655994415283,
+    "code": 200,
+    "current_time": "2024-06-03 22:56:53"
+}

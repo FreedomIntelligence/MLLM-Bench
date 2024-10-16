@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://th.bing.com/th/id/R.2191baa175e367378ee23033135bb00d?rik=qWn49SGq1phjiQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-uVOu4ngGfCk%2fVK7Y0P7pf5I%2fAAAAAAAAF8A%2fCM8ejP3rddM%2fs1600%2fIMG_7566.JPG&ehk=nqJnhjhTbK6I4mP3d8UqckEwn0GtMLnLQSN8jba4ijs%3d&risl=&pid=ImgRaw&r=0",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly transcribe the handwritten text, including numbers and words.\n2. Accurately solve the arithmetic problem presented in the text, whose answer is 16.\n3. Provide a clear explanation of the steps taken to reach the solution.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/15.jpg",
+    "unique_idx": 15,
+    "prompt": "Solve the problem in the image and provide a detailed explanation.",
+    "context": "Solve the problem in the image and provide a detailed explanation.",
+    "sample_id": 15,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/15.jpg"
+    ],
+    "gen_model_id": "mistralai/pixtral-12b",
+    "answer": "To determine how many people are at the zoo now, we need to follow the changes in the number of people arriving and leaving.\n\n1. Initially, there are 5 people at the zoo at 9:00.\n2. At 11:00, 4 more people arrive, making the total number of people 5 + 4 = 9.\n3. At noon, 7 more people arrive, so the total number of people becomes 9 + 7 = 16.\n\nTherefore, there are 16 people at the zoo now.",
+    "response_from_model": {
+        "id": "gen-1728915642-jc7N8IBisZctVSLfXA79",
+        "provider": "Hyperbolic",
+        "model": "mistralai/pixtral-12b",
+        "object": "chat.completion",
+        "created": 1728915642,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To determine how many people are at the zoo now, we need to follow the changes in the number of people arriving and leaving.\n\n1. Initially, there are 5 people at the zoo at 9:00.\n2. At 11:00, 4 more people arrive, making the total number of people 5 + 4 = 9.\n3. At noon, 7 more people arrive, so the total number of people becomes 9 + 7 = 16.\n\nTherefore, there are 16 people at the zoo now.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3152,
+            "completion_tokens": 119,
+            "total_tokens": 3271
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-22:20:47"
+}

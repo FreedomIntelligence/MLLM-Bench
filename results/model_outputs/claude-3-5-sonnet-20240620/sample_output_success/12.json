@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/FmM62WNWYAMC0EB?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly identify and report gate number B19 from the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/12.jpeg",
+    "unique_idx": "12",
+    "prompt": "Assume a passenger bought an air ticket to Boston with Delta Airline on flight number 5706, which gate should the passenger go to wait for the flight",
+    "response": {
+        "id": "chatcmpl-msg01WyspJ6VjDrAbHReAjYg94X",
+        "model": "claude-3-5-sonnet-20240620",
+        "object": "chat.completion",
+        "created": 1723564733,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "According to the departure board shown in the image, Delta Airlines flight 5706 to Boston is scheduled to depart from Gate B19. The passenger should go to Gate B19 to wait for their flight."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1606,
+            "completion_tokens": 47,
+            "total_tokens": 1653
+        }
+    },
+    "answer": "According to the departure board shown in the image, Delta Airlines flight 5706 to Boston is scheduled to depart from Gate B19. The passenger should go to Gate B19 to wait for their flight.",
+    "gen_model_id": "claude-3-5-sonnet-20240620",
+    "duration": 13.291459321975708,
+    "code": 200,
+    "current_time": "2024-08-13 23:58:53"
+}

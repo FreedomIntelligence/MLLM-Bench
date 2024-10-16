@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://th.bing.com/th/id/R.2191baa175e367378ee23033135bb00d?rik=qWn49SGq1phjiQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-uVOu4ngGfCk%2fVK7Y0P7pf5I%2fAAAAAAAAF8A%2fCM8ejP3rddM%2fs1600%2fIMG_7566.JPG&ehk=nqJnhjhTbK6I4mP3d8UqckEwn0GtMLnLQSN8jba4ijs%3d&risl=&pid=ImgRaw&r=0",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly transcribe the handwritten text, including numbers and words.\n2. Accurately solve the arithmetic problem presented in the text, whose answer is 16.\n3. Provide a clear explanation of the steps taken to reach the solution.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/15.jpg",
+    "unique_idx": "15",
+    "prompt": "Solve the problem in the image and provide a detailed explanation.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The image contains a handwritten note with a simple arithmetic problem. The problem reads:\n\n\"There where 5 people at the zoo at 9:00. Then, at 11: came 4 people. Finally at noon, 7 people come. How many people are at the zoo now?\"\n\nTo solve the problem, we need to add the number of people who came to the zoo at different times:\n\nThere were initially 5 people.\nAt 11:00, 4 more people came, so we add those to the initial 5: 5 + 4 = 9 people.\nFinally, at noon, 7 more people came, so we add these to the current total of 9: 9 + 7 = 16 people.\n\nSo, there are now 16 people at the zoo.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426177,
+        "id": "chatcmpl-9W3I9LGuPBFm1ZEmMFL8PzQrvcIJL",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 165,
+            "prompt_tokens": 1125,
+            "total_tokens": 1290
+        }
+    },
+    "answer": "The image contains a handwritten note with a simple arithmetic problem. The problem reads:\n\n\"There where 5 people at the zoo at 9:00. Then, at 11: came 4 people. Finally at noon, 7 people come. How many people are at the zoo now?\"\n\nTo solve the problem, we need to add the number of people who came to the zoo at different times:\n\nThere were initially 5 people.\nAt 11:00, 4 more people came, so we add those to the initial 5: 5 + 4 = 9 people.\nFinally, at noon, 7 more people came, so we add these to the current total of 9: 9 + 7 = 16 people.\n\nSo, there are now 16 people at the zoo.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 20.829768419265747,
+    "code": 200,
+    "current_time": "2024-06-03 22:49:46"
+}

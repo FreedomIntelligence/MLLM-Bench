@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "NaN",
+        "question type": "compound"
+    },
+    "criteria": "1. Confirm the thermometer shows 38.1 degrees Celsius.\n2. Evaluate the advice given for a fever of 38.1 degrees Celsius.\n3. Check for medical accuracy and relevance of the advice to the temperature.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/198.jpeg",
+    "unique_idx": "198",
+    "prompt": "Given the image, interpret the thermometer reading and give some advice.",
+    "response": {
+        "id": "chatcmpl-147050d6d723495b8af26f68b1aec4fb",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930604,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The thermometer reads 36.6°C. This is a normal body temperature. The average body temperature is 37°C, but it can vary from person to person and throughout the day. A normal body temperature range is between 36.5°C and 37.5°C. If your temperature is above 37.5°C, you may have a fever. A fever is a sign that your body is fighting an infection. If you have a fever, you should rest and drink plenty of fluids. You should also see a doctor if your fever is high or does not go away after a few days."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1125,
+            "completion_tokens": 123,
+            "total_tokens": 1248
+        }
+    },
+    "answer": " The thermometer reads 36.6°C. This is a normal body temperature. The average body temperature is 37°C, but it can vary from person to person and throughout the day. A normal body temperature range is between 36.5°C and 37.5°C. If your temperature is above 37.5°C, you may have a fever. A fever is a sign that your body is fighting an infection. If you have a fever, you should rest and drink plenty of fluids. You should also see a doctor if your fever is high or does not go away after a few days.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 8.852829694747925,
+    "code": 200,
+    "current_time": "2024-04-12 22:03:24"
+}

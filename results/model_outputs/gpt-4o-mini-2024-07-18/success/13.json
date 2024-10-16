@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/F91QfgiWgAAphUD?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Confirm the song \"Future (Lollapalooza ver.)\" is correctly identified and its play count.\n2. Check OCR accuracy for the number of times played against the reference: 271.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/13.jpeg",
+    "unique_idx": 13,
+    "prompt": "The image shows a receipt from 'Receiptify', an application that generates a music listening receipt based on a user's listening history. Based on the image, what is the number of times the song Future(Lollapalooza ver.) was played?",
+    "context": "The image shows a receipt from 'Receiptify', an application that generates a music listening receipt based on a user's listening history. Based on the image, what is the number of times the song Future(Lollapalooza ver.) was played?",
+    "sample_id": 13,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/13.jpeg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "The song \"Future (Lollapalooza ver.)\" was played 271 times according to the receipt.",
+    "response_from_model": {
+        "id": "chatcmpl-AIBM6we3oxmOjlEeFv641PV2wnf7j",
+        "object": "chat.completion",
+        "created": 1728896918,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The song \"Future (Lollapalooza ver.)\" was played 271 times according to the receipt."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 48225,
+            "completion_tokens": 23,
+            "total_tokens": 48248
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:08:39"
+}

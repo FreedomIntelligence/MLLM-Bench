@@ -1,0 +1,35 @@
+{
+    "unique_idx": "230_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nList all models that have pre-training support for both Spanish and Chinese.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\n As of my last update, models that offer pre-training support for both Spanish and Chinese include:\n\n1. Google's BERT (Bidirectional Encoder Representations from Transformers): Google's BERT comes with multi-language support, including models trained on Spanish (bert-base-multilingual-cased) and Chinese (bert-base-chinese).\n\n2. Facebook's XLM-R (Cross-lingual Language Model - RoBERTa): XLM-R is a state-of-the-art multilingual model that has been pre-trained on 100 languages, including Spanish and Chinese.\n\n3. Microsoft's mBERT (Multilingual BERT): Similar to Google's BERT, mBERT has been pre-trained on 104 languages, offering support for both Spanish and Chinese.\n\n4. Hugging Face's Transformer models: Hugging Face provides a wide range of transformer models that support multiple languages. Notably, models like XLM-RoBERTa and mBERT are available and support both Spanish and Chinese.\n\n5. TensorFlow's T5 (Text-to-Text Transfer Transformer): T5 has been trained on a large corpus of multilingual data, which includes both Spanish and Chinese.\n\nPlease note that the availability of models and specific language support can evolve rapidly, and it is recommended to check the latest documentation or repositories for the most current information.\n~~~\n~~~Answer2\nThere is no direct information provided in the image about the specific models with pre-training support for both Spanish and Chinese. However, the image states that \"German, French, Spanish, Chinese, Italian, and Portuguese\" are among the languages supported by the models. This suggests that the models likely have pre-training support for a mix of languages, but the image does not provide a detailed list of which languages have such support.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. List must include BELLE and Phoenix as they include both Spanish and Chinese during pre-training.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/230.png",
+    "model_1": "microsoft/phi-3-medium-128k-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": " As of my last update, models that offer pre-training support for both Spanish and Chinese include:\n\n1. Google's BERT (Bidirectional Encoder Representations from Transformers): Google's BERT comes with multi-language support, including models trained on Spanish (bert-base-multilingual-cased) and Chinese (bert-base-chinese).\n\n2. Facebook's XLM-R (Cross-lingual Language Model - RoBERTa): XLM-R is a state-of-the-art multilingual model that has been pre-trained on 100 languages, including Spanish and Chinese.\n\n3. Microsoft's mBERT (Multilingual BERT): Similar to Google's BERT, mBERT has been pre-trained on 104 languages, offering support for both Spanish and Chinese.\n\n4. Hugging Face's Transformer models: Hugging Face provides a wide range of transformer models that support multiple languages. Notably, models like XLM-RoBERTa and mBERT are available and support both Spanish and Chinese.\n\n5. TensorFlow's T5 (Text-to-Text Transfer Transformer): T5 has been trained on a large corpus of multilingual data, which includes both Spanish and Chinese.\n\nPlease note that the availability of models and specific language support can evolve rapidly, and it is recommended to check the latest documentation or repositories for the most current information.",
+    "raw_answer2": "There is no direct information provided in the image about the specific models with pre-training support for both Spanish and Chinese. However, the image states that \"German, French, Spanish, Chinese, Italian, and Portuguese\" are among the languages supported by the models. This suggests that the models likely have pre-training support for a mix of languages, but the image does not provide a detailed list of which languages have such support.",
+    "response": {
+        "id": "chatcmpl-AIuHf9uppwvw1PGsNFdKzhyJHaSPZ",
+        "object": "chat.completion",
+        "created": 1729069623,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1712,
+            "completion_tokens": 6,
+            "total_tokens": 1718
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "unable to decide: situation two"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "unable to decide: situation two",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.25476336479187,
+    "code": 200,
+    "current_time": "2024-10-16 17:07:04"
+}

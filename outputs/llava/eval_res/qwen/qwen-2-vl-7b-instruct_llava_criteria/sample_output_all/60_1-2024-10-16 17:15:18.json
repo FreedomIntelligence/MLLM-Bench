@@ -1,0 +1,35 @@
+{
+    "unique_idx": "60_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat is this about?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe image is a poster in a foreign language that provides information about novel coronavirus pneumonia. The poster states that novel coronavirus pneumonia has occurred in Wuhan City, Hubei Province of China. It suggests taking precautions such as covering your mouth and washing your hands, as well as avoiding crowded places and visiting hospitals only when necessary.\n\nIn the image, there are also some instructions and an alert for travelers. If a traveler happens to have symptoms such as coughing or a fever, they are advised to please put on a disposable face mask and contact local health authorities or designated hospitals for assistance. The poster also emphasizes the importance of following preventive measures to minimize the risk of spreading the virus.\n~~~\n~~~Answer2\nThis image is an advisory from the Japan National Tourism Association (JNTO) regarding the novel coronavirus (COVID-19) outbreak in Wuhan, China. The advisory provides the following information:\n\n1. **Situation**: The novel coronavirus pneumonia has occurred in Wuhan City, Hubei Province of China.\n2. **Symptoms**: If you have symptoms such as cough or fever, please put on a disposable face mask and contact a hospital before visiting it.\n3. **Travel History**: If you have stayed in Wuhan City, inform the hospital staff about your detailed activities.\n4. **Support**: Medical facilities with multilingual support are available. The Japan National Tourism Association (JNTO) HP provides information on how to access these services.\n5. **Contact Information**: A 24/7 multilingual call center \"Japan Visitor Hotline\" is available for assistance.\n\nThe advisory is important for travelers and residents to take preventive measures and seek medical attention if necessary.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and translate text related to the novel coronavirus pneumonia in Wuhan.\n2. Recognize multilingual instructions for individuals with symptoms.\n3. Detect the date and contact information for further assistance.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/60.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-7b-instruct",
+    "raw_answer1": "The image is a poster in a foreign language that provides information about novel coronavirus pneumonia. The poster states that novel coronavirus pneumonia has occurred in Wuhan City, Hubei Province of China. It suggests taking precautions such as covering your mouth and washing your hands, as well as avoiding crowded places and visiting hospitals only when necessary.\n\nIn the image, there are also some instructions and an alert for travelers. If a traveler happens to have symptoms such as coughing or a fever, they are advised to please put on a disposable face mask and contact local health authorities or designated hospitals for assistance. The poster also emphasizes the importance of following preventive measures to minimize the risk of spreading the virus.",
+    "raw_answer2": "This image is an advisory from the Japan National Tourism Association (JNTO) regarding the novel coronavirus (COVID-19) outbreak in Wuhan, China. The advisory provides the following information:\n\n1. **Situation**: The novel coronavirus pneumonia has occurred in Wuhan City, Hubei Province of China.\n2. **Symptoms**: If you have symptoms such as cough or fever, please put on a disposable face mask and contact a hospital before visiting it.\n3. **Travel History**: If you have stayed in Wuhan City, inform the hospital staff about your detailed activities.\n4. **Support**: Medical facilities with multilingual support are available. The Japan National Tourism Association (JNTO) HP provides information on how to access these services.\n5. **Contact Information**: A 24/7 multilingual call center \"Japan Visitor Hotline\" is available for assistance.\n\nThe advisory is important for travelers and residents to take preventive measures and seek medical attention if necessary.",
+    "response": {
+        "id": "chatcmpl-AIuPdgDKTv5HvsXrcc29xvJu5j6qF",
+        "object": "chat.completion",
+        "created": 1729070117,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1709,
+            "completion_tokens": 2,
+            "total_tokens": 1711
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.320398330688477,
+    "code": 200,
+    "current_time": "2024-10-16 17:15:18"
+}

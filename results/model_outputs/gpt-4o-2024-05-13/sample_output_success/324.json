@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://knect365.imgix.net/article/images/cacheable/abe5a1ec-a5cb-4ccb-94cb-7e0b900eab78-featured-76c136b913a7dd398bc9fab8d8417f02.jpg?auto=format&fit=max&w=808&dpr=1.75",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the blur is due to low pixel count.\n2. Assess whether motion contributes to the image's blurriness.\n3. Evaluate if focus issues are causing the blur in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/324.jpg",
+    "unique_idx": "324",
+    "prompt": "What makes the image blurry?",
+    "response": {
+        "id": "chatcmpl-9OklDGhn68ozcUQHfMYzrv7WcYPQy",
+        "object": "chat.completion",
+        "created": 1715686647,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image appears blurry primarily due to motion blur. This effect occurs when the camera captures a moving subject with a relatively slow shutter speed, causing the moving elements to appear smeared across the image. In this case, the train is moving quickly, and the camera has captured the motion, resulting in the blurred appearance of the train and the people inside it. The stationary elements, such as the platform and the person standing on it, remain sharp, highlighting the motion blur of the moving train."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1118,
+            "completion_tokens": 98,
+            "total_tokens": 1216
+        },
+        "system_fingerprint": "fp_927397958d"
+    },
+    "answer": "The image appears blurry primarily due to motion blur. This effect occurs when the camera captures a moving subject with a relatively slow shutter speed, causing the moving elements to appear smeared across the image. In this case, the train is moving quickly, and the camera has captured the motion, resulting in the blurred appearance of the train and the people inside it. The stationary elements, such as the platform and the person standing on it, remain sharp, highlighting the motion blur of the moving train.",
+    "gen_model_id": "gpt-4o-2024-05-13",
+    "duration": 8.482763051986694,
+    "code": 200,
+    "current_time": "2024-05-14 19:37:29"
+}

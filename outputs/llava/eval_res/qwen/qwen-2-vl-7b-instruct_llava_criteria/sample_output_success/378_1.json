@@ -1,0 +1,35 @@
+{
+    "unique_idx": "378_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nThe above is a report. Please write a program to visualize the most important information from the report.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nHere's a program in Python that visualizes the most important information from the report:\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Read data from the report\ndata = pd.read_csv(\"report.csv\", header=0)\n\n# Get the values of the 2020 sales and 2021 full year results\nsales_2020 = data['2020: First Half Results '].values[0]\nsales_2021_full_year = data['2021: Full Year Results '].values[0]\n\n# Calculate the percentage change in sales\npercentage_change = ((sales_2021_full_year - sales_2020) / sales_2020) * 100\n\n# Create a bar chart to visualize the percentage change in sales\nfig, ax = plt.subplots()\nax.bar(data['2021: Full Year Results '].index, [percentage_change] * len(data['2021: Full Year Results '].index))\nax.set_xlabel('IPs')\nax.set_ylabel('Percentage Change in Sales')\nplt.xticks(rotation=45)\nplt.title('Percentage Change in Sales from 2020 to 2021')\nplt.show()\n```\nThis program reads the report data from a CSV file called \"report.csv\" and contains a list of IPs and their respective sales figures for the first half and full year of 2020 and 2021. It then calculates the percentage change in sales between these two periods and visualizes the results as a bar chart.\n~~~\n~~~Answer2\nSure, I can help you with that. What programming language and visualization library would you like to use?\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and visualize top-selling IPs in both categories for 2024.3 Full Year Forecasts.\n2. Compare sales growth between 2023.3 and 2024.3 for highlighted IPs.\n3. Ensure visual representation is clear, accurate, and easily interpretable.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/378.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-7b-instruct",
+    "raw_answer1": "Here's a program in Python that visualizes the most important information from the report:\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Read data from the report\ndata = pd.read_csv(\"report.csv\", header=0)\n\n# Get the values of the 2020 sales and 2021 full year results\nsales_2020 = data['2020: First Half Results '].values[0]\nsales_2021_full_year = data['2021: Full Year Results '].values[0]\n\n# Calculate the percentage change in sales\npercentage_change = ((sales_2021_full_year - sales_2020) / sales_2020) * 100\n\n# Create a bar chart to visualize the percentage change in sales\nfig, ax = plt.subplots()\nax.bar(data['2021: Full Year Results '].index, [percentage_change] * len(data['2021: Full Year Results '].index))\nax.set_xlabel('IPs')\nax.set_ylabel('Percentage Change in Sales')\nplt.xticks(rotation=45)\nplt.title('Percentage Change in Sales from 2020 to 2021')\nplt.show()\n```\nThis program reads the report data from a CSV file called \"report.csv\" and contains a list of IPs and their respective sales figures for the first half and full year of 2020 and 2021. It then calculates the percentage change in sales between these two periods and visualizes the results as a bar chart.",
+    "raw_answer2": "Sure, I can help you with that. What programming language and visualization library would you like to use?",
+    "response": {
+        "id": "chatcmpl-AIuTRG26l0MPWDOA6jhzIpDTMgnx2",
+        "object": "chat.completion",
+        "created": 1729070353,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1392,
+            "completion_tokens": 2,
+            "total_tokens": 1394
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.465090751647949,
+    "code": 200,
+    "current_time": "2024-10-16 17:19:14"
+}

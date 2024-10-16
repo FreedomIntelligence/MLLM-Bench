@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Damage Evaluation",
+        "url": "http://p0.ifengimg.com/pmop/2018/0515/19C17E391934AD81C73A4BCD60618E6A0C24309A_size122_w788_h566.jpeg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if red vehicle has severe head section damage, silver vehicle has visible rear damage.\n2. Rank vehicles' damage severity correctly as answer: red vehicle (severe damage to its head section) > silver vehicle (visible rear damage).\n3. Evaluate damage without identifying or making statements about people.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/332.jpg",
+    "unique_idx": 332,
+    "prompt": "Assess vehicles' damage in the image, and rank them in order of damage severity",
+    "context": "Assess vehicles' damage in the image, and rank them in order of damage severity",
+    "sample_id": 332,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/332.jpg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "There appear to be six vehicles in the image that are damaged. These vehicles are:\n\n1. A red car with a crushed roof and crumpled front end\n2. A white car with a crushed roof and crumpled front end\n3. A silver car with a dented front end\n4. A black and white police car with a dented front end\n5. A white truck with a dented front end\n6. A red tow truck with a dented front end\n\nThe vehicles can be ranked in order of damage severity as follows:\n\n1. Red car with a crushed roof and crumpled front end\n2. White car with a crushed roof and crumpled front end\n3. Black and white police car with a dented front end\n4. White truck with a dented front end\n5. Red tow truck with a dented front end\n6. Silver car with a dented front end",
+    "response_from_model": {
+        "id": "gen-1728905689-bepxnQD3as9qIZ2NUkGa",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905689,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "There appear to be six vehicles in the image that are damaged. These vehicles are:\n\n1. A red car with a crushed roof and crumpled front end\n2. A white car with a crushed roof and crumpled front end\n3. A silver car with a dented front end\n4. A black and white police car with a dented front end\n5. A white truck with a dented front end\n6. A red tow truck with a dented front end\n\nThe vehicles can be ranked in order of damage severity as follows:\n\n1. Red car with a crushed roof and crumpled front end\n2. White car with a crushed roof and crumpled front end\n3. Black and white police car with a dented front end\n4. White truck with a dented front end\n5. Red tow truck with a dented front end\n6. Silver car with a dented front end",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6432,
+            "completion_tokens": 1,
+            "total_tokens": 6433
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:34:52"
+}

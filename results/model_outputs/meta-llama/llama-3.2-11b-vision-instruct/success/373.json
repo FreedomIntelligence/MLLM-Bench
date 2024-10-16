@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/Eg4Hv0BUMAE0xCV?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Code must generate a bar chart with two bars per country, matching colors and labels.\n2. Bars must reflect the correct numerical values and country order from the image.\n3. Include source label and chart title as displayed in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/373.jpeg",
+    "unique_idx": 373,
+    "prompt": "You are now required to write a Python code based on an image to replicate the data image in the picture as closely as possible.",
+    "context": "You are now required to write a Python code based on an image to replicate the data image in the picture as closely as possible.",
+    "sample_id": 373,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/373.jpeg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "**Step 1: Import Necessary Libraries**\n\nTo replicate the data image, we need to import the necessary libraries. We will use matplotlib for plotting and numpy for numerical operations.\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n```\n\n**Step 2: Define the Data**\n\nWe need to define the data for the bar chart. The data is given in the image as a list of countries with their corresponding global growth rates in the first half of 2020.\n\n```python\ndata = {\n    'Spain': -22,\n    'France': -19,\n    'U.K.': -22,\n    'Italy': -17,\n    'Mexico': -19,\n    'Portugal': -16,\n    'Euro Area': -15,\n    'Hong Kong': -9,\n    'Philippines': -8,\n    'Belgium': -15,\n    'Malaysia': -17,\n    'Austria': -13,\n    'Thailand': -12,\n    'Chile': -14,\n    'Singapore': -13,\n    'Germany': -11,\n    'Czech Republic': -10,\n    'Japan': -14,\n    'Hungary': -12,\n    'Cyprus': -9,\n    'Netherlands': -10,\n    'U.S.': -9,\n    'Russia': -3,\n    'Colombia': -5,\n    'Poland': -7,\n    'Norway': -8,\n    'China': -2,\n    'Indonesia': -1,\n    'South Korea': -3,\n    'Taiwan': -1,\n    'Vietnam': 0\n}\n```\n\n**Step 3: Create the Bar Chart**\n\nWe will use matplotlib to create the bar chart. We will set the x-axis labels to the country names and the y-axis labels to the global growth rates.\n\n```python\nx = list(data.keys())\ny = list(data.values())\n\nplt.bar(x, y)\nplt.xlabel('Country')\nplt.ylabel('Global Growth Rate')\nplt.title('Global Growth in First Half 2020')\nplt.xticks(rotation=45)\nplt.tight_layout()\nplt.show()\n```\n\n**Step 4: Add Colors and Labels**\n\nWe will add colors to the bars to differentiate between the two time periods. We will also add labels to the bars to show the global growth rates.\n\n```python\nx = list(data.keys())\ny = list(data.values())\n\nplt.bar(x, y, color=['purple' if i < 0 else 'grey' for i in y])\nfor i, j in zip(x, y):\n    plt.text(i, j, str(j), ha='center', va='bottom')\nplt.xlabel('Country')\nplt.ylabel('Global Growth Rate')\nplt.title('Global Growth in First Half 2020')\nplt.xticks(rotation=45)\nplt.tight_layout()\nplt.show()\n```\n\n**Step 5: Save the Plot**\n\nFinally, we will save the plot as a PNG file.\n\n```python\nplt.savefig('global_growth.png')\n```\n\n**Answer**\n\nThe Python code to replicate the data image is:\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\ndata = {\n    'Spain': -22,\n    'France': -19,\n    'U.K.': -22,\n    'Italy': -17,\n    'Mexico': -19,\n    'Portugal': -16,\n    'Euro Area': -15,\n    'Hong Kong': -9,\n    'Philippines': -8,\n    'Belgium': -15,\n    'Malaysia': -17,\n    'Austria': -13,\n    'Thailand': -12,\n    'Chile': -14,\n    'Singapore': -13,\n    'Germany': -11,\n    'Czech Republic': -10,\n    'Japan': -14,\n    'Hungary': -12,\n    'Cyprus': -9,\n    'Netherlands': -10,\n    'U.S.': -9,\n    'Russia': -3,\n    'Colombia': -5,\n    'Poland': -7,\n    'Norway': -8,\n    'China': -2,\n    'Indonesia': -1,\n    'South Korea': -3,\n    'Taiwan': -1,\n    'Vietnam': 0\n}\n\nx = list(data.keys())\ny = list(data.values())\n\nplt.bar(x, y, color=['purple' if i < 0 else 'grey' for i in y])\nfor i, j in zip(x, y):\n    plt.text(i, j, str(j), ha='center', va='bottom')\nplt.xlabel('Country')\nplt.ylabel('Global Growth Rate')\nplt.title('Global Growth in First Half 2020')\nplt.xticks(rotation=45)\nplt.tight_layout()\nplt.show()\n\nplt.savefig('global_growth.png')\n```",
+    "response_from_model": {
+        "id": "gen-1728905817-2hVWGQDRQxlucW2wmEMR",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905817,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "**Step 1: Import Necessary Libraries**\n\nTo replicate the data image, we need to import the necessary libraries. We will use matplotlib for plotting and numpy for numerical operations.\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n```\n\n**Step 2: Define the Data**\n\nWe need to define the data for the bar chart. The data is given in the image as a list of countries with their corresponding global growth rates in the first half of 2020.\n\n```python\ndata = {\n    'Spain': -22,\n    'France': -19,\n    'U.K.': -22,\n    'Italy': -17,\n    'Mexico': -19,\n    'Portugal': -16,\n    'Euro Area': -15,\n    'Hong Kong': -9,\n    'Philippines': -8,\n    'Belgium': -15,\n    'Malaysia': -17,\n    'Austria': -13,\n    'Thailand': -12,\n    'Chile': -14,\n    'Singapore': -13,\n    'Germany': -11,\n    'Czech Republic': -10,\n    'Japan': -14,\n    'Hungary': -12,\n    'Cyprus': -9,\n    'Netherlands': -10,\n    'U.S.': -9,\n    'Russia': -3,\n    'Colombia': -5,\n    'Poland': -7,\n    'Norway': -8,\n    'China': -2,\n    'Indonesia': -1,\n    'South Korea': -3,\n    'Taiwan': -1,\n    'Vietnam': 0\n}\n```\n\n**Step 3: Create the Bar Chart**\n\nWe will use matplotlib to create the bar chart. We will set the x-axis labels to the country names and the y-axis labels to the global growth rates.\n\n```python\nx = list(data.keys())\ny = list(data.values())\n\nplt.bar(x, y)\nplt.xlabel('Country')\nplt.ylabel('Global Growth Rate')\nplt.title('Global Growth in First Half 2020')\nplt.xticks(rotation=45)\nplt.tight_layout()\nplt.show()\n```\n\n**Step 4: Add Colors and Labels**\n\nWe will add colors to the bars to differentiate between the two time periods. We will also add labels to the bars to show the global growth rates.\n\n```python\nx = list(data.keys())\ny = list(data.values())\n\nplt.bar(x, y, color=['purple' if i < 0 else 'grey' for i in y])\nfor i, j in zip(x, y):\n    plt.text(i, j, str(j), ha='center', va='bottom')\nplt.xlabel('Country')\nplt.ylabel('Global Growth Rate')\nplt.title('Global Growth in First Half 2020')\nplt.xticks(rotation=45)\nplt.tight_layout()\nplt.show()\n```\n\n**Step 5: Save the Plot**\n\nFinally, we will save the plot as a PNG file.\n\n```python\nplt.savefig('global_growth.png')\n```\n\n**Answer**\n\nThe Python code to replicate the data image is:\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\ndata = {\n    'Spain': -22,\n    'France': -19,\n    'U.K.': -22,\n    'Italy': -17,\n    'Mexico': -19,\n    'Portugal': -16,\n    'Euro Area': -15,\n    'Hong Kong': -9,\n    'Philippines': -8,\n    'Belgium': -15,\n    'Malaysia': -17,\n    'Austria': -13,\n    'Thailand': -12,\n    'Chile': -14,\n    'Singapore': -13,\n    'Germany': -11,\n    'Czech Republic': -10,\n    'Japan': -14,\n    'Hungary': -12,\n    'Cyprus': -9,\n    'Netherlands': -10,\n    'U.S.': -9,\n    'Russia': -3,\n    'Colombia': -5,\n    'Poland': -7,\n    'Norway': -8,\n    'China': -2,\n    'Indonesia': -1,\n    'South Korea': -3,\n    'Taiwan': -1,\n    'Vietnam': 0\n}\n\nx = list(data.keys())\ny = list(data.values())\n\nplt.bar(x, y, color=['purple' if i < 0 else 'grey' for i in y])\nfor i, j in zip(x, y):\n    plt.text(i, j, str(j), ha='center', va='bottom')\nplt.xlabel('Country')\nplt.ylabel('Global Growth Rate')\nplt.title('Global Growth in First Half 2020')\nplt.xticks(rotation=45)\nplt.tight_layout()\nplt.show()\n\nplt.savefig('global_growth.png')\n```",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3239,
+            "completion_tokens": 1,
+            "total_tokens": 3240
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:37:11"
+}

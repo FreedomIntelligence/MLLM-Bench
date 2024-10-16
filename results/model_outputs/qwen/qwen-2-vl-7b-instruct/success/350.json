@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Fake Image Detection",
+        "url": "https://sdxl-h-p-6.stablediffusionweb.com/file=/tmp/gradio/cfcc2e54305bdb0a86301cb2636e11d59f527263/image.png",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Confirm if the answer identifies the figure as AI-generated.\n2. Evaluate the explanation of visual indicators that support the AI-generated conclusion.\n3. Check for mention of any inconsistencies or artifacts typically found in AI-generated images.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/350.webp",
+    "unique_idx": 350,
+    "prompt": "Does this photograph represent a real individual or an AI-generated figure? ",
+    "context": "Does this photograph represent a real individual or an AI-generated figure? ",
+    "sample_id": 350,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/350.webp"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The photograph appears to be of a real individual. The lighting, shadows, and details such as the texture of the clothing and the background suggest that it is a photograph of a real person.",
+    "response_from_model": {
+        "id": "gen-1728903837-AzejYHMIEJA4e7RMvS4e",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903837,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The photograph appears to be of a real individual. The lighting, shadows, and details such as the texture of the clothing and the background suggest that it is a photograph of a real person.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 36,
+            "completion_tokens": 40,
+            "total_tokens": 76
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:03:59"
+}

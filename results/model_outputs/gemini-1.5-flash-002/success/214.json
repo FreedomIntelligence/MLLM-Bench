@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Chart Understanding",
+        "url": "https://pbs.twimg.com/media/F-cFfylXkAAd7yc?format=png&name=small",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Describe the approximate trend between the vaccination rate and excess deaths: excess deaths decrease as the vaccination rate increases.  \n2. Confirm prediction of approximate excess deaths for a state with 85% vaccination rate is between 25% to 30%.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/214.png",
+    "unique_idx": 214,
+    "prompt": "Given the scatter plot, describe the relationship between the vaccination rate and excess deaths and predict the approximate excess deaths for a state with a vaccination rate of 85%.",
+    "context": "Given the scatter plot, describe the relationship between the vaccination rate and excess deaths and predict the approximate excess deaths for a state with a vaccination rate of 85%.",
+    "sample_id": 214,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/214.png"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "The scatter plot shows a negative correlation between the vaccination rate and excess deaths.  As the vaccination rate increases, the number of excess deaths tends to decrease.  The OLS slope of -0.59 indicates that for every 1% increase in the vaccination rate, excess deaths decrease by approximately 0.59.\n\nTo predict the approximate excess deaths for a state with an 85% vaccination rate, we can use the regression line.  Looking at the graph, the regression line intersects at a point slightly above 20 excess deaths when the vaccination rate is around 85%. Therefore, we can estimate that a state with an 85% vaccination rate would have approximately **20-25 excess deaths**.  It's important to note that this is just an approximation, and the actual number could vary due to other factors not included in this model.\n",
+    "response_from_model": {
+        "id": "chatcmpl-fc67aa758bb14197af1978fe67286c47",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897154,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The scatter plot shows a negative correlation between the vaccination rate and excess deaths.  As the vaccination rate increases, the number of excess deaths tends to decrease.  The OLS slope of -0.59 indicates that for every 1% increase in the vaccination rate, excess deaths decrease by approximately 0.59.\n\nTo predict the approximate excess deaths for a state with an 85% vaccination rate, we can use the regression line.  Looking at the graph, the regression line intersects at a point slightly above 20 excess deaths when the vaccination rate is around 85%. Therefore, we can estimate that a state with an 85% vaccination rate would have approximately **20-25 excess deaths**.  It's important to note that this is just an approximation, and the actual number could vary due to other factors not included in this model.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 292,
+            "completion_tokens": 180,
+            "total_tokens": 472
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:50"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "60_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat is this about?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThis image is an informational notice about the novel coronavirus pneumonia outbreak that occurred in Wuhan City, Hubei Province of China. It's a multilingual (English and Japanese) public health advisory poster providing guidance on what to do if someone experiences symptoms or has recently been to Wuhan.\n\nKey points from the notice include:\n\n1. An alert about the coronavirus outbreak in Wuhan.\n2. Instructions to wear a disposable face mask and contact a hospital before visiting if experiencing symptoms like cough or fever.\n3. A request to inform hospital staff of any recent stay in Wuhan City.\n4. A map highlighting the location of Wuhan in China.\n5. Simple icons illustrating the steps to take (mask, call, go to hospital).\n6. Contact information for multilingual support, including the Japan Visitor Hotline.\n\nThe notice is dated January 27, 2020, which places it at the early stages of the COVID-19 pandemic. It's issued by a health center in Kyoto City, indicating this was likely displayed in Japan to inform both locals and tourists about the emerging health situation.\n~~~\n~~~Answer2\nThe image is a poster in a foreign language that provides information about novel coronavirus pneumonia. The poster states that novel coronavirus pneumonia has occurred in Wuhan City, Hubei Province of China. It suggests taking precautions such as covering your mouth and washing your hands, as well as avoiding crowded places and visiting hospitals only when necessary.\n\nIn the image, there are also some instructions and an alert for travelers. If a traveler happens to have symptoms such as coughing or a fever, they are advised to please put on a disposable face mask and contact local health authorities or designated hospitals for assistance. The poster also emphasizes the importance of following preventive measures to minimize the risk of spreading the virus.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and translate text related to the novel coronavirus pneumonia in Wuhan.\n2. Recognize multilingual instructions for individuals with symptoms.\n3. Detect the date and contact information for further assistance.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/60.jpg",
+    "model_1": "claude-3-5-sonnet-20240620",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "This image is an informational notice about the novel coronavirus pneumonia outbreak that occurred in Wuhan City, Hubei Province of China. It's a multilingual (English and Japanese) public health advisory poster providing guidance on what to do if someone experiences symptoms or has recently been to Wuhan.\n\nKey points from the notice include:\n\n1. An alert about the coronavirus outbreak in Wuhan.\n2. Instructions to wear a disposable face mask and contact a hospital before visiting if experiencing symptoms like cough or fever.\n3. A request to inform hospital staff of any recent stay in Wuhan City.\n4. A map highlighting the location of Wuhan in China.\n5. Simple icons illustrating the steps to take (mask, call, go to hospital).\n6. Contact information for multilingual support, including the Japan Visitor Hotline.\n\nThe notice is dated January 27, 2020, which places it at the early stages of the COVID-19 pandemic. It's issued by a health center in Kyoto City, indicating this was likely displayed in Japan to inform both locals and tourists about the emerging health situation.",
+    "raw_answer2": "The image is a poster in a foreign language that provides information about novel coronavirus pneumonia. The poster states that novel coronavirus pneumonia has occurred in Wuhan City, Hubei Province of China. It suggests taking precautions such as covering your mouth and washing your hands, as well as avoiding crowded places and visiting hospitals only when necessary.\n\nIn the image, there are also some instructions and an alert for travelers. If a traveler happens to have symptoms such as coughing or a fever, they are advised to please put on a disposable face mask and contact local health authorities or designated hospitals for assistance. The poster also emphasizes the importance of following preventive measures to minimize the risk of spreading the virus.",
+    "response": {
+        "id": "chatcmpl-AIss3HVHpROPM9Ch2XOxZioHeqvNy",
+        "object": "chat.completion",
+        "created": 1729064191,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1732,
+            "completion_tokens": 2,
+            "total_tokens": 1734
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.259981155395508,
+    "code": 200,
+    "current_time": "2024-10-16 15:36:32"
+}

@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://images.unsplash.com/photo-1600320254374-ce2d293c324e",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer includes \"slow down till stop\" or \"turn left to adjacent lane\" based on visual cues.\n2. Response must consider traffic conditions and road layout visible in the image.\n3. Answer must be logically consistent with the driver's possible actions in the given context.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/386.jpg",
+    "unique_idx": 386,
+    "prompt": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "context": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "sample_id": 386,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/386.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "Based on the visual cues, the driver is likely to continue driving, following the directions provided by the GPS navigation app displayed on their phone.  The phone shows a route to Cesar Chavez and AT&T Park, and the driver's hands are on the steering wheel.\n",
+    "response_from_model": {
+        "id": "chatcmpl-4251fc23a78f4d8cae7334db0515962b",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897194,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the visual cues, the driver is likely to continue driving, following the directions provided by the GPS navigation app displayed on their phone.  The phone shows a route to Cesar Chavez and AT&T Park, and the driver's hands are on the steering wheel.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 278,
+            "completion_tokens": 56,
+            "total_tokens": 334
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:13:31"
+}

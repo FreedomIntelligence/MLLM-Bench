@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://pbs.twimg.com/media/Fdr9x1TaMAAJ1xr?format=jpg&name=small",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify and interpret abnormal values: RBC, HGB, HCT, MCV, MCH, MCHC, RDW-CV, ALB, TB, A/G, AST, CREA, CK, BUN/CREA.\n2. Provide a possible diagnosis considering the highlighted abnormal lab values.\n3. Answer must be medically accurate and align with the provided lab report image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/191.jpg",
+    "unique_idx": "191",
+    "prompt": "Given the image is a medical laboratory report, interpret the highlighted abnormal values and provide a possible diagnosis.",
+    "response": {
+        "id": "msg_017mf4gabms9RgvPN8ZDoCpk",
+        "type": "message",
+        "role": "assistant",
+        "model": "gpt-4",
+        "usage": {
+            "prompt_tokens": 676,
+            "completion_tokens": 457,
+            "total_tokens": 1133
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the medical laboratory report shown in the image, several abnormal values are highlighted:\n\n1. Hematology: HCT (Hematocrit) is 15.7%, which is below the normal range of 28-49%.\n2. Kimia Darah: ALB (Albumin) is 16.2 g/L, below the normal range of 35.0-50.0 g/L.\n3. Kimia Darah: BIL (Bilirubin) is 69.2 umol/L, above the normal range of 0.0-20.0 umol/L.\n4. Kimia Darah: AST is elevated at 380 U/L, above the normal range of 0-48 U/L.\n5. Kimia Darah: AMY (Amylase) is 990 U/L, above the normal range of 28.0-100.0 U/L.\n6. Kimia Darah: CK is 1071 mmol/L, above the normal range of 0.0-1.13 mmol/L.\n7. Kimia Darah: BUN/KREA is 12.90 mmol/L, below the normal range of 27.000-182.000 mmol/L.\n\nThese abnormal values suggest a possible diagnosis of liver disease or hepatobiliary disorder. The elevated bilirubin, low albumin, and elevated liver enzymes (AST and ALT) are indicative of liver dysfunction or damage. The low hematocrit could be a result of chronic liver disease or bleeding disorders. The elevated amylase and creatine kinase (CK) may also be associated with certain liver conditions or complications.\n\nHowever, it's important to note that a definitive diagnosis cannot be made solely based on this laboratory report, and further clinical evaluation and additional tests may be required to determine the underlying cause and severity of the condition."
+                },
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "object": "chat.completion",
+        "created": 1712927145
+    },
+    "answer": "Based on the medical laboratory report shown in the image, several abnormal values are highlighted:\n\n1. Hematology: HCT (Hematocrit) is 15.7%, which is below the normal range of 28-49%.\n2. Kimia Darah: ALB (Albumin) is 16.2 g/L, below the normal range of 35.0-50.0 g/L.\n3. Kimia Darah: BIL (Bilirubin) is 69.2 umol/L, above the normal range of 0.0-20.0 umol/L.\n4. Kimia Darah: AST is elevated at 380 U/L, above the normal range of 0-48 U/L.\n5. Kimia Darah: AMY (Amylase) is 990 U/L, above the normal range of 28.0-100.0 U/L.\n6. Kimia Darah: CK is 1071 mmol/L, above the normal range of 0.0-1.13 mmol/L.\n7. Kimia Darah: BUN/KREA is 12.90 mmol/L, below the normal range of 27.000-182.000 mmol/L.\n\nThese abnormal values suggest a possible diagnosis of liver disease or hepatobiliary disorder. The elevated bilirubin, low albumin, and elevated liver enzymes (AST and ALT) are indicative of liver dysfunction or damage. The low hematocrit could be a result of chronic liver disease or bleeding disorders. The elevated amylase and creatine kinase (CK) may also be associated with certain liver conditions or complications.\n\nHowever, it's important to note that a definitive diagnosis cannot be made solely based on this laboratory report, and further clinical evaluation and additional tests may be required to determine the underlying cause and severity of the condition.",
+    "gen_model_id": "gpt-4-vision-preview",
+    "duration": 13.623315811157227,
+    "code": 200,
+    "current_time": "2024-04-12 21:05:46"
+}

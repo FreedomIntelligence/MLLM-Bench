@@ -1,0 +1,35 @@
+{
+    "unique_idx": "184_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nHow many columns can be seen on the facade of the Lincoln Memorial in this picture?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThere are 36 Doric style columns visible on the facade of the Lincoln Memorial in this picture.\n~~~\n~~~Answer2\nThe facade of the Lincoln Memorial features 36 columns.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Correctly count the visible columns on the facade: 12.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/184.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gpt-4o-mini-2024-07-18",
+    "raw_answer1": "There are 36 Doric style columns visible on the facade of the Lincoln Memorial in this picture.",
+    "raw_answer2": "The facade of the Lincoln Memorial features 36 columns.",
+    "response": {
+        "id": "chatcmpl-AIt9QMNnstfhNNolwE3ZgqrScGcdM",
+        "object": "chat.completion",
+        "created": 1729065268,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1394,
+            "completion_tokens": 6,
+            "total_tokens": 1400
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "unable to decide: situation two"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "unable to decide: situation two",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 6.591128826141357,
+    "code": 200,
+    "current_time": "2024-10-16 15:54:29"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "211_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhich parts of the map have the greatest humidity?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe map shows the average humidity levels in different regions of China. The legend indicates that the darker shades of blue represent higher humidity levels, ranging from 75-82% to 38-52%. \n\nTo determine which parts of the map have the greatest humidity, we need to look for the darkest shades of blue, which correspond to the highest humidity levels. These areas are primarily located in the southern and southeastern parts of China, including:\n\n*   The provinces of Guangdong, Guangxi, and Hainan in the south\n*   The provinces of Fujian, Jiangxi, and Zhejiang in the southeast\n*   The provinces of Anhui, Jiangsu, and Shanghai in the eastern coastal region\n\nThese regions are characterized by high humidity levels throughout the year, with an average relative humidity of 75-82%. In contrast, the northern and western parts of China, including the provinces of Heilongjiang, Jilin, Liaoning, Shanxi, and Gansu, have lower humidity levels, ranging from 38-52%.\n~~~\n~~~Answer2\nIn the map, the areas with the highest humidity levels are located around the eastern part of China.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the area with the darkest shade representing the highest humidity range.\n2. Reference the legend to confirm the highest humidity value.\n3. Describe the geographic location of the area with the greatest humidity.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/211.jpg",
+    "model_1": "meta-llama/llama-3.2-11b-vision-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The map shows the average humidity levels in different regions of China. The legend indicates that the darker shades of blue represent higher humidity levels, ranging from 75-82% to 38-52%. \n\nTo determine which parts of the map have the greatest humidity, we need to look for the darkest shades of blue, which correspond to the highest humidity levels. These areas are primarily located in the southern and southeastern parts of China, including:\n\n*   The provinces of Guangdong, Guangxi, and Hainan in the south\n*   The provinces of Fujian, Jiangxi, and Zhejiang in the southeast\n*   The provinces of Anhui, Jiangsu, and Shanghai in the eastern coastal region\n\nThese regions are characterized by high humidity levels throughout the year, with an average relative humidity of 75-82%. In contrast, the northern and western parts of China, including the provinces of Heilongjiang, Jilin, Liaoning, Shanxi, and Gansu, have lower humidity levels, ranging from 38-52%.",
+    "raw_answer2": "In the map, the areas with the highest humidity levels are located around the eastern part of China.",
+    "response": {
+        "id": "chatcmpl-AIuC5daXXH65TtnvrDokzNrCvTAkK",
+        "object": "chat.completion",
+        "created": 1729069277,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1279,
+            "completion_tokens": 2,
+            "total_tokens": 1281
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 2.90089750289917,
+    "code": 200,
+    "current_time": "2024-10-16 17:01:17"
+}

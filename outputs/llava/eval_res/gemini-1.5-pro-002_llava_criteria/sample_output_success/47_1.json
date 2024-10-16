@@ -1,0 +1,35 @@
+{
+    "unique_idx": "47_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat are the dishes in the image?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe image features a bowl of food, a plate, and a dish with a soup in a red bowl.\n~~~\n~~~Answer2\nThe dish in the clay pot appears to be a type of **Buddha Jumps Over the Wall** (佛跳牆 - fó tiào qiáng).  It's a complex and luxurious Chinese soup/stew containing many premium ingredients.  While the exact recipe varies, common elements include:\n\n* **Abalone:** Clearly visible in both the pot and on the plate behind it.\n* **Sea Cucumber:** The dark, cylindrical objects on the plate are likely sea cucumber.\n* **Shark fin:** The translucent, gelatinous strands in the soup are characteristic of shark fin. (Though some modern versions omit this due to ethical concerns.)\n* **Dried scallops (conpoy):**  While not clearly visible, these are frequently used in Buddha Jumps Over the Wall.\n* **Chicken, pork, and/or other meats:**  Some meat is visible in the pot.\n* **Various other ingredients:**  Mushrooms, ginseng, taro, and other vegetables and aromatics are often included.\n\nThe dish on the plate behind the pot primarily consists of more abalone and sea cucumber, likely prepared separately.  They might be braised or otherwise cooked before being added to the soup or served as a complementary dish.\n\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the dish as Fotiaoqiang (Buddha Jumps Over the Wall).\n2. Describe visible ingredients/components of the dish.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/47.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-pro-002",
+    "raw_answer1": "The image features a bowl of food, a plate, and a dish with a soup in a red bowl.",
+    "raw_answer2": "The dish in the clay pot appears to be a type of **Buddha Jumps Over the Wall** (佛跳牆 - fó tiào qiáng).  It's a complex and luxurious Chinese soup/stew containing many premium ingredients.  While the exact recipe varies, common elements include:\n\n* **Abalone:** Clearly visible in both the pot and on the plate behind it.\n* **Sea Cucumber:** The dark, cylindrical objects on the plate are likely sea cucumber.\n* **Shark fin:** The translucent, gelatinous strands in the soup are characteristic of shark fin. (Though some modern versions omit this due to ethical concerns.)\n* **Dried scallops (conpoy):**  While not clearly visible, these are frequently used in Buddha Jumps Over the Wall.\n* **Chicken, pork, and/or other meats:**  Some meat is visible in the pot.\n* **Various other ingredients:**  Mushrooms, ginseng, taro, and other vegetables and aromatics are often included.\n\nThe dish on the plate behind the pot primarily consists of more abalone and sea cucumber, likely prepared separately.  They might be braised or otherwise cooked before being added to the soup or served as a complementary dish.\n",
+    "response": {
+        "id": "chatcmpl-AIt2e3RL4LA0Tch3p5cNh3i0AE71a",
+        "object": "chat.completion",
+        "created": 1729064848,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1309,
+            "completion_tokens": 2,
+            "total_tokens": 1311
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.131063461303711,
+    "code": 200,
+    "current_time": "2024-10-16 15:47:29"
+}

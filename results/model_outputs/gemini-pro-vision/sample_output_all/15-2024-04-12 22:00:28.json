@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://th.bing.com/th/id/R.2191baa175e367378ee23033135bb00d?rik=qWn49SGq1phjiQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-uVOu4ngGfCk%2fVK7Y0P7pf5I%2fAAAAAAAAF8A%2fCM8ejP3rddM%2fs1600%2fIMG_7566.JPG&ehk=nqJnhjhTbK6I4mP3d8UqckEwn0GtMLnLQSN8jba4ijs%3d&risl=&pid=ImgRaw&r=0",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly transcribe the handwritten text, including numbers and words.\n2. Accurately solve the arithmetic problem presented in the text, whose answer is 16.\n3. Provide a clear explanation of the steps taken to reach the solution.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/15.jpg",
+    "unique_idx": "15",
+    "prompt": "Solve the problem in the image and provide a detailed explanation.",
+    "response": {
+        "id": "chatcmpl-29a6d6989cef4fe189203db98e3d32d6",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930428,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " There were 5 people at the zoo at 9:00. Then, at 11:00, 4 more people came. Finally, at noon, 7 more people came. How many people are at the zoo now?\n\nThe answer is 16.\n\nLet me explain:\nAt 9:00, there were 5 people at the zoo. Then, at 11:00, 4 more people came, so there were 5 + 4 = 9 people at the zoo. Finally, at noon, 7 more people came, so there were 9 + 7 = 16 people at the zoo."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1125,
+            "completion_tokens": 130,
+            "total_tokens": 1255
+        }
+    },
+    "answer": " There were 5 people at the zoo at 9:00. Then, at 11:00, 4 more people came. Finally, at noon, 7 more people came. How many people are at the zoo now?\n\nThe answer is 16.\n\nLet me explain:\nAt 9:00, there were 5 people at the zoo. Then, at 11:00, 4 more people came, so there were 5 + 4 = 9 people at the zoo. Finally, at noon, 7 more people came, so there were 9 + 7 = 16 people at the zoo.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 8.252432823181152,
+    "code": 200,
+    "current_time": "2024-04-12 22:00:28"
+}

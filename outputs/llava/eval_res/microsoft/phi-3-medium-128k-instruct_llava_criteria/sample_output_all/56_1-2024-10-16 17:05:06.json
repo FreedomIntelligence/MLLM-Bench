@@ -1,0 +1,35 @@
+{
+    "unique_idx": "56_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat is the height of the skyscraper featured in the image?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe skyscraper featured in the image is over 1,000 feet tall, making it a large and impressive structure.\n~~~\n~~~Answer2\n As an AI model, I'm unable to view images or content outside of the text provided. However, if you provide me with the name of the skyscraper or any other details, I can certainly help you find the height of the building.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Correctly identifies the skyscraper as \"the Burj Khalifa\".\n2. CLarify that the Burj Khalifa stands at a height of approximately 828 meters (2,717 feet).",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/56.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "microsoft/phi-3-medium-128k-instruct",
+    "raw_answer1": "The skyscraper featured in the image is over 1,000 feet tall, making it a large and impressive structure.",
+    "raw_answer2": " As an AI model, I'm unable to view images or content outside of the text provided. However, if you provide me with the name of the skyscraper or any other details, I can certainly help you find the height of the building.",
+    "response": {
+        "id": "chatcmpl-AIuFlVfWWV0tC4uZhxvRgx8pjoLC7",
+        "object": "chat.completion",
+        "created": 1729069505,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1459,
+            "completion_tokens": 2,
+            "total_tokens": 1461
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.529476881027222,
+    "code": 200,
+    "current_time": "2024-10-16 17:05:06"
+}

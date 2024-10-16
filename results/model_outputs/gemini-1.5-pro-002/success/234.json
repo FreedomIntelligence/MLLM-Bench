@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-VSJqdW8AA1_OJ?format=jpg&name=4096x4096",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly calculates percentage increase from 'Total Income' for specified quarters.\n2. Matches the percentage increase with the reference: 12.78%.\n3. Explains the calculation process or provides the correct formula used.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/234.jpg",
+    "unique_idx": 234,
+    "prompt": "Determine the percentage increase in 'Total Income' from the quarter 30 Sep 2023 to the quarter 30 June 2023.",
+    "context": "Determine the percentage increase in 'Total Income' from the quarter 30 Sep 2023 to the quarter 30 June 2023.",
+    "sample_id": 234,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/234.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "Here's how to calculate the percentage increase in Total Income:\n\n1. **Find the difference:** 1,751.00 (Sep '23) - 1,552.63 (Jun '23) = 198.37\n\n2. **Divide the difference by the original amount (June '23):** 198.37 / 1,552.63 = 0.1277\n\n3. **Multiply by 100 to express as a percentage:** 0.1277 * 100 = 12.77%\n\nThe Total Income increased by approximately 12.77% from the quarter ending June 30, 2023, to the quarter ending September 30, 2023.",
+    "response_from_model": {
+        "id": "chatcmpl-c8edfea26c014c579eee8712c72f31ee",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897296,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here's how to calculate the percentage increase in Total Income:\n\n1. **Find the difference:** 1,751.00 (Sep '23) - 1,552.63 (Jun '23) = 198.37\n\n2. **Divide the difference by the original amount (June '23):** 198.37 / 1,552.63 = 0.1277\n\n3. **Multiply by 100 to express as a percentage:** 0.1277 * 100 = 12.77%\n\nThe Total Income increased by approximately 12.77% from the quarter ending June 30, 2023, to the quarter ending September 30, 2023."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 293,
+            "completion_tokens": 183,
+            "total_tokens": 476
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:12"
+}

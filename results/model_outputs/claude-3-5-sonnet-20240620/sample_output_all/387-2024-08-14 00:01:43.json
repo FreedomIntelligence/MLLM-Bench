@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://thumbs.dreamstime.com/b/car-accident-two-cars-crashed-city-road-intentional-motion-blur-141839362.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Predicted trajectories must consider vehicles' current motion and road conditions.\n2. Recommendations for avoiding collision should be specific and plausible.\n3. Answer must align with the action prediction capability and the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/387.jpeg",
+    "unique_idx": "387",
+    "prompt": "Based on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?",
+    "response": {
+        "id": "chatcmpl-msg01Mr3ja48EqPUQ9efFZw1gDa",
+        "model": "claude-3-5-sonnet-20240620",
+        "object": "chat.completion",
+        "created": 1723564903,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the image, we can see multiple vehicles driving in snowy, nighttime conditions with poor visibility. The trajectories of the vehicles appear to be converging, which could lead to a potential collision if not addressed.\n\nTo predict their trajectories and avoid collision:\n\n1. The vehicle in the foreground appears to be turning or veering slightly to the right. It's likely to continue on this curved path.\n\n2. The vehicle with bright headlights coming from the opposite direction seems to be maintaining a straight path.\n\n3. There's a third vehicle visible in the background, which appears to be following a straight path as well.\n\nTo avoid collision, drivers should:\n\n1. Slow down significantly. The snowy conditions and poor visibility make it crucial to reduce speed.\n\n2. Increase following distance to allow more reaction time.\n\n3. Use turn signals to clearly communicate intentions to other drivers.\n\n4. Stay in their lanes and avoid sudden movements or lane changes.\n\n5. Ensure all lights are on for maximum visibility to other drivers.\n\n6. Be prepared to brake gently, as sudden braking could cause skidding on the snowy surface.\n\n7. Focus intently on the road and surrounding vehicles, avoiding any distractions.\n\n8. If possible, the turning vehicle should complete its turn quickly to clear the intersection.\n\nOverall, extreme caution is necessary in these hazardous driving conditions. Drivers should prioritize maintaining a safe distance from other vehicles and be prepared to react to any sudden changes in traffic flow."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 646,
+            "completion_tokens": 328,
+            "total_tokens": 974
+        }
+    },
+    "answer": "Based on the image, we can see multiple vehicles driving in snowy, nighttime conditions with poor visibility. The trajectories of the vehicles appear to be converging, which could lead to a potential collision if not addressed.\n\nTo predict their trajectories and avoid collision:\n\n1. The vehicle in the foreground appears to be turning or veering slightly to the right. It's likely to continue on this curved path.\n\n2. The vehicle with bright headlights coming from the opposite direction seems to be maintaining a straight path.\n\n3. There's a third vehicle visible in the background, which appears to be following a straight path as well.\n\nTo avoid collision, drivers should:\n\n1. Slow down significantly. The snowy conditions and poor visibility make it crucial to reduce speed.\n\n2. Increase following distance to allow more reaction time.\n\n3. Use turn signals to clearly communicate intentions to other drivers.\n\n4. Stay in their lanes and avoid sudden movements or lane changes.\n\n5. Ensure all lights are on for maximum visibility to other drivers.\n\n6. Be prepared to brake gently, as sudden braking could cause skidding on the snowy surface.\n\n7. Focus intently on the road and surrounding vehicles, avoiding any distractions.\n\n8. If possible, the turning vehicle should complete its turn quickly to clear the intersection.\n\nOverall, extreme caution is necessary in these hazardous driving conditions. Drivers should prioritize maintaining a safe distance from other vehicles and be prepared to react to any sudden changes in traffic flow.",
+    "gen_model_id": "claude-3-5-sonnet-20240620",
+    "duration": 7.619012355804443,
+    "code": 200,
+    "current_time": "2024-08-14 00:01:43"
+}

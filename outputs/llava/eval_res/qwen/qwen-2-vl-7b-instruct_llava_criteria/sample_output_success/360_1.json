@@ -1,0 +1,35 @@
+{
+    "unique_idx": "360_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWrite a story based on the image.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nIn the image, we see a dog sitting on a mat, surrounded by an airplane and airplane toys. The dog seems to be resting and enjoying the cozy airplane-inspired bed. There are books scattered around the room, indicating that this space might be used for play, relaxation, or learning.\n\nIt's possible that the dog's owner is nearby, engaged in some activity or enjoying a meal, as there are two carrots visible on the floor, likely meant for sharing with the dog. A cup can also be seen on the floor, suggesting that the person might be having a drink while spending time with the dog.\n\nAs we look closer at the scene, we notice that the dog is carrying a book, adding a playful touch to the scene. The books' presence, along with the airplane toys, creates an imaginative and creative environment for the dog and its owner to enjoy.\n~~~\n~~~Answer2\nOnce upon a time, in a cozy little room, there was a boy named Max. Max had a dream that was as big as the clouds that floated above his bed. In his dream, he was in a classroom, surrounded by his classmates and a mischievous dog.\n\nThe teacher, Miss Johnson, was standing at the front of the room, holding a piece of paper with the multiplication problem \"7 x 5 = 35\" written on it. Max was sitting at his desk, trying to solve the problem, while his classmates and the dog were laughing at his confusion.\n\nMax felt embarrassed and frustrated, but he didn't want to give up. He took a deep breath and tried to remember what his teacher had taught him about multiplication. He closed his eyes and visualized the problem in his mind, repeating the numbers over and over again until he finally found the answer.\n\nWhen he opened his eyes, he realized that he had solved the problem correctly. He felt a surge of pride and relief wash over him. He looked up at his classmates and the dog, who were now looking at him with admiration and respect.\n\nMax woke up from his dream, feeling happy and confident. He knew that he could solve any problem if he just kept trying and never gave up. From that day on, he approached each challenge with a positive attitude and a determination to succeed.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Story includes boy dreaming about math, dog attending school, and bedroom setting.\n2. Narrative coherence; beginning, middle, and end structured around the image.\n3. Creative elements that enhance the visual elements without altering them.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/360.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-7b-instruct",
+    "raw_answer1": "In the image, we see a dog sitting on a mat, surrounded by an airplane and airplane toys. The dog seems to be resting and enjoying the cozy airplane-inspired bed. There are books scattered around the room, indicating that this space might be used for play, relaxation, or learning.\n\nIt's possible that the dog's owner is nearby, engaged in some activity or enjoying a meal, as there are two carrots visible on the floor, likely meant for sharing with the dog. A cup can also be seen on the floor, suggesting that the person might be having a drink while spending time with the dog.\n\nAs we look closer at the scene, we notice that the dog is carrying a book, adding a playful touch to the scene. The books' presence, along with the airplane toys, creates an imaginative and creative environment for the dog and its owner to enjoy.",
+    "raw_answer2": "Once upon a time, in a cozy little room, there was a boy named Max. Max had a dream that was as big as the clouds that floated above his bed. In his dream, he was in a classroom, surrounded by his classmates and a mischievous dog.\n\nThe teacher, Miss Johnson, was standing at the front of the room, holding a piece of paper with the multiplication problem \"7 x 5 = 35\" written on it. Max was sitting at his desk, trying to solve the problem, while his classmates and the dog were laughing at his confusion.\n\nMax felt embarrassed and frustrated, but he didn't want to give up. He took a deep breath and tried to remember what his teacher had taught him about multiplication. He closed his eyes and visualized the problem in his mind, repeating the numbers over and over again until he finally found the answer.\n\nWhen he opened his eyes, he realized that he had solved the problem correctly. He felt a surge of pride and relief wash over him. He looked up at his classmates and the dog, who were now looking at him with admiration and respect.\n\nMax woke up from his dream, feeling happy and confident. He knew that he could solve any problem if he just kept trying and never gave up. From that day on, he approached each challenge with a positive attitude and a determination to succeed.",
+    "response": {
+        "id": "chatcmpl-AIuTOoSxFO45oXj0ZYci0uNQjd8Qv",
+        "object": "chat.completion",
+        "created": 1729070350,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1835,
+            "completion_tokens": 2,
+            "total_tokens": 1837
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 6.042283535003662,
+    "code": 200,
+    "current_time": "2024-10-16 17:19:11"
+}

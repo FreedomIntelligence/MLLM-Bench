@@ -1,0 +1,35 @@
+{
+    "unique_idx": "50_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhich historical event or period is the landmark in the image usually associated with?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe landmark in the image is the Eiffel Tower, which is usually associated with the 1889 World's Fair in Paris, France. The Eiffel Tower was constructed for this event to celebrate the 100th anniversary of the French Revolution.\n~~~\n~~~Answer2\nThe landmark in the image, the Eiffel Tower, is usually associated with the late 19th and early 20th centuries. This period is when the tower was built and it has since become an iconic symbol of Paris, France. The Eiffel Tower, which is a massive metal structure, was completed in 1889 and has since become a popular tourist attraction and historical marker for the city of Paris.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Correctly identify the landmark reflected in the water as Eiffel Tower.\n2. Associate the landmark with the correct historical event or period.\n3. Answer must be specific to the landmark's historical context.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/50.jpg",
+    "model_1": "qwen/qwen-2-vl-72b-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The landmark in the image is the Eiffel Tower, which is usually associated with the 1889 World's Fair in Paris, France. The Eiffel Tower was constructed for this event to celebrate the 100th anniversary of the French Revolution.",
+    "raw_answer2": "The landmark in the image, the Eiffel Tower, is usually associated with the late 19th and early 20th centuries. This period is when the tower was built and it has since become an iconic symbol of Paris, France. The Eiffel Tower, which is a massive metal structure, was completed in 1889 and has since become a popular tourist attraction and historical marker for the city of Paris.",
+    "response": {
+        "id": "chatcmpl-AIvFFXLngcW451srjR6PCbRYsVfWF",
+        "object": "chat.completion",
+        "created": 1729073317,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1185,
+            "completion_tokens": 2,
+            "total_tokens": 1187
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.158033847808838,
+    "code": 200,
+    "current_time": "2024-10-16 18:08:38"
+}

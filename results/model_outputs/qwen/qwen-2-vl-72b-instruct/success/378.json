@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-VTdVLakAEvyS7?format=jpg&name=900x900",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and visualize top-selling IPs in both categories for 2024.3 Full Year Forecasts.\n2. Compare sales growth between 2023.3 and 2024.3 for highlighted IPs.\n3. Ensure visual representation is clear, accurate, and easily interpretable.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/378.jpeg",
+    "unique_idx": 378,
+    "prompt": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "context": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "sample_id": 378,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/378.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "To visualize the most important information from the report, we can create bar charts for both the groupwide sales and the sales in the Toys and Hobby Business in Japan. Here's a Python program using the `matplotlib` library to create these visualizations:\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Groupwide sales data\ngroupwide_sales_2023 = {\n    'Anpanman': 9.9,\n    'Ultraman': 19.5,\n    'KAMEN RIDER': 32.1,\n    'Mobile Suit Gundam': 131.3,\n    'Super Sentai': 6.5,\n    'DRAGON BALL': 144.5,\n    'NARUTO': 18.7,\n    'Pretty Cure': 5.6,\n    'ONE PIECE': 86.3\n}\n\ngroupwide_sales_2024 = {\n    'Anpanman': 10.0,\n    'Ultraman': 21.5,\n    'KAMEN RIDER': 32.0,\n    'Mobile Suit Gundam': 140.0,\n    'Super Sentai': 7.0,\n    'DRAGON BALL': 133.0,\n    'NARUTO': 24.5,\n    'Pretty Cure': 6.0,\n    'ONE PIECE': 100.0\n}\n\n# Sales in the Toys and Hobby Business in Japan\njapan_sales_2023 = {\n    'Anpanman': 9.3,\n    'Ultraman': 9.2,\n    'KAMEN RIDER': 23.0,\n    'Mobile Suit Gundam': 60.5,\n    'Super Sentai': 5.6,\n    'DRAGON BALL': 22.5,\n    'Pretty Cure': 5.6,\n    'Pokémon': 8.8,\n    'ONE PIECE': 31.9\n}\n\njapan_sales_2024 = {\n    'Anpanman': 9.0,\n    'Ultraman': 9.5,\n    'KAMEN RIDER': 23.0,\n    'Mobile Suit Gundam': 65.5,\n    'Super Sentai': 6.0,\n    'DRAGON BALL': 21.0,\n    'Pretty Cure': 6.0,\n    'Pokémon': 9.5,\n    'ONE PIECE': 52.5\n}\n\n# Function to plot the bar chart\ndef plot_bar_chart(data_2023, data_2024, title):\n    labels = list(data_2023.keys())\n    x = np.arange(len(labels))  # the label locations\n    width = 0.35  # the width of the bars\n\n    fig, ax = plt.subplots()\n    rects1 = ax.bar(x - width/2, data_2023.values(), width, label='2023.3')\n    rects2 = ax.bar(x + width/2, data_2024.values(), width, label='2024.3')\n\n    # Add some text for labels, title and custom x-axis tick labels, etc.\n    ax.set_ylabel('Sales (billion yen)')\n    ax.set_title(title)\n    ax.set_xticks(x, labels)\n    ax.legend()\n\n    ax.bar_label(rects1, padding=3)\n    ax.bar_label(rects2, padding=3)\n\n    fig.tight_layout()\n\n    plt.show()\n\n# Plot the bar charts\nplot_bar_chart(groupwide_sales_2023, groupwide_sales_2024, 'Groupwide Sales')\nplot_bar_chart(japan_sales_2023, japan_sales_2024, 'Sales in the Toys and Hobby Business, Japan')\n```\n\nThis program will generate two bar charts:\n1. One for the groupwide sales in 2023 and 2024.\n2. One for the sales in the Toys and Hobby Business in Japan in 2023 and 2024.\n\nEach chart will show the sales in billion yen for each IP.",
+    "response_from_model": {
+        "id": "gen-1728908590-Q9h62jEtDexZWpp0UNJE",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728908590,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To visualize the most important information from the report, we can create bar charts for both the groupwide sales and the sales in the Toys and Hobby Business in Japan. Here's a Python program using the `matplotlib` library to create these visualizations:\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Groupwide sales data\ngroupwide_sales_2023 = {\n    'Anpanman': 9.9,\n    'Ultraman': 19.5,\n    'KAMEN RIDER': 32.1,\n    'Mobile Suit Gundam': 131.3,\n    'Super Sentai': 6.5,\n    'DRAGON BALL': 144.5,\n    'NARUTO': 18.7,\n    'Pretty Cure': 5.6,\n    'ONE PIECE': 86.3\n}\n\ngroupwide_sales_2024 = {\n    'Anpanman': 10.0,\n    'Ultraman': 21.5,\n    'KAMEN RIDER': 32.0,\n    'Mobile Suit Gundam': 140.0,\n    'Super Sentai': 7.0,\n    'DRAGON BALL': 133.0,\n    'NARUTO': 24.5,\n    'Pretty Cure': 6.0,\n    'ONE PIECE': 100.0\n}\n\n# Sales in the Toys and Hobby Business in Japan\njapan_sales_2023 = {\n    'Anpanman': 9.3,\n    'Ultraman': 9.2,\n    'KAMEN RIDER': 23.0,\n    'Mobile Suit Gundam': 60.5,\n    'Super Sentai': 5.6,\n    'DRAGON BALL': 22.5,\n    'Pretty Cure': 5.6,\n    'Pokémon': 8.8,\n    'ONE PIECE': 31.9\n}\n\njapan_sales_2024 = {\n    'Anpanman': 9.0,\n    'Ultraman': 9.5,\n    'KAMEN RIDER': 23.0,\n    'Mobile Suit Gundam': 65.5,\n    'Super Sentai': 6.0,\n    'DRAGON BALL': 21.0,\n    'Pretty Cure': 6.0,\n    'Pokémon': 9.5,\n    'ONE PIECE': 52.5\n}\n\n# Function to plot the bar chart\ndef plot_bar_chart(data_2023, data_2024, title):\n    labels = list(data_2023.keys())\n    x = np.arange(len(labels))  # the label locations\n    width = 0.35  # the width of the bars\n\n    fig, ax = plt.subplots()\n    rects1 = ax.bar(x - width/2, data_2023.values(), width, label='2023.3')\n    rects2 = ax.bar(x + width/2, data_2024.values(), width, label='2024.3')\n\n    # Add some text for labels, title and custom x-axis tick labels, etc.\n    ax.set_ylabel('Sales (billion yen)')\n    ax.set_title(title)\n    ax.set_xticks(x, labels)\n    ax.legend()\n\n    ax.bar_label(rects1, padding=3)\n    ax.bar_label(rects2, padding=3)\n\n    fig.tight_layout()\n\n    plt.show()\n\n# Plot the bar charts\nplot_bar_chart(groupwide_sales_2023, groupwide_sales_2024, 'Groupwide Sales')\nplot_bar_chart(japan_sales_2023, japan_sales_2024, 'Sales in the Toys and Hobby Business, Japan')\n```\n\nThis program will generate two bar charts:\n1. One for the groupwide sales in 2023 and 2024.\n2. One for the sales in the Toys and Hobby Business in Japan in 2023 and 2024.\n\nEach chart will show the sales in billion yen for each IP.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 42,
+            "completion_tokens": 906,
+            "total_tokens": 948
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:23:34"
+}

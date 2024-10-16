@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://pbs.twimg.com/media/Fdr9x1TaMAAJ1xr?format=jpg&name=small",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify and interpret abnormal values: RBC, HGB, HCT, MCV, MCH, MCHC, RDW-CV, ALB, TB, A/G, AST, CREA, CK, BUN/CREA.\n2. Provide a possible diagnosis considering the highlighted abnormal lab values.\n3. Answer must be medically accurate and align with the provided lab report image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/191.jpg",
+    "unique_idx": "191",
+    "prompt": "Given the image is a medical laboratory report, interpret the highlighted abnormal values and provide a possible diagnosis.",
+    "response": {
+        "id": "chatcmpl-82e3d243eb974d90a22e75e990e6fd67",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930590,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The abnormal values in the medical laboratory report are:\n\n- Hemoglobin (HGB) is 15.7 g/dL, which is below the normal range of 12.0-15.0 g/dL.\n- Hematocrit (HCT) is 35.9%, which is below the normal range of 36.0-46.0%.\n- Mean corpuscular volume (MCV) is 90.3 fL, which is below the normal range of 80.0-96.0 fL.\n- Mean corpuscular hemoglobin (MCH) is 27.5 pg, which is below the normal range of 27.0-31.0 pg.\n- Mean corpuscular hemoglobin concentration (MCHC) is 30.5 g/dL, which is below the normal range of 32.0-36.0 g/dL.\n- Red blood cell distribution width (RDW) is 16.8%, which is above the normal range of 11.5-14.5%.\n- Platelets (PLT) is 452,000/μL, which is above the normal range of 150,000-400,000/μL.\n\nThe possible diagnosis based on the abnormal values is iron deficiency anemia. Iron deficiency anemia is a condition in which the body does not have enough iron to make hemoglobin, the protein in red blood cells that carries oxygen. This can cause a number of symptoms, including fatigue, weakness, shortness of breath, and pale skin. Iron deficiency anemia is most common in women, children, and people with certain medical conditions, such as bleeding disorders or cancer."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 792,
+            "completion_tokens": 347,
+            "total_tokens": 1139
+        }
+    },
+    "answer": " The abnormal values in the medical laboratory report are:\n\n- Hemoglobin (HGB) is 15.7 g/dL, which is below the normal range of 12.0-15.0 g/dL.\n- Hematocrit (HCT) is 35.9%, which is below the normal range of 36.0-46.0%.\n- Mean corpuscular volume (MCV) is 90.3 fL, which is below the normal range of 80.0-96.0 fL.\n- Mean corpuscular hemoglobin (MCH) is 27.5 pg, which is below the normal range of 27.0-31.0 pg.\n- Mean corpuscular hemoglobin concentration (MCHC) is 30.5 g/dL, which is below the normal range of 32.0-36.0 g/dL.\n- Red blood cell distribution width (RDW) is 16.8%, which is above the normal range of 11.5-14.5%.\n- Platelets (PLT) is 452,000/μL, which is above the normal range of 150,000-400,000/μL.\n\nThe possible diagnosis based on the abnormal values is iron deficiency anemia. Iron deficiency anemia is a condition in which the body does not have enough iron to make hemoglobin, the protein in red blood cells that carries oxygen. This can cause a number of symptoms, including fatigue, weakness, shortness of breath, and pale skin. Iron deficiency anemia is most common in women, children, and people with certain medical conditions, such as bleeding disorders or cancer.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 9.498095273971558,
+    "code": 200,
+    "current_time": "2024-04-12 22:03:10"
+}

@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://mzucker.github.io/images/noteshrink/notesA1.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately transcribe definitions and examples related to \"Orthogonal Transformations.\"\n2. Correctly format mathematical formulas and symbols in LaTeX notation.\n3. Ensure extracted text maintains the original notes' structure and order.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/14.jpeg",
+    "unique_idx": 14,
+    "prompt": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "context": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "sample_id": 14,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/14.jpeg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "Here are the extracted definitions, examples, and formulas from the notes:\n\n### Definitions\n- **Def**: An \\( n \\times n \\) matrix \\( A \\) is an orthogonal transformation \\(\\Leftrightarrow\\) it has \\( n \\) mutually perpendicular rows or columns with unit length.\n\n### Examples\n- **ex**: \n  \\[\n  \\begin{bmatrix}\n  1 & 2 \\\\\n  3 & 6\n  \\end{bmatrix}\n  \\]\n  - Linearly dependent.\n\n- **ex**: \n  \\[\n  \\begin{bmatrix}\n  1 & 2 \\\\\n  2 & 6\n  \\end{bmatrix}\n  \\]\n  - Independent but not unit length.\n\n### Formulas\n- **Dot product**:\n  \\[\n  x \\cdot y = \\sum_{i=1}^{n} x_i y_i\n  \\]\n  \n- **Condition for perpendicularity**:\n  \\[\n  x \\cdot y = 0 \\Leftrightarrow x \\perp y\n  \\]\n\n- **Norm**:\n  \\[\n  \\| x \\| = \\sqrt{\\sum_{i=1}^{n} x_i^2} = \\sqrt{x \\cdot x}\n  \\]\n\n- **Orthogonal basis**:\n  - The rows or columns of \\( A \\) form an orthonormal basis of \\( \\mathbb{R}^n \\).\n\n- **Matrix properties**:\n  \\[\n  A^T A = A A^T = I\n  \\]\n  \\[\n  A^{-1} = A^T\n  \\] \n\nThese components summarize the key ideas from the notes provided.",
+    "response_from_model": {
+        "id": "chatcmpl-AIBM7npUO4Bhs95kXsKGmhSWw9T6z",
+        "object": "chat.completion",
+        "created": 1728896919,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here are the extracted definitions, examples, and formulas from the notes:\n\n### Definitions\n- **Def**: An \\( n \\times n \\) matrix \\( A \\) is an orthogonal transformation \\(\\Leftrightarrow\\) it has \\( n \\) mutually perpendicular rows or columns with unit length.\n\n### Examples\n- **ex**: \n  \\[\n  \\begin{bmatrix}\n  1 & 2 \\\\\n  3 & 6\n  \\end{bmatrix}\n  \\]\n  - Linearly dependent.\n\n- **ex**: \n  \\[\n  \\begin{bmatrix}\n  1 & 2 \\\\\n  2 & 6\n  \\end{bmatrix}\n  \\]\n  - Independent but not unit length.\n\n### Formulas\n- **Dot product**:\n  \\[\n  x \\cdot y = \\sum_{i=1}^{n} x_i y_i\n  \\]\n  \n- **Condition for perpendicularity**:\n  \\[\n  x \\cdot y = 0 \\Leftrightarrow x \\perp y\n  \\]\n\n- **Norm**:\n  \\[\n  \\| x \\| = \\sqrt{\\sum_{i=1}^{n} x_i^2} = \\sqrt{x \\cdot x}\n  \\]\n\n- **Orthogonal basis**:\n  - The rows or columns of \\( A \\) form an orthonormal basis of \\( \\mathbb{R}^n \\).\n\n- **Matrix properties**:\n  \\[\n  A^T A = A A^T = I\n  \\]\n  \\[\n  A^{-1} = A^T\n  \\] \n\nThese components summarize the key ideas from the notes provided."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 25532,
+            "completion_tokens": 368,
+            "total_tokens": 25900
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:08:41"
+}

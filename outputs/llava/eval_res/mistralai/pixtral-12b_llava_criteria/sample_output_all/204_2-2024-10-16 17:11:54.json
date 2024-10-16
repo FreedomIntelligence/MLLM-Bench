@@ -1,0 +1,35 @@
+{
+    "unique_idx": "204_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat is placed above the onion directly?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe image shows a close-up of a hamburger. The question asks what ingredient is placed above the onion in the hamburger. \n\nStarting from the bottom of the hamburger, we have the bun, lettuce, tomato, meat patty, melted cheese, onion, and then the top bun. The onion is directly beneath the top bun.\n\nSo, the ingredient placed above the onion is the **top bun**.\n~~~\n~~~Answer2\nA hamburger patty is placed directly above the onion.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Answer identifies the object directly above the onion as tomato.\n2. Answer correctly describes the spatial relationship.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/204.jpg",
+    "model_1": "mistralai/pixtral-12b",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The image shows a close-up of a hamburger. The question asks what ingredient is placed above the onion in the hamburger. \n\nStarting from the bottom of the hamburger, we have the bun, lettuce, tomato, meat patty, melted cheese, onion, and then the top bun. The onion is directly beneath the top bun.\n\nSo, the ingredient placed above the onion is the **top bun**.",
+    "raw_answer2": "A hamburger patty is placed directly above the onion.",
+    "response": {
+        "id": "chatcmpl-AIuML19sBtliKjUWrIHuTEZgcopim",
+        "object": "chat.completion",
+        "created": 1729069913,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1113,
+            "completion_tokens": 2,
+            "total_tokens": 1115
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 6.389634370803833,
+    "code": 200,
+    "current_time": "2024-10-16 17:11:54"
+}

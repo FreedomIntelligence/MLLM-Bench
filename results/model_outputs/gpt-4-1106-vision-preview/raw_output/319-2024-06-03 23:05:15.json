@@ -1,0 +1,62 @@
+{
+    "choices": [
+        {
+            "content_filter_results": {
+                "hate": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "self_harm": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "sexual": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "violence": {
+                    "filtered": false,
+                    "severity": "safe"
+                }
+            },
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+                "content": "The expression in the image is an indefinite integral:\n\n\u222b (2x) / (x^2 + 1)^2 dx\n\nTo solve this integral, one can use substitution. Let u = x^2 + 1, then du = 2x dx. This simplifies the integral to:\n\n\u222b (1/u^2) du\n\nThis is a standard integral, with the solution:\n\n-1/u + C\n\nSubstituting back for u, we get:\n\n-1/(x^2 + 1) + C\n\nwhere C is the constant of integration.",
+                "role": "assistant"
+            }
+        }
+    ],
+    "created": 1717427108,
+    "id": "chatcmpl-9W3XAbv1YgpNuLBkoA5PfVNeXYSv9",
+    "model": "gpt-4",
+    "object": "chat.completion",
+    "prompt_filter_results": [
+        {
+            "prompt_index": 0,
+            "content_filter_results": {
+                "hate": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "self_harm": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "sexual": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "violence": {
+                    "filtered": false,
+                    "severity": "safe"
+                }
+            }
+        }
+    ],
+    "usage": {
+        "completion_tokens": 120,
+        "prompt_tokens": 1120,
+        "total_tokens": 1240
+    }
+}

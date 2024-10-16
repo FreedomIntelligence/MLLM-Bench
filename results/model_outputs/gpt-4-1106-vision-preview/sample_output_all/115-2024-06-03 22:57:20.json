@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Facial Expression Recognition",
+        "url": "https://www.si.com/.image/t_share/MTY4MTk3MjAxMjM4ODI4OTU3/yao-ming-meets-the-yao-ming-meme.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the response correctly recognizes the person on the left as happy.\n2. Evaluate the description of facial features indicating happiness (e.g., smile, eyes).\n3. Assess the relevance and accuracy of the analysis.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/115.jpg",
+    "unique_idx": "115",
+    "prompt": "Analyze the expression of the person on the left. Is he happy or miserable?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Since the face of the person on the left is obscured, I cannot analyze their facial expression to determine whether they are happy or miserable. Facial expressions are the primary indicators of a person's emotional state, and without visibility of the facial features, it is not possible to provide an accurate assessment of their emotions.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426638,
+        "id": "chatcmpl-9W3PasznScbO4uzJVQVdcSHpYInRd",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 61,
+            "prompt_tokens": 1159,
+            "total_tokens": 1220
+        }
+    },
+    "answer": "Since the face of the person on the left is obscured, I cannot analyze their facial expression to determine whether they are happy or miserable. Facial expressions are the primary indicators of a person's emotional state, and without visibility of the facial features, it is not possible to provide an accurate assessment of their emotions.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 15.092747211456299,
+    "code": 200,
+    "current_time": "2024-06-03 22:57:20"
+}

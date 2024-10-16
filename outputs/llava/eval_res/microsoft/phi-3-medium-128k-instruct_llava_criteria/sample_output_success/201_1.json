@@ -1,0 +1,35 @@
+{
+    "unique_idx": "201_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat is below the phone?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe phone is sitting on a desk below the laptop.\n~~~\n~~~Answer2\n Below the phone, on a typical desk setup, you may find various items such as:\n\n1. A laptop or computer: Many people like to have their phone and computer close by for easy access to emails, messages, and other digital tasks.\n\n2. A notebook or planner: Some people prefer to write down notes, tasks, or appointments in a physical format.\n\n3. A mug or cup: It's common to have a beverage nearby while working or using the phone.\n\n4. A charger: To keep the phone powered up, most people have a charger nearby.\n\n5. Headphones or earbuds: For private listening or hands-free calls, headphones or earbuds are often kept within reach of the phone.\n\n6. A phone stand or holder: To prop up the phone for hands-free viewing, some people use a phone stand or holder.\n\n7. A pen or pencil: For jotting down notes or ideas that come up during phone calls or while using the phone.\n\n8. Personal items: Items like keys, wallet, or glasses may also be kept nearby, depending on the person's habits and needs.\n\nOf course, the items below a phone can vary greatly depending on the person's preferences, work habits, and the specific setup of their desk or workspace.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Answer identifies objects below the phone: Macbook and an iPad.\n2. Answer reflects spatial relationship understanding: below, not above or beside.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/201.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "microsoft/phi-3-medium-128k-instruct",
+    "raw_answer1": "The phone is sitting on a desk below the laptop.",
+    "raw_answer2": " Below the phone, on a typical desk setup, you may find various items such as:\n\n1. A laptop or computer: Many people like to have their phone and computer close by for easy access to emails, messages, and other digital tasks.\n\n2. A notebook or planner: Some people prefer to write down notes, tasks, or appointments in a physical format.\n\n3. A mug or cup: It's common to have a beverage nearby while working or using the phone.\n\n4. A charger: To keep the phone powered up, most people have a charger nearby.\n\n5. Headphones or earbuds: For private listening or hands-free calls, headphones or earbuds are often kept within reach of the phone.\n\n6. A phone stand or holder: To prop up the phone for hands-free viewing, some people use a phone stand or holder.\n\n7. A pen or pencil: For jotting down notes or ideas that come up during phone calls or while using the phone.\n\n8. Personal items: Items like keys, wallet, or glasses may also be kept nearby, depending on the person's habits and needs.\n\nOf course, the items below a phone can vary greatly depending on the person's preferences, work habits, and the specific setup of their desk or workspace.",
+    "response": {
+        "id": "chatcmpl-AIuHYt082bxQwrfaYFyP99rNcP76y",
+        "object": "chat.completion",
+        "created": 1729069616,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1635,
+            "completion_tokens": 2,
+            "total_tokens": 1637
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.382706165313721,
+    "code": 200,
+    "current_time": "2024-10-16 17:06:57"
+}

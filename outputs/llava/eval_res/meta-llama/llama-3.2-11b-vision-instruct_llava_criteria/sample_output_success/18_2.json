@@ -1,0 +1,93 @@
+{
+    "unique_idx": "18_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nDetermine the competition information in the picture, such as stage of the game, team information, etc.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe image is a promotional graphic for the League of Legends World Championship semifinals, featuring the teams JD Gaming and T1. The purpose of the image is to advertise the upcoming match between these two teams.\n\n* A trophy:\n\t+ The trophy is silver with a blue logo on it.\n\t+ It is surrounded by blue crystals.\n\t+ It is placed at the bottom of the image.\n* A logo for JD Gaming:\n\t+ The logo is red and has a stylized letter \"JDG\" in it.\n\t+ It is located on the left side of the image.\n* A logo for T1:\n\t+ The logo is red and has a stylized letter \"T1\" in it.\n\t+ It is located on the right side of the image.\n* The words \"League of Legends\" and \"Worlds 2023\":\n\t+ The words are written in white text at the top-left corner of the image.\n\t+ They are accompanied by a small logo for the League of Legends World Championship.\n\nThe image effectively promotes the upcoming match between JD Gaming and T1, highlighting the teams' logos and the championship trophy. The use of blue and red colors creates a visually appealing contrast, while the inclusion of the League of Legends and Worlds 2023 logos adds credibility to the event.\n~~~\n~~~Answer2\nThe image displays a trophy sitting next to a TV screen, which is showing the scoreboard during a game. There are two teams playing in the game, as indicated by the presence of two logos or team names. The competition appears to be a tournament, as there is a suggestion of a series of games being played. The scoreboard indicates that \"JD Gaming\" is in the lead, while \"T1\" is trailing behind. The game seems to be at an advanced stage, with only a few minutes remaining. The trophy in the foreground adds to the competitive atmosphere of the scene.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm stage of game matches 'semifinals' and teams as 'JD Gaming' and 'T1'.\n2. Verify date and time accuracy with 'Nov. 12th, 4 p.m.' reference.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/18.jpg",
+    "model_1": "meta-llama/llama-3.2-11b-vision-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The image is a promotional graphic for the League of Legends World Championship semifinals, featuring the teams JD Gaming and T1. The purpose of the image is to advertise the upcoming match between these two teams.\n\n* A trophy:\n\t+ The trophy is silver with a blue logo on it.\n\t+ It is surrounded by blue crystals.\n\t+ It is placed at the bottom of the image.\n* A logo for JD Gaming:\n\t+ The logo is red and has a stylized letter \"JDG\" in it.\n\t+ It is located on the left side of the image.\n* A logo for T1:\n\t+ The logo is red and has a stylized letter \"T1\" in it.\n\t+ It is located on the right side of the image.\n* The words \"League of Legends\" and \"Worlds 2023\":\n\t+ The words are written in white text at the top-left corner of the image.\n\t+ They are accompanied by a small logo for the League of Legends World Championship.\n\nThe image effectively promotes the upcoming match between JD Gaming and T1, highlighting the teams' logos and the championship trophy. The use of blue and red colors creates a visually appealing contrast, while the inclusion of the League of Legends and Worlds 2023 logos adds credibility to the event.",
+    "raw_answer2": "The image displays a trophy sitting next to a TV screen, which is showing the scoreboard during a game. There are two teams playing in the game, as indicated by the presence of two logos or team names. The competition appears to be a tournament, as there is a suggestion of a series of games being played. The scoreboard indicates that \"JD Gaming\" is in the lead, while \"T1\" is trailing behind. The game seems to be at an advanced stage, with only a few minutes remaining. The trophy in the foreground adds to the competitive atmosphere of the scene.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Answer1",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1729069136,
+        "id": "chatcmpl-AIu9o5wzlz8c8aRr1Bk7ET431bHmR",
+        "model": "gpt-4-turbo-2024-04-09",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_result": {
+                    "jailbreak": {
+                        "filtered": false,
+                        "detected": false
+                    },
+                    "custom_blocklists": {
+                        "filtered": false,
+                        "details": []
+                    }
+                }
+            },
+            {
+                "prompt_index": 1,
+                "content_filter_result": {
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "custom_blocklists": {
+                        "filtered": false,
+                        "details": []
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 1439,
+            "total_tokens": 1441
+        }
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.731518507003784,
+    "code": 200,
+    "current_time": "2024-10-16 16:58:57"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "388_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nAnalyze the series of actions in the image and predict the possible next action.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe images depict the stages (T1-T5) of a person getting up from a lying position on a table/bed-like structure.  Each stage shows increasing elevation and limb movement towards a seated posture.\n\n* **T1:** Lying flat, initial movement of arms and legs.\n* **T2:** One leg begins to bend at the knee, upper body slightly raised.\n* **T3:**  Sitting up, legs still on the table, torso upright.\n* **T4:** Legs begin to move towards the edge of the table, one leg hanging off.\n* **T5:**  Sitting upright with legs hanging off the table, feet moving towards the floor.\n\nThe next action (T6) would likely be the person **placing their feet on the floor and standing up.**\n\n~~~\n~~~Answer2\nIn the image, there is a series of actions, starting with a ball above each person or symbol. From this observation, it can be inferred that the possible next action might be the ball either falling or moving towards the person, symbol, or ball to initiate the next action of the sequence. The current actions in the image involve the interaction between the ball, persons, and symbols, suggesting that this scene might be a representation of a sports game, gymnastics, or a martial arts performance.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and describe the sequence of actions leading up to the last depicted moment.\n2. Predict the next action based on the momentum and position of figures.\n3. Ensure prediction is plausible within the context of the image sequence.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/388.jpeg",
+    "model_1": "gemini-1.5-pro-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The images depict the stages (T1-T5) of a person getting up from a lying position on a table/bed-like structure.  Each stage shows increasing elevation and limb movement towards a seated posture.\n\n* **T1:** Lying flat, initial movement of arms and legs.\n* **T2:** One leg begins to bend at the knee, upper body slightly raised.\n* **T3:**  Sitting up, legs still on the table, torso upright.\n* **T4:** Legs begin to move towards the edge of the table, one leg hanging off.\n* **T5:**  Sitting upright with legs hanging off the table, feet moving towards the floor.\n\nThe next action (T6) would likely be the person **placing their feet on the floor and standing up.**\n",
+    "raw_answer2": "In the image, there is a series of actions, starting with a ball above each person or symbol. From this observation, it can be inferred that the possible next action might be the ball either falling or moving towards the person, symbol, or ball to initiate the next action of the sequence. The current actions in the image involve the interaction between the ball, persons, and symbols, suggesting that this scene might be a representation of a sports game, gymnastics, or a martial arts performance.",
+    "response": {
+        "id": "chatcmpl-AIt6X4mJKzt3up5imgjWfmsJQxEr9",
+        "object": "chat.completion",
+        "created": 1729065089,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1313,
+            "completion_tokens": 2,
+            "total_tokens": 1315
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.239353656768799,
+    "code": 200,
+    "current_time": "2024-10-16 15:51:30"
+}

@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ts1.cn.mm.bing.net/th/id/R-C.7b111abd47ffc37771a3910917def3bd?rik=7qbmO47DiOm%2bog&riu=http%3a%2f%2fmediad.publicbroadcasting.net%2fp%2fshared%2fnpr%2fstyles%2fx_large%2fnprshared%2f201504%2f398803983.jpg&ehk=AppKqkdndo%2fQnbrklTN0KYuK5j1PdX6%2fP4hNBJTlTgw%3d&risl=&pid=ImgRaw&r=0",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately describe the image, noting it's a CT scan, not an ultrasound for CRL measurement.\n2. Explain that CRL is used for gestational age, but not applicable in this CT image.\n3. State that gestational age cannot be determined from the provided CT image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/190.jpg",
+    "unique_idx": 190,
+    "prompt": "Given the image, describe the details in the image and determine the gestational age of the fetus by measuring the crown-rump length (CRL) and comparing it to standard growth charts.",
+    "context": "Given the image, describe the details in the image and determine the gestational age of the fetus by measuring the crown-rump length (CRL) and comparing it to standard growth charts.",
+    "sample_id": 190,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/190.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "The image is a chest CT scan.  A large, roughly round mass is highlighted in purple in the right lung.  The mass appears to be in the mid-lung field.  The remainder of the scan shows the typical anatomy of the chest, including the lungs, heart, blood vessels, and ribs.  There is no visible fetus in this image.  Therefore, it's impossible to determine a gestational age or measure a crown-rump length (CRL).  This scan is not appropriate for assessing fetal development.\n",
+    "response_from_model": {
+        "id": "chatcmpl-952746b30f5a45edb20f1cc25e79dc80",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897150,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image is a chest CT scan.  A large, roughly round mass is highlighted in purple in the right lung.  The mass appears to be in the mid-lung field.  The remainder of the scan shows the typical anatomy of the chest, including the lungs, heart, blood vessels, and ribs.  There is no visible fetus in this image.  Therefore, it's impossible to determine a gestational age or measure a crown-rump length (CRL).  This scan is not appropriate for assessing fetal development.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 295,
+            "completion_tokens": 107,
+            "total_tokens": 402
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:46"
+}

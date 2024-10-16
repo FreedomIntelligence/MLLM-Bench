@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://images.unsplash.com/photo-1617201834941-0dff6e023ae2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer must include coordinates close to the reference: (200,315), the closer the better",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/172.jpg",
+    "unique_idx": "172",
+    "prompt": "The image is of dimension 700*1050, assume the bottom left corner to be the origin of coordinates (0,0), the coordinates of the top left corner to be (0,1050) and the coordinates of the bottom right corner to be (700,0). Please give the approximate coordinates of the spoon tail.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 106,
+            "prompt_tokens": 1087,
+            "total_tokens": 1193
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the image provided, the coordinates of the spoon tail can be estimated by visually analyzing the position of the spoon in relation to the coordinate grid. The spoon is located towards the bottom left of the image. The tail of the spoon appears to be just above the 500 mark on the x-axis and slightly to the right of the 2000 mark on the y-axis.\n\nTherefore, the approximate coordinates of the spoon tail are (500, 2000)."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "Based on the image provided, the coordinates of the spoon tail can be estimated by visually analyzing the position of the spoon in relation to the coordinate grid. The spoon is located towards the bottom left of the image. The tail of the spoon appears to be just above the 500 mark on the x-axis and slightly to the right of the 2000 mark on the y-axis.\n\nTherefore, the approximate coordinates of the spoon tail are (500, 2000).",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 18.494043350219727,
+    "code": 200,
+    "current_time": "2024-04-30 13:41:41"
+}

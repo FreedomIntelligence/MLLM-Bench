@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Visual Math Reasoning",
+        "url": "https://i.stack.imgur.com/VYw8J.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correct identification of triangles PQR, PUS, PUQ, and PSR in the image.\n2. Application of congruence criteria to prove PUQ ≅ PSR.\n3. Explanation includes reasoning based on properties of equilateral triangles.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/310.jpeg",
+    "unique_idx": 310,
+    "prompt": "Solve the problem 11 in the image.",
+    "context": "Solve the problem 11 in the image.",
+    "sample_id": 310,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/310.jpeg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "Here's how to prove triangle PUQ is congruent to triangle PSR:\n\n1. **Statement:** PQR and PUS are equilateral triangles.\n   **Reason:** Given\n\n2. **Statement:** PQ = PR and PU = PS\n   **Reason:** All sides of an equilateral triangle are equal.\n\n3. **Statement:** ∠PQR = ∠PRQ = ∠RPQ = ∠PUS = ∠PSU = ∠SUP = 60°\n   **Reason:** All angles of an equilateral triangle are 60°.\n\n4. **Statement:** ∠PUQ = ∠QPU + ∠PUQ = ∠QPU + ∠SUP = ∠QPS\n   **Reason:** Angle addition postulate and substitution from step 3.\n\n5. **Statement:** ∠PSR = ∠RPS + ∠PSR = ∠RPS + ∠QPR = ∠QPS\n   **Reason:** Angle addition postulate and substitution from step 3.\n\n6. **Statement:** ∠PUQ = ∠PSR\n   **Reason:** Substitution (both equal to ∠QPS from steps 4 and 5).\n\n7. **Statement:** Triangle PUQ ≅ Triangle PSR\n   **Reason:** SAS Congruence (PQ = PR, ∠PUQ = ∠PSR, PU = PS).",
+    "response_from_model": {
+        "id": "chatcmpl-d9abcfd527b2462892c21b6352ce3f90",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897321,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here's how to prove triangle PUQ is congruent to triangle PSR:\n\n1. **Statement:** PQR and PUS are equilateral triangles.\n   **Reason:** Given\n\n2. **Statement:** PQ = PR and PU = PS\n   **Reason:** All sides of an equilateral triangle are equal.\n\n3. **Statement:** ∠PQR = ∠PRQ = ∠RPQ = ∠PUS = ∠PSU = ∠SUP = 60°\n   **Reason:** All angles of an equilateral triangle are 60°.\n\n4. **Statement:** ∠PUQ = ∠QPU + ∠PUQ = ∠QPU + ∠SUP = ∠QPS\n   **Reason:** Angle addition postulate and substitution from step 3.\n\n5. **Statement:** ∠PSR = ∠RPS + ∠PSR = ∠RPS + ∠QPR = ∠QPS\n   **Reason:** Angle addition postulate and substitution from step 3.\n\n6. **Statement:** ∠PUQ = ∠PSR\n   **Reason:** Substitution (both equal to ∠QPS from steps 4 and 5).\n\n7. **Statement:** Triangle PUQ ≅ Triangle PSR\n   **Reason:** SAS Congruence (PQ = PR, ∠PUQ = ∠PSR, PU = PS)."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 269,
+            "completion_tokens": 291,
+            "total_tokens": 560
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:38"
+}

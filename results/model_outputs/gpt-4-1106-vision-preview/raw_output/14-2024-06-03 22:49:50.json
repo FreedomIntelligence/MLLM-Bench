@@ -1,0 +1,62 @@
+{
+    "choices": [
+        {
+            "content_filter_results": {
+                "hate": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "self_harm": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "sexual": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "violence": {
+                    "filtered": false,
+                    "severity": "safe"
+                }
+            },
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+                "content": "From the notes provided, here are the extracted definitions (def), examples (ex), and formulas using LaTeX:\n\nDefinitions (def):\n1. An orthogonal matrix \\( A \\) is an orthogonal transformation iff (if and only if) \\( A \\) is orthogonal.\n2. \\( A \\) has \\( n \\) mutually perpendicular rows or columns with unit length.\n3. Rows or columns must be independent (can't be multiples of each other).\n4. To be perpendicular, the dot product must be 0, which is represented by the formula \\( \\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^{n} x_i y_i \\).\n5. The rows or columns of \\( A \\) form an orthonormal basis of \\( \\mathbb{R}^n \\), which is a basic for space - set of vectors that can combine to create any vector in a space.\n\nExamples (ex):\n1. The matrix \\(\\begin{bmatrix} 1 & 2 \\\\ 2 & 1 \\end{bmatrix}\\) is given as an example of rows that are independent but not perpendicular.\n2. The matrix \\(\\begin{bmatrix} 1 & 2 & 3 \\\\ 2 & 3 & 1 \\\\ 3 & 1 & 2 \\end{bmatrix}\\) is given as an example of rows that switch with the columns when transposed, forming \\(\\begin{bmatrix} 1 & 2 & 3 \\\\ 2 & 3 & 1 \\\\ 3 & 1 & 2 \\end{bmatrix}^T = \\begin{bmatrix} 1 & 2 & 3 \\\\ 2 & 3 & 1 \\\\ 3 & 1 & 2 \\end{bmatrix}\\).\n\nFormulas using LaTeX:\n1. \\( \\mathbf{x} \\cdot \\mathbf{y} = 0 \\) if and only if \\( \\mathbf{x} \\perp \\mathbf{y} \\).\n2. \\( ||\\mathbf{x}|| = \\sqrt{x \\cdot x} = \\sqrt{x_1^2 + x_2^2 + \\ldots + x_n^2} \\).\n3. \\( A^T A = A A^T = I \\), which means \\( A^{-1} = A^T \\) when \\( A \\) is orthogonal. This formula states that the transpose of \\( A \\) times \\( A \\) equals the identity matrix \\( I \\), indicating that the inverse of \\( A \\) is its transpose.\n\nPlease note that the LaTeX formulas provided are representations of the mathematical expressions and may not render as visual equations in this text format.",
+                "role": "assistant"
+            }
+        }
+    ],
+    "created": 1717426173,
+    "id": "chatcmpl-9W3I5QC5V141FTOViOQbHVwftThQF",
+    "model": "gpt-4",
+    "object": "chat.completion",
+    "prompt_filter_results": [
+        {
+            "prompt_index": 0,
+            "content_filter_results": {
+                "hate": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "self_harm": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "sexual": {
+                    "filtered": false,
+                    "severity": "safe"
+                },
+                "violence": {
+                    "filtered": false,
+                    "severity": "safe"
+                }
+            }
+        }
+    ],
+    "usage": {
+        "completion_tokens": 570,
+        "prompt_tokens": 794,
+        "total_tokens": 1364
+    }
+}

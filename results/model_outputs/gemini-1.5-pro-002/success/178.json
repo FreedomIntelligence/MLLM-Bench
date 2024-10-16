@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://images.rawpixel.com/image_png_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjgxMC1ub29uLTAzXzEucG5n.png",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Correct identification of the strawberry's bounding box coordinates.\n2. Bounding box should tightly enclose the entire strawberry.\n3. Coordinates must be accurate relative to the image's dimensions.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/178.webp",
+    "unique_idx": 178,
+    "prompt": "What would be the bounding box coordinates for the strawberry in the image? The image size is 1300*1300",
+    "context": "What would be the bounding box coordinates for the strawberry in the image? The image size is 1300*1300",
+    "sample_id": 178,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/178.webp"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The strawberry, including its green leaves, roughly occupies the area within these bounding box coordinates:\n\n**xmin:** 320\n**ymin:** 10\n**xmax:** 580\n**ymax:** 310\n\n\nThese coordinates are approximate, as the edges of the strawberry and leaves are somewhat soft.  They represent a box that comfortably contains the entire strawberry.  They are also relative to the provided 1300x1300 image dimensions.",
+    "response_from_model": {
+        "id": "chatcmpl-8886d4377e914e96bbdac5f3ee4a2d8c",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897280,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The strawberry, including its green leaves, roughly occupies the area within these bounding box coordinates:\n\n**xmin:** 320\n**ymin:** 10\n**xmax:** 580\n**ymax:** 310\n\n\nThese coordinates are approximate, as the edges of the strawberry and leaves are somewhat soft.  They represent a box that comfortably contains the entire strawberry.  They are also relative to the provided 1300x1300 image dimensions."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 287,
+            "completion_tokens": 100,
+            "total_tokens": 387
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:14:56"
+}

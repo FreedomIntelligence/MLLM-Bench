@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://mzucker.github.io/images/noteshrink/notesA1.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately transcribe definitions and examples related to \"Orthogonal Transformations.\"\n2. Correctly format mathematical formulas and symbols in LaTeX notation.\n3. Ensure extracted text maintains the original notes' structure and order.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/14.jpeg",
+    "unique_idx": "14",
+    "prompt": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "response": {
+        "id": "chatcmpl-msg01Xw8xBYaBWcbrQPCGCtSouz",
+        "model": "claude-3-5-sonnet-20240620",
+        "object": "chat.completion",
+        "created": 1723564732,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here are the definitions, examples, and formulas extracted from the notes:\n\nDef:\n- An n×n matrix A is an orthogonal transformation if and only if:\n  - It has n mutually perpendicular rows or columns with unit length\n  - Rows must be independent (can't be multiples of each other)\n  - The rows or columns of A form an orthonormal basis of ℝⁿ\n\nEx:\n- [1 2] → linearly dependent\n  [3 6]\n- [1 2] → independent but not ⊥\n  [2 6]\n- ex: [1 2 3]ᵀ = [1 4]\n                [2 5]\n                [3 6]\n\nFormulas (in LaTeX):\n\n1. Dot product: $x \\cdot y = \\sum_{i=1}^n x_iy_i$\n\n2. Perpendicularity condition: $x \\cdot y = 0 \\Leftrightarrow x \\perp y$\n\n3. Unit length: $\\|x\\| = \\sqrt{\\sum_i x_i^2} = \\sqrt{x \\cdot x}$\n\n4. Orthogonal matrix properties:\n   $AA^T = A^TA = I$\n   $A^{-1} = A^T$\n\nAdditional notes:\n- To be perpendicular, the dot product must be 0\n- Rows/columns must have unit length\n- Basis for space: set of vectors that can combine to create any vector in a space\n- Transpose [.]ᵀ switches the rows and columns"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1582,
+            "completion_tokens": 387,
+            "total_tokens": 1969
+        }
+    },
+    "answer": "Here are the definitions, examples, and formulas extracted from the notes:\n\nDef:\n- An n×n matrix A is an orthogonal transformation if and only if:\n  - It has n mutually perpendicular rows or columns with unit length\n  - Rows must be independent (can't be multiples of each other)\n  - The rows or columns of A form an orthonormal basis of ℝⁿ\n\nEx:\n- [1 2] → linearly dependent\n  [3 6]\n- [1 2] → independent but not ⊥\n  [2 6]\n- ex: [1 2 3]ᵀ = [1 4]\n                [2 5]\n                [3 6]\n\nFormulas (in LaTeX):\n\n1. Dot product: $x \\cdot y = \\sum_{i=1}^n x_iy_i$\n\n2. Perpendicularity condition: $x \\cdot y = 0 \\Leftrightarrow x \\perp y$\n\n3. Unit length: $\\|x\\| = \\sqrt{\\sum_i x_i^2} = \\sqrt{x \\cdot x}$\n\n4. Orthogonal matrix properties:\n   $AA^T = A^TA = I$\n   $A^{-1} = A^T$\n\nAdditional notes:\n- To be perpendicular, the dot product must be 0\n- Rows/columns must have unit length\n- Basis for space: set of vectors that can combine to create any vector in a space\n- Transpose [.]ᵀ switches the rows and columns",
+    "gen_model_id": "claude-3-5-sonnet-20240620",
+    "duration": 13.709587812423706,
+    "code": 200,
+    "current_time": "2024-08-13 23:58:53"
+}

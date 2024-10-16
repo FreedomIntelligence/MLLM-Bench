@@ -1,0 +1,35 @@
+{
+    "unique_idx": "67_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nSilakan meringkas isi dalam gambar.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nKalender Akademin Sesi 2019-2022.\n~~~\n~~~Answer2\nTeks dalam gambar adalah dalam Bahasa Melayu dan mengandungi beberapa hal yang perlu diketahui. Berikut adalah ringkasan isi dalam gambar:\n\n1. Terdapat permohonan awal kanak-kanak di bawah kohort umur ke tahun satu kalendar akademik sesi 2023/2024.\n2. Kanak-kanak di bawah kohort umur (lahir pada 2 hingga 15 Januari 2017) boleh memohon kemasukan awal ke Tahun 1 Kalendar Akademik Sesi 2023/2024.\n3. Permohonan boleh dibuat mulai 1 September 2022 menggunakan borang PMA01 dan diserahkan ke Unit Prasekolah dan Rendah, Jabatan Pendidikan Negeri Selangor sebelum atau pada 14 Oktober 2022.\n4. Untuk pertanyaan atau bantuan, boleh hubungi Puan Siti Rokiah binti Mohamad di talian 03-55186516. Segala perhatian dan kerjasama tuan berhubung perkara ini amat dihargai.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and summarize key points: application for early childhood admission, academic year 2023/2024, and submission deadlines.\n2. Confirm recognition of multilingual text: Bahasa Malaysia, document details, and contact information.\n3. Check for clarity and conciseness in summarization without omitting essential details from the image.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/67.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-7b-instruct",
+    "raw_answer1": "Kalender Akademin Sesi 2019-2022.",
+    "raw_answer2": "Teks dalam gambar adalah dalam Bahasa Melayu dan mengandungi beberapa hal yang perlu diketahui. Berikut adalah ringkasan isi dalam gambar:\n\n1. Terdapat permohonan awal kanak-kanak di bawah kohort umur ke tahun satu kalendar akademik sesi 2023/2024.\n2. Kanak-kanak di bawah kohort umur (lahir pada 2 hingga 15 Januari 2017) boleh memohon kemasukan awal ke Tahun 1 Kalendar Akademik Sesi 2023/2024.\n3. Permohonan boleh dibuat mulai 1 September 2022 menggunakan borang PMA01 dan diserahkan ke Unit Prasekolah dan Rendah, Jabatan Pendidikan Negeri Selangor sebelum atau pada 14 Oktober 2022.\n4. Untuk pertanyaan atau bantuan, boleh hubungi Puan Siti Rokiah binti Mohamad di talian 03-55186516. Segala perhatian dan kerjasama tuan berhubung perkara ini amat dihargai.",
+    "response": {
+        "id": "chatcmpl-AIuPclXNN2XA9zckfv6f5GqsblKNw",
+        "object": "chat.completion",
+        "created": 1729070116,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1682,
+            "completion_tokens": 2,
+            "total_tokens": 1684
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.088086366653442,
+    "code": 200,
+    "current_time": "2024-10-16 17:15:17"
+}

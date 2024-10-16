@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://tse2-mm.cn.bing.net/th/id/OIP-C.DfcmfnHYf5SBexamy5AfRgHaF5?rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe any abnormalities visible in the brain CT image.\n2. Use appropriate medical terminology related to brain anatomy and pathology.\n3. Provide a structured report format, including observations and conclusions.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/192.jpg",
+    "unique_idx": "192",
+    "prompt": "Write a CT report for this image as a brain specialist.",
+    "response": {
+        "id": "chatcmpl-ba66674c5b4c43c2b63cdc46fc8fda95",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930591,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " **CT Report**\n\n**Patient Name:** [Patient Name]\n\n**Age:** [Age]\n\n**Sex:** [Sex]\n\n**Date:** [Date]\n\n**Reason for Exam:** [Reason for Exam]\n\n**Findings:**\n\n- There is a large, round, hypodense mass lesion in the right frontal lobe of the brain. The mass is approximately 5 cm in diameter and has a smooth, well-circumscribed border. There is surrounding edema and mass effect, with compression of the right lateral ventricle.\n- There is no evidence of hemorrhage or calcification within the mass.\n\n**Impression:**\n\n- Large, round, hypodense mass lesion in the right frontal lobe of the brain, most likely representing a brain tumor. Further evaluation with MRI is recommended to better characterize the lesion and determine its exact nature.\n\n**Recommendations:**\n\n- MRI of the brain with contrast\n- Neurosurgical consultation"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 784,
+            "completion_tokens": 190,
+            "total_tokens": 974
+        }
+    },
+    "answer": " **CT Report**\n\n**Patient Name:** [Patient Name]\n\n**Age:** [Age]\n\n**Sex:** [Sex]\n\n**Date:** [Date]\n\n**Reason for Exam:** [Reason for Exam]\n\n**Findings:**\n\n- There is a large, round, hypodense mass lesion in the right frontal lobe of the brain. The mass is approximately 5 cm in diameter and has a smooth, well-circumscribed border. There is surrounding edema and mass effect, with compression of the right lateral ventricle.\n- There is no evidence of hemorrhage or calcification within the mass.\n\n**Impression:**\n\n- Large, round, hypodense mass lesion in the right frontal lobe of the brain, most likely representing a brain tumor. Further evaluation with MRI is recommended to better characterize the lesion and determine its exact nature.\n\n**Recommendations:**\n\n- MRI of the brain with contrast\n- Neurosurgical consultation",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 9.836960077285767,
+    "code": 200,
+    "current_time": "2024-04-12 22:03:11"
+}

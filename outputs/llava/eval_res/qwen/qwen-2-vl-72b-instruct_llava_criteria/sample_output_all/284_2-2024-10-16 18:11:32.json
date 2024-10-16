@@ -1,0 +1,35 @@
+{
+    "unique_idx": "284_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat do you think is the occupation of the man in this photograph, considering the traditional attire and the birds perched on the pole he is carrying?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe man in the photograph appears to be a traditional fisherman, likely engaged in cormorant fishing. This method involves using trained cormorants to catch fish. The birds perched on the pole he is carrying are cormorants, which are commonly used in this type of fishing. The traditional attire and the setting further support this interpretation.\n~~~\n~~~Answer2\nGiven the man's traditional attire and the presence of birds perched on the pole he is carrying, it is likely that he is a fisherman or a bird catcher. The man appears to be using a boat to travel along a body of water, which is a common activity among fishermen. Additionally, the birds might be used to help him catch fish or other aquatic creatures, indicating that he might have some expertise in bird handling and training. This combination of elements suggests that the man's occupation is related to the water or wildlife, and he may be involved in fishing or bird catching as part of his daily activities.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the man as a fisherman based on traditional attire and birds.\n2. Mention the pole and birds as indicators of the fishing occupation.\n3. Acknowledge the setting on a boat as supportive evidence of fishing activity.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/284.jpg",
+    "model_1": "qwen/qwen-2-vl-72b-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The man in the photograph appears to be a traditional fisherman, likely engaged in cormorant fishing. This method involves using trained cormorants to catch fish. The birds perched on the pole he is carrying are cormorants, which are commonly used in this type of fishing. The traditional attire and the setting further support this interpretation.",
+    "raw_answer2": "Given the man's traditional attire and the presence of birds perched on the pole he is carrying, it is likely that he is a fisherman or a bird catcher. The man appears to be using a boat to travel along a body of water, which is a common activity among fishermen. Additionally, the birds might be used to help him catch fish or other aquatic creatures, indicating that he might have some expertise in bird handling and training. This combination of elements suggests that the man's occupation is related to the water or wildlife, and he may be involved in fishing or bird catching as part of his daily activities.",
+    "response": {
+        "id": "chatcmpl-AIvI3YIehfun2crOinV88xk60Snoj",
+        "object": "chat.completion",
+        "created": 1729073491,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1292,
+            "completion_tokens": 2,
+            "total_tokens": 1294
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.349834442138672,
+    "code": 200,
+    "current_time": "2024-10-16 18:11:32"
+}

@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://static.turbosquid.com/Preview/2016/06/03__14_24_55/2.pngf5b386e3-37f4-44b1-8af4-ffe6332cac24Zoom.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Check the accuracy of OCR extraction of \"passenger_name\", \"flight_number\", \"departure_city\", \"destination_city\", \"date\", \"gate\", \"boarding_time\", and \"seat_number\".\n2. Ensure all extracted text data is organized in JSON format, with no extraneous or missing information.\n3. An example answer can be: {\n    \"passenger_name\": \"DOE JOHN\",\n    \"flight_number\": \"OKL022\",\n    \"departure_city\": \"GLASGOW\",\n    \"destination_city\": \"LONDON\",\n    \"date\": \"12 NOV 2018\",\n    \"gate\": \"45\",\n    \"boarding_time\": \"10:30\",\n    \"seat_number\": \"26A\"\n}",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/19.jpg",
+    "unique_idx": 19,
+    "prompt": "Extract all text data from the boarding pass and organize them into JSON format, including passenger name, flight number, departure and destination cities, date, gate, boarding time, and seat number.",
+    "context": "Extract all text data from the boarding pass and organize them into JSON format, including passenger name, flight number, departure and destination cities, date, gate, boarding time, and seat number.",
+    "sample_id": 19,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/19.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "```json\n{\n  \"passenger_name\": \"DOE / JOHN\",\n  \"flight_number\": \"OKL022\",\n  \"departure_city\": \"GLASGOW\",\n  \"departure_airport_code\": \"GLA\",\n  \"destination_city\": \"LONDON\",\n  \"destination_airport_code\": \"LCY\",\n  \"date\": \"12 NOV 2018\",\n  \"gate\": \"45\",\n  \"boarding_time\": \"10:30\",\n  \"seat_number\": \"26A\"\n}\n```",
+    "response_from_model": {
+        "id": "chatcmpl-a4ced48c5c2a4ddbb32085f8302a34d7",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897227,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n{\n  \"passenger_name\": \"DOE / JOHN\",\n  \"flight_number\": \"OKL022\",\n  \"departure_city\": \"GLASGOW\",\n  \"departure_airport_code\": \"GLA\",\n  \"destination_city\": \"LONDON\",\n  \"destination_airport_code\": \"LCY\",\n  \"date\": \"12 NOV 2018\",\n  \"gate\": \"45\",\n  \"boarding_time\": \"10:30\",\n  \"seat_number\": \"26A\"\n}\n```"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 297,
+            "completion_tokens": 131,
+            "total_tokens": 428
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:14:04"
+}

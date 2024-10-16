@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/Eg4Hv0BUMAE0xCV?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Code must generate a bar chart with two bars per country, matching colors and labels.\n2. Bars must reflect the correct numerical values and country order from the image.\n3. Include source label and chart title as displayed in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/373.jpeg",
+    "unique_idx": "373",
+    "prompt": "You are now required to write a Python code based on an image to replicate the data image in the picture as closely as possible.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Certainly! To replicate the bar chart shown in the image, we will use Python's `matplotlib` library. First, we need to extract the data from the image. I will provide a simplified version of the data and the code to generate a similar bar chart.\n\nHere is an example of how you could write the Python code:\n\n```python\nimport matplotlib.pyplot as plt\n\n# Data extracted from the image\ncountries = [\n    \"Spain\", \"France\", \"U.K.\", \"Italy\", \"Mexico\", \"Portugal\", \"Euro Area\", \n    \"Hong Kong\", \"Philippines\", \"Belgium\", \"Malaysia\", \"Austria\", \"Thailand\", \n    \"Singapore\", \"Chile\", \"Czech Republic\", \"Germany\", \"Japan\", \"Hungary\", \n    \"Cyprus\", \"Netherlands\", \"U.S.\", \"Russia\", \"Colombia\", \"Poland\", \n    \"Norway\", \"China\", \"Indonesia\", \"South Korea\", \"Taiwan\", \"Vietnam\"\n]\nq2_2020 = [\n    -22, -19, -22, -13, -12, -11, -12, -9, -9, -9, -9, -9, -8, -7, -11, -10, \n    -10, -8, -12, -9, -9, -9, -8, -5, -5, -5, -3, -3, -2, -1, 0\n]\nh1_2020 = [\n    -15, -13, -12, -12, -11, -9, -9, -9, -8, -8, -7, -6, -6, -5, -14, -13, \n    -11, -10, -14, -12, -10, -9, -7, -5, -3, -3, -1, -1, 1, 2, 3\n]\n\n# Create the bar chart\nfig, ax = plt.subplots(figsize=(14, 7))\n\nbar_width = 0.35\nindex = range(len(countries))\n\nbar1 = ax.bar(index, q2_2020, bar_width, label='2020 Q2', color='purple')\nbar2 = ax.bar([i + bar_width for i in index], h1_2020, bar_width, label='2020 H1', color='violet')\n\n# Add the data labels on the bars\nfor bar in bar1 + bar2:\n    yval = bar.get_height()\n    ax.text(bar.get_x() + bar.get_width()/2, yval, round(yval, 1), va='bottom' if yval < 0 else 'top', ha='center', fontsize=8)\n\n# Set the position of the x ticks\nax.set_xticks([i + bar_width / 2 for i in index])\nax.set_xticklabels(countries, rotation=90)\n\n# Set the labels and title\nax.set_xlabel('Country')\nax.set_ylabel('Growth')\nax.set_title('Global growth in first half 2020')\n\n# Add a legend\nax.legend()\n\n# Show the plot\nplt.tight_layout()\nplt.show()\n```\n\nPlease note that the exact colors and data values may not match the image perfectly, as the colors on a screen can vary, and the data values are estimated from the image. You can adjust the colors and data values as needed to get a closer match.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717427233,
+        "id": "chatcmpl-9W3ZByApSye41dLGBlOx6Hsql6RXn",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 733,
+            "prompt_tokens": 1138,
+            "total_tokens": 1871
+        }
+    },
+    "answer": "Certainly! To replicate the bar chart shown in the image, we will use Python's `matplotlib` library. First, we need to extract the data from the image. I will provide a simplified version of the data and the code to generate a similar bar chart.\n\nHere is an example of how you could write the Python code:\n\n```python\nimport matplotlib.pyplot as plt\n\n# Data extracted from the image\ncountries = [\n    \"Spain\", \"France\", \"U.K.\", \"Italy\", \"Mexico\", \"Portugal\", \"Euro Area\", \n    \"Hong Kong\", \"Philippines\", \"Belgium\", \"Malaysia\", \"Austria\", \"Thailand\", \n    \"Singapore\", \"Chile\", \"Czech Republic\", \"Germany\", \"Japan\", \"Hungary\", \n    \"Cyprus\", \"Netherlands\", \"U.S.\", \"Russia\", \"Colombia\", \"Poland\", \n    \"Norway\", \"China\", \"Indonesia\", \"South Korea\", \"Taiwan\", \"Vietnam\"\n]\nq2_2020 = [\n    -22, -19, -22, -13, -12, -11, -12, -9, -9, -9, -9, -9, -8, -7, -11, -10, \n    -10, -8, -12, -9, -9, -9, -8, -5, -5, -5, -3, -3, -2, -1, 0\n]\nh1_2020 = [\n    -15, -13, -12, -12, -11, -9, -9, -9, -8, -8, -7, -6, -6, -5, -14, -13, \n    -11, -10, -14, -12, -10, -9, -7, -5, -3, -3, -1, -1, 1, 2, 3\n]\n\n# Create the bar chart\nfig, ax = plt.subplots(figsize=(14, 7))\n\nbar_width = 0.35\nindex = range(len(countries))\n\nbar1 = ax.bar(index, q2_2020, bar_width, label='2020 Q2', color='purple')\nbar2 = ax.bar([i + bar_width for i in index], h1_2020, bar_width, label='2020 H1', color='violet')\n\n# Add the data labels on the bars\nfor bar in bar1 + bar2:\n    yval = bar.get_height()\n    ax.text(bar.get_x() + bar.get_width()/2, yval, round(yval, 1), va='bottom' if yval < 0 else 'top', ha='center', fontsize=8)\n\n# Set the position of the x ticks\nax.set_xticks([i + bar_width / 2 for i in index])\nax.set_xticklabels(countries, rotation=90)\n\n# Set the labels and title\nax.set_xlabel('Country')\nax.set_ylabel('Growth')\nax.set_title('Global growth in first half 2020')\n\n# Add a legend\nax.legend()\n\n# Show the plot\nplt.tight_layout()\nplt.show()\n```\n\nPlease note that the exact colors and data values may not match the image perfectly, as the colors on a screen can vary, and the data values are estimated from the image. You can adjust the colors and data values as needed to get a closer match.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 35.33456254005432,
+    "code": 200,
+    "current_time": "2024-06-03 23:07:40"
+}

@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://images.pexels.com/photos/4114638/pexels-photo-4114638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "question type": "close-ended"
+    },
+    "criteria": "1. List squares a5, a7, b4, b8, d4, d8, e5, e7 as knight's accessible positions.\n2. Ensure answer reflects understanding of knight's L-shaped movement.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/205.jpg",
+    "unique_idx": "205",
+    "prompt": "Which squares are immediately accessible to the black knight, given its current position on the board?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 28,
+            "prompt_tokens": 1028,
+            "total_tokens": 1056
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The black knight can move to the squares marked 1, 2, 3, 4, 5, and 6."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The black knight can move to the squares marked 1, 2, 3, 4, 5, and 6.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 5.116129636764526,
+    "code": 200,
+    "current_time": "2024-04-30 13:49:58"
+}

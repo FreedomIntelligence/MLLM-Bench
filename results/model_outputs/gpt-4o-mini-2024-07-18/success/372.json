@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/FzZCHTzXsAAs46u?format=jpg&name=4096x4096",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Website interface must reflect similar layout, including navigation bar, image placement, and text sections.\n2. Color scheme and font style should closely match the original image's aesthetic.\n3. Shapes and design elements like buttons or icons should be consistent with those in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/372.jpg",
+    "unique_idx": 372,
+    "prompt": "You are a website developer. You have the attached image and you need to code a website interface with the similar characteristics, color, shapes, etc. Please do so.",
+    "context": "You are a website developer. You have the attached image and you need to code a website interface with the similar characteristics, color, shapes, etc. Please do so.",
+    "sample_id": 372,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/372.jpg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "Sure! Below is a simple HTML and CSS code snippet to create a website interface resembling the characteristics of the image you provided. This code includes a navigation bar, a gallery section, and a travel section with distinct shapes and colors.\n\n### HTML\n\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>GlobeTrekker</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n    <header>\n        <h1>GlobeTrekker</h1>\n        <nav>\n            <ul>\n                <li>QUEENSTOWN</li>\n                <li>SYDNEY</li>\n                <li>INSTABUL</li>\n                <li>PALERMO</li>\n                <li>CAPE TOWN</li>\n                <li>SEOUL</li>\n                <li>KYOTO</li>\n                <li>TBILISI</li>\n            </ul>\n        </nav>\n    </header>\n    <main>\n        <section class=\"gallery\">\n            <h2>GALLERY</h2>\n            <p>The gallery features a wide range of photographs, including stunning landscapes, architectural marvels, vibrant street scenes, local cuisine, and cultural events.</p>\n            <div class=\"gallery-item\">\n                <img src=\"maldives.jpg\" alt=\"Private Islands - In the Maldives\">\n                <p>★ PRIVATE ISLANDS - IN THE MALDIVES.</p>\n            </div>\n        </section>\n        <section class=\"travel\">\n            <h2>TRAVEL</h2>\n            <p>Gorgeous Accommodations around the World Updates.</p>\n            <div class=\"travel-item\">\n                <div class=\"triangle\">\n                    <img src=\"cuba.jpg\" alt=\"Trinidad City Cuba\">\n                    <p>★ TRINIDAD CITY CUBA<br>48HRS__</p>\n                </div>\n                <div class=\"rectangle\">\n                    <img src=\"namib.jpg\" alt=\"Namib Desert\">\n                    <p>★ NAMIB DESERT</p>\n                </div>\n            </div>\n        </section>\n    </main>\n</body>\n</html>\n```\n\n### CSS (styles.css)\n\n```css\nbody {\n    font-family: Arial, sans-serif;\n    background-color: #f0f0f0;\n    margin: 0;\n    padding: 0;\n}\n\nheader {\n    background-color: white;\n    padding: 20px;\n    text-align: center;\n}\n\nnav ul {\n    list-style: none;\n    padding: 0;\n}\n\nnav ul li {\n    display: inline;\n    margin: 0 15px;\n}\n\nh1 {\n    font-size: 2em;\n}\n\nmain {\n    padding: 20px;\n}\n\n.gallery, .travel {\n    margin-bottom: 40px;\n}\n\n.gallery-item, .travel-item {\n    margin-top: 20px;\n}\n\n.gallery-item img, .travel-item img {\n    width: 100%;\n    height: auto;\n    border-radius: 8px;\n}\n\n.travel-item {\n    display: flex;\n    justify-content: space-between;\n}\n\n.triangle {\n    width: 48%;\n    clip-path: polygon(0 0, 100% 0, 100% 100%);\n    background-color: #e0e0e0;\n    position: relative;\n}\n\n.rectangle {\n    width: 48%;\n    background-color: #e0e0e0;\n}\n\np {\n    padding: 10px;\n    text-align: center;\n}\n```\n\n### Notes\n1. **Images**: Replace `maldives.jpg`, `cuba.jpg`, and `namib.jpg` with actual image paths.\n2. **Colors and Shapes**: Adjust the colors and shapes in the CSS as needed to match the original design more closely.\n3. **Responsive Design**: For a fully responsive design, consider using media queries to adjust layouts for different screen sizes.",
+    "response_from_model": {
+        "id": "chatcmpl-AIBOVQCMtMb1DKhmQKvP2J7fWbojB",
+        "object": "chat.completion",
+        "created": 1728897067,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure! Below is a simple HTML and CSS code snippet to create a website interface resembling the characteristics of the image you provided. This code includes a navigation bar, a gallery section, and a travel section with distinct shapes and colors.\n\n### HTML\n\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>GlobeTrekker</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n    <header>\n        <h1>GlobeTrekker</h1>\n        <nav>\n            <ul>\n                <li>QUEENSTOWN</li>\n                <li>SYDNEY</li>\n                <li>INSTABUL</li>\n                <li>PALERMO</li>\n                <li>CAPE TOWN</li>\n                <li>SEOUL</li>\n                <li>KYOTO</li>\n                <li>TBILISI</li>\n            </ul>\n        </nav>\n    </header>\n    <main>\n        <section class=\"gallery\">\n            <h2>GALLERY</h2>\n            <p>The gallery features a wide range of photographs, including stunning landscapes, architectural marvels, vibrant street scenes, local cuisine, and cultural events.</p>\n            <div class=\"gallery-item\">\n                <img src=\"maldives.jpg\" alt=\"Private Islands - In the Maldives\">\n                <p>★ PRIVATE ISLANDS - IN THE MALDIVES.</p>\n            </div>\n        </section>\n        <section class=\"travel\">\n            <h2>TRAVEL</h2>\n            <p>Gorgeous Accommodations around the World Updates.</p>\n            <div class=\"travel-item\">\n                <div class=\"triangle\">\n                    <img src=\"cuba.jpg\" alt=\"Trinidad City Cuba\">\n                    <p>★ TRINIDAD CITY CUBA<br>48HRS__</p>\n                </div>\n                <div class=\"rectangle\">\n                    <img src=\"namib.jpg\" alt=\"Namib Desert\">\n                    <p>★ NAMIB DESERT</p>\n                </div>\n            </div>\n        </section>\n    </main>\n</body>\n</html>\n```\n\n### CSS (styles.css)\n\n```css\nbody {\n    font-family: Arial, sans-serif;\n    background-color: #f0f0f0;\n    margin: 0;\n    padding: 0;\n}\n\nheader {\n    background-color: white;\n    padding: 20px;\n    text-align: center;\n}\n\nnav ul {\n    list-style: none;\n    padding: 0;\n}\n\nnav ul li {\n    display: inline;\n    margin: 0 15px;\n}\n\nh1 {\n    font-size: 2em;\n}\n\nmain {\n    padding: 20px;\n}\n\n.gallery, .travel {\n    margin-bottom: 40px;\n}\n\n.gallery-item, .travel-item {\n    margin-top: 20px;\n}\n\n.gallery-item img, .travel-item img {\n    width: 100%;\n    height: auto;\n    border-radius: 8px;\n}\n\n.travel-item {\n    display: flex;\n    justify-content: space-between;\n}\n\n.triangle {\n    width: 48%;\n    clip-path: polygon(0 0, 100% 0, 100% 100%);\n    background-color: #e0e0e0;\n    position: relative;\n}\n\n.rectangle {\n    width: 48%;\n    background-color: #e0e0e0;\n}\n\np {\n    padding: 10px;\n    text-align: center;\n}\n```\n\n### Notes\n1. **Images**: Replace `maldives.jpg`, `cuba.jpg`, and `namib.jpg` with actual image paths.\n2. **Colors and Shapes**: Adjust the colors and shapes in the CSS as needed to match the original design more closely.\n3. **Responsive Design**: For a fully responsive design, consider using media queries to adjust layouts for different screen sizes."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 36876,
+            "completion_tokens": 861,
+            "total_tokens": 37737
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:11:12"
+}

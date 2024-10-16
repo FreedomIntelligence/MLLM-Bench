@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://mzucker.github.io/images/noteshrink/notesA1.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately transcribe definitions and examples related to \"Orthogonal Transformations.\"\n2. Correctly format mathematical formulas and symbols in LaTeX notation.\n3. Ensure extracted text maintains the original notes' structure and order.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/14.jpeg",
+    "unique_idx": 14,
+    "prompt": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "context": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "sample_id": 14,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/14.jpeg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "**Definitions and Examples**\n\nThe notes include the following definitions and examples:\n\n**Definitions**\n\n*   **Orthogonal Transformations**: A spatial relationship in 3D is defined as an orthogonal transformation if and only if it has n mutually perpendicular rows or columns with unit length.\n*   **Rows or Columns of A Form an Orthogonal Basis of R^n**: The rows or columns of A form an orthogonal basis of R^n if the dot product between any two distinct rows or columns is zero.\n\n**Examples**\n\n*   **Linearly Dependent Rows**: The rows of a matrix are linearly dependent if one row can be expressed as a linear combination of the other rows.\n*   **Perpendicular Vectors**: Two vectors are perpendicular if their dot product is zero.\n*   **Unit Length Vectors**: A vector has unit length if its magnitude is equal to 1.\n\n**Formulas**\n\n*   **Dot Product**: The dot product of two vectors x and y is given by the formula: x · y = Σ xi yi\n*   **Orthogonal Basis**: The rows or columns of A form an orthogonal basis of R^n if the dot product between any two distinct rows or columns is zero.\n*   **Linearly Independent Rows**: The rows of a matrix are linearly independent if one row cannot be expressed as a linear combination of the other rows.\n\n**LaTeX Formulas**\n\n*   **Dot Product**: $\\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^n x_i y_i$\n*   **Orthogonal Basis**: $\\mathbf{A} \\mathbf{A}^T = \\mathbf{I}$\n*   **Linearly Independent Rows**: $\\mathbf{A} \\mathbf{x} = \\mathbf{0}$ has only the trivial solution $\\mathbf{x} = \\mathbf{0}$\n\nThese formulas can be used to verify whether a matrix has orthogonal rows or columns, and whether the rows or columns form an orthogonal basis of R^n.",
+    "response_from_model": {
+        "id": "gen-1728905039-71tOdHUhTzRuFzvFLoip",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905039,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "**Definitions and Examples**\n\nThe notes include the following definitions and examples:\n\n**Definitions**\n\n*   **Orthogonal Transformations**: A spatial relationship in 3D is defined as an orthogonal transformation if and only if it has n mutually perpendicular rows or columns with unit length.\n*   **Rows or Columns of A Form an Orthogonal Basis of R^n**: The rows or columns of A form an orthogonal basis of R^n if the dot product between any two distinct rows or columns is zero.\n\n**Examples**\n\n*   **Linearly Dependent Rows**: The rows of a matrix are linearly dependent if one row can be expressed as a linear combination of the other rows.\n*   **Perpendicular Vectors**: Two vectors are perpendicular if their dot product is zero.\n*   **Unit Length Vectors**: A vector has unit length if its magnitude is equal to 1.\n\n**Formulas**\n\n*   **Dot Product**: The dot product of two vectors x and y is given by the formula: x · y = Σ xi yi\n*   **Orthogonal Basis**: The rows or columns of A form an orthogonal basis of R^n if the dot product between any two distinct rows or columns is zero.\n*   **Linearly Independent Rows**: The rows of a matrix are linearly independent if one row cannot be expressed as a linear combination of the other rows.\n\n**LaTeX Formulas**\n\n*   **Dot Product**: $\\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^n x_i y_i$\n*   **Orthogonal Basis**: $\\mathbf{A} \\mathbf{A}^T = \\mathbf{I}$\n*   **Linearly Independent Rows**: $\\mathbf{A} \\mathbf{x} = \\mathbf{0}$ has only the trivial solution $\\mathbf{x} = \\mathbf{0}$\n\nThese formulas can be used to verify whether a matrix has orthogonal rows or columns, and whether the rows or columns form an orthogonal basis of R^n.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6437,
+            "completion_tokens": 1,
+            "total_tokens": 6438
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:24:06"
+}

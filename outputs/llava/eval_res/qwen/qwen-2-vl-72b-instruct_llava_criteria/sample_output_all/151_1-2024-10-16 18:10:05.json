@@ -1,0 +1,35 @@
+{
+    "unique_idx": "151_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nDescribe the skills and emotions involved in this performance. How might this reflect the community's values? Please describe it in Chinese.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\n这一表演需要团队合作和优秀的艺术技巧。表演者需要掌握平衡、协调和运动技巧，方能在高脚架上稳定地站立。表演所需的勇气和自信可以反映出这个社区的价值观，强调个人勇敢面对挑战、追求卓越和促进社区凝聚力。\n\n在这个表演中，一位人物升起到脚架顶部，这需要他们具备强大的心理力量和信心，让观众感受到他们的卓越。同时，他们需要具备良好的团队合作精神，与其他表演者紧密配合，共同实现成功的表演。\n\n这种表演可以带来社区的凝聚力和共同体验，让人们为了一个共同的目标而努力。它也反映了社区对于人类的尊重，坚持追求卓越，并激励社区成员共同成长。\n~~~\n~~~Answer2\n这张照片展示了一场传统的舞狮表演。舞狮是中国文化中的一种传统艺术形式，通常在节日和庆典中进行。舞狮表演需要表演者具备高超的技巧和力量，因为他们需要在狭窄的高桩上保持平衡，同时进行各种复杂的动作和舞步。这不仅考验了表演者的身体协调性和灵活性，还需要他们具备强大的心理素质和团队合作精神。\n\n舞狮表演中，表演者通常会通过各种动作和表情来传达狮子的神态和情感，如威严、灵动、喜怒哀乐等。这需要表演者对角色有深刻的理解和表现力，同时也需要他们具备丰富的想象力和创造力。\n\n从这张照片中可以看出，舞狮表演吸引了大量观众，说明这种艺术形式深受社区成员的喜爱和尊重。这反映了社区对传统文化的重视和传承，以及对艺术和表演的欣赏。舞狮表演所传达的勇气、力量和团队精神，也体现了社区成员对这些价值观的认同和追求。\n\n总的来说，舞狮表演不仅是一种艺术表现形式，更是一种文化传承和社区凝聚力的体现。它展示了表演者的技巧和情感，同时也反映了社区的价值观和文化认同。\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify skills (e.g., balance, coordination) and emotions (e.g., joy, concentration) displayed in the lion dance performance.\n2. Explain in Chinese how the performance may reflect community values (e.g., unity, cultural heritage).",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/151.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-72b-instruct",
+    "raw_answer1": "这一表演需要团队合作和优秀的艺术技巧。表演者需要掌握平衡、协调和运动技巧，方能在高脚架上稳定地站立。表演所需的勇气和自信可以反映出这个社区的价值观，强调个人勇敢面对挑战、追求卓越和促进社区凝聚力。\n\n在这个表演中，一位人物升起到脚架顶部，这需要他们具备强大的心理力量和信心，让观众感受到他们的卓越。同时，他们需要具备良好的团队合作精神，与其他表演者紧密配合，共同实现成功的表演。\n\n这种表演可以带来社区的凝聚力和共同体验，让人们为了一个共同的目标而努力。它也反映了社区对于人类的尊重，坚持追求卓越，并激励社区成员共同成长。",
+    "raw_answer2": "这张照片展示了一场传统的舞狮表演。舞狮是中国文化中的一种传统艺术形式，通常在节日和庆典中进行。舞狮表演需要表演者具备高超的技巧和力量，因为他们需要在狭窄的高桩上保持平衡，同时进行各种复杂的动作和舞步。这不仅考验了表演者的身体协调性和灵活性，还需要他们具备强大的心理素质和团队合作精神。\n\n舞狮表演中，表演者通常会通过各种动作和表情来传达狮子的神态和情感，如威严、灵动、喜怒哀乐等。这需要表演者对角色有深刻的理解和表现力，同时也需要他们具备丰富的想象力和创造力。\n\n从这张照片中可以看出，舞狮表演吸引了大量观众，说明这种艺术形式深受社区成员的喜爱和尊重。这反映了社区对传统文化的重视和传承，以及对艺术和表演的欣赏。舞狮表演所传达的勇气、力量和团队精神，也体现了社区成员对这些价值观的认同和追求。\n\n总的来说，舞狮表演不仅是一种艺术表现形式，更是一种文化传承和社区凝聚力的体现。它展示了表演者的技巧和情感，同时也反映了社区的价值观和文化认同。",
+    "response": {
+        "id": "chatcmpl-AIvGdZg1fhZJp6UjQcYaxpklxC0Rl",
+        "object": "chat.completion",
+        "created": 1729073403,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 2256,
+            "completion_tokens": 2,
+            "total_tokens": 2258
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 9.429999351501465,
+    "code": 200,
+    "current_time": "2024-10-16 18:10:05"
+}

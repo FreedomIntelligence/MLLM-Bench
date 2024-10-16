@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://images.pexels.com/photos/3230214/pexels-photo-3230214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify and confirm the type of beverage as milk drinks directly below the temperature readout.\n2. Assess the VLM's understanding of spatial relationships between the readout and beverages.\n3. Verify the accuracy and relevance of the VLM's response to the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/203.jpg",
+    "unique_idx": "203",
+    "prompt": "In relation to the digital temperature readout at the top of the beverage cooler, which type of beverage is directly below it?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 75,
+            "prompt_tokens": 1034,
+            "total_tokens": 1109
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The digital temperature readout is at the top of the beverage cooler, and directly below it is the compartment that contains water bottles. This can be determined by observing the cooler's contents from the topmost compartment downwards. The water bottles are the first items that are visible directly under the temperature display. Therefore, the type of beverage directly below the digital temperature readout is water."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The digital temperature readout is at the top of the beverage cooler, and directly below it is the compartment that contains water bottles. This can be determined by observing the cooler's contents from the topmost compartment downwards. The water bottles are the first items that are visible directly under the temperature display. Therefore, the type of beverage directly below the digital temperature readout is water.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 8.550512313842773,
+    "code": 200,
+    "current_time": "2024-04-30 13:49:38"
+}

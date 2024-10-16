@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ecgwaves.com/wp-content/uploads/2021/06/ECG-example-Normal-ECG-with-sinus-rhythm-2-1396x1536.png",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify and describe P wave, QRS complex, T wave as per reference.\n2. Detect any deviations from the normal ECG waveform pattern.\n3. Comment on rhythm regularity, wave amplitude, and intervals between waves.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/194.png",
+    "unique_idx": "194",
+    "prompt": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 310,
+            "prompt_tokens": 1031,
+            "total_tokens": 1341
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image provided is a standard 12-lead ECG. Each lead records the electrical activity of the heart from different angles and is used to detect abnormalities in the heart's rhythm, rate, and other characteristics. The different parts of the ECG waveform include:\n\n1. P wave: This represents atrial depolarization, or the electrical activity that leads to the contraction of the atria.\n2. PR interval: This is the time between the onset of the P wave and the beginning of the QRS complex, which represents the time the electrical impulse takes to travel from the sinus node down to the ventricles.\n3. QRS complex: This represents ventricular depolarization, or the electrical activity leading to the contraction of the ventricles.\n4. ST segment: This is the flat line that follows the QRS complex, representing the plateau phase of ventricular depolarization.\n5. T wave: This represents ventricular repolarization, or the return of the ventricular tissue to its resting state.\n\nIn terms of abnormalities, the image shows a regular rhythm with no obvious signs of acute ischemia or infarction such as significant ST segment elevation or depression. However, without clinical context and a full interpretation by a medical professional, it is not possible to definitively identify any abnormalities. It's important to note that ECG interpretation should be performed by a healthcare provider who can correlate the findings with the patient's symptoms and history."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The image provided is a standard 12-lead ECG. Each lead records the electrical activity of the heart from different angles and is used to detect abnormalities in the heart's rhythm, rate, and other characteristics. The different parts of the ECG waveform include:\n\n1. P wave: This represents atrial depolarization, or the electrical activity that leads to the contraction of the atria.\n2. PR interval: This is the time between the onset of the P wave and the beginning of the QRS complex, which represents the time the electrical impulse takes to travel from the sinus node down to the ventricles.\n3. QRS complex: This represents ventricular depolarization, or the electrical activity leading to the contraction of the ventricles.\n4. ST segment: This is the flat line that follows the QRS complex, representing the plateau phase of ventricular depolarization.\n5. T wave: This represents ventricular repolarization, or the return of the ventricular tissue to its resting state.\n\nIn terms of abnormalities, the image shows a regular rhythm with no obvious signs of acute ischemia or infarction such as significant ST segment elevation or depression. However, without clinical context and a full interpretation by a medical professional, it is not possible to definitively identify any abnormalities. It's important to note that ECG interpretation should be performed by a healthcare provider who can correlate the findings with the patient's symptoms and history.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 26.870195388793945,
+    "code": 200,
+    "current_time": "2024-04-30 13:47:16"
+}

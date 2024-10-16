@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F96tN5qXEAAot3X?format=png&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify the three rows that satisfy the selection requirement: item 1 (quantity 5), item 2 (quantity 3) and item 7 (quantity 4)\n2. Confirm total quantity is 5+3+4=12 for customer 3449 on 12/31/1996.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/239.png",
+    "unique_idx": 239,
+    "prompt": "From the Excel table in the image, what is the total quantity of products that customer 3449 bought on 12/31/1996?",
+    "context": "From the Excel table in the image, what is the total quantity of products that customer 3449 bought on 12/31/1996?",
+    "sample_id": 239,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/239.png"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The table shows transactions on 1/1/1997, not 12/31/1996.  There are no transactions listed for customer 3449 on 12/31/1996.",
+    "response_from_model": {
+        "id": "chatcmpl-cb6ed3c8774a46abbcb61a0d0a474868",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897295,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The table shows transactions on 1/1/1997, not 12/31/1996.  There are no transactions listed for customer 3449 on 12/31/1996."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 295,
+            "completion_tokens": 54,
+            "total_tokens": 349
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:11"
+}

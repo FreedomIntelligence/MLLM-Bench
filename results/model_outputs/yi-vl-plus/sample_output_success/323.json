@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://cdn.wccftech.com/wp-content/uploads/2017/02/Google-brain.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe the progression of image quality from left to right in each row.\n2. Confirm the presence of human faces in varying resolutions and clarity in the image.\n3. Assess if the description includes changes in detail and recognizability.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/323.jpg",
+    "unique_idx": "323",
+    "prompt": "What happened to each row of the image from left to right?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 114,
+            "prompt_tokens": 1023,
+            "total_tokens": 1137
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Observing the sequence of images from left to right in each row, there is a clear pattern of pixelation increasing progressively. The first image in each row has the least pixelation, and the last image has the most. This indicates that the image resolution is being reduced or the image is being enlarged beyond its original resolution, which causes pixelation. This can be a result of image compression, resizing, or a low-quality reproduction of the original image. Therefore, the answer is that the images have been progressively pixelated from left to right in each row."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "Observing the sequence of images from left to right in each row, there is a clear pattern of pixelation increasing progressively. The first image in each row has the least pixelation, and the last image has the most. This indicates that the image resolution is being reduced or the image is being enlarged beyond its original resolution, which causes pixelation. This can be a result of image compression, resizing, or a low-quality reproduction of the original image. Therefore, the answer is that the images have been progressively pixelated from left to right in each row.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 9.582876920700073,
+    "code": 200,
+    "current_time": "2024-04-30 14:20:09"
+}

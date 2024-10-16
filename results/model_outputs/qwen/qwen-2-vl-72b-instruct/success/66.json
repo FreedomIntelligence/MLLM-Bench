@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "https://savvytokyo.scdn3.secure.raxcdn.com/app/uploads/2018/09/IMG_0133-1024x570.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and transcribe the section labeled \"D1\" in Japanese accurately.\n2. Provide translation of \"D1\" section into English, relevant to health assessment context.\n3. Advise based on \"D1\" section if one's electrocardiogram result is D1.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/66.jpg",
+    "unique_idx": 66,
+    "prompt": "この画像は健康診断結果報告書の評価基準を示しています。もし私の心電図の結果がD1だった場合、私はどうすればいいですか?",
+    "context": "この画像は健康診断結果報告書の評価基準を示しています。もし私の心電図の結果がD1だった場合、私はどうすればいいですか?",
+    "sample_id": 66,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/66.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "あなたの心電図の結果がD1の場合、報告書によれば「治療が必要な疾患を認めます。当該医療機関の受診をお勧めします」とあります。つまり、専門的な医療機関に受診し、適切な治療を受けることが推奨されています。具体的な行動としては、早急に医療機関を訪れ、心電図の結果を医師に提示し、詳細な診断と治療方針について相談することをおすすめします。",
+    "response_from_model": {
+        "id": "gen-1728907573-hdeWdkKiB7AnkaobHBq7",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728907573,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "あなたの心電図の結果がD1の場合、報告書によれば「治療が必要な疾患を認めます。当該医療機関の受診をお勧めします」とあります。つまり、専門的な医療機関に受診し、適切な治療を受けることが推奨されています。具体的な行動としては、早急に医療機関を訪れ、心電図の結果を医師に提示し、詳細な診断と治療方針について相談することをおすすめします。",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 60,
+            "completion_tokens": 117,
+            "total_tokens": 177
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:06:17"
+}

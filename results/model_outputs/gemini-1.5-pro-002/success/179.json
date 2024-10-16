@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://images.rawpixel.com/image_1300/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B1MjMzNTY0Ni1pbWFnZS1rd3Z3ajgxbi5qcGc.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify and outline the dog's entire form within the image.\n2. Exclude any non-dog elements from the bounding box.\n3. Ensure the bounding box is the correct size and shape for the dog's position.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/179.webp",
+    "unique_idx": 179,
+    "prompt": "Find the bounding box of the dog. The image size is 1300*923",
+    "context": "Find the bounding box of the dog. The image size is 1300*923",
+    "sample_id": 179,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/179.webp"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The bounding box for the dog is approximately [440, 148, 830, 323].  This encompasses the entire visible body of the dog.",
+    "response_from_model": {
+        "id": "chatcmpl-8878cf2d4e3f485b8ec5e7abdaec03a8",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897280,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The bounding box for the dog is approximately [440, 148, 830, 323].  This encompasses the entire visible body of the dog."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 280,
+            "completion_tokens": 39,
+            "total_tokens": 319
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:14:56"
+}

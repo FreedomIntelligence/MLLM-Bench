@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-VTdVLakAEvyS7?format=jpg&name=900x900",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and visualize top-selling IPs in both categories for 2024.3 Full Year Forecasts.\n2. Compare sales growth between 2023.3 and 2024.3 for highlighted IPs.\n3. Ensure visual representation is clear, accurate, and easily interpretable.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/378.jpeg",
+    "unique_idx": 378,
+    "prompt": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "context": "The above is a report. Please write a program to visualize the most important information from the report.",
+    "sample_id": 378,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/378.jpeg"
+    ],
+    "gen_model_id": "mistralai/pixtral-12b",
+    "answer": "Certainly! To visualize the most important information from the report, we can use a library like `matplotlib` for creating bar charts or `pandas` for data manipulation in Python. Below is an example of a Python program that reads the data from the report, processes it, and visualizes the full-year sales results for each IP (Intellectual Property) in both the group-wide and Japan-specific categories.\n\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Data from the report\ndata_groupwide = {\n    \"IP\": [\"Anpanman\", \"Ultraman\", \"KAMEN RIDER\", \"Mobile Suit Gundam\", \"Super Sentai\", \"DRAGON BALL\", \"NARUTO\", \"Pretty Cure\", \"ONE PIECE\"],\n    \"2023.3 Full Year\": [9.9, 19.5, 32.1, 131.3, 6.5, 144.5, 18.7, 5.6, 86.3],\n    \"2024.3 Full Year Forecast\": [10.0, 21.5, 32.0, 140.0, 7.0, 133.0, 24.5, 6.0, 100.0]\n}\n\ndata_japan = {\n    \"IP\": [\"Anpanman\", \"Ultraman\", \"KAMEN RIDER\", \"Mobile Suit Gundam\", \"Super Sentai\", \"DRAGON BALL\", \"Pretty Cure\", \"Pokemon\", \"ONE PIECE\"],\n    \"2023.3 Full Year\": [9.3, 9.2, 23.0, 60.5, 5.6, 22.5, 5.6, 8.8, 31.9],\n    \"2024.3 Full Year Forecast\": [9.0, 9.5, 23.0, 65.5, 6.0, 21.0, 6.0, 9.5, 52.5]\n}\n\n# Convert data to pandas DataFrame\ndf_groupwide = pd.DataFrame(data_groupwide)\ndf_japan = pd.DataFrame(data_japan)\n\n# Plotting\nfig, ax = plt.subplots(1, 2, figsize=(14, 6))\n\n# Groupwide sales\nax[0].bar(df_groupwide[\"IP\"], df_groupwide[\"2023.3 Full Year\"], color='skyblue', alpha=0.7, label='2023.3 Full Year Results')\nax[0].bar(df_groupwide[\"IP\"], df_groupwide[\"2024.3 Full Year Forecast\"], color='lightgreen', alpha=0.7, label='2024.3 Full Year Forecasts')\nax[0].set_title('Sales of IPs (Groupwide)')\nax[0].set_xlabel('IP')\nax[0].set_ylabel('Sales (billion yen)')\nax[0].legend()\n\n# Japan-specific sales\nax[1].bar(df_japan[\"IP\"], df_japan[\"2023.3 Full Year\"], color='skyblue', alpha=0.7, label='2023.3 Full Year Results')\nax[1].bar(df_japan[\"IP\"], df_japan[\"2024.3 Full Year Forecast\"], color='lightgreen', alpha=0.7, label='2024.3 Full Year Forecasts')\nax[1].set_title('Sales of IPs (Toys and Hobby Business, Japan)')\nax[1].set_xlabel('IP')\nax[1].set_ylabel('Sales (billion yen)')\nax[1].legend()\n\nplt.tight_layout()\nplt.show()\n```\n\nThis program does the following:\n1. Defines the data from the report in dictionaries.\n2. Converts the dictionaries into pandas DataFrames for easier manipulation.\n3. Uses `matplotlib` to create bar charts for both the group-wide and Japan-specific sales data.\n4. Displays the results with separate bars for the 2023.3 full-year results and the 2024.3 full-year forecasts.\n\nYou can run this program in a Python environment with the necessary libraries installed to visualize the data.",
+    "response_from_model": {
+        "id": "gen-1728916387-dhUPG3tARDoF1qV1PVtD",
+        "provider": "Hyperbolic",
+        "model": "mistralai/pixtral-12b",
+        "object": "chat.completion",
+        "created": 1728916387,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Certainly! To visualize the most important information from the report, we can use a library like `matplotlib` for creating bar charts or `pandas` for data manipulation in Python. Below is an example of a Python program that reads the data from the report, processes it, and visualizes the full-year sales results for each IP (Intellectual Property) in both the group-wide and Japan-specific categories.\n\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Data from the report\ndata_groupwide = {\n    \"IP\": [\"Anpanman\", \"Ultraman\", \"KAMEN RIDER\", \"Mobile Suit Gundam\", \"Super Sentai\", \"DRAGON BALL\", \"NARUTO\", \"Pretty Cure\", \"ONE PIECE\"],\n    \"2023.3 Full Year\": [9.9, 19.5, 32.1, 131.3, 6.5, 144.5, 18.7, 5.6, 86.3],\n    \"2024.3 Full Year Forecast\": [10.0, 21.5, 32.0, 140.0, 7.0, 133.0, 24.5, 6.0, 100.0]\n}\n\ndata_japan = {\n    \"IP\": [\"Anpanman\", \"Ultraman\", \"KAMEN RIDER\", \"Mobile Suit Gundam\", \"Super Sentai\", \"DRAGON BALL\", \"Pretty Cure\", \"Pokemon\", \"ONE PIECE\"],\n    \"2023.3 Full Year\": [9.3, 9.2, 23.0, 60.5, 5.6, 22.5, 5.6, 8.8, 31.9],\n    \"2024.3 Full Year Forecast\": [9.0, 9.5, 23.0, 65.5, 6.0, 21.0, 6.0, 9.5, 52.5]\n}\n\n# Convert data to pandas DataFrame\ndf_groupwide = pd.DataFrame(data_groupwide)\ndf_japan = pd.DataFrame(data_japan)\n\n# Plotting\nfig, ax = plt.subplots(1, 2, figsize=(14, 6))\n\n# Groupwide sales\nax[0].bar(df_groupwide[\"IP\"], df_groupwide[\"2023.3 Full Year\"], color='skyblue', alpha=0.7, label='2023.3 Full Year Results')\nax[0].bar(df_groupwide[\"IP\"], df_groupwide[\"2024.3 Full Year Forecast\"], color='lightgreen', alpha=0.7, label='2024.3 Full Year Forecasts')\nax[0].set_title('Sales of IPs (Groupwide)')\nax[0].set_xlabel('IP')\nax[0].set_ylabel('Sales (billion yen)')\nax[0].legend()\n\n# Japan-specific sales\nax[1].bar(df_japan[\"IP\"], df_japan[\"2023.3 Full Year\"], color='skyblue', alpha=0.7, label='2023.3 Full Year Results')\nax[1].bar(df_japan[\"IP\"], df_japan[\"2024.3 Full Year Forecast\"], color='lightgreen', alpha=0.7, label='2024.3 Full Year Forecasts')\nax[1].set_title('Sales of IPs (Toys and Hobby Business, Japan)')\nax[1].set_xlabel('IP')\nax[1].set_ylabel('Sales (billion yen)')\nax[1].legend()\n\nplt.tight_layout()\nplt.show()\n```\n\nThis program does the following:\n1. Defines the data from the report in dictionaries.\n2. Converts the dictionaries into pandas DataFrames for easier manipulation.\n3. Uses `matplotlib` to create bar charts for both the group-wide and Japan-specific sales data.\n4. Displays the results with separate bars for the 2023.3 full-year results and the 2024.3 full-year forecasts.\n\nYou can run this program in a Python environment with the necessary libraries installed to visualize the data.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3101,
+            "completion_tokens": 951,
+            "total_tokens": 4052
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-22:33:25"
+}

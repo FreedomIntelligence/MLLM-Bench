@@ -1,0 +1,35 @@
+{
+    "unique_idx": "405_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nGenerate a caption that not only describes the group of people and their attire but also infers the cultural significance or occasion that might have brought them together.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\n\"Group of individuals dressed in vibrant traditional Mongolian attire, celebrating a cultural festival or gathering.\"\n~~~\n~~~Answer2\nThe group of people in the image is all dressed in traditional Chinese clothing, showing their cultural heritage and pride. They are posing for a photo in front of a building, and some of them are giving a thumbs-up sign, signifying their happiness and excitement for the occasion. It is possible that this event could be a cultural festival, celebration, or a gathering where people are dressed in their traditional attire to honor and share their culture with others.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Description of attire and group composition (age, gender, number of people).\n2. Inference of cultural significance or specific occasion.\n3. Mention of setting or background elements that support the cultural inference.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/405.jpg",
+    "model_1": "qwen/qwen-2-vl-7b-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "\"Group of individuals dressed in vibrant traditional Mongolian attire, celebrating a cultural festival or gathering.\"",
+    "raw_answer2": "The group of people in the image is all dressed in traditional Chinese clothing, showing their cultural heritage and pride. They are posing for a photo in front of a building, and some of them are giving a thumbs-up sign, signifying their happiness and excitement for the occasion. It is possible that this event could be a cultural festival, celebration, or a gathering where people are dressed in their traditional attire to honor and share their culture with others.",
+    "response": {
+        "id": "chatcmpl-AIuTqRbMWlGxXf2RqY16yNKBeqbmb",
+        "object": "chat.completion",
+        "created": 1729070378,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1541,
+            "completion_tokens": 2,
+            "total_tokens": 1543
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 7.969932794570923,
+    "code": 200,
+    "current_time": "2024-10-16 17:19:39"
+}

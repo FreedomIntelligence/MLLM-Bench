@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-Aeu-8awAAaJ2l?format=jpg&name=medium",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/232.jpg",
+    "unique_idx": 232,
+    "prompt": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "context": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "sample_id": 232,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/232.jpg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " To analyze the flight schedule and determine the most commonly used aircraft type for domestic flights, we would need to follow these steps:\n\n1. **Data Collection**: Obtain the flight schedule data that includes details about each domestic flight, such as the aircraft type and the flight's origin and destination.\n\n2. **Data Processing**: Filter the data to include only domestic flights. Domestic flights are typically those where both the origin and destination are within the same country.\n\n3. **Data Analysis**: Tally the number of flights for each aircraft type.\n\n4. **Result Compilation**: Compare the tallies to identify the aircraft type with the highest frequency.\n\n5. **Report**: Present the findings in a clear and concise manner.\n\nSince we don't have actual flight schedule data, I'll provide a hypothetical example:\n\n- A320: 120 flights\n- B738: 80 flights\n- ATR: 150 flights\n\nBased on this hypothetical data, the ATR aircraft is most commonly used for domestic flights, as it has the highest number of flights (150).\n\nPlease note that this is a simplified example and the actual process might require more complex data analysis, considering factors such as the number of seats, flight distances, and possibly the airline's fleet size and strategy.",
+    "response_from_model": {
+        "id": "gen-1728906660-mCmZSjHa5ENpQEpySpFD",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906660,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " To analyze the flight schedule and determine the most commonly used aircraft type for domestic flights, we would need to follow these steps:\n\n1. **Data Collection**: Obtain the flight schedule data that includes details about each domestic flight, such as the aircraft type and the flight's origin and destination.\n\n2. **Data Processing**: Filter the data to include only domestic flights. Domestic flights are typically those where both the origin and destination are within the same country.\n\n3. **Data Analysis**: Tally the number of flights for each aircraft type.\n\n4. **Result Compilation**: Compare the tallies to identify the aircraft type with the highest frequency.\n\n5. **Report**: Present the findings in a clear and concise manner.\n\nSince we don't have actual flight schedule data, I'll provide a hypothetical example:\n\n- A320: 120 flights\n- B738: 80 flights\n- ATR: 150 flights\n\nBased on this hypothetical data, the ATR aircraft is most commonly used for domestic flights, as it has the highest number of flights (150).\n\nPlease note that this is a simplified example and the actual process might require more complex data analysis, considering factors such as the number of seats, flight distances, and possibly the airline's fleet size and strategy.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 44,
+            "completion_tokens": 313,
+            "total_tokens": 357
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:51:41"
+}

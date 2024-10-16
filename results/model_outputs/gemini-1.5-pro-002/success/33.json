@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Symbol Recognition",
+        "url": "https://cdn.pixabay.com/photo/2019/05/22/10/54/street-signs-4221204_1280.png",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Correctly identify and describe all traffic signs, including shape, color, and symbols.\n2. Accurately provide the meaning of each traffic sign as commonly understood.\n3. Organize information in the specified JSON format with 'id', 'traffic sign', and 'meaning'.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/33.jpg",
+    "unique_idx": 33,
+    "prompt": "Identify all traffic signs in the image and organize each of them into the following JSON format: {'id': xx, 'traffic sign': xx, 'meaning': xx}.",
+    "context": "Identify all traffic signs in the image and organize each of them into the following JSON format: {'id': xx, 'traffic sign': xx, 'meaning': xx}.",
+    "sample_id": 33,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/33.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "```json\n[\n    {'id': 1, 'traffic sign': 'Parking', 'meaning': 'Indicates a designated parking area.'},\n    {'id': 2, 'traffic sign': 'Slippery Road', 'meaning': 'Warns of a road surface that may be slippery when wet.'},\n    {'id': 3, 'traffic sign': 'Airport', 'meaning': 'Indicates the direction to an airport.'},\n    {'id': 4, 'traffic sign': 'Added Lane', 'meaning': 'Informs drivers of an added lane ahead.'},\n    {'id': 5, 'traffic sign': 'No Parking', 'meaning': 'Prohibits parking in the designated area.'},\n    {'id': 6, 'traffic sign': 'Stop', 'meaning': 'Requires drivers to come to a complete stop.'},\n    {'id': 7, 'traffic sign': 'Tow-Away Zone', 'meaning': 'Indicates an area where vehicles may be towed.'},\n    {'id': 8, 'traffic sign': 'Accessible Parking', 'meaning': 'Designates parking spaces for individuals with disabilities.'},\n    {'id': 9, 'traffic sign': 'One Way', 'meaning': 'Indicates that traffic flows in one direction only.'},\n    {'id': 10, 'traffic sign': 'Road Work Ahead', 'meaning': 'Warns of road construction or maintenance ahead.'},\n    {'id': 11, 'traffic sign': 'Interstate 95', 'meaning': 'Indicates Interstate 95.'},\n    {'id': 12, 'traffic sign': 'Pedestrian Crossing', 'meaning': 'Warns drivers of a pedestrian crosswalk.'},\n    {'id': 13, 'traffic sign': 'Railroad Crossing', 'meaning': 'Warns of a railroad crossing ahead.'},\n    {'id': 14, 'traffic sign': 'Yield', 'meaning': 'Requires drivers to yield the right-of-way to other traffic.'},\n    {'id': 15, 'traffic sign': 'Right Curve', 'meaning': 'Warns of a curve to the right.'},\n    {'id': 16, 'traffic sign': 'No Bicycles', 'meaning': 'Prohibits bicycles in the designated area.'},\n    {'id': 17, 'traffic sign': 'Road Work', 'meaning': 'Indicates an area where road work is in progress.'},\n    {'id': 18, 'traffic sign': 'Bicycle', 'meaning': 'Indicates a designated bicycle lane or path.'},\n    {'id': 19, 'traffic sign': 'Speed Limit 55', 'meaning': 'Sets the speed limit to 55 mph.'},\n    {'id': 20, 'traffic sign': 'Pedestrian', 'meaning': 'Indicates a pedestrian walkway or crossing.'},\n    {'id': 21, 'traffic sign': 'Under Construction', 'meaning': 'Warns of an area under construction.'},\n    {'id': 22, 'traffic sign': 'Do Not Enter', 'meaning': 'Prohibits entry from the direction the sign is facing.'},\n    {'id': 23, 'traffic sign': 'Dead End', 'meaning': 'Indicates a street or road that does not have an outlet.'},\n    {'id': 24, 'traffic sign': 'No U-Turn', 'meaning': 'Prohibits U-turns.'},\n    {'id': 25, 'traffic sign': 'U.S. Route 66', 'meaning': 'Indicates U.S. Route 66.'},\n    {'id': 26, 'traffic sign': 'Detour', 'meaning': 'Indicates a detour route.'},\n    {'id': 27, 'traffic sign': 'Traffic Signal', 'meaning': 'Indicates a traffic signal ahead.'},\n    {'id': 28, 'traffic sign': 'No Parking Any Time', 'meaning': 'Prohibits parking at any time.'}\n]\n```",
+    "response_from_model": {
+        "id": "chatcmpl-eecd79b51627470f938c01f9e3d6ca52",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897245,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n    {'id': 1, 'traffic sign': 'Parking', 'meaning': 'Indicates a designated parking area.'},\n    {'id': 2, 'traffic sign': 'Slippery Road', 'meaning': 'Warns of a road surface that may be slippery when wet.'},\n    {'id': 3, 'traffic sign': 'Airport', 'meaning': 'Indicates the direction to an airport.'},\n    {'id': 4, 'traffic sign': 'Added Lane', 'meaning': 'Informs drivers of an added lane ahead.'},\n    {'id': 5, 'traffic sign': 'No Parking', 'meaning': 'Prohibits parking in the designated area.'},\n    {'id': 6, 'traffic sign': 'Stop', 'meaning': 'Requires drivers to come to a complete stop.'},\n    {'id': 7, 'traffic sign': 'Tow-Away Zone', 'meaning': 'Indicates an area where vehicles may be towed.'},\n    {'id': 8, 'traffic sign': 'Accessible Parking', 'meaning': 'Designates parking spaces for individuals with disabilities.'},\n    {'id': 9, 'traffic sign': 'One Way', 'meaning': 'Indicates that traffic flows in one direction only.'},\n    {'id': 10, 'traffic sign': 'Road Work Ahead', 'meaning': 'Warns of road construction or maintenance ahead.'},\n    {'id': 11, 'traffic sign': 'Interstate 95', 'meaning': 'Indicates Interstate 95.'},\n    {'id': 12, 'traffic sign': 'Pedestrian Crossing', 'meaning': 'Warns drivers of a pedestrian crosswalk.'},\n    {'id': 13, 'traffic sign': 'Railroad Crossing', 'meaning': 'Warns of a railroad crossing ahead.'},\n    {'id': 14, 'traffic sign': 'Yield', 'meaning': 'Requires drivers to yield the right-of-way to other traffic.'},\n    {'id': 15, 'traffic sign': 'Right Curve', 'meaning': 'Warns of a curve to the right.'},\n    {'id': 16, 'traffic sign': 'No Bicycles', 'meaning': 'Prohibits bicycles in the designated area.'},\n    {'id': 17, 'traffic sign': 'Road Work', 'meaning': 'Indicates an area where road work is in progress.'},\n    {'id': 18, 'traffic sign': 'Bicycle', 'meaning': 'Indicates a designated bicycle lane or path.'},\n    {'id': 19, 'traffic sign': 'Speed Limit 55', 'meaning': 'Sets the speed limit to 55 mph.'},\n    {'id': 20, 'traffic sign': 'Pedestrian', 'meaning': 'Indicates a pedestrian walkway or crossing.'},\n    {'id': 21, 'traffic sign': 'Under Construction', 'meaning': 'Warns of an area under construction.'},\n    {'id': 22, 'traffic sign': 'Do Not Enter', 'meaning': 'Prohibits entry from the direction the sign is facing.'},\n    {'id': 23, 'traffic sign': 'Dead End', 'meaning': 'Indicates a street or road that does not have an outlet.'},\n    {'id': 24, 'traffic sign': 'No U-Turn', 'meaning': 'Prohibits U-turns.'},\n    {'id': 25, 'traffic sign': 'U.S. Route 66', 'meaning': 'Indicates U.S. Route 66.'},\n    {'id': 26, 'traffic sign': 'Detour', 'meaning': 'Indicates a detour route.'},\n    {'id': 27, 'traffic sign': 'Traffic Signal', 'meaning': 'Indicates a traffic signal ahead.'},\n    {'id': 28, 'traffic sign': 'No Parking Any Time', 'meaning': 'Prohibits parking at any time.'}\n]\n```"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 293,
+            "completion_tokens": 876,
+            "total_tokens": 1169
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:14:22"
+}

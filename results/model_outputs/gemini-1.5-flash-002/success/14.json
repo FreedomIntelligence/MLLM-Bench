@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://mzucker.github.io/images/noteshrink/notesA1.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately transcribe definitions and examples related to \"Orthogonal Transformations.\"\n2. Correctly format mathematical formulas and symbols in LaTeX notation.\n3. Ensure extracted text maintains the original notes' structure and order.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/14.jpeg",
+    "unique_idx": 14,
+    "prompt": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "context": "Extract the definitions (def) and examples (ex) from the notes, and record the formulas using LaTeX.",
+    "sample_id": 14,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/14.jpeg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "Here's a breakdown of the definitions, examples, and formulas from the provided notes, using LaTeX for the formulas:\n\n**Definitions (Def):**\n\n* **Orthogonal Transformation:** An $n \\times n$ matrix A is an orthogonal transformation if and only if it has $n$ mutually perpendicular rows or columns with unit length.\n\n\n**Examples (ex):**\n\n* **Linearly Dependent:** $\\begin{bmatrix} 1 & 2 \\\\ 3 & 6 \\end{bmatrix}$\n* **Independent but not orthogonal:** $\\begin{bmatrix} 1 & 2 & 6 \\\\ 4 & 5 & 6 \\end{bmatrix}$\n* **Transpose and switching rows and columns:** $\\begin{bmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{bmatrix}^T = \\begin{bmatrix} 1 & 4 \\\\ 2 & 5 \\\\ 3 & 6 \\end{bmatrix}$\n\n\n**Formulas:**\n\n* **Dot Product:** $\\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^n x_i y_i$\n* **Orthogonality:** $\\mathbf{x} \\cdot \\mathbf{y} = 0 \\iff \\mathbf{x} \\perp \\mathbf{y}$ (perpendicular)\n* **Unit Length:** $||\\mathbf{x}|| = \\sqrt{\\sum_{i=1}^n x_i^2} = \\sqrt{\\mathbf{x} \\cdot \\mathbf{x}}$\n* **Orthogonal Matrix Properties:** $AA^T = A^TA = I$\n\n",
+    "response_from_model": {
+        "id": "chatcmpl-45dc72be836f4e1b989e2072b79d768c",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897112,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here's a breakdown of the definitions, examples, and formulas from the provided notes, using LaTeX for the formulas:\n\n**Definitions (Def):**\n\n* **Orthogonal Transformation:** An $n \\times n$ matrix A is an orthogonal transformation if and only if it has $n$ mutually perpendicular rows or columns with unit length.\n\n\n**Examples (ex):**\n\n* **Linearly Dependent:** $\\begin{bmatrix} 1 & 2 \\\\ 3 & 6 \\end{bmatrix}$\n* **Independent but not orthogonal:** $\\begin{bmatrix} 1 & 2 & 6 \\\\ 4 & 5 & 6 \\end{bmatrix}$\n* **Transpose and switching rows and columns:** $\\begin{bmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{bmatrix}^T = \\begin{bmatrix} 1 & 4 \\\\ 2 & 5 \\\\ 3 & 6 \\end{bmatrix}$\n\n\n**Formulas:**\n\n* **Dot Product:** $\\mathbf{x} \\cdot \\mathbf{y} = \\sum_{i=1}^n x_i y_i$\n* **Orthogonality:** $\\mathbf{x} \\cdot \\mathbf{y} = 0 \\iff \\mathbf{x} \\perp \\mathbf{y}$ (perpendicular)\n* **Unit Length:** $||\\mathbf{x}|| = \\sqrt{\\sum_{i=1}^n x_i^2} = \\sqrt{\\mathbf{x} \\cdot \\mathbf{x}}$\n* **Orthogonal Matrix Properties:** $AA^T = A^TA = I$\n\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 281,
+            "completion_tokens": 350,
+            "total_tokens": 631
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:09"
+}

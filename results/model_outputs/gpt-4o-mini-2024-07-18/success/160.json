@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Document Understanding",
+        "url": "https://pbs.twimg.com/media/F8kswFXXsAUTKhx?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Include LaTeX equation for 2-stock portfolio variance, which is \u000bar(R_p) = w_A^2 \\cdot \\sigma^2(R_A) + w_B^2 \\cdot \\sigma^2(R_B) + 2w_Aw_B\\sigma(R_A)\\sigma(R_B)\rho(R_A, R_B)",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/160.jpeg",
+    "unique_idx": 160,
+    "prompt": "What is the equation for calculating the variance of 2-stock portfolio according to the quick sheet. Write in LaTeX formula.",
+    "context": "What is the equation for calculating the variance of 2-stock portfolio according to the quick sheet. Write in LaTeX formula.",
+    "sample_id": 160,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/160.jpeg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "The equation for calculating the variance of a 2-stock portfolio can be expressed in LaTeX as follows:\n\n\\[\n\\text{var}(R_p) = w_a^2 \\text{var}(R_a) + w_b^2 \\text{var}(R_b) + 2w_a w_b \\text{Cov}(R_a, R_b)\n\\]\n\nWhere:\n- \\( R_p \\) is the return of the portfolio,\n- \\( w_a \\) and \\( w_b \\) are the weights of stocks A and B in the portfolio,\n- \\( \\text{var}(R_a) \\) and \\( \\text{var}(R_b) \\) are the variances of the returns of stocks A and B,\n- \\( \\text{Cov}(R_a, R_b) \\) is the covariance between the returns of stocks A and B.",
+    "response_from_model": {
+        "id": "chatcmpl-AIBNFWxL1AbM158ocXHDdb5M55flf",
+        "object": "chat.completion",
+        "created": 1728896989,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The equation for calculating the variance of a 2-stock portfolio can be expressed in LaTeX as follows:\n\n\\[\n\\text{var}(R_p) = w_a^2 \\text{var}(R_a) + w_b^2 \\text{var}(R_b) + 2w_a w_b \\text{Cov}(R_a, R_b)\n\\]\n\nWhere:\n- \\( R_p \\) is the return of the portfolio,\n- \\( w_a \\) and \\( w_b \\) are the weights of stocks A and B in the portfolio,\n- \\( \\text{var}(R_a) \\) and \\( \\text{var}(R_b) \\) are the variances of the returns of stocks A and B,\n- \\( \\text{Cov}(R_a, R_b) \\) is the covariance between the returns of stocks A and B."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 48202,
+            "completion_tokens": 181,
+            "total_tokens": 48383
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:09:51"
+}

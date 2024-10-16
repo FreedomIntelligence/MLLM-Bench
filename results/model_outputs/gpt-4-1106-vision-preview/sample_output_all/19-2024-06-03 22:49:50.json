@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://static.turbosquid.com/Preview/2016/06/03__14_24_55/2.pngf5b386e3-37f4-44b1-8af4-ffe6332cac24Zoom.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Check the accuracy of OCR extraction of \"passenger_name\", \"flight_number\", \"departure_city\", \"destination_city\", \"date\", \"gate\", \"boarding_time\", and \"seat_number\".\n2. Ensure all extracted text data is organized in JSON format, with no extraneous or missing information.\n3. An example answer can be: {\n    \"passenger_name\": \"DOE JOHN\",\n    \"flight_number\": \"OKL022\",\n    \"departure_city\": \"GLASGOW\",\n    \"destination_city\": \"LONDON\",\n    \"date\": \"12 NOV 2018\",\n    \"gate\": \"45\",\n    \"boarding_time\": \"10:30\",\n    \"seat_number\": \"26A\"\n}",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/19.jpg",
+    "unique_idx": "19",
+    "prompt": "Extract all text data from the boarding pass and organize them into JSON format, including passenger name, flight number, departure and destination cities, date, gate, boarding time, and seat number.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Certainly! Here is the extracted text data from the boarding pass organized into JSON format:\n\n```json\n{\n  \"passenger_name\": \"DOE JOHN\",\n  \"flight_number\": \"OKL022\",\n  \"departure_city\": \"GLASGOW\",\n  \"destination_city\": \"LONDON\",\n  \"date\": \"12 NOV 2018\",\n  \"gate\": \"45\",\n  \"boarding_time\": \"10:30\",\n  \"seat_number\": \"26A\"\n}\n```\n\nPlease note that the information has been taken directly from the boarding pass as it appears in the image provided.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426186,
+        "id": "chatcmpl-9W3IIAO0pAt2LrTp0vvODAhMhDHdR",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 124,
+            "prompt_tokens": 1150,
+            "total_tokens": 1274
+        }
+    },
+    "answer": "Certainly! Here is the extracted text data from the boarding pass organized into JSON format:\n\n```json\n{\n  \"passenger_name\": \"DOE JOHN\",\n  \"flight_number\": \"OKL022\",\n  \"departure_city\": \"GLASGOW\",\n  \"destination_city\": \"LONDON\",\n  \"date\": \"12 NOV 2018\",\n  \"gate\": \"45\",\n  \"boarding_time\": \"10:30\",\n  \"seat_number\": \"26A\"\n}\n```\n\nPlease note that the information has been taken directly from the boarding pass as it appears in the image provided.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 18.050057888031006,
+    "code": 200,
+    "current_time": "2024-06-03 22:49:50"
+}

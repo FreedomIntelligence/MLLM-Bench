@@ -1,0 +1,93 @@
+{
+    "unique_idx": "64_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\n圖中的海報在宣傳哪家公司的什麼服務？\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\n 圖中的海報宣傳的是Apple Inc.的iPhone 12手機。海報上顯示了iPhone 12的插圖，並強調了該手機的尖端技術和設計，以及它對於用戶的各種功能和優點。這張海報可能會提到iPhone 12的5G運行、優秀的相機系統、長時間運行的電池壽命、以及其他尖端技術，如雷射剃顎和雷射護盤。此外，它還宣傳了它在不同環境中的表現。\n\nApple Inc.是一家美國科技公司，專注於消費電子產品的研發、生產和銷售，包括iPhone、iPad、Mac、Apple Watch和Apple TV等產品。該公司由史蒂夫·賈伯斯於1976年創立，並從未改變過其創始人的決心，專注於設計優秀的產品，使用獨特的材料和技術，並將其整合到具有強大創新性和優雅設計的產品中。他們的產品以其頂級品質和優雅的外觀而聞名，並具有強大的品牌形象和忠誠度。\n\nApple Inc.的iPhone 12是該公司於2020年10月發布的手機，擁有數字光學鏡頭、OLED螢幕、5G運行以及其他新功能。iPhone 12手機是一款全新設計的iPhone，配備了雷射剃顎和雷射護盤，提供了更好的耐用性和堅固性。它還擁有更強大的電池壽命、更快的處理器和更好的相機系統。此外，它還具有各種顏色和尺寸選項，使用戶可以找到適合他們的項目。\n\n總之，圖中的海報宣傳Apple Inc.的iPhone 12手機，強調了它的尖端技術和設計，以及它對於用戶的各種功能和優點。iPhone 12是Apple Inc.對iPhone系列的最新進展，旨在提供優越的體驗和優越的性能。\n~~~\n~~~Answer2\n在這張海報中，一個裸體儿童代表 \"CNAC Airmail & Passenger Service\" 並且手舉一個飛機。這張海報宣傳了 \"CNAC\" 公司的空郵和乘客服務。這是一家中國的國家航空公司，成立於1926年，致力於提供國內和國際航空郵寄和乘客服務。\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the company \"中國國民航空公司\" (China National Aviation Corp.) from the poster.\n2. Recognize the services \"航空郵件\" (air mail) and \"乘客服務\" (passenger service) advertised.\n3. Ensure the response is in the context of the poster's promotional content.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/64.jpeg",
+    "model_1": "microsoft/phi-3-medium-128k-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": " 圖中的海報宣傳的是Apple Inc.的iPhone 12手機。海報上顯示了iPhone 12的插圖，並強調了該手機的尖端技術和設計，以及它對於用戶的各種功能和優點。這張海報可能會提到iPhone 12的5G運行、優秀的相機系統、長時間運行的電池壽命、以及其他尖端技術，如雷射剃顎和雷射護盤。此外，它還宣傳了它在不同環境中的表現。\n\nApple Inc.是一家美國科技公司，專注於消費電子產品的研發、生產和銷售，包括iPhone、iPad、Mac、Apple Watch和Apple TV等產品。該公司由史蒂夫·賈伯斯於1976年創立，並從未改變過其創始人的決心，專注於設計優秀的產品，使用獨特的材料和技術，並將其整合到具有強大創新性和優雅設計的產品中。他們的產品以其頂級品質和優雅的外觀而聞名，並具有強大的品牌形象和忠誠度。\n\nApple Inc.的iPhone 12是該公司於2020年10月發布的手機，擁有數字光學鏡頭、OLED螢幕、5G運行以及其他新功能。iPhone 12手機是一款全新設計的iPhone，配備了雷射剃顎和雷射護盤，提供了更好的耐用性和堅固性。它還擁有更強大的電池壽命、更快的處理器和更好的相機系統。此外，它還具有各種顏色和尺寸選項，使用戶可以找到適合他們的項目。\n\n總之，圖中的海報宣傳Apple Inc.的iPhone 12手機，強調了它的尖端技術和設計，以及它對於用戶的各種功能和優點。iPhone 12是Apple Inc.對iPhone系列的最新進展，旨在提供優越的體驗和優越的性能。",
+    "raw_answer2": "在這張海報中，一個裸體儿童代表 \"CNAC Airmail & Passenger Service\" 並且手舉一個飛機。這張海報宣傳了 \"CNAC\" 公司的空郵和乘客服務。這是一家中國的國家航空公司，成立於1926年，致力於提供國內和國際航空郵寄和乘客服務。",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Answer2",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1729069491,
+        "id": "chatcmpl-AIuFXdyMincscs6Ozbe4MRr8tl0Gp",
+        "model": "gpt-4-turbo-2024-04-09",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_result": {
+                    "jailbreak": {
+                        "filtered": false,
+                        "detected": false
+                    },
+                    "custom_blocklists": {
+                        "filtered": false,
+                        "details": []
+                    }
+                }
+            },
+            {
+                "prompt_index": 1,
+                "content_filter_result": {
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "custom_blocklists": {
+                        "filtered": false,
+                        "details": []
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 2000,
+            "total_tokens": 2002
+        }
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.120683908462524,
+    "code": 200,
+    "current_time": "2024-10-16 17:04:52"
+}

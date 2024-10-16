@@ -1,0 +1,35 @@
+{
+    "unique_idx": "232_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nAnalyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nIn the image, there is a flight schedule that shows the type of aircraft used for domestic flights. The aircraft most commonly used for domestic flights are Airbus A320 series, including A320, A321, and A322. From the schedule, these aircraft are used for a majority of the domestic flights, indicating their prevalence in this specific airline company. However, it is important to note that the schedule may vary depending on the airline and the region, so this conclusion might not be universally applicable.\n~~~\n~~~Answer2\nTo determine which type of aircraft is most commonly used for domestic flights, we need to count the occurrences of each aircraft type in the domestic arrivals and departures sections of the flight schedule.\n\n1. **Domestic Arrivals:**\n   - ATR: 6 flights\n   - A320: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 2 flights\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n\n   Total occurrences for domestic arrivals:\n   - ATR: 10 flights\n   - A320: 1 flight\n\n2. **Domestic Departures:**\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - A320: 1 flight\n   - A320: 1 flight\n\n   Total occurrences for domestic departures:\n   - ATR: 10 flights\n   - A320: 2 flights\n\n3. **Summing Up:**\n   - ATR: 20 flights (10 arrivals + 10 departures)\n   - A320: 3 flights (1 arrival + 2 departures)\n\nBased on the counts, the ATR aircraft is the most commonly used for domestic flights.\nThe ATR aircraft is the most commonly used for domestic flights at Tiruchirapalli International Airport on 10-11-2023.\n```\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/232.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "mistralai/pixtral-12b",
+    "raw_answer1": "In the image, there is a flight schedule that shows the type of aircraft used for domestic flights. The aircraft most commonly used for domestic flights are Airbus A320 series, including A320, A321, and A322. From the schedule, these aircraft are used for a majority of the domestic flights, indicating their prevalence in this specific airline company. However, it is important to note that the schedule may vary depending on the airline and the region, so this conclusion might not be universally applicable.",
+    "raw_answer2": "To determine which type of aircraft is most commonly used for domestic flights, we need to count the occurrences of each aircraft type in the domestic arrivals and departures sections of the flight schedule.\n\n1. **Domestic Arrivals:**\n   - ATR: 6 flights\n   - A320: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 2 flights\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n\n   Total occurrences for domestic arrivals:\n   - ATR: 10 flights\n   - A320: 1 flight\n\n2. **Domestic Departures:**\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - A320: 1 flight\n   - A320: 1 flight\n\n   Total occurrences for domestic departures:\n   - ATR: 10 flights\n   - A320: 2 flights\n\n3. **Summing Up:**\n   - ATR: 20 flights (10 arrivals + 10 departures)\n   - A320: 3 flights (1 arrival + 2 departures)\n\nBased on the counts, the ATR aircraft is the most commonly used for domestic flights.\nThe ATR aircraft is the most commonly used for domestic flights at Tiruchirapalli International Airport on 10-11-2023.\n```",
+    "response": {
+        "id": "chatcmpl-AIuMYakKk71vtbizayjgrzmpwOOfP",
+        "object": "chat.completion",
+        "created": 1729069926,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1547,
+            "completion_tokens": 2,
+            "total_tokens": 1549
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.6693694591522217,
+    "code": 200,
+    "current_time": "2024-10-16 17:12:07"
+}

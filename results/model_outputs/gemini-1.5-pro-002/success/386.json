@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://images.unsplash.com/photo-1600320254374-ce2d293c324e",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer includes \"slow down till stop\" or \"turn left to adjacent lane\" based on visual cues.\n2. Response must consider traffic conditions and road layout visible in the image.\n3. Answer must be logically consistent with the driver's possible actions in the given context.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/386.jpg",
+    "unique_idx": 386,
+    "prompt": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "context": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "sample_id": 386,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/386.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The driver is likely following GPS directions on their phone to Cesar Chavez/AT&T Park. The map is displayed on the phone, and the driver is holding the steering wheel. The estimated time of arrival is 3 minutes, suggesting they are close to their destination. They are driving behind another car and will likely continue following the road and the GPS guidance.",
+    "response_from_model": {
+        "id": "chatcmpl-e4dfa04b2e304f598f0ab9428289e3c2",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897349,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The driver is likely following GPS directions on their phone to Cesar Chavez/AT&T Park. The map is displayed on the phone, and the driver is holding the steering wheel. The estimated time of arrival is 3 minutes, suggesting they are close to their destination. They are driving behind another car and will likely continue following the road and the GPS guidance."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 278,
+            "completion_tokens": 72,
+            "total_tokens": 350
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:16:06"
+}

@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-Aeu-8awAAaJ2l?format=jpg&name=medium",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/232.jpg",
+    "unique_idx": 232,
+    "prompt": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "context": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "sample_id": 232,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/232.jpg"
+    ],
+    "gen_model_id": "mistralai/pixtral-12b",
+    "answer": "To determine which type of aircraft is most commonly used for domestic flights, we need to count the occurrences of each aircraft type in the domestic arrivals and departures sections of the flight schedule.\n\n1. **Domestic Arrivals:**\n   - ATR: 6 flights\n   - A320: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 2 flights\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n\n   Total occurrences for domestic arrivals:\n   - ATR: 10 flights\n   - A320: 1 flight\n\n2. **Domestic Departures:**\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - A320: 1 flight\n   - A320: 1 flight\n\n   Total occurrences for domestic departures:\n   - ATR: 10 flights\n   - A320: 2 flights\n\n3. **Summing Up:**\n   - ATR: 20 flights (10 arrivals + 10 departures)\n   - A320: 3 flights (1 arrival + 2 departures)\n\nBased on the counts, the ATR aircraft is the most commonly used for domestic flights.\nThe ATR aircraft is the most commonly used for domestic flights at Tiruchirapalli International Airport on 10-11-2023.\n```",
+    "response_from_model": {
+        "id": "gen-1728916114-ja61gTBS5JtcD85gjSjF",
+        "provider": "Hyperbolic",
+        "model": "mistralai/pixtral-12b",
+        "object": "chat.completion",
+        "created": 1728916114,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To determine which type of aircraft is most commonly used for domestic flights, we need to count the occurrences of each aircraft type in the domestic arrivals and departures sections of the flight schedule.\n\n1. **Domestic Arrivals:**\n   - ATR: 6 flights\n   - A320: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 2 flights\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n\n   Total occurrences for domestic arrivals:\n   - ATR: 10 flights\n   - A320: 1 flight\n\n2. **Domestic Departures:**\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - ATR: 1 flight\n   - A320: 1 flight\n   - A320: 1 flight\n\n   Total occurrences for domestic departures:\n   - ATR: 10 flights\n   - A320: 2 flights\n\n3. **Summing Up:**\n   - ATR: 20 flights (10 arrivals + 10 departures)\n   - A320: 3 flights (1 arrival + 2 departures)\n\nBased on the counts, the ATR aircraft is the most commonly used for domestic flights.\nThe ATR aircraft is the most commonly used for domestic flights at Tiruchirapalli International Airport on 10-11-2023.\n```",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 2012,
+            "completion_tokens": 393,
+            "total_tokens": 2405
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-22:28:42"
+}

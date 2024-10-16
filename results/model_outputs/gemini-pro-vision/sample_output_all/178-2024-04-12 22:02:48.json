@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://images.rawpixel.com/image_png_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjgxMC1ub29uLTAzXzEucG5n.png",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Correct identification of the strawberry's bounding box coordinates.\n2. Bounding box should tightly enclose the entire strawberry.\n3. Coordinates must be accurate relative to the image's dimensions.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/178.webp",
+    "unique_idx": "178",
+    "prompt": "What would be the bounding box coordinates for the strawberry in the image? The image size is 1300*1300",
+    "response": {
+        "id": "chatcmpl-4cfb7913381941058b082cbdd5642757",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930568,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The bounding box coordinates for the strawberry are:\n\n```\nxmin: 553\nymin: 32\nxmax: 789\nymax: 187\n```"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 796,
+            "completion_tokens": 33,
+            "total_tokens": 829
+        }
+    },
+    "answer": " The bounding box coordinates for the strawberry are:\n\n```\nxmin: 553\nymin: 32\nxmax: 789\nymax: 187\n```",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 7.135489225387573,
+    "code": 200,
+    "current_time": "2024-04-12 22:02:48"
+}

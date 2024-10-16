@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2022/04/09/15/10/basketball-7121617_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer must state the basketball will \"fall\".\n2. Explanation should demonstrate understanding of the basketball's trajectory and gravity.\n3. Response must infer the action based on the position of the basketball relative to the hoop.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/209.jpg",
+    "unique_idx": 209,
+    "prompt": "Assuming this is a moment after someone made a shot, will the basketball rise or fall in the next second?",
+    "context": "Assuming this is a moment after someone made a shot, will the basketball rise or fall in the next second?",
+    "sample_id": 209,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/209.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "Assuming the basketball has just been shot and is still in the process of falling through the hoop, it will continue to fall in the next second. The motion of the ball is determined by the force applied during the shot and the laws of physics, not by the moment it is caught or seen.",
+    "response_from_model": {
+        "id": "gen-1728903803-7XOmz3jy5tGo5XvuUsOI",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903803,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Assuming the basketball has just been shot and is still in the process of falling through the hoop, it will continue to fall in the next second. The motion of the ball is determined by the force applied during the shot and the laws of physics, not by the moment it is caught or seen.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 45,
+            "completion_tokens": 62,
+            "total_tokens": 107
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:03:31"
+}

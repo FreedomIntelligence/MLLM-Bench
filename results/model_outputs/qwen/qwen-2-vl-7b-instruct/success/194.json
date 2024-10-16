@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ecgwaves.com/wp-content/uploads/2021/06/ECG-example-Normal-ECG-with-sinus-rhythm-2-1396x1536.png",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify and describe P wave, QRS complex, T wave as per reference.\n2. Detect any deviations from the normal ECG waveform pattern.\n3. Comment on rhythm regularity, wave amplitude, and intervals between waves.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/194.png",
+    "unique_idx": 194,
+    "prompt": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "context": "Given the image, determine the different parts of the ECG waveform and identify abnormalities in the image.",
+    "sample_id": 194,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/194.png"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "This ECG image shows a 12-lead ECG with standard leads (I, II, III, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6) and augmented limb leads (V1, V2, V3). The ECG is recorded with a paper speed of 25 mm/s and a voltage sensitivity of 1 mV/mm.\n\n### ECG Waveforms and Abnormalities:\n\n1. **P Wave:**\n   - **Location:** Leads I, II, III, aVF, V1, V2, V3, V4, V5, V6.\n   - **Appearance:** Small, upright in leads II, III, and aVF, and negative in aVR.\n   - **Abnormality:** The P waves are generally normal in this ECG.\n\n2. **QRS Complex:**\n   - **Location:** Leads I, II, III, aVF, V1, V2, V3, V4, V5, V6.\n   - **Appearance:** Normal in shape and duration (typically < 0.12 seconds).\n   - **Abnormality:** The QRS complexes are normal in this ECG.\n\n3. **T Wave:**\n   - **Location:** Leads I, II, III, aVF, V1, V2, V3, V4, V5, V6.\n   - **Appearance:** The T waves are generally upright and symmetrical.\n   - **Abnormality:** The T waves are generally normal in this ECG.\n\n4. **U Wave:**\n   - **Location:** Leads II, III, aVF, V1, V2, V3, V4, V5, V6.\n   - **Appearance:** Sometimes visible but not always present.\n   - **Abnormality:** The U waves are generally not present in this ECG.\n\n### Additional Observations:\n- **Heart Rate:** The heart rate is within normal limits.\n- **Rhythm:** The rhythm appears to be regular.\n- **Axis:** The QRS axis is normal, indicating the direction of electrical depolarization of the ventricles.\n\n### Conclusion:\nThis ECG shows a normal sinus rhythm with no significant abnormalities in the P, QRS, or T waves. The heart rate and rhythm are within normal limits. There are no signs of atrial or ventricular abnormalities, and the ECG is consistent with a healthy heart.",
+    "response_from_model": {
+        "id": "gen-1728903642-xzCDokiQK5N7Wen4OWuG",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903642,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "This ECG image shows a 12-lead ECG with standard leads (I, II, III, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6) and augmented limb leads (V1, V2, V3). The ECG is recorded with a paper speed of 25 mm/s and a voltage sensitivity of 1 mV/mm.\n\n### ECG Waveforms and Abnormalities:\n\n1. **P Wave:**\n   - **Location:** Leads I, II, III, aVF, V1, V2, V3, V4, V5, V6.\n   - **Appearance:** Small, upright in leads II, III, and aVF, and negative in aVR.\n   - **Abnormality:** The P waves are generally normal in this ECG.\n\n2. **QRS Complex:**\n   - **Location:** Leads I, II, III, aVF, V1, V2, V3, V4, V5, V6.\n   - **Appearance:** Normal in shape and duration (typically < 0.12 seconds).\n   - **Abnormality:** The QRS complexes are normal in this ECG.\n\n3. **T Wave:**\n   - **Location:** Leads I, II, III, aVF, V1, V2, V3, V4, V5, V6.\n   - **Appearance:** The T waves are generally upright and symmetrical.\n   - **Abnormality:** The T waves are generally normal in this ECG.\n\n4. **U Wave:**\n   - **Location:** Leads II, III, aVF, V1, V2, V3, V4, V5, V6.\n   - **Appearance:** Sometimes visible but not always present.\n   - **Abnormality:** The U waves are generally not present in this ECG.\n\n### Additional Observations:\n- **Heart Rate:** The heart rate is within normal limits.\n- **Rhythm:** The rhythm appears to be regular.\n- **Axis:** The QRS axis is normal, indicating the direction of electrical depolarization of the ventricles.\n\n### Conclusion:\nThis ECG shows a normal sinus rhythm with no significant abnormalities in the P, QRS, or T waves. The heart rate and rhythm are within normal limits. There are no signs of atrial or ventricular abnormalities, and the ECG is consistent with a healthy heart.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 42,
+            "completion_tokens": 518,
+            "total_tokens": 560
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:00:51"
+}

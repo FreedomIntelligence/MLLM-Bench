@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://pbs.twimg.com/media/FhgMpJhXkAAw0Xf?format=jpg&name=small",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly identify and match each labeled arrow (A-H) with the cell types from the reference.\n2. Answer must specify the type of cell for each label without ambiguity or error.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/193.jpg",
+    "unique_idx": 193,
+    "prompt": "Given the image, determine the type of cells pointed by labeled arrows.",
+    "context": "Given the image, determine the type of cells pointed by labeled arrows.",
+    "sample_id": 193,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/193.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "* **A:** Erythrocyte (Red Blood Cell)\n* **B:** Neutrophil\n* **C:** Neutrophil\n* **D:** Neutrophil\n* **E:** Lymphocyte\n* **F:** Lymphocyte\n* **G:** Monocyte\n* **H:** Platelet (Thrombocyte)",
+    "response_from_model": {
+        "id": "chatcmpl-b5e68f1ad8644e639330e2ad43043aaf",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897283,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "* **A:** Erythrocyte (Red Blood Cell)\n* **B:** Neutrophil\n* **C:** Neutrophil\n* **D:** Neutrophil\n* **E:** Lymphocyte\n* **F:** Lymphocyte\n* **G:** Monocyte\n* **H:** Platelet (Thrombocyte)"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 273,
+            "completion_tokens": 70,
+            "total_tokens": 343
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:00"
+}

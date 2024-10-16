@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "NaN",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify the test kit as for detecting COVID-19 antigens.\n2. Explain that two lines indicate a positive result for COVID-19.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/199.jpeg",
+    "unique_idx": 199,
+    "prompt": "What is the test kit in the image used to detect? Interpret the meaning of the two lines on the test kit.",
+    "context": "What is the test kit in the image used to detect? Interpret the meaning of the two lines on the test kit.",
+    "sample_id": 199,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/199.jpeg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "The test kit in the image is used to detect the presence of COVID-19 antigens. \n\nThe two lines on the test kit have the following meanings:\n\n1. **C Line (Control Line)**: This line indicates that the test is working properly. A visible line in this area means the test has functioned correctly.\n\n2. **T Line (Test Line)**: This line indicates the presence of COVID-19 antigens. If this line appears along with the C line, it suggests a positive result for COVID-19. If only the C line appears, the result is negative.\n\nIf neither line appears, the test is invalid.",
+    "response_from_model": {
+        "id": "chatcmpl-AIBNJ0B6iQnH39y4TGNv2dv6WwlMe",
+        "object": "chat.completion",
+        "created": 1728896993,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The test kit in the image is used to detect the presence of COVID-19 antigens. \n\nThe two lines on the test kit have the following meanings:\n\n1. **C Line (Control Line)**: This line indicates that the test is working properly. A visible line in this area means the test has functioned correctly.\n\n2. **T Line (Test Line)**: This line indicates the presence of COVID-19 antigens. If this line appears along with the C line, it suggests a positive result for COVID-19. If only the C line appears, the result is negative.\n\nIf neither line appears, the test is invalid."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 36866,
+            "completion_tokens": 130,
+            "total_tokens": 36996
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:09:55"
+}

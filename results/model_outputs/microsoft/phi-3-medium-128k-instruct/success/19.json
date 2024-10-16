@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://static.turbosquid.com/Preview/2016/06/03__14_24_55/2.pngf5b386e3-37f4-44b1-8af4-ffe6332cac24Zoom.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Check the accuracy of OCR extraction of \"passenger_name\", \"flight_number\", \"departure_city\", \"destination_city\", \"date\", \"gate\", \"boarding_time\", and \"seat_number\".\n2. Ensure all extracted text data is organized in JSON format, with no extraneous or missing information.\n3. An example answer can be: {\n    \"passenger_name\": \"DOE JOHN\",\n    \"flight_number\": \"OKL022\",\n    \"departure_city\": \"GLASGOW\",\n    \"destination_city\": \"LONDON\",\n    \"date\": \"12 NOV 2018\",\n    \"gate\": \"45\",\n    \"boarding_time\": \"10:30\",\n    \"seat_number\": \"26A\"\n}",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/19.jpg",
+    "unique_idx": 19,
+    "prompt": "Extract all text data from the boarding pass and organize them into JSON format, including passenger name, flight number, departure and destination cities, date, gate, boarding time, and seat number.",
+    "context": "Extract all text data from the boarding pass and organize them into JSON format, including passenger name, flight number, departure and destination cities, date, gate, boarding time, and seat number.",
+    "sample_id": 19,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/19.jpg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " {\n  \"passenger_name\": \"John Doe\",\n  \"flight_number\": \"AA123\",\n  \"departure_city\": \"New York\",\n  \"destination_city\": \"Los Angeles\",\n  \"date\": \"2021-12-15\",\n  \"departure_time\": \"10:00 AM\",\n  \"arrival_time\": \"1:00 PM\",\n  \"gate\": \"B12\",\n  \"boarding_time\": \"09:30 AM\",\n  \"seat_number\": \"14A\"\n}\n\nHere's the extracted data from a hypothetical boarding pass in JSON format:\n\n{\n  \"passenger_name\": \"John Doe\",\n  \"flight_number\": \"AA123\",\n  \"departure_city\": \"New York\",\n  \"destination_city\": \"Los Angeles\",\n  \"date\": \"2021-12-15\",\n  \"departure_time\": \"10:00 AM\",\n  \"arrival_time\": \"1:00 PM\",\n  \"gate\": \"B12\",\n  \"boarding_time\": \"09:30 AM\",\n  \"seat_number\": \"14A\"\n}\n\nNote: This is just an example, the actual data will vary depending on the specific boarding pass.",
+    "response_from_model": {
+        "id": "gen-1728906297-YW47cspUTtCZ5JZQvyKD",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906297,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " {\n  \"passenger_name\": \"John Doe\",\n  \"flight_number\": \"AA123\",\n  \"departure_city\": \"New York\",\n  \"destination_city\": \"Los Angeles\",\n  \"date\": \"2021-12-15\",\n  \"departure_time\": \"10:00 AM\",\n  \"arrival_time\": \"1:00 PM\",\n  \"gate\": \"B12\",\n  \"boarding_time\": \"09:30 AM\",\n  \"seat_number\": \"14A\"\n}\n\nHere's the extracted data from a hypothetical boarding pass in JSON format:\n\n{\n  \"passenger_name\": \"John Doe\",\n  \"flight_number\": \"AA123\",\n  \"departure_city\": \"New York\",\n  \"destination_city\": \"Los Angeles\",\n  \"date\": \"2021-12-15\",\n  \"departure_time\": \"10:00 AM\",\n  \"arrival_time\": \"1:00 PM\",\n  \"gate\": \"B12\",\n  \"boarding_time\": \"09:30 AM\",\n  \"seat_number\": \"14A\"\n}\n\nNote: This is just an example, the actual data will vary depending on the specific boarding pass.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 47,
+            "completion_tokens": 330,
+            "total_tokens": 377
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:45:04"
+}

@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-4kEacbUAAobjX?format=jpg&name=large",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Program calculates factorials for integers between user-inputted p and q, inclusive.\n2. Output format matches the example: \"n! = result\" on separate lines.\n3. User input for p and q is requested and handled correctly.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/370.jpeg",
+    "unique_idx": "370",
+    "prompt": "You are a software developer. Write a program to finish the task as required in the picture.",
+    "response": {
+        "id": "chatcmpl-d0eb88051f5040d08f187af242efe83d",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930921,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " ```python\n# Python program to find the factorial of a number\n\n# A function to find the factorial of a number\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\n# Driver code to test above function\np=int(input(\"Enter the starting number: \"))\nq=int(input(\"Enter the ending number: \"))\nfor i in range(p,q+1):\n    print(str(i)+\"! = \", factorial(i))\n```"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1131,
+            "completion_tokens": 102,
+            "total_tokens": 1233
+        }
+    },
+    "answer": " ```python\n# Python program to find the factorial of a number\n\n# A function to find the factorial of a number\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\n# Driver code to test above function\np=int(input(\"Enter the starting number: \"))\nq=int(input(\"Enter the ending number: \"))\nfor i in range(p,q+1):\n    print(str(i)+\"! = \", factorial(i))\n```",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 10.474003076553345,
+    "code": 200,
+    "current_time": "2024-04-12 22:08:41"
+}

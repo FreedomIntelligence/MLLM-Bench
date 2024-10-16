@@ -1,0 +1,35 @@
+{
+    "unique_idx": "101_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat is beside the leftmost bus in the image?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe leftmost bus in the image is parked next to a pole.\n~~~\n~~~Answer2\nBeside the leftmost bus in the image, there is a green container or structure.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify if the answer includes \"container\" beside the leftmost bus.\n2. Ensure the answer specifically addresses the object's location relative to the bus.\n3. Confirm that no additional, unrelated objects are mentioned.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/101.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "mistralai/pixtral-12b",
+    "raw_answer1": "The leftmost bus in the image is parked next to a pole.",
+    "raw_answer2": "Beside the leftmost bus in the image, there is a green container or structure.",
+    "response": {
+        "id": "chatcmpl-AIuLJxL9HdfNgZGmV92KrU7EABrrw",
+        "object": "chat.completion",
+        "created": 1729069849,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1418,
+            "completion_tokens": 2,
+            "total_tokens": 1420
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.678138017654419,
+    "code": 200,
+    "current_time": "2024-10-16 17:10:50"
+}

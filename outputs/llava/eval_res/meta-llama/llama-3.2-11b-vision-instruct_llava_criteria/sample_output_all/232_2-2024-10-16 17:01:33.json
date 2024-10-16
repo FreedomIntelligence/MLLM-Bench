@@ -1,0 +1,35 @@
+{
+    "unique_idx": "232_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nAnalyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\n**Flight Schedule Analysis: Aircraft Types for Domestic Flights**\n\nTo determine the most commonly used aircraft type for domestic flights, we will analyze the flight schedule provided in the image. The schedule outlines various flights with their corresponding aircraft types.\n\n**Aircraft Types for Domestic Flights**\n\nUpon examining the schedule, we can identify the following aircraft types used for domestic flights:\n\n*   **A320**: 4 flights\n*   **ATR**: 7 flights\n*   **B738**: 2 flights\n\n**Conclusion**\n\nBased on the analysis, it is evident that the **ATR** is the most commonly used aircraft type for domestic flights, with a total of 7 flights. This indicates that the ATR is the preferred choice for domestic operations within the region.\n~~~\n~~~Answer2\nIn the image, there is a flight schedule that shows the type of aircraft used for domestic flights. The aircraft most commonly used for domestic flights are Airbus A320 series, including A320, A321, and A322. From the schedule, these aircraft are used for a majority of the domestic flights, indicating their prevalence in this specific airline company. However, it is important to note that the schedule may vary depending on the airline and the region, so this conclusion might not be universally applicable.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/232.jpg",
+    "model_1": "meta-llama/llama-3.2-11b-vision-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "**Flight Schedule Analysis: Aircraft Types for Domestic Flights**\n\nTo determine the most commonly used aircraft type for domestic flights, we will analyze the flight schedule provided in the image. The schedule outlines various flights with their corresponding aircraft types.\n\n**Aircraft Types for Domestic Flights**\n\nUpon examining the schedule, we can identify the following aircraft types used for domestic flights:\n\n*   **A320**: 4 flights\n*   **ATR**: 7 flights\n*   **B738**: 2 flights\n\n**Conclusion**\n\nBased on the analysis, it is evident that the **ATR** is the most commonly used aircraft type for domestic flights, with a total of 7 flights. This indicates that the ATR is the preferred choice for domestic operations within the region.",
+    "raw_answer2": "In the image, there is a flight schedule that shows the type of aircraft used for domestic flights. The aircraft most commonly used for domestic flights are Airbus A320 series, including A320, A321, and A322. From the schedule, these aircraft are used for a majority of the domestic flights, indicating their prevalence in this specific airline company. However, it is important to note that the schedule may vary depending on the airline and the region, so this conclusion might not be universally applicable.",
+    "response": {
+        "id": "chatcmpl-AIuCLHqPLQYWHu5ogno1OJgkUhacR",
+        "object": "chat.completion",
+        "created": 1729069293,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1307,
+            "completion_tokens": 2,
+            "total_tokens": 1309
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.877974033355713,
+    "code": 200,
+    "current_time": "2024-10-16 17:01:33"
+}

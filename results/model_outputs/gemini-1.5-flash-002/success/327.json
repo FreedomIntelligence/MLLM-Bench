@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://pic1.zhimg.com/80/v2-c634e79231e601f266e99f0a22e06838_1440w.webp",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify changes in exposure, contrast, and color balance between images.\n2. Assess sharpness, noise, and detail preservation in both images.\n3. Evaluate dynamic range, highlighting shadow and highlight detail retention.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/327.jpg",
+    "unique_idx": 327,
+    "prompt": "What happens to the images from left to right?",
+    "context": "What happens to the images from left to right?",
+    "sample_id": 327,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/327.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "The image on the right is a post-processed version of the image on the left.  The changes appear to be primarily in color grading and contrast. The right image has a cooler, more desaturated color palette, and higher contrast, making the shadows darker and the highlights brighter compared to the original image on the left.  The overall effect is a more dramatic and moody look.\n",
+    "response_from_model": {
+        "id": "chatcmpl-d10c906097f5459baf8eb2d15c8fa37f",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897174,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image on the right is a post-processed version of the image on the left.  The changes appear to be primarily in color grading and contrast. The right image has a cooler, more desaturated color palette, and higher contrast, making the shadows darker and the highlights brighter compared to the original image on the left.  The overall effect is a more dramatic and moody look.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 269,
+            "completion_tokens": 78,
+            "total_tokens": 347
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:13:10"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "238_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nList all stores that are deluxe supermarket and located in Mexico.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nFrom the list provided, there are three deluxe supermarkets located in Mexico:\n\n1. Store 9: \"Deluxe Supermarket\"\n2. Store 10: \"Deluxe Supermarket\"\n3. Store 12: \"Deluxe Supermarket\"\n~~~\n~~~Answer2\nHere are the stores that are Deluxe Supermarket and located in Mexico:\n\n1. Store 12: Hidalgo\n2. Store 17: Zacatecas\n3. Store 18: Hidalgo\n4. Store 21: San Andres\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. List stores that are 'Deluxe Supermarket' in 'Mexico': store 8, store 12, store 21.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/238.png",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-7b-instruct",
+    "raw_answer1": "From the list provided, there are three deluxe supermarkets located in Mexico:\n\n1. Store 9: \"Deluxe Supermarket\"\n2. Store 10: \"Deluxe Supermarket\"\n3. Store 12: \"Deluxe Supermarket\"",
+    "raw_answer2": "Here are the stores that are Deluxe Supermarket and located in Mexico:\n\n1. Store 12: Hidalgo\n2. Store 17: Zacatecas\n3. Store 18: Hidalgo\n4. Store 21: San Andres",
+    "response": {
+        "id": "chatcmpl-AIuRc0SUP6M1baioTZLVhSZXbeeER",
+        "object": "chat.completion",
+        "created": 1729070240,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1474,
+            "completion_tokens": 2,
+            "total_tokens": 1476
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.717081069946289,
+    "code": 200,
+    "current_time": "2024-10-16 17:17:21"
+}

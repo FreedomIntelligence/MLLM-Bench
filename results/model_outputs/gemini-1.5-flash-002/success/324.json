@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://knect365.imgix.net/article/images/cacheable/abe5a1ec-a5cb-4ccb-94cb-7e0b900eab78-featured-76c136b913a7dd398bc9fab8d8417f02.jpg?auto=format&fit=max&w=808&dpr=1.75",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the blur is due to low pixel count.\n2. Assess whether motion contributes to the image's blurriness.\n3. Evaluate if focus issues are causing the blur in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/324.jpg",
+    "unique_idx": 324,
+    "prompt": "What makes the image blurry?",
+    "context": "What makes the image blurry?",
+    "sample_id": 324,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/324.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "The blurriness in the image is primarily due to **motion blur**.  The train is moving quickly, causing the people inside and the train itself to appear blurred.  The photographer used a relatively slow shutter speed to capture the movement, resulting in this effect.\n",
+    "response_from_model": {
+        "id": "chatcmpl-416abd0ea8204e6cbdabf78770d02a9f",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897173,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The blurriness in the image is primarily due to **motion blur**.  The train is moving quickly, causing the people inside and the train itself to appear blurred.  The photographer used a relatively slow shutter speed to capture the movement, resulting in this effect.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 265,
+            "completion_tokens": 54,
+            "total_tokens": 319
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:13:09"
+}

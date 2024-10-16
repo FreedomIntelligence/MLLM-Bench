@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Emotion Understanding",
+        "url": "https://th.bing.com/th/id/OIP.atWZGIJ2e-7OJMZ42W8E2gHaID?w=1260&h=1371&rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Assess if the identified emotion matches the character's facial expression (e.g., angry, frustrated).\n2. Rate the intensity of the emotion as moderate, or severe.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/129.jpg",
+    "unique_idx": "129",
+    "prompt": "Assess the intensity of the emotion on a scale (e.g., mild, moderate, severe) and justify the assessment based on visual cues.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The character in the image is displaying an emotion of anger at a severe intensity. The visual cues supporting this assessment include the character's furrowed brows, narrowed eyes, clenched teeth, and a frowning mouth. The overall facial expression is one of extreme displeasure or irritation, which is commonly associated with a high level of anger.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426660,
+        "id": "chatcmpl-9W3Pwhf4Yj5gCKXpD2dau6sQ0Xano",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 68,
+            "prompt_tokens": 801,
+            "total_tokens": 869
+        }
+    },
+    "answer": "The character in the image is displaying an emotion of anger at a severe intensity. The visual cues supporting this assessment include the character's furrowed brows, narrowed eyes, clenched teeth, and a frowning mouth. The overall facial expression is one of extreme displeasure or irritation, which is commonly associated with a high level of anger.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 10.881922960281372,
+    "code": 200,
+    "current_time": "2024-06-03 22:57:44"
+}

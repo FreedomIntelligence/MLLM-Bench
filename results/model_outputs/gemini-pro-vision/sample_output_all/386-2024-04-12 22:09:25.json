@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://images.unsplash.com/photo-1600320254374-ce2d293c324e",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer includes \"slow down till stop\" or \"turn left to adjacent lane\" based on visual cues.\n2. Response must consider traffic conditions and road layout visible in the image.\n3. Answer must be logically consistent with the driver's possible actions in the given context.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/386.jpg",
+    "unique_idx": "386",
+    "prompt": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "response": {
+        "id": "chatcmpl-9c94d50a8a3045a3b79d9d72614916fb",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930965,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The driver will likely make a right turn."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1131,
+            "completion_tokens": 9,
+            "total_tokens": 1140
+        }
+    },
+    "answer": " The driver will likely make a right turn.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 6.390185832977295,
+    "code": 200,
+    "current_time": "2024-04-12 22:09:25"
+}

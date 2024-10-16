@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "https://pbs.twimg.com/media/ErH5W4zXAAAQGze?format=jpg&name=4096x4096",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Evaluate Translation accuracy of text within the three blue blocks into English.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/62.jpg",
+    "unique_idx": 62,
+    "prompt": "Translate the content in the three blocks of 'samples of representative Tweets' into English.",
+    "context": "Translate the content in the three blocks of 'samples of representative Tweets' into English.",
+    "sample_id": 62,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/62.jpg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "Here are the translations of the representative tweets:\n\n1. **Location: Grand Casablanca; Date: 2021-01-05T23:26; (relevance 0.95)**  \n   _USER_: Morocco_URL_: Heavy rain and flooding in Casablanca _URL_  \n   goto tweet\n\n2. **Location: Grand Casablanca; Date: 2021-01-06T16:46; (relevance 0.94)**  \n   Flooding in Casablanca: The municipal council convenes an emergency meeting _URL_  \n   goto tweet\n\n3. **Location: Grand Casablanca; Date: 2021-01-06T06:16; (relevance 0.94)**  \n   Heavy rain and flood in Casablanca, Morocco today _USER_URL_ _URL_  \n   goto tweet",
+    "response_from_model": {
+        "id": "chatcmpl-AIBMNuF3KaxS7jzxVQOeI7ChEjMnz",
+        "object": "chat.completion",
+        "created": 1728896935,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here are the translations of the representative tweets:\n\n1. **Location: Grand Casablanca; Date: 2021-01-05T23:26; (relevance 0.95)**  \n   _USER_: Morocco_URL_: Heavy rain and flooding in Casablanca _URL_  \n   goto tweet\n\n2. **Location: Grand Casablanca; Date: 2021-01-06T16:46; (relevance 0.94)**  \n   Flooding in Casablanca: The municipal council convenes an emergency meeting _URL_  \n   goto tweet\n\n3. **Location: Grand Casablanca; Date: 2021-01-06T06:16; (relevance 0.94)**  \n   Heavy rain and flood in Casablanca, Morocco today _USER_URL_ _URL_  \n   goto tweet"
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 48193,
+            "completion_tokens": 166,
+            "total_tokens": 48359
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:08:57"
+}

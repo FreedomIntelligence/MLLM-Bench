@@ -1,0 +1,21 @@
+{
+    "id": "chatcmpl-6984176d59044c8b8949addf843b6df3",
+    "model": "gemini-pro-vision",
+    "object": "chat.completion",
+    "created": 1712930271,
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": " **Orthogonal Transformations**\n\n**Def:** An \\(n \\times n\\) matrix \\(A\\) is an orthogonal transformation if \\(AA^T=I\\) (and only if).\n\n- It has \\(n\\) mutually perpendicular rows or columns with unit length\n - 1 row must be in unit length\n - rows or columns must be independent (can't be multiples of each other)\n   - ex \\( \\begin{bmatrix} 1 & 2 & 3 \\\\\\ 2 & 4 & 6 \\\\\\ 3 & 6 & 9 \\end{bmatrix} \\) linearly dependent\n   - ex \\( \\begin{bmatrix} 1 & 2 & 3 \\\\\\ 2 & 6 & 7 \\\\\\ 3 & 9 & 12 \\end{bmatrix} \\) independent but not \\( \\perp \\)\n- to be perpendicular, the dot product must be \\(0\\)\n - dot product: \\(x \\cdot y = \\sum_{i=1}^n x_iy_i\\)\n   - ex \\( \\begin{bmatrix} 1 & 2 & 3 \\\\\\ 2 & 4 & 6 \\\\\\ 3 & 6 & 9 \\end{bmatrix} \\cdot \\begin{bmatrix} 1 \\\\\\ 2 \\\\\\ 3 \\end{bmatrix} = 1(1)+2(2)+3(3)=14 \\neq 0 \\)\n   - ex \\( \\begin{bmatrix} 1 & 2 & 3 \\\\\\ 2 & 6 & 7 \\\\\\ 3 & 9 & 12 \\end{bmatrix} \\cdot \\begin{bmatrix} 1 \\\\\\ 2 \\\\\\ 3 \\end{bmatrix} = 1(1)+2(2)+3(3)=14 \\neq 0 \\)\n- rows or columns must have unit length\n - \\(|x| = \\sqrt{\\sum_{i=1}^nx_i^2}\\)\n   - ex \\( \\begin{bmatrix} 1 & 2 & 3 \\\\\\ 2 & 4 & 6 \\\\\\ 3 & 6 & 9 \\end{bmatrix} \\) rows and columns are unit length\n   - ex \\( \\begin{bmatrix} 1 & 2 & 3 \\\\\\ 2 & 6 & 7 \\\\\\ 3 & 9 & 12 \\end{bmatrix} \\) rows are unit length, but columns are not\n- The rows or columns of \\(A\\) form an orthonormal basis for space \\(R^n\\)\n - basis for space = set of vectors that can combine to create any vector in that space\n - ex \\( \\begin{bmatrix} 1 & 2 & 3 \\\\\\ 2 & 4 & 6 \\\\\\ 3 & 6 & 9 \\end{bmatrix} \\) is not a basis for \\(R^3\\) because \\( \\begin{bmatrix} 1 & 2 & 3 \\\\\\ 2 & 4 & 6 \\\\\\ 3 & 6 & 9 \\end{bmatrix} \\cdot \\begin{bmatrix} 1 \\\\\\ 2 \\\\\\ 3 \\end{bmatrix} = 14 \\neq 0 \\)\n\n\\(\\boxed{AA^T = A^TA = I}\\) basically first point with more words\n\n- \\(A^T\\) = transpose = switches the rows and columns\n   - ex \\( \\begin{bmatrix} 1 & 2 & 3 \\\\\\ 2 & 4 & 5 \\\\\\ 3 & 6 & 7 \\end{bmatrix}^T = \\begin{bmatrix} 1 & 2 & 3 \\\\\\ 2 & 4 & 6 \\\\\\ 3 & 5 & 7 \\end{bmatrix} \\)"
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 794,
+        "completion_tokens": 840,
+        "total_tokens": 1634
+    }
+}

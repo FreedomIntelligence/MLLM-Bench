@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://images.rawpixel.com/image_1300/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B1MjMzNTY0Ni1pbWFnZS1rd3Z3ajgxbi5qcGc.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify and outline the dog's entire form within the image.\n2. Exclude any non-dog elements from the bounding box.\n3. Ensure the bounding box is the correct size and shape for the dog's position.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/179.webp",
+    "unique_idx": "179",
+    "prompt": "Find the bounding box of the dog. The image size is 1300*923",
+    "response": {
+        "id": "chatcmpl-5081aed603ee4898a56cae7d0c9d3742",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930572,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The bounding box of the dog is:\nLeft: 328\nTop: 388\nRight: 730\nBottom: 778"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1129,
+            "completion_tokens": 27,
+            "total_tokens": 1156
+        }
+    },
+    "answer": " The bounding box of the dog is:\nLeft: 328\nTop: 388\nRight: 730\nBottom: 778",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 5.301698684692383,
+    "code": 200,
+    "current_time": "2024-04-12 22:02:52"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "309_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nIf the container in the top left corner in the picture was filled with boiling water at 100°C, will people likely to be scalded if they hold the bottle? \n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nYes, people are likely to be scalded if they hold the bottle containing boiling water at 100°C without using proper protective measures like oven mitts or a thick towel. The hot water can cause burns to their hands, especially if the bottle is made of a heat-conductive material, such as plastic. It is important to handle hot containers with care and use appropriate protective equipment to avoid accidents and injuries.\n~~~\n~~~Answer2\nThe container in the top left corner of the picture appears to be a thermos or insulated container. If filled with boiling water at 100°C, it could still retain that temperature for some time due to its insulated properties. However, whether people would be scalded if they held the bottle would depend on several factors, including the insulation's effectiveness, the duration for which the water remains hot, and the individual's reaction time.\n\nIn general, holding a container filled with boiling water for an extended period can cause severe burns, especially if the water is hot. Therefore, it is important to be cautious when handling such containers, especially if they are insulated and can retain heat for a while.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Reference the insulated nature of the bottle and the unlikelihood of scalding.\n2. Include reasoning on the physical properties of insulation.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/309.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-7b-instruct",
+    "raw_answer1": "Yes, people are likely to be scalded if they hold the bottle containing boiling water at 100°C without using proper protective measures like oven mitts or a thick towel. The hot water can cause burns to their hands, especially if the bottle is made of a heat-conductive material, such as plastic. It is important to handle hot containers with care and use appropriate protective equipment to avoid accidents and injuries.",
+    "raw_answer2": "The container in the top left corner of the picture appears to be a thermos or insulated container. If filled with boiling water at 100°C, it could still retain that temperature for some time due to its insulated properties. However, whether people would be scalded if they held the bottle would depend on several factors, including the insulation's effectiveness, the duration for which the water remains hot, and the individual's reaction time.\n\nIn general, holding a container filled with boiling water for an extended period can cause severe burns, especially if the water is hot. Therefore, it is important to be cautious when handling such containers, especially if they are insulated and can retain heat for a while.",
+    "response": {
+        "id": "chatcmpl-AIuSKwWUw6iaPAEAU9TGSgoUdfZ0o",
+        "object": "chat.completion",
+        "created": 1729070284,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1618,
+            "completion_tokens": 2,
+            "total_tokens": 1620
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.877202272415161,
+    "code": 200,
+    "current_time": "2024-10-16 17:18:05"
+}

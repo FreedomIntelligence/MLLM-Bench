@@ -1,0 +1,35 @@
+{
+    "unique_idx": "64_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\n圖中的海報在宣傳哪家公司的什麼服務？\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\n這張海報在宣傳中國國家航空公司(China National Aviation Corp., CNAC)的航空郵件和客運服務。\n\n海報上方用中文大字寫著\"司公航國中\"(從右到左讀),下方英文則寫著\"AIR MAIL & PASSENGER SERVICE\"(航空郵件和客運服務)。\n\n海報中央是CNAC的標誌,包含一個紅色圓圈和一個展翅的人形圖案。下方還繪有一架水上飛機的圖案,象徵著該公司提供的航空服務。\n\n海報底部提供了公司的英文全名\"CHINA NATIONAL AVIATION CORP.\"以及上海的地址\"3 CANTON RD. SHANGHAI\"。\n\n整體設計採用了藍色背景,搭配白色雲朵和紅色標誌,非常醒目且具有時代特色。\n~~~\n~~~Answer2\n在這張海報中，一個裸體儿童代表 \"CNAC Airmail & Passenger Service\" 並且手舉一個飛機。這張海報宣傳了 \"CNAC\" 公司的空郵和乘客服務。這是一家中國的國家航空公司，成立於1926年，致力於提供國內和國際航空郵寄和乘客服務。\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the company \"中國國民航空公司\" (China National Aviation Corp.) from the poster.\n2. Recognize the services \"航空郵件\" (air mail) and \"乘客服務\" (passenger service) advertised.\n3. Ensure the response is in the context of the poster's promotional content.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/64.jpeg",
+    "model_1": "claude-3-5-sonnet-20240620",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "這張海報在宣傳中國國家航空公司(China National Aviation Corp., CNAC)的航空郵件和客運服務。\n\n海報上方用中文大字寫著\"司公航國中\"(從右到左讀),下方英文則寫著\"AIR MAIL & PASSENGER SERVICE\"(航空郵件和客運服務)。\n\n海報中央是CNAC的標誌,包含一個紅色圓圈和一個展翅的人形圖案。下方還繪有一架水上飛機的圖案,象徵著該公司提供的航空服務。\n\n海報底部提供了公司的英文全名\"CHINA NATIONAL AVIATION CORP.\"以及上海的地址\"3 CANTON RD. SHANGHAI\"。\n\n整體設計採用了藍色背景,搭配白色雲朵和紅色標誌,非常醒目且具有時代特色。",
+    "raw_answer2": "在這張海報中，一個裸體儿童代表 \"CNAC Airmail & Passenger Service\" 並且手舉一個飛機。這張海報宣傳了 \"CNAC\" 公司的空郵和乘客服務。這是一家中國的國家航空公司，成立於1926年，致力於提供國內和國際航空郵寄和乘客服務。",
+    "response": {
+        "id": "chatcmpl-AIsryU0fExIFWudhxUi5ibTExe9ro",
+        "object": "chat.completion",
+        "created": 1729064186,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1557,
+            "completion_tokens": 2,
+            "total_tokens": 1559
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.674215793609619,
+    "code": 200,
+    "current_time": "2024-10-16 15:36:27"
+}

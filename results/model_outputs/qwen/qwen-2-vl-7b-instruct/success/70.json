@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Scene Understanding",
+        "url": "https://pbs.twimg.com/media/F-hrNk7XYAAomHa?format=jpg&name=small",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify attire indicating a wedding; prioritize bright-colored, festive garments and any headpieces.\n2. Describe elements like bouquets or ceremonial objects that suggest a wedding.\n3. Identify the presence of a marriage officer or a religious leader holding a book that suggest a wedding.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/70.jpg",
+    "unique_idx": 70,
+    "prompt": "Given the image, identify any cultural or traditional attire and elements present in the scene, and infer the type of ceremony or event taking place.",
+    "context": "Given the image, identify any cultural or traditional attire and elements present in the scene, and infer the type of ceremony or event taking place.",
+    "sample_id": 70,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/70.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The image depicts a traditional wedding ceremony in Ghana. The couple is dressed in traditional Ghanaian attire, with the groom wearing a white outfit and the bride wearing a colorful outfit with a headpiece. The setting appears to be indoors, and there are people present who are likely family members or guests. The groom is handing over a book, which is a common tradition in Ghanaian weddings, symbolizing the exchange of wedding vows. The presence of a floral arrangement and the formal attire of the guests further indicate that this is a significant and culturally rich event.",
+    "response_from_model": {
+        "id": "gen-1728903379-gB9LFrDMK2jtgK3kwhIr",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903379,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image depicts a traditional wedding ceremony in Ghana. The couple is dressed in traditional Ghanaian attire, with the groom wearing a white outfit and the bride wearing a colorful outfit with a headpiece. The setting appears to be indoors, and there are people present who are likely family members or guests. The groom is handing over a book, which is a common tradition in Ghanaian weddings, symbolizing the exchange of wedding vows. The presence of a floral arrangement and the formal attire of the guests further indicate that this is a significant and culturally rich event.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 50,
+            "completion_tokens": 112,
+            "total_tokens": 162
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-18:56:22"
+}

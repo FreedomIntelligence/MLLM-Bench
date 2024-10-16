@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Food Recognition",
+        "url": "https://images.pexels.com/photos/884596/pexels-photo-884596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify the dish as originating from Japan.\n2. Recognize key components: rice, tempura, bento box presentation.\n3. Ensure the answer does not contradict the reference country.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/48.jpg",
+    "unique_idx": "48",
+    "prompt": "which country does this type of dish most likely originated from?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "This type of dish most likely originated from Japan. The image shows a bento box containing rice and what appears to be tempura-fried items, such as shrimp, which is a common Japanese dish. The presentation style and the use of chopsticks also suggest that it is Japanese cuisine.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426504,
+        "id": "chatcmpl-9W3NQplrjrBhLHoaEp6l7teFLCdXc",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 58,
+            "prompt_tokens": 1124,
+            "total_tokens": 1182
+        }
+    },
+    "answer": "This type of dish most likely originated from Japan. The image shows a bento box containing rice and what appears to be tempura-fried items, such as shrimp, which is a common Japanese dish. The presentation style and the use of chopsticks also suggest that it is Japanese cuisine.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 33.95934724807739,
+    "code": 200,
+    "current_time": "2024-06-03 22:55:07"
+}

@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ts1.cn.mm.bing.net/th/id/R-C.7b111abd47ffc37771a3910917def3bd?rik=7qbmO47DiOm%2bog&riu=http%3a%2f%2fmediad.publicbroadcasting.net%2fp%2fshared%2fnpr%2fstyles%2fx_large%2fnprshared%2f201504%2f398803983.jpg&ehk=AppKqkdndo%2fQnbrklTN0KYuK5j1PdX6%2fP4hNBJTlTgw%3d&risl=&pid=ImgRaw&r=0",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately describe the image, noting it's a CT scan, not an ultrasound for CRL measurement.\n2. Explain that CRL is used for gestational age, but not applicable in this CT image.\n3. State that gestational age cannot be determined from the provided CT image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/190.jpg",
+    "unique_idx": "190",
+    "prompt": "Given the image, describe the details in the image and determine the gestational age of the fetus by measuring the crown-rump length (CRL) and comparing it to standard growth charts.",
+    "response": {
+        "id": "chatcmpl-d847a6634ee2403bad4a86a2b18538b1",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930588,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The image is a CT scan of a fetus. The fetus is in a breech position, and the head is facing the left side of the image. The gestational age of the fetus can be estimated by measuring the crown-rump length (CRL). The CRL is the length from the top of the head to the bottom of the buttocks. In this image, the CRL measures 6.5 cm. According to standard growth charts, a CRL of 6.5 cm corresponds to a gestational age of 12 weeks."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 810,
+            "completion_tokens": 112,
+            "total_tokens": 922
+        }
+    },
+    "answer": " The image is a CT scan of a fetus. The fetus is in a breech position, and the head is facing the left side of the image. The gestational age of the fetus can be estimated by measuring the crown-rump length (CRL). The CRL is the length from the top of the head to the bottom of the buttocks. In this image, the CRL measures 6.5 cm. According to standard growth charts, a CRL of 6.5 cm corresponds to a gestational age of 12 weeks.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 7.60951828956604,
+    "code": 200,
+    "current_time": "2024-04-12 22:03:08"
+}

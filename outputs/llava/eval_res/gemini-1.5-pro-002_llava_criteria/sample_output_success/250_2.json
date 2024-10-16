@@ -1,0 +1,35 @@
+{
+    "unique_idx": "250_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nExamine the two images closely to identify and compare the differences between them as many as possible.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nHere are 10 differences between the two images:\n\n1. **Dog's Collar:** The dog's collar is thicker in the right image.\n2. **Dog's Spots:** The spot on the dog's forehead is smaller in the right image.\n3. **Dog's Spots:** The spot on the dog's hip is larger in the right image.\n4. **Dog Food:** The dog bowl on the right contains food, while the left one has a bone.\n5. **Doghouse Window:** The doghouse window is oval on the right, and round on the left.\n6. **Doghouse Roof:** The line detailing the edge of the doghouse roof is missing on the right image.\n7. **Fence Post:** The second fence post from the left has two nail holes on the left image, and one on the right.\n8. **Flower Petals:** The flower closest to the viewer has fewer petals on the right.\n9. **Blade of Grass:** A blade of grass behind the flower closest to the viewer is missing in the right image.\n10. **Small Rocks:** There are three small rocks/pebbles on the path in the left image, and four on the right.\n~~~\n~~~Answer2\nThe two images show a brown and black dog in different poses and settings. The first image features the dog carrying a bottle in its mouth, with one paw on a bowl and the other paw on a cat. The dog appears to be placing the bottle into the bowl. The second image displays the dog with a bone in its mouth, standing next to a house.\n\nIn the first image, the dog is positioned more towards the left side, while in the second image, it is positioned more towards the right side. Although both images show the dog in action, there are some noticeable differences in the objects the dog is carrying and its surroundings.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Accurately identify differences in dog's eye, collar, posture of the dog's leg, bowl contents, flower, stone, fence knot, grass near the fence, dog house window, and bush.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/250.jpg",
+    "model_1": "gemini-1.5-pro-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "Here are 10 differences between the two images:\n\n1. **Dog's Collar:** The dog's collar is thicker in the right image.\n2. **Dog's Spots:** The spot on the dog's forehead is smaller in the right image.\n3. **Dog's Spots:** The spot on the dog's hip is larger in the right image.\n4. **Dog Food:** The dog bowl on the right contains food, while the left one has a bone.\n5. **Doghouse Window:** The doghouse window is oval on the right, and round on the left.\n6. **Doghouse Roof:** The line detailing the edge of the doghouse roof is missing on the right image.\n7. **Fence Post:** The second fence post from the left has two nail holes on the left image, and one on the right.\n8. **Flower Petals:** The flower closest to the viewer has fewer petals on the right.\n9. **Blade of Grass:** A blade of grass behind the flower closest to the viewer is missing in the right image.\n10. **Small Rocks:** There are three small rocks/pebbles on the path in the left image, and four on the right.",
+    "raw_answer2": "The two images show a brown and black dog in different poses and settings. The first image features the dog carrying a bottle in its mouth, with one paw on a bowl and the other paw on a cat. The dog appears to be placing the bottle into the bowl. The second image displays the dog with a bone in its mouth, standing next to a house.\n\nIn the first image, the dog is positioned more towards the left side, while in the second image, it is positioned more towards the right side. Although both images show the dog in action, there are some noticeable differences in the objects the dog is carrying and its surroundings.",
+    "response": {
+        "id": "chatcmpl-AIt4wcEPIBcWhHzwlpW7dMNTtcXsS",
+        "object": "chat.completion",
+        "created": 1729064990,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1769,
+            "completion_tokens": 2,
+            "total_tokens": 1771
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.120800256729126,
+    "code": 200,
+    "current_time": "2024-10-16 15:49:51"
+}

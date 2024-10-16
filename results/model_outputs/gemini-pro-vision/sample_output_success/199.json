@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "NaN",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify the test kit as for detecting COVID-19 antigens.\n2. Explain that two lines indicate a positive result for COVID-19.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/199.jpeg",
+    "unique_idx": "199",
+    "prompt": "What is the test kit in the image used to detect? Interpret the meaning of the two lines on the test kit.",
+    "response": {
+        "id": "chatcmpl-7d1acf51d01f495ba0a61f08debb835e",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712931365,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The test kit in the image is used to detect COVID-19. \n\nThe two lines on the test kit indicate the following:\n\n- **One line on the T line:** This means that the test is negative.\n\n- **Two lines, one on the C line and one on the T line:** This means that the test is positive.\n\n- **No lines:** This means that the test is invalid."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1136,
+            "completion_tokens": 81,
+            "total_tokens": 1217
+        }
+    },
+    "answer": " The test kit in the image is used to detect COVID-19. \n\nThe two lines on the test kit indicate the following:\n\n- **One line on the T line:** This means that the test is negative.\n\n- **Two lines, one on the C line and one on the T line:** This means that the test is positive.\n\n- **No lines:** This means that the test is invalid.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 6.864201307296753,
+    "code": 200,
+    "current_time": "2024-04-12 22:16:05"
+}

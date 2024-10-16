@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/FvIBh4zWwAMW7kX?format=jpg&name=large",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify game as sliding puzzle with numbered tiles; mention grid and tile combination mechanics.\n2. Describe the gameplay objective to combine tiles for a higher-numbered tile.\n3. Include code implementation reflecting game rules and sliding tile mechanism.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/377.jpeg",
+    "unique_idx": 377,
+    "prompt": "The image depicts a game. You need to analyze the gameplay and use code to implement an identical game.",
+    "context": "The image depicts a game. You need to analyze the gameplay and use code to implement an identical game.",
+    "sample_id": 377,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/377.jpeg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "Sure! Below is a simple implementation of the 2048 game in Python using a text-based interface. You can run this code in any Python environment.\n\n```python\nimport random\nimport os\n\ndef init_game():\n    return [[0] * 4 for _ in range(4)]\n\ndef add_new_tile(board):\n    x, y = random.choice([(i, j) for i in range(4) for j in range(4) if board[i][j] == 0])\n    board[x][y] = random.choice([2, 4])\n\ndef compress(board):\n    new_board = [[0] * 4 for _ in range(4)]\n    for i in range(4):\n        pos = 0\n        for j in range(4):\n            if board[i][j] != 0:\n                new_board[i][pos] = board[i][j]\n                pos += 1\n    return new_board\n\ndef merge(board):\n    for i in range(4):\n        for j in range(3):\n            if board[i][j] == board[i][j + 1] and board[i][j] != 0:\n                board[i][j] *= 2\n                board[i][j + 1] = 0\n    return board\n\ndef reverse(board):\n    return [row[::-1] for row in board]\n\ndef transpose(board):\n    return [[board[j][i] for j in range(4)] for i in range(4)]\n\ndef move_left(board):\n    board = compress(board)\n    board = merge(board)\n    return compress(board)\n\ndef move_right(board):\n    return reverse(move_left(reverse(board)))\n\ndef move_up(board):\n    return transpose(move_left(transpose(board)))\n\ndef move_down(board):\n    return transpose(move_right(transpose(board)))\n\ndef is_game_over(board):\n    if any(0 in row for row in board):\n        return False\n    for i in range(4):\n        for j in range(4):\n            if (i < 3 and board[i][j] == board[i + 1][j]) or (j < 3 and board[i][j] == board[i][j + 1]):\n                return False\n    return True\n\ndef print_board(board):\n    os.system('cls' if os.name == 'nt' else 'clear')\n    for row in board:\n        print(\"\\t\".join(map(str, row)))\n        print()\n    print(\"Score:\", score)\n\nboard = init_game()\nadd_new_tile(board)\nadd_new_tile(board)\nscore = 0\n\nwhile True:\n    print_board(board)\n    move = input(\"Use W/A/S/D to move: \").strip().lower()\n    \n    if move in ['w', 'a', 's', 'd']:\n        if move == 'w':\n            new_board = move_up(board)\n        elif move == 'a':\n            new_board = move_left(board)\n        elif move == 's':\n            new_board = move_down(board)\n        elif move == 'd':\n            new_board = move_right(board)\n\n        if new_board != board:\n            board = new_board\n            add_new_tile(board)\n            if is_game_over(board):\n                print_board(board)\n                print(\"Game Over!\")\n                break\n    else:\n        print(\"Invalid move! Use W/A/S/D to move.\")\n```\n\n### Instructions:\n1. Copy the code into a Python environment (like IDLE, Jupyter Notebook, or any Python IDE).\n2. Run the code.\n3. Use the keys W (up), A (left), S (down), and D (right) to move the tiles.\n4. Try to reach the 2048 tile!\n\nFeel free to modify and expand the game as you like!",
+    "response_from_model": {
+        "id": "chatcmpl-AIBOWTQcf4N48nPQIfxDr6gY9vmJ2",
+        "object": "chat.completion",
+        "created": 1728897068,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure! Below is a simple implementation of the 2048 game in Python using a text-based interface. You can run this code in any Python environment.\n\n```python\nimport random\nimport os\n\ndef init_game():\n    return [[0] * 4 for _ in range(4)]\n\ndef add_new_tile(board):\n    x, y = random.choice([(i, j) for i in range(4) for j in range(4) if board[i][j] == 0])\n    board[x][y] = random.choice([2, 4])\n\ndef compress(board):\n    new_board = [[0] * 4 for _ in range(4)]\n    for i in range(4):\n        pos = 0\n        for j in range(4):\n            if board[i][j] != 0:\n                new_board[i][pos] = board[i][j]\n                pos += 1\n    return new_board\n\ndef merge(board):\n    for i in range(4):\n        for j in range(3):\n            if board[i][j] == board[i][j + 1] and board[i][j] != 0:\n                board[i][j] *= 2\n                board[i][j + 1] = 0\n    return board\n\ndef reverse(board):\n    return [row[::-1] for row in board]\n\ndef transpose(board):\n    return [[board[j][i] for j in range(4)] for i in range(4)]\n\ndef move_left(board):\n    board = compress(board)\n    board = merge(board)\n    return compress(board)\n\ndef move_right(board):\n    return reverse(move_left(reverse(board)))\n\ndef move_up(board):\n    return transpose(move_left(transpose(board)))\n\ndef move_down(board):\n    return transpose(move_right(transpose(board)))\n\ndef is_game_over(board):\n    if any(0 in row for row in board):\n        return False\n    for i in range(4):\n        for j in range(4):\n            if (i < 3 and board[i][j] == board[i + 1][j]) or (j < 3 and board[i][j] == board[i][j + 1]):\n                return False\n    return True\n\ndef print_board(board):\n    os.system('cls' if os.name == 'nt' else 'clear')\n    for row in board:\n        print(\"\\t\".join(map(str, row)))\n        print()\n    print(\"Score:\", score)\n\nboard = init_game()\nadd_new_tile(board)\nadd_new_tile(board)\nscore = 0\n\nwhile True:\n    print_board(board)\n    move = input(\"Use W/A/S/D to move: \").strip().lower()\n    \n    if move in ['w', 'a', 's', 'd']:\n        if move == 'w':\n            new_board = move_up(board)\n        elif move == 'a':\n            new_board = move_left(board)\n        elif move == 's':\n            new_board = move_down(board)\n        elif move == 'd':\n            new_board = move_right(board)\n\n        if new_board != board:\n            board = new_board\n            add_new_tile(board)\n            if is_game_over(board):\n                print_board(board)\n                print(\"Game Over!\")\n                break\n    else:\n        print(\"Invalid move! Use W/A/S/D to move.\")\n```\n\n### Instructions:\n1. Copy the code into a Python environment (like IDLE, Jupyter Notebook, or any Python IDE).\n2. Run the code.\n3. Use the keys W (up), A (left), S (down), and D (right) to move the tiles.\n4. Try to reach the 2048 tile!\n\nFeel free to modify and expand the game as you like!"
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 48197,
+            "completion_tokens": 774,
+            "total_tokens": 48971
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:11:12"
+}

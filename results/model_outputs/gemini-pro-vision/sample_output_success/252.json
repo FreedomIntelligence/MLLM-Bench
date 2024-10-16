@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Difference Finding",
+        "url": "https://ts1.cn.mm.bing.net/th/id/R-C.42eea886f68a6f183b9b68938efd3930?rik=zPsVf7U5VaCQRw&riu=http%3a%2f%2fwww.elcivics.com%2fworksheets%2fgames%2ffind-differences%2fpicture-puzzle.jpg&ehk=ZAC3qbDROy4VrpgesJnZclbQgm8PaiHatMXHcA%2boRGs%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify differences: eye color, belt, shirt stripes, facial hair, eyebrow, socks, left dog's bag, left dog's eyelash, left dog's mouth wrinkle.\n2. Ensure all differences listed in the reference are mentioned accurately.\n3. Compare both images for any additional differences not listed in the reference.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/252.jpg",
+    "unique_idx": "252",
+    "prompt": "Examine the images on the left-hand side and right-hand side closely to identify and compare the differences between them as much as possible.",
+    "response": {
+        "id": "chatcmpl-bc4ff597ad0645e68741578fa7752431",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930711,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The image on the left-hand side shows a dog wearing a backpack with a book in it. The dog is waving with its left hand. The image on the right-hand side also shows a dog wearing a backpack with a book in it. However, the dog is waving with its right hand.\n\nIn the left-hand side image, the dog has a collar, but in the right-hand side image, the dog does not have a collar."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1139,
+            "completion_tokens": 88,
+            "total_tokens": 1227
+        }
+    },
+    "answer": " The image on the left-hand side shows a dog wearing a backpack with a book in it. The dog is waving with its left hand. The image on the right-hand side also shows a dog wearing a backpack with a book in it. However, the dog is waving with its right hand.\n\nIn the left-hand side image, the dog has a collar, but in the right-hand side image, the dog does not have a collar.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 21.04773259162903,
+    "code": 200,
+    "current_time": "2024-04-12 22:05:12"
+}

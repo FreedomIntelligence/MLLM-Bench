@@ -1,0 +1,19 @@
+{
+    "created": 0,
+    "model": "yi-vl-plus",
+    "usage": {
+        "completion_tokens": 405,
+        "prompt_tokens": 1030,
+        "total_tokens": 1435
+    },
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "To visualize the most important information from the report, we can create a bar chart that compares the total sales of the top 3 IPs in both 2023 and 2024. Here's a Python program using the `matplotlib` library to create the bar chart:\n\n```python\nimport matplotlib.pyplot as plt\n\n# Sales data for 2023 and 2024\nsales_2023 = [62.4, 65.7, 35.9]  # Mobile Suit Gundam, Dragon Ball, One Piece\nsales_2024 = [131.3, 144.5, 86.3] # Mobile Suit Gundam, Dragon Ball, One Piece\n\n# Create a bar chart\nplt.bar(range(len(sales_2023)), sales_2023, label='2023')\nplt.bar(range(len(sales_2023), len(sales_2023) + len(sales_2024)), sales_2024, label='2024', alpha=0.5)\n\n# Set labels and title\nplt.xlabel('IPs')\nplt.ylabel('Sales (billion yen)')\nplt.title('Top 3 IPs Sales Comparison (2023 vs 2024)')\n\n# Show the chart\nplt.legend()\nplt.show()\n```\n\nThis program will create a bar chart comparing the sales of the top 3 IPs (Mobile Suit Gundam, Dragon Ball, One Piece) in 2023 and 2024. The chart will help visualize the growth or decline in sales for each IP over the two years."
+            },
+            "finish_reason": "stop"
+        }
+    ]
+}

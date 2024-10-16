@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://tse1-mm.cn.bing.net/th/id/OIP-C.enwAb12TDJjxjYx30u2mUgHaEK?rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately describe visible skin symptoms (e.g., rash, discoloration).\n2. Estimate condition stage based on visual symptoms severity.\n3. Include no diagnosis, focus on symptom description and stage estimation.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/195.jpeg",
+    "unique_idx": 195,
+    "prompt": "Given the image, describe the visual symptoms in detail and estimate the stage of the condition.",
+    "context": "Given the image, describe the visual symptoms in detail and estimate the stage of the condition.",
+    "sample_id": 195,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/195.jpeg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " Based on the image provided, the visual symptoms suggest the presence of a skin condition, possibly psoriasis or eczema. The skin appears red, inflamed, and covered with raised, silvery-white scales. There are also patches of dry, cracked skin, which might indicate a more severe stage of the condition.\n\nEstimating the stage of the condition is challenging without additional information, such as the patient's medical history or duration of the symptoms. However, based on the severity of the inflammation and the extent of scaling, it could be considered a moderate-to-severe stage. It is essential for the patient to consult with a dermatologist for an accurate diagnosis and treatment plan.",
+    "response_from_model": {
+        "id": "gen-1728906598-hKvrrjtyLbl6itj5tX2w",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728906598,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " Based on the image provided, the visual symptoms suggest the presence of a skin condition, possibly psoriasis or eczema. The skin appears red, inflamed, and covered with raised, silvery-white scales. There are also patches of dry, cracked skin, which might indicate a more severe stage of the condition.\n\nEstimating the stage of the condition is challenging without additional information, such as the patient's medical history or duration of the symptoms. However, based on the severity of the inflammation and the extent of scaling, it could be considered a moderate-to-severe stage. It is essential for the patient to consult with a dermatologist for an accurate diagnosis and treatment plan.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 24,
+            "completion_tokens": 157,
+            "total_tokens": 181
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:50:01"
+}

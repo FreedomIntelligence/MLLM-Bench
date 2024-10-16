@@ -1,0 +1,35 @@
+{
+    "unique_idx": "387_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nBased on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nIn the image, one car is driving in front of another car, and they appear to be close to each other. Since the cars are driving in the same direction, it is difficult to predict their exact trajectories in the next few seconds, as they are situated in the middle of a road with buildings lining up. However, it is important for the drivers to be aware of their surroundings, maintain a safe distance from each other, and continuously check their blind spots to avoid any potential collision. To enhance safety, drivers can also slow down based on road conditions, use appropriate lighting (headlights, taillights, and turn signals), and follow any traffic rules or regulations to ensure a safe driving environment.\n~~~\n~~~Answer2\nIn the next few seconds, the white car on the left appears to be moving straight ahead, while the blue car on the right is turning right. The silver car in the middle seems to be following the white car's path.\n\nTo avoid collision, the drivers should:\n1. Maintain a safe distance from the vehicle in front.\n2. Use turn signals to indicate their intentions clearly.\n3. Be aware of the other vehicles' movements and adjust their speed accordingly.\n4. Avoid sudden maneuvers and ensure smooth, predictable driving.\n\nIn this specific scenario, the blue car should ensure it has enough space to complete its turn without obstructing the path of the silver car. The silver car should slow down if necessary to allow the blue car to turn safely.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Predicted trajectories must consider vehicles' current motion and road conditions.\n2. Recommendations for avoiding collision should be specific and plausible.\n3. Answer must align with the action prediction capability and the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/387.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-72b-instruct",
+    "raw_answer1": "In the image, one car is driving in front of another car, and they appear to be close to each other. Since the cars are driving in the same direction, it is difficult to predict their exact trajectories in the next few seconds, as they are situated in the middle of a road with buildings lining up. However, it is important for the drivers to be aware of their surroundings, maintain a safe distance from each other, and continuously check their blind spots to avoid any potential collision. To enhance safety, drivers can also slow down based on road conditions, use appropriate lighting (headlights, taillights, and turn signals), and follow any traffic rules or regulations to ensure a safe driving environment.",
+    "raw_answer2": "In the next few seconds, the white car on the left appears to be moving straight ahead, while the blue car on the right is turning right. The silver car in the middle seems to be following the white car's path.\n\nTo avoid collision, the drivers should:\n1. Maintain a safe distance from the vehicle in front.\n2. Use turn signals to indicate their intentions clearly.\n3. Be aware of the other vehicles' movements and adjust their speed accordingly.\n4. Avoid sudden maneuvers and ensure smooth, predictable driving.\n\nIn this specific scenario, the blue car should ensure it has enough space to complete its turn without obstructing the path of the silver car. The silver car should slow down if necessary to allow the blue car to turn safely.",
+    "response": {
+        "id": "chatcmpl-AIvJ2FJktWY3X1bE2V5CVrhlTIJG9",
+        "object": "chat.completion",
+        "created": 1729073552,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1350,
+            "completion_tokens": 2,
+            "total_tokens": 1352
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.388514757156372,
+    "code": 200,
+    "current_time": "2024-10-16 18:12:33"
+}

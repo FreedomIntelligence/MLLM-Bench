@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://pbs.twimg.com/media/FmM62WNWYAMC0EB?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correctly identify and report gate number B19 from the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/12.jpeg",
+    "unique_idx": 12,
+    "prompt": "Assume a passenger bought an air ticket to Boston with Delta Airline on flight number 5706, which gate should the passenger go to wait for the flight",
+    "context": "Assume a passenger bought an air ticket to Boston with Delta Airline on flight number 5706, which gate should the passenger go to wait for the flight",
+    "sample_id": 12,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/12.jpeg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "According to the provided image, Delta flight 5706 to Boston departs from gate B19.",
+    "response_from_model": {
+        "id": "chatcmpl-3848ff31e7cc4d74bbd2970da75a14d8",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897112,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "According to the provided image, Delta flight 5706 to Boston departs from gate B19."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 291,
+            "completion_tokens": 22,
+            "total_tokens": 313
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:08"
+}

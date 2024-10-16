@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Object Localization",
+        "url": "https://images.unsplash.com/photo-1617201834941-0dff6e023ae2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer must include coordinates close to the reference: (200,315), the closer the better",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/172.jpg",
+    "unique_idx": "172",
+    "prompt": "The image is of dimension 700*1050, assume the bottom left corner to be the origin of coordinates (0,0), the coordinates of the top left corner to be (0,1050) and the coordinates of the bottom right corner to be (700,0). Please give the approximate coordinates of the spoon tail.",
+    "response": {
+        "id": "chatcmpl-ef9fdcca535c4a038337203be09d4486",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930566,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The coordinates of the spoon tail are approximately (650, 150)."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1179,
+            "completion_tokens": 14,
+            "total_tokens": 1193
+        }
+    },
+    "answer": " The coordinates of the spoon tail are approximately (650, 150).",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 16.260610342025757,
+    "code": 200,
+    "current_time": "2024-04-12 22:02:46"
+}

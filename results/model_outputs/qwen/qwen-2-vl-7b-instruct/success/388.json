@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://th.bing.com/th/id/OIP.sSoupZIuPG0QZ4AHf5VtmAHaHa?w=640&h=640&rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe the sequence of actions leading up to the last depicted moment.\n2. Predict the next action based on the momentum and position of figures.\n3. Ensure prediction is plausible within the context of the image sequence.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/388.jpeg",
+    "unique_idx": 388,
+    "prompt": "Analyze the series of actions in the image and predict the possible next action.",
+    "context": "Analyze the series of actions in the image and predict the possible next action.",
+    "sample_id": 388,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/388.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The image shows a series of diagrams illustrating different positions of a person lying on a table, with various markers indicating specific body parts. The sequence appears to depict different stages of a medical or physical examination, possibly involving measurements or observations.\n\nHere is a breakdown of the positions:\n1. **T1**: The person is lying on the table with markers on the head, chest, and pelvis.\n2. **T2**: The person is lying on the table with additional markers on the upper arms and legs.\n3. **T3**: The person is lying on the table with markers on the head, chest, and pelvis, similar to T1.\n4. **T4**: The person is lying on the table with markers on the head, chest, and pelvis, similar to T1.\n5. **T5**: The person is sitting on a chair with markers on the head, chest, and pelvis.\n\nGiven this sequence, it seems the person is being measured or observed in various positions. The next action could likely be:\n6. **T6**: The person might be standing or performing a specific action, such as bending or stretching, with markers on the head, chest, and pelvis. This would complete the series of measurements or observations.\n\nThe possible next action is for the person to stand up or perform a specific movement, which would allow for further analysis or measurement of their posture and movement.",
+    "response_from_model": {
+        "id": "gen-1728904032-zNz0gaFQYBkwXLa8CE1k",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728904032,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image shows a series of diagrams illustrating different positions of a person lying on a table, with various markers indicating specific body parts. The sequence appears to depict different stages of a medical or physical examination, possibly involving measurements or observations.\n\nHere is a breakdown of the positions:\n1. **T1**: The person is lying on the table with markers on the head, chest, and pelvis.\n2. **T2**: The person is lying on the table with additional markers on the upper arms and legs.\n3. **T3**: The person is lying on the table with markers on the head, chest, and pelvis, similar to T1.\n4. **T4**: The person is lying on the table with markers on the head, chest, and pelvis, similar to T1.\n5. **T5**: The person is sitting on a chair with markers on the head, chest, and pelvis.\n\nGiven this sequence, it seems the person is being measured or observed in various positions. The next action could likely be:\n6. **T6**: The person might be standing or performing a specific action, such as bending or stretching, with markers on the head, chest, and pelvis. This would complete the series of measurements or observations.\n\nThe possible next action is for the person to stand up or perform a specific movement, which would allow for further analysis or measurement of their posture and movement.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 38,
+            "completion_tokens": 289,
+            "total_tokens": 327
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:07:16"
+}

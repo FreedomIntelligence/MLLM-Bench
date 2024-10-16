@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ts1.cn.mm.bing.net/th/id/R-C.7b111abd47ffc37771a3910917def3bd?rik=7qbmO47DiOm%2bog&riu=http%3a%2f%2fmediad.publicbroadcasting.net%2fp%2fshared%2fnpr%2fstyles%2fx_large%2fnprshared%2f201504%2f398803983.jpg&ehk=AppKqkdndo%2fQnbrklTN0KYuK5j1PdX6%2fP4hNBJTlTgw%3d&risl=&pid=ImgRaw&r=0",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately describe the image, noting it's a CT scan, not an ultrasound for CRL measurement.\n2. Explain that CRL is used for gestational age, but not applicable in this CT image.\n3. State that gestational age cannot be determined from the provided CT image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/190.jpg",
+    "unique_idx": 190,
+    "prompt": "Given the image, describe the details in the image and determine the gestational age of the fetus by measuring the crown-rump length (CRL) and comparing it to standard growth charts.",
+    "context": "Given the image, describe the details in the image and determine the gestational age of the fetus by measuring the crown-rump length (CRL) and comparing it to standard growth charts.",
+    "sample_id": 190,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/190.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The image appears to be an ultrasound scan of a fetus. However, without specific measurements such as the crown-rump length (CRL), it is not possible to accurately determine the gestational age of the fetus. To assess the gestational age, a healthcare professional would typically measure the CRL in millimeters and compare it to standardized growth charts. These charts provide expected ranges for CRL at different gestational ages.\n\nIf you have access to the CRL measurement from this scan, you can use it to estimate the gestational age. If not, please provide the CRL measurement, and I can help you interpret the results.",
+    "response_from_model": {
+        "id": "gen-1728903628-j86ovWyDG9UP5CwuJr8H",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903628,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image appears to be an ultrasound scan of a fetus. However, without specific measurements such as the crown-rump length (CRL), it is not possible to accurately determine the gestational age of the fetus. To assess the gestational age, a healthcare professional would typically measure the CRL in millimeters and compare it to standardized growth charts. These charts provide expected ranges for CRL at different gestational ages.\n\nIf you have access to the CRL measurement from this scan, you can use it to estimate the gestational age. If not, please provide the CRL measurement, and I can help you interpret the results.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 60,
+            "completion_tokens": 129,
+            "total_tokens": 189
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:00:45"
+}

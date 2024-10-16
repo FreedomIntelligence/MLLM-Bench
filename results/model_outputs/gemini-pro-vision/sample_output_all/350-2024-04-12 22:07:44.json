@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Fake Image Detection",
+        "url": "https://sdxl-h-p-6.stablediffusionweb.com/file=/tmp/gradio/cfcc2e54305bdb0a86301cb2636e11d59f527263/image.png",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Confirm if the answer identifies the figure as AI-generated.\n2. Evaluate the explanation of visual indicators that support the AI-generated conclusion.\n3. Check for mention of any inconsistencies or artifacts typically found in AI-generated images.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/350.webp",
+    "unique_idx": "350",
+    "prompt": "Does this photograph represent a real individual or an AI-generated figure? ",
+    "response": {
+        "id": "chatcmpl-898b5382cd994f8b8eebe6a22746fdfa",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930864,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The photograph is an AI-generated figure."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 786,
+            "completion_tokens": 8,
+            "total_tokens": 794
+        }
+    },
+    "answer": " The photograph is an AI-generated figure.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 5.593518495559692,
+    "code": 200,
+    "current_time": "2024-04-12 22:07:44"
+}

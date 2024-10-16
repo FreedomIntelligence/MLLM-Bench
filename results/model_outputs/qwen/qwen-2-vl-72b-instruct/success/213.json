@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Chart Understanding",
+        "url": "https://pbs.twimg.com/media/F96tN5qXEAAot3X?format=png&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Recognize the approximate number of meetings for each month as: {\"April\": around 990, \"May\": around 1485, \"June\": around 1237, \"July\": between 742 and 990}.\n2. The result is the average of the recognized number of each month. An acceptable range for the final answer is 1100 ~ 1200.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/213.jpg",
+    "unique_idx": 213,
+    "prompt": "What is the approximate average number of meets from April 2023 to July 2023 shown in the chart?",
+    "context": "What is the approximate average number of meets from April 2023 to July 2023 shown in the chart?",
+    "sample_id": 213,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/213.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "To find the approximate average number of meets from April 2023 to July 2023, we need to sum the number of meets for these months and then divide by the number of months.\n\nFrom the chart:\n- April 2023: Approximately 930 meets\n- May 2023: Approximately 1430 meets\n- June 2023: Approximately 1200 meets\n- July 2023: Approximately 800 meets\n\nSum of meets from April 2023 to July 2023:\n930 + 1430 + 1200 + 800 = 4360 meets\n\nNumber of months: 4\n\nAverage number of meets:\n4360 meets / 4 months = 1090 meets/month\n\nSo, the approximate average number of meets from April 2023 to July 2023 is 1090 meets per month.",
+    "response_from_model": {
+        "id": "gen-1728907883-On5akxtiUN8Bu99bh7sk",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728907883,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To find the approximate average number of meets from April 2023 to July 2023, we need to sum the number of meets for these months and then divide by the number of months.\n\nFrom the chart:\n- April 2023: Approximately 930 meets\n- May 2023: Approximately 1430 meets\n- June 2023: Approximately 1200 meets\n- July 2023: Approximately 800 meets\n\nSum of meets from April 2023 to July 2023:\n930 + 1430 + 1200 + 800 = 4360 meets\n\nNumber of months: 4\n\nAverage number of meets:\n4360 meets / 4 months = 1090 meets/month\n\nSo, the approximate average number of meets from April 2023 to July 2023 is 1090 meets per month.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 49,
+            "completion_tokens": 219,
+            "total_tokens": 268
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:11:31"
+}

@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2022/04/09/15/10/basketball-7121617_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer must state the basketball will \"fall\".\n2. Explanation should demonstrate understanding of the basketball's trajectory and gravity.\n3. Response must infer the action based on the position of the basketball relative to the hoop.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/209.jpg",
+    "unique_idx": "209",
+    "prompt": "Assuming this is a moment after someone made a shot, will the basketball rise or fall in the next second?",
+    "response": {
+        "id": "msg_01N5zTkwxuXoo82gxdEXPruF",
+        "type": "message",
+        "role": "assistant",
+        "model": "gpt-4",
+        "usage": {
+            "prompt_tokens": 1504,
+            "completion_tokens": 61,
+            "total_tokens": 1565
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the image, the basketball appears to be resting in the net after going through the hoop, indicating that a successful shot has just been made. Therefore, in the next second, the basketball will likely fall down out of the net due to gravity, rather than rising up."
+                },
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "object": "chat.completion",
+        "created": 1712927164
+    },
+    "answer": "Based on the image, the basketball appears to be resting in the net after going through the hoop, indicating that a successful shot has just been made. Therefore, in the next second, the basketball will likely fall down out of the net due to gravity, rather than rising up.",
+    "gen_model_id": "gpt-4-vision-preview",
+    "duration": 9.590795278549194,
+    "code": 200,
+    "current_time": "2024-04-12 21:06:05"
+}

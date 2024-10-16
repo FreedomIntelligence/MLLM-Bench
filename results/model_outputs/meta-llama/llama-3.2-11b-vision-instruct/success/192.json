@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://tse2-mm.cn.bing.net/th/id/OIP-C.DfcmfnHYf5SBexamy5AfRgHaF5?rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe any abnormalities visible in the brain CT image.\n2. Use appropriate medical terminology related to brain anatomy and pathology.\n3. Provide a structured report format, including observations and conclusions.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/192.jpg",
+    "unique_idx": 192,
+    "prompt": "Write a CT report for this image as a brain specialist.",
+    "context": "Write a CT report for this image as a brain specialist.",
+    "sample_id": 192,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/192.jpg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "**CT Report:**\n\n**Patient Information:**\n\n* Name: [Not provided]\n* Age: [Not provided]\n* Sex: [Not provided]\n\n**Scan Details:**\n\n* Modality: CT Scan\n* Slice thickness: 5 mm\n* Reconstruction algorithm: Soft tissue window\n* Slice location: Axial\n\n**Findings:**\n\n* A large, well-defined, heterogeneous mass is observed in the left cerebral hemisphere.\n* The mass measures approximately 6 x 5 x 4 cm in size.\n* The mass is isodense to hyperdense compared to the surrounding brain parenchyma.\n* The mass exhibits heterogeneous enhancement with contrast administration.\n* The mass is causing significant mass effect, with midline shift to the right and compression of the left lateral ventricle.\n* There is also evidence of hydrocephalus, with dilatation of the temporal horns and trigone of the lateral ventricles.\n* The mass is located in the region of the left frontal lobe, near the motor cortex.\n* There is no evidence of calcification or hemorrhage within the mass.\n\n**Impression:**\n\n* The findings are consistent with a large, potentially malignant brain tumor, likely a glioblastoma multiforme (GBM).\n* Further diagnostic workup, including MRI and biopsy, is recommended to confirm the diagnosis and determine the extent of the tumor.\n\n**Recommendations:**\n\n* The patient should be referred to a neurosurgeon for possible surgical resection of the tumor.\n* The patient should also be referred to a medical oncologist for chemotherapy and radiation therapy.\n* Follow-up imaging should be performed to monitor the response to treatment and assess for any signs of recurrence.",
+    "response_from_model": {
+        "id": "gen-1728905394-hNuqLaN6RIpVoAkU7wYz",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905394,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "**CT Report:**\n\n**Patient Information:**\n\n* Name: [Not provided]\n* Age: [Not provided]\n* Sex: [Not provided]\n\n**Scan Details:**\n\n* Modality: CT Scan\n* Slice thickness: 5 mm\n* Reconstruction algorithm: Soft tissue window\n* Slice location: Axial\n\n**Findings:**\n\n* A large, well-defined, heterogeneous mass is observed in the left cerebral hemisphere.\n* The mass measures approximately 6 x 5 x 4 cm in size.\n* The mass is isodense to hyperdense compared to the surrounding brain parenchyma.\n* The mass exhibits heterogeneous enhancement with contrast administration.\n* The mass is causing significant mass effect, with midline shift to the right and compression of the left lateral ventricle.\n* There is also evidence of hydrocephalus, with dilatation of the temporal horns and trigone of the lateral ventricles.\n* The mass is located in the region of the left frontal lobe, near the motor cortex.\n* There is no evidence of calcification or hemorrhage within the mass.\n\n**Impression:**\n\n* The findings are consistent with a large, potentially malignant brain tumor, likely a glioblastoma multiforme (GBM).\n* Further diagnostic workup, including MRI and biopsy, is recommended to confirm the diagnosis and determine the extent of the tumor.\n\n**Recommendations:**\n\n* The patient should be referred to a neurosurgeon for possible surgical resection of the tumor.\n* The patient should also be referred to a medical oncologist for chemotherapy and radiation therapy.\n* Follow-up imaging should be performed to monitor the response to treatment and assess for any signs of recurrence.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6427,
+            "completion_tokens": 1,
+            "total_tokens": 6428
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:29:59"
+}

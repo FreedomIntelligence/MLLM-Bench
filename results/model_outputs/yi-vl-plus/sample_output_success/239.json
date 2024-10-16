@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F96tN5qXEAAot3X?format=png&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify the three rows that satisfy the selection requirement: item 1 (quantity 5), item 2 (quantity 3) and item 7 (quantity 4)\n2. Confirm total quantity is 5+3+4=12 for customer 3449 on 12/31/1996.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/239.png",
+    "unique_idx": "239",
+    "prompt": "From the Excel table in the image, what is the total quantity of products that customer 3449 bought on 12/31/1996?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 196,
+            "prompt_tokens": 1046,
+            "total_tokens": 1242
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To find the total quantity of products that customer 3449 bought on 12/31/1996, we need to sum up the quantities for this customer on this specific date. From the table, we can see two transactions for customer 3449 on 12/31/1996: one with product_id 869 with a quantity of 5 and another with product_id 1472 with a quantity of 3.\n\nQuantity for product_id 869 = 5\nQuantity for product_id 1472 = 3\n\nTotal quantity = Quantity of 869 + Quantity of 1472 = 5 + 3 = 8\n\nTherefore, customer 3449 bought a total quantity of 8 products on 12/31/1996."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "To find the total quantity of products that customer 3449 bought on 12/31/1996, we need to sum up the quantities for this customer on this specific date. From the table, we can see two transactions for customer 3449 on 12/31/1996: one with product_id 869 with a quantity of 5 and another with product_id 1472 with a quantity of 3.\n\nQuantity for product_id 869 = 5\nQuantity for product_id 1472 = 3\n\nTotal quantity = Quantity of 869 + Quantity of 1472 = 5 + 3 = 8\n\nTherefore, customer 3449 bought a total quantity of 8 products on 12/31/1996.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 15.520742177963257,
+    "code": 200,
+    "current_time": "2024-04-30 13:58:12"
+}

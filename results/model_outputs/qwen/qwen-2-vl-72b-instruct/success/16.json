@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://i.ytimg.com/vi/JDtgQCRj3aQ/maxresdefault.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer lists all Italian films: '8½', 'La Dolce Vita', 'La Strada', 'Boccaccio '70'.\n2. OCR accuracy: No misspellings or omissions of film titles.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/16.jpg",
+    "unique_idx": 16,
+    "prompt": "List all films from Italy in the image.",
+    "context": "List all films from Italy in the image.",
+    "sample_id": 16,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/16.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "The films from Italy listed in the image are:\n\n1. Boccaccio '70\n2. 8½ (Otto e Mezzo)\n3. La Strada",
+    "response_from_model": {
+        "id": "gen-1728907689-6bTM6l3QW8SbLYHcp7t9",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728907689,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The films from Italy listed in the image are:\n\n1. Boccaccio '70\n2. 8½ (Otto e Mezzo)\n3. La Strada",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 31,
+            "completion_tokens": 39,
+            "total_tokens": 70
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:08:11"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "387_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nBased on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nIn the image, one car is driving in front of another car, and they appear to be close to each other. Since the cars are driving in the same direction, it is difficult to predict their exact trajectories in the next few seconds, as they are situated in the middle of a road with buildings lining up. However, it is important for the drivers to be aware of their surroundings, maintain a safe distance from each other, and continuously check their blind spots to avoid any potential collision. To enhance safety, drivers can also slow down based on road conditions, use appropriate lighting (headlights, taillights, and turn signals), and follow any traffic rules or regulations to ensure a safe driving environment.\n~~~\n~~~Answer2\nBased on the image, we can see multiple vehicles driving in snowy, nighttime conditions with poor visibility. The trajectories of the vehicles appear to be converging, which could lead to a potential collision if not addressed.\n\nTo predict their trajectories and avoid collision:\n\n1. The vehicle in the foreground appears to be turning or veering slightly to the right. It's likely to continue on this curved path.\n\n2. The vehicle with bright headlights coming from the opposite direction seems to be maintaining a straight path.\n\n3. There's a third vehicle visible in the background, which appears to be following a straight path as well.\n\nTo avoid collision, drivers should:\n\n1. Slow down significantly. The snowy conditions and poor visibility make it crucial to reduce speed.\n\n2. Increase following distance to allow more reaction time.\n\n3. Use turn signals to clearly communicate intentions to other drivers.\n\n4. Stay in their lanes and avoid sudden movements or lane changes.\n\n5. Ensure all lights are on for maximum visibility to other drivers.\n\n6. Be prepared to brake gently, as sudden braking could cause skidding on the snowy surface.\n\n7. Focus intently on the road and surrounding vehicles, avoiding any distractions.\n\n8. If possible, the turning vehicle should complete its turn quickly to clear the intersection.\n\nOverall, extreme caution is necessary in these hazardous driving conditions. Drivers should prioritize maintaining a safe distance from other vehicles and be prepared to react to any sudden changes in traffic flow.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Predicted trajectories must consider vehicles' current motion and road conditions.\n2. Recommendations for avoiding collision should be specific and plausible.\n3. Answer must align with the action prediction capability and the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/387.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "claude-3-5-sonnet-20240620",
+    "raw_answer1": "In the image, one car is driving in front of another car, and they appear to be close to each other. Since the cars are driving in the same direction, it is difficult to predict their exact trajectories in the next few seconds, as they are situated in the middle of a road with buildings lining up. However, it is important for the drivers to be aware of their surroundings, maintain a safe distance from each other, and continuously check their blind spots to avoid any potential collision. To enhance safety, drivers can also slow down based on road conditions, use appropriate lighting (headlights, taillights, and turn signals), and follow any traffic rules or regulations to ensure a safe driving environment.",
+    "raw_answer2": "Based on the image, we can see multiple vehicles driving in snowy, nighttime conditions with poor visibility. The trajectories of the vehicles appear to be converging, which could lead to a potential collision if not addressed.\n\nTo predict their trajectories and avoid collision:\n\n1. The vehicle in the foreground appears to be turning or veering slightly to the right. It's likely to continue on this curved path.\n\n2. The vehicle with bright headlights coming from the opposite direction seems to be maintaining a straight path.\n\n3. There's a third vehicle visible in the background, which appears to be following a straight path as well.\n\nTo avoid collision, drivers should:\n\n1. Slow down significantly. The snowy conditions and poor visibility make it crucial to reduce speed.\n\n2. Increase following distance to allow more reaction time.\n\n3. Use turn signals to clearly communicate intentions to other drivers.\n\n4. Stay in their lanes and avoid sudden movements or lane changes.\n\n5. Ensure all lights are on for maximum visibility to other drivers.\n\n6. Be prepared to brake gently, as sudden braking could cause skidding on the snowy surface.\n\n7. Focus intently on the road and surrounding vehicles, avoiding any distractions.\n\n8. If possible, the turning vehicle should complete its turn quickly to clear the intersection.\n\nOverall, extreme caution is necessary in these hazardous driving conditions. Drivers should prioritize maintaining a safe distance from other vehicles and be prepared to react to any sudden changes in traffic flow.",
+    "response": {
+        "id": "chatcmpl-AIsvY9NS6Uq8zjcYsNNVoGOPAGUOL",
+        "object": "chat.completion",
+        "created": 1729064408,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1489,
+            "completion_tokens": 2,
+            "total_tokens": 1491
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.240099191665649,
+    "code": 200,
+    "current_time": "2024-10-16 15:40:09"
+}

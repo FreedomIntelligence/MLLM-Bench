@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2022/04/09/15/10/basketball-7121617_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer must state the basketball will \"fall\".\n2. Explanation should demonstrate understanding of the basketball's trajectory and gravity.\n3. Response must infer the action based on the position of the basketball relative to the hoop.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/209.jpg",
+    "unique_idx": "209",
+    "prompt": "Assuming this is a moment after someone made a shot, will the basketball rise or fall in the next second?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 12,
+            "prompt_tokens": 1032,
+            "total_tokens": 1044
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The basketball will fall in the next second due to gravity."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The basketball will fall in the next second due to gravity.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 4.273661375045776,
+    "code": 200,
+    "current_time": "2024-04-30 13:50:32"
+}

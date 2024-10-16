@@ -1,0 +1,35 @@
+{
+    "unique_idx": "283_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat occupation does the group of individuals in the picture collectively represent?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe group of individuals in the picture collectively represents seamstresses or garment workers. They are primarily female workers who are tasked with sewing clothes in a factory or workshop setting. They are working on various projects, and their work contributes to the production of clothing and other textile products. The presence of multiple sewing machines and numerous women indicates that they are part of a larger organization or factory, which focuses on manufacturing garments and other textile goods.\n~~~\n~~~Answer2\nGarment workers/Sewing machine operators.  The individuals are working with sewing machines in what appears to be a textile or garment factory. Therefore, they are most likely garment workers or sewing machine operators.\n\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Answer must specify the occupation as \"Cotton spinner.\"\n2. Response should logically associate the setting with textile production.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/283.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-pro-002",
+    "raw_answer1": "The group of individuals in the picture collectively represents seamstresses or garment workers. They are primarily female workers who are tasked with sewing clothes in a factory or workshop setting. They are working on various projects, and their work contributes to the production of clothing and other textile products. The presence of multiple sewing machines and numerous women indicates that they are part of a larger organization or factory, which focuses on manufacturing garments and other textile goods.",
+    "raw_answer2": "Garment workers/Sewing machine operators.  The individuals are working with sewing machines in what appears to be a textile or garment factory. Therefore, they are most likely garment workers or sewing machine operators.\n",
+    "response": {
+        "id": "chatcmpl-AIt5HBmUf2m2IrTr5zkXpc7DACcHF",
+        "object": "chat.completion",
+        "created": 1729065011,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1495,
+            "completion_tokens": 6,
+            "total_tokens": 1501
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "unable to decide: situation two"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "unable to decide: situation two",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 9.343008756637573,
+    "code": 200,
+    "current_time": "2024-10-16 15:50:12"
+}

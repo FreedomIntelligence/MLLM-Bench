@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://images.pexels.com/photos/3230214/pexels-photo-3230214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify and confirm the type of beverage as milk drinks directly below the temperature readout.\n2. Assess the VLM's understanding of spatial relationships between the readout and beverages.\n3. Verify the accuracy and relevance of the VLM's response to the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/203.jpg",
+    "unique_idx": 203,
+    "prompt": "In relation to the digital temperature readout at the top of the beverage cooler, which type of beverage is directly below it?",
+    "context": "In relation to the digital temperature readout at the top of the beverage cooler, which type of beverage is directly below it?",
+    "sample_id": 203,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/203.jpg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "The beverage directly below the digital temperature readout is a carton of milk.",
+    "response_from_model": {
+        "id": "gen-1728905435-rTitl6jvbgyaWShEooUP",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905435,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The beverage directly below the digital temperature readout is a carton of milk.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6440,
+            "completion_tokens": 1,
+            "total_tokens": 6441
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:30:36"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "18_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nDetermine the competition information in the picture, such as stage of the game, team information, etc.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nBased on the image, here's the competition information:\n\n1. Game: League of Legends\n2. Event: Worlds 2023 (League of Legends World Championship 2023)\n3. Stage of the game: Semifinals\n4. Match format: Best of 5\n5. Date: November 12\n6. Time: 4:00 PM PHT (Philippine Time)\n7. Teams competing:\n   - JD Gaming (JDG)\n   - T1\n8. The image shows the championship trophy at the bottom, indicating this is a high-stakes match in the tournament.\n9. The event seems to be branded with phrases like \"The Grind\" and \"The Glory,\" likely referring to the competitive nature of the tournament.\n\nThis appears to be a promotional image for a crucial semifinal match in the 2023 League of Legends World Championship, featuring two top teams competing for a spot in the finals.\n~~~\n~~~Answer2\nThe image displays a trophy sitting next to a TV screen, which is showing the scoreboard during a game. There are two teams playing in the game, as indicated by the presence of two logos or team names. The competition appears to be a tournament, as there is a suggestion of a series of games being played. The scoreboard indicates that \"JD Gaming\" is in the lead, while \"T1\" is trailing behind. The game seems to be at an advanced stage, with only a few minutes remaining. The trophy in the foreground adds to the competitive atmosphere of the scene.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm stage of game matches 'semifinals' and teams as 'JD Gaming' and 'T1'.\n2. Verify date and time accuracy with 'Nov. 12th, 4 p.m.' reference.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/18.jpg",
+    "model_1": "claude-3-5-sonnet-20240620",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "Based on the image, here's the competition information:\n\n1. Game: League of Legends\n2. Event: Worlds 2023 (League of Legends World Championship 2023)\n3. Stage of the game: Semifinals\n4. Match format: Best of 5\n5. Date: November 12\n6. Time: 4:00 PM PHT (Philippine Time)\n7. Teams competing:\n   - JD Gaming (JDG)\n   - T1\n8. The image shows the championship trophy at the bottom, indicating this is a high-stakes match in the tournament.\n9. The event seems to be branded with phrases like \"The Grind\" and \"The Glory,\" likely referring to the competitive nature of the tournament.\n\nThis appears to be a promotional image for a crucial semifinal match in the 2023 League of Legends World Championship, featuring two top teams competing for a spot in the finals.",
+    "raw_answer2": "The image displays a trophy sitting next to a TV screen, which is showing the scoreboard during a game. There are two teams playing in the game, as indicated by the presence of two logos or team names. The competition appears to be a tournament, as there is a suggestion of a series of games being played. The scoreboard indicates that \"JD Gaming\" is in the lead, while \"T1\" is trailing behind. The game seems to be at an advanced stage, with only a few minutes remaining. The trophy in the foreground adds to the competitive atmosphere of the scene.",
+    "response": {
+        "id": "chatcmpl-AIsrd7Njp9QzId4xeUDWKD6tfK5il",
+        "object": "chat.completion",
+        "created": 1729064165,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1366,
+            "completion_tokens": 2,
+            "total_tokens": 1368
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.096881151199341,
+    "code": 200,
+    "current_time": "2024-10-16 15:36:06"
+}

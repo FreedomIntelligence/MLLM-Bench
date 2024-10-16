@@ -1,0 +1,35 @@
+{
+    "unique_idx": "103_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nHow many monkeys are there in the image?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThere are lots of monkeys in the image, but exact number cannot be determined without seeing the image.\n~~~\n~~~Answer2\nThere are 20 monkeys in the image.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Answer must state exactly 21 monkeys are present.\n2. Include assessment of monkeys partially hidden or obscured.\n3. Ignore other objects; focus solely on identifying monkeys.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/103.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gpt-4o-mini-2024-07-18",
+    "raw_answer1": "There are lots of monkeys in the image, but exact number cannot be determined without seeing the image.",
+    "raw_answer2": "There are 20 monkeys in the image.",
+    "response": {
+        "id": "chatcmpl-AItACzuLg6OpzZP8aL3THmuqjWrs5",
+        "object": "chat.completion",
+        "created": 1729065316,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1064,
+            "completion_tokens": 2,
+            "total_tokens": 1066
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 94.01390767097473,
+    "code": 200,
+    "current_time": "2024-10-16 15:55:16"
+}

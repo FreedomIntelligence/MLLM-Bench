@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Emotion Understanding",
+        "url": "https://pbs.twimg.com/media/F-fvoUBbkAAZnv2?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the answer accurately reflects the emotion of the figure in the image as loneliness, or similar.\n2. Check for the inclusion of body language cues, like posture or facial expression.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/121.jpeg",
+    "unique_idx": "121",
+    "prompt": "Determine the emotion conveyed by the image.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The image depicts a person seated on the floor with their head bowed down and arms wrapped around their legs, suggesting a posture of distress, sadness, or loneliness. The presence of a dark shadow leaning over the person might symbolize a feeling of being overwhelmed, sadness, or the presence of a metaphorical or emotional burden. The overall emotion conveyed by the image is one of melancholy or despair.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426643,
+        "id": "chatcmpl-9W3PfsXHX4D5BLHEvQTwtqaUFaMIi",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 79,
+            "prompt_tokens": 781,
+            "total_tokens": 860
+        }
+    },
+    "answer": "The image depicts a person seated on the floor with their head bowed down and arms wrapped around their legs, suggesting a posture of distress, sadness, or loneliness. The presence of a dark shadow leaning over the person might symbolize a feeling of being overwhelmed, sadness, or the presence of a metaphorical or emotional burden. The overall emotion conveyed by the image is one of melancholy or despair.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 8.07069706916809,
+    "code": 200,
+    "current_time": "2024-06-03 22:57:26"
+}

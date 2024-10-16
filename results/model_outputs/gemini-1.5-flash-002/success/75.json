@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Scene Understanding",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify educational activity (lecture, workshop, etc.) and verify presence of instructional materials (whiteboard, digital screen).\n2. Determine the subject being taught (mathematics, science, etc.) based on visible content (equations, diagrams).\n3. Evaluate clarity in describing the setting and participants' roles (teacher, students).",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/75.jpeg",
+    "unique_idx": 75,
+    "prompt": " Infer the type of educational activity taking place and its subject.",
+    "context": " Infer the type of educational activity taking place and its subject.",
+    "sample_id": 75,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/75.jpeg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "The image shows a small group of students in what appears to be a tutoring session or small class.  The subject is linear algebra, as evidenced by the matrix equations written on the whiteboards.",
+    "response_from_model": {
+        "id": "chatcmpl-cc3ee5cb3a014eebae405cf6bbadbb92",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897122,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image shows a small group of students in what appears to be a tutoring session or small class.  The subject is linear algebra, as evidenced by the matrix equations written on the whiteboards."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 271,
+            "completion_tokens": 39,
+            "total_tokens": 310
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:18"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "279_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nAnalyzing the pairwise relationships between all characters in the diagram.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nIn the image, three people are standing together, possibly celebrating a birthday or a special occasion. The woman and two kids are holding up cow-shaped and possibly horse-shaped hats, which could be part of a party theme or decoration. The pairwise relationships between the characters are as follows:\n\n1. The woman is standing in the middle.\n2. The two kids are on either side of her, with one on her left and the other on her right.\n\nThese three people create a cohesive group, likely enjoying a fun and memorable event together.\n~~~\n~~~Answer2\nThe image shows three people, presumably a mother and two children, posing for a photo. They are holding and wearing character masks from the children's show Peppa Pig.\n\n* **Mother & Older Child:** The mother has her arm around the older child (boy), showing a close and affectionate relationship.\n* **Mother & Younger Child:**  The mother is also close to the younger child (girl), although there's no direct physical contact in this specific pose.  The positioning suggests a family unit.\n* **Older Child & Younger Child:** They are standing next to each other, implying a sibling relationship. While there's no direct interaction shown in the photo, their proximity suggests they are comfortable with each other.\n\nOverall, the picture depicts a warm and happy family enjoying a lighthearted moment together. The use of the Peppa Pig masks indicates a shared interest in children's entertainment, further highlighting their family bond.\n\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and describe the relationship in a pairwise fashion.\n2. Use social cues like body language, attire, and props for reasoning.\n3. Avoid definitive statements of the relationships.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/279.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-pro-002",
+    "raw_answer1": "In the image, three people are standing together, possibly celebrating a birthday or a special occasion. The woman and two kids are holding up cow-shaped and possibly horse-shaped hats, which could be part of a party theme or decoration. The pairwise relationships between the characters are as follows:\n\n1. The woman is standing in the middle.\n2. The two kids are on either side of her, with one on her left and the other on her right.\n\nThese three people create a cohesive group, likely enjoying a fun and memorable event together.",
+    "raw_answer2": "The image shows three people, presumably a mother and two children, posing for a photo. They are holding and wearing character masks from the children's show Peppa Pig.\n\n* **Mother & Older Child:** The mother has her arm around the older child (boy), showing a close and affectionate relationship.\n* **Mother & Younger Child:**  The mother is also close to the younger child (girl), although there's no direct physical contact in this specific pose.  The positioning suggests a family unit.\n* **Older Child & Younger Child:** They are standing next to each other, implying a sibling relationship. While there's no direct interaction shown in the photo, their proximity suggests they are comfortable with each other.\n\nOverall, the picture depicts a warm and happy family enjoying a lighthearted moment together. The use of the Peppa Pig masks indicates a shared interest in children's entertainment, further highlighting their family bond.\n",
+    "response": {
+        "id": "chatcmpl-AIt56nGWuj4SruT9Spy6sXGDajrWB",
+        "object": "chat.completion",
+        "created": 1729065000,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1368,
+            "completion_tokens": 2,
+            "total_tokens": 1370
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.751932382583618,
+    "code": 200,
+    "current_time": "2024-10-16 15:50:01"
+}

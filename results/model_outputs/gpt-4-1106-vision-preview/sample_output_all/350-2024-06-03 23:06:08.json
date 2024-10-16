@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Fake Image Detection",
+        "url": "https://sdxl-h-p-6.stablediffusionweb.com/file=/tmp/gradio/cfcc2e54305bdb0a86301cb2636e11d59f527263/image.png",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Confirm if the answer identifies the figure as AI-generated.\n2. Evaluate the explanation of visual indicators that support the AI-generated conclusion.\n3. Check for mention of any inconsistencies or artifacts typically found in AI-generated images.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/350.webp",
+    "unique_idx": "350",
+    "prompt": "Does this photograph represent a real individual or an AI-generated figure? ",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The image provided appears to be an AI-generated figure. The presence of the watermark \"https://stablediffusionweb\" suggests that the image was created using an AI model associated with Stable Diffusion, which is a popular AI image generation model. The figure in the image exhibits a high level of detail and realism, which is characteristic of AI-generated images created by advanced generative models.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717427165,
+        "id": "chatcmpl-9W3Y5svADssPr54rjFUnYZFQd2k2t",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 78,
+            "prompt_tokens": 816,
+            "total_tokens": 894
+        }
+    },
+    "answer": "The image provided appears to be an AI-generated figure. The presence of the watermark \"https://stablediffusionweb\" suggests that the image was created using an AI model associated with Stable Diffusion, which is a popular AI image generation model. The figure in the image exhibits a high level of detail and realism, which is characteristic of AI-generated images created by advanced generative models.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 7.291832685470581,
+    "code": 200,
+    "current_time": "2024-06-03 23:06:08"
+}

@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Document Understanding",
+        "url": "https://pbs.twimg.com/media/F8kswFXXsAUTKhx?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Include LaTeX equation for 2-stock portfolio variance, which is \u000bar(R_p) = w_A^2 \\cdot \\sigma^2(R_A) + w_B^2 \\cdot \\sigma^2(R_B) + 2w_Aw_B\\sigma(R_A)\\sigma(R_B)\rho(R_A, R_B)",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/160.jpeg",
+    "unique_idx": "160",
+    "prompt": "What is the equation for calculating the variance of 2-stock portfolio according to the quick sheet. Write in LaTeX formula.",
+    "response": {
+        "id": "chatcmpl-9OkhIBgIMssj4MAl3WVam3If2RQYN",
+        "object": "chat.completion",
+        "created": 1715686404,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The equation for calculating the variance of a 2-stock portfolio according to the quick sheet is:\n\n\\[ \\text{var}(R_p) = w_A^2 \\sigma_A^2 + w_B^2 \\sigma_B^2 + 2w_A w_B \\text{Cov}(R_A, R_B) \\]\n\nwhere:\n- \\( w_A \\) and \\( w_B \\) are the weights of stock A and stock B in the portfolio, respectively.\n- \\( \\sigma_A^2 \\) and \\( \\sigma_B^2 \\) are the variances of stock A and stock B, respectively.\n- \\( \\text{Cov}(R_A, R_B) \\) is the covariance between the returns of stock A and stock B."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1478,
+            "completion_tokens": 156,
+            "total_tokens": 1634
+        },
+        "system_fingerprint": "fp_927397958d"
+    },
+    "answer": "The equation for calculating the variance of a 2-stock portfolio according to the quick sheet is:\n\n\\[ \\text{var}(R_p) = w_A^2 \\sigma_A^2 + w_B^2 \\sigma_B^2 + 2w_A w_B \\text{Cov}(R_A, R_B) \\]\n\nwhere:\n- \\( w_A \\) and \\( w_B \\) are the weights of stock A and stock B in the portfolio, respectively.\n- \\( \\sigma_A^2 \\) and \\( \\sigma_B^2 \\) are the variances of stock A and stock B, respectively.\n- \\( \\text{Cov}(R_A, R_B) \\) is the covariance between the returns of stock A and stock B.",
+    "gen_model_id": "gpt-4o-2024-05-13",
+    "duration": 14.035129070281982,
+    "code": 200,
+    "current_time": "2024-05-14 19:33:26"
+}

@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/Eg4Hv0BUMAE0xCV?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Code must generate a bar chart with two bars per country, matching colors and labels.\n2. Bars must reflect the correct numerical values and country order from the image.\n3. Include source label and chart title as displayed in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/373.jpeg",
+    "unique_idx": "373",
+    "prompt": "You are now required to write a Python code based on an image to replicate the data image in the picture as closely as possible.",
+    "response": {
+        "id": "chatcmpl-9OkmUPDuSH1MCvEA4fGmjvCnKerM5",
+        "object": "chat.completion",
+        "created": 1715686726,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, here is a Python code using `matplotlib` to replicate the bar chart shown in the image:\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Data\ncountries = ['Spain', 'France', 'U.K.', 'Italy', 'Mexico', 'Portugal', 'Euro.Ag', 'Hong Kong', 'Philippines', \n             'Belgium', 'Malaysia', 'Austria', 'Thailand', 'Chile', 'Singapore', 'Germany', 'Czech Republic', \n             'Japan', 'Hungary', 'Cyprus', 'Netherlands', 'U.S.', 'Russia', 'Colombia', 'Poland', 'Norway', \n             'China', 'Indonesia', 'South Korea', 'Taiwan', 'Vietnam']\n\nq2_growth = [-22, -19, -22, -17, -19, -16, -16, -9, -15, -16, -17, -12, -13, -14, -12, -11, -10, -10, -14, -10, -12, -9, -10, -9, -8, -5, -2, -5, -3, -1, 1]\nh1_growth = [-13, -12, -12, -11, -10, -10, -9, -9, -8, -8, -8, -7, -7, -6, -6, -6, -6, -6, -6, -6, -5, -5, -5, -3, -3, 3, 1, 0, -1, -1, 2]\n\nx = np.arange(len(countries))  # the label locations\nwidth = 0.35  # the width of the bars\n\nfig, ax = plt.subplots(figsize=(14, 7))\nrects1 = ax.bar(x - width/2, q2_growth, width, label='2020 Q2', color='gray')\nrects2 = ax.bar(x + width/2, h1_growth, width, label='2020 H1', color='purple')\n\n# Add some text for labels, title and custom x-axis tick labels, etc.\nax.set_ylabel('Growth (%)')\nax.set_title('Global growth in first half 2020')\nax.set_xticks(x)\nax.set_xticklabels(countries, rotation=90)\nax.legend()\n\n# Function to add labels on bars\ndef autolabel(rects):\n    \"\"\"Attach a text label above each bar in *rects*, displaying its height.\"\"\"\n    for rect in rects:\n        height = rect.get_height()\n        ax.annotate('{}'.format(height),\n                    xy=(rect.get_x() + rect.get_width() / 2, height),\n                    xytext=(0, 3),  # 3 points vertical offset\n                    textcoords=\"offset points\",\n                    ha='center', va='bottom')\n\nautolabel(rects1)\nautolabel(rects2)\n\nfig.tight_layout()\n\n# Adding Source text\nplt.figtext(0.1, -0.1, 'Source: Bloomberg, @trinhomics', wrap=True, horizontalalignment='left', fontsize=10)\n\nplt.show()\n```\n\nThis code will create a bar chart similar to the one in the image, with the countries on the x-axis and the growth percentages for 2020 Q2 and 2020 H1 on the y-axis. The bars are color-coded to match the original chart, with labels and a source note included."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1138,
+            "completion_tokens": 740,
+            "total_tokens": 1878
+        },
+        "system_fingerprint": "fp_927397958d"
+    },
+    "answer": "Sure, here is a Python code using `matplotlib` to replicate the bar chart shown in the image:\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Data\ncountries = ['Spain', 'France', 'U.K.', 'Italy', 'Mexico', 'Portugal', 'Euro.Ag', 'Hong Kong', 'Philippines', \n             'Belgium', 'Malaysia', 'Austria', 'Thailand', 'Chile', 'Singapore', 'Germany', 'Czech Republic', \n             'Japan', 'Hungary', 'Cyprus', 'Netherlands', 'U.S.', 'Russia', 'Colombia', 'Poland', 'Norway', \n             'China', 'Indonesia', 'South Korea', 'Taiwan', 'Vietnam']\n\nq2_growth = [-22, -19, -22, -17, -19, -16, -16, -9, -15, -16, -17, -12, -13, -14, -12, -11, -10, -10, -14, -10, -12, -9, -10, -9, -8, -5, -2, -5, -3, -1, 1]\nh1_growth = [-13, -12, -12, -11, -10, -10, -9, -9, -8, -8, -8, -7, -7, -6, -6, -6, -6, -6, -6, -6, -5, -5, -5, -3, -3, 3, 1, 0, -1, -1, 2]\n\nx = np.arange(len(countries))  # the label locations\nwidth = 0.35  # the width of the bars\n\nfig, ax = plt.subplots(figsize=(14, 7))\nrects1 = ax.bar(x - width/2, q2_growth, width, label='2020 Q2', color='gray')\nrects2 = ax.bar(x + width/2, h1_growth, width, label='2020 H1', color='purple')\n\n# Add some text for labels, title and custom x-axis tick labels, etc.\nax.set_ylabel('Growth (%)')\nax.set_title('Global growth in first half 2020')\nax.set_xticks(x)\nax.set_xticklabels(countries, rotation=90)\nax.legend()\n\n# Function to add labels on bars\ndef autolabel(rects):\n    \"\"\"Attach a text label above each bar in *rects*, displaying its height.\"\"\"\n    for rect in rects:\n        height = rect.get_height()\n        ax.annotate('{}'.format(height),\n                    xy=(rect.get_x() + rect.get_width() / 2, height),\n                    xytext=(0, 3),  # 3 points vertical offset\n                    textcoords=\"offset points\",\n                    ha='center', va='bottom')\n\nautolabel(rects1)\nautolabel(rects2)\n\nfig.tight_layout()\n\n# Adding Source text\nplt.figtext(0.1, -0.1, 'Source: Bloomberg, @trinhomics', wrap=True, horizontalalignment='left', fontsize=10)\n\nplt.show()\n```\n\nThis code will create a bar chart similar to the one in the image, with the countries on the x-axis and the growth percentages for 2020 Q2 and 2020 H1 on the y-axis. The bars are color-coded to match the original chart, with labels and a source note included.",
+    "gen_model_id": "gpt-4o-2024-05-13",
+    "duration": 11.77457308769226,
+    "code": 200,
+    "current_time": "2024-05-14 19:38:54"
+}

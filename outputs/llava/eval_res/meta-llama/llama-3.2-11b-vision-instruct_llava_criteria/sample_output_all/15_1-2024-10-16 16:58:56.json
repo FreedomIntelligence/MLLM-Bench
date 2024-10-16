@@ -1,0 +1,35 @@
+{
+    "unique_idx": "15_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nSolve the problem in the image and provide a detailed explanation.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe image features a piece of paper with handwritten text describing the movements of people at a zoo. It appears to be a timeline or a summary of people's visits to the zoo. The paper contains several times, such as 11:30 and 7:30, along with numbers of people visiting at these times. Additionally, there is a question at the end of the text that appears to be related to the overall content. Based on the information available, it's difficult to provide a more detailed explanation without additional context.\n~~~\n~~~Answer2\nThere are 5 people at the zoo at 9:00.\nThen, at 11:00, 4 people come.\nSo, there are 5 + 4 = 9 people at the zoo.\nAt noon, 7 people come.\nSo, there are 9 + 7 = 16 people at the zoo now.\n#### 16\nThe answer is: 16\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Correctly transcribe the handwritten text, including numbers and words.\n2. Accurately solve the arithmetic problem presented in the text, whose answer is 16.\n3. Provide a clear explanation of the steps taken to reach the solution.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/15.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "meta-llama/llama-3.2-11b-vision-instruct",
+    "raw_answer1": "The image features a piece of paper with handwritten text describing the movements of people at a zoo. It appears to be a timeline or a summary of people's visits to the zoo. The paper contains several times, such as 11:30 and 7:30, along with numbers of people visiting at these times. Additionally, there is a question at the end of the text that appears to be related to the overall content. Based on the information available, it's difficult to provide a more detailed explanation without additional context.",
+    "raw_answer2": "There are 5 people at the zoo at 9:00.\nThen, at 11:00, 4 people come.\nSo, there are 5 + 4 = 9 people at the zoo.\nAt noon, 7 people come.\nSo, there are 9 + 7 = 16 people at the zoo now.\n#### 16\nThe answer is: 16",
+    "response": {
+        "id": "chatcmpl-AIu9nwTXkVUsuoMViDX2IQ68dmRzk",
+        "object": "chat.completion",
+        "created": 1729069135,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1580,
+            "completion_tokens": 2,
+            "total_tokens": 1582
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.316025733947754,
+    "code": 200,
+    "current_time": "2024-10-16 16:58:56"
+}

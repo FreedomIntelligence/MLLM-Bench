@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "https://savvytokyo.scdn3.secure.raxcdn.com/app/uploads/2018/09/IMG_0133-1024x570.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and transcribe the section labeled \"D1\" in Japanese accurately.\n2. Provide translation of \"D1\" section into English, relevant to health assessment context.\n3. Advise based on \"D1\" section if one's electrocardiogram result is D1.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/66.jpg",
+    "unique_idx": "66",
+    "prompt": "この画像は健康診断結果報告書の評価基準を示しています。もし私の心電図の結果がD1だった場合、私はどうすればいいですか?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 134,
+            "prompt_tokens": 1073,
+            "total_tokens": 1207
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "D1（要治療）の評価基準は「治療が必要な疾患を認めます。当該医療機関の受診をお勧めします。」とされています。つまり、この結果は、患者が治療を受ける必要があることを示しています。そのため、患者は当該医療機関で受診を受けることをお勧めします。"
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "D1（要治療）の評価基準は「治療が必要な疾患を認めます。当該医療機関の受診をお勧めします。」とされています。つまり、この結果は、患者が治療を受ける必要があることを示しています。そのため、患者は当該医療機関で受診を受けることをお勧めします。",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 11.039581060409546,
+    "code": 200,
+    "current_time": "2024-04-30 13:12:24"
+}

@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://www.researchgate.net/publication/351673709/figure/fig5/AS:11431281086060493@1664071372500/Comparison-between-full-dose-CT-images-and-low-quality-CT-images-a-and-b-high-quality.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and confirm that CT scans (c) and (d) are the ones needing a redo.\n2. Assess clarity, noise, and artifacts affecting image quality in (c) and (d).",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/321.png",
+    "unique_idx": "321",
+    "prompt": "Which of the CT scan needs a redo?",
+    "response": {
+        "id": "chatcmpl-msg0126MQuEUyDftUBeo8ZDpnNC",
+        "model": "claude-3-5-sonnet-20240620",
+        "object": "chat.completion",
+        "created": 1723564873,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the image provided, the CT scans that likely need a redo are (c) and (d). These images appear to be of much lower quality compared to (a) and (b).\n\nImages (c) and (d) are blurry, lack detail, and have poor contrast, making it difficult to distinguish anatomical structures clearly. This level of image quality would likely be insufficient for accurate medical diagnosis or analysis.\n\nIn contrast, images (a) and (b) are clear, sharp, and show good contrast between different tissues and organs. These appear to be of diagnostic quality and likely do not need to be redone.\n\nThe difference in quality suggests that scans (c) and (d) may have been affected by patient movement, technical issues with the CT scanner, or problems with image reconstruction. These would be the scans that a radiologist or technician would likely flag for repeating to obtain better diagnostic images."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 764,
+            "completion_tokens": 199,
+            "total_tokens": 963
+        }
+    },
+    "answer": "Based on the image provided, the CT scans that likely need a redo are (c) and (d). These images appear to be of much lower quality compared to (a) and (b).\n\nImages (c) and (d) are blurry, lack detail, and have poor contrast, making it difficult to distinguish anatomical structures clearly. This level of image quality would likely be insufficient for accurate medical diagnosis or analysis.\n\nIn contrast, images (a) and (b) are clear, sharp, and show good contrast between different tissues and organs. These appear to be of diagnostic quality and likely do not need to be redone.\n\nThe difference in quality suggests that scans (c) and (d) may have been affected by patient movement, technical issues with the CT scanner, or problems with image reconstruction. These would be the scans that a radiologist or technician would likely flag for repeating to obtain better diagnostic images.",
+    "gen_model_id": "claude-3-5-sonnet-20240620",
+    "duration": 9.870987176895142,
+    "code": 200,
+    "current_time": "2024-08-14 00:01:13"
+}

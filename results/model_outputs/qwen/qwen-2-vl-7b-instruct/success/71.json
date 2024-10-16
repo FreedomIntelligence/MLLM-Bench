@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Scene Understanding",
+        "url": "https://pbs.twimg.com/media/GAJXveUaEAAd7Y9?format=jpg&name=large",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify traffic accident as the cause of the jam.\n2. Mention visible collision damage or road blockage.\n3. Describe the presence of emergency services or responders.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/71.jpeg",
+    "unique_idx": 71,
+    "prompt": "what is the cause of the traffic jam in the image?",
+    "context": "what is the cause of the traffic jam in the image?",
+    "sample_id": 71,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/71.jpeg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The cause of the traffic jam in the image appears to be a car accident. In the center of the road, there is a damaged car and several people gathered around it, which suggests that a collision has occurred. The presence of a police van also indicates that law enforcement is on the scene to manage the situation and clear the road.",
+    "response_from_model": {
+        "id": "gen-1728903381-j8kVDRee9Ibj4Xmk7IHL",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903381,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The cause of the traffic jam in the image appears to be a car accident. In the center of the road, there is a damaged car and several people gathered around it, which suggests that a collision has occurred. The presence of a police van also indicates that law enforcement is on the scene to manage the situation and clear the road.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 34,
+            "completion_tokens": 69,
+            "total_tokens": 103
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-18:56:25"
+}

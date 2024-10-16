@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Damage Evaluation",
+        "url": "https://images.unsplash.com/photo-1609529669235-c07e4e1bd6e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJva2VuJTIwcGhvbmV8ZW58MHx8MHx8fDI%3D",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify visible damage, such as cracks or breaks, and assess impact on phone functionality.\n2. Confirm if the phone's damage renders it unusable without repair, as the answer is that the phone is not usable.\n3. Evaluate if any part of the phone appears intact, suggesting possible usability.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/333.jpg",
+    "unique_idx": 333,
+    "prompt": "Evaluate the extent of damage on the phone and examine if the phone is usable without repair.",
+    "context": "Evaluate the extent of damage on the phone and examine if the phone is usable without repair.",
+    "sample_id": 333,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/333.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "The iPhone pictured has sustained significant damage to its rear glass casing.  A large portion of the glass is shattered and cracked, with some pieces appearing to be missing.  The damage extends to the upper right corner, where the frame appears to be compromised.  Internal components may also be damaged.\n\nThe phone is **not usable without repair**.  The extent of the damage makes it highly likely that the phone's internal components are affected, and the cracked glass leaves it vulnerable to further damage.  Attempting to use the phone in its current state risks further damage and potential safety hazards.  Repair, likely involving a complete back glass replacement, is necessary.\n",
+    "response_from_model": {
+        "id": "chatcmpl-bb8c1a0aecf840a899beb2ec692b0f83",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897177,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The iPhone pictured has sustained significant damage to its rear glass casing.  A large portion of the glass is shattered and cracked, with some pieces appearing to be missing.  The damage extends to the upper right corner, where the frame appears to be compromised.  Internal components may also be damaged.\n\nThe phone is **not usable without repair**.  The extent of the damage makes it highly likely that the phone's internal components are affected, and the cracked glass leaves it vulnerable to further damage.  Attempting to use the phone in its current state risks further damage and potential safety hazards.  Repair, likely involving a complete back glass replacement, is necessary.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 277,
+            "completion_tokens": 134,
+            "total_tokens": 411
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:13:14"
+}

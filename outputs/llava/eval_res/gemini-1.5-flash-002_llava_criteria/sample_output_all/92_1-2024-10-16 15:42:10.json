@@ -1,0 +1,35 @@
+{
+    "unique_idx": "92_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nDescribe the main topic of the image, and assign a proper hashtag for this image.\n~~~\n~~~Question Type\ncompound\n~~~\n~~~Answer1\nThe image shows a series of four different photos of a man holding a large broom. In each frame, the man's appearance changes, including the size of the broom, the man's attire, and the overall setting. The hashtag for this image would be #largebroomseries.\n~~~\n~~~Answer2\nHere's a description of the image and a suggested hashtag:\n\n**Description:** The image is a humorous four-panel collage.  The top two panels show a person holding a broom in front of their face, creating a comedic effect. The bottom left panel shows the same person dressed in a makeshift Viking costume using household items, including a metal bowl as a helmet and the broom as hair. The bottom right panel shows an animated Viking character with similar long hair/beard. The overall theme is a funny comparison between a regular broom and a Viking's hair/beard, using creative costuming.\n\n\n**Hashtag:** #BroomVikingCosplay\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify if the response describes the image as related to cosplay.\n2. Check for an appropriate hashtag that resonates with the image's cosplay theme.\n3. Evaluate the relevance and accuracy of the main topic description.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/92.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-flash-002",
+    "raw_answer1": "The image shows a series of four different photos of a man holding a large broom. In each frame, the man's appearance changes, including the size of the broom, the man's attire, and the overall setting. The hashtag for this image would be #largebroomseries.",
+    "raw_answer2": "Here's a description of the image and a suggested hashtag:\n\n**Description:** The image is a humorous four-panel collage.  The top two panels show a person holding a broom in front of their face, creating a comedic effect. The bottom left panel shows the same person dressed in a makeshift Viking costume using household items, including a metal bowl as a helmet and the broom as hair. The bottom right panel shows an animated Viking character with similar long hair/beard. The overall theme is a funny comparison between a regular broom and a Viking's hair/beard, using creative costuming.\n\n\n**Hashtag:** #BroomVikingCosplay",
+    "response": {
+        "id": "chatcmpl-AIsxVCQUPSzIutWhHWjXI0qkdxm6H",
+        "object": "chat.completion",
+        "created": 1729064529,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1272,
+            "completion_tokens": 2,
+            "total_tokens": 1274
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 9.570527791976929,
+    "code": 200,
+    "current_time": "2024-10-16 15:42:10"
+}

@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Image Quality Evaluation",
+        "url": "https://cdn.wccftech.com/wp-content/uploads/2017/02/Google-brain.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe the progression of image quality from left to right in each row.\n2. Confirm the presence of human faces in varying resolutions and clarity in the image.\n3. Assess if the description includes changes in detail and recognizability.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/323.jpg",
+    "unique_idx": 323,
+    "prompt": "What happened to each row of the image from left to right?",
+    "context": "What happened to each row of the image from left to right?",
+    "sample_id": 323,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/323.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "The first row of the image is blurred, the second row is pixelated, the third row is not blurred, and the fourth row is not pixelated.",
+    "response_from_model": {
+        "id": "gen-1728908164-PxpyF4ZdpBrgeYM87h8b",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728908164,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The first row of the image is blurred, the second row is pixelated, the third row is not blurred, and the fourth row is not pixelated.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 35,
+            "completion_tokens": 34,
+            "total_tokens": 69
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:16:06"
+}

@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://thumbs.dreamstime.com/b/car-accident-two-cars-crashed-city-road-intentional-motion-blur-141839362.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Predicted trajectories must consider vehicles' current motion and road conditions.\n2. Recommendations for avoiding collision should be specific and plausible.\n3. Answer must align with the action prediction capability and the given instruction.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/387.jpeg",
+    "unique_idx": "387",
+    "prompt": "Based on the current motion of the vehicles, predict their trajectories in the next few seconds. What can drivers do to avoid collision?",
+    "response": {
+        "id": "chatcmpl-9vo9KjWttba24ujv0W1H8Jrgcft74",
+        "object": "chat.completion",
+        "created": 1723564498,
+        "model": "gpt-4o-2024-08-06",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "I can't predict the exact trajectories of the vehicles, but I can suggest general safety measures to avoid collisions, especially in snowy conditions:\n\n1. **Slow Down:** Reduce speed to increase reaction time and control.\n2. **Increase Following Distance:** Leave more space between vehicles to allow for safe stopping.\n3. **Avoid Sudden Movements:** Make gentle turns and gradual stops to prevent skidding.\n4. **Use Headlights:** Ensure visibility for yourself and others.\n5. **Stay Alert:** Keep an eye on the surroundings and anticipate other drivers' actions.\n\nIf a collision seems imminent, steering to the side and braking gently might help avoid or lessen the impact.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 798,
+            "completion_tokens": 133,
+            "total_tokens": 931
+        },
+        "system_fingerprint": "fp_baa7103b2c"
+    },
+    "answer": "I can't predict the exact trajectories of the vehicles, but I can suggest general safety measures to avoid collisions, especially in snowy conditions:\n\n1. **Slow Down:** Reduce speed to increase reaction time and control.\n2. **Increase Following Distance:** Leave more space between vehicles to allow for safe stopping.\n3. **Avoid Sudden Movements:** Make gentle turns and gradual stops to prevent skidding.\n4. **Use Headlights:** Ensure visibility for yourself and others.\n5. **Stay Alert:** Keep an eye on the surroundings and anticipate other drivers' actions.\n\nIf a collision seems imminent, steering to the side and braking gently might help avoid or lessen the impact.",
+    "gen_model_id": "gpt-4o-2024-08-06",
+    "duration": 4.598814249038696,
+    "code": 200,
+    "current_time": "2024-08-13 23:55:00"
+}

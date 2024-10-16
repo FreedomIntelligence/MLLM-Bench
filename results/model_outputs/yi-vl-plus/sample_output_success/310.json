@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Visual Math Reasoning",
+        "url": "https://i.stack.imgur.com/VYw8J.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correct identification of triangles PQR, PUS, PUQ, and PSR in the image.\n2. Application of congruence criteria to prove PUQ ≅ PSR.\n3. Explanation includes reasoning based on properties of equilateral triangles.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/310.jpeg",
+    "unique_idx": "310",
+    "prompt": "Solve the problem 11 in the image.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 345,
+            "prompt_tokens": 1020,
+            "total_tokens": 1365
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To solve problem 11, we need to prove that triangle PUQ is congruent to triangle PSR.\n\nSince triangles PQR and PUS are both equilateral, all sides of these triangles are equal. Therefore, we can say that PQ = PU and QR = US.\n\nNow, we need to show that one pair of corresponding angles is equal and that the non-corresponding sides of the triangles are proportional.\n\nFrom the diagram, we can see that PU is a common side to both triangles, so angle P is a common angle for both triangles. Therefore, angle PUQ ~ angle PSR (they are angles at the same point and between the same lines).\n\nNext, we need to show that the sides PU and PS are proportional to the sides PQ and QR. Since PU = PQ (both are sides of the equilateral triangle PQR) and PS = QR (both are sides of the equilateral triangle PUS), we can write:\n\nPU / PS = PQ / QR = 1\n\nThis shows that the sides of the triangles are proportional.\n\nFinally, we need to show that there is at least one pair of corresponding sides that are equal. Since PU is a common side to both triangles and is equal to PQ, we have PU = PQ.\n\nTherefore, we have shown that one pair of corresponding sides is equal, the non-corresponding sides are proportional, and there is a pair of corresponding angles that are equal. This is enough to prove that triangle PUQ is congruent to triangle PSR by the Side-Side-Side (SSS) Congruence Postulate."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "To solve problem 11, we need to prove that triangle PUQ is congruent to triangle PSR.\n\nSince triangles PQR and PUS are both equilateral, all sides of these triangles are equal. Therefore, we can say that PQ = PU and QR = US.\n\nNow, we need to show that one pair of corresponding angles is equal and that the non-corresponding sides of the triangles are proportional.\n\nFrom the diagram, we can see that PU is a common side to both triangles, so angle P is a common angle for both triangles. Therefore, angle PUQ ~ angle PSR (they are angles at the same point and between the same lines).\n\nNext, we need to show that the sides PU and PS are proportional to the sides PQ and QR. Since PU = PQ (both are sides of the equilateral triangle PQR) and PS = QR (both are sides of the equilateral triangle PUS), we can write:\n\nPU / PS = PQ / QR = 1\n\nThis shows that the sides of the triangles are proportional.\n\nFinally, we need to show that there is at least one pair of corresponding sides that are equal. Since PU is a common side to both triangles and is equal to PQ, we have PU = PQ.\n\nTherefore, we have shown that one pair of corresponding sides is equal, the non-corresponding sides are proportional, and there is a pair of corresponding angles that are equal. This is enough to prove that triangle PUQ is congruent to triangle PSR by the Side-Side-Side (SSS) Congruence Postulate.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 25.79466986656189,
+    "code": 200,
+    "current_time": "2024-04-30 14:14:43"
+}

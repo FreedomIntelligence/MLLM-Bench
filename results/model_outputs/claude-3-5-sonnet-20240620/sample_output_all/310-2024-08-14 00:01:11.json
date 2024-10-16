@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Visual Math Reasoning",
+        "url": "https://i.stack.imgur.com/VYw8J.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Correct identification of triangles PQR, PUS, PUQ, and PSR in the image.\n2. Application of congruence criteria to prove PUQ ≅ PSR.\n3. Explanation includes reasoning based on properties of equilateral triangles.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/310.jpeg",
+    "unique_idx": "310",
+    "prompt": "Solve the problem 11 in the image.",
+    "response": {
+        "id": "chatcmpl-msg01CXEPPHHgf7Q9mWJgtjjMF8",
+        "model": "claude-3-5-sonnet-20240620",
+        "object": "chat.completion",
+        "created": 1723564870,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To prove that triangle PUQ is congruent to triangle PSR, we'll use the properties of equilateral triangles and the given information. Let's approach this step by step:\n\n1) Given: Triangles PQR and PUS are both equilateral.\n\n2) In an equilateral triangle, all sides are equal and all angles are 60°.\n\n3) Therefore, in triangle PQR:\n   PQ = QR = PR\n   Angle PQR = Angle QRP = Angle RPQ = 60°\n\n4) Similarly, in triangle PUS:\n   PU = US = PS\n   Angle PUS = Angle USP = Angle SPU = 60°\n\n5) Now, let's look at triangle PUQ:\n   - PU is a side of the equilateral triangle PUS\n   - PQ is a side of the equilateral triangle PQR\n   - Angle UPQ = 60° (it's an angle of the equilateral triangle PUS)\n\n6) Similarly, for triangle PSR:\n   - PS is a side of the equilateral triangle PUS\n   - PR is a side of the equilateral triangle PQR\n   - Angle SPR = 60° (it's an angle of the equilateral triangle PUS)\n\n7) We can now use the SAS (Side-Angle-Side) congruence criterion:\n   - PU = PS (sides of the same equilateral triangle PUS)\n   - PQ = PR (sides of the same equilateral triangle PQR)\n   - Angle UPQ = Angle SPR = 60°\n\n8) Since we have two sides and the included angle equal in both triangles, by the SAS criterion, triangle PUQ is congruent to triangle PSR.\n\nTherefore, we have proved that triangle PUQ is congruent to triangle PSR."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1585,
+            "completion_tokens": 438,
+            "total_tokens": 2023
+        }
+    },
+    "answer": "To prove that triangle PUQ is congruent to triangle PSR, we'll use the properties of equilateral triangles and the given information. Let's approach this step by step:\n\n1) Given: Triangles PQR and PUS are both equilateral.\n\n2) In an equilateral triangle, all sides are equal and all angles are 60°.\n\n3) Therefore, in triangle PQR:\n   PQ = QR = PR\n   Angle PQR = Angle QRP = Angle RPQ = 60°\n\n4) Similarly, in triangle PUS:\n   PU = US = PS\n   Angle PUS = Angle USP = Angle SPU = 60°\n\n5) Now, let's look at triangle PUQ:\n   - PU is a side of the equilateral triangle PUS\n   - PQ is a side of the equilateral triangle PQR\n   - Angle UPQ = 60° (it's an angle of the equilateral triangle PUS)\n\n6) Similarly, for triangle PSR:\n   - PS is a side of the equilateral triangle PUS\n   - PR is a side of the equilateral triangle PQR\n   - Angle SPR = 60° (it's an angle of the equilateral triangle PUS)\n\n7) We can now use the SAS (Side-Angle-Side) congruence criterion:\n   - PU = PS (sides of the same equilateral triangle PUS)\n   - PQ = PR (sides of the same equilateral triangle PQR)\n   - Angle UPQ = Angle SPR = 60°\n\n8) Since we have two sides and the included angle equal in both triangles, by the SAS criterion, triangle PUQ is congruent to triangle PSR.\n\nTherefore, we have proved that triangle PUQ is congruent to triangle PSR.",
+    "gen_model_id": "claude-3-5-sonnet-20240620",
+    "duration": 11.762285709381104,
+    "code": 200,
+    "current_time": "2024-08-14 00:01:11"
+}

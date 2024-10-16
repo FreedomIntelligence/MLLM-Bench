@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://tse2-mm.cn.bing.net/th/id/OIP-C.DfcmfnHYf5SBexamy5AfRgHaF5?rs=1&pid=ImgDetMain",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe any abnormalities visible in the brain CT image.\n2. Use appropriate medical terminology related to brain anatomy and pathology.\n3. Provide a structured report format, including observations and conclusions.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/192.jpg",
+    "unique_idx": 192,
+    "prompt": "Write a CT report for this image as a brain specialist.",
+    "context": "Write a CT report for this image as a brain specialist.",
+    "sample_id": 192,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/192.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "**CT Head Report**\n\n**Findings:**\n\nThe non-contrast CT scan of the head demonstrates a large, well-circumscribed, hypodense mass in the right parietal lobe.  The mass measures approximately [estimate the size in cm;  e.g., 6 x 5 x 4 cm] and shows significant mass effect with midline shift to the left.  There is associated edema surrounding the lesion.  No significant hemorrhage is identified within the mass itself.  There is evidence of small areas of hypoattenuation in the left frontal lobe, which could represent small areas of ischemia or artifact.  No acute intracranial hemorrhage or subdural/epidural hematoma is identified.  The ventricles are compressed.  The skull bones appear unremarkable.\n\n**Impression:**\n\nThe imaging findings are most consistent with a large right parietal lobe mass.  The differential diagnosis includes a large meningioma, glioblastoma, or metastatic lesion.  Further evaluation with contrast-enhanced CT and/or MRI is recommended for better characterization of the lesion and to assist in determining the etiology.  Given the size and mass effect, neurosurgical consultation is recommended for consideration of treatment options.\n\n\n**Note:** This report is based solely on the provided image and is for illustrative purposes only.  A definitive diagnosis requires correlation with clinical findings and additional imaging studies.  Measurements are estimates and should be verified by the radiologist reviewing the original images.\n",
+    "response_from_model": {
+        "id": "chatcmpl-6d71e1a65aba4ccd8bd57de624576dc0",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897154,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "**CT Head Report**\n\n**Findings:**\n\nThe non-contrast CT scan of the head demonstrates a large, well-circumscribed, hypodense mass in the right parietal lobe.  The mass measures approximately [estimate the size in cm;  e.g., 6 x 5 x 4 cm] and shows significant mass effect with midline shift to the left.  There is associated edema surrounding the lesion.  No significant hemorrhage is identified within the mass itself.  There is evidence of small areas of hypoattenuation in the left frontal lobe, which could represent small areas of ischemia or artifact.  No acute intracranial hemorrhage or subdural/epidural hematoma is identified.  The ventricles are compressed.  The skull bones appear unremarkable.\n\n**Impression:**\n\nThe imaging findings are most consistent with a large right parietal lobe mass.  The differential diagnosis includes a large meningioma, glioblastoma, or metastatic lesion.  Further evaluation with contrast-enhanced CT and/or MRI is recommended for better characterization of the lesion and to assist in determining the etiology.  Given the size and mass effect, neurosurgical consultation is recommended for consideration of treatment options.\n\n\n**Note:** This report is based solely on the provided image and is for illustrative purposes only.  A definitive diagnosis requires correlation with clinical findings and additional imaging studies.  Measurements are estimates and should be verified by the radiologist reviewing the original images.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 271,
+            "completion_tokens": 293,
+            "total_tokens": 564
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:50"
+}

@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2022/04/09/15/10/basketball-7121617_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer must state the basketball will \"fall\".\n2. Explanation should demonstrate understanding of the basketball's trajectory and gravity.\n3. Response must infer the action based on the position of the basketball relative to the hoop.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/209.jpg",
+    "unique_idx": 209,
+    "prompt": "Assuming this is a moment after someone made a shot, will the basketball rise or fall in the next second?",
+    "context": "Assuming this is a moment after someone made a shot, will the basketball rise or fall in the next second?",
+    "sample_id": 209,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/209.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-flash-002",
+    "answer": "The basketball will fall.  It's in the net, and the momentum from the shot has been spent.  Gravity will pull it downwards.\n",
+    "response_from_model": {
+        "id": "chatcmpl-cfa224e327974dea87e7c9ac66dd87ff",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897153,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The basketball will fall.  It's in the net, and the momentum from the shot has been spent.  Gravity will pull it downwards.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 281,
+            "completion_tokens": 31,
+            "total_tokens": 312
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:12:49"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "215_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat does this chart imply?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe chart shows the global mean temperature from various datasets, compared to the average temperature between 1850 and 1900.  The key implication is a clear and significant upward trend in global mean temperature over time, indicating global warming.  The multiple datasets show a high degree of agreement on this trend, strengthening the conclusion.  The warming is particularly pronounced in the latter half of the 20th century and into the 21st century.\n\n~~~\n~~~Answer2\nThe chart implies that global mean temperature has steadily risen since the 1800s, as the line trends upwards. This suggests that there has been an increase in the average global temperature, which is consistent with the idea of climate change. The data showcases the long-term temperature trend and highlights the significance of addressing environmental concerns, such as reducing carbon emissions and adopting more sustainable practices, to mitigate the impact of climate change on our planet.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Answer identifies the chart implies an increase in global mean temperature, suggesting global warming.\n2. Answer explains the upward trend observed in the temperature datasets from 1850 to 2023.\n3. Answer interprets the consistency across multiple datasets in supporting the implication of global warming.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/215.jpeg",
+    "model_1": "gemini-1.5-flash-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The chart shows the global mean temperature from various datasets, compared to the average temperature between 1850 and 1900.  The key implication is a clear and significant upward trend in global mean temperature over time, indicating global warming.  The multiple datasets show a high degree of agreement on this trend, strengthening the conclusion.  The warming is particularly pronounced in the latter half of the 20th century and into the 21st century.\n",
+    "raw_answer2": "The chart implies that global mean temperature has steadily risen since the 1800s, as the line trends upwards. This suggests that there has been an increase in the average global temperature, which is consistent with the idea of climate change. The data showcases the long-term temperature trend and highlights the significance of addressing environmental concerns, such as reducing carbon emissions and adopting more sustainable practices, to mitigate the impact of climate change on our planet.",
+    "response": {
+        "id": "chatcmpl-AIszUhb3LedeHd64Whp3DBAr09zNH",
+        "object": "chat.completion",
+        "created": 1729064652,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1569,
+            "completion_tokens": 2,
+            "total_tokens": 1571
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.109349966049194,
+    "code": 200,
+    "current_time": "2024-10-16 15:44:13"
+}

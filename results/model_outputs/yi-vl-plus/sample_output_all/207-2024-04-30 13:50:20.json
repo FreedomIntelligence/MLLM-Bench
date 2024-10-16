@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2023/11/05/06/55/motorcycle-8366394_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify that the rider is riding towards the left side.\n2. Infer that the rider is unlikely to appear on the right side.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/207.jpg",
+    "unique_idx": "207",
+    "prompt": "Assuming the rider continues to travel in the same direction, will he appear on the right side of the picture?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 69,
+            "prompt_tokens": 1032,
+            "total_tokens": 1101
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image shows the motorcycle and rider in motion from left to right based on the direction of the blurred background. Assuming the rider continues to travel in the same direction, they will continue moving towards the right side of the frame relative to the camera's position. Therefore, the rider will appear on the right side of the picture. Answer: Yes"
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The image shows the motorcycle and rider in motion from left to right based on the direction of the blurred background. Assuming the rider continues to travel in the same direction, they will continue moving towards the right side of the frame relative to the camera's position. Therefore, the rider will appear on the right side of the picture. Answer: Yes",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 7.229700326919556,
+    "code": 200,
+    "current_time": "2024-04-30 13:50:20"
+}

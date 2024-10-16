@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://i.ytimg.com/vi/EFfUhtEuPWQ/maxresdefault.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Accurately extract and match album title and artist name to reference.\n2. Correctly identify and format each track name, guest artist, and duration. 3. Example answer can be:{\n  \"album_title\": \"Hate it or Love it\",\n  \"artist\": \"Mack-Nice\",\n  \"tracks\": [\n    {\n      \"track_name\": \"Freestyle f/\",\n      \"guest_artist\": \"Dj Big Mike\",\n      \"duration\": \"2:10\"\n    },\n    {\n      \"track_name\": \"Whip Out\",\n      \"duration\": \"4:03\"\n    },\n    {\n      \"track_name\": \"We Grinding f/\",\n      \"guest_artist\": \"Dj Radio, B.R.\",\n      \"duration\": \"4:06\"\n    },\n    {\n      \"track_name\": \"Grab That\",\n      \"duration\": \"4:04\"\n    },\n    {\n      \"track_name\": \"Fill It f/\",\n      \"guest_artist\": \"Dj E. Nyce\",\n      \"duration\": \"4:06\"\n    },\n    {\n      \"track_name\": \"You Know f/\",\n      \"guest_artist\": \"Dj Famous\",\n      \"duration\": \"5:10\"\n    },\n    {\n      \"track_name\": \"Ghetto Star\",\n      \"duration\": \"4:14\"\n    },\n    {\n      \"track_name\": \"Jersey Girl\",\n      \"duration\": \"3:44\"\n    },\n    {\n      \"track_name\": \"Dooms Day f/\",\n      \"guest_artist\": \"Young Kill\",\n      \"duration\": \"3:32\"\n    },\n    {\n      \"track_name\": \"No Problems\",\n      \"duration\": \"3:52\"\n    },\n    {\n      \"track_name\": \"Got It Locked\",\n      \"duration\": \"3:51\"\n    },\n    {\n      \"track_name\": \"Dirty Money f/\",\n      \"guest_artist\": \"Dj E. Nyce\",\n      \"duration\": \"4:19\"\n    },\n    {\n      \"track_name\": \"My Block f/\",\n      \"guest_artist\": \"Dj Radio\",\n      \"duration\": \"4:19\"\n    },\n    {\n      \"track_name\": \"Block Divas\",\n      \"duration\": \"4:30\"\n    },\n    {\n      \"track_name\": \"Chosen One\",\n      \"duration\": \"4:07\"\n    },\n    {\n      \"track_name\": \"Move Packs f/\",\n      \"guest_artist\": \"Young Kill, B.R.\",\n      \"duration\": \"3:43\"\n    }\n  ]\n}",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/17.jpg",
+    "unique_idx": "17",
+    "prompt": "Organize the extracted text into JSON format, with separate fields for the album title, artist, track name, guest artist, and track durations.",
+    "response": {
+        "id": "chatcmpl-f765c7aca1844c68a29a05514c7b843b",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930272,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " ```json\n{\n  \"album_title\": \"Hate it or Love it\",\n  \"artist\": \"Mack-Nice\",\n  \"tracks\": [\n    {\n      \"track_name\": \"Freestyle\",\n      \"guest_artist\": \"DJ Big Mike\",\n      \"duration\": \"2:10\"\n    },\n    {\n      \"track_name\": \"Whip Out\",\n      \"duration\": \"4:03\"\n    },\n    {\n      \"track_name\": \"We Grinding\",\n      \"guest_artist\": \"DJ Radio. B.R.\",\n      \"duration\": \"4:06\"\n    },\n    {\n      \"track_name\": \"Grab That\",\n      \"duration\": \"4:04\"\n    },\n    {\n      \"track_name\": \"Fill it\",\n      \"guest_artist\": \"DJ E. Nyce\",\n      \"duration\": \"4:06\"\n    },\n    {\n      \"track_name\": \"You Know\",\n      \"guest_artist\": \"DJ Famous\",\n      \"duration\": \"5:10\"\n    },\n    {\n      \"track_name\": \"Ghetto Star\",\n      \"duration\": \"4:44\"\n    },\n    {\n      \"track_name\": \"Jersey Girl\",\n      \"guest_artist\": \"Young Kill\",\n      \"duration\": \"3:44\"\n    },\n    {\n      \"track_name\": \"Dooms Day\",\n      \"guest_artist\": \"Young Kill\",\n      \"duration\": \"3:52\"\n    },\n    {\n      \"track_name\": \"No Problems\",\n      \"duration\": \"3:52\"\n    },\n    {\n      \"track_name\": \"Got it Locked\",\n      \"duration\": \"3:51\"\n    },\n    {\n      \"track_name\": \"Dirty Money\",\n      \"guest_artist\": \"DJ E. Nyce\",\n      \"duration\": \"4:19\"\n    },\n    {\n      \"track_name\": \"My Block\",\n      \"guest_artist\": \"DJ Radio. B.R.\",\n      \"duration\": \"4:40\"\n    },\n    {\n      \"track_name\": \"Block Divas\",\n      \"duration\": \"4:30\"\n    },\n    {\n      \"track_name\": \"Chosen One\",\n      \"duration\": \"4:07\"\n    },\n    {\n      \"track_name\": \"Move Packs\",\n      \"guest_artist\": \"Young Kill, B.R.\",\n      \"duration\": \"3:43\"\n    }\n  ]\n}\n```"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1141,
+            "completion_tokens": 493,
+            "total_tokens": 1634
+        }
+    },
+    "answer": " ```json\n{\n  \"album_title\": \"Hate it or Love it\",\n  \"artist\": \"Mack-Nice\",\n  \"tracks\": [\n    {\n      \"track_name\": \"Freestyle\",\n      \"guest_artist\": \"DJ Big Mike\",\n      \"duration\": \"2:10\"\n    },\n    {\n      \"track_name\": \"Whip Out\",\n      \"duration\": \"4:03\"\n    },\n    {\n      \"track_name\": \"We Grinding\",\n      \"guest_artist\": \"DJ Radio. B.R.\",\n      \"duration\": \"4:06\"\n    },\n    {\n      \"track_name\": \"Grab That\",\n      \"duration\": \"4:04\"\n    },\n    {\n      \"track_name\": \"Fill it\",\n      \"guest_artist\": \"DJ E. Nyce\",\n      \"duration\": \"4:06\"\n    },\n    {\n      \"track_name\": \"You Know\",\n      \"guest_artist\": \"DJ Famous\",\n      \"duration\": \"5:10\"\n    },\n    {\n      \"track_name\": \"Ghetto Star\",\n      \"duration\": \"4:44\"\n    },\n    {\n      \"track_name\": \"Jersey Girl\",\n      \"guest_artist\": \"Young Kill\",\n      \"duration\": \"3:44\"\n    },\n    {\n      \"track_name\": \"Dooms Day\",\n      \"guest_artist\": \"Young Kill\",\n      \"duration\": \"3:52\"\n    },\n    {\n      \"track_name\": \"No Problems\",\n      \"duration\": \"3:52\"\n    },\n    {\n      \"track_name\": \"Got it Locked\",\n      \"duration\": \"3:51\"\n    },\n    {\n      \"track_name\": \"Dirty Money\",\n      \"guest_artist\": \"DJ E. Nyce\",\n      \"duration\": \"4:19\"\n    },\n    {\n      \"track_name\": \"My Block\",\n      \"guest_artist\": \"DJ Radio. B.R.\",\n      \"duration\": \"4:40\"\n    },\n    {\n      \"track_name\": \"Block Divas\",\n      \"duration\": \"4:30\"\n    },\n    {\n      \"track_name\": \"Chosen One\",\n      \"duration\": \"4:07\"\n    },\n    {\n      \"track_name\": \"Move Packs\",\n      \"guest_artist\": \"Young Kill, B.R.\",\n      \"duration\": \"3:43\"\n    }\n  ]\n}\n```",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 15.04363465309143,
+    "code": 200,
+    "current_time": "2024-04-12 21:57:52"
+}

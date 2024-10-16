@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://thumbs.dreamstime.com/z/handwritten-math-text-grouped-isolated-white-vector-illustration-quadratic-equation-formula-decision-scheme-trigonometric-188860394.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Accurate conversion of handwritten quadratic equation to LaTeX, including powers and coefficients.\n2. Correct use of LaTeX syntax for fractions, square roots, and plus-minus sign.\n3. Preservation of the equation's structure and sequence as shown in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/379.jpg",
+    "unique_idx": "379",
+    "prompt": "Use latex grammar to convert the equations in the image into latex formulas.",
+    "response": {
+        "id": "chatcmpl-273a74a1d9c54e98ba7d3764c1349be2",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930949,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " \\(a \\cdot x^2 + b \\cdot x + c = 0\\)\n\n\\(a \\cdot (x^2 + \\frac{b}{a} \\cdot x + \\frac{c}{a}) = 0\\)\n\n\\(x^2 + 2 \\cdot \\frac{b}{2a} \\cdot x + (\\frac{b}{2a})^2 - (\\frac{b}{2a})^2 + \\frac{c}{a} = 0\\)\n\n\\((x + \\frac{b}{2a})^2 - \\frac{b^2}{4a^2} + \\frac{c}{a} = 0\\)\n\n\\((x + \\frac{b}{2a})^2 = \\frac{b^2}{4a^2} - \\frac{c}{a}\\)\n\n\\((x + \\frac{b}{2a})^2 = \\frac{b^2 - 4ac}{4a^2}\\)\n\n\\((x + \\frac{b}{2a} \\pm \\sqrt{\\frac{b^2 - 4ac}{4a^2}}) \\cdot (x + \\frac{b}{2a} \\mp \\sqrt{\\frac{b^2 - 4ac}{4a^2}}) = 0\\)\n\n\\(x = - \\frac{b}{2a} \\pm \\frac{\\sqrt{b^2 - 4ac}}{2a}\\)"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 786,
+            "completion_tokens": 318,
+            "total_tokens": 1104
+        }
+    },
+    "answer": " \\(a \\cdot x^2 + b \\cdot x + c = 0\\)\n\n\\(a \\cdot (x^2 + \\frac{b}{a} \\cdot x + \\frac{c}{a}) = 0\\)\n\n\\(x^2 + 2 \\cdot \\frac{b}{2a} \\cdot x + (\\frac{b}{2a})^2 - (\\frac{b}{2a})^2 + \\frac{c}{a} = 0\\)\n\n\\((x + \\frac{b}{2a})^2 - \\frac{b^2}{4a^2} + \\frac{c}{a} = 0\\)\n\n\\((x + \\frac{b}{2a})^2 = \\frac{b^2}{4a^2} - \\frac{c}{a}\\)\n\n\\((x + \\frac{b}{2a})^2 = \\frac{b^2 - 4ac}{4a^2}\\)\n\n\\((x + \\frac{b}{2a} \\pm \\sqrt{\\frac{b^2 - 4ac}{4a^2}}) \\cdot (x + \\frac{b}{2a} \\mp \\sqrt{\\frac{b^2 - 4ac}{4a^2}}) = 0\\)\n\n\\(x = - \\frac{b}{2a} \\pm \\frac{\\sqrt{b^2 - 4ac}}{2a}\\)",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 11.556463479995728,
+    "code": 200,
+    "current_time": "2024-04-12 22:09:09"
+}

@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://images.unsplash.com/photo-1600320254374-ce2d293c324e",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer includes \"slow down till stop\" or \"turn left to adjacent lane\" based on visual cues.\n2. Response must consider traffic conditions and road layout visible in the image.\n3. Answer must be logically consistent with the driver's possible actions in the given context.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/386.jpg",
+    "unique_idx": "386",
+    "prompt": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 30,
+            "prompt_tokens": 1029,
+            "total_tokens": 1059
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The driver is likely to be making a call or using some function on the phone, as indicated by the phone being held up and the visible screen."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The driver is likely to be making a call or using some function on the phone, as indicated by the phone being held up and the visible screen.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 7.199795246124268,
+    "code": 200,
+    "current_time": "2024-04-30 14:44:06"
+}

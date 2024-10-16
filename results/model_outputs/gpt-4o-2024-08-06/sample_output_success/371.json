@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F16HW98XgAE0PTL?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify all UI elements: buttons, symbols, and layout.\n2. Match color scheme and button shapes exactly as in the image.\n3. Ensure functional similarity in coded UI to the image's calculator app.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/371.jpeg",
+    "unique_idx": "371",
+    "prompt": "You are a software developer. You have the attached image and you need to code an UI or app with the same characteristics, color, shapes, etc. ",
+    "response": {
+        "id": "chatcmpl-9vo982sJ9Botnv7E7f0viuEznJ1NW",
+        "object": "chat.completion",
+        "created": 1723564486,
+        "model": "gpt-4o-2024-08-06",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To create a UI similar to the calculator in the image, you can use a framework like React Native for mobile apps or HTML/CSS/JavaScript for web apps. Below is a basic outline using HTML/CSS for a web application:\n\n### HTML\n\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <link rel=\"stylesheet\" href=\"styles.css\">\n    <title>Calculator</title>\n</head>\n<body>\n    <div class=\"calculator\">\n        <div class=\"display\">750</div>\n        <div class=\"buttons\">\n            <button>(</button>\n            <button>)</button>\n            <button>mc</button>\n            <button>m+</button>\n            <button>m-</button>\n            <button>mr</button>\n            <button class=\"gray\">C</button>\n            <button class=\"gray\">+/-</button>\n            <button class=\"gray\">%</button>\n            <button class=\"orange\">÷</button>\n            <!-- Add more buttons as needed -->\n        </div>\n    </div>\n</body>\n</html>\n```\n\n### CSS\n\n```css\nbody {\n    background-color: black;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n    margin: 0;\n}\n\n.calculator {\n    width: 320px;\n}\n\n.display {\n    color: white;\n    font-size: 48px;\n    text-align: right;\n    padding: 20px;\n    background-color: black;\n}\n\n.buttons {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 10px;\n}\n\nbutton {\n    background-color: #333;\n    color: white;\n    border: none;\n    border-radius: 50%;\n    font-size: 18px;\n    padding: 20px;\n    cursor: pointer;\n}\n\nbutton.gray {\n    background-color: #a5a5a5;\n}\n\nbutton.orange {\n    background-color: #f39c12;\n}\n\nbutton:active {\n    opacity: 0.8;\n}\n```\n\n### Explanation\n\n- **Structure**: The calculator is divided into a display and a grid of buttons.\n- **Styling**: \n  - The background is black.\n  - Buttons are styled with different colors (dark gray, gray, and orange) and rounded shapes.\n  - The display is styled to show numbers in white.\n- **Interactivity**: You can add JavaScript to handle button clicks and perform calculations.\n\nThis example provides a basic layout and style similar to the image. You can further enhance it by adding JavaScript for functionality and more CSS for fine-tuning the appearance.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1144,
+            "completion_tokens": 591,
+            "total_tokens": 1735
+        },
+        "system_fingerprint": "fp_845eaabc1f"
+    },
+    "answer": "To create a UI similar to the calculator in the image, you can use a framework like React Native for mobile apps or HTML/CSS/JavaScript for web apps. Below is a basic outline using HTML/CSS for a web application:\n\n### HTML\n\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <link rel=\"stylesheet\" href=\"styles.css\">\n    <title>Calculator</title>\n</head>\n<body>\n    <div class=\"calculator\">\n        <div class=\"display\">750</div>\n        <div class=\"buttons\">\n            <button>(</button>\n            <button>)</button>\n            <button>mc</button>\n            <button>m+</button>\n            <button>m-</button>\n            <button>mr</button>\n            <button class=\"gray\">C</button>\n            <button class=\"gray\">+/-</button>\n            <button class=\"gray\">%</button>\n            <button class=\"orange\">÷</button>\n            <!-- Add more buttons as needed -->\n        </div>\n    </div>\n</body>\n</html>\n```\n\n### CSS\n\n```css\nbody {\n    background-color: black;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n    margin: 0;\n}\n\n.calculator {\n    width: 320px;\n}\n\n.display {\n    color: white;\n    font-size: 48px;\n    text-align: right;\n    padding: 20px;\n    background-color: black;\n}\n\n.buttons {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 10px;\n}\n\nbutton {\n    background-color: #333;\n    color: white;\n    border: none;\n    border-radius: 50%;\n    font-size: 18px;\n    padding: 20px;\n    cursor: pointer;\n}\n\nbutton.gray {\n    background-color: #a5a5a5;\n}\n\nbutton.orange {\n    background-color: #f39c12;\n}\n\nbutton:active {\n    opacity: 0.8;\n}\n```\n\n### Explanation\n\n- **Structure**: The calculator is divided into a display and a grid of buttons.\n- **Styling**: \n  - The background is black.\n  - Buttons are styled with different colors (dark gray, gray, and orange) and rounded shapes.\n  - The display is styled to show numbers in white.\n- **Interactivity**: You can add JavaScript to handle button clicks and perform calculations.\n\nThis example provides a basic layout and style similar to the image. You can further enhance it by adding JavaScript for functionality and more CSS for fine-tuning the appearance.",
+    "gen_model_id": "gpt-4o-2024-08-06",
+    "duration": 12.147308826446533,
+    "code": 200,
+    "current_time": "2024-08-13 23:54:54"
+}

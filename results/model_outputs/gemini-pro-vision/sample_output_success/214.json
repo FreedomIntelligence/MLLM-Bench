@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Analyzing",
+        "capability": "Chart Understanding",
+        "url": "https://pbs.twimg.com/media/F-cFfylXkAAd7yc?format=png&name=small",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Describe the approximate trend between the vaccination rate and excess deaths: excess deaths decrease as the vaccination rate increases.  \n2. Confirm prediction of approximate excess deaths for a state with 85% vaccination rate is between 25% to 30%.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/214.png",
+    "unique_idx": "214",
+    "prompt": "Given the scatter plot, describe the relationship between the vaccination rate and excess deaths and predict the approximate excess deaths for a state with a vaccination rate of 85%.",
+    "response": {
+        "id": "chatcmpl-ac251e1c006943d289966ea16bc5ccb1",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930627,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " There appears to be a negative linear relationship between the vaccination rate and excess deaths. As the vaccination rate increases, the number of excess deaths decreases. For a state with a vaccination rate of 85%, we would predict the excess deaths to be approximately 25."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 804,
+            "completion_tokens": 52,
+            "total_tokens": 856
+        }
+    },
+    "answer": " There appears to be a negative linear relationship between the vaccination rate and excess deaths. As the vaccination rate increases, the number of excess deaths decreases. For a state with a vaccination rate of 85%, we would predict the excess deaths to be approximately 25.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 6.2354676723480225,
+    "code": 200,
+    "current_time": "2024-04-12 22:03:47"
+}

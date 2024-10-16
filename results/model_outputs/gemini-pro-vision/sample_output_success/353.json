@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Fake Image Detection",
+        "url": "https://pbs.twimg.com/media/GAxrLQ-WUAADA-D?format=jpg&name=4096x4096",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Confirm if analysis indicates the image is AI-generated.\n2. Evaluate the level of detail in the analysis of digital manipulation signs.\n3. Assess the use of technical language appropriate for fake image detection.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/353.jpeg",
+    "unique_idx": "353",
+    "prompt": "Determine the likelihood that this photo is digitally manipulated or AI-generated and give a detailed analysis.",
+    "response": {
+        "id": "chatcmpl-b71187030a324967b5d8da34f89fc580",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930878,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " This photo is not digitally manipulated or AI-generated. It is a photo of Keanu Reeves from the video game Cyberpunk 2077."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 791,
+            "completion_tokens": 29,
+            "total_tokens": 820
+        }
+    },
+    "answer": " This photo is not digitally manipulated or AI-generated. It is a photo of Keanu Reeves from the video game Cyberpunk 2077.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 14.320395469665527,
+    "code": 200,
+    "current_time": "2024-04-12 22:07:59"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "10_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhich dishes can have extra ingredients added, and what is the cost of adding ingredients?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe dishes that can have extra ingredients added are:\n\n1. **Tomato & Onion Salad**: Add blue cheese for £1.\n2. **Bruschetta al Pomodoro**: Add grilled goats cheese for £1.\n3. **Cocktail di Gamberi Rossi**: Add smoked salmon for £1.\n4. **Penne alla Ciociara**: Add chicken for £2.\n5. **Spaghetti Carbonara**: Add chicken for £2.\n6. **Spaghetti al Salmone**: Add chicken for £2.\n\nThe cost of adding ingredients ranges from £1 to £2.\n~~~\n~~~Answer2\nSeveral dishes on the menu allow for the addition of extra ingredients. These dishes include the spaghetti carbonara and the penne alla chiarra. The cost of adding extra ingredients for these dishes is either 50p or 70p, depending on the dish. The price can also vary depending on the specific ingredients added and their portions, so it is best to confirm the cost with the restaurant.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify dishes with add-on options and their respective costs (e.g., \"add blue cheese for £1\").",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/10.jpg",
+    "model_1": "qwen/qwen-2-vl-72b-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The dishes that can have extra ingredients added are:\n\n1. **Tomato & Onion Salad**: Add blue cheese for £1.\n2. **Bruschetta al Pomodoro**: Add grilled goats cheese for £1.\n3. **Cocktail di Gamberi Rossi**: Add smoked salmon for £1.\n4. **Penne alla Ciociara**: Add chicken for £2.\n5. **Spaghetti Carbonara**: Add chicken for £2.\n6. **Spaghetti al Salmone**: Add chicken for £2.\n\nThe cost of adding ingredients ranges from £1 to £2.",
+    "raw_answer2": "Several dishes on the menu allow for the addition of extra ingredients. These dishes include the spaghetti carbonara and the penne alla chiarra. The cost of adding extra ingredients for these dishes is either 50p or 70p, depending on the dish. The price can also vary depending on the specific ingredients added and their portions, so it is best to confirm the cost with the restaurant.",
+    "response": {
+        "id": "chatcmpl-AIvExvg7HXwQgWpH1G43DvDoenM9C",
+        "object": "chat.completion",
+        "created": 1729073299,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1574,
+            "completion_tokens": 2,
+            "total_tokens": 1576
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 7.668386459350586,
+    "code": 200,
+    "current_time": "2024-10-16 18:08:20"
+}

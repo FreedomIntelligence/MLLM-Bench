@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Symbol Recognition",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/MUTCD_R9-4.svg/1024px-MUTCD_R9-4.svg.png",
+        "question type": "compound"
+    },
+    "criteria": "1. Correctly identify the sign as indicating \"no hitchhiking.\"\n2. Explanation aligns with common understanding of hitchhiking prohibition.\n3. Answer must not include additional unrelated details or symbols.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/31.png",
+    "unique_idx": "31",
+    "prompt": "Identify the sign in the image. What does this sign mean?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The sign in the image features a pictogram of a hand with a red circle and diagonal line superimposed over it, which universally indicates \"Do Not Touch\" or \"No Touching.\" This sign is typically used to protect objects from damage or contamination, indicating that you should not make physical contact with whatever the sign is protecting.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426211,
+        "id": "chatcmpl-9W3Ihs6HP0gynBSbn1RPRtAo8oI3L",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 67,
+            "prompt_tokens": 786,
+            "total_tokens": 853
+        }
+    },
+    "answer": "The sign in the image features a pictogram of a hand with a red circle and diagonal line superimposed over it, which universally indicates \"Do Not Touch\" or \"No Touching.\" This sign is typically used to protect objects from damage or contamination, indicating that you should not make physical contact with whatever the sign is protecting.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 15.402637481689453,
+    "code": 200,
+    "current_time": "2024-06-03 22:50:15"
+}

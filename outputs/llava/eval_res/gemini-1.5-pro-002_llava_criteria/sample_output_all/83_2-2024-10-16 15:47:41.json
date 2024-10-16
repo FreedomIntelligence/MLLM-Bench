@@ -1,0 +1,35 @@
+{
+    "unique_idx": "83_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nPlease describe the feature of the animal as detail as possible to help other people to recognize it.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThis bird is a Channel-billed Toucan (Ramphastos vitellinus). Key features include:\n\n* **Large, colorful bill:** The most striking feature is its long, down-curved bill.  It's predominantly black, with a splash of light blue along the top edge and cutting edge of the upper mandible.  The base of the upper mandible is ivory-white, blending into a vibrant yellow patch further down.  The lower mandible has a black tip and a dark blue base.\n* **Chest and upper belly:**  A rich, rusty-orange color covers the chest and upper belly.\n* **Lower belly and vent:** The lower belly transitions to a deep red-orange, almost crimson.\n* **Head and neck:** The head and neck are primarily black, contrasting sharply with the colorful bill and chest. A small patch of light blue skin surrounds the eye.\n* **Tail:** Long and primarily black, with some reddish-orange feathers peeking out from underneath.\n* **Wings:**  Mostly black.\n* **Size:** Toucans are relatively large birds. The Channel-billed Toucan can reach around 50-60 cm in length, a significant portion of which is the bill.\n* **Habitat:**  They are found in tropical forests of South America.\n\nThe combination of the large, colorful bill, black head and body, and the orange/red chest and belly make this toucan quite distinctive.  The specific pattern of colors on the bill helps distinguish it from other toucan species.\n\n~~~\n~~~Answer2\nThe animal is a colorful bird with a striking appearance. It has a black and orange body, a white head, blue eyes, and a long beak. The bird's beak is quite large, and it seems to be stretching or yawning its mouth while perched on a tree branch. The bird's vibrant colors and unique features make it easily distinguishable and visually interesting.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Mention toucans' large, colorful bills as a distinctive feature.\n2. Describe additional attributes: body color, size, and any unique markings.\n3. Include the setting or behavior if it aids in recognition.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/83.jpeg",
+    "model_1": "gemini-1.5-pro-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "This bird is a Channel-billed Toucan (Ramphastos vitellinus). Key features include:\n\n* **Large, colorful bill:** The most striking feature is its long, down-curved bill.  It's predominantly black, with a splash of light blue along the top edge and cutting edge of the upper mandible.  The base of the upper mandible is ivory-white, blending into a vibrant yellow patch further down.  The lower mandible has a black tip and a dark blue base.\n* **Chest and upper belly:**  A rich, rusty-orange color covers the chest and upper belly.\n* **Lower belly and vent:** The lower belly transitions to a deep red-orange, almost crimson.\n* **Head and neck:** The head and neck are primarily black, contrasting sharply with the colorful bill and chest. A small patch of light blue skin surrounds the eye.\n* **Tail:** Long and primarily black, with some reddish-orange feathers peeking out from underneath.\n* **Wings:**  Mostly black.\n* **Size:** Toucans are relatively large birds. The Channel-billed Toucan can reach around 50-60 cm in length, a significant portion of which is the bill.\n* **Habitat:**  They are found in tropical forests of South America.\n\nThe combination of the large, colorful bill, black head and body, and the orange/red chest and belly make this toucan quite distinctive.  The specific pattern of colors on the bill helps distinguish it from other toucan species.\n",
+    "raw_answer2": "The animal is a colorful bird with a striking appearance. It has a black and orange body, a white head, blue eyes, and a long beak. The bird's beak is quite large, and it seems to be stretching or yawning its mouth while perched on a tree branch. The bird's vibrant colors and unique features make it easily distinguishable and visually interesting.",
+    "response": {
+        "id": "chatcmpl-AIt2qyXJzYwWKPuE1x1tJ3ES8yWsX",
+        "object": "chat.completion",
+        "created": 1729064860,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1781,
+            "completion_tokens": 2,
+            "total_tokens": 1783
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 10.334595918655396,
+    "code": 200,
+    "current_time": "2024-10-16 15:47:41"
+}

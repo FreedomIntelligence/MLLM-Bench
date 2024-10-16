@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://images.unsplash.com/photo-1600320254374-ce2d293c324e",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer includes \"slow down till stop\" or \"turn left to adjacent lane\" based on visual cues.\n2. Response must consider traffic conditions and road layout visible in the image.\n3. Answer must be logically consistent with the driver's possible actions in the given context.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/386.jpg",
+    "unique_idx": 386,
+    "prompt": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "context": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "sample_id": 386,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/386.jpg"
+    ],
+    "gen_model_id": "microsoft/phi-3-medium-128k-instruct",
+    "answer": " Based on the visual cues in the image, it appears that the driver is approaching a traffic light that is currently showing a yellow signal. The possible action of the driver could be to slow down and prepare to stop if it is safe to do so. If the driver is too close to the intersection and it's unsafe to stop, they might decide to proceed with caution.",
+    "response_from_model": {
+        "id": "gen-1728907014-bHCJwmZGPUcIG0qZWh38",
+        "provider": "Azure",
+        "model": "microsoft/phi-3-medium-128k-instruct",
+        "object": "chat.completion",
+        "created": 1728907014,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " Based on the visual cues in the image, it appears that the driver is approaching a traffic light that is currently showing a yellow signal. The possible action of the driver could be to slow down and prepare to stop if it is safe to do so. If the driver is too close to the intersection and it's unsafe to stop, they might decide to proceed with caution.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 25,
+            "completion_tokens": 78,
+            "total_tokens": 103
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:56:56"
+}

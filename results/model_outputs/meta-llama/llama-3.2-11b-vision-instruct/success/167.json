@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Document Understanding",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify the \"You Are Here\" point and the nearest emergency exit.\n2. Describe the path including turns and any landmarks (e.g., room numbers, staircases).\n3. Ensure the route is the quickest possible, avoiding detours or longer paths.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/167.jpeg",
+    "unique_idx": 167,
+    "prompt": "Describe the quickest route to the nearest emergency exit from the \"You Are Here\" point.",
+    "context": "Describe the quickest route to the nearest emergency exit from the \"You Are Here\" point.",
+    "sample_id": 167,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/167.jpeg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "To find the quickest route to the nearest emergency exit from the \"You Are Here\" point, we need to follow the green arrows on the map. \n\n1. **Start at the \"You Are Here\" point**: The red star indicates the starting point, which is located in room 226.\n2. **Follow the green arrows**: The first green arrow points to the left, indicating that we should move in that direction.\n3. **Continue following the green arrows**: As we move to the left, we will reach a hallway with rooms 219, 218, 217, 216, 215, 214, and 213. We should continue straight through this hallway.\n4. **Turn right**: At the end of the hallway, we will reach a staircase leading up to the second floor. We should turn right and go up the stairs.\n5. **Exit the building**: Once we reach the top of the stairs, we will find an emergency exit door marked with a green exit sign and a green arrow pointing outside. This is the nearest emergency exit from the \"You Are Here\" point.\n\nBy following these steps, we can quickly and safely reach the nearest emergency exit from the \"You Are Here\" point.",
+    "response_from_model": {
+        "id": "gen-1728905351-hX4WpUv3RgimzC6bm7A9",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905351,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To find the quickest route to the nearest emergency exit from the \"You Are Here\" point, we need to follow the green arrows on the map. \n\n1. **Start at the \"You Are Here\" point**: The red star indicates the starting point, which is located in room 226.\n2. **Follow the green arrows**: The first green arrow points to the left, indicating that we should move in that direction.\n3. **Continue following the green arrows**: As we move to the left, we will reach a hallway with rooms 219, 218, 217, 216, 215, 214, and 213. We should continue straight through this hallway.\n4. **Turn right**: At the end of the hallway, we will reach a staircase leading up to the second floor. We should turn right and go up the stairs.\n5. **Exit the building**: Once we reach the top of the stairs, we will find an emergency exit door marked with a green exit sign and a green arrow pointing outside. This is the nearest emergency exit from the \"You Are Here\" point.\n\nBy following these steps, we can quickly and safely reach the nearest emergency exit from the \"You Are Here\" point.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6433,
+            "completion_tokens": 1,
+            "total_tokens": 6434
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:29:16"
+}

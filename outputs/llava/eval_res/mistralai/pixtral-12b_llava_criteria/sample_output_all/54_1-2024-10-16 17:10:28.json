@@ -1,0 +1,35 @@
+{
+    "unique_idx": "54_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat is the historical and cultural significance behind this landmark?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe landmark in the image is the Taj Mahal, a white marble mausoleum located in Agra, India. It is an iconic symbol of Indian culture and history, built between 1632 and 1653 by Mughal emperor Shah Jahan in memory of his wife, Mumtaz Mahal. The Taj Mahal features exquisite architecture, intricate designs, and a grand scale, which make it one of the most renowned man-made wonders globally.\n\nThis monument holds significant cultural value, as it represents the rich heritage and artistic skills of the Mughal Empire in India. The Taj Mahal is also a UNESCO World Heritage Site, which highlights its importance for the preservation of architecture and cultural diversity. Moreover, it attracts millions of visitors each year, making it a major tourist destination and contributing to the economy of the region. The Taj Mahal, with its breathtaking beauty and architectural marvels, remains an enduring symbol of Indian heritage, love, and respect.\n~~~\n~~~Answer2\nThe landmark depicted is the Taj Mahal, an iconic example ofal architecture and artistry, constructed between 1631 and 1648 byal emperor Shah Jahan in memory of his wife Mumtaz Mahal. It is renowned for its exquisite white marble, intricate details, and symmetrical design, reflecting the peak ofal architectural achievement and serving as a symbol of love and devotion.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify the landmark as Taj Mahal and its location (Agra, Uttar Pradesh, India) accurately.\n2. Describe the historical significance of the landmark.\n3. Mention cultural or symbolic importance related to the landmark.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/54.jpeg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "mistralai/pixtral-12b",
+    "raw_answer1": "The landmark in the image is the Taj Mahal, a white marble mausoleum located in Agra, India. It is an iconic symbol of Indian culture and history, built between 1632 and 1653 by Mughal emperor Shah Jahan in memory of his wife, Mumtaz Mahal. The Taj Mahal features exquisite architecture, intricate designs, and a grand scale, which make it one of the most renowned man-made wonders globally.\n\nThis monument holds significant cultural value, as it represents the rich heritage and artistic skills of the Mughal Empire in India. The Taj Mahal is also a UNESCO World Heritage Site, which highlights its importance for the preservation of architecture and cultural diversity. Moreover, it attracts millions of visitors each year, making it a major tourist destination and contributing to the economy of the region. The Taj Mahal, with its breathtaking beauty and architectural marvels, remains an enduring symbol of Indian heritage, love, and respect.",
+    "raw_answer2": "The landmark depicted is the Taj Mahal, an iconic example ofal architecture and artistry, constructed between 1631 and 1648 byal emperor Shah Jahan in memory of his wife Mumtaz Mahal. It is renowned for its exquisite white marble, intricate details, and symmetrical design, reflecting the peak ofal architectural achievement and serving as a symbol of love and devotion.",
+    "response": {
+        "id": "chatcmpl-AIuKxLdd5DyMW4KTHMWzVtU7JoDLm",
+        "object": "chat.completion",
+        "created": 1729069827,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1662,
+            "completion_tokens": 2,
+            "total_tokens": 1664
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 7.228656053543091,
+    "code": 200,
+    "current_time": "2024-10-16 17:10:28"
+}

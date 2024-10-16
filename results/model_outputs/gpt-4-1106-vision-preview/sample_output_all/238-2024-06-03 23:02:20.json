@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-cFfylXkAAd7yc?format=png&name=small",
+        "question type": "close-ended"
+    },
+    "criteria": "1. List stores that are 'Deluxe Supermarket' in 'Mexico': store 8, store 12, store 21.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/238.png",
+    "unique_idx": "238",
+    "prompt": "List all stores that are deluxe supermarket and located in Mexico.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "Based on the information provided in the image, the deluxe supermarkets located in Mexico are:\n\n- Store 8 in Merida, Yucatan\n- Store 12 in Hidalgo, Zacatecas\n- Store 21 in San Andres, DF",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426937,
+        "id": "chatcmpl-9W3UPKSHbDYBovO4F7iBSXfzpC45z",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 51,
+            "prompt_tokens": 1124,
+            "total_tokens": 1175
+        }
+    },
+    "answer": "Based on the information provided in the image, the deluxe supermarkets located in Mexico are:\n\n- Store 8 in Merida, Yucatan\n- Store 12 in Hidalgo, Zacatecas\n- Store 21 in San Andres, DF",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 15.523612976074219,
+    "code": 200,
+    "current_time": "2024-06-03 23:02:20"
+}

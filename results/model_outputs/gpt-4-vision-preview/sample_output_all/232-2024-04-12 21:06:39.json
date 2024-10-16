@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-Aeu-8awAAaJ2l?format=jpg&name=medium",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/232.jpg",
+    "unique_idx": "232",
+    "prompt": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "response": {
+        "id": "msg_01884z6TekcUCnDP8LpMeTe3",
+        "type": "message",
+        "role": "assistant",
+        "model": "gpt-4",
+        "usage": {
+            "prompt_tokens": 736,
+            "completion_tokens": 68,
+            "total_tokens": 804
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the domestic arrivals and departures schedule shown in the image, the aircraft type that appears most frequently for domestic flights is ATR. There are 6 instances of ATR aircraft listed in the domestic arrivals and departures sections, making it the most commonly used aircraft type for domestic routes at this airport."
+                },
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "object": "chat.completion",
+        "created": 1712927198
+    },
+    "answer": "Based on the domestic arrivals and departures schedule shown in the image, the aircraft type that appears most frequently for domestic flights is ATR. There are 6 instances of ATR aircraft listed in the domestic arrivals and departures sections, making it the most commonly used aircraft type for domestic routes at this airport.",
+    "gen_model_id": "gpt-4-vision-preview",
+    "duration": 10.236361742019653,
+    "code": 200,
+    "current_time": "2024-04-12 21:06:39"
+}

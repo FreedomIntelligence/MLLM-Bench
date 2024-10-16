@@ -1,0 +1,35 @@
+{
+    "unique_idx": "60_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat is this about?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe document is a health advisory regarding a novel coronavirus pneumonia outbreak that occurred in Wuhan City, Hubei Province, China. It provides guidance for individuals who may have symptoms like cough or fever, advising them to wear a disposable face mask and contact a hospital before visiting. It also instructs anyone who has stayed in Wuhan City to inform hospital staff about their activities. The advisory emphasizes cooperation and provides contact information for medical facilities with multilingual support.\n~~~\n~~~Answer2\nThe image is a poster in a foreign language that provides information about novel coronavirus pneumonia. The poster states that novel coronavirus pneumonia has occurred in Wuhan City, Hubei Province of China. It suggests taking precautions such as covering your mouth and washing your hands, as well as avoiding crowded places and visiting hospitals only when necessary.\n\nIn the image, there are also some instructions and an alert for travelers. If a traveler happens to have symptoms such as coughing or a fever, they are advised to please put on a disposable face mask and contact local health authorities or designated hospitals for assistance. The poster also emphasizes the importance of following preventive measures to minimize the risk of spreading the virus.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and translate text related to the novel coronavirus pneumonia in Wuhan.\n2. Recognize multilingual instructions for individuals with symptoms.\n3. Detect the date and contact information for further assistance.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/60.jpg",
+    "model_1": "gpt-4o-mini-2024-07-18",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The document is a health advisory regarding a novel coronavirus pneumonia outbreak that occurred in Wuhan City, Hubei Province, China. It provides guidance for individuals who may have symptoms like cough or fever, advising them to wear a disposable face mask and contact a hospital before visiting. It also instructs anyone who has stayed in Wuhan City to inform hospital staff about their activities. The advisory emphasizes cooperation and provides contact information for medical facilities with multilingual support.",
+    "raw_answer2": "The image is a poster in a foreign language that provides information about novel coronavirus pneumonia. The poster states that novel coronavirus pneumonia has occurred in Wuhan City, Hubei Province of China. It suggests taking precautions such as covering your mouth and washing your hands, as well as avoiding crowded places and visiting hospitals only when necessary.\n\nIn the image, there are also some instructions and an alert for travelers. If a traveler happens to have symptoms such as coughing or a fever, they are advised to please put on a disposable face mask and contact local health authorities or designated hospitals for assistance. The poster also emphasizes the importance of following preventive measures to minimize the risk of spreading the virus.",
+    "response": {
+        "id": "chatcmpl-AIt7rwpNqOiGJW12REJ6aMuf3lTcN",
+        "object": "chat.completion",
+        "created": 1729065171,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1603,
+            "completion_tokens": 2,
+            "total_tokens": 1605
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 5.749326944351196,
+    "code": 200,
+    "current_time": "2024-10-16 15:52:53"
+}

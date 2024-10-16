@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2022/04/09/15/10/basketball-7121617_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer must state the basketball will \"fall\".\n2. Explanation should demonstrate understanding of the basketball's trajectory and gravity.\n3. Response must infer the action based on the position of the basketball relative to the hoop.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/209.jpg",
+    "unique_idx": "209",
+    "prompt": "Assuming this is a moment after someone made a shot, will the basketball rise or fall in the next second?",
+    "response": {
+        "id": "chatcmpl-f4067c337c9646c0aec8a029b76cf0c3",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930621,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " The basketball will fall.\n\nAfter the basketball goes through the hoop, gravity will pull it down. There is no force to counteract gravity, so the ball will continue to fall until it reaches the ground."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1135,
+            "completion_tokens": 41,
+            "total_tokens": 1176
+        }
+    },
+    "answer": " The basketball will fall.\n\nAfter the basketball goes through the hoop, gravity will pull it down. There is no force to counteract gravity, so the ball will continue to fall until it reaches the ground.",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 7.50829291343689,
+    "code": 200,
+    "current_time": "2024-04-12 22:03:41"
+}

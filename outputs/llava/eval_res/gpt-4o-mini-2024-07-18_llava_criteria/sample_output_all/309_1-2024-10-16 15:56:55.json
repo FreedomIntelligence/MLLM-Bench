@@ -1,0 +1,35 @@
+{
+    "unique_idx": "309_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nIf the container in the top left corner in the picture was filled with boiling water at 100°C, will people likely to be scalded if they hold the bottle? \n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nYes, people are likely to be scalded if they hold the bottle containing boiling water at 100°C without using proper protective measures like oven mitts or a thick towel. The hot water can cause burns to their hands, especially if the bottle is made of a heat-conductive material, such as plastic. It is important to handle hot containers with care and use appropriate protective equipment to avoid accidents and injuries.\n~~~\n~~~Answer2\nYes, if the container in the top left corner is filled with boiling water at 100°C, it is likely that someone holding it could be scalded. Most containers are not designed to insulate against such high temperatures, so the exterior could become very hot to the touch, posing a burn risk. It's important to use insulated containers designed for hot liquids to prevent such accidents.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Reference the insulated nature of the bottle and the unlikelihood of scalding.\n2. Include reasoning on the physical properties of insulation.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/309.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gpt-4o-mini-2024-07-18",
+    "raw_answer1": "Yes, people are likely to be scalded if they hold the bottle containing boiling water at 100°C without using proper protective measures like oven mitts or a thick towel. The hot water can cause burns to their hands, especially if the bottle is made of a heat-conductive material, such as plastic. It is important to handle hot containers with care and use appropriate protective equipment to avoid accidents and injuries.",
+    "raw_answer2": "Yes, if the container in the top left corner is filled with boiling water at 100°C, it is likely that someone holding it could be scalded. Most containers are not designed to insulate against such high temperatures, so the exterior could become very hot to the touch, posing a burn risk. It's important to use insulated containers designed for hot liquids to prevent such accidents.",
+    "response": {
+        "id": "chatcmpl-AItBmI6raCtvsoOuQsIyQkrTg40p5",
+        "object": "chat.completion",
+        "created": 1729065414,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1557,
+            "completion_tokens": 6,
+            "total_tokens": 1563
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "unable to decide: situation one"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "unable to decide: situation one",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.386265516281128,
+    "code": 200,
+    "current_time": "2024-10-16 15:56:55"
+}

@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://images.unsplash.com/photo-1600320254374-ce2d293c324e",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer includes \"slow down till stop\" or \"turn left to adjacent lane\" based on visual cues.\n2. Response must consider traffic conditions and road layout visible in the image.\n3. Answer must be logically consistent with the driver's possible actions in the given context.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/386.jpg",
+    "unique_idx": "386",
+    "prompt": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "response": {
+        "id": "chatcmpl-9vo9P9YYvYwHoQs4SUZJT2umGvjlK",
+        "object": "chat.completion",
+        "created": 1723564503,
+        "model": "gpt-4o-2024-08-06",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the visual cues in the image, it seems the driver is navigating using a GPS app on their phone. The possible action of the driver could be to follow the route indicated on the GPS, which may involve continuing straight or preparing to make a turn or lane change as instructed by the navigation system.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1131,
+            "completion_tokens": 61,
+            "total_tokens": 1192
+        },
+        "system_fingerprint": "fp_845eaabc1f"
+    },
+    "answer": "Based on the visual cues in the image, it seems the driver is navigating using a GPS app on their phone. The possible action of the driver could be to follow the route indicated on the GPS, which may involve continuing straight or preparing to make a turn or lane change as instructed by the navigation system.",
+    "gen_model_id": "gpt-4o-2024-08-06",
+    "duration": 8.271560668945312,
+    "code": 200,
+    "current_time": "2024-08-13 23:55:04"
+}

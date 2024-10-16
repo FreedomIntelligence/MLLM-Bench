@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Fake Image Detection",
+        "url": "https://static.wixstatic.com/media/eb1f4c_2e9a4aa6c27e4d5385e0c612144eae6d~mv2.jpg/v1/fit/w_960%2Ch_640%2Cal_c%2Cq_80/file.jpg",
+        "question type": "compound"
+    },
+    "criteria": "1. By analyzing image quality, textures, lighting, and shadows for signs of digital manipulation, one can verify the authenticity of the image.\n2. Evaluate the depth of the explanation, ensuring it aligns with the standard answer stating the photo is real.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/355.jpg",
+    "unique_idx": 355,
+    "prompt": "Determine if this photo is real or computer-generated, analyzing both the image's composition and any anachronisms present. Provide a thorough explanation of your findings.",
+    "context": "Determine if this photo is real or computer-generated, analyzing both the image's composition and any anachronisms present. Provide a thorough explanation of your findings.",
+    "sample_id": 355,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/355.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "The image appears to be a photograph of a tiger in a natural habitat. The composition of the image, including the tiger's position, the surrounding greenery, and the lighting, all seem realistic and consistent with what one might expect to see in the wild. There are no obvious anachronisms or inconsistencies that would suggest the image is computer-generated. The tiger's fur, stripes, and overall appearance are all consistent with what is known about tigers in the wild. Therefore, it is highly likely that this is a real photograph.",
+    "response_from_model": {
+        "id": "gen-1728903839-qM4IRtosR3iAAOFcKj7H",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903839,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image appears to be a photograph of a tiger in a natural habitat. The composition of the image, including the tiger's position, the surrounding greenery, and the lighting, all seem realistic and consistent with what one might expect to see in the wild. There are no obvious anachronisms or inconsistencies that would suggest the image is computer-generated. The tiger's fur, stripes, and overall appearance are all consistent with what is known about tigers in the wild. Therefore, it is highly likely that this is a real photograph.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 55,
+            "completion_tokens": 110,
+            "total_tokens": 165
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:04:04"
+}

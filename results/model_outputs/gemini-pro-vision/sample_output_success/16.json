@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "OCR",
+        "url": "https://i.ytimg.com/vi/JDtgQCRj3aQ/maxresdefault.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Answer lists all Italian films: '8½', 'La Dolce Vita', 'La Strada', 'Boccaccio '70'.\n2. OCR accuracy: No misspellings or omissions of film titles.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/16.jpg",
+    "unique_idx": "16",
+    "prompt": "List all films from Italy in the image.",
+    "response": {
+        "id": "chatcmpl-979d659ee0a841079b6d61895f59175c",
+        "model": "gemini-pro-vision",
+        "object": "chat.completion",
+        "created": 1712930262,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": " 1. Federico Fellini's 8 1/2 (1963)\n2. Federico Fellini's La Dolce Vita (1960)\n3. Federico Fellini's Boccaccio '70 (1962)\n4. Federico Fellini's La Strada (1954)"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1121,
+            "completion_tokens": 64,
+            "total_tokens": 1185
+        }
+    },
+    "answer": " 1. Federico Fellini's 8 1/2 (1963)\n2. Federico Fellini's La Dolce Vita (1960)\n3. Federico Fellini's Boccaccio '70 (1962)\n4. Federico Fellini's La Strada (1954)",
+    "gen_model_id": "gemini-pro-vision",
+    "duration": 7.532255411148071,
+    "code": 200,
+    "current_time": "2024-04-12 21:57:42"
+}

@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-Aeu-8awAAaJ2l?format=jpg&name=medium",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/232.jpg",
+    "unique_idx": 232,
+    "prompt": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "context": "Analyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.",
+    "sample_id": 232,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/232.jpg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "To determine the most commonly used aircraft type for domestic flights from the provided flight schedule, let's analyze the domestic arrivals and departures.\n\n### Domestic Arrivals:\n1. ATR - 6 flights\n2. A320 - 3 flights\n\n### Domestic Departures:\n1. ATR - 5 flights\n2. A320 - 3 flights\n\n### Summary:\n- **ATR**: 11 total flights (6 arrivals + 5 departures)\n- **A320**: 6 total flights (3 arrivals + 3 departures)\n\n### Conclusion:\nThe **ATR** aircraft is the most commonly used type for domestic flights at Tiruchirappalli International Airport on the specified date.",
+    "response_from_model": {
+        "id": "chatcmpl-AIBNUvrZJ4GZy8ByFjUKPCVtkZN8C",
+        "object": "chat.completion",
+        "created": 1728897004,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To determine the most commonly used aircraft type for domestic flights from the provided flight schedule, let's analyze the domestic arrivals and departures.\n\n### Domestic Arrivals:\n1. ATR - 6 flights\n2. A320 - 3 flights\n\n### Domestic Departures:\n1. ATR - 5 flights\n2. A320 - 3 flights\n\n### Summary:\n- **ATR**: 11 total flights (6 arrivals + 5 departures)\n- **A320**: 6 total flights (3 arrivals + 3 departures)\n\n### Conclusion:\nThe **ATR** aircraft is the most commonly used type for domestic flights at Tiruchirappalli International Airport on the specified date."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 25538,
+            "completion_tokens": 137,
+            "total_tokens": 25675
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:10:05"
+}

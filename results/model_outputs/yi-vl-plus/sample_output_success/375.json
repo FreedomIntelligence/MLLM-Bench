@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-XJg3GaEAAZQRe?format=png&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Include implementation of both architectures: 2x wider model and 2x wider model with AltUp.\n2. Use PyTorch for creating transformer layers, embedding layers, predictors, and correctors.\n3. Reflect the '2x width' specification and 'N/2' layer stacking in the code.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/375.png",
+    "unique_idx": "375",
+    "prompt": "Please implement the model network and idea shown in the picture using PyTorch.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 791,
+            "prompt_tokens": 1026,
+            "total_tokens": 1817
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image illustrates two different models: a 2x wider model and a 2x wider model with AltUp. Both models consist of transformer layers, predictor layers, and embedding layers, with the key difference being the inclusion of a \"corrector\" in the second model. The model also has a \"2x width\" annotation, suggesting that the model's width is doubled.\n\nHere's how you can implement these models in PyTorch:\n\n```python\nimport torch\nfrom torch import nn\nfrom torch.nn import TransformerLayer, Embedding, LayerNorm, MultiHeadAttention, PositionWiseFeedForward\n\nclass MyTransformer(nn.Module):\n    def __init__(self, ninp, nhid, nout, nhead, nlayer, dropout, x_width):\n        super(MyTransformer, self).__init__()\n        self.embedding = nn.Embedding(ninp, nhid * x_width)\n        self.transformer_layers = nn.ModuleList([TransformerLayer(nhid, nhead, nlayer, dropout) for _ in range(x_width)])\n        self.position_encoder = nn.Parameter(torch.rand(1, nhead, ninp))\n        self.position_encoder.data = self.position_encoder.data.clamp(-1, 1)\n        self.transformer_layers = nn.Sequential(*self.transformer_layers)\n        self.predictor = nn.Linear(nhid * x_width, nout)\n        self.corrector = nn.Linear(nhid * x_width, nout)  # only in the second model\n\n    def forward(self, x):\n        x = self.embedding(x) + self.position_encoder\n        x = self.transformer_layers(x)\n        x = self.predictor(x)\n        x = self.corrector(x)  # only in the second model\n        return x\n\n# Define the model\nninp = 512  # input dimension\nnhid = 2048  # hidden dimension\nnout = 1024  # output dimension\nnhead = 8   # number of attention heads\nnlayer = 6  # number of layers\ndropout = 0.1\nx_width = 2  # width multiplier\n\n# Model without AltUp\nmodel_a = MyTransformer(ninp, nhid, nout, nhead, nlayer, dropout, x_width)\n\n# Model with AltUp\nmodel_b = MyTransformer(ninp, nhid, nout, nhead, nlayer, dropout, x_width)\nmodel_b.corrector = nn.Linear(nhid * x_width, nout)\n\n# Example input tensor\ninput_tensor = torch.rand(10, ninp)\n\n# Forward pass\noutput_a = model_a(input_tensor)\noutput_b = model_b(input_tensor)\n\nprint(\"Output of model_a:\", output_a)\nprint(\"Output of model_b:\", output_b)\n```\n\nThis code defines a custom PyTorch model called `MyTransformer`, which includes the transformer layers, predictor layers, and embedding layers as described in the image. The `x_width` parameter controls whether the model is 2x wider or not. In the forward pass, the input tensor is passed through the model to produce the output."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The image illustrates two different models: a 2x wider model and a 2x wider model with AltUp. Both models consist of transformer layers, predictor layers, and embedding layers, with the key difference being the inclusion of a \"corrector\" in the second model. The model also has a \"2x width\" annotation, suggesting that the model's width is doubled.\n\nHere's how you can implement these models in PyTorch:\n\n```python\nimport torch\nfrom torch import nn\nfrom torch.nn import TransformerLayer, Embedding, LayerNorm, MultiHeadAttention, PositionWiseFeedForward\n\nclass MyTransformer(nn.Module):\n    def __init__(self, ninp, nhid, nout, nhead, nlayer, dropout, x_width):\n        super(MyTransformer, self).__init__()\n        self.embedding = nn.Embedding(ninp, nhid * x_width)\n        self.transformer_layers = nn.ModuleList([TransformerLayer(nhid, nhead, nlayer, dropout) for _ in range(x_width)])\n        self.position_encoder = nn.Parameter(torch.rand(1, nhead, ninp))\n        self.position_encoder.data = self.position_encoder.data.clamp(-1, 1)\n        self.transformer_layers = nn.Sequential(*self.transformer_layers)\n        self.predictor = nn.Linear(nhid * x_width, nout)\n        self.corrector = nn.Linear(nhid * x_width, nout)  # only in the second model\n\n    def forward(self, x):\n        x = self.embedding(x) + self.position_encoder\n        x = self.transformer_layers(x)\n        x = self.predictor(x)\n        x = self.corrector(x)  # only in the second model\n        return x\n\n# Define the model\nninp = 512  # input dimension\nnhid = 2048  # hidden dimension\nnout = 1024  # output dimension\nnhead = 8   # number of attention heads\nnlayer = 6  # number of layers\ndropout = 0.1\nx_width = 2  # width multiplier\n\n# Model without AltUp\nmodel_a = MyTransformer(ninp, nhid, nout, nhead, nlayer, dropout, x_width)\n\n# Model with AltUp\nmodel_b = MyTransformer(ninp, nhid, nout, nhead, nlayer, dropout, x_width)\nmodel_b.corrector = nn.Linear(nhid * x_width, nout)\n\n# Example input tensor\ninput_tensor = torch.rand(10, ninp)\n\n# Forward pass\noutput_a = model_a(input_tensor)\noutput_b = model_b(input_tensor)\n\nprint(\"Output of model_a:\", output_a)\nprint(\"Output of model_b:\", output_b)\n```\n\nThis code defines a custom PyTorch model called `MyTransformer`, which includes the transformer layers, predictor layers, and embedding layers as described in the image. The `x_width` parameter controls whether the model is 2x wider or not. In the forward pass, the input tensor is passed through the model to produce the output.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 56.9512984752655,
+    "code": 200,
+    "current_time": "2024-04-30 14:40:06"
+}

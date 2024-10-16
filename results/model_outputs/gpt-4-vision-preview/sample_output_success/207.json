@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2023/11/05/06/55/motorcycle-8366394_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify that the rider is riding towards the left side.\n2. Infer that the rider is unlikely to appear on the right side.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/207.jpg",
+    "unique_idx": "207",
+    "prompt": "Assuming the rider continues to travel in the same direction, will he appear on the right side of the picture?",
+    "response": {
+        "id": "msg_0128vbVP2Kr1JbkfPwRgybeX",
+        "type": "message",
+        "role": "assistant",
+        "model": "gpt-4",
+        "usage": {
+            "prompt_tokens": 1504,
+            "completion_tokens": 78,
+            "total_tokens": 1582
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "No, assuming the rider continues traveling in the same direction as shown in the image, they will not appear on the right side of the picture. The motorcycle is moving from right to left based on the motion blur visible in the image. If the rider maintains this trajectory, they will eventually exit the frame on the left side rather than appearing on the right side of the picture."
+                },
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "object": "chat.completion",
+        "created": 1712927160
+    },
+    "answer": "No, assuming the rider continues traveling in the same direction as shown in the image, they will not appear on the right side of the picture. The motorcycle is moving from right to left based on the motion blur visible in the image. If the rider maintains this trajectory, they will eventually exit the frame on the left side rather than appearing on the right side of the picture.",
+    "gen_model_id": "gpt-4-vision-preview",
+    "duration": 7.688314437866211,
+    "code": 200,
+    "current_time": "2024-04-12 21:06:01"
+}

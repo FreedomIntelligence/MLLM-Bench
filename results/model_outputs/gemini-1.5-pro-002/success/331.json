@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Evaluating",
+        "capability": "Damage Evaluation",
+        "url": "https://live.staticflickr.com/178/387690601_1ec8234764_b.jpg",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify and describe pre-fire structural damage to the vehicle, especially the front-end collision impact.\n2. Assess and specify areas most affected by flames, focusing on visible fire damage.\n3. Include details of both flame engulfment and damage severity, prioritizing the car's front area.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/331.jpg",
+    "unique_idx": 331,
+    "prompt": "Evaluate the potential structural damage to the vehicle prior to the fire and identify which areas of the car are most affected by the flames.",
+    "context": "Evaluate the potential structural damage to the vehicle prior to the fire and identify which areas of the car are most affected by the flames.",
+    "sample_id": 331,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/331.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "The gray car shows pre-fire damage consistent with a front-end collision. The hood is buckled upwards, indicating impact. The front bumper also appears damaged and partially detached on the driver's side.  It's impossible to determine the extent of damage to the frame or internal components from this image.\n\nThe fire is primarily concentrated in the engine compartment of the gray car.  Flames are engulfing the engine bay and extending out from under the hood and through the front windshield.  While the red car is close to the flames, it doesn't appear to be burning yet, though radiant heat is likely causing damage.  The front end of the gray car will experience the most severe fire damage, including the engine, wiring, dashboard, and front passenger compartment.",
+    "response_from_model": {
+        "id": "chatcmpl-c8c2d2cc3d47460da0ba4339f555092f",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897324,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The gray car shows pre-fire damage consistent with a front-end collision. The hood is buckled upwards, indicating impact. The front bumper also appears damaged and partially detached on the driver's side.  It's impossible to determine the extent of damage to the frame or internal components from this image.\n\nThe fire is primarily concentrated in the engine compartment of the gray car.  Flames are engulfing the engine bay and extending out from under the hood and through the front windshield.  While the red car is close to the flames, it doesn't appear to be burning yet, though radiant heat is likely causing damage.  The front end of the gray car will experience the most severe fire damage, including the engine, wiring, dashboard, and front passenger compartment."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 285,
+            "completion_tokens": 158,
+            "total_tokens": 443
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:40"
+}

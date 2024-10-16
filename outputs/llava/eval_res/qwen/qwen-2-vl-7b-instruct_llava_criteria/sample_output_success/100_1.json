@@ -1,0 +1,35 @@
+{
+    "unique_idx": "100_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nIdentify any animal other than sheep in the image. \n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThere is an animal other than sheep in the image. It is a cat standing next to a sheep.\n~~~\n~~~Answer2\nThere is a raccoon in the image.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm presence of a wolf among sheep.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/100.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "qwen/qwen-2-vl-7b-instruct",
+    "raw_answer1": "There is an animal other than sheep in the image. It is a cat standing next to a sheep.",
+    "raw_answer2": "There is a raccoon in the image.",
+    "response": {
+        "id": "chatcmpl-AIuQ3RuTX5w0Xt3RCrN9XeVaCcR0I",
+        "object": "chat.completion",
+        "created": 1729070143,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1043,
+            "completion_tokens": 2,
+            "total_tokens": 1045
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.490429401397705,
+    "code": 200,
+    "current_time": "2024-10-16 17:15:44"
+}

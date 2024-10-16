@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F-eiAXZXEAAgv9Z?format=jpg&name=large",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Visualize data trends across Finance Commissions for multiple states.\n2. Highlight top three states with the highest percentage share changes.\n3. Ensure visualization clarity for comparison between states and years.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/376.jpeg",
+    "unique_idx": 376,
+    "prompt": "The image is a table, and you need to implement data visualization based on the data in the table, in order to present the data in the table in the best way.",
+    "context": "The image is a table, and you need to implement data visualization based on the data in the table, in order to present the data in the table in the best way.",
+    "sample_id": 376,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/376.jpeg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "A stacked area chart would be an excellent way to visualize this data.  Here's why and how:\n\n**Why a Stacked Area Chart?**\n\n* **Shows change over time:** The data represents percentage share over different time periods (Finance Commissions), making a time-series visualization appropriate.\n* **Comparison across categories:** You can easily compare the changing share of each state over time.\n* **Overall trend:** The total area of the chart represents the total allocation, and you can see how this changes over the different periods.\n* **Individual contribution:** The area for each state within the stack shows its relative contribution to the total in each period.\n\n**Implementation Details:**\n\n1. **X-axis:**  Finance Commission periods (Tenth, Eleventh, Twelfth, etc.)\n2. **Y-axis:** Percentage share of Union Taxes and Duties.\n3. **Stacked Areas:** Each state gets its own colored area within the stack.  Use distinct colors for easy differentiation.\n4. **Legend:** Clearly label each state's color in a legend.\n5. **Title:** A descriptive title like \"% Share of Union Taxes and Duties Allocated to States over Time\" would be appropriate.\n\n**Additional Considerations:**\n\n* **Ordering of states:** Arrange the states in the stack from largest to smallest average share (or some other meaningful order) for better readability.\n* **Interactive elements:** If possible, make the chart interactive so users can hover over areas to see the exact percentage for a specific state in a given period.\n* **Highlighting key states:** If you want to focus on specific states, you could use bolder colors or callouts for those areas.\n* **Simplifying the chart:** If the chart becomes too cluttered with all states, you could group smaller states into an \"Other\" category or create separate charts for different regions of India.\n\nBy using a stacked area chart and incorporating these considerations, you can effectively present the data in a visually appealing and insightful manner.\n",
+    "response_from_model": {
+        "id": "chatcmpl-abc203c85a774570a3040d83c7a98fef",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897348,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "A stacked area chart would be an excellent way to visualize this data.  Here's why and how:\n\n**Why a Stacked Area Chart?**\n\n* **Shows change over time:** The data represents percentage share over different time periods (Finance Commissions), making a time-series visualization appropriate.\n* **Comparison across categories:** You can easily compare the changing share of each state over time.\n* **Overall trend:** The total area of the chart represents the total allocation, and you can see how this changes over the different periods.\n* **Individual contribution:** The area for each state within the stack shows its relative contribution to the total in each period.\n\n**Implementation Details:**\n\n1. **X-axis:**  Finance Commission periods (Tenth, Eleventh, Twelfth, etc.)\n2. **Y-axis:** Percentage share of Union Taxes and Duties.\n3. **Stacked Areas:** Each state gets its own colored area within the stack.  Use distinct colors for easy differentiation.\n4. **Legend:** Clearly label each state's color in a legend.\n5. **Title:** A descriptive title like \"% Share of Union Taxes and Duties Allocated to States over Time\" would be appropriate.\n\n**Additional Considerations:**\n\n* **Ordering of states:** Arrange the states in the stack from largest to smallest average share (or some other meaningful order) for better readability.\n* **Interactive elements:** If possible, make the chart interactive so users can hover over areas to see the exact percentage for a specific state in a given period.\n* **Highlighting key states:** If you want to focus on specific states, you could use bolder colors or callouts for those areas.\n* **Simplifying the chart:** If the chart becomes too cluttered with all states, you could group smaller states into an \"Other\" category or create separate charts for different regions of India.\n\nBy using a stacked area chart and incorporating these considerations, you can effectively present the data in a visually appealing and insightful manner.\n"
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 294,
+            "completion_tokens": 412,
+            "total_tokens": 706
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:16:05"
+}

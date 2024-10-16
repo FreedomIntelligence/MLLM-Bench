@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Perception/Remembering",
+        "capability": "Multilingual Text Recognition",
+        "url": "NaN",
+        "question type": "compound"
+    },
+    "criteria": "1. Identify author as \"Kai Hwang\" and match to reference \"黄铠\".\n2. Recognize and list translators \"袁志勇, 杜瑞颖, 张立强, 伍春香, 蔡朝晖\".\n3. Describe book's subject, aligning with \"Cloud Computing for Machine Learning and Cognitive Applications\".",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/61.jpg",
+    "unique_idx": "61",
+    "prompt": "Please answer the following questions according to the given image. Who is the author of this book? Who are the translator of this book? What is this book about?",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "The author of the book is Kai Hwang, as indicated on the cover. The book is titled \"Cloud Computing for Machine Learning and Cognitive Applications.\" It appears to be a Chinese edition, and while the translator's name is not fully visible in the image, there is text that likely includes the translator's name alongside the author's name in the parentheses. Unfortunately, due to the angle of the photo, I cannot read the translator's name.\n\nThe book is about cloud computing as it relates to machine learning and cognitive applications. This likely covers topics such as how cloud infrastructure supports the computational demands of machine learning algorithms and cognitive computing systems, which aim to simulate human thought processes.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426537,
+        "id": "chatcmpl-9W3NxfvzYTytXv7uOqb97xewtW4vb",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 135,
+            "prompt_tokens": 805,
+            "total_tokens": 940
+        }
+    },
+    "answer": "The author of the book is Kai Hwang, as indicated on the cover. The book is titled \"Cloud Computing for Machine Learning and Cognitive Applications.\" It appears to be a Chinese edition, and while the translator's name is not fully visible in the image, there is text that likely includes the translator's name alongside the author's name in the parentheses. Unfortunately, due to the angle of the photo, I cannot read the translator's name.\n\nThe book is about cloud computing as it relates to machine learning and cognitive applications. This likely covers topics such as how cloud infrastructure supports the computational demands of machine learning algorithms and cognitive computing systems, which aim to simulate human thought processes.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 26.54307198524475,
+    "code": 200,
+    "current_time": "2024-06-03 22:55:43"
+}

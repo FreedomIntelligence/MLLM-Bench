@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Medical Image Understanding",
+        "url": "https://ts1.cn.mm.bing.net/th/id/R-C.7b111abd47ffc37771a3910917def3bd?rik=7qbmO47DiOm%2bog&riu=http%3a%2f%2fmediad.publicbroadcasting.net%2fp%2fshared%2fnpr%2fstyles%2fx_large%2fnprshared%2f201504%2f398803983.jpg&ehk=AppKqkdndo%2fQnbrklTN0KYuK5j1PdX6%2fP4hNBJTlTgw%3d&risl=&pid=ImgRaw&r=0",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately describe the image, noting it's a CT scan, not an ultrasound for CRL measurement.\n2. Explain that CRL is used for gestational age, but not applicable in this CT image.\n3. State that gestational age cannot be determined from the provided CT image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/190.jpg",
+    "unique_idx": "190",
+    "prompt": "Given the image, describe the details in the image and determine the gestational age of the fetus by measuring the crown-rump length (CRL) and comparing it to standard growth charts.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 246,
+            "prompt_tokens": 1050,
+            "total_tokens": 1296
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The image provided is an ultrasound scan of a fetus in utero. To determine the gestational age, we would measure the crown-rump length (CRL), which is the length of the fetus from the top of the head to the bottom of the buttocks. This measurement is typically done between weeks 10 and 13 of gestation.\n\nBased on the image, we can identify the fetal head and the buttocks, but without a clear indication of the exact measurement tools or scale, we cannot provide an accurate CRL measurement from this image alone.\n\nIn clinical practice, once the CRL is measured, it is compared to standard growth charts that correlate the length with the gestational age. For example, a CRL of 25 mm is typically associated with a gestational age of 10 weeks, while a CRL of 70 mm is associated with a gestational age of 13 weeks.\n\nWithout the specific measurement, we cannot provide the gestational age of the fetus in this instance. For an accurate determination, the CRL must be measured using proper ultrasound tools and then compared to the standard growth charts."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "The image provided is an ultrasound scan of a fetus in utero. To determine the gestational age, we would measure the crown-rump length (CRL), which is the length of the fetus from the top of the head to the bottom of the buttocks. This measurement is typically done between weeks 10 and 13 of gestation.\n\nBased on the image, we can identify the fetal head and the buttocks, but without a clear indication of the exact measurement tools or scale, we cannot provide an accurate CRL measurement from this image alone.\n\nIn clinical practice, once the CRL is measured, it is compared to standard growth charts that correlate the length with the gestational age. For example, a CRL of 25 mm is typically associated with a gestational age of 10 weeks, while a CRL of 70 mm is associated with a gestational age of 13 weeks.\n\nWithout the specific measurement, we cannot provide the gestational age of the fetus in this instance. For an accurate determination, the CRL must be measured using proper ultrasound tools and then compared to the standard growth charts.",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 18.30311942100525,
+    "code": 200,
+    "current_time": "2024-04-30 13:44:58"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "69_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat is this book about? Answer in Arabic.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nهذا الكتاب يستخدم اللغة العربية ويعرف باسم \"الدراسة التجريبية \"الدراسة التجريبية\" في لغة الأمازيق لأسطورة الدراسة التجريبية\". ويتدرب على الأسطورة الدراسة التجريبية على استخدام الفعل في اللغة العربية من خلال الأسطورة تدريب الأسطورة التجريبية على كيفية استخدام الأفعال بشكل صحيح وفي مستويات مختلفة من اللغة العربية في قطع من الكتاب تم التحدث عن الأقوال والأفعال والأبحاث الأساسية في اللغة العربية والطريقة التي يجب استخدامها في الكتاب.\n~~~\n~~~Answer2\nهذا الكتاب هو كتاب تهيئة واستعداد لتلاميذ الصف الأول الابتدائي في مادة اللغة العربية.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Accurately recognize and translate the Arabic text on the book cover.\n2. Provide a summary of the book's content based on the translated text.\n3. Answer should be in correct, clear Arabic language.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/69.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gemini-1.5-pro-002",
+    "raw_answer1": "هذا الكتاب يستخدم اللغة العربية ويعرف باسم \"الدراسة التجريبية \"الدراسة التجريبية\" في لغة الأمازيق لأسطورة الدراسة التجريبية\". ويتدرب على الأسطورة الدراسة التجريبية على استخدام الفعل في اللغة العربية من خلال الأسطورة تدريب الأسطورة التجريبية على كيفية استخدام الأفعال بشكل صحيح وفي مستويات مختلفة من اللغة العربية في قطع من الكتاب تم التحدث عن الأقوال والأفعال والأبحاث الأساسية في اللغة العربية والطريقة التي يجب استخدامها في الكتاب.",
+    "raw_answer2": "هذا الكتاب هو كتاب تهيئة واستعداد لتلاميذ الصف الأول الابتدائي في مادة اللغة العربية.",
+    "response": {
+        "id": "chatcmpl-AIt2a9oLBZBSTMoidxaiPKO4vwBI0",
+        "object": "chat.completion",
+        "created": 1729064844,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1378,
+            "completion_tokens": 2,
+            "total_tokens": 1380
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.52769136428833,
+    "code": 200,
+    "current_time": "2024-10-16 15:47:25"
+}

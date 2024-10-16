@@ -1,0 +1,35 @@
+{
+    "unique_idx": "75_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\n Infer the type of educational activity taking place and its subject.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe image shows a small group of students in what appears to be a tutoring session or small class.  The subject is linear algebra, as evidenced by the matrix equations written on the whiteboards.\n~~~\n~~~Answer2\nThe educational activity taking place is a group seminar or tutorial, possibly involving math or financial analysis. The man standing and talking at the whiteboard with a marker indicates that he is teaching or explaining the subject matter to the students seated at the table with laptops in front of them. The presence of potted plants in the room suggests a casual and comfortable learning environment. This suggests that the educational activity focuses on collaboration, discussion, and active learning, where students can work together to explore and understand the subject matter more effectively.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify educational activity (lecture, workshop, etc.) and verify presence of instructional materials (whiteboard, digital screen).\n2. Determine the subject being taught (mathematics, science, etc.) based on visible content (equations, diagrams).\n3. Evaluate clarity in describing the setting and participants' roles (teacher, students).",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/75.jpeg",
+    "model_1": "gemini-1.5-flash-002",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The image shows a small group of students in what appears to be a tutoring session or small class.  The subject is linear algebra, as evidenced by the matrix equations written on the whiteboards.",
+    "raw_answer2": "The educational activity taking place is a group seminar or tutorial, possibly involving math or financial analysis. The man standing and talking at the whiteboard with a marker indicates that he is teaching or explaining the subject matter to the students seated at the table with laptops in front of them. The presence of potted plants in the room suggests a casual and comfortable learning environment. This suggests that the educational activity focuses on collaboration, discussion, and active learning, where students can work together to explore and understand the subject matter more effectively.",
+    "response": {
+        "id": "chatcmpl-AIsxtGJ7CVpfdOb2rTYjMznBOmAxB",
+        "object": "chat.completion",
+        "created": 1729064553,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1242,
+            "completion_tokens": 2,
+            "total_tokens": 1244
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.565158367156982,
+    "code": 200,
+    "current_time": "2024-10-16 15:42:33"
+}

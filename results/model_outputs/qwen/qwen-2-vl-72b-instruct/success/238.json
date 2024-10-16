@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-cFfylXkAAd7yc?format=png&name=small",
+        "question type": "close-ended"
+    },
+    "criteria": "1. List stores that are 'Deluxe Supermarket' in 'Mexico': store 8, store 12, store 21.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/238.png",
+    "unique_idx": 238,
+    "prompt": "List all stores that are deluxe supermarket and located in Mexico.",
+    "context": "List all stores that are deluxe supermarket and located in Mexico.",
+    "sample_id": 238,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/238.png"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-72b-instruct",
+    "answer": "To list all stores that are Deluxe Supermarkets located in Mexico, we need to filter the data based on the following criteria:\n\n1. The store type must be \"Deluxe Supermarket.\"\n2. The store country must be \"Mexico.\"\n\nFrom the given data, we can see that the stores that meet these criteria are:\n\n1. Store 8: Merida, Yucatan, Mexico\n2. Store 12: Hidalgo, Zacatecas, Mexico\n3. Store 18: Hidalgo, Zacatecas, Mexico\n4. Store 21: San Andres, DF, Mexico",
+    "response_from_model": {
+        "id": "gen-1728907955-d87hF3sVK3P9YqDJ5AbI",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-72b-instruct",
+        "object": "chat.completion",
+        "created": 1728907955,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "To list all stores that are Deluxe Supermarkets located in Mexico, we need to filter the data based on the following criteria:\n\n1. The store type must be \"Deluxe Supermarket.\"\n2. The store country must be \"Mexico.\"\n\nFrom the given data, we can see that the stores that meet these criteria are:\n\n1. Store 8: Merida, Yucatan, Mexico\n2. Store 12: Hidalgo, Zacatecas, Mexico\n3. Store 18: Hidalgo, Zacatecas, Mexico\n4. Store 21: San Andres, DF, Mexico",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 34,
+            "completion_tokens": 129,
+            "total_tokens": 163
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-20:12:41"
+}

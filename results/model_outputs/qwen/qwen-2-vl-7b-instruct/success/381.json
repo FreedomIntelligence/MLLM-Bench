@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify if the stroke is a smash, clear, or drop shot based on player's posture and racket angle.\n2. Describe a logical sequence of potential rallies considering the identified stroke type.\n3. Ensure the response is aligned with badminton rules and realistic gameplay dynamics.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/381.png",
+    "unique_idx": 381,
+    "prompt": "Given the image, predict the type of stroke that the jumping player is likely to perform, and generate a sequence of potential rallies that could follow from this moment",
+    "context": "Given the image, predict the type of stroke that the jumping player is likely to perform, and generate a sequence of potential rallies that could follow from this moment",
+    "sample_id": 381,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/381.png"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "Based on the image, the jumping player is likely to perform a smash shot. Here is a potential sequence of rallies that could follow from this moment:\n\n1. **Smash Shot**: The jumping player hits the shuttlecock with a powerful smash towards the opponent's side of the court.\n2. **Opponent's Defense**: The opponent tries to return the shuttlecock, but it is out of reach.\n3. **Serve**: The player who served the shuttlecock in the previous rally serves a new shuttlecock to start a new point.\n4. **Opponent's Return**: The opponent attempts to return the serve, possibly with a drop shot or a lob.\n5. **Player's Return**: The player who served the shuttlecock returns the shuttlecock, aiming to keep the rally going.\n6. **Opponent's Response**: The opponent tries to return the shuttlecock, possibly with a drop shot or a lob to the other side of the court.\n7. **Player's Return**: The player who served the shuttlecock returns the shuttlecock, aiming to keep the rally going.\n8. **Opponent's Response**: The opponent tries to return the shuttlecock, possibly with a drop shot or a lob to the other side of the court.\n9. **Player's Return**: The player who served the shuttlecock returns the shuttlecock, aiming to keep the rally going.\n10. **Opponent's Response**: The opponent tries to return the shuttlecock, possibly with a drop shot or a lob to the other side of the court.\n\nThis sequence assumes that the rally continues and that the players are trying to keep the shuttlecock in play.",
+    "response_from_model": {
+        "id": "gen-1728903880-B3IFW4ey7xq4YR0pwWN7",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903880,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the image, the jumping player is likely to perform a smash shot. Here is a potential sequence of rallies that could follow from this moment:\n\n1. **Smash Shot**: The jumping player hits the shuttlecock with a powerful smash towards the opponent's side of the court.\n2. **Opponent's Defense**: The opponent tries to return the shuttlecock, but it is out of reach.\n3. **Serve**: The player who served the shuttlecock in the previous rally serves a new shuttlecock to start a new point.\n4. **Opponent's Return**: The opponent attempts to return the serve, possibly with a drop shot or a lob.\n5. **Player's Return**: The player who served the shuttlecock returns the shuttlecock, aiming to keep the rally going.\n6. **Opponent's Response**: The opponent tries to return the shuttlecock, possibly with a drop shot or a lob to the other side of the court.\n7. **Player's Return**: The player who served the shuttlecock returns the shuttlecock, aiming to keep the rally going.\n8. **Opponent's Response**: The opponent tries to return the shuttlecock, possibly with a drop shot or a lob to the other side of the court.\n9. **Player's Return**: The player who served the shuttlecock returns the shuttlecock, aiming to keep the rally going.\n10. **Opponent's Response**: The opponent tries to return the shuttlecock, possibly with a drop shot or a lob to the other side of the court.\n\nThis sequence assumes that the rally continues and that the players are trying to keep the shuttlecock in play.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 53,
+            "completion_tokens": 334,
+            "total_tokens": 387
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:05:21"
+}

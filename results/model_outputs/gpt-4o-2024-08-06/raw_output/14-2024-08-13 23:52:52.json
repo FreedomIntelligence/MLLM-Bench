@@ -1,0 +1,24 @@
+{
+    "id": "chatcmpl-9vo7CspSatunl0ZD8cmpiwqzitSJ8",
+    "object": "chat.completion",
+    "created": 1723564366,
+    "model": "gpt-4o-2024-08-06",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "**Definitions (def):**\n\n- An \\( n \\times n \\) matrix \\( A \\) is an orthogonal transformation if and only if:\n  - It has \\( n \\) mutually perpendicular rows or columns with unit length.\n\n**Examples (ex):**\n\n- Rows must be independent (can't be multiples of each other):\n  - Linearly dependent example: \n    \\[\n    \\begin{bmatrix} \n    1 & 2 \\\\ \n    3 & 6 \n    \\end{bmatrix}\n    \\]\n  - Independent example:\n    \\[\n    \\begin{bmatrix} \n    1 & 2 \\\\ \n    2 & 6 \n    \\end{bmatrix}\n    \\]\n    (but not perpendicular)\n\n- Dot product condition for perpendicularity:\n  - \\[\n  x \\cdot y = 0 \\iff x \\perp y\n  \\]\n\n- Rows/columns must have unit length:\n  - \\[\n  \\| x \\| = \\sqrt{\\sum x_i^2} = \\sqrt{x \\cdot x}\n  \\]\n\n- Transpose example:\n  \\[\n  \\begin{bmatrix} \n  1 & 2 & 3 \\\\ \n  4 & 5 & 6 \n  \\end{bmatrix}^T \n  =\n  \\begin{bmatrix} \n  1 & 4 \\\\ \n  2 & 5 \\\\ \n  3 & 6 \n  \\end{bmatrix}\n  \\]\n\n**Formulas using LaTeX:**\n\n- Dot product:\n  \\[\n  x \\cdot y = \\sum_{i=1}^{n} x_i y_i\n  \\]\n\n- Unit length of vector \\( x \\):\n  \\[\n  \\| x \\| = \\sqrt{\\sum x_i^2} = \\sqrt{x \\cdot x}\n  \\]\n\n- Orthogonal transformation properties:\n  \\[\n  AA^T = A^TA = I\n  \\]\n  \\[\n  A^{-1} = A^T\n  \\]",
+                "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 796,
+        "completion_tokens": 439,
+        "total_tokens": 1235
+    },
+    "system_fingerprint": "fp_845eaabc1f"
+}

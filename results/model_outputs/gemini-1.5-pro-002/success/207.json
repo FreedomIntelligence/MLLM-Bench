@@ -1,0 +1,42 @@
+{
+    "meta": {
+        "level": "Applying",
+        "capability": "Spatial Relationship Understanding",
+        "url": "https://cdn.pixabay.com/photo/2023/11/05/06/55/motorcycle-8366394_1280.jpg",
+        "question type": "close-ended"
+    },
+    "criteria": "1. Identify that the rider is riding towards the left side.\n2. Infer that the rider is unlikely to appear on the right side.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/207.jpg",
+    "unique_idx": 207,
+    "prompt": "Assuming the rider continues to travel in the same direction, will he appear on the right side of the picture?",
+    "context": "Assuming the rider continues to travel in the same direction, will he appear on the right side of the picture?",
+    "sample_id": 207,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/207.jpg"
+    ],
+    "gen_model_id": "gemini-1.5-pro-002",
+    "answer": "No.  He's traveling from right to left across the frame. If he continues in that direction, he will eventually leave the frame on the left side.",
+    "response_from_model": {
+        "id": "chatcmpl-4032206d0261421cb795b69b7235f38b",
+        "model": "",
+        "object": "chat.completion",
+        "created": 1728897286,
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "No.  He's traveling from right to left across the frame. If he continues in that direction, he will eventually leave the frame on the left side."
+                },
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 281,
+            "completion_tokens": 33,
+            "total_tokens": 314
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:15:02"
+}

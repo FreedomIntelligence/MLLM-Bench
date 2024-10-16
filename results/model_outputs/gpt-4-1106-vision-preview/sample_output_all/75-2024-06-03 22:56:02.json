@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Scene Understanding",
+        "url": "NaN",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Identify educational activity (lecture, workshop, etc.) and verify presence of instructional materials (whiteboard, digital screen).\n2. Determine the subject being taught (mathematics, science, etc.) based on visible content (equations, diagrams).\n3. Evaluate clarity in describing the setting and participants' roles (teacher, students).",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/75.jpeg",
+    "unique_idx": "75",
+    "prompt": " Infer the type of educational activity taking place and its subject.",
+    "response": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "content": "This appears to be a classroom setting where a mathematics lesson is taking place. The board shows mathematical expressions and equations, suggesting that the subject matter could involve algebra or calculus. The presence of a whiteboard and a digital screen indicates that the instructor is utilizing both traditional and modern teaching aids to facilitate learning. The students are seated facing the instructor, which is a common arrangement for a lecture or a lesson where the focus is on the material being presented at the front of the room.",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1717426558,
+        "id": "chatcmpl-9W3OIBKwMOn97tJtgzZpEsu66M479",
+        "model": "gpt-4",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "usage": {
+            "completion_tokens": 95,
+            "prompt_tokens": 814,
+            "total_tokens": 909
+        }
+    },
+    "answer": "This appears to be a classroom setting where a mathematics lesson is taking place. The board shows mathematical expressions and equations, suggesting that the subject matter could involve algebra or calculus. The presence of a whiteboard and a digital screen indicates that the instructor is utilizing both traditional and modern teaching aids to facilitate learning. The students are seated facing the instructor, which is a common arrangement for a lecture or a lesson where the focus is on the material being presented at the front of the room.",
+    "gen_model_id": "gpt-4-1106-vision-preview",
+    "duration": 10.885082960128784,
+    "code": 200,
+    "current_time": "2024-06-03 22:56:02"
+}

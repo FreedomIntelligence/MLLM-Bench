@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "level": "Understanding",
+        "capability": "Table Understanding",
+        "url": "https://pbs.twimg.com/media/F-cFfylXkAAd7yc?format=png&name=small",
+        "question type": "close-ended"
+    },
+    "criteria": "1. List stores that are 'Deluxe Supermarket' in 'Mexico': store 8, store 12, store 21.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/238.png",
+    "unique_idx": "238",
+    "prompt": "List all stores that are deluxe supermarket and located in Mexico.",
+    "response": {
+        "created": 0,
+        "model": "yi-vl-plus",
+        "usage": {
+            "completion_tokens": 80,
+            "prompt_tokens": 1023,
+            "total_tokens": 1103
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Store 8 (Deluxe Supermarket, Merida, Yucatan, Mexico)\nStore 12 (Deluxe Supermarket, Hidalgo, Zacatecas, Mexico)\nStore 19 (Deluxe Supermarket, Vancouver, BC, Canada)\nStore 21 (Deluxe Supermarket, San Andres, DF, Mexico)"
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "answer": "Store 8 (Deluxe Supermarket, Merida, Yucatan, Mexico)\nStore 12 (Deluxe Supermarket, Hidalgo, Zacatecas, Mexico)\nStore 19 (Deluxe Supermarket, Vancouver, BC, Canada)\nStore 21 (Deluxe Supermarket, San Andres, DF, Mexico)",
+    "gen_model_id": "yi-vl-plus",
+    "duration": 9.395155906677246,
+    "code": 200,
+    "current_time": "2024-04-30 13:57:57"
+}

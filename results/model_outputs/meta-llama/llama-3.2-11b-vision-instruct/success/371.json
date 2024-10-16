@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/F16HW98XgAE0PTL?format=jpg&name=medium",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Accurately identify all UI elements: buttons, symbols, and layout.\n2. Match color scheme and button shapes exactly as in the image.\n3. Ensure functional similarity in coded UI to the image's calculator app.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/371.jpeg",
+    "unique_idx": 371,
+    "prompt": "You are a software developer. You have the attached image and you need to code an UI or app with the same characteristics, color, shapes, etc. ",
+    "context": "You are a software developer. You have the attached image and you need to code an UI or app with the same characteristics, color, shapes, etc. ",
+    "sample_id": 371,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/371.jpeg"
+    ],
+    "gen_model_id": "meta-llama/llama-3.2-11b-vision-instruct",
+    "answer": "Sure, I can help you with that. Here is a code example in Python that creates a calculator app with a similar design to the one in the image:\n\n**Calculator App in Python**\n\n**Import necessary libraries**\n```python\nimport tkinter as tk\n\n# Create the main window\nroot = tk.Tk()\nroot.title(\"Calculator\")\n\n# Create a frame for the calculator display\ndisplay_frame = tk.Frame(root, bg=\"gray\")\ndisplay_frame.pack(fill=\"x\", padx=10, pady=10)\n\n# Create a label for the calculator display\ndisplay_label = tk.Label(display_frame, text=\"\", font=(\"Arial\", 24), bg=\"gray\", fg=\"white\")\ndisplay_label.pack(fill=\"x\", padx=10, pady=10)\n\n# Create a frame for the buttons\nbutton_frame = tk.Frame(root, bg=\"gray\")\nbutton_frame.pack(fill=\"x\", padx=10, pady=10)\n\n# Create buttons for digits 0-9\ndigit_buttons = []\nfor i in range(10):\n    button = tk.Button(button_frame, text=str(i), font=(\"Arial\", 18), bg=\"gray\", fg=\"white\", command=lambda i=i: press_digit(i))\n    button.pack(side=\"left\", fill=\"x\", expand=True, padx=5, pady=5)\n    digit_buttons.append(button)\n\n# Create buttons for basic operations\noperation_buttons = []\nfor operation in [\"+\", \"-\", \"*\", \"/\"]:\n    button = tk.Button(button_frame, text=operation, font=(\"Arial\", 18), bg=\"gray\", fg=\"white\", command=lambda operation=operation: press_operation(operation))\n    button.pack(side=\"left\", fill=\"x\", expand=True, padx=5, pady=5)\n    operation_buttons.append(button)\n\n# Create buttons for equals and clear\nequals_button = tk.Button(button_frame, text=\"=\", font=(\"Arial\", 18), bg=\"gray\", fg=\"white\", command=press_equals)\nequals_button.pack(side=\"left\", fill=\"x\", expand=True, padx=5, pady=5)\nclear_button = tk.Button(button_frame, text=\"C\", font=(\"Arial\", 18), bg=\"gray\", fg=\"white\", command=press_clear)\nclear_button.pack(side=\"left\", fill=\"x\", expand=True, padx=5, pady=5)\n\n# Define functions for button presses\ndef press_digit(digit):\n    current_display = display_label.cget(\"text\")\n    display_label.config(text=current_display + str(digit))\n\ndef press_operation(operation):\n    current_display = display_label.cget(\"text\")\n    display_label.config(text=current_display + operation)\n\ndef press_equals():\n    current_display = display_label.cget(\"text\")\n    try:\n        result = eval(current_display)\n        display_label.config(text=str(result))\n    except Exception as e:\n        display_label.config(text=\"Error\")\n\ndef press_clear():\n    display_label.config(text=\"\")\n\n# Start the main loop\nroot.mainloop()\n```\n\nThis code creates a simple calculator app with a gray background and white text. The app has a display at the top, followed by a row of buttons for digits 0-9, basic operations (+, -, \\*, /), and equals and clear. When a button is pressed, the corresponding action is performed, such as displaying the digit or performing the operation. The equals button evaluates the current expression and displays the result, while the clear button resets the display to zero.",
+    "response_from_model": {
+        "id": "gen-1728905947-A1vdoUXEdNTI0JOcuSNg",
+        "provider": "DeepInfra",
+        "model": "meta-llama/llama-3.2-11b-vision-instruct",
+        "object": "chat.completion",
+        "created": 1728905947,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, I can help you with that. Here is a code example in Python that creates a calculator app with a similar design to the one in the image:\n\n**Calculator App in Python**\n\n**Import necessary libraries**\n```python\nimport tkinter as tk\n\n# Create the main window\nroot = tk.Tk()\nroot.title(\"Calculator\")\n\n# Create a frame for the calculator display\ndisplay_frame = tk.Frame(root, bg=\"gray\")\ndisplay_frame.pack(fill=\"x\", padx=10, pady=10)\n\n# Create a label for the calculator display\ndisplay_label = tk.Label(display_frame, text=\"\", font=(\"Arial\", 24), bg=\"gray\", fg=\"white\")\ndisplay_label.pack(fill=\"x\", padx=10, pady=10)\n\n# Create a frame for the buttons\nbutton_frame = tk.Frame(root, bg=\"gray\")\nbutton_frame.pack(fill=\"x\", padx=10, pady=10)\n\n# Create buttons for digits 0-9\ndigit_buttons = []\nfor i in range(10):\n    button = tk.Button(button_frame, text=str(i), font=(\"Arial\", 18), bg=\"gray\", fg=\"white\", command=lambda i=i: press_digit(i))\n    button.pack(side=\"left\", fill=\"x\", expand=True, padx=5, pady=5)\n    digit_buttons.append(button)\n\n# Create buttons for basic operations\noperation_buttons = []\nfor operation in [\"+\", \"-\", \"*\", \"/\"]:\n    button = tk.Button(button_frame, text=operation, font=(\"Arial\", 18), bg=\"gray\", fg=\"white\", command=lambda operation=operation: press_operation(operation))\n    button.pack(side=\"left\", fill=\"x\", expand=True, padx=5, pady=5)\n    operation_buttons.append(button)\n\n# Create buttons for equals and clear\nequals_button = tk.Button(button_frame, text=\"=\", font=(\"Arial\", 18), bg=\"gray\", fg=\"white\", command=press_equals)\nequals_button.pack(side=\"left\", fill=\"x\", expand=True, padx=5, pady=5)\nclear_button = tk.Button(button_frame, text=\"C\", font=(\"Arial\", 18), bg=\"gray\", fg=\"white\", command=press_clear)\nclear_button.pack(side=\"left\", fill=\"x\", expand=True, padx=5, pady=5)\n\n# Define functions for button presses\ndef press_digit(digit):\n    current_display = display_label.cget(\"text\")\n    display_label.config(text=current_display + str(digit))\n\ndef press_operation(operation):\n    current_display = display_label.cget(\"text\")\n    display_label.config(text=current_display + operation)\n\ndef press_equals():\n    current_display = display_label.cget(\"text\")\n    try:\n        result = eval(current_display)\n        display_label.config(text=str(result))\n    except Exception as e:\n        display_label.config(text=\"Error\")\n\ndef press_clear():\n    display_label.config(text=\"\")\n\n# Start the main loop\nroot.mainloop()\n```\n\nThis code creates a simple calculator app with a gray background and white text. The app has a display at the top, followed by a row of buttons for digits 0-9, basic operations (+, -, \\*, /), and equals and clear. When a button is pressed, the corresponding action is performed, such as displaying the digit or performing the operation. The equals button evaluates the current expression and displays the result, while the clear button resets the display to zero.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 4846,
+            "completion_tokens": 1,
+            "total_tokens": 4847
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:39:17"
+}

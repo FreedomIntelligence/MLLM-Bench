@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Action Prediction",
+        "url": "https://images.unsplash.com/photo-1600320254374-ce2d293c324e",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Answer includes \"slow down till stop\" or \"turn left to adjacent lane\" based on visual cues.\n2. Response must consider traffic conditions and road layout visible in the image.\n3. Answer must be logically consistent with the driver's possible actions in the given context.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/386.jpg",
+    "unique_idx": 386,
+    "prompt": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "context": "Based on the visual cues in the image, what will be the possible action of the driver?",
+    "sample_id": 386,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/386.jpg"
+    ],
+    "gen_model_id": "gpt-4o-mini-2024-07-18",
+    "answer": "Based on the visual cues in the image, the driver is likely following navigation instructions from their phone, which suggests they may be preparing to make a turn or change lanes. The driver’s hand on the steering wheel indicates they are actively driving, and the presence of the navigation app suggests they are focused on reaching a specific destination.",
+    "response_from_model": {
+        "id": "chatcmpl-AIBOiwVfy9nAxwAfB7Vau48suKb38",
+        "object": "chat.completion",
+        "created": 1728897080,
+        "model": "gpt-4o-mini",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Based on the visual cues in the image, the driver is likely following navigation instructions from their phone, which suggests they may be preparing to make a turn or change lanes. The driver’s hand on the steering wheel indicates they are actively driving, and the presence of the navigation app suggests they are focused on reaching a specific destination."
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 36861,
+            "completion_tokens": 65,
+            "total_tokens": 36926
+        },
+        "system_fingerprint": "fp_878413d04d"
+    },
+    "status_code": 200,
+    "time": "2024-10-14-17:11:21"
+}

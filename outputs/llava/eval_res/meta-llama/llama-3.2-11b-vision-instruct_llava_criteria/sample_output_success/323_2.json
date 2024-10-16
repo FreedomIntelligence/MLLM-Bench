@@ -1,0 +1,35 @@
+{
+    "unique_idx": "323_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhat happened to each row of the image from left to right?\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe image shows a series of pixelated faces, with each row representing a different person. The pixelation increases from left to right, indicating that the image is being progressively distorted as it moves from left to right. This suggests that the image is undergoing some kind of transformation or degradation, such as pixelation or compression, which is causing the faces to become increasingly distorted.\n~~~\n~~~Answer2\nFrom left to right, each row has one row with a man and the rest of the rows have women.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify and describe the progression of image quality from left to right in each row.\n2. Confirm the presence of human faces in varying resolutions and clarity in the image.\n3. Assess if the description includes changes in detail and recognizability.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/323.jpg",
+    "model_1": "meta-llama/llama-3.2-11b-vision-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The image shows a series of pixelated faces, with each row representing a different person. The pixelation increases from left to right, indicating that the image is being progressively distorted as it moves from left to right. This suggests that the image is undergoing some kind of transformation or degradation, such as pixelation or compression, which is causing the faces to become increasingly distorted.",
+    "raw_answer2": "From left to right, each row has one row with a man and the rest of the rows have women.",
+    "response": {
+        "id": "chatcmpl-AIuDHCuFFDC17PkwKQcwdgLviOa4N",
+        "object": "chat.completion",
+        "created": 1729069351,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1180,
+            "completion_tokens": 2,
+            "total_tokens": 1182
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer1"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer1",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 3.36452317237854,
+    "code": 200,
+    "current_time": "2024-10-16 17:02:31"
+}

@@ -1,0 +1,35 @@
+{
+    "unique_idx": "170_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nWhere is the pink queen located on the chessboard?\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nThe pink queen is located in the middle of the chessboard.\n~~~\n~~~Answer2\nIn the image, the pink queen is located on the fourth square from the left in the back row of the pink pieces. This would typically correspond to the d1 square on a standard chess board, which is the traditional starting position for the queen in chess.\n\nThe chess set shown is a decorative pink and clear glass set, with pink pieces on one side and clear glass pieces on the other. The board itself is also pink and white, matching the aesthetic of the pieces.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Confirm pink queen is on the fourth square from the left in the top row.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/170.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "claude-3-5-sonnet-20240620",
+    "raw_answer1": "The pink queen is located in the middle of the chessboard.",
+    "raw_answer2": "In the image, the pink queen is located on the fourth square from the left in the back row of the pink pieces. This would typically correspond to the d1 square on a standard chess board, which is the traditional starting position for the queen in chess.\n\nThe chess set shown is a decorative pink and clear glass set, with pink pieces on one side and clear glass pieces on the other. The board itself is also pink and white, matching the aesthetic of the pieces.",
+    "response": {
+        "id": "chatcmpl-AIst7B0jFEGAA7vjNS1uleiqUhl7f",
+        "object": "chat.completion",
+        "created": 1729064257,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1128,
+            "completion_tokens": 2,
+            "total_tokens": 1130
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.538240909576416,
+    "code": 200,
+    "current_time": "2024-10-16 15:37:38"
+}

@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "level": "Creating",
+        "capability": "Coding Capability with Vision",
+        "url": "https://pbs.twimg.com/media/FzZCHTzXsAAs46u?format=jpg&name=4096x4096",
+        "question type": "open-ended"
+    },
+    "criteria": "1. Website interface must reflect similar layout, including navigation bar, image placement, and text sections.\n2. Color scheme and font style should closely match the original image's aesthetic.\n3. Shapes and design elements like buttons or icons should be consistent with those in the image.",
+    "image": "/mntcephfs/lab_data/gewentao/MLLMBench/image_v3/372.jpg",
+    "unique_idx": 372,
+    "prompt": "You are a website developer. You have the attached image and you need to code a website interface with the similar characteristics, color, shapes, etc. Please do so.",
+    "context": "You are a website developer. You have the attached image and you need to code a website interface with the similar characteristics, color, shapes, etc. Please do so.",
+    "sample_id": 372,
+    "raw_img_list": [
+        "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/372.jpg"
+    ],
+    "gen_model_id": "qwen/qwen-2-vl-7b-instruct",
+    "answer": "Sure, I can help you create a website interface with similar characteristics, color, shapes, etc. Here's a basic HTML and CSS code to get you started. You can customize it further to match the exact design you see in the image.\n\n### HTML (index.html)\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Globe Trekker</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n    <header>\n        <nav>\n            <div class=\"logo\">Globe Trekker</div>\n            <button class=\"menu-button\">\n                <span class=\"hamburger\"></span>\n            </button>\n        </nav>\n    </header>\n    <main>\n        <section class=\"gallery\">\n            <div class=\"gallery-item\">\n                <img src=\"https://source.unsplash.com/random/300x200/?travel\" alt=\"Travel Destination\">\n                <h3>Private Islands - In the Maldives</h3>\n            </div>\n            <div class=\"gallery-item\">\n                <img src=\"https://source.unsplash.com/random/300x200/?architecture\" alt=\"Architectural Marvel\">\n                <h3>Gorgeous Accommodations around the World Updates</h3>\n            </div>\n        </section>\n    </main>\n    <script src=\"script.js\"></script>\n</body>\n</html>\n```\n\n### CSS (styles.css)\n```css\nbody {\n    font-family: Arial, sans-serif;\n    margin: 0;\n    padding: 0;\n    background-color: #f2f2f2;\n}\n\nheader {\n    background-color: #fff;\n    padding: 10px 20px;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}\n\nnav {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.logo {\n    font-size: 24px;\n    font-weight: bold;\n}\n\n.menu-button {\n    display: block;\n    position: relative;\n    width: 30px;\n    height: 22px;\n    cursor: pointer;\n}\n\n.menu-button span {\n    display: block;\n    position: absolute;\n    width: 100%;\n    height: 3px;\n    background-color: #333;\n    transition: background-color 0.3s ease;\n}\n\n.menu-button span:nth-child(1) {\n    top: 0;\n}\n\n.menu-button span:nth-child(2) {\n    top: 7px;\n}\n\n.menu-button span:nth-child(3) {\n    top: 14px;\n}\n\n.nav-menu {\n    display: none;\n    list-style: none;\n    margin: 0;\n    padding: 0;\n}\n\n.nav-menu li {\n    display: inline-block;\n    margin: 0 10px;\n}\n\n.nav-menu li a {\n    color: #333;\n    text-decoration: none;\n    font-size: 18px;\n    font-weight: bold;\n}\n\n.gallery {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 20px;\n    gap: 20px;\n}\n\n.gallery-item {\n    width: 40%;\n    background-color: #fff;\n    padding: 10px;\n    border-radius: 5px;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}\n\n.gallery-item img {\n    width: 100%;\n    height: auto;\n}\n\n.gallery-item h3 {\n    margin: 10px 0;\n    font-size: 16px;\n    font-weight: bold;\n}\n```\n\n### JavaScript (script.js) (optional)\n```javascript\n// JavaScript code to handle the menu button if needed\n```\n\nThis code sets up the basic structure and styling of the website. You can customize the images, colors, and fonts to match the design in the image. Make sure to replace the placeholder images with actual images or adjust the image URLs accordingly.",
+    "response_from_model": {
+        "id": "gen-1728903849-s9m8BFTreZDAizKwezX9",
+        "provider": "Hyperbolic",
+        "model": "qwen/qwen-2-vl-7b-instruct",
+        "object": "chat.completion",
+        "created": 1728903849,
+        "choices": [
+            {
+                "logprobs": null,
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, I can help you create a website interface with similar characteristics, color, shapes, etc. Here's a basic HTML and CSS code to get you started. You can customize it further to match the exact design you see in the image.\n\n### HTML (index.html)\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Globe Trekker</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n    <header>\n        <nav>\n            <div class=\"logo\">Globe Trekker</div>\n            <button class=\"menu-button\">\n                <span class=\"hamburger\"></span>\n            </button>\n        </nav>\n    </header>\n    <main>\n        <section class=\"gallery\">\n            <div class=\"gallery-item\">\n                <img src=\"https://source.unsplash.com/random/300x200/?travel\" alt=\"Travel Destination\">\n                <h3>Private Islands - In the Maldives</h3>\n            </div>\n            <div class=\"gallery-item\">\n                <img src=\"https://source.unsplash.com/random/300x200/?architecture\" alt=\"Architectural Marvel\">\n                <h3>Gorgeous Accommodations around the World Updates</h3>\n            </div>\n        </section>\n    </main>\n    <script src=\"script.js\"></script>\n</body>\n</html>\n```\n\n### CSS (styles.css)\n```css\nbody {\n    font-family: Arial, sans-serif;\n    margin: 0;\n    padding: 0;\n    background-color: #f2f2f2;\n}\n\nheader {\n    background-color: #fff;\n    padding: 10px 20px;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}\n\nnav {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.logo {\n    font-size: 24px;\n    font-weight: bold;\n}\n\n.menu-button {\n    display: block;\n    position: relative;\n    width: 30px;\n    height: 22px;\n    cursor: pointer;\n}\n\n.menu-button span {\n    display: block;\n    position: absolute;\n    width: 100%;\n    height: 3px;\n    background-color: #333;\n    transition: background-color 0.3s ease;\n}\n\n.menu-button span:nth-child(1) {\n    top: 0;\n}\n\n.menu-button span:nth-child(2) {\n    top: 7px;\n}\n\n.menu-button span:nth-child(3) {\n    top: 14px;\n}\n\n.nav-menu {\n    display: none;\n    list-style: none;\n    margin: 0;\n    padding: 0;\n}\n\n.nav-menu li {\n    display: inline-block;\n    margin: 0 10px;\n}\n\n.nav-menu li a {\n    color: #333;\n    text-decoration: none;\n    font-size: 18px;\n    font-weight: bold;\n}\n\n.gallery {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 20px;\n    gap: 20px;\n}\n\n.gallery-item {\n    width: 40%;\n    background-color: #fff;\n    padding: 10px;\n    border-radius: 5px;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}\n\n.gallery-item img {\n    width: 100%;\n    height: auto;\n}\n\n.gallery-item h3 {\n    margin: 10px 0;\n    font-size: 16px;\n    font-weight: bold;\n}\n```\n\n### JavaScript (script.js) (optional)\n```javascript\n// JavaScript code to handle the menu button if needed\n```\n\nThis code sets up the basic structure and styling of the website. You can customize the images, colors, and fonts to match the design in the image. Make sure to replace the placeholder images with actual images or adjust the image URLs accordingly.",
+                    "refusal": ""
+                }
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 56,
+            "completion_tokens": 897,
+            "total_tokens": 953
+        }
+    },
+    "status_code": 200,
+    "time": "2024-10-14-19:06:09"
+}

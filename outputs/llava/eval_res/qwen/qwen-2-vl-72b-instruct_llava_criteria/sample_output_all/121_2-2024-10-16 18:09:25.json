@@ -1,0 +1,35 @@
+{
+    "unique_idx": "121_2",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nDetermine the emotion conveyed by the image.\n~~~\n~~~Question Type\nopen-ended\n~~~\n~~~Answer1\nThe image conveys a sense of comfort and support. The person with long, dark hair appears to be providing a comforting presence to the other person, who is hugging their knees and leaning against them. This suggests a moment of emotional support or solace.\n~~~\n~~~Answer2\nThe image conveys a sense of sadness, melancholy, or despair. A woman is sitting down with her head in her hands, and she is surrounded by a shadowy figure, which might be interpreted as a dark presence, adding to the emotional intensity of the scene. The woman's posture and facial expression contribute to the overall mood of the image, suggesting that she may be experiencing a difficult emotional state or a sense of loss.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Identify if the answer accurately reflects the emotion of the figure in the image as loneliness, or similar.\n2. Check for the inclusion of body language cues, like posture or facial expression.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/121.jpeg",
+    "model_1": "qwen/qwen-2-vl-72b-instruct",
+    "model_2": "llava-v1.5-13b",
+    "raw_answer1": "The image conveys a sense of comfort and support. The person with long, dark hair appears to be providing a comforting presence to the other person, who is hugging their knees and leaning against them. This suggests a moment of emotional support or solace.",
+    "raw_answer2": "The image conveys a sense of sadness, melancholy, or despair. A woman is sitting down with her head in her hands, and she is surrounded by a shadowy figure, which might be interpreted as a dark presence, adding to the emotional intensity of the scene. The woman's posture and facial expression contribute to the overall mood of the image, suggesting that she may be experiencing a difficult emotional state or a sense of loss.",
+    "response": {
+        "id": "chatcmpl-AIvG1XGdwEPvO6ZohDYsK6ySR1eBr",
+        "object": "chat.completion",
+        "created": 1729073365,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1178,
+            "completion_tokens": 2,
+            "total_tokens": 1180
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.612458229064941,
+    "code": 200,
+    "current_time": "2024-10-16 18:09:25"
+}

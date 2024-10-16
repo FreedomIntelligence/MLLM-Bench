@@ -1,0 +1,35 @@
+{
+    "unique_idx": "232_1",
+    "prompt": "### You are an excellent evaluator.\n### Your assignment involves providing evaluations for given responses.\n### Each evaluation consists of *an image*, *a question*, a *question type*, and *two corresponding answers*. Your task is to discern which answer is superior based on the **quality** and its alignment w.r.t the image.\n### There are only two situations where you may choose 'unable to decide':\n#### Situation one: The question type is 'close-ended' and both answers are correct or wrong. \n#### Situation two: Both answers contain considerable factual errors or ethical issues.\n### Otherwise, you should always choose a better answer by responding 'Answer1' or 'Answer2'.\n### You should ONLY output your vote 'Answer1', 'Answer2', 'unable to decide: situation one', or 'unable to decide: situation two' in the last line.\n\n~~~Question\nAnalyze the flight schedule to determine which type of aircraft (e.g., A320, B738, ATR) is most commonly used for domestic flights.\n~~~\n~~~Question Type\nclose-ended\n~~~\n~~~Answer1\nIn the image, there is a flight schedule that shows the type of aircraft used for domestic flights. The aircraft most commonly used for domestic flights are Airbus A320 series, including A320, A321, and A322. From the schedule, these aircraft are used for a majority of the domestic flights, indicating their prevalence in this specific airline company. However, it is important to note that the schedule may vary depending on the airline and the region, so this conclusion might not be universally applicable.\n~~~\n~~~Answer2\nTo determine the most commonly used aircraft type for domestic flights from the provided flight schedule, let's analyze the domestic arrivals and departures.\n\n### Domestic Arrivals:\n1. ATR - 6 flights\n2. A320 - 3 flights\n\n### Domestic Departures:\n1. ATR - 5 flights\n2. A320 - 3 flights\n\n### Summary:\n- **ATR**: 11 total flights (6 arrivals + 5 departures)\n- **A320**: 6 total flights (3 arrivals + 3 departures)\n\n### Conclusion:\nThe **ATR** aircraft is the most commonly used type for domestic flights at Tiruchirappalli International Airport on the specified date.\n~~~### Please refer to the given criteria when you making the judgement\nCriteria: 1. Count occurrences of each aircraft type in domestic flights section.\n2. Confirm that ATR is the most frequently listed aircraft type for domestic flights.",
+    "image": "/mntcephfs/lab_data/gewentao/gewentao/MLLMBench/image_v3/232.jpg",
+    "model_1": "llava-v1.5-13b",
+    "model_2": "gpt-4o-mini-2024-07-18",
+    "raw_answer1": "In the image, there is a flight schedule that shows the type of aircraft used for domestic flights. The aircraft most commonly used for domestic flights are Airbus A320 series, including A320, A321, and A322. From the schedule, these aircraft are used for a majority of the domestic flights, indicating their prevalence in this specific airline company. However, it is important to note that the schedule may vary depending on the airline and the region, so this conclusion might not be universally applicable.",
+    "raw_answer2": "To determine the most commonly used aircraft type for domestic flights from the provided flight schedule, let's analyze the domestic arrivals and departures.\n\n### Domestic Arrivals:\n1. ATR - 6 flights\n2. A320 - 3 flights\n\n### Domestic Departures:\n1. ATR - 5 flights\n2. A320 - 3 flights\n\n### Summary:\n- **ATR**: 11 total flights (6 arrivals + 5 departures)\n- **A320**: 6 total flights (3 arrivals + 3 departures)\n\n### Conclusion:\nThe **ATR** aircraft is the most commonly used type for domestic flights at Tiruchirappalli International Airport on the specified date.",
+    "response": {
+        "id": "chatcmpl-AItAdJoz45KrNPDL5PpJfuuNdQfuU",
+        "object": "chat.completion",
+        "created": 1729065343,
+        "model": "gpt-4-turbo-2024-04-09",
+        "usage": {
+            "prompt_tokens": 1295,
+            "completion_tokens": 2,
+            "total_tokens": 1297
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": "Answer2"
+                },
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    },
+    "answer": "Answer2",
+    "gen_model_id": "gpt-4-turbo",
+    "duration": 4.109896183013916,
+    "code": 200,
+    "current_time": "2024-10-16 15:55:44"
+}
